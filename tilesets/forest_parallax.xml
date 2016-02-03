@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="10" version="0.99" version_name="Godot Engine v0.99.3672-pre-beta">
+	<ext_resource path="res://art/forest_bg_front_bottom.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/forest_bg_front_top.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/forest_bg_front_tree.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/forest_bg_mid_tree2.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/forest_bg.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/forest_bg_mid_bottom.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/miniparticle.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/forest_bg_mid_top.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/forest_bg_mid_tree1.*" type="ImageTexture"></ext_resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "names" </string>
+			<string_array  len="91">
+				<string> "forest_bg" </string>
+				<string> "ParallaxBackground" </string>
+				<string> "layer" </string>
+				<string> "offset" </string>
+				<string> "rotation" </string>
+				<string> "scale" </string>
+				<string> "scroll/offset" </string>
+				<string> "scroll/base_offset" </string>
+				<string> "scroll/base_scale" </string>
+				<string> "scroll/limit_begin" </string>
+				<string> "scroll/limit_end" </string>
+				<string> "__meta__" </string>
+				<string> "bg" </string>
+				<string> "ParallaxLayer" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "motion/scale" </string>
+				<string> "motion/mirroring" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "mid" </string>
+				<string> "top" </string>
+				<string> "tree1" </string>
+				<string> "tree 2" </string>
+				<string> "bottom" </string>
+				<string> "shinies" </string>
+				<string> "shinie" </string>
+				<string> "Particles2D" </string>
+				<string> "process/process" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "config/amount" </string>
+				<string> "config/lifetime" </string>
+				<string> "config/time_scale" </string>
+				<string> "config/preprocess" </string>
+				<string> "config/emit_timeout" </string>
+				<string> "config/emitting" </string>
+				<string> "config/offset" </string>
+				<string> "config/half_extents" </string>
+				<string> "config/local_space" </string>
+				<string> "config/explosiveness" </string>
+				<string> "config/texture" </string>
+				<string> "params/direction" </string>
+				<string> "params/spread" </string>
+				<string> "params/linear_velocity" </string>
+				<string> "params/spin_velocity" </string>
+				<string> "params/gravity_direction" </string>
+				<string> "params/gravity_strength" </string>
+				<string> "params/radial_accel" </string>
+				<string> "params/tangential_accel" </string>
+				<string> "params/damping" </string>
+				<string> "params/initial_size" </string>
+				<string> "params/final_size" </string>
+				<string> "params/hue_variation" </string>
+				<string> "randomness/direction" </string>
+				<string> "randomness/spread" </string>
+				<string> "randomness/linear_velocity" </string>
+				<string> "randomness/spin_velocity" </string>
+				<string> "randomness/gravity_direction" </string>
+				<string> "randomness/gravity_strength" </string>
+				<string> "randomness/radial_accel" </string>
+				<string> "randomness/tangential_accel" </string>
+				<string> "randomness/damping" </string>
+				<string> "randomness/initial_size" </string>
+				<string> "randomness/final_size" </string>
+				<string> "randomness/hue_variation" </string>
+				<string> "color_phases/count" </string>
+				<string> "phase_0/pos" </string>
+				<string> "phase_0/color" </string>
+				<string> "phase_1/pos" </string>
+				<string> "phase_1/color" </string>
+				<string> "phase_2/pos" </string>
+				<string> "phase_2/color" </string>
+				<string> "phase_3/pos" </string>
+				<string> "phase_3/color" </string>
+				<string> "emission_points" </string>
+				<string> "front" </string>
+				<string> "tree" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 14 </int>
+			<string> "variants" </string>
+			<array  len="53" shared="true">
+				<int> -1 </int>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<vector2> 1, 0.1 </vector2>
+				<vector2> 0, 1681 </vector2>
+				<dictionary  shared="false">
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "zoom" </string>
+							<real> 0.26352 </real>
+							<string> "ofs" </string>
+							<vector2> -146.892, -510.321 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "viewports" </string>
+							<array  len="4" shared="true">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+							</array>
+							<string> "viewport_mode" </string>
+							<int> 1 </int>
+							<string> "default_light" </string>
+							<bool> True </bool>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0.05, 1 </vector2>
+				<vector2> 1280, 0 </vector2>
+				<vector2> 0, 221 </vector2>
+				<vector2> 1.26, 1.5 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/forest_bg.*">  </resource>
+				<bool> False </bool>
+				<int> 1 </int>
+				<int> 0 </int>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<vector2> 0.1, 1 </vector2>
+				<vector2> 0, 108 </vector2>
+				<vector2> 1.26, 1 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/forest_bg_mid_top.*">  </resource>
+				<vector2> 135.49, 362.64 </vector2>
+				<vector2> 1.26, 1.01 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/forest_bg_mid_tree1.*">  </resource>
+				<vector2> 855.773, 362.64 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/forest_bg_mid_tree2.*">  </resource>
+				<vector2> 0, 876 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/forest_bg_mid_bottom.*">  </resource>
+				<vector2> 0.2, 1 </vector2>
+				<vector2> 1280, 1024 </vector2>
+				<vector2> 512, 512 </vector2>
+				<int> 64 </int>
+				<real> 3 </real>
+				<resource  resource_type="ImageTexture" path="res://art/miniparticle.*">  </resource>
+				<real> 10 </real>
+				<real> 9.8 </real>
+				<real> 0.5 </real>
+				<int> 3 </int>
+				<color> 0.458824, 0.911505, 0.752212, 1 </color>
+				<real> 0.8 </real>
+				<color> 1, 0.823009, 0.486726, 0.663717 </color>
+				<color> 1, 0.39823, 0.123894, 0 </color>
+				<color> 0, 0, 0, 1 </color>
+				<vector2_array  len="0"> 					 </vector2_array>
+				<vector2> 0.3, 1 </vector2>
+				<vector2> 316.268, 254 </vector2>
+				<vector2> 1.26, 1.55 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/forest_bg_front_tree.*">  </resource>
+				<resource  resource_type="ImageTexture" path="res://art/forest_bg_front_top.*">  </resource>
+				<vector2> 0, 1041 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/forest_bg_front_bottom.*">  </resource>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="586"> 				-1, -1, 1, 0, -1, 10, 2, 0, 3, 1, 4, 2, 5, 3, 6, 1, 7, 1, 8, 4, 9, 1, 10, 5, 11, 6, 0, 0, 0, 13, 12, -1, 9, 14, 7, 15, 8, 16, 8, 17, 7, 18, 1, 19, 2, 20, 3, 21, 9, 22, 10, 0, 1, 0, 23, 23, -1, 18, 14, 7, 15, 8, 16, 8, 17, 7, 18, 11, 19, 2, 20, 12, 24, 13, 25, 14, 3, 1, 26, 14, 27, 14, 28, 15, 29, 15, 30, 16, 31, 17, 32, 14, 33, 18, 0, 0, 0, 13, 34, -1, 9, 14, 7, 15, 8, 16, 8, 17, 7, 18, 1, 19, 2, 20, 3, 21, 19, 22, 10, 0, 3, 0, 23, 35, -1, 18, 14, 7, 15, 8, 16, 8, 17, 7, 18, 20, 19, 2, 20, 21, 24, 22, 25, 14, 3, 1, 26, 14, 27, 14, 28, 15, 29, 15, 30, 16, 31, 17, 32, 14, 33, 18, 0, 3, 0, 23, 36, -1, 18, 14, 7, 15, 8, 16, 8, 17, 7, 18, 23, 19, 2, 20, 24, 24, 25, 25, 14, 3, 1, 26, 14, 27, 14, 28, 15, 29, 15, 30, 16, 31, 17, 32, 14, 33, 18, 0, 3, 0, 23, 37, -1, 18, 14, 7, 15, 8, 16, 8, 17, 7, 18, 26, 19, 2, 20, 24, 24, 27, 25, 14, 3, 1, 26, 14, 27, 14, 28, 15, 29, 15, 30, 16, 31, 17, 32, 14, 33, 18, 0, 3, 0, 23, 38, -1, 18, 14, 7, 15, 8, 16, 8, 17, 7, 18, 28, 19, 2, 20, 21, 24, 29, 25, 14, 3, 1, 26, 14, 27, 14, 28, 15, 29, 15, 30, 16, 31, 17, 32, 14, 33, 18, 0, 0, 0, 13, 39, -1, 9, 14, 7, 15, 8, 16, 8, 17, 7, 18, 1, 19, 2, 20, 3, 21, 30, 22, 31, 0, 8, 0, 41, 40, -1, 54, 42, 7, 14, 7, 15, 8, 16, 8, 17, 7, 43, 15, 18, 32, 19, 2, 20, 3, 44, 33, 45, 34, 46, 8, 47, 2, 48, 2, 49, 7, 50, 1, 51, 32, 52, 7, 53, 8, 54, 35, 55, 2, 56, 36, 57, 2, 58, 2, 59, 2, 60, 37, 61, 2, 62, 2, 63, 2, 64, 38, 65, 8, 66, 2, 67, 2, 68, 2, 69, 2, 70, 2, 71, 2, 72, 2, 73, 2, 74, 2, 75, 2, 76, 2, 77, 2, 78, 2, 79, 39, 80, 2, 81, 40, 82, 41, 83, 42, 84, 8, 85, 43, 86, 8, 87, 44, 88, 45, 0, 0, 0, 13, 89, -1, 9, 14, 7, 15, 8, 16, 8, 17, 7, 18, 1, 19, 2, 20, 3, 21, 46, 22, 10, 0, 10, 0, 23, 90, -1, 18, 14, 7, 15, 8, 16, 8, 17, 7, 18, 47, 19, 2, 20, 48, 24, 49, 25, 14, 3, 1, 26, 14, 27, 14, 28, 15, 29, 15, 30, 16, 31, 17, 32, 14, 33, 18, 0, 10, 0, 23, 35, -1, 18, 14, 7, 15, 8, 16, 8, 17, 7, 18, 1, 19, 2, 20, 21, 24, 50, 25, 14, 3, 1, 26, 14, 27, 14, 28, 15, 29, 15, 30, 16, 31, 17, 32, 14, 33, 18, 0, 10, 0, 23, 38, -1, 18, 14, 7, 15, 8, 16, 8, 17, 7, 18, 51, 19, 2, 20, 21, 24, 52, 25, 14, 3, 1, 26, 14, 27, 14, 28, 15, 29, 15, 30, 16, 31, 17, 32, 14, 33, 18, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+
+	</main_resource>
+</resource_file>

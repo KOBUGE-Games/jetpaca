@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="10" version="0.99" version_name="Godot Engine v0.99.2982-pre-beta">
+	<ext_resource path="res://art/cachos_sacra_pincho/pincho_sombra.png" type="Texture"></ext_resource>
+	<ext_resource path="res://art/cachos_sacra_pincho/cejas.png" type="Texture"></ext_resource>
+	<ext_resource path="res://art/cachos_sacra_pincho/pupilas.png" type="Texture"></ext_resource>
+	<ext_resource path="res://art/cachos_sacra_pincho/pincho_luz.png" type="Texture"></ext_resource>
+	<ext_resource path="res://art/cachos_sacra_pincho/parpados_inferiores.png" type="Texture"></ext_resource>
+	<ext_resource path="res://art/cachos_sacra_pincho/parpados_superiores.png" type="Texture"></ext_resource>
+	<ext_resource path="res://art/cachos_sacra_pincho/mascara.png" type="Texture"></ext_resource>
+	<ext_resource path="res://art/cachos_sacra_pincho/sclera.png" type="Texture"></ext_resource>
+	<resource type="Animation" path="local://1">
+		<string name="resource/name"> "sleep" </string>
+		<real name="length"> 2 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.25 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:transform/pos" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 0, 0 </vector2>
+				<vector2> 0, 0 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "base_sclera/unibrow:transform/pos" </node_path>
+		<int name="tracks/1/interp"> 1 </int>
+		<dictionary name="tracks/1/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> -0.427185, 9.03744 </vector2>
+				<vector2> -0.427185, 9.03744 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "spike1_L:transform/pos" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> -70, -25 </vector2>
+				<vector2> -70, -25 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "spike2_L:transform/pos" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> -65, 28 </vector2>
+				<vector2> -65, 28 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/4/type"> "value" </string>
+		<node_path name="tracks/4/path"> "spike3_L:transform/pos" </node_path>
+		<int name="tracks/4/interp"> 1 </int>
+		<dictionary name="tracks/4/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> -30, -68 </vector2>
+				<vector2> -30, -68 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/5/type"> "value" </string>
+		<node_path name="tracks/5/path"> "spike4_L:transform/pos" </node_path>
+		<int name="tracks/5/interp"> 1 </int>
+		<dictionary name="tracks/5/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 30, -68 </vector2>
+				<vector2> 30, -68 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/6/type"> "value" </string>
+		<node_path name="tracks/6/path"> "spike5_D:transform/pos" </node_path>
+		<int name="tracks/6/interp"> 1 </int>
+		<dictionary name="tracks/6/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 70, -25 </vector2>
+				<vector2> 70, -25 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/7/type"> "value" </string>
+		<node_path name="tracks/7/path"> "spike6_D:transform/pos" </node_path>
+		<int name="tracks/7/interp"> 1 </int>
+		<dictionary name="tracks/7/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 65, 28 </vector2>
+				<vector2> 65, 28 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/8/type"> "value" </string>
+		<node_path name="tracks/8/path"> "base_sclera:transform/pos" </node_path>
+		<int name="tracks/8/interp"> 1 </int>
+		<dictionary name="tracks/8/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 0, 0 </vector2>
+				<vector2> 0, 0 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/9/type"> "value" </string>
+		<node_path name="tracks/9/path"> "base_sclera/pupils:transform/pos" </node_path>
+		<int name="tracks/9/interp"> 1 </int>
+		<dictionary name="tracks/9/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 0, 0 </vector2>
+				<vector2> 0, 0 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/10/type"> "value" </string>
+		<node_path name="tracks/10/path"> "base_sclera/lower_eyelids:transform/pos" </node_path>
+		<int name="tracks/10/interp"> 1 </int>
+		<dictionary name="tracks/10/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 0, 4.99436 </vector2>
+				<vector2> 0, 4.99436 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/11/type"> "value" </string>
+		<node_path name="tracks/11/path"> "base_sclera/upper_eyelids:transform/pos" </node_path>
+		<int name="tracks/11/interp"> 1 </int>
+		<dictionary name="tracks/11/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 0, -4.75655 </vector2>
+				<vector2> 0, -4.75655 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/12/type"> "value" </string>
+		<node_path name="tracks/12/path"> "base_sclera/face:transform/pos" </node_path>
+		<int name="tracks/12/interp"> 1 </int>
+		<dictionary name="tracks/12/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 0, 7.82262 </vector2>
+				<vector2> 0, 7.82262 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<dictionary name="_bundled">
+			<string> "names" </string>
+			<string_array  len="64">
+				<string> "sacra_pinchorb" </string>
+				<string> "RigidBody2D" </string>
+				<string> "process/process" </string>
+				<string> "process/fixed_process" </string>
+				<string> "process/input" </string>
+				<string> "process/unhandled_input" </string>
+				<string> "process/mode" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/toplevel" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/notify" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "shape_count" </string>
+				<string> "mode" </string>
+				<string> "mass" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "custom_integrator" </string>
+				<string> "continuous_cd" </string>
+				<string> "contacts_reported" </string>
+				<string> "contact_monitor" </string>
+				<string> "active" </string>
+				<string> "can_sleep" </string>
+				<string> "velocity/linear" </string>
+				<string> "velocity/angular" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "spike1_L" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "spike2_L" </string>
+				<string> "spike3_L" </string>
+				<string> "spike4_L" </string>
+				<string> "spike5_D" </string>
+				<string> "spike6_D" </string>
+				<string> "base_sclera" </string>
+				<string> "pupils" </string>
+				<string> "lower_eyelids" </string>
+				<string> "upper_eyelids" </string>
+				<string> "face" </string>
+				<string> "unibrow" </string>
+				<string> "AnimationPlayer" </string>
+				<string> "playback/process_mode" </string>
+				<string> "playback/default_blend_time" </string>
+				<string> "root/root" </string>
+				<string> "speed" </string>
+				<string> "anims/sleep" </string>
+				<string> "blend_times" </string>
+				<string> "autoplay" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 14 </int>
+			<string> "variants" </string>
+			<array  len="40">
+				<bool> False </bool>
+				<int> 0 </int>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<resource name=""></resource>				<dictionary>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary>
+						<string> "Script" </string>
+						<dictionary>
+							<string> "current" </string>
+							<int> 2 </int>
+							<string> "sources" </string>
+							<array  len="3">
+								<string> "res://enemies/enemy.gd" </string>
+								<string> "res://player/alpaca.gd" </string>
+								<string> "res://enemies/fluff.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary>
+							<string> "zoom" </string>
+							<real> 2.78951 </real>
+							<string> "ofs" </string>
+							<vector2> -1838.21, -1011.57 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "window_mode" </string>
+							<int> 0 </int>
+							<string> "window_0" </string>
+							<dictionary>
+								<string> "distance" </string>
+								<real> 4 </real>
+								<string> "default_light" </string>
+								<bool> True </bool>
+								<string> "x_rot" </string>
+								<real> 0.337 </real>
+								<string> "y_rot" </string>
+								<real> -0.575 </real>
+								<string> "show_grid" </string>
+								<bool> True </bool>
+								<string> "show_origin" </string>
+								<bool> True </bool>
+								<string> "pos" </string>
+								<vector3> 0, 0, 0 </vector3>
+							</dictionary>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary>
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "Script" </string>
+				</dictionary>
+				<vector2> -70, -25 </vector2>
+				<real> 67.5 </real>
+				<resource  resource_type="Texture" path="res://art/cachos_sacra_pincho/pincho_luz.png">  </resource>
+				<int> 1 </int>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<vector2> -65, 28 </vector2>
+				<real> 112.5 </real>
+				<vector2> -30, -68 </vector2>
+				<real> 22.5 </real>
+				<vector2> 30, -68 </vector2>
+				<real> -22.5 </real>
+				<vector2> 70, -25 </vector2>
+				<real> -67.5 </real>
+				<resource  resource_type="Texture" path="res://art/cachos_sacra_pincho/pincho_sombra.png">  </resource>
+				<vector2> 65, 28 </vector2>
+				<real> -112.5 </real>
+				<resource  resource_type="Texture" path="res://art/cachos_sacra_pincho/sclera.png">  </resource>
+				<resource  resource_type="Texture" path="res://art/cachos_sacra_pincho/pupilas.png">  </resource>
+				<vector2> 0, 4.99436 </vector2>
+				<resource  resource_type="Texture" path="res://art/cachos_sacra_pincho/parpados_inferiores.png">  </resource>
+				<vector2> 0, -4.75655 </vector2>
+				<resource  resource_type="Texture" path="res://art/cachos_sacra_pincho/parpados_superiores.png">  </resource>
+				<vector2> 0, 7.82262 </vector2>
+				<resource  resource_type="Texture" path="res://art/cachos_sacra_pincho/mascara.png">  </resource>
+				<vector2> -0.427185, 9.03744 </vector2>
+				<resource  resource_type="Texture" path="res://art/cachos_sacra_pincho/cejas.png">  </resource>
+				<node_path> ".." </node_path>
+				<resource  resource_type="Animation" path="local://1">  </resource>
+				<array  len="0">
+				</array>
+				<string> "" </string>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="832"> 				-1, -1, 1, 0, -1, 30, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 17, 1, 18, 1, 19, 3, 20, 3, 21, 5, 22, 0, 23, 0, 24, 1, 25, 0, 26, 2, 27, 2, 28, 4, 29, 5, 30, 7, 31, 8, 0, 0, 0, 33, 32, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 9, 15, 10, 16, 6, 34, 11, 35, 2, 36, 4, 37, 0, 38, 0, 39, 12, 40, 12, 41, 1, 42, 13, 43, 0, 44, 14, 30, 7, 0, 0, 0, 33, 45, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 15, 15, 16, 16, 6, 34, 11, 35, 2, 36, 4, 37, 0, 38, 0, 39, 12, 40, 12, 41, 1, 42, 13, 43, 0, 44, 14, 30, 7, 0, 0, 0, 33, 46, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 17, 15, 18, 16, 6, 34, 11, 35, 2, 36, 4, 37, 2, 38, 0, 39, 12, 40, 12, 41, 1, 42, 13, 43, 0, 44, 14, 30, 7, 0, 0, 0, 33, 47, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 19, 15, 20, 16, 6, 34, 11, 35, 2, 36, 4, 37, 2, 38, 0, 39, 12, 40, 12, 41, 1, 42, 13, 43, 0, 44, 14, 30, 7, 0, 0, 0, 33, 48, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 21, 15, 22, 16, 6, 34, 23, 35, 2, 36, 4, 37, 2, 38, 0, 39, 12, 40, 12, 41, 1, 42, 13, 43, 0, 44, 14, 30, 7, 0, 0, 0, 33, 49, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 24, 15, 25, 16, 6, 34, 23, 35, 2, 36, 4, 37, 2, 38, 0, 39, 12, 40, 12, 41, 1, 42, 13, 43, 0, 44, 14, 30, 7, 0, 0, 0, 33, 50, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 4, 15, 5, 16, 6, 34, 26, 35, 2, 36, 4, 37, 0, 38, 0, 39, 12, 40, 12, 41, 1, 42, 13, 43, 0, 44, 14, 30, 7, 0, 7, 0, 33, 51, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 4, 15, 5, 16, 6, 34, 27, 35, 2, 36, 4, 37, 0, 38, 0, 39, 12, 40, 12, 41, 1, 42, 13, 43, 0, 44, 14, 30, 7, 0, 7, 0, 33, 52, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 28, 15, 5, 16, 6, 34, 29, 35, 2, 36, 4, 37, 0, 38, 0, 39, 12, 40, 12, 41, 1, 42, 13, 43, 0, 44, 14, 30, 7, 0, 7, 0, 33, 53, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 30, 15, 5, 16, 6, 34, 31, 35, 2, 36, 4, 37, 0, 38, 0, 39, 12, 40, 12, 41, 1, 42, 13, 43, 0, 44, 14, 30, 7, 0, 7, 0, 33, 54, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 32, 15, 5, 16, 6, 34, 33, 35, 2, 36, 4, 37, 0, 38, 0, 39, 12, 40, 12, 41, 1, 42, 13, 43, 0, 44, 14, 30, 7, 0, 7, 0, 33, 55, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 34, 15, 5, 16, 6, 34, 35, 35, 2, 36, 4, 37, 0, 38, 0, 39, 12, 40, 12, 41, 1, 42, 13, 43, 0, 44, 14, 30, 7, 0, 0, 0, 56, 56, -1, 13, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 57, 12, 58, 5, 59, 36, 60, 3, 61, 37, 62, 38, 63, 39, 30, 7, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

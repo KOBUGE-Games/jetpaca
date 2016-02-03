@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="5" version="0.99" version_name="Godot Engine v0.99.2924-pre-beta">
+	<ext_resource path="res://art/tree_bottom_right.png" type="Texture"></ext_resource>
+	<ext_resource path="res://art/tree_bottom.png" type="Texture"></ext_resource>
+	<ext_resource path="res://art/tree_bottom_left.png" type="Texture"></ext_resource>
+	<resource type="ConcavePolygonShape2D" path="local://1">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="segments" len="52"> 			-108.092, -127.042, 112.639, -126.227, 112.639, -126.227, 110.196, -2.42232, 110.196, -2.42232, 190.832, 11.4243, 190.832, 11.4243, 218.525, 33.416, 218.525, 33.416, 223.412, 64.3672, 223.412, 64.3672, 327.669, 59.4802, 327.669, 59.4802, 380.612, 100.205, 380.612, 100.205, 383.87, 127.084, 383.87, 127.084, 370.023, 122.197, 370.023, 122.197, 362.693, 108.351, 362.693, 108.351, 322.782, 95.3185, 322.782, 95.3185, 235.63, 127.899, 235.63, 127.899, 162.324, 124.641, 162.324, 124.641, 91.4619, 98.5765, 91.4619, 98.5765, 53.1801, 120.568, 53.1801, 120.568, -3.8353, 128.713, -3.8353, 128.713, -78.7699, 106.722, -78.7699, 106.722, -122.753, 124.641, -122.753, 124.641, -246.558, 113.238, -246.558, 113.238, -323.122, 92.8749, -323.122, 92.8749, -363.033, 124.641, -363.033, 124.641, -385.839, 105.907, -385.839, 105.907, -358.96, 68.4397, -358.96, 68.4397, -213.978, 12.2388, -213.978, 12.2388, -108.907, 2.46472, -108.907, 2.46472, -108.092, -127.042 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<dictionary name="_bundled">
+			<string> "names" </string>
+			<string_array  len="42">
+				<string> "StaticBody2D" </string>
+				<string> "process/process" </string>
+				<string> "process/fixed_process" </string>
+				<string> "process/input" </string>
+				<string> "process/unhandled_input" </string>
+				<string> "process/mode" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/toplevel" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/notify" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "simulate_motion" </string>
+				<string> "constant_linear_velocity" </string>
+				<string> "constant_angular_velocity" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "middle" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "right" </string>
+				<string> "left" </string>
+				<string> "CollisionPolygon2D" </string>
+				<string> "build_mode" </string>
+				<string> "polygon" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 5 </int>
+			<string> "variants" </string>
+			<array  len="21">
+				<bool> False </bool>
+				<int> 0 </int>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<int> 1 </int>
+				<resource  resource_type="ConcavePolygonShape2D" path="local://1">  </resource>
+				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<resource name=""></resource>				<dictionary>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary>
+						<string> "2D" </string>
+						<dictionary>
+							<string> "zoom" </string>
+							<real> 1 </real>
+							<string> "ofs" </string>
+							<vector2> -349.758, -209.229 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "window_mode" </string>
+							<int> 0 </int>
+							<string> "window_0" </string>
+							<dictionary>
+								<string> "distance" </string>
+								<real> 4 </real>
+								<string> "default_light" </string>
+								<bool> True </bool>
+								<string> "x_rot" </string>
+								<real> 0.337 </real>
+								<string> "y_rot" </string>
+								<real> -0.575 </real>
+								<string> "show_grid" </string>
+								<bool> True </bool>
+								<string> "show_origin" </string>
+								<bool> True </bool>
+								<string> "pos" </string>
+								<vector3> 0, 0, 0 </vector3>
+							</dictionary>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary>
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<resource  resource_type="Texture" path="res://art/tree_bottom.png">  </resource>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<vector2> 255.416, 64 </vector2>
+				<resource  resource_type="Texture" path="res://art/tree_bottom_right.png">  </resource>
+				<vector2> -255.352, 63.1701 </vector2>
+				<vector2> 1, 1 </vector2>
+				<resource  resource_type="Texture" path="res://art/tree_bottom_left.png">  </resource>
+				<vector2_array  len="26"> 					-108.092, -127.042, 112.639, -126.227, 110.196, -2.42232, 190.832, 11.4243, 218.525, 33.416, 223.412, 64.3672, 327.669, 59.4802, 380.612, 100.205, 383.87, 127.084, 370.023, 122.197, 362.693, 108.351, 322.782, 95.3185, 235.63, 127.899, 162.324, 124.641, 91.4619, 98.5765, 53.1801, 120.568, -3.8353, 128.713, -78.7699, 106.722, -122.753, 124.641, -246.558, 113.238, -323.122, 92.8749, -363.033, 124.641, -385.839, 105.907, -358.96, 68.4397, -213.978, 12.2388, -108.907, 2.46472 </vector2_array>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="279"> 				-1, -1, 0, 0, -1, 23, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 0, 8, 3, 9, 3, 10, 2, 11, 1, 12, 0, 13, 4, 14, 5, 15, 6, 16, 7, 17, 8, 18, 9, 19, 0, 20, 4, 21, 5, 22, 10, 23, 11, 0, 0, 0, 25, 24, -1, 27, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 0, 8, 3, 9, 3, 10, 2, 11, 1, 12, 0, 13, 4, 14, 5, 15, 6, 26, 12, 27, 2, 28, 4, 29, 0, 30, 0, 31, 7, 32, 7, 33, 1, 34, 13, 35, 0, 36, 14, 22, 10, 0, 0, 0, 25, 37, -1, 27, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 0, 8, 3, 9, 3, 10, 2, 11, 1, 12, 0, 13, 15, 14, 5, 15, 6, 26, 16, 27, 2, 28, 4, 29, 0, 30, 0, 31, 7, 32, 7, 33, 1, 34, 13, 35, 0, 36, 14, 22, 10, 0, 0, 0, 25, 38, -1, 27, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 0, 8, 3, 9, 3, 10, 2, 11, 1, 12, 0, 13, 17, 14, 5, 15, 18, 26, 19, 27, 2, 28, 4, 29, 0, 30, 0, 31, 7, 32, 7, 33, 1, 34, 13, 35, 0, 36, 14, 22, 10, 0, 0, 0, 39, 39, -1, 18, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 0, 8, 3, 9, 3, 10, 2, 11, 1, 12, 2, 13, 4, 14, 5, 15, 6, 40, 1, 41, 20, 22, 10, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

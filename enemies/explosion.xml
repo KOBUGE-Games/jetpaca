@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="5" version="0.99" version_name="Godot Engine v0.99.2890-pre-beta">
+	<ext_resource path="res://art/evil_smoke_particle.png" type="Texture"></ext_resource>
+	<ext_resource path="res://sound/magic_explosion.wav" type="Sample"></ext_resource>
+	<ext_resource path="res://enemies/explosion.gd" type="GDScript"></ext_resource>
+	<resource type="SampleLibrary" path="local://1">
+		<string name="resource/name"> "" </string>
+		<resource name="samples/magic_explosion" resource_type="Sample" path="res://sound/magic_explosion.wav">  </resource>
+		<resource name="script/script"></resource>
+	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<dictionary name="_bundled">
+			<string> "names" </string>
+			<string_array  len="78">
+				<string> "enemy_explosion" </string>
+				<string> "Particles2D" </string>
+				<string> "process/process" </string>
+				<string> "process/fixed_process" </string>
+				<string> "process/input" </string>
+				<string> "process/unhandled_input" </string>
+				<string> "process/mode" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/toplevel" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/notify" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "config/amount" </string>
+				<string> "config/lifetime" </string>
+				<string> "config/preprocess" </string>
+				<string> "config/emit_timeout" </string>
+				<string> "config/emitting" </string>
+				<string> "config/offset" </string>
+				<string> "config/half_extents" </string>
+				<string> "config/local_space" </string>
+				<string> "config/explosiveness" </string>
+				<string> "config/texture" </string>
+				<string> "params/direction" </string>
+				<string> "params/spread" </string>
+				<string> "params/linear_velocity" </string>
+				<string> "params/spin_velocity" </string>
+				<string> "params/gravity_direction" </string>
+				<string> "params/gravity_strength" </string>
+				<string> "params/radial_accel" </string>
+				<string> "params/tangential_accel" </string>
+				<string> "params/damping" </string>
+				<string> "params/initial_size" </string>
+				<string> "params/final_size" </string>
+				<string> "params/hue_variation" </string>
+				<string> "randomness/direction" </string>
+				<string> "randomness/spread" </string>
+				<string> "randomness/linear_velocity" </string>
+				<string> "randomness/spin_velocity" </string>
+				<string> "randomness/gravity_direction" </string>
+				<string> "randomness/gravity_strength" </string>
+				<string> "randomness/radial_accel" </string>
+				<string> "randomness/tangential_accel" </string>
+				<string> "randomness/damping" </string>
+				<string> "randomness/initial_size" </string>
+				<string> "randomness/final_size" </string>
+				<string> "randomness/hue_variation" </string>
+				<string> "color_phases/count" </string>
+				<string> "phase_0/pos" </string>
+				<string> "phase_0/color" </string>
+				<string> "phase_1/pos" </string>
+				<string> "phase_1/color" </string>
+				<string> "phase_2/pos" </string>
+				<string> "phase_2/color" </string>
+				<string> "phase_3/pos" </string>
+				<string> "phase_3/color" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "player" </string>
+				<string> "SamplePlayer2D" </string>
+				<string> "params/volume_db" </string>
+				<string> "params/pitch_scale" </string>
+				<string> "params/attenuation/min_distance" </string>
+				<string> "params/attenuation/max_distance" </string>
+				<string> "params/attenuation/distance_exp" </string>
+				<string> "config/polyphony" </string>
+				<string> "config/samples" </string>
+				<string> "timer" </string>
+				<string> "Timer" </string>
+				<string> "wait_time" </string>
+				<string> "one_shot" </string>
+				<string> "autostart" </string>
+				<string> "_on_timeout" </string>
+				<string> "timeout" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 1 </int>
+			<string> "node_count" </string>
+			<int> 3 </int>
+			<string> "variants" </string>
+			<array  len="31">
+				<bool> False </bool>
+				<int> 0 </int>
+				<bool> True </bool>
+				<real> 1 </real>
+				<int> 1 </int>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<int> 16 </int>
+				<real> 2 </real>
+				<real> 1.5 </real>
+				<vector2> 32, 32 </vector2>
+				<real> 0.1 </real>
+				<resource  resource_type="Texture" path="res://art/evil_smoke_particle.png">  </resource>
+				<real> 180 </real>
+				<real> 54.542728 </real>
+				<real> 128 </real>
+				<real> 32 </real>
+				<int> 3 </int>
+				<color> 1, 0.59292, 0.238938, 0.345133 </color>
+				<real> 0.2 </real>
+				<color> 0.529412, 0, 0.389381, 1 </color>
+				<real> 0.8 </real>
+				<color> 0.133333, 0.19469, 0.19469, 0.176991 </color>
+				<color> 0, 0, 0, 0 </color>
+				<resource  resource_type="GDScript" path="res://enemies/explosion.gd">  </resource>
+				<dictionary>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary>
+						<string> "Script" </string>
+						<dictionary>
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="1">
+								<string> "res://enemies/explosion.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary>
+							<string> "zoom" </string>
+							<real> 1.360374 </real>
+							<string> "ofs" </string>
+							<vector2> -330.002, -439.402 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "window_mode" </string>
+							<int> 0 </int>
+							<string> "window_0" </string>
+							<dictionary>
+								<string> "distance" </string>
+								<real> 4 </real>
+								<string> "default_light" </string>
+								<bool> True </bool>
+								<string> "x_rot" </string>
+								<real> 0.337 </real>
+								<string> "y_rot" </string>
+								<real> -0.575 </real>
+								<string> "show_grid" </string>
+								<bool> True </bool>
+								<string> "show_origin" </string>
+								<bool> True </bool>
+								<string> "pos" </string>
+								<vector3> 0, 0, 0 </vector3>
+							</dictionary>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary>
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "Script" </string>
+				</dictionary>
+				<real> 2048 </real>
+				<resource  resource_type="SampleLibrary" path="local://1">  </resource>
+				<resource name=""></resource>				<real> 3 </real>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="205"> 				-1, -1, 1, 0, -1, 60, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 4, 13, 0, 14, 5, 15, 6, 16, 7, 17, 8, 18, 9, 19, 6, 20, 10, 21, 0, 22, 5, 23, 11, 24, 2, 25, 12, 26, 13, 27, 14, 28, 15, 29, 16, 30, 9, 31, 14, 32, 6, 33, 6, 34, 6, 35, 17, 36, 9, 37, 6, 38, 6, 39, 6, 40, 6, 41, 6, 42, 3, 43, 6, 44, 6, 45, 6, 46, 6, 47, 6, 48, 6, 49, 6, 50, 6, 51, 18, 52, 6, 53, 19, 54, 20, 55, 21, 56, 22, 57, 23, 58, 3, 59, 24, 60, 25, 61, 26, 0, 0, 0, 63, 62, -1, 23, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 5, 15, 6, 16, 7, 64, 6, 65, 3, 66, 3, 67, 27, 68, 3, 69, 4, 70, 28, 60, 29, 0, 0, 0, 72, 71, -1, 9, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 73, 30, 74, 2, 75, 0, 60, 29, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="6"> 				2, 0, 77, 76, 2, 0 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

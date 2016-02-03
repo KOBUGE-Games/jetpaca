@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="12" version="0.99" version_name="Godot Engine v0.99.2976-pre-beta">
+	<ext_resource path="res://art/locked_door.png" type="Texture"></ext_resource>
+	<ext_resource path="res://sound/door_slam.wav" type="Sample"></ext_resource>
+	<ext_resource path="res://sound/stonedoor.wav" type="Sample"></ext_resource>
+	<ext_resource path="res://art/smoke.png" type="Texture"></ext_resource>
+	<ext_resource path="res://interaction/locked_door.gd" type="GDScript"></ext_resource>
+	<ext_resource path="res://interaction/lock.xml" type="PackedScene"></ext_resource>
+	<resource type="ConcavePolygonShape2D" path="local://1">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="segments" len="8"> 			-8.17093, -62.7563, -7.63057, 44.235, -7.63057, 44.235, 11.8224, 63.688, 11.8224, 63.688, 12.9031, -62.7563, 12.9031, -62.7563, -8.17093, -62.7563 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConcavePolygonShape2D" path="local://2">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="segments" len="8"> 			8.57231, -62.8426, -8.71921, -48.2528, -8.71921, -48.2528, -7.09813, 64.1421, -7.09813, 64.1421, 13.4356, 63.6017, 13.4356, 63.6017, 8.57231, -62.8426 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="Animation" path="local://3">
+		<string name="resource/name"> "open" </string>
+		<real name="length"> 2 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "up:transform/pos" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				-2, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> -1.629, -68.4185 </vector2>
+				<vector2> 0, -144.982 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "down/CollisionPolygon2D:transform/pos" </node_path>
+		<int name="tracks/1/interp"> 1 </int>
+		<dictionary name="tracks/1/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1">
+				<vector2> 0, 0 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "lock:visibility/opacity" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<real> 1 </real>
+				<real> 0 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "down:transform/pos" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				-2, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 0, 54.7333 </vector2>
+				<vector2> 0, 126.755 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/4/type"> "value" </string>
+		<node_path name="tracks/4/path"> "smoke:config/emitting" </node_path>
+		<int name="tracks/4/interp"> 1 </int>
+		<dictionary name="tracks/4/keys">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<bool> True </bool>
+				<bool> False </bool>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/5/type"> "value" </string>
+		<node_path name="tracks/5/path"> "smoke 2:config/emitting" </node_path>
+		<int name="tracks/5/interp"> 1 </int>
+		<dictionary name="tracks/5/keys">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<bool> True </bool>
+				<bool> False </bool>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/6/type"> "value" </string>
+		<node_path name="tracks/6/path"> "SamplePlayer2D:play/play" </node_path>
+		<int name="tracks/6/interp"> 1 </int>
+		<dictionary name="tracks/6/keys">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<string> "door_open" </string>
+				<string> "door_slam" </string>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1.74 </real_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="SampleLibrary" path="local://4">
+		<string name="resource/name"> "" </string>
+		<resource name="samples/door_open" resource_type="Sample" path="res://sound/stonedoor.wav">  </resource>
+		<resource name="samples/door_slam" resource_type="Sample" path="res://sound/door_slam.wav">  </resource>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="CircleShape2D" path="local://5">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<real name="radius"> 128 </real>
+		<resource name="script/script"></resource>
+	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<dictionary name="_bundled">
+			<string> "names" </string>
+			<string_array  len="121">
+				<string> "door" </string>
+				<string> "Node2D" </string>
+				<string> "process/process" </string>
+				<string> "process/fixed_process" </string>
+				<string> "process/input" </string>
+				<string> "process/unhandled_input" </string>
+				<string> "process/mode" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/toplevel" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/notify" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "key_idx" </string>
+				<string> "smoke" </string>
+				<string> "Particles2D" </string>
+				<string> "config/amount" </string>
+				<string> "config/lifetime" </string>
+				<string> "config/preprocess" </string>
+				<string> "config/emit_timeout" </string>
+				<string> "config/emitting" </string>
+				<string> "config/offset" </string>
+				<string> "config/half_extents" </string>
+				<string> "config/local_space" </string>
+				<string> "config/explosiveness" </string>
+				<string> "config/texture" </string>
+				<string> "params/direction" </string>
+				<string> "params/spread" </string>
+				<string> "params/linear_velocity" </string>
+				<string> "params/spin_velocity" </string>
+				<string> "params/gravity_direction" </string>
+				<string> "params/gravity_strength" </string>
+				<string> "params/radial_accel" </string>
+				<string> "params/tangential_accel" </string>
+				<string> "params/damping" </string>
+				<string> "params/initial_size" </string>
+				<string> "params/final_size" </string>
+				<string> "params/hue_variation" </string>
+				<string> "randomness/direction" </string>
+				<string> "randomness/spread" </string>
+				<string> "randomness/linear_velocity" </string>
+				<string> "randomness/spin_velocity" </string>
+				<string> "randomness/gravity_direction" </string>
+				<string> "randomness/gravity_strength" </string>
+				<string> "randomness/radial_accel" </string>
+				<string> "randomness/tangential_accel" </string>
+				<string> "randomness/damping" </string>
+				<string> "randomness/initial_size" </string>
+				<string> "randomness/final_size" </string>
+				<string> "randomness/hue_variation" </string>
+				<string> "color_phases/count" </string>
+				<string> "phase_0/pos" </string>
+				<string> "phase_0/color" </string>
+				<string> "phase_1/pos" </string>
+				<string> "phase_1/color" </string>
+				<string> "phase_2/pos" </string>
+				<string> "phase_2/color" </string>
+				<string> "phase_3/pos" </string>
+				<string> "phase_3/color" </string>
+				<string> "smoke 2" </string>
+				<string> "up" </string>
+				<string> "StaticBody2D" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "simulate_motion" </string>
+				<string> "constant_linear_velocity" </string>
+				<string> "constant_angular_velocity" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "CollisionPolygon2D" </string>
+				<string> "build_mode" </string>
+				<string> "polygon" </string>
+				<string> "down" </string>
+				<string> "anim" </string>
+				<string> "AnimationPlayer" </string>
+				<string> "playback/process_mode" </string>
+				<string> "playback/default_blend_time" </string>
+				<string> "root/root" </string>
+				<string> "speed" </string>
+				<string> "anims/open" </string>
+				<string> "blend_times" </string>
+				<string> "autoplay" </string>
+				<string> "SamplePlayer2D" </string>
+				<string> "params/volume_db" </string>
+				<string> "params/pitch_scale" </string>
+				<string> "params/attenuation/min_distance" </string>
+				<string> "params/attenuation/max_distance" </string>
+				<string> "params/attenuation/distance_exp" </string>
+				<string> "config/polyphony" </string>
+				<string> "config/samples" </string>
+				<string> "area" </string>
+				<string> "Area2D" </string>
+				<string> "space_override" </string>
+				<string> "gravity_point" </string>
+				<string> "gravity_vec" </string>
+				<string> "gravity" </string>
+				<string> "density" </string>
+				<string> "priority" </string>
+				<string> "monitoring" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "shape" </string>
+				<string> "lock" </string>
+				<string> "_on_body_enter" </string>
+				<string> "body_enter" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 1 </int>
+			<string> "node_count" </string>
+			<int> 14 </int>
+			<string> "variants" </string>
+			<array  len="45">
+				<bool> False </bool>
+				<int> 0 </int>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<resource  resource_type="GDScript" path="res://interaction/locked_door.gd">  </resource>
+				<dictionary>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary>
+						<string> "Script" </string>
+						<dictionary>
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="1">
+								<string> "res://interaction/locked_door.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary>
+							<string> "zoom" </string>
+							<real> 2.050546 </real>
+							<string> "ofs" </string>
+							<vector2> -268.823, -267.624 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "window_mode" </string>
+							<int> 0 </int>
+							<string> "window_0" </string>
+							<dictionary>
+								<string> "distance" </string>
+								<real> 4 </real>
+								<string> "default_light" </string>
+								<bool> True </bool>
+								<string> "x_rot" </string>
+								<real> 0.337 </real>
+								<string> "y_rot" </string>
+								<real> -0.575 </real>
+								<string> "show_grid" </string>
+								<bool> True </bool>
+								<string> "show_origin" </string>
+								<bool> True </bool>
+								<string> "pos" </string>
+								<vector3> 0, 0, 0 </vector3>
+							</dictionary>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary>
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "Script" </string>
+				</dictionary>
+				<vector2> 0.735107, -125.701 </vector2>
+				<int> 32 </int>
+				<real> 2 </real>
+				<resource  resource_type="Texture" path="res://art/smoke.png">  </resource>
+				<real> 180 </real>
+				<real> 20 </real>
+				<int> 2 </int>
+				<color> 0.654902, 0.628319, 0.646018, 1 </color>
+				<color> 0.309804, 0.230089, 0.247788, 0 </color>
+				<color> 0, 0, 0, 1 </color>
+				<resource name=""></resource>				<vector2> 2.20529, 112.469 </vector2>
+				<vector2> -1.629, -68.4185 </vector2>
+				<int> 1 </int>
+				<resource  resource_type="ConcavePolygonShape2D" path="local://1">  </resource>
+				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
+				<resource  resource_type="Texture" path="res://art/locked_door.png">  </resource>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<vector2_array  len="4"> 					-8.17093, -62.7563, -7.63057, 44.235, 11.8224, 63.688, 12.9031, -62.7563 </vector2_array>
+				<vector2> 0, 54.7333 </vector2>
+				<resource  resource_type="ConcavePolygonShape2D" path="local://2">  </resource>
+				<vector2_array  len="4"> 					8.57231, -62.8426, -8.71921, -48.2528, -7.09813, 64.1421, 13.4356, 63.6017 </vector2_array>
+				<node_path> ".." </node_path>
+				<resource  resource_type="Animation" path="local://3">  </resource>
+				<array  len="0">
+				</array>
+				<string> "" </string>
+				<real> 2048 </real>
+				<resource  resource_type="SampleLibrary" path="local://4">  </resource>
+				<resource  resource_type="CircleShape2D" path="local://5">  </resource>
+				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<vector2> 0, 1 </vector2>
+				<real> 98 </real>
+				<real> 0.1 </real>
+				<resource  resource_type="PackedScene" path="res://interaction/lock.xml">  </resource>
+				<vector2> 1.32684, -17.2489 </vector2>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="798"> 				-1, -1, 1, 0, -1, 18, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 4, 15, 5, 16, 6, 17, 7, 18, 8, 19, 1, 0, 0, 0, 21, 20, -1, 59, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 9, 15, 5, 16, 6, 22, 10, 23, 11, 24, 5, 25, 5, 26, 0, 27, 4, 28, 4, 29, 2, 30, 3, 31, 12, 32, 5, 33, 13, 34, 14, 35, 5, 36, 5, 37, 5, 38, 5, 39, 5, 40, 5, 41, 3, 42, 3, 43, 5, 44, 5, 45, 5, 46, 5, 47, 5, 48, 5, 49, 5, 50, 5, 51, 5, 52, 5, 53, 5, 54, 5, 55, 5, 56, 15, 57, 5, 58, 16, 59, 3, 60, 17, 61, 3, 62, 18, 63, 3, 64, 18, 17, 19, 0, 0, 0, 21, 65, -1, 59, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 20, 15, 5, 16, 6, 22, 10, 23, 11, 24, 5, 25, 5, 26, 0, 27, 4, 28, 4, 29, 2, 30, 3, 31, 12, 32, 5, 33, 13, 34, 14, 35, 5, 36, 5, 37, 5, 38, 5, 39, 5, 40, 5, 41, 3, 42, 3, 43, 5, 44, 5, 45, 5, 46, 5, 47, 5, 48, 5, 49, 5, 50, 5, 51, 5, 52, 5, 53, 5, 54, 5, 55, 5, 56, 15, 57, 5, 58, 16, 59, 3, 60, 17, 61, 3, 62, 18, 63, 3, 64, 18, 17, 19, 0, 0, 0, 67, 66, -1, 22, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 21, 15, 5, 16, 6, 68, 22, 69, 23, 70, 24, 71, 0, 72, 4, 73, 5, 17, 19, 0, 3, 0, 74, 74, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 4, 15, 5, 16, 6, 75, 25, 76, 2, 77, 4, 78, 2, 79, 2, 80, 22, 81, 22, 82, 1, 83, 26, 84, 0, 85, 27, 17, 19, 0, 3, 0, 86, 86, -1, 18, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 87, 1, 88, 28, 17, 19, 0, 0, 0, 67, 89, -1, 22, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 29, 15, 5, 16, 6, 68, 22, 69, 30, 70, 24, 71, 0, 72, 4, 73, 5, 17, 19, 0, 6, 0, 74, 74, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 4, 15, 5, 16, 6, 75, 25, 76, 2, 77, 4, 78, 2, 79, 0, 80, 22, 81, 22, 82, 1, 83, 26, 84, 0, 85, 27, 17, 19, 0, 6, 0, 86, 86, -1, 18, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 87, 1, 88, 31, 17, 19, 0, 0, 0, 91, 90, -1, 13, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 92, 22, 93, 5, 94, 32, 95, 3, 96, 33, 97, 34, 98, 35, 17, 19, 0, 0, 0, 99, 99, -1, 23, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 100, 5, 101, 3, 102, 3, 103, 36, 104, 3, 105, 22, 106, 37, 17, 19, 0, 0, 0, 108, 107, -1, 26, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 68, 22, 69, 38, 70, 39, 109, 1, 110, 0, 111, 40, 112, 41, 113, 42, 114, 5, 115, 2, 17, 19, 0, 11, 0, 116, 116, -1, 17, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 117, 38, 17, 19, 0, 0, 0, 1, 118, 43, 1, 14, 44, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="6"> 				11, 0, 120, 119, 2, 0 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

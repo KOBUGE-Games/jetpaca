@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="2" version="0.99" version_name="Godot Engine v0.99.2749-pre-beta">
+	<resource type="ConcavePolygonShape2D" path="local://1">
+		<string name="resource/name"> "" </string>
+		<vector2_array name="segments" len="48"> 			119, 501, 118, 455, 118, 455, 140, 456, 140, 456, 142, 340, 142, 340, 163, 176, 163, 176, 123, 175, 123, 175, 122, 106, 122, 106, 135, 43, 135, 43, 154.309, 10.8068, 154.309, 10.8068, 193, 10, 193, 10, 213, 28, 213, 28, 227, 101, 227, 101, 219, 170, 219, 170, 255, 265, 255, 265, 353, 266, 353, 266, 393, 275, 393, 275, 410, 297, 410, 297, 374, 297, 374, 297, 376, 343, 376, 343, 364, 387, 364, 387, 360, 455, 360, 455, 422, 468, 422, 468, 421, 514, 421, 514, 171, 514, 171, 514, 119, 501 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<dictionary name="_bundled">
+			<string> "names" </string>
+			<string_array  len="41"> "statue", "StaticBody2D", "process/process", "process/fixed_process", "process/input", "process/unhandled_input", "process/mode", "visibility/visible", "visibility/toplevel", "visibility/opacity", "visibility/self_opacity", "visibility/on_top", "visibility/blend_mode", "transform/notify", "transform/pos", "transform/rot", "transform/scale", "shape_count", "shapes/0/shape", "shapes/0/transform", "simulate_motion", "constant_linear_velocity", "constant_angular_velocity", "script/script", "__meta__", "img", "Sprite", "texture", "centered", "offset", "flip_h", "flip_v", "vframes", "hframes", "frame", "modulate", "region", "region_rect", "CollisionPolygon2D", "build_mode", "polygon" </string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 3 </int>
+			<string> "variants" </string>
+			<array  len="16">
+				<bool> False </bool>
+				<int> 0 </int>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<int> 1 </int>
+				<resource  resource_type="ConcavePolygonShape2D" path="local://1">  </resource>
+				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<resource name=""></resource>				<dictionary>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary>
+						<string> "2D" </string>
+						<dictionary>
+							<string> "zoom" </string>
+							<real> 0.735092 </real>
+							<string> "ofs" </string>
+							<vector2> -24.6281, -24.544 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "window_mode" </string>
+							<int> 0 </int>
+							<string> "window_0" </string>
+							<dictionary>
+								<string> "distance" </string>
+								<real> 4 </real>
+								<string> "x_rot" </string>
+								<real> 0.337 </real>
+								<string> "default_light" </string>
+								<bool> True </bool>
+								<string> "y_rot" </string>
+								<real> -0.575 </real>
+								<string> "show_grid" </string>
+								<bool> True </bool>
+								<string> "show_origin" </string>
+								<bool> True </bool>
+								<string> "pos" </string>
+								<vector3> 0, 0, 0 </vector3>
+							</dictionary>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary>
+						<string> "custom_args" </string>
+						<string> "" </string>
+						<string> "custom_exec" </string>
+						<string> "" </string>
+						<string> "debug" </string>
+						<bool> True </bool>
+						<string> "screen_width" </string>
+						<int> 800 </int>
+						<string> "fullscreeen" </string>
+						<bool> False </bool>
+						<string> "screen_height" </string>
+						<int> 600 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<resource  resource_type="Texture" path="res://art/alpaca_statue.png">  </resource>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<vector2_array  len="24"> 					119, 501, 118, 455, 140, 456, 142, 340, 163, 176, 123, 175, 122, 106, 135, 43, 154.309, 10.8068, 193, 10, 213, 28, 227, 101, 219, 170, 255, 265, 353, 266, 393, 275, 410, 297, 374, 297, 376, 343, 364, 387, 360, 455, 422, 468, 421, 514, 171, 514 </vector2_array>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="157"> 				-1, -1, 1, 0, -1, 23, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 17, 7, 18, 8, 19, 9, 20, 0, 21, 4, 22, 5, 23, 10, 24, 11, 0, 0, 0, 26, 25, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 4, 15, 5, 16, 6, 27, 12, 28, 0, 29, 4, 30, 0, 31, 0, 32, 7, 33, 7, 34, 1, 35, 13, 36, 0, 37, 14, 23, 10, 0, 0, 0, 38, 38, -1, 18, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 39, 1, 40, 15, 23, 10, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

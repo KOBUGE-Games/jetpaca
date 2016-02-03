@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="4" version="0.99" version_name="Godot Engine v0.99.2890-pre-beta">
+	<ext_resource path="res://art/mountain_platform.png" type="Texture"></ext_resource>
+	<ext_resource path="res://interaction/elevator.gd" type="GDScript"></ext_resource>
+	<resource type="RectangleShape2D" path="local://1">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 512, 64 </vector2>
+		<resource name="script/script"></resource>
+	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<dictionary name="_bundled">
+			<string> "names" </string>
+			<string_array  len="49">
+				<string> "base" </string>
+				<string> "Node2D" </string>
+				<string> "process/process" </string>
+				<string> "process/fixed_process" </string>
+				<string> "process/input" </string>
+				<string> "process/unhandled_input" </string>
+				<string> "process/mode" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/toplevel" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/notify" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "distance" </string>
+				<string> "max_speed" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "Sprite 2" </string>
+				<string> "Sprite 3" </string>
+				<string> "Sprite 3 2" </string>
+				<string> "static_body" </string>
+				<string> "StaticBody2D" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/1/shape" </string>
+				<string> "shapes/1/transform" </string>
+				<string> "simulate_motion" </string>
+				<string> "constant_linear_velocity" </string>
+				<string> "constant_angular_velocity" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "shape" </string>
+				<string> "CollisionShape2D 2" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 8 </int>
+			<string> "variants" </string>
+			<array  len="26">
+				<bool> False </bool>
+				<int> 0 </int>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<resource  resource_type="GDScript" path="res://interaction/elevator.gd">  </resource>
+				<dictionary>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary>
+						<string> "Script" </string>
+						<dictionary>
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="1">
+								<string> "res://interaction/elevator.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary>
+							<string> "zoom" </string>
+							<real> 0.735092 </real>
+							<string> "ofs" </string>
+							<vector2> -340.897, -292.342 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "window_mode" </string>
+							<int> 0 </int>
+							<string> "window_0" </string>
+							<dictionary>
+								<string> "distance" </string>
+								<real> 4 </real>
+								<string> "default_light" </string>
+								<bool> True </bool>
+								<string> "x_rot" </string>
+								<real> 0.337 </real>
+								<string> "y_rot" </string>
+								<real> -0.575 </real>
+								<string> "show_grid" </string>
+								<bool> True </bool>
+								<string> "show_origin" </string>
+								<bool> True </bool>
+								<string> "pos" </string>
+								<vector3> 0, 0, 0 </vector3>
+							</dictionary>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary>
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<int> 100 </int>
+				<real> 64 </real>
+				<vector2> 256, -200 </vector2>
+				<resource  resource_type="Texture" path="res://art/mountain_platform.png">  </resource>
+				<int> 1 </int>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<resource name=""></resource>				<vector2> -256, -200 </vector2>
+				<vector2> 256, 200 </vector2>
+				<vector2> -256, 200 </vector2>
+				<int> 2 </int>
+				<resource  resource_type="RectangleShape2D" path="local://1">  </resource>
+				<matrix32> 1, -0, 0, 1, 0, 200 </matrix32>
+				<matrix32> 1, -0, 0, 1, 0, -200 </matrix32>
+				<vector2> 0, 200 </vector2>
+				<vector2> 0, -200 </vector2>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="426"> 				-1, -1, 1, 0, -1, 19, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 4, 15, 5, 16, 6, 17, 7, 18, 8, 19, 9, 20, 10, 0, 0, 0, 21, 21, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 11, 15, 5, 16, 6, 22, 12, 23, 2, 24, 4, 25, 0, 26, 0, 27, 13, 28, 13, 29, 1, 30, 14, 31, 0, 32, 15, 17, 16, 0, 0, 0, 21, 33, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 17, 15, 5, 16, 6, 22, 12, 23, 2, 24, 4, 25, 0, 26, 0, 27, 13, 28, 13, 29, 1, 30, 14, 31, 0, 32, 15, 17, 16, 0, 0, 0, 21, 34, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 18, 15, 5, 16, 6, 22, 12, 23, 2, 24, 4, 25, 0, 26, 0, 27, 13, 28, 13, 29, 1, 30, 14, 31, 0, 32, 15, 17, 16, 0, 0, 0, 21, 35, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 19, 15, 5, 16, 6, 22, 12, 23, 2, 24, 4, 25, 0, 26, 0, 27, 13, 28, 13, 29, 1, 30, 14, 31, 0, 32, 15, 17, 16, 0, 0, 0, 37, 36, -1, 24, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 38, 20, 39, 21, 40, 22, 41, 21, 42, 23, 43, 2, 44, 4, 45, 5, 17, 16, 0, 5, 0, 46, 46, -1, 17, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 24, 15, 5, 16, 6, 47, 21, 17, 16, 0, 5, 0, 46, 48, -1, 17, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 25, 15, 5, 16, 6, 47, 21, 17, 16, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

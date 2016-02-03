@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="7" version="0.99" version_name="Godot Engine v0.99.2982-pre-beta">
+	<ext_resource path="res://art/pipistrello.png" type="Texture"></ext_resource>
+	<resource type="Animation" path="local://1">
+		<string name="resource/name"> "idle" </string>
+		<real name="length"> 3 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.25 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "Node2D/pipistrello:frame" </node_path>
+		<int name="tracks/0/interp"> 0 </int>
+		<dictionary name="tracks/0/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<int> 8 </int>
+				<int> 8 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "Node2D/pipistrello:transform/pos" </node_path>
+		<int name="tracks/1/interp"> 2 </int>
+		<dictionary name="tracks/1/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3">
+				<vector2> 0.375539, 0.0264967 </vector2>
+				<vector2> 0.375539, 0.997097 </vector2>
+				<vector2> 0.375539, 0.0264967 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 2, 3 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "Node2D/pipistrello:transform/scale" </node_path>
+		<int name="tracks/2/interp"> 2 </int>
+		<dictionary name="tracks/2/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3">
+				<vector2> 1.01255, 1 </vector2>
+				<vector2> 1.02772, 1.02022 </vector2>
+				<vector2> 1.01255, 1 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 2, 3 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "Node2D/pipistrello:transform/rot" </node_path>
+		<int name="tracks/3/interp"> 2 </int>
+		<dictionary name="tracks/3/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<real> -180 </real>
+				<real> -180 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="Animation" path="local://2">
+		<string name="resource/name"> "hurt" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.25 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "Node2D/pipistrello:frame" </node_path>
+		<int name="tracks/0/interp"> 0 </int>
+		<dictionary name="tracks/0/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<int> 13 </int>
+				<int> 13 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "Node2D/pipistrello:transform/pos" </node_path>
+		<int name="tracks/1/interp"> 2 </int>
+		<dictionary name="tracks/1/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 0.375539, 0.0264967 </vector2>
+				<vector2> 0.375539, 0.0264967 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "Node2D/pipistrello:transform/scale" </node_path>
+		<int name="tracks/2/interp"> 2 </int>
+		<dictionary name="tracks/2/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3">
+				<vector2> 1.05279, 1 </vector2>
+				<vector2> 1.07807, 1.02022 </vector2>
+				<vector2> 1.05279, 1 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 0.5, 1 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "Node2D/pipistrello:transform/rot" </node_path>
+		<int name="tracks/3/interp"> 2 </int>
+		<dictionary name="tracks/3/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3">
+				<real> 3.116241 </real>
+				<real> -5.506522 </real>
+				<real> 3.116241 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 0.5, 1 </real_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="Animation" path="local://3">
+		<string name="resource/name"> "open_wings" </string>
+		<real name="length"> 1.5 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.25 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "Node2D/pipistrello:frame" </node_path>
+		<int name="tracks/0/interp"> 0 </int>
+		<dictionary name="tracks/0/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="6"> 				1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="6">
+				<int> 8 </int>
+				<int> 9 </int>
+				<int> 10 </int>
+				<int> 11 </int>
+				<int> 12 </int>
+				<int> 12 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="6"> 				0, 0.25, 0.5, 0.75, 1, 1.5 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "Node2D/pipistrello:transform/pos" </node_path>
+		<int name="tracks/1/interp"> 2 </int>
+		<dictionary name="tracks/1/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 0.375539, 0.0264967 </vector2>
+				<vector2> 0.375539, 0.0264967 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1.5 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "Node2D/pipistrello:transform/scale" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="4">
+				<vector2> 1.01255, 1 </vector2>
+				<vector2> 1.05279, 1 </vector2>
+				<vector2> 1.05279, 1 </vector2>
+				<vector2> 1.01255, 1 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 0.75, 1, 1.5 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "Node2D/pipistrello:transform/rot" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<real> -180 </real>
+				<real> -180 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1.5 </real_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="Animation" path="local://4">
+		<string name="resource/name"> "fly_cycle" </string>
+		<real name="length"> 1.5 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.25 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "Node2D/pipistrello:frame" </node_path>
+		<int name="tracks/0/interp"> 0 </int>
+		<dictionary name="tracks/0/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="7"> 				1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="7">
+				<int> 0 </int>
+				<int> 1 </int>
+				<int> 2 </int>
+				<int> 3 </int>
+				<int> 4 </int>
+				<int> 5 </int>
+				<int> 0 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="7"> 				0, 0.25, 0.5, 0.75, 1, 1.25, 1.5 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "Node2D/pipistrello:transform/pos" </node_path>
+		<int name="tracks/1/interp"> 2 </int>
+		<dictionary name="tracks/1/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3">
+				<vector2> 0.375539, 0.0264967 </vector2>
+				<vector2> 0.375542, -16.5906 </vector2>
+				<vector2> 0.375539, 0.0264967 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 0.75, 1.5 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "Node2D/pipistrello:transform/scale" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 1.05282, 1.00002 </vector2>
+				<vector2> 1.05282, 1.00002 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1.5 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "Node2D/pipistrello:transform/rot" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<real> 2.698357 </real>
+				<real> 2.698357 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1.5 </real_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="Animation" path="local://5">
+		<string name="resource/name"> "open_wings_to_fly" </string>
+		<real name="length"> 1.25 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.12 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "Node2D/pipistrello:frame" </node_path>
+		<int name="tracks/0/interp"> 0 </int>
+		<dictionary name="tracks/0/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="6"> 				1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="6">
+				<int> 12 </int>
+				<int> 0 </int>
+				<int> 3 </int>
+				<int> 4 </int>
+				<int> 5 </int>
+				<int> 0 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="6"> 				0, 0.6, 0.72, 0.84, 1.08, 1.25 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "Node2D/pipistrello:transform/pos" </node_path>
+		<int name="tracks/1/interp"> 2 </int>
+		<dictionary name="tracks/1/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="8">
+				<vector2> 0.375539, 0.0264967 </vector2>
+				<vector2> 0.375535, 40.1419 </vector2>
+				<vector2> 23.8701, 44.8375 </vector2>
+				<vector2> 27.9174, 32.4832 </vector2>
+				<vector2> 41.7656, 26.7959 </vector2>
+				<vector2> 27.5619, 1.1803 </vector2>
+				<vector2> 17.2864, -10.7231 </vector2>
+				<vector2> 0.375539, 0.0264967 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="8"> 				0, 0.36, 0.6, 0.72, 0.84, 0.96, 1.08, 1.25 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "Node2D/pipistrello:transform/scale" </node_path>
+		<int name="tracks/2/interp"> 2 </int>
+		<dictionary name="tracks/2/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<vector2> 1.01255, 1 </vector2>
+				<vector2> 1.01255, 1 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1.25 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "Node2D/pipistrello:transform/rot" </node_path>
+		<int name="tracks/3/interp"> 2 </int>
+		<dictionary name="tracks/3/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="4">
+				<real> -180 </real>
+				<real> -180 </real>
+				<real> -90 </real>
+				<real> 0 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 0.36, 0.72, 1.25 </real_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<dictionary name="_bundled">
+			<string> "names" </string>
+			<string_array  len="57">
+				<string> "RigidBody2D" </string>
+				<string> "process/process" </string>
+				<string> "process/fixed_process" </string>
+				<string> "process/input" </string>
+				<string> "process/unhandled_input" </string>
+				<string> "process/mode" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/toplevel" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/notify" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "shape_count" </string>
+				<string> "mode" </string>
+				<string> "mass" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "custom_integrator" </string>
+				<string> "continuous_cd" </string>
+				<string> "contacts_reported" </string>
+				<string> "contact_monitor" </string>
+				<string> "active" </string>
+				<string> "can_sleep" </string>
+				<string> "velocity/linear" </string>
+				<string> "velocity/angular" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "Node2D" </string>
+				<string> "pipistrello" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "AnimationPlayer" </string>
+				<string> "playback/process_mode" </string>
+				<string> "playback/default_blend_time" </string>
+				<string> "root/root" </string>
+				<string> "speed" </string>
+				<string> "anims/idle" </string>
+				<string> "anims/hurt" </string>
+				<string> "anims/open_wings" </string>
+				<string> "anims/fly_cycle" </string>
+				<string> "anims/open_wings_to_fly" </string>
+				<string> "blend_times" </string>
+				<string> "autoplay" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 4 </int>
+			<string> "variants" </string>
+			<array  len="28">
+				<bool> False </bool>
+				<int> 0 </int>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<resource name=""></resource>				<dictionary>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary>
+						<string> "Script" </string>
+						<dictionary>
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="3">
+								<string> "res://player/wise_alpaca.gd" </string>
+								<string> "res://enemies/enemy.gd" </string>
+								<string> "res://enemies/sporadic_flower.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary>
+							<string> "zoom" </string>
+							<real> 1 </real>
+							<string> "ofs" </string>
+							<vector2> -607.469, -344.426 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "window_mode" </string>
+							<int> 0 </int>
+							<string> "window_0" </string>
+							<dictionary>
+								<string> "distance" </string>
+								<real> 4 </real>
+								<string> "default_light" </string>
+								<bool> True </bool>
+								<string> "x_rot" </string>
+								<real> 0.337 </real>
+								<string> "y_rot" </string>
+								<real> -0.575 </real>
+								<string> "show_grid" </string>
+								<bool> True </bool>
+								<string> "show_origin" </string>
+								<bool> True </bool>
+								<string> "pos" </string>
+								<vector3> 0, 0, 0 </vector3>
+							</dictionary>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary>
+						<string> "custom_args" </string>
+						<string> "" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<vector2> 0.375541, -12.5107 </vector2>
+				<real> 2.698357 </real>
+				<vector2> 1.05282, 1.00002 </vector2>
+				<resource  resource_type="Texture" path="res://art/pipistrello.png">  </resource>
+				<vector2> -64, -64 </vector2>
+				<int> 2 </int>
+				<int> 8 </int>
+				<int> 1 </int>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<node_path> ".." </node_path>
+				<real> 2 </real>
+				<resource  resource_type="Animation" path="local://1">  </resource>
+				<resource  resource_type="Animation" path="local://2">  </resource>
+				<resource  resource_type="Animation" path="local://3">  </resource>
+				<resource  resource_type="Animation" path="local://4">  </resource>
+				<resource  resource_type="Animation" path="local://5">  </resource>
+				<array  len="0">
+				</array>
+				<string> "" </string>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="208"> 				-1, -1, 0, 0, -1, 30, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 0, 8, 3, 9, 3, 10, 2, 11, 1, 12, 2, 13, 4, 14, 5, 15, 6, 16, 1, 17, 1, 18, 3, 19, 3, 20, 5, 21, 0, 22, 0, 23, 1, 24, 0, 25, 2, 26, 2, 27, 4, 28, 5, 29, 7, 30, 8, 0, 0, 0, 31, 31, -1, 16, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 0, 8, 3, 9, 3, 10, 2, 11, 1, 12, 0, 13, 4, 14, 5, 15, 6, 29, 7, 0, 1, 0, 33, 32, -1, 27, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 0, 8, 3, 9, 3, 10, 2, 11, 1, 12, 0, 13, 9, 14, 10, 15, 11, 34, 12, 35, 0, 36, 13, 37, 0, 38, 0, 39, 14, 40, 15, 41, 16, 42, 17, 43, 0, 44, 18, 29, 7, 0, 0, 0, 45, 45, -1, 17, 1, 2, 2, 0, 3, 0, 4, 0, 5, 1, 46, 16, 47, 5, 48, 19, 49, 20, 50, 21, 51, 22, 52, 23, 53, 24, 54, 25, 55, 26, 56, 27, 29, 7, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

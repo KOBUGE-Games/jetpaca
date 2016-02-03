@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="3" version="0.99" version_name="Godot Engine v0.99.3096-pre-beta">
+	<ext_resource path="res://player/large_fruit.xml" type="PackedScene"></ext_resource>
+	<resource type="CircleShape2D" path="local://0">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<real name="radius"> 28 </real>
+		<resource name="script/script"></resource>
+	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<dictionary name="_bundled">
+			<string> "names" </string>
+			<string_array  len="37">
+				<string> "RigidBody2D" </string>
+				<string> "process/process" </string>
+				<string> "process/fixed_process" </string>
+				<string> "process/input" </string>
+				<string> "process/unhandled_input" </string>
+				<string> "process/mode" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/toplevel" </string>
+				<string> "transform/notify" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "mode" </string>
+				<string> "mass" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "custom_integrator" </string>
+				<string> "continuous_cd" </string>
+				<string> "contacts_reported" </string>
+				<string> "contact_monitor" </string>
+				<string> "active" </string>
+				<string> "can_sleep" </string>
+				<string> "velocity/linear" </string>
+				<string> "velocity/angular" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "shape" </string>
+				<string> "large_fruit" </string>
+				<string> "Area2D" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 3 </int>
+			<string> "variants" </string>
+			<array  len="16">
+				<bool> False </bool>
+				<int> 0 </int>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<int> 1 </int>
+				<resource  resource_type="CircleShape2D" path="local://0">  </resource>
+				<matrix32> 1.67742, -0, 0, 1.64516, 9.53674e-007, 1 </matrix32>
+				<real> 2 </real>
+				<resource name=""></resource>				<dictionary>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary>
+						<string> "Script" </string>
+						<dictionary>
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="5">
+								<string> "res://interaction/bubble.gd" </string>
+								<string> "res://enemies/heatseeker.gd" </string>
+								<string> "res://interaction/elevator.gd" </string>
+								<string> "res://player/checkpoint.gd" </string>
+								<string> "res://enemies/area_trigger.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary>
+							<string> "zoom" </string>
+							<real> 1 </real>
+							<string> "ofs" </string>
+							<vector2> -538.821, -322.36 </vector2>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary>
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<vector2> 9.53674e-007, 1 </vector2>
+				<vector2> 1.67742, 1.64516 </vector2>
+				<resource  resource_type="PackedScene" path="res://player/large_fruit.xml">  </resource>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="119"> 				-1, -1, 0, 0, -1, 32, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 3, 8, 3, 9, 2, 10, 1, 11, 0, 12, 2, 13, 4, 14, 5, 15, 6, 16, 7, 17, 8, 18, 9, 19, 1, 20, 10, 21, 3, 22, 5, 23, 0, 24, 0, 25, 1, 26, 0, 27, 2, 28, 2, 29, 4, 30, 5, 31, 11, 32, 12, 0, 0, 0, 33, 33, -1, 17, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 3, 8, 3, 9, 2, 10, 1, 11, 0, 12, 2, 13, 13, 14, 5, 15, 14, 34, 8, 31, 11, 0, 0, 0, 36, 35, 15, 0, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

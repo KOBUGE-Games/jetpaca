@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="7" version="0.99" version_name="Godot Engine v0.99.3096-pre-beta">
+	<ext_resource path="res://art/mountain_breakable_stone.png" type="Texture"></ext_resource>
+	<ext_resource path="res://interaction/breakable_stone.gd" type="GDScript"></ext_resource>
+	<ext_resource path="res://art/mountain_exploded_rock.png" type="Texture"></ext_resource>
+	<ext_resource path="res://sound/rock_explode.wav" type="Sample"></ext_resource>
+	<resource type="ConvexPolygonShape2D" path="local://1">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="7"> 			96.2306, -15.0583, 97.0451, 14.2639, 2, 21, -99.2509, 15.0784, -98.4364, -11.8003, -44, -20, 35, -21 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="SampleLibrary" path="local://2">
+		<string name="resource/name"> "" </string>
+		<resource name="samples/rock_explode" resource_type="Sample" path="res://sound/rock_explode.wav">  </resource>
+		<resource name="script/script"></resource>
+	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<dictionary name="_bundled">
+			<string> "names" </string>
+			<string_array  len="106">
+				<string> "breakable_stone" </string>
+				<string> "Node2D" </string>
+				<string> "process/process" </string>
+				<string> "process/fixed_process" </string>
+				<string> "process/input" </string>
+				<string> "process/unhandled_input" </string>
+				<string> "process/mode" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/toplevel" </string>
+				<string> "transform/notify" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "body" </string>
+				<string> "RigidBody2D" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "mode" </string>
+				<string> "mass" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "custom_integrator" </string>
+				<string> "continuous_cd" </string>
+				<string> "contacts_reported" </string>
+				<string> "contact_monitor" </string>
+				<string> "active" </string>
+				<string> "can_sleep" </string>
+				<string> "velocity/linear" </string>
+				<string> "velocity/angular" </string>
+				<string> "drop" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "CollisionPolygon2D" </string>
+				<string> "build_mode" </string>
+				<string> "polygon" </string>
+				<string> "particles" </string>
+				<string> "Particles2D" </string>
+				<string> "config/amount" </string>
+				<string> "config/lifetime" </string>
+				<string> "config/preprocess" </string>
+				<string> "config/emit_timeout" </string>
+				<string> "config/emitting" </string>
+				<string> "config/offset" </string>
+				<string> "config/half_extents" </string>
+				<string> "config/local_space" </string>
+				<string> "config/explosiveness" </string>
+				<string> "config/texture" </string>
+				<string> "params/direction" </string>
+				<string> "params/spread" </string>
+				<string> "params/linear_velocity" </string>
+				<string> "params/spin_velocity" </string>
+				<string> "params/gravity_direction" </string>
+				<string> "params/gravity_strength" </string>
+				<string> "params/radial_accel" </string>
+				<string> "params/tangential_accel" </string>
+				<string> "params/damping" </string>
+				<string> "params/initial_size" </string>
+				<string> "params/final_size" </string>
+				<string> "params/hue_variation" </string>
+				<string> "randomness/direction" </string>
+				<string> "randomness/spread" </string>
+				<string> "randomness/linear_velocity" </string>
+				<string> "randomness/spin_velocity" </string>
+				<string> "randomness/gravity_direction" </string>
+				<string> "randomness/gravity_strength" </string>
+				<string> "randomness/radial_accel" </string>
+				<string> "randomness/tangential_accel" </string>
+				<string> "randomness/damping" </string>
+				<string> "randomness/initial_size" </string>
+				<string> "randomness/final_size" </string>
+				<string> "randomness/hue_variation" </string>
+				<string> "color_phases/count" </string>
+				<string> "phase_0/pos" </string>
+				<string> "phase_0/color" </string>
+				<string> "phase_1/pos" </string>
+				<string> "phase_1/color" </string>
+				<string> "phase_2/pos" </string>
+				<string> "phase_2/color" </string>
+				<string> "phase_3/pos" </string>
+				<string> "phase_3/color" </string>
+				<string> "sample" </string>
+				<string> "SamplePlayer2D" </string>
+				<string> "params/volume_db" </string>
+				<string> "params/pitch_scale" </string>
+				<string> "params/attenuation/min_distance" </string>
+				<string> "params/attenuation/max_distance" </string>
+				<string> "params/attenuation/distance_exp" </string>
+				<string> "config/polyphony" </string>
+				<string> "config/samples" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 6 </int>
+			<string> "variants" </string>
+			<array  len="32">
+				<bool> False </bool>
+				<int> 0 </int>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<resource name=""></resource>				<dictionary>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary>
+						<string> "Script" </string>
+						<dictionary>
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="2">
+								<string> "res://interaction/breakable_stone.gd" </string>
+								<string> "res://player/alpaca.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary>
+							<string> "zoom" </string>
+							<real> 1.227738 </real>
+							<string> "ofs" </string>
+							<vector2> -214.854, -207.488 </vector2>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary>
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<int> 1 </int>
+				<resource  resource_type="ConvexPolygonShape2D" path="local://1">  </resource>
+				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
+				<int> 3 </int>
+				<resource  resource_type="GDScript" path="res://interaction/breakable_stone.gd">  </resource>
+				<vector2> 0.8, 1 </vector2>
+				<resource  resource_type="Texture" path="res://art/mountain_breakable_stone.png">  </resource>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<int> 2 </int>
+				<vector2_array  len="7"> 					-98.4364, -11.8003, -44, -20, 35, -21, 96.2306, -15.0583, 97.0451, 14.2639, 2, 21, -99.2509, 15.0784 </vector2_array>
+				<int> 32 </int>
+				<real> 2 </real>
+				<vector2> 128, 0 </vector2>
+				<real> 0.05 </real>
+				<resource  resource_type="Texture" path="res://art/mountain_exploded_rock.png">  </resource>
+				<real> 180 </real>
+				<real> 100 </real>
+				<real> 3 </real>
+				<color> 1, 1, 1, 0 </color>
+				<color> 0, 0, 0, 1 </color>
+				<real> 2048 </real>
+				<resource  resource_type="SampleLibrary" path="local://2">  </resource>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="394"> 				-1, -1, 1, 0, -1, 17, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 0, 13, 0, 14, 4, 15, 5, 16, 6, 17, 7, 18, 8, 0, 0, 0, 20, 19, -1, 32, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 0, 13, 2, 14, 4, 15, 5, 16, 6, 21, 9, 22, 10, 23, 11, 24, 12, 25, 3, 26, 3, 27, 5, 28, 0, 29, 0, 30, 1, 31, 0, 32, 2, 33, 0, 34, 4, 35, 5, 17, 13, 36, 1, 0, 1, 0, 37, 37, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 0, 13, 0, 14, 4, 15, 5, 16, 14, 38, 15, 39, 2, 40, 4, 41, 0, 42, 0, 43, 9, 44, 9, 45, 1, 46, 16, 47, 0, 48, 17, 17, 7, 0, 1, 0, 49, 49, -1, 18, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 0, 13, 2, 14, 4, 15, 5, 16, 6, 50, 18, 51, 19, 17, 7, 0, 0, 0, 53, 52, -1, 59, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 0, 13, 0, 14, 4, 15, 5, 16, 6, 54, 20, 55, 21, 56, 5, 57, 21, 58, 0, 59, 4, 60, 22, 61, 2, 62, 23, 63, 24, 64, 5, 65, 25, 66, 26, 67, 27, 68, 5, 69, 26, 70, 5, 71, 5, 72, 5, 73, 3, 74, 3, 75, 5, 76, 5, 77, 5, 78, 5, 79, 3, 80, 5, 81, 5, 82, 5, 83, 5, 84, 5, 85, 5, 86, 5, 87, 5, 88, 18, 89, 5, 90, 16, 91, 3, 92, 28, 93, 3, 94, 29, 95, 3, 96, 29, 17, 7, 0, 0, 0, 98, 97, -1, 23, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 0, 13, 2, 14, 4, 15, 5, 16, 6, 99, 5, 100, 3, 101, 3, 102, 30, 103, 3, 104, 9, 105, 31, 17, 7, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="7" version="0.99" version_name="Godot Engine v0.99.2829-pre-beta">
+	<ext_resource path="res://player/checkpoint.gd" type="GDScript"></ext_resource>
+	<ext_resource path="res://art/spark_particle2.png" type="Texture"></ext_resource>
+	<ext_resource path="res://art/checkpoint.png" type="Texture"></ext_resource>
+	<ext_resource path="res://music/checkpoint.mpc" type="AudioStreamMPC"></ext_resource>
+	<resource type="CircleShape2D" path="local://1">
+		<string name="resource/name"> "" </string>
+		<real name="radius"> 100 </real>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="Animation" path="local://2">
+		<string name="resource/name"> "checked" </string>
+		<real name="length"> 3 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "sprite 2:visibility/self_opacity" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<real> 0 </real>
+				<real> 1 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2.97 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "sprite 2:visibility/visible" </node_path>
+		<int name="tracks/1/interp"> 1 </int>
+		<dictionary name="tracks/1/keys">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1">
+				<bool> True </bool>
+			</array>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "particles:config/emitting" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<bool> True </bool>
+				<bool> False </bool>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2.97 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "particles:params/radial_accel" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<real> 0 </real>
+				<real> 128 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2.2 </real_array>
+		</dictionary>
+		<string name="tracks/4/type"> "value" </string>
+		<node_path name="tracks/4/path"> "particles:params/tangential_accel" </node_path>
+		<int name="tracks/4/interp"> 1 </int>
+		<dictionary name="tracks/4/keys">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2">
+				<real> 0 </real>
+				<real> 55 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2.21 </real_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<dictionary name="_bundled">
+			<string> "names" </string>
+			<string_array  len="109">
+				<string> "checkpoint" </string>
+				<string> "Area2D" </string>
+				<string> "process/process" </string>
+				<string> "process/fixed_process" </string>
+				<string> "process/input" </string>
+				<string> "process/unhandled_input" </string>
+				<string> "process/mode" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/toplevel" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/notify" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "space_override" </string>
+				<string> "gravity_point" </string>
+				<string> "gravity_vec" </string>
+				<string> "gravity" </string>
+				<string> "density" </string>
+				<string> "priority" </string>
+				<string> "monitoring" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "collision" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "shape" </string>
+				<string> "sprite" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "sprite 2" </string>
+				<string> "particles" </string>
+				<string> "Particles2D" </string>
+				<string> "config/amount" </string>
+				<string> "config/lifetime" </string>
+				<string> "config/preprocess" </string>
+				<string> "config/emit_timeout" </string>
+				<string> "config/emitting" </string>
+				<string> "config/offset" </string>
+				<string> "config/half_extents" </string>
+				<string> "config/local_space" </string>
+				<string> "config/explosiveness" </string>
+				<string> "config/texture" </string>
+				<string> "params/direction" </string>
+				<string> "params/spread" </string>
+				<string> "params/linear_velocity" </string>
+				<string> "params/spin_velocity" </string>
+				<string> "params/gravity_direction" </string>
+				<string> "params/gravity_strength" </string>
+				<string> "params/radial_accel" </string>
+				<string> "params/tangential_accel" </string>
+				<string> "params/damping" </string>
+				<string> "params/initial_size" </string>
+				<string> "params/final_size" </string>
+				<string> "params/hue_variation" </string>
+				<string> "randomness/direction" </string>
+				<string> "randomness/spread" </string>
+				<string> "randomness/linear_velocity" </string>
+				<string> "randomness/spin_velocity" </string>
+				<string> "randomness/gravity_direction" </string>
+				<string> "randomness/gravity_strength" </string>
+				<string> "randomness/radial_accel" </string>
+				<string> "randomness/tangential_accel" </string>
+				<string> "randomness/damping" </string>
+				<string> "randomness/initial_size" </string>
+				<string> "randomness/final_size" </string>
+				<string> "randomness/hue_variation" </string>
+				<string> "color_phases/count" </string>
+				<string> "phase_0/pos" </string>
+				<string> "phase_0/color" </string>
+				<string> "phase_1/pos" </string>
+				<string> "phase_1/color" </string>
+				<string> "phase_2/pos" </string>
+				<string> "phase_2/color" </string>
+				<string> "phase_3/pos" </string>
+				<string> "phase_3/color" </string>
+				<string> "anim" </string>
+				<string> "AnimationPlayer" </string>
+				<string> "playback/process_mode" </string>
+				<string> "playback/default_blend_time" </string>
+				<string> "root/root" </string>
+				<string> "speed" </string>
+				<string> "anims/checked" </string>
+				<string> "blend_times" </string>
+				<string> "autoplay" </string>
+				<string> "tune" </string>
+				<string> "StreamPlayer" </string>
+				<string> "stream/stream" </string>
+				<string> "stream/loop" </string>
+				<string> "stream/volume_db" </string>
+				<string> "stream/autoplay" </string>
+				<string> "stream/paused" </string>
+				<string> "_on_body_enter" </string>
+				<string> "body_enter" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 1 </int>
+			<string> "node_count" </string>
+			<int> 7 </int>
+			<string> "variants" </string>
+			<array  len="44">
+				<bool> False </bool>
+				<int> 0 </int>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<int> 1 </int>
+				<resource  resource_type="CircleShape2D" path="local://1">  </resource>
+				<matrix32> 1, -0, 0, 1, -2.20529, -36.0195 </matrix32>
+				<vector2> 0, 1 </vector2>
+				<real> 98 </real>
+				<real> 0.1 </real>
+				<resource  resource_type="GDScript" path="res://player/checkpoint.gd">  </resource>
+				<dictionary>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary>
+						<string> "Script" </string>
+						<dictionary>
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="1">
+								<string> "res://player/checkpoint.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary>
+							<string> "zoom" </string>
+							<real> 1.360374 </real>
+							<string> "ofs" </string>
+							<vector2> -412.144, -327.344 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "window_mode" </string>
+							<int> 0 </int>
+							<string> "window_0" </string>
+							<dictionary>
+								<string> "distance" </string>
+								<real> 4 </real>
+								<string> "default_light" </string>
+								<bool> True </bool>
+								<string> "x_rot" </string>
+								<real> 0.337 </real>
+								<string> "y_rot" </string>
+								<real> -0.575 </real>
+								<string> "show_grid" </string>
+								<bool> True </bool>
+								<string> "show_origin" </string>
+								<bool> True </bool>
+								<string> "pos" </string>
+								<vector3> 0, 0, 0 </vector3>
+							</dictionary>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary>
+						<string> "custom_args" </string>
+						<string> "" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<vector2> -2.20529, -36.0195 </vector2>
+				<resource name=""></resource>				<vector2> 0, -64 </vector2>
+				<resource  resource_type="Texture" path="res://art/checkpoint.png">  </resource>
+				<int> 2 </int>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<vector2> -1.47018, -27.1984 </vector2>
+				<int> 32 </int>
+				<vector2> 66, 90 </vector2>
+				<resource  resource_type="Texture" path="res://art/spark_particle2.png">  </resource>
+				<real> 180 </real>
+				<real> 42.666668 </real>
+				<real> 4 </real>
+				<real> 128 </real>
+				<real> 55 </real>
+				<real> 24.242424 </real>
+				<real> 2 </real>
+				<color> 1, 1, 1, 0 </color>
+				<real> 0.3 </real>
+				<color> 0.388235, 1, 0.681416, 1 </color>
+				<color> 0, 0.937255, 1, 1 </color>
+				<color> 0, 0, 0, 1 </color>
+				<node_path> ".." </node_path>
+				<real> 1.5 </real>
+				<resource  resource_type="Animation" path="local://2">  </resource>
+				<array  len="0">
+				</array>
+				<string> "" </string>
+				<resource  resource_type="AudioStreamMPC" path="res://music/checkpoint.mpc">  </resource>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="411"> 				-1, -1, 1, 0, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 17, 7, 18, 8, 19, 9, 20, 1, 21, 0, 22, 10, 23, 11, 24, 12, 25, 5, 26, 2, 27, 13, 28, 14, 0, 0, 0, 30, 29, -1, 17, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 15, 15, 5, 16, 6, 31, 8, 27, 16, 0, 0, 0, 33, 32, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 17, 15, 5, 16, 6, 34, 18, 35, 2, 36, 4, 37, 0, 38, 0, 39, 7, 40, 19, 41, 1, 42, 20, 43, 0, 44, 21, 27, 16, 0, 0, 0, 33, 45, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 0, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 17, 15, 5, 16, 6, 34, 18, 35, 2, 36, 4, 37, 0, 38, 0, 39, 7, 40, 19, 41, 7, 42, 20, 43, 0, 44, 21, 27, 16, 0, 0, 0, 47, 46, -1, 59, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 22, 15, 5, 16, 6, 48, 23, 49, 3, 50, 5, 51, 5, 52, 0, 53, 4, 54, 24, 55, 0, 56, 3, 57, 25, 58, 5, 59, 26, 60, 27, 61, 28, 62, 5, 63, 3, 64, 29, 65, 30, 66, 31, 67, 32, 68, 5, 69, 5, 70, 5, 71, 5, 72, 5, 73, 3, 74, 5, 75, 5, 76, 5, 77, 3, 78, 5, 79, 5, 80, 5, 81, 5, 82, 19, 83, 5, 84, 33, 85, 34, 86, 35, 87, 3, 88, 36, 89, 3, 90, 37, 27, 16, 0, 0, 0, 92, 91, -1, 13, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 93, 7, 94, 5, 95, 38, 96, 39, 97, 40, 98, 41, 99, 42, 27, 16, 0, 0, 0, 101, 100, -1, 11, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 102, 43, 103, 0, 104, 5, 105, 0, 106, 0, 27, 16, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="6"> 				0, 0, 108, 107, 2, 0 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

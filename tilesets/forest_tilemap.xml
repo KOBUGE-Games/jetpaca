@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="TileSet" subresource_count="22" version="0.99" version_name="Godot Engine v0.99.2976-pre-beta">
+	<ext_resource path="res://art/forest_tiles.png" type="Texture"></ext_resource>
+	<ext_resource path="res://art/tree_top.png" type="Texture"></ext_resource>
+	<ext_resource path="res://art/tree_middle_pass.png" type="Texture"></ext_resource>
+	<resource type="ConvexPolygonShape2D" path="local://1">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			0, 128, 0, 48, 64, 48, 64, 128 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://2">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			64, 128, 0, 128, 0, 48, 64, 48 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://3">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="5"> 			0, 192, 0, 48, 80, 64, 128, 96, 128, 192 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://4">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			64, 192, 0, 192, 0, 32, 64, 96 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://5">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			0, 32, 128, 32, 128, 128, 0, 128 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://6">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			64, 0, 64, 64, 0, 64, 0, 0 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConcavePolygonShape2D" path="local://7">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="segments" len="14"> 			0, 128, 128, 128, 128, 128, 128, 48, 128, 48, 80, 48, 80, 48, 64, 32, 64, 32, 64, 0, 64, 0, 0, 0, 0, 0, 0, 128 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://8">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			0, 48, 128, 112, 128, 128, 0, 128 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://9">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			64, 64, 0, 64, 0, 48, 64, 48 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://10">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			0, 128, 0, 0, 96, 0, 96, 128 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://11">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="6"> 			0, 0, 96, 0, 128, 48, 128, 112, 96, 128, 0, 128 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://12">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			0, 32, 0, 0, 96, 0, 96, 16 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://13">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			96, 16, 96, 64, 0, 64, 0, 32 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://14">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			0, 112, 0, 48, 128, 16, 128, 48 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConcavePolygonShape2D" path="local://15">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="segments" len="16"> 			0, 16, 48, 32, 48, 32, 80, 64, 80, 64, 128, 80, 128, 80, 128, 112, 128, 112, 80, 96, 80, 96, 32, 64, 32, 64, 0, 48, 0, 48, 0, 16 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://16">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="5"> 			0, 16, 62.9757, 11.1615, 128, 16, 128, 48, 0, 48 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConcavePolygonShape2D" path="local://17">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="segments" len="8"> 			126.337, 28.6486, 101.79, 8.0826, 101.79, 8.0826, 0, 16, 0, 16, 0, 48, 0, 48, 126.337, 28.6486 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="ConcavePolygonShape2D" path="local://18">
+		<string name="resource/name"> "" </string>
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="segments" len="30"> 			359.168, 255.026, 355.168, 195.026, 355.168, 195.026, 330.168, 161.026, 330.168, 161.026, 244.168, 177.026, 244.168, 177.026, 205.168, 178.026, 205.168, 178.026, 160.168, 144.026, 160.168, 144.026, 89.1683, 90.0255, 89.1683, 90.0255, 1.16824, 4.02548, 1.16824, 4.02548, 987.168, 0.0254822, 987.168, 0.0254822, 911.168, 40.0255, 911.168, 40.0255, 864.168, 102.026, 864.168, 102.026, 779.168, 133.026, 779.168, 133.026, 663.168, 110.026, 663.168, 110.026, 598.168, 170.026, 598.168, 170.026, 587.168, 256.026, 587.168, 256.026, 359.168, 255.026 </vector2_array>
+		<resource name="script/script"></resource>
+	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<string name="0/name"> "floor1" </string>
+		<resource name="0/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="0/offset"> 256, 256 </vector2>
+		<rect2 name="0/region"> 0, 0, 64, 128 </rect2>
+		<resource name="0/shape" resource_type="ConvexPolygonShape2D" path="local://1">  </resource>
+		<string name="1/name"> "floor 2" </string>
+		<resource name="1/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="1/offset"> 256, 256 </vector2>
+		<rect2 name="1/region"> 64, 0, 64, 128 </rect2>
+		<resource name="1/shape" resource_type="ConvexPolygonShape2D" path="local://2">  </resource>
+		<string name="2/name"> "slope_begin" </string>
+		<resource name="2/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="2/offset"> 256, 256 </vector2>
+		<rect2 name="2/region"> 128, 0, 128, 192 </rect2>
+		<resource name="2/shape" resource_type="ConvexPolygonShape2D" path="local://3">  </resource>
+		<string name="3/name"> "slope" </string>
+		<resource name="3/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="3/offset"> 256, 256 </vector2>
+		<rect2 name="3/region"> 256, 64, 64, 192 </rect2>
+		<resource name="3/shape" resource_type="ConvexPolygonShape2D" path="local://4">  </resource>
+		<string name="4/name"> "corner" </string>
+		<resource name="4/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="4/offset"> 256, 256 </vector2>
+		<rect2 name="4/region"> 320, 128, 192, 128 </rect2>
+		<resource name="4/shape" resource_type="ConvexPolygonShape2D" path="local://5">  </resource>
+		<string name="5/name"> "wall" </string>
+		<resource name="5/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="5/offset"> 256, 256 </vector2>
+		<rect2 name="5/region"> 384, 256, 128, 64 </rect2>
+		<resource name="5/shape" resource_type="ConvexPolygonShape2D" path="local://6">  </resource>
+		<string name="6/name"> "lowcorner" </string>
+		<resource name="6/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="6/offset"> 256, 256 </vector2>
+		<rect2 name="6/region"> 384, 320, 128, 128 </rect2>
+		<resource name="6/shape" resource_type="ConcavePolygonShape2D" path="local://7">  </resource>
+		<string name="7/name"> "uw_begin" </string>
+		<resource name="7/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="7/offset"> 0, 0 </vector2>
+		<rect2 name="7/region"> 320, 0, 128, 128 </rect2>
+		<resource name="7/shape" resource_type="ConvexPolygonShape2D" path="local://8">  </resource>
+		<string name="8/name"> "uw" </string>
+		<resource name="8/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="8/offset"> 0, 0 </vector2>
+		<rect2 name="8/region"> 448, 64, 64, 64 </rect2>
+		<resource name="8/shape" resource_type="ConvexPolygonShape2D" path="local://9">  </resource>
+		<string name="9/name"> "tree" </string>
+		<resource name="9/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="9/offset"> 0, 0 </vector2>
+		<rect2 name="9/region"> 0, 384, 128, 128 </rect2>
+		<resource name="9/shape" resource_type="ConvexPolygonShape2D" path="local://10">  </resource>
+		<string name="10/name"> "tree 2" </string>
+		<resource name="10/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="10/offset"> 0, 0 </vector2>
+		<rect2 name="10/region"> 128, 384, 128, 128 </rect2>
+		<resource name="10/shape" resource_type="ConvexPolygonShape2D" path="local://10">  </resource>
+		<string name="11/name"> "treeb" </string>
+		<resource name="11/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="11/offset"> 0, 0 </vector2>
+		<rect2 name="11/region"> 0, 256, 128, 128 </rect2>
+		<resource name="11/shape" resource_type="ConvexPolygonShape2D" path="local://11">  </resource>
+		<string name="12/name"> "treepass1" </string>
+		<resource name="12/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="12/offset"> 0, 0 </vector2>
+		<rect2 name="12/region"> 0, 128, 128, 64 </rect2>
+		<resource name="12/shape" resource_type="ConvexPolygonShape2D" path="local://12">  </resource>
+		<string name="13/name"> "treepass2" </string>
+		<resource name="13/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="13/offset"> 0, 0 </vector2>
+		<rect2 name="13/region"> 0, 192, 128, 64 </rect2>
+		<resource name="13/shape" resource_type="ConvexPolygonShape2D" path="local://13">  </resource>
+		<string name="14/name"> "branchb" </string>
+		<resource name="14/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="14/offset"> 0, 0 </vector2>
+		<rect2 name="14/region"> 128, 256, 128, 128 </rect2>
+		<resource name="14/shape" resource_type="ConvexPolygonShape2D" path="local://14">  </resource>
+		<string name="15/name"> "branchss" </string>
+		<resource name="15/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="15/offset"> 0, 0 </vector2>
+		<rect2 name="15/region"> 256, 384, 128, 128 </rect2>
+		<resource name="15/shape" resource_type="ConcavePolygonShape2D" path="local://15">  </resource>
+		<string name="16/name"> "branchss2" </string>
+		<resource name="16/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="16/offset"> 0, 0 </vector2>
+		<rect2 name="16/region"> 128, 192, 128, 64 </rect2>
+		<resource name="16/shape" resource_type="ConvexPolygonShape2D" path="local://16">  </resource>
+		<string name="17/name"> "branchend" </string>
+		<resource name="17/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="17/offset"> 0, 0 </vector2>
+		<rect2 name="17/region"> 384, 448, 128, 64 </rect2>
+		<resource name="17/shape" resource_type="ConcavePolygonShape2D" path="local://17">  </resource>
+		<string name="18/name"> "black" </string>
+		<resource name="18/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="18/offset"> 0, 0 </vector2>
+		<rect2 name="18/region"> 256, 256, 128, 128 </rect2>
+		<resource name="18/shape"></resource>		<string name="19/name"> "blacksmall" </string>
+		<resource name="19/texture" resource_type="Texture" path="res://art/forest_tiles.png">  </resource>
+		<vector2 name="19/offset"> 0, 0 </vector2>
+		<rect2 name="19/region"> 256, 256, 64, 64 </rect2>
+		<resource name="19/shape"></resource>		<string name="20/name"> "treetop" </string>
+		<resource name="20/texture" resource_type="Texture" path="res://art/tree_top.png">  </resource>
+		<vector2 name="20/offset"> 0, 0 </vector2>
+		<rect2 name="20/region"> 0, 0, 0, 0 </rect2>
+		<resource name="20/shape" resource_type="ConcavePolygonShape2D" path="local://18">  </resource>
+		<string name="21/name"> "middle_tree" </string>
+		<resource name="21/texture" resource_type="Texture" path="res://art/tree_middle_pass.png">  </resource>
+		<vector2 name="21/offset"> 0, 0 </vector2>
+		<rect2 name="21/region"> 0, 0, 128, 64 </rect2>
+		<resource name="21/shape"></resource>		<string name="22/name"> "middle_low_cut" </string>
+		<resource name="22/texture" resource_type="Texture" path="res://art/tree_middle_pass.png">  </resource>
+		<vector2 name="22/offset"> 0, 0 </vector2>
+		<rect2 name="22/region"> 0, 64, 128, 64 </rect2>
+		<resource name="22/shape"></resource>		<string name="23/name"> "middle_up_cut" </string>
+		<resource name="23/texture" resource_type="Texture" path="res://art/tree_middle_pass.png">  </resource>
+		<vector2 name="23/offset"> 0, 0 </vector2>
+		<rect2 name="23/region"> 0, 128, 128, 64 </rect2>
+		<resource name="23/shape"></resource>		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

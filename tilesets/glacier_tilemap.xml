@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="TileSet" version="0.99" version_name="Godot Engine v0.99.2711-pre-beta">
+	<resource type="ConvexPolygonShape2D" path="local://1">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="4"> 			0, 128, 0, 24, 64, 24, 64, 128 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://2">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="4"> 			0, 128, 0, 24, 64, 24, 64, 128 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://3">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="5"> 			128, 192, 0, 192, 0, 24, 64, 48, 128, 88 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConcavePolygonShape2D" path="local://4">		<string name="resource/name"> "" </string>
+		<vector2_array name="segments" len="8"> 			0, 24, 64, 88, 64, 88, 64, 192, 64, 192, 0, 192, 0, 192, 0, 24 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConcavePolygonShape2D" path="local://5">		<string name="resource/name"> "" </string>
+		<vector2_array name="segments" len="10"> 			0, 24, 64, 72, 64, 72, 128, 88, 128, 88, 128, 192, 128, 192, 0, 192, 0, 192, 0, 24 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConcavePolygonShape2D" path="local://6">		<string name="resource/name"> "" </string>
+		<vector2_array name="segments" len="8"> 			0, 24, 128, 24, 128, 24, 96, 128, 96, 128, 0, 128, 0, 128, 0, 24 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConcavePolygonShape2D" path="local://7">		<string name="resource/name"> "" </string>
+		<vector2_array name="segments" len="8"> 			0, 0, 96, 0, 96, 0, 96, 128, 96, 128, 0, 128, 0, 128, 0, 0 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://8">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="4"> 			0, 32, 0, 0, 96, 0, 72, 32 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://9">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="4"> 			0, 32, 0, 0, 128, 0, 128, 32 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://10">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="4"> 			64, 96, 0, 32, 0, 0, 64, 0 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://11">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="5"> 			0, 64, 0, 0, 128, 0, 128, 32, 96, 64 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://12">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="4"> 			0, 128, 0, 0, 96, 24, 128, 128 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://13">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="6"> 			0, 128, 0, 0, 96, 0, 128, 16, 128, 40, 96, 128 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConcavePolygonShape2D" path="local://14">		<string name="resource/name"> "" </string>
+		<vector2_array name="segments" len="6"> 			0, 16, 16, 16, 16, 16, 0, 40, 0, 40, 0, 16 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://15">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="4"> 			0, 40, 0, 16, 128, 16, 128, 40 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://16">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="5"> 			48, 24, 64, 56, 64, 192, 0, 192, 0, 24 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://17">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="4"> 			0, 192, 0, 56, 128, 56, 128, 192 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://18">		<string name="resource/name"> "" </string>
+		<vector2_array name="points" len="4"> 			0, 192, 0, 56, 64, 56, 64, 192 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<string name="0/name"> "Ground 1" </string>
+		<resource name="0/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="0/offset"> 0, 0 </vector2>
+		<rect2 name="0/region"> 0, 192, 64, 128 </rect2>
+		<resource name="0/shape" resource_type="ConvexPolygonShape2D" path="local://1">  </resource>
+		<string name="1/name"> "Ground 2" </string>
+		<resource name="1/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="1/offset"> 0, 0 </vector2>
+		<rect2 name="1/region"> 64, 192, 64, 128 </rect2>
+		<resource name="1/shape" resource_type="ConvexPolygonShape2D" path="local://2">  </resource>
+		<string name="2/name"> "Ramp Begin" </string>
+		<resource name="2/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="2/offset"> 0, 0 </vector2>
+		<rect2 name="2/region"> 64, 0, 128, 192 </rect2>
+		<resource name="2/shape" resource_type="ConvexPolygonShape2D" path="local://3">  </resource>
+		<string name="3/name"> "Ramp" </string>
+		<resource name="3/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="3/offset"> 0, 0 </vector2>
+		<rect2 name="3/region"> 192, 64, 64, 192 </rect2>
+		<resource name="3/shape" resource_type="ConcavePolygonShape2D" path="local://4">  </resource>
+		<string name="4/name"> "Ramp End" </string>
+		<resource name="4/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="4/offset"> 0, 0 </vector2>
+		<rect2 name="4/region"> 256, 128, 128, 192 </rect2>
+		<resource name="4/shape" resource_type="ConcavePolygonShape2D" path="local://5">  </resource>
+		<string name="5/name"> "Edge" </string>
+		<resource name="5/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="5/offset"> 0, 0 </vector2>
+		<rect2 name="5/region"> 384, 192, 128, 128 </rect2>
+		<resource name="5/shape" resource_type="ConcavePolygonShape2D" path="local://6">  </resource>
+		<string name="6/name"> "Wall" </string>
+		<resource name="6/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="6/offset"> 0, 0 </vector2>
+		<rect2 name="6/region"> 384, 320, 128, 128 </rect2>
+		<resource name="6/shape" resource_type="ConcavePolygonShape2D" path="local://7">  </resource>
+		<string name="7/name"> "Ceiling2Wall" </string>
+		<resource name="7/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="7/offset"> 0, 0 </vector2>
+		<rect2 name="7/region"> 384, 448, 128, 64 </rect2>
+		<resource name="7/shape" resource_type="ConvexPolygonShape2D" path="local://8">  </resource>
+		<string name="8/name"> "Ceiling" </string>
+		<resource name="8/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="8/offset"> 0, 0 </vector2>
+		<rect2 name="8/region"> 384, 128, 128, 64 </rect2>
+		<resource name="8/shape" resource_type="ConvexPolygonShape2D" path="local://9">  </resource>
+		<string name="9/name"> "CeilingRamp" </string>
+		<resource name="9/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="9/offset"> 0, 0 </vector2>
+		<rect2 name="9/region"> 0, 64, 64, 128 </rect2>
+		<resource name="9/shape" resource_type="ConvexPolygonShape2D" path="local://10">  </resource>
+		<string name="10/name"> "Wall2Ceiling" </string>
+		<resource name="10/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="10/offset"> 0, 0 </vector2>
+		<rect2 name="10/region"> 256, 320, 128, 64 </rect2>
+		<resource name="10/shape" resource_type="ConvexPolygonShape2D" path="local://11">  </resource>
+		<string name="11/name"> "Ground2Wall" </string>
+		<resource name="11/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="11/offset"> 0, 0 </vector2>
+		<rect2 name="11/region"> 384, 0, 128, 128 </rect2>
+		<resource name="11/shape" resource_type="ConvexPolygonShape2D" path="local://12">  </resource>
+		<string name="12/name"> "Wall2Bridge" </string>
+		<resource name="12/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="12/offset"> 0, 0 </vector2>
+		<rect2 name="12/region"> 256, 0, 128, 128 </rect2>
+		<resource name="12/shape" resource_type="ConvexPolygonShape2D" path="local://13">  </resource>
+		<string name="13/name"> "Peak" </string>
+		<resource name="13/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="13/offset"> 0, 0 </vector2>
+		<rect2 name="13/region"> 192, 0, 64, 64 </rect2>
+		<resource name="13/shape" resource_type="ConcavePolygonShape2D" path="local://14">  </resource>
+		<string name="14/name"> "Bridge" </string>
+		<resource name="14/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="14/offset"> 0, 0 </vector2>
+		<rect2 name="14/region"> 128, 256, 128, 64 </rect2>
+		<resource name="14/shape" resource_type="ConvexPolygonShape2D" path="local://15">  </resource>
+		<string name="15/name"> "StepUp" </string>
+		<resource name="15/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="15/offset"> 0, 0 </vector2>
+		<rect2 name="15/region"> 0, 320, 64, 192 </rect2>
+		<resource name="15/shape" resource_type="ConvexPolygonShape2D" path="local://16">  </resource>
+		<string name="16/name"> "Step" </string>
+		<resource name="16/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="16/offset"> 0, 0 </vector2>
+		<rect2 name="16/region"> 64, 320, 128, 192 </rect2>
+		<resource name="16/shape" resource_type="ConvexPolygonShape2D" path="local://17">  </resource>
+		<string name="17/name"> "StepDown" </string>
+		<resource name="17/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="17/offset"> 0, 0 </vector2>
+		<rect2 name="17/region"> 192, 320, 64, 192 </rect2>
+		<resource name="17/shape" resource_type="ConvexPolygonShape2D" path="local://18">  </resource>
+		<string name="18/name"> "DarkDetail 1" </string>
+		<resource name="18/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="18/offset"> 0, 0 </vector2>
+		<rect2 name="18/region"> 0, 0, 64, 64 </rect2>
+<resource name="18/shape"></resource>		<string name="19/name"> "DarkDetail 2" </string>
+		<resource name="19/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="19/offset"> 0, 0 </vector2>
+		<rect2 name="19/region"> 128, 192, 64, 64 </rect2>
+<resource name="19/shape"></resource>		<string name="20/name"> "DarkBig" </string>
+		<resource name="20/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="20/offset"> 0, 0 </vector2>
+		<rect2 name="20/region"> 256, 384, 128, 128 </rect2>
+<resource name="20/shape"></resource>		<string name="21/name"> "Dark" </string>
+		<resource name="21/texture" resource_type="Texture" path="res://art/glacier_tileset.png">  </resource>
+		<vector2 name="21/offset"> 0, 0 </vector2>
+		<rect2 name="21/region"> 256, 384, 64, 64 </rect2>
+<resource name="21/shape"></resource><resource name="script/script"></resource>	</main_resource>
+</resource_file>

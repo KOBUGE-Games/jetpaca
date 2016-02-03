@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="9" version="0.99" version_name="Godot Engine v0.99.3556-pre-beta">
+	<ext_resource path="res://art/mountain_fg.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/mountain_bg_layer1.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/mountain_clouds_layer3.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/mountain_clouds_layer1.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/mountain_sky.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/mountain_bg_layer3.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/mountain_bg_layer2.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/mountain_clouds_layer2.*" type="ImageTexture"></ext_resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<dictionary name="_bundled" shared="false">
+			<string> "names" </string>
+			<string_array  len="49">
+				<string> "mountain_parallax" </string>
+				<string> "ParallaxBackground" </string>
+				<string> "process/process" </string>
+				<string> "process/fixed_process" </string>
+				<string> "process/input" </string>
+				<string> "process/unhandled_input" </string>
+				<string> "process/pause_mode" </string>
+				<string> "layer" </string>
+				<string> "offset" </string>
+				<string> "rotation" </string>
+				<string> "scale" </string>
+				<string> "scroll/offset" </string>
+				<string> "scroll/base_offset" </string>
+				<string> "scroll/base_scale" </string>
+				<string> "scroll/limit_begin" </string>
+				<string> "scroll/limit_end" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "sky" </string>
+				<string> "ParallaxLayer" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "motion/scale" </string>
+				<string> "motion/mirroring" </string>
+				<string> "sprite" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "bg_layer" </string>
+				<string> "bg_layer 2" </string>
+				<string> "bg_layer 3" </string>
+				<string> "bg_layer 4" </string>
+				<string> "cloud 3" </string>
+				<string> "cloud 2" </string>
+				<string> "cloud" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 17 </int>
+			<string> "variants" </string>
+			<array  len="39" shared="true">
+				<bool> False </bool>
+				<int> 0 </int>
+				<int> -1 </int>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<vector2> 0.3, 0.1 </vector2>
+				<resource name=""></resource>				<dictionary  shared="false">
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "zoom" </string>
+							<real> 0.26352 </real>
+							<string> "ofs" </string>
+							<vector2> -727.668, -377.673 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "viewports" </string>
+							<array  len="4" shared="true">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+							</array>
+							<string> "viewport_mode" </string>
+							<int> 1 </int>
+							<string> "default_light" </string>
+							<bool> True </bool>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 1280, 0 </vector2>
+				<vector2> 10, 8.01 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/mountain_sky.*">  </resource>
+				<int> 1 </int>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<vector2> 0.1, 1 </vector2>
+				<vector2> 0, 512 </vector2>
+				<vector2> 5, 4.01 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/mountain_bg_layer3.*">  </resource>
+				<vector2> 0.2, 1 </vector2>
+				<vector2> 0, 600 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/mountain_bg_layer2.*">  </resource>
+				<vector2> 0.4, 1 </vector2>
+				<vector2> 0, 400 </vector2>
+				<vector2> 2.5, 2.01 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/mountain_bg_layer1.*">  </resource>
+				<vector2> 0.6, 1 </vector2>
+				<vector2> 0, 770 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/mountain_fg.*">  </resource>
+				<vector2> 0.05, 1 </vector2>
+				<vector2> 0, 430 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/mountain_clouds_layer1.*">  </resource>
+				<vector2> 0, 300 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/mountain_clouds_layer2.*">  </resource>
+				<vector2> 0.5, 1 </vector2>
+				<vector2> 0, -0 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/mountain_clouds_layer3.*">  </resource>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="807"> 				-1, -1, 1, 0, -1, 16, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 4, 10, 5, 11, 3, 12, 3, 13, 6, 14, 3, 15, 3, 16, 7, 17, 8, 0, 0, 0, 19, 18, -1, 16, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 3, 26, 4, 27, 5, 28, 5, 29, 11, 16, 7, 0, 1, 0, 31, 30, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 3, 26, 4, 27, 12, 32, 13, 33, 0, 8, 3, 34, 0, 35, 0, 36, 14, 37, 14, 38, 1, 39, 15, 40, 0, 41, 16, 16, 7, 0, 0, 0, 19, 42, -1, 16, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 3, 26, 4, 27, 5, 28, 17, 29, 11, 16, 7, 0, 3, 0, 31, 30, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 18, 26, 4, 27, 19, 32, 20, 33, 0, 8, 3, 34, 0, 35, 0, 36, 14, 37, 14, 38, 1, 39, 15, 40, 0, 41, 16, 16, 7, 0, 0, 0, 19, 43, -1, 16, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 3, 26, 4, 27, 5, 28, 21, 29, 11, 16, 7, 0, 5, 0, 31, 30, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 22, 26, 4, 27, 19, 32, 23, 33, 0, 8, 3, 34, 0, 35, 0, 36, 14, 37, 14, 38, 1, 39, 15, 40, 0, 41, 16, 16, 7, 0, 0, 0, 19, 44, -1, 16, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 3, 26, 4, 27, 5, 28, 24, 29, 11, 16, 7, 0, 7, 0, 31, 30, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 25, 26, 4, 27, 26, 32, 27, 33, 0, 8, 3, 34, 0, 35, 0, 36, 14, 37, 14, 38, 1, 39, 15, 40, 0, 41, 16, 16, 7, 0, 0, 0, 19, 45, -1, 16, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 3, 26, 4, 27, 5, 28, 28, 29, 11, 16, 7, 0, 9, 0, 31, 30, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 29, 26, 4, 27, 26, 32, 30, 33, 0, 8, 3, 34, 0, 35, 0, 36, 14, 37, 14, 38, 1, 39, 15, 40, 0, 41, 16, 16, 7, 0, 0, 0, 19, 46, -1, 16, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 3, 26, 4, 27, 5, 28, 31, 29, 11, 16, 7, 0, 11, 0, 31, 30, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 32, 26, 4, 27, 19, 32, 33, 33, 0, 8, 3, 34, 0, 35, 0, 36, 14, 37, 14, 38, 1, 39, 15, 40, 0, 41, 16, 16, 7, 0, 0, 0, 19, 47, -1, 16, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 3, 26, 4, 27, 5, 28, 21, 29, 11, 16, 7, 0, 13, 0, 31, 30, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 34, 26, 4, 27, 19, 32, 35, 33, 0, 8, 3, 34, 0, 35, 0, 36, 14, 37, 14, 38, 1, 39, 15, 40, 0, 41, 16, 16, 7, 0, 0, 0, 19, 48, -1, 16, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 3, 26, 4, 27, 5, 28, 36, 29, 11, 16, 7, 0, 15, 0, 31, 30, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 20, 9, 21, 10, 22, 10, 23, 9, 24, 1, 25, 37, 26, 4, 27, 26, 32, 38, 33, 0, 8, 3, 34, 0, 35, 0, 36, 14, 37, 14, 38, 1, 39, 15, 40, 0, 41, 16, 16, 7, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

@@ -1,0 +1,27 @@
+
+extends Sprite
+
+# member variables here, example:
+# var a=2
+# var b="textvar"
+
+export(String) var trigger_name=""
+var onfire=false
+
+func set_on_fire(pos):
+	if (onfire):
+		return
+
+	var d =pos.distance_to(get_node("fire").get_global_pos())
+	
+	if (d<20):
+		get_tree().call_group(0,trigger_name,"activated")
+		onfire=true
+		get_node("fire").set_emitting(true)
+		
+
+func _ready():
+	# Initalization here
+	pass
+
+

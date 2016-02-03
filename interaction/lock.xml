@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="7" version="0.99" version_name="Godot Engine v0.99.3672-pre-beta">
+	<ext_resource path="res://art/lock_pestillo.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/lock_keyhole.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://interaction/lock.*" type="GDScript"></ext_resource>
+	<resource type="Animation" path="local://1">
+		<string name="resource/name"> "lock_opening" </string>
+		<real name="length"> 2 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "lock:transform/pos" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="true">
+				<vector2> 0, 0 </vector2>
+				<vector2> 0, 0 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 2 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "lock:transform/rot" </node_path>
+		<int name="tracks/1/interp"> 1 </int>
+		<dictionary name="tracks/1/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="6"> 				1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="6" shared="true">
+				<real> 0 </real>
+				<real> -1.993359 </real>
+				<real> 13.729186 </real>
+				<real> -9.743497 </real>
+				<real> -13.539636 </real>
+				<real> -8.73539 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="6"> 				0, 0.3, 0.8, 1.2, 1.6, 2 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "lock/keyhole:transform/pos" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<vector2> 0, 14.953 </vector2>
+				<vector2> 0, 24.8501 </vector2>
+				<vector2> 5.99561, 29.1101 </vector2>
+				<vector2> 2.52446, 27.2168 </vector2>
+				<vector2> 3.94447, 29.1101 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 0.5, 1, 1.5, 2 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "lock/keyhole:transform/rot" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<real> 0 </real>
+				<real> 0 </real>
+				<real> 26.78323 </real>
+				<real> 11.161345 </real>
+				<real> 18.972288 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 0.5, 1, 1.5, 2 </real_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="Animation" path="local://2">
+		<string name="resource/name"> "lock_closed" </string>
+		<real name="length"> 3 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.25 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "lock:transform/pos" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="4" shared="true">
+				<vector2> 0, 0 </vector2>
+				<vector2> 0, 0 </vector2>
+				<vector2> 0, 0 </vector2>
+				<vector2> 0, 0 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 1, 2, 3 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "lock:transform/rot" </node_path>
+		<int name="tracks/1/interp"> 2 </int>
+		<dictionary name="tracks/1/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="6"> 				1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="6" shared="true">
+				<real> 0 </real>
+				<real> 0 </real>
+				<real> -2.907056 </real>
+				<real> 1.348596 </real>
+				<real> 0 </real>
+				<real> 0 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="6"> 				0, 0.75, 1.3, 1.75, 2.25, 3 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "lock/keyhole:transform/pos" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="4" shared="true">
+				<vector2> 0, 14.953 </vector2>
+				<vector2> 0, 14.953 </vector2>
+				<vector2> 0, 14.953 </vector2>
+				<vector2> 0, 14.953 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 1, 2, 3 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "lock/keyhole:transform/rot" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="4" shared="true">
+				<real> 0 </real>
+				<real> 0 </real>
+				<real> 0 </real>
+				<real> 0 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 1, 2, 3 </real_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</resource>
+	<resource type="Animation" path="local://3">
+		<string name="resource/name"> "lock_open" </string>
+		<real name="length"> 0.25 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "lock:transform/pos" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1" shared="true">
+				<vector2> 0, 0 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "lock:transform/rot" </node_path>
+		<int name="tracks/1/interp"> 2 </int>
+		<dictionary name="tracks/1/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1" shared="true">
+				<real> -8.73539 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "lock/keyhole:transform/pos" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1" shared="true">
+				<vector2> 3.94447, 29.1101 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "lock/keyhole:transform/rot" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1" shared="true">
+				<real> 18.972288 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<dictionary name="_bundled" shared="false">
+			<string> "names" </string>
+			<string_array  len="48">
+				<string> "Node2D" </string>
+				<string> "process/process" </string>
+				<string> "process/fixed_process" </string>
+				<string> "process/input" </string>
+				<string> "process/unhandled_input" </string>
+				<string> "process/pause_mode" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "lock" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "keyhole" </string>
+				<string> "anim" </string>
+				<string> "AnimationPlayer" </string>
+				<string> "playback/process_mode" </string>
+				<string> "playback/default_blend_time" </string>
+				<string> "root/root" </string>
+				<string> "speed" </string>
+				<string> "anims/lock_opening" </string>
+				<string> "anims/lock_closed" </string>
+				<string> "anims/lock_open" </string>
+				<string> "blend_times" </string>
+				<string> "autoplay" </string>
+				<string> "screenprox" </string>
+				<string> "VisibilityNotifier2D" </string>
+				<string> "rect" </string>
+				<string> "_on_enter_screen" </string>
+				<string> "enter_screen" </string>
+				<string> "_on_exit_screen" </string>
+				<string> "exit_screen" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 2 </int>
+			<string> "node_count" </string>
+			<int> 5 </int>
+			<string> "variants" </string>
+			<array  len="25" shared="true">
+				<bool> False </bool>
+				<int> 0 </int>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<resource  resource_type="GDScript" path="res://interaction/lock.*">  </resource>
+				<dictionary  shared="false">
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "Script" </string>
+						<dictionary  shared="false">
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="1" shared="true">
+								<string> "res://interaction/lock.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "zoom" </string>
+							<real> 2.517533 </real>
+							<string> "ofs" </string>
+							<vector2> -225.807, -281.663 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "viewports" </string>
+							<array  len="4" shared="true">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+							</array>
+							<string> "viewport_mode" </string>
+							<int> 1 </int>
+							<string> "default_light" </string>
+							<bool> True </bool>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<resource  resource_type="ImageTexture" path="res://art/lock_pestillo.*">  </resource>
+				<int> 1 </int>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<resource name=""></resource>				<vector2> 0, 14.953 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/lock_keyhole.*">  </resource>
+				<int> 4 </int>
+				<node_path> ".." </node_path>
+				<real> 1.25 </real>
+				<resource  resource_type="Animation" path="local://1">  </resource>
+				<resource  resource_type="Animation" path="local://2">  </resource>
+				<resource  resource_type="Animation" path="local://3">  </resource>
+				<array  len="0" shared="true">
+				</array>
+				<string> "" </string>
+				<rect2> -10, -10, 20, 20 </rect2>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="225"> 				-1, -1, 0, 0, -1, 15, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 3, 8, 3, 9, 2, 10, 1, 11, 4, 12, 5, 13, 6, 14, 7, 15, 8, 0, 0, 0, 17, 16, -1, 25, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 3, 8, 3, 9, 2, 10, 1, 11, 4, 12, 5, 13, 6, 18, 9, 19, 2, 20, 4, 21, 0, 22, 0, 23, 10, 24, 10, 25, 1, 26, 11, 27, 0, 28, 12, 14, 13, 0, 1, 0, 17, 29, -1, 25, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 3, 8, 3, 9, 2, 10, 1, 11, 14, 12, 5, 13, 6, 18, 15, 19, 2, 20, 4, 21, 0, 22, 0, 23, 10, 24, 16, 25, 1, 26, 11, 27, 0, 28, 12, 14, 13, 0, 0, 0, 31, 30, -1, 15, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 32, 10, 33, 5, 34, 17, 35, 18, 36, 19, 37, 20, 38, 21, 39, 22, 40, 23, 14, 13, 0, 0, 0, 42, 41, -1, 15, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 3, 8, 3, 9, 2, 10, 1, 11, 4, 12, 5, 13, 6, 43, 24, 14, 13, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="12"> 				4, 0, 45, 44, 2, 0, 4, 0, 47, 46, 2, 0 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

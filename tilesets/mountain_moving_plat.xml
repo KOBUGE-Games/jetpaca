@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<object_file magic="SCENE" version="0.99" version_name="Godot Engine v0.99.2443-pre-beta">
+	<resource type="ConcavePolygonShape2D" path="local://1">		<string name="resource/name"> "" </string>
+		<vector2_array name="segments" len="10"> 			-72.5357, 21.6304, -71.9953, -18.8966, -71.9953, -18.8966, -1.20818, -16.7352, -1.20818, -16.7352, 68.4983, -19.9773, 68.4983, -19.9773, 67.9579, 19.4689, 67.9579, 19.4689, -72.5357, 21.6304 </vector2_array>
+<resource name="script/script"></resource>	</resource>
+	<object type="StaticBody2D">
+		<dictionary name="__xml_meta__">
+			<string> "connection_count" </string>
+			<int> 0 </int>
+			<string> "name" </string>
+			<string> "StaticBody2D" </string>
+		</dictionary>
+		<bool name="process/process"> False </bool>
+		<bool name="process/idle_process"> False </bool>
+		<bool name="process/input"> False </bool>
+		<bool name="process/unhandled_input"> False </bool>
+		<int name="process/mode"> 0 </int>
+		<bool name="visibility/visible"> True </bool>
+		<bool name="visibility/toplevel"> False </bool>
+		<real name="visibility/opacity"> 1 </real>
+		<real name="visibility/self_opacity"> 1 </real>
+		<int name="visibility/blend_mode"> 0 </int>
+		<bool name="transform/notify"> True </bool>
+		<vector2 name="transform/pos"> 0, 0 </vector2>
+		<real name="transform/rot"> 0 </real>
+		<vector2 name="transform/scale"> 1, 1 </vector2>
+		<int name="shape_count"> 1 </int>
+		<resource name="shapes/0/shape" resource_type="ConcavePolygonShape2D" path="local://1">  </resource>
+		<matrix32 name="shapes/0/transform"> 1, 0, 0, 1, 0, 0 </matrix32>
+		<bool name="simulate_motion"> True </bool>
+		<vector2 name="constant_linear_velocity"> 0, 0 </vector2>
+		<real name="constant_angular_velocity"> 0 </real>
+<resource name="script/script"></resource>		<dictionary name="__meta__">
+			<string> "__editor_plugin_states__" </string>
+			<dictionary>
+				<string> "2D" </string>
+				<dictionary>
+					<string> "zoom" </string>
+					<real> 1.850618 </real>
+					<string> "ofs" </string>
+					<vector2> -245.236, -227.97 </vector2>
+				</dictionary>
+				<string> "3D" </string>
+				<dictionary>
+					<string> "zfar" </string>
+					<real> 500 </real>
+					<string> "fov" </string>
+					<real> 45 </real>
+					<string> "window_mode" </string>
+					<int> 0 </int>
+					<string> "window_0" </string>
+					<dictionary>
+						<string> "distance" </string>
+						<real> 4 </real>
+						<string> "default_light" </string>
+						<bool> True </bool>
+						<string> "x_rot" </string>
+						<real> 0.337 </real>
+						<string> "y_rot" </string>
+						<real> -0.575 </real>
+						<string> "show_grid" </string>
+						<bool> True </bool>
+						<string> "show_origin" </string>
+						<bool> True </bool>
+						<string> "pos" </string>
+						<vector3> 0, 0, 0 </vector3>
+					</dictionary>
+					<string> "znear" </string>
+					<real> 0.1 </real>
+				</dictionary>
+			</dictionary>
+			<string> "__editor_run_settings__" </string>
+			<dictionary>
+				<string> "debug" </string>
+				<bool> True </bool>
+				<string> "custom_exec" </string>
+				<string> "" </string>
+				<string> "screen_width" </string>
+				<int> 800 </int>
+				<string> "custom_args" </string>
+				<string> "" </string>
+				<string> "screen_height" </string>
+				<int> 600 </int>
+				<string> "fullscreeen" </string>
+				<bool> False </bool>
+			</dictionary>
+			<string> "__editor_plugin_screen__" </string>
+			<string> "2D" </string>
+		</dictionary>
+	</object>
+	<object type="Sprite">
+		<dictionary name="__xml_meta__">
+			<string> "path" </string>
+			<node_path> "." </node_path>
+			<string> "connection_count" </string>
+			<int> 0 </int>
+			<string> "name" </string>
+			<string> "Sprite" </string>
+		</dictionary>
+		<bool name="process/process"> False </bool>
+		<bool name="process/idle_process"> False </bool>
+		<bool name="process/input"> False </bool>
+		<bool name="process/unhandled_input"> False </bool>
+		<int name="process/mode"> 0 </int>
+		<bool name="visibility/visible"> True </bool>
+		<bool name="visibility/toplevel"> False </bool>
+		<real name="visibility/opacity"> 1 </real>
+		<real name="visibility/self_opacity"> 1 </real>
+		<int name="visibility/blend_mode"> 0 </int>
+		<bool name="transform/notify"> False </bool>
+		<vector2 name="transform/pos"> 0, 0 </vector2>
+		<real name="transform/rot"> 0 </real>
+		<vector2 name="transform/scale"> 1, 1 </vector2>
+		<resource name="texture" resource_type="Texture" path="res://art/mountain_moving_plat.png">  </resource>
+		<bool name="centered"> True </bool>
+		<bool name="flip_h"> False </bool>
+		<bool name="flip_v"> False </bool>
+		<int name="frame"> 0 </int>
+		<int name="vframes"> 1 </int>
+		<int name="hframes"> 1 </int>
+		<color name="modulate"> 1, 1, 1, 1 </color>
+		<bool name="region"> False </bool>
+		<rect2 name="region_rect"> 0, 0, 0, 0 </rect2>
+<resource name="script/script"></resource>	</object>
+	<object type="CollisionPolygon2D">
+		<dictionary name="__xml_meta__">
+			<string> "path" </string>
+			<node_path> "." </node_path>
+			<string> "connection_count" </string>
+			<int> 0 </int>
+			<string> "name" </string>
+			<string> "CollisionPolygon2D" </string>
+		</dictionary>
+		<bool name="process/process"> False </bool>
+		<bool name="process/idle_process"> False </bool>
+		<bool name="process/input"> False </bool>
+		<bool name="process/unhandled_input"> False </bool>
+		<int name="process/mode"> 0 </int>
+		<bool name="visibility/visible"> True </bool>
+		<bool name="visibility/toplevel"> False </bool>
+		<real name="visibility/opacity"> 1 </real>
+		<real name="visibility/self_opacity"> 1 </real>
+		<int name="visibility/blend_mode"> 0 </int>
+		<bool name="transform/notify"> True </bool>
+		<vector2 name="transform/pos"> 0, 0 </vector2>
+		<real name="transform/rot"> 0 </real>
+		<vector2 name="transform/scale"> 1, 1 </vector2>
+		<int name="build_mode"> 0 </int>
+		<vector2_array name="polygon" len="5"> 			-72.5357, 21.6304, -71.9953, -18.8966, -1.20818, -16.7352, 68.4983, -19.9773, 67.9579, 19.4689 </vector2_array>
+<resource name="script/script"></resource>	</object>
+</object_file>

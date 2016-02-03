@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="16" version="0.99" version_name="Godot Engine v0.99.3144-pre-beta">
+	<ext_resource path="res://stages/stage.gd" type="GDScript"></ext_resource>
+	<ext_resource path="res://tilesets/test_tileset.xml" type="TileSet"></ext_resource>
+	<ext_resource path="res://player/large_fruit.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://interaction/roulette.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://player/checkpoint.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://player/fruit.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://enemies/mountain_long_spikes.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://interaction/breakable_stone.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://enemies/rb_spike.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://interaction/plank.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://interaction/breakable_stone_physic.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://enemies/floating_spike.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://enemies/mountain_spikes.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://enemies/fluff.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://enemies/cannon.xml" type="PackedScene"></ext_resource>
+	<main_resource>
+		<string name="resource/name"> "" </string>
+		<bool name="resource/edited"> False </bool>
+		<dictionary name="_bundled">
+			<string> "names" </string>
+			<string_array  len="334">
+				<string> "stage" </string>
+				<string> "Node" </string>
+				<string> "process/process" </string>
+				<string> "process/fixed_process" </string>
+				<string> "process/input" </string>
+				<string> "process/unhandled_input" </string>
+				<string> "process/pause_mode" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "launch" </string>
+				<string> "Position2D" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "tilemap" </string>
+				<string> "TileMap" </string>
+				<string> "cell_size" </string>
+				<string> "quadrant_size" </string>
+				<string> "tile_set" </string>
+				<string> "tile_data" </string>
+				<string> "Enemies" </string>
+				<string> "sacra_pinchorb" </string>
+				<string> "RigidBody2D" </string>
+				<string> "sacra_pinchorb 2" </string>
+				<string> "sacra_pinchorb 3" </string>
+				<string> "sacra_pinchorb 4" </string>
+				<string> "sacra_pinchorb 5" </string>
+				<string> "sacra_pinchorb 5 2" </string>
+				<string> "sacra_pinchorb 5 3" </string>
+				<string> "sacra_pinchorb 5 4" </string>
+				<string> "cannon 3" </string>
+				<string> "StaticBody2D" </string>
+				<string> "interval" </string>
+				<string> "type" </string>
+				<string> "cannon 4" </string>
+				<string> "cannon 6" </string>
+				<string> "sacra_pinchorb 6" </string>
+				<string> "cannon 5" </string>
+				<string> "sacra_pinchorb 7" </string>
+				<string> "cannon 7" </string>
+				<string> "AngryStructure" </string>
+				<string> "breakable_stone 2" </string>
+				<string> "Node2D" </string>
+				<string> "breakable_stone 4 3" </string>
+				<string> "plank" </string>
+				<string> "breakable_stone 4 4 2" </string>
+				<string> "breakable_stone 4 5" </string>
+				<string> "breakable_stone 4 4" </string>
+				<string> "plank 2" </string>
+				<string> "RigidBody2D 2" </string>
+				<string> "RigidBody2D 3" </string>
+				<string> "breakable_stone 4 6" </string>
+				<string> "plank 3" </string>
+				<string> "breakable_stone 4 7" </string>
+				<string> "breakable_stone 4 8" </string>
+				<string> "breakable_stone 4 9" </string>
+				<string> "plank 4" </string>
+				<string> "breakable_stone 4 10" </string>
+				<string> "plank 5" </string>
+				<string> "breakable_stone 4 11" </string>
+				<string> "breakable_stone 4 12" </string>
+				<string> "plank 6" </string>
+				<string> "RigidBody2D 4" </string>
+				<string> "RigidBody2D 5" </string>
+				<string> "RigidBody2D 6" </string>
+				<string> "RigidBody2D 7" </string>
+				<string> "RigidBody2D 8" </string>
+				<string> "RigidBody2D 9" </string>
+				<string> "RigidBody2D 10" </string>
+				<string> "RigidBody2D 11" </string>
+				<string> "RigidBody2D 12" </string>
+				<string> "RigidBody2D 13" </string>
+				<string> "Collectibles" </string>
+				<string> "large_fruit" </string>
+				<string> "Area2D" </string>
+				<string> "fruit 5" </string>
+				<string> "fruit 6" </string>
+				<string> "fruit 7" </string>
+				<string> "fruit 8" </string>
+				<string> "fruit 9" </string>
+				<string> "fruit 10 5" </string>
+				<string> "fruit 10 6" </string>
+				<string> "fruit 10 7" </string>
+				<string> "fruit 10 8" </string>
+				<string> "fruit 10 9" </string>
+				<string> "fruit 10 10 9" </string>
+				<string> "fruit 10 10 9 2" </string>
+				<string> "fruit 10 10 9 3" </string>
+				<string> "fruit 12" </string>
+				<string> "fruit 10 11" </string>
+				<string> "fruit 10 10 9 9" </string>
+				<string> "fruit 10 10 9 10" </string>
+				<string> "fruit 10 10 9 11" </string>
+				<string> "fruit 10 10 9 12" </string>
+				<string> "fruit 10 10 9 12 2" </string>
+				<string> "fruit 10 10 9 13" </string>
+				<string> "fruit 10 10 9 12 3" </string>
+				<string> "fruit 10 10 9 14" </string>
+				<string> "fruit 10 10 9 14 2" </string>
+				<string> "fruit 10 10 9 14 3" </string>
+				<string> "fruit 10 10 9 12 4" </string>
+				<string> "fruit 10 10 9 14 4" </string>
+				<string> "fruit 10 10 9 12 4 2" </string>
+				<string> "fruit 10 10 9 15" </string>
+				<string> "fruit 10 10 9 14 5" </string>
+				<string> "fruit 10 10 9 14 5 2" </string>
+				<string> "fruit 10 10 9 12 5" </string>
+				<string> "fruit 10 10 9 14 5 3" </string>
+				<string> "fruit 10 10 9 12 4 3" </string>
+				<string> "fruit 10 10 9 16" </string>
+				<string> "fruit 10 10 9 14 6" </string>
+				<string> "fruit 10 10 9 14 5 4" </string>
+				<string> "fruit 10 10 9 12 6" </string>
+				<string> "fruit 10 10 9 14 5 4 2" </string>
+				<string> "fruit 10 10 9 12 4 4" </string>
+				<string> "large_fruit 2" </string>
+				<string> "fruit_index" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 2" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 3" </string>
+				<string> "fruit 10 10 9 8 9 6 4 13" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 2" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 4" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 4 2" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 2" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 10" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 3" </string>
+				<string> "fruit 10 10 9 8 9 6 4 15" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 3" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 4" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 5" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 6" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 7" </string>
+				<string> "large_fruit 3" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 8" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 9" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 10" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 11" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 13" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 14" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 15" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 16" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 17" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 18" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 19" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 20" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 21" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 22" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 12" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 23 5" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 23 6 2" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 24" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 23" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 25" </string>
+				<string> "fruit 14" </string>
+				<string> "fruit 14 2" </string>
+				<string> "fruit 14 4" </string>
+				<string> "fruit 14 5" </string>
+				<string> "fruit 14 6" </string>
+				<string> "fruit 17" </string>
+				<string> "fruit 14 7" </string>
+				<string> "fruit 14 7 2" </string>
+				<string> "fruit 14 7 3" </string>
+				<string> "fruit 14 7 4" </string>
+				<string> "fruit 10 10" </string>
+				<string> "fruit 10 10 2" </string>
+				<string> "fruit 10 10 3" </string>
+				<string> "fruit 10 10 11" </string>
+				<string> "fruit 10 10 14" </string>
+				<string> "fruit 10 10 15" </string>
+				<string> "fruit 10 10 15 2" </string>
+				<string> "fruit 10 10 15 3" </string>
+				<string> "fruit 10 10 15 4" </string>
+				<string> "fruit 10 13" </string>
+				<string> "fruit 10 10 15 5" </string>
+				<string> "fruit 10 16" </string>
+				<string> "fruit 10 10 15 5 2" </string>
+				<string> "fruit 10 10 15 5 3" </string>
+				<string> "fruit 10 10 16" </string>
+				<string> "fruit 10 10 16 2" </string>
+				<string> "fruit 10 10 16 3" </string>
+				<string> "fruit 10 10 4" </string>
+				<string> "fruit 10 10 4 2" </string>
+				<string> "fruit 10 16 2" </string>
+				<string> "fruit 10 16 3" </string>
+				<string> "fruit 10 16 4" </string>
+				<string> "fruit 10 16 5" </string>
+				<string> "fruit 10 16 6" </string>
+				<string> "fruit 10 16 7" </string>
+				<string> "fruit 10 10 10" </string>
+				<string> "fruit 10 10 9 4" </string>
+				<string> "fruit 10 10 9 4 2" </string>
+				<string> "fruit 13" </string>
+				<string> "fruit 10 12" </string>
+				<string> "fruit 10 10 12" </string>
+				<string> "fruit 10 10 9 5" </string>
+				<string> "fruit 10 10 9 4 3" </string>
+				<string> "fruit 15" </string>
+				<string> "fruit 10 14" </string>
+				<string> "fruit 10 10 17" </string>
+				<string> "fruit 10 10 9 6" </string>
+				<string> "fruit 10 10 9 4 4" </string>
+				<string> "fruit 18" </string>
+				<string> "fruit 10 17" </string>
+				<string> "fruit 10 10 13" </string>
+				<string> "fruit 10 10 9 7" </string>
+				<string> "fruit 10 10 9 7 2" </string>
+				<string> "fruit 16" </string>
+				<string> "fruit 10 15" </string>
+				<string> "fruit 10 10 13 2" </string>
+				<string> "fruit 10 10 9 7 3" </string>
+				<string> "fruit 10 10 9 4 5" </string>
+				<string> "fruit 16 2" </string>
+				<string> "fruit 10 15 2" </string>
+				<string> "fruit 10 10 13 3" </string>
+				<string> "fruit 10 10 9 7 4" </string>
+				<string> "fruit 10 10 9 4 5 2" </string>
+				<string> "fruit 16 3" </string>
+				<string> "fruit 10 15 3" </string>
+				<string> "fruit 10 10 18" </string>
+				<string> "fruit 10 10 9 7 5" </string>
+				<string> "fruit 10 10 9 4 5 3" </string>
+				<string> "fruit 19" </string>
+				<string> "fruit 10 18" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 29" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 11" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 4" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 30" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 12" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 5" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 31" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 13" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 6" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 32" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 14" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 7" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 33" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 15" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 8" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 34" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 16" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 9" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 35" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 17" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 10" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 36" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 18" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 11" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 37" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 19" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 12" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 38" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 20" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 13" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 39" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 21" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 14" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 40" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 22" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 15" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 41" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 23" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 16" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 42" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 24" </string>
+				<string> "fruit 10 10 9 8 9 6 4 12 9 17" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 43" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 44" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 26" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 45" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 27" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 46" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 28" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 47" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 48" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 49" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 50" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 51" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 52" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 53" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 53 2" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 53 3" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 54" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 53 4" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 53 4 2" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 23 6 3" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 55" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 23 6 4" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 56" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 23 6" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 23 6 4 2" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 56 2" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 57" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 58" </string>
+				<string> "fruit 10 10 9 8 9 6 4 14 56 3" </string>
+				<string> "Checkpoints" </string>
+				<string> "checkpoint" </string>
+				<string> "roulette" </string>
+				<string> "Spikes" </string>
+				<string> "spikes" </string>
+				<string> "spikes 2" </string>
+				<string> "spikes 3" </string>
+				<string> "spikes 4" </string>
+				<string> "spikes 5" </string>
+				<string> "spikes 6" </string>
+				<string> "spikes 7" </string>
+				<string> "spikes 8" </string>
+				<string> "spikes 9" </string>
+				<string> "spikes 11" </string>
+				<string> "spikes 12" </string>
+				<string> "spikes 13" </string>
+				<string> "spikes 14" </string>
+				<string> "StaticBody2D 2" </string>
+				<string> "StaticBody2D 3" </string>
+				<string> "spikes 15" </string>
+				<string> "spikes 16" </string>
+				<string> "spikes 17" </string>
+				<string> "spikes 18" </string>
+				<string> "spikes 19" </string>
+				<string> "spikes 20" </string>
+				<string> "spikes 10" </string>
+				<string> "spikes 21" </string>
+				<string> "spikes 22" </string>
+				<string> "DestroyableWall" </string>
+				<string> "breakable_stone" </string>
+				<string> "breakable_stone 3" </string>
+				<string> "breakable_stone 4" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 307 </int>
+			<string> "variants" </string>
+			<array  len="364">
+				<bool> False </bool>
+				<int> 0 </int>
+				<resource  resource_type="GDScript" path="res://stages/stage.gd">  </resource>
+				<dictionary>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary>
+						<string> "Script" </string>
+						<dictionary>
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="9">
+								<string> "res://interaction/bubble.gd" </string>
+								<string> "res://interaction/key.gd" </string>
+								<string> "res://player/wise_alpaca.gd" </string>
+								<string> "res://player/alpaca.gd" </string>
+								<string> "res://stages/stage.gd" </string>
+								<string> "res://player/hud.gd" </string>
+								<string> "res://enemies/fluff.gd" </string>
+								<string> "res://enemies/cannon.gd" </string>
+								<string> "res://interaction/roulette.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary>
+							<string> "zoom" </string>
+							<real> 0.26352 </real>
+							<string> "ofs" </string>
+							<vector2> 311.762, -543.078 </vector2>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary>
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 251.118, 1392.74 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<resource name=""></resource>				<vector2> 0, 0 </vector2>
+				<int> 64 </int>
+				<int> 16 </int>
+				<resource  resource_type="TileSet" path="res://tilesets/test_tileset.xml">  </resource>
+				<int_array  len="1282"> 					65607, 0, 65608, 0, 65609, 0, 65610, 0, 65611, 0, 65612, 0, 65613, 0, 65614, 0, 65615, 0, 65616, 0, 65617, 0, 65618, 0, 65619, 0, 65620, 0, 65621, 0, 65622, 0, 65623, 0, 65624, 0, 65625, 0, 65626, 0, 131141, 1073741826, 131157, 0, 131162, 0, 196676, 1073741825, 196693, 0, 196698, 0, 196699, 0, 196700, 0, 196701, 0, 196702, 0, 196703, 0, 196704, 0, 196705, 0, 196706, 0, 196707, 0, 196708, 0, 196709, 0, 196710, 0, 196711, 0, 196712, 0, 196713, 0, 196714, 0, 262211, 1073741825, 262229, 0, 262230, 536870914, 262232, 536870913, 262233, 536870913, 262234, 0, 262250, 0, 327746, 1073741825, 327765, 0, 327766, 1610612738, 327768, 1610612737, 327769, 1610612737, 327770, 0, 327786, 0, 393281, 1073741825, 393301, 0, 393306, 0, 393321, 0, 393322, 0, 393323, 0, 393324, 0, 458816, 1073741825, 458825, 0, 458826, 0, 458827, 0, 458828, 0, 458829, 0, 458830, 0, 458831, 0, 458832, 0, 458833, 0, 458834, 0, 458835, 0, 458836, 0, 458837, 0, 458838, 0, 458839, 0, 458840, 0, 458841, 0, 458842, 0, 458848, 0, 458849, 0, 458850, 0, 458851, 0, 458852, 0, 458853, 0, 458857, 0, 458860, 0, 524351, 1073741825, 524384, 0, 524389, 0, 524393, 0, 524396, 0, 589886, 1073741825, 589920, 0, 589925, 0, 589929, 1073741825, 589932, 1610612737, 655421, 1073741825, 655456, 0, 655461, 0, 655469, 1610612737, 720956, 1073741825, 720992, 0, 720997, 0, 721006, 1610612737, 786491, 1073741825, 786528, 0, 786533, 0, 786543, 1610612737, 852026, 1073741825, 852064, 0, 852069, 0, 852080, 1610612737, 917561, 1073741825, 917600, 0, 917605, 0, 917617, 1610612737, 983040, 0, 983041, 0, 983042, 0, 983043, 0, 983044, 0, 983045, 0, 983046, 0, 983047, 0, 983048, 0, 983049, 0, 983050, 0, 983051, 0, 983052, 0, 983053, 0, 983054, 0, 983055, 0, 983056, 0, 983057, 0, 983058, 0, 983059, 0, 983060, 0, 983061, 0, 983062, 0, 983063, 0, 983064, 0, 983065, 0, 983066, 0, 983067, 0, 983068, 0, 983069, 0, 983070, 0, 983071, 0, 983072, 0, 983073, 0, 983074, 0, 983075, 0, 983076, 0, 983077, 0, 983078, 0, 983079, 0, 983080, 0, 983081, 0, 983082, 0, 983083, 0, 983084, 0, 983085, 0, 983086, 0, 983087, 0, 983088, 0, 983089, 0, 983090, 0, 983091, 0, 983092, 0, 983093, 0, 983094, 0, 983095, 0, 983096, 0, 983136, 0, 983141, 0, 983154, 1610612737, 1048576, 0, 1048671, 536870913, 1048677, 0, 1048691, 1610612737, 1114112, 0, 1114206, 536870913, 1114213, 0, 1114228, 1610612737, 1114255, 0, 1114256, 0, 1114257, 0, 1114258, 0, 1114259, 0, 1114260, 0, 1114261, 0, 1179648, 0, 1179741, 536870913, 1179749, 0, 1179765, 0, 1179790, 1073741825, 1179798, 1610612738, 1245184, 0, 1245276, 536870913, 1245285, 0, 1245301, 1610612737, 1245302, 0, 1245325, 1073741825, 1245336, 1610612738, 1310720, 0, 1310811, 536870913, 1310821, 0, 1310838, 0, 1310860, 1073741825, 1310874, 1610612738, 1376256, 0, 1376346, 536870913, 1376357, 0, 1376374, 0, 1376394, 1073741826, 1376412, 1610612737, 1441792, 0, 1441881, 536870913, 1441893, 0, 1441910, 1610612737, 1441929, 1073741825, 1441949, 1610612737, 1507328, 0, 1507416, 536870913, 1507430, 1, 1507447, 0, 1507464, 1073741825, 1507486, 1610612737, 1572864, 0, 1572951, 536870913, 1572967, 1, 1572983, 0, 1572999, 1073741825, 1573023, 1610612738, 1638400, 0, 1638486, 536870913, 1638504, 1, 1638519, 0, 1638533, 1073741826, 1638561, 1610612737, 1703936, 0, 1703937, 1, 1704021, 536870913, 1704041, 1, 1704055, 0, 1704067, 1073741826, 1704098, 1610612738, 1769472, 0, 1769474, 1, 1769556, 536870913, 1769578, 1, 1769591, 0, 1769601, 1073741826, 1769636, 1610612738, 1835008, 0, 1835011, 1, 1835091, 536870913, 1835115, 1, 1835127, 1610612738, 1835129, 0, 1835130, 0, 1835131, 0, 1835132, 0, 1835133, 0, 1835134, 0, 1835135, 1073741826, 1835174, 1610612738, 1900544, 0, 1900548, 1, 1900626, 536870913, 1900652, 1, 1900712, 1610612738, 1900714, 0, 1900715, 0, 1900716, 0, 1900717, 0, 1900718, 0, 1900719, 0, 1900720, 0, 1900721, 0, 1900722, 0, 1900723, 0, 1900724, 0, 1900725, 0, 1900726, 0, 1900727, 0, 1900728, 0, 1900729, 0, 1900730, 0, 1900731, 0, 1900732, 0, 1900733, 0, 1900734, 0, 1900735, 0, 1900736, 0, 1900737, 0, 1900738, 0, 1900739, 0, 1900740, 0, 1900741, 0, 1900742, 0, 1900743, 0, 1900744, 0, 1900745, 0, 1900746, 0, 1900747, 0, 1900748, 0, 1900749, 0, 1900750, 0, 1900751, 0, 1900752, 0, 1900753, 0, 1900754, 0, 1900755, 0, 1900756, 0, 1900757, 0, 1900758, 0, 1900759, 0, 1966080, 0, 1966085, 1, 1966097, 536870914, 1966099, 1, 1966161, 536870913, 1966189, 1, 1966295, 0, 2031616, 0, 2031622, 1, 2031631, 536870914, 2031636, 1, 2031696, 536870913, 2031726, 1, 2031831, 0, 2097152, 0, 2097159, 1, 2097165, 536870914, 2097173, 1, 2097231, 536870913, 2097263, 1, 2097367, 0, 2162688, 0, 2162696, 1, 2162699, 536870914, 2162710, 1, 2162766, 536870913, 2162800, 1, 2162903, 0, 2228224, 0, 2228225, 0, 2228226, 0, 2228227, 0, 2228228, 0, 2228229, 0, 2228230, 0, 2228231, 0, 2228232, 0, 2228233, 0, 2228234, 0, 2228235, 0, 2228236, 0, 2228237, 0, 2228238, 0, 2228239, 0, 2228240, 0, 2228241, 0, 2228242, 0, 2228243, 0, 2228244, 0, 2228245, 0, 2228246, 0, 2228247, 0, 2228248, 0, 2228249, 0, 2228250, 0, 2228251, 0, 2228252, 0, 2228253, 0, 2228254, 0, 2228255, 0, 2228256, 0, 2228257, 0, 2228258, 0, 2228259, 0, 2228260, 0, 2228261, 0, 2228262, 0, 2228263, 0, 2228264, 0, 2228265, 0, 2228266, 0, 2228267, 0, 2228268, 0, 2228269, 0, 2228270, 0, 2228271, 0, 2228272, 0, 2228273, 0, 2228274, 0, 2228275, 0, 2228276, 0, 2228277, 0, 2228278, 0, 2228279, 0, 2228280, 0, 2228281, 0, 2228282, 0, 2228283, 0, 2228284, 0, 2228285, 0, 2228286, 0, 2228287, 0, 2228288, 0, 2228289, 0, 2228290, 0, 2228291, 0, 2228292, 0, 2228293, 0, 2228294, 0, 2228295, 0, 2228296, 0, 2228297, 0, 2228298, 0, 2228299, 0, 2228300, 0, 2228301, 0, 2228337, 1, 2228439, 0, 2293873, 0, 2293929, 0, 2293930, 0, 2293931, 0, 2293932, 1, 2293943, 0, 2293944, 0, 2293945, 0, 2293946, 0, 2293947, 0, 2293948, 0, 2293949, 0, 2293950, 0, 2293951, 0, 2293952, 0, 2293953, 0, 2293954, 0, 2293955, 0, 2293956, 0, 2293957, 0, 2293958, 0, 2293959, 0, 2293960, 0, 2293961, 0, 2293962, 0, 2293963, 0, 2293964, 0, 2293965, 0, 2293966, 1, 2293974, 536870913, 2293975, 0, 2359410, 1, 2359469, 0, 2359470, 0, 2359471, 0, 2359472, 0, 2359473, 1, 2359479, 0, 2359503, 1, 2359509, 536870913, 2424947, 1, 2425009, 0, 2425010, 1, 2425015, 0, 2425040, 1, 2425045, 0, 2490484, 0, 2490485, 0, 2490486, 0, 2490487, 0, 2490488, 0, 2490489, 0, 2490490, 0, 2490491, 0, 2490492, 0, 2490546, 0, 2490551, 0, 2490577, 1, 2490581, 0, 2556082, 0, 2556087, 0, 2556114, 1, 2556117, 0, 2621618, 0, 2621623, 0, 2621650, 0, 2621653, 0, 2687154, 0, 2687159, 0, 2687186, 0, 2687189, 0, 2752690, 0, 2752695, 0, 2752722, 0, 2752725, 0, 2818226, 0, 2818231, 0, 2818258, 0, 2818261, 0, 2883762, 0, 2883767, 0, 2883794, 0, 2883797, 0, 2949298, 0, 2949303, 0, 2949330, 0, 2949333, 0, 3014834, 0, 3014839, 0, 3014866, 0, 3014869, 0, 3080370, 0, 3080375, 0, 3080402, 0, 3080405, 0, 3145906, 0, 3145911, 0, 3145938, 0, 3145941, 0, 3211442, 0, 3211447, 0, 3211474, 0, 3211477, 0, 3276978, 0, 3276983, 0, 3277010, 0, 3277013, 0, 3342514, 0, 3342519, 0, 3342546, 0, 3342549, 0, 3408050, 0, 3408055, 0, 3408082, 0, 3408085, 0, 3473586, 0, 3473591, 0, 3473618, 1073741825, 3473621, 0, 3539122, 0, 3539127, 1610612737, 3539153, 1073741825, 3539157, 0, 3604658, 0, 3604664, 1610612737, 3604688, 1073741825, 3604693, 0, 3670194, 0, 3670201, 1610612737, 3670223, 1073741825, 3670229, 0, 3735730, 0, 3735731, 0, 3735732, 0, 3735733, 1073741825, 3735738, 1610612737, 3735758, 1073741825, 3735765, 0, 3801266, 0, 3801275, 1610612737, 3801276, 0, 3801277, 0, 3801278, 0, 3801279, 0, 3801280, 0, 3801281, 0, 3801282, 0, 3801283, 0, 3801284, 0, 3801285, 0, 3801286, 0, 3801287, 0, 3801288, 0, 3801289, 0, 3801290, 0, 3801291, 0, 3801292, 0, 3801293, 1073741825, 3801301, 0, 3866802, 0, 3866837, 0, 3932338, 0, 3932373, 0, 3997874, 0, 3997909, 0, 4063410, 0, 4063445, 0, 4128946, 0, 4128981, 0, 4194482, 0, 4194517, 0, 4260018, 0, 4260053, 0, 4325554, 0, 4325589, 0, 4391090, 0, 4391091, 0, 4391092, 0, 4391093, 0, 4391094, 0, 4391095, 0, 4391096, 0, 4391097, 0, 4391098, 0, 4391099, 0, 4391100, 0, 4391101, 0, 4391102, 0, 4391103, 0, 4391104, 0, 4391105, 0, 4391106, 0, 4391107, 0, 4391108, 0, 4391109, 0, 4391110, 0, 4391111, 0, 4391112, 0, 4391113, 0, 4391114, 0, 4391115, 0, 4391116, 0, 4391117, 0, 4391118, 0, 4391119, 0, 4391120, 0, 4391121, 0, 4391122, 0, 4391123, 0, 4391124, 0, 4391125, 0 </int_array>
+				<dictionary>
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<dictionary>
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<resource  resource_type="PackedScene" path="res://enemies/fluff.xml">  </resource>
+				<vector2> 5421.64, 1144.8 </vector2>
+				<vector2> 5051.64, 1590.03 </vector2>
+				<vector2> 4828.9, 1857.63 </vector2>
+				<vector2> 4339.75, 1876.99 </vector2>
+				<vector2> 5349.86, 1475.04 </vector2>
+				<vector2> 5553.17, 1351.07 </vector2>
+				<vector2> 5750.78, 1056.13 </vector2>
+				<vector2> 5737.62, 766.408 </vector2>
+				<resource  resource_type="PackedScene" path="res://enemies/cannon.xml">  </resource>
+				<vector2> 6848.4, 480.404 </vector2>
+				<real> -270.72821 </real>
+				<int> 1 </int>
+				<vector2> 9028.33, 1296.32 </vector2>
+				<real> -231.834549 </real>
+				<vector2> 11388.6, 2315.26 </vector2>
+				<real> 231.050323 </real>
+				<int> 2 </int>
+				<vector2> 11584, 3232 </vector2>
+				<vector2> 11466.3, 3768 </vector2>
+				<real> -540.055603 </real>
+				<vector2> 11744, 2080 </vector2>
+				<vector2> 13289.8, 2326.64 </vector2>
+				<real> 226.303772 </real>
+				<dictionary>
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<resource  resource_type="PackedScene" path="res://interaction/breakable_stone_physic.xml">  </resource>
+				<vector2> 1790.84, 2067.84 </vector2>
+				<real> 89.310867 </real>
+				<vector2> 2136.52, 2065.08 </vector2>
+				<resource  resource_type="PackedScene" path="res://interaction/plank.xml">  </resource>
+				<vector2> 1972.69, 1948.81 </vector2>
+				<vector2> 1776.88, 1834.39 </vector2>
+				<vector2> 2181.63, 1835.49 </vector2>
+				<real> 88.646126 </real>
+				<vector2> 1974.53, 1835.48 </vector2>
+				<vector2> 1987.19, 1718.91 </vector2>
+				<resource  resource_type="PackedScene" path="res://enemies/rb_spike.xml">  </resource>
+				<vector2> 1840.59, 1666.15 </vector2>
+				<vector2> 1969.98, 1661.72 </vector2>
+				<vector2> 1871.62, 1822.39 </vector2>
+				<vector2> 2454.52, 2066.08 </vector2>
+				<vector2> 2558.69, 1948.81 </vector2>
+				<vector2> 2752.52, 2065.08 </vector2>
+				<vector2> 2454.52, 1837.08 </vector2>
+				<vector2> 2749.52, 1837.08 </vector2>
+				<vector2> 2579.69, 1721.81 </vector2>
+				<vector2> 2598.52, 1838.08 </vector2>
+				<vector2> 2290.69, 1686.81 </vector2>
+				<vector2> 2133.67, 1576.29 </vector2>
+				<vector2> 2486.16, 1577.79 </vector2>
+				<vector2> 2309.73, 1459.63 </vector2>
+				<vector2> 2089.69, 1842.65 </vector2>
+				<vector2> 1930.53, 2068.47 </vector2>
+				<vector2> 2318.24, 1569.22 </vector2>
+				<vector2> 2636.56, 1607.31 </vector2>
+				<vector2> 2572.63, 2038.55 </vector2>
+				<vector2> 2224.37, 1574.66 </vector2>
+				<vector2> 2412.1, 1570.58 </vector2>
+				<vector2> 2685.54, 1811.36 </vector2>
+				<vector2> 371.359, 1381.89 </vector2>
+				<vector2> 120.12, 1087.92 </vector2>
+				<dictionary>
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<resource  resource_type="PackedScene" path="res://player/large_fruit.xml">  </resource>
+				<vector2> 2304, 1824 </vector2>
+				<resource  resource_type="PackedScene" path="res://player/fruit.xml">  </resource>
+				<vector2> 2464, 1280 </vector2>
+				<vector2> 2400, 1216 </vector2>
+				<vector2> 2336, 1184 </vector2>
+				<vector2> 2336, 1376 </vector2>
+				<vector2> 2400, 1344 </vector2>
+				<vector2> 3373.48, 1852 </vector2>
+				<vector2> 3309.48, 1788 </vector2>
+				<vector2> 3245.48, 1756 </vector2>
+				<vector2> 3245.48, 1948 </vector2>
+				<vector2> 3309.48, 1916 </vector2>
+				<vector2> 4544, 864 </vector2>
+				<vector2> 4512, 800 </vector2>
+				<vector2> 4448, 736 </vector2>
+				<vector2> 4352, 864 </vector2>
+				<vector2> 4384, 800 </vector2>
+				<vector2> 4512, 512 </vector2>
+				<vector2> 4832, 224 </vector2>
+				<vector2> 4896, 224 </vector2>
+				<vector2> 4832, 288 </vector2>
+				<vector2> 4896, 288 </vector2>
+				<vector2> 4832, 352 </vector2>
+				<vector2> 4896, 352 </vector2>
+				<vector2> 4960, 224 </vector2>
+				<vector2> 5024, 224 </vector2>
+				<vector2> 4960, 288 </vector2>
+				<vector2> 5024, 288 </vector2>
+				<vector2> 4960, 352 </vector2>
+				<vector2> 5024, 352 </vector2>
+				<vector2> 5088, 224 </vector2>
+				<vector2> 5152, 224 </vector2>
+				<vector2> 5088, 288 </vector2>
+				<vector2> 5152, 288 </vector2>
+				<vector2> 5088, 352 </vector2>
+				<vector2> 5152, 352 </vector2>
+				<vector2> 5216, 224 </vector2>
+				<vector2> 5280, 224 </vector2>
+				<vector2> 5216, 288 </vector2>
+				<vector2> 5280, 288 </vector2>
+				<vector2> 5216, 352 </vector2>
+				<vector2> 5280, 352 </vector2>
+				<vector2> 5376.55, 291.091 </vector2>
+				<vector2> 6772.52, 956.212 </vector2>
+				<vector2> 6772.52, 892.212 </vector2>
+				<vector2> 6708.52, 956.212 </vector2>
+				<vector2> 6900.52, 1084.21 </vector2>
+				<vector2> 6900.52, 1020.21 </vector2>
+				<vector2> 6836.52, 1084.21 </vector2>
+				<vector2> 7040, 1248 </vector2>
+				<vector2> 7040, 1184 </vector2>
+				<vector2> 6976, 1248 </vector2>
+				<vector2> 7168, 1376 </vector2>
+				<vector2> 7168, 1312 </vector2>
+				<vector2> 7104, 1376 </vector2>
+				<vector2> 7232, 1600 </vector2>
+				<vector2> 7328, 1824 </vector2>
+				<vector2> 7520, 2048 </vector2>
+				<vector2> 7840, 2080 </vector2>
+				<vector2> 8192, 2048 </vector2>
+				<vector2> 8448, 1952 </vector2>
+				<vector2> 13568, 3456 </vector2>
+				<vector2> 8640, 1856 </vector2>
+				<vector2> 8832, 1760 </vector2>
+				<vector2> 9056, 1664 </vector2>
+				<vector2> 9344, 1568 </vector2>
+				<vector2> 9760, 1600 </vector2>
+				<vector2> 9920, 1696 </vector2>
+				<vector2> 10112, 1792 </vector2>
+				<vector2> 10336, 1888 </vector2>
+				<vector2> 10560, 1984 </vector2>
+				<vector2> 9344, 1504 </vector2>
+				<vector2> 9408, 1536 </vector2>
+				<vector2> 9472, 1504 </vector2>
+				<vector2> 9504, 1536 </vector2>
+				<vector2> 9472, 1568 </vector2>
+				<vector2> 12608, 3968 </vector2>
+				<vector2> 13536, 3840 </vector2>
+				<vector2> 13568, 3584 </vector2>
+				<vector2> 13568, 3712 </vector2>
+				<vector2> 12480, 3968 </vector2>
+				<vector2> 13536, 2368 </vector2>
+				<vector2> 2336, 1280 </vector2>
+				<vector2> 2272, 1216 </vector2>
+				<vector2> 2208, 1184 </vector2>
+				<vector2> 2208, 1376 </vector2>
+				<vector2> 2272, 1344 </vector2>
+				<vector2> 2208, 1280 </vector2>
+				<vector2> 2144, 1344 </vector2>
+				<vector2> 2080, 1376 </vector2>
+				<vector2> 2080, 1184 </vector2>
+				<vector2> 2144, 1216 </vector2>
+				<vector2> 3264, 1856 </vector2>
+				<vector2> 3200, 1792 </vector2>
+				<vector2> 3136, 1760 </vector2>
+				<vector2> 3136, 1952 </vector2>
+				<vector2> 3200, 1920 </vector2>
+				<vector2> 3104, 1920 </vector2>
+				<vector2> 3040, 1952 </vector2>
+				<vector2> 3040, 1760 </vector2>
+				<vector2> 3104, 1792 </vector2>
+				<vector2> 3168, 1856 </vector2>
+				<vector2> 3744, 1572 </vector2>
+				<vector2> 3808, 1636 </vector2>
+				<vector2> 3680, 1540 </vector2>
+				<vector2> 3680, 1732 </vector2>
+				<vector2> 3744, 1700 </vector2>
+				<vector2> 3840, 1700 </vector2>
+				<vector2> 3776, 1732 </vector2>
+				<vector2> 3776, 1540 </vector2>
+				<vector2> 3840, 1572 </vector2>
+				<vector2> 3904, 1636 </vector2>
+				<vector2> 4013.48, 1632 </vector2>
+				<vector2> 3949.48, 1568 </vector2>
+				<vector2> 3885.48, 1536 </vector2>
+				<vector2> 3885.48, 1728 </vector2>
+				<vector2> 3949.48, 1696 </vector2>
+				<vector2> 4544, 960 </vector2>
+				<vector2> 4512, 896 </vector2>
+				<vector2> 4448, 832 </vector2>
+				<vector2> 4352, 960 </vector2>
+				<vector2> 4384, 896 </vector2>
+				<vector2> 4544, 1056 </vector2>
+				<vector2> 4512, 992 </vector2>
+				<vector2> 4448, 928 </vector2>
+				<vector2> 4352, 1056 </vector2>
+				<vector2> 4384, 992 </vector2>
+				<vector2> 4544, 1152 </vector2>
+				<vector2> 4512, 1088 </vector2>
+				<vector2> 4448, 1024 </vector2>
+				<vector2> 4352, 1152 </vector2>
+				<vector2> 4384, 1088 </vector2>
+				<vector2> 6080, 672 </vector2>
+				<vector2> 6048, 608 </vector2>
+				<vector2> 5984, 544 </vector2>
+				<vector2> 5888, 672 </vector2>
+				<vector2> 5920, 608 </vector2>
+				<vector2> 6080, 768 </vector2>
+				<vector2> 6048, 704 </vector2>
+				<vector2> 5984, 640 </vector2>
+				<vector2> 5888, 768 </vector2>
+				<vector2> 5920, 704 </vector2>
+				<vector2> 6080, 864 </vector2>
+				<vector2> 6048, 800 </vector2>
+				<vector2> 5984, 736 </vector2>
+				<vector2> 5888, 864 </vector2>
+				<vector2> 5920, 800 </vector2>
+				<vector2> 6080, 960 </vector2>
+				<vector2> 6048, 896 </vector2>
+				<vector2> 5984, 832 </vector2>
+				<vector2> 5888, 960 </vector2>
+				<vector2> 5920, 896 </vector2>
+				<vector2> 7296, 1664 </vector2>
+				<vector2> 7296, 1600 </vector2>
+				<vector2> 7232, 1664 </vector2>
+				<vector2> 7392, 1888 </vector2>
+				<vector2> 7392, 1824 </vector2>
+				<vector2> 7328, 1888 </vector2>
+				<vector2> 7584, 2112 </vector2>
+				<vector2> 7584, 2048 </vector2>
+				<vector2> 7520, 2112 </vector2>
+				<vector2> 7904, 2144 </vector2>
+				<vector2> 7904, 2080 </vector2>
+				<vector2> 7840, 2144 </vector2>
+				<vector2> 8256, 2112 </vector2>
+				<vector2> 8256, 2048 </vector2>
+				<vector2> 8192, 2112 </vector2>
+				<vector2> 8512, 2016 </vector2>
+				<vector2> 8512, 1952 </vector2>
+				<vector2> 8448, 2016 </vector2>
+				<vector2> 8704, 1920 </vector2>
+				<vector2> 8704, 1856 </vector2>
+				<vector2> 8640, 1920 </vector2>
+				<vector2> 8896, 1824 </vector2>
+				<vector2> 8896, 1760 </vector2>
+				<vector2> 8832, 1824 </vector2>
+				<vector2> 9120, 1728 </vector2>
+				<vector2> 9120, 1664 </vector2>
+				<vector2> 9056, 1728 </vector2>
+				<vector2> 9824, 1664 </vector2>
+				<vector2> 9824, 1600 </vector2>
+				<vector2> 9760, 1664 </vector2>
+				<vector2> 9984, 1760 </vector2>
+				<vector2> 9984, 1696 </vector2>
+				<vector2> 9920, 1760 </vector2>
+				<vector2> 10176, 1856 </vector2>
+				<vector2> 10176, 1792 </vector2>
+				<vector2> 10112, 1856 </vector2>
+				<vector2> 10400, 1952 </vector2>
+				<vector2> 10400, 1888 </vector2>
+				<vector2> 10336, 1952 </vector2>
+				<vector2> 10624, 2048 </vector2>
+				<vector2> 10624, 1984 </vector2>
+				<vector2> 10560, 2048 </vector2>
+				<vector2> 13472, 2368 </vector2>
+				<vector2> 13440, 2304 </vector2>
+				<vector2> 13504, 2304 </vector2>
+				<vector2> 13408, 2240 </vector2>
+				<vector2> 13376, 2304 </vector2>
+				<vector2> 13312, 2176 </vector2>
+				<vector2> 13344, 2240 </vector2>
+				<vector2> 13376, 2176 </vector2>
+				<vector2> 13248, 2176 </vector2>
+				<vector2> 13248, 2112 </vector2>
+				<vector2> 13184, 2112 </vector2>
+				<vector2> 13184, 2176 </vector2>
+				<vector2> 12544, 3968 </vector2>
+				<vector2> 12544, 3904 </vector2>
+				<vector2> 12608, 3904 </vector2>
+				<vector2> 12480, 3904 </vector2>
+				<vector2> 12544, 4032 </vector2>
+				<vector2> 12608, 4032 </vector2>
+				<vector2> 12480, 4032 </vector2>
+				<vector2> 13568, 3648 </vector2>
+				<vector2> 13568, 3776 </vector2>
+				<vector2> 13504, 3648 </vector2>
+				<vector2> 13504, 3776 </vector2>
+				<vector2> 13472, 3840 </vector2>
+				<vector2> 13504, 3584 </vector2>
+				<vector2> 13504, 3712 </vector2>
+				<vector2> 13440, 3776 </vector2>
+				<vector2> 13408, 3840 </vector2>
+				<vector2> 13440, 3712 </vector2>
+				<dictionary>
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<resource  resource_type="PackedScene" path="res://player/checkpoint.xml">  </resource>
+				<vector2> 6246.59, 396.743 </vector2>
+				<resource  resource_type="PackedScene" path="res://interaction/roulette.xml">  </resource>
+				<vector2> 12384, 2105.15 </vector2>
+				<dictionary>
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<resource  resource_type="PackedScene" path="res://enemies/mountain_long_spikes.xml">  </resource>
+				<vector2> 7085.25, 1965.25 </vector2>
+				<real> -44.402481 </real>
+				<vector2> 7712.02, 2400.02 </vector2>
+				<real> -0.033283 </real>
+				<vector2> 8202.79, 2314.79 </vector2>
+				<real> 25.984577 </real>
+				<vector2> 9129.41, 1929.41 </vector2>
+				<real> 21.224367 </real>
+				<resource  resource_type="PackedScene" path="res://enemies/mountain_spikes.xml">  </resource>
+				<vector2> 8832, 2066.46 </vector2>
+				<real> 14.314158 </real>
+				<vector2> 8528.59, 2177.41 </vector2>
+				<real> 33.764797 </real>
+				<vector2> 8684.39, 2113.41 </vector2>
+				<real> 24.674475 </real>
+				<vector2> 9446.3, 1798.3 </vector2>
+				<real> 12.804785 </real>
+				<vector2> 9600.74, 1780.13 </vector2>
+				<real> 1.338495 </real>
+				<vector2> 9930.22, 1898.22 </vector2>
+				<real> -23.900597 </real>
+				<vector2> 10252.5, 2060.51 </vector2>
+				<real> -34.596439 </real>
+				<vector2> 10566.1, 2150.1 </vector2>
+				<real> -12.350642 </real>
+				<vector2> 7373.21, 2317.21 </vector2>
+				<real> -47.611847 </real>
+				<resource  resource_type="PackedScene" path="res://enemies/floating_spike.xml">  </resource>
+				<vector2> 6619.85, 1200.6 </vector2>
+				<vector2> 6763.35, 1404.52 </vector2>
+				<vector2> 6838.88, 1600.88 </vector2>
+				<vector2> 11688.9, 4036.99 </vector2>
+				<vector2> 12192.1, 4176.76 </vector2>
+				<vector2> 12672, 4223.35 </vector2>
+				<real> 0.208649 </real>
+				<vector2> 13193.8, 4190.73 </vector2>
+				<real> 7.308036 </real>
+				<vector2> 13537.1, 4138.42 </vector2>
+				<real> 16.249891 </real>
+				<vector2> 11492.8, 3876.84 </vector2>
+				<real> -80.514503 </real>
+				<vector2> 6547.56, 1009.74 </vector2>
+				<real> -88.943764 </real>
+				<vector2> 6681.13, 1485.78 </vector2>
+				<real> -60.924149 </real>
+				<vector2> 6856.07, 1752.12 </vector2>
+				<dictionary>
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<resource  resource_type="PackedScene" path="res://interaction/breakable_stone.xml">  </resource>
+				<vector2> 11584.3, 2560.33 </vector2>
+				<real> 0.598133 </real>
+				<vector2> 11584.6, 2848.62 </vector2>
+				<real> -1.112399 </real>
+				<vector2> 11584.5, 3104.55 </vector2>
+				<real> -0.987796 </real>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="3017"> 				-1, -1, 1, 0, -1, 7, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 0, 0, 0, 10, 9, -1, 14, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 11, 4, 12, 5, 13, 5, 14, 4, 15, 1, 16, 6, 17, 7, 18, 8, 7, 9, 0, 0, 0, 20, 19, -1, 19, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 11, 4, 12, 5, 13, 5, 14, 4, 15, 1, 16, 10, 17, 7, 18, 8, 21, 11, 22, 12, 23, 13, 24, 14, 7, 9, 8, 15, 0, 0, 0, 1, 25, -1, 7, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 9, 8, 16, 0, 3, 0, 27, 26, 17, 1, 16, 18, 0, 3, 0, 27, 28, 17, 1, 16, 19, 0, 3, 0, 27, 29, 17, 1, 16, 20, 0, 3, 0, 27, 30, 17, 1, 16, 21, 0, 3, 0, 27, 31, 17, 1, 16, 22, 0, 3, 0, 27, 32, 17, 1, 16, 23, 0, 3, 0, 27, 33, 17, 1, 16, 24, 0, 3, 0, 27, 34, 17, 1, 16, 25, 0, 3, 0, 36, 35, 26, 4, 16, 27, 17, 28, 37, 29, 38, 29, 0, 3, 0, 36, 39, 26, 4, 16, 30, 17, 31, 37, 29, 38, 29, 0, 3, 0, 36, 40, 26, 4, 16, 32, 17, 33, 37, 34, 38, 34, 0, 3, 0, 27, 41, 17, 1, 16, 35, 0, 3, 0, 36, 42, 26, 4, 16, 36, 17, 37, 37, 29, 38, 29, 0, 3, 0, 27, 43, 17, 1, 16, 38, 0, 3, 0, 36, 44, 26, 4, 16, 39, 17, 40, 37, 34, 38, 34, 0, 0, 0, 1, 45, -1, 7, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 9, 8, 41, 0, 19, 0, 47, 46, 42, 2, 16, 43, 17, 44, 0, 19, 0, 47, 48, 42, 2, 16, 45, 17, 44, 0, 19, 0, 27, 49, 46, 1, 16, 47, 0, 19, 0, 47, 50, 42, 2, 16, 48, 17, 44, 0, 19, 0, 47, 51, 42, 2, 16, 49, 17, 50, 0, 19, 0, 47, 52, 42, 2, 16, 51, 17, 44, 0, 19, 0, 27, 53, 46, 1, 16, 52, 0, 19, 0, 27, 27, 53, 1, 16, 54, 0, 19, 0, 27, 54, 53, 1, 16, 55, 0, 19, 0, 27, 55, 53, 1, 16, 56, 0, 19, 0, 47, 56, 42, 2, 16, 57, 17, 44, 0, 19, 0, 27, 57, 46, 1, 16, 58, 0, 19, 0, 47, 58, 42, 2, 16, 59, 17, 44, 0, 19, 0, 47, 59, 42, 2, 16, 60, 17, 44, 0, 19, 0, 47, 60, 42, 2, 16, 61, 17, 44, 0, 19, 0, 27, 61, 46, 1, 16, 62, 0, 19, 0, 47, 62, 42, 2, 16, 63, 17, 44, 0, 19, 0, 27, 63, 46, 1, 16, 64, 0, 19, 0, 47, 64, 42, 2, 16, 65, 17, 44, 0, 19, 0, 47, 65, 42, 2, 16, 66, 17, 44, 0, 19, 0, 27, 66, 46, 1, 16, 67, 0, 19, 0, 27, 67, 53, 1, 16, 68, 0, 19, 0, 27, 68, 53, 1, 16, 69, 0, 19, 0, 27, 69, 53, 1, 16, 70, 0, 19, 0, 27, 70, 53, 1, 16, 71, 0, 19, 0, 27, 71, 53, 1, 16, 72, 0, 19, 0, 27, 72, 53, 1, 16, 73, 0, 19, 0, 27, 73, 53, 1, 16, 74, 0, 19, 0, 27, 74, 53, 1, 16, 75, 0, 19, 0, 27, 75, 53, 1, 16, 76, 0, 19, 0, 27, 76, 53, 1, 16, 77, 0, 0, 0, 1, 77, -1, 7, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 9, 8, 78, 0, 51, 0, 79, 78, 79, 1, 16, 80, 0, 51, 0, 79, 80, 81, 1, 16, 82, 0, 51, 0, 79, 81, 81, 1, 16, 83, 0, 51, 0, 79, 82, 81, 1, 16, 84, 0, 51, 0, 79, 83, 81, 1, 16, 85, 0, 51, 0, 79, 84, 81, 1, 16, 86, 0, 51, 0, 79, 85, 81, 1, 16, 87, 0, 51, 0, 79, 86, 81, 1, 16, 88, 0, 51, 0, 79, 87, 81, 1, 16, 89, 0, 51, 0, 79, 88, 81, 1, 16, 90, 0, 51, 0, 79, 89, 81, 1, 16, 91, 0, 51, 0, 79, 90, 81, 1, 16, 92, 0, 51, 0, 79, 91, 81, 1, 16, 93, 0, 51, 0, 79, 92, 81, 1, 16, 94, 0, 51, 0, 79, 93, 81, 1, 16, 95, 0, 51, 0, 79, 94, 81, 1, 16, 96, 0, 51, 0, 79, 95, 81, 1, 16, 97, 0, 51, 0, 79, 96, 81, 1, 16, 98, 0, 51, 0, 79, 97, 81, 1, 16, 99, 0, 51, 0, 79, 98, 81, 1, 16, 100, 0, 51, 0, 79, 99, 81, 1, 16, 101, 0, 51, 0, 79, 100, 81, 1, 16, 102, 0, 51, 0, 79, 101, 81, 1, 16, 103, 0, 51, 0, 79, 102, 81, 1, 16, 104, 0, 51, 0, 79, 103, 81, 1, 16, 105, 0, 51, 0, 79, 104, 81, 1, 16, 106, 0, 51, 0, 79, 105, 81, 1, 16, 107, 0, 51, 0, 79, 106, 81, 1, 16, 108, 0, 51, 0, 79, 107, 81, 1, 16, 109, 0, 51, 0, 79, 108, 81, 1, 16, 110, 0, 51, 0, 79, 109, 81, 1, 16, 111, 0, 51, 0, 79, 110, 81, 1, 16, 112, 0, 51, 0, 79, 111, 81, 1, 16, 113, 0, 51, 0, 79, 112, 81, 1, 16, 114, 0, 51, 0, 79, 113, 81, 1, 16, 115, 0, 51, 0, 79, 114, 81, 1, 16, 116, 0, 51, 0, 79, 115, 81, 1, 16, 117, 0, 51, 0, 79, 116, 81, 1, 16, 118, 0, 51, 0, 79, 117, 81, 1, 16, 119, 0, 51, 0, 79, 118, 81, 1, 16, 120, 0, 51, 0, 79, 119, 81, 1, 16, 121, 0, 51, 0, 79, 120, 79, 2, 16, 122, 121, 29, 0, 51, 0, 79, 122, 81, 1, 16, 123, 0, 51, 0, 79, 123, 81, 1, 16, 124, 0, 51, 0, 79, 124, 81, 1, 16, 125, 0, 51, 0, 79, 125, 81, 1, 16, 126, 0, 51, 0, 79, 126, 81, 1, 16, 127, 0, 51, 0, 79, 127, 81, 1, 16, 128, 0, 51, 0, 79, 128, 81, 1, 16, 129, 0, 51, 0, 79, 129, 81, 1, 16, 130, 0, 51, 0, 79, 130, 81, 1, 16, 131, 0, 51, 0, 79, 131, 81, 1, 16, 132, 0, 51, 0, 79, 132, 81, 1, 16, 133, 0, 51, 0, 79, 133, 81, 1, 16, 134, 0, 51, 0, 79, 134, 81, 1, 16, 135, 0, 51, 0, 79, 135, 81, 1, 16, 136, 0, 51, 0, 79, 136, 81, 1, 16, 137, 0, 51, 0, 79, 137, 81, 1, 16, 138, 0, 51, 0, 79, 138, 81, 1, 16, 139, 0, 51, 0, 79, 139, 81, 1, 16, 140, 0, 51, 0, 79, 140, 79, 2, 16, 141, 121, 34, 0, 51, 0, 79, 141, 81, 1, 16, 142, 0, 51, 0, 79, 142, 81, 1, 16, 143, 0, 51, 0, 79, 143, 81, 1, 16, 144, 0, 51, 0, 79, 144, 81, 1, 16, 145, 0, 51, 0, 79, 145, 81, 1, 16, 146, 0, 51, 0, 79, 146, 81, 1, 16, 147, 0, 51, 0, 79, 147, 81, 1, 16, 148, 0, 51, 0, 79, 148, 81, 1, 16, 149, 0, 51, 0, 79, 149, 81, 1, 16, 150, 0, 51, 0, 79, 150, 81, 1, 16, 151, 0, 51, 0, 79, 151, 81, 1, 16, 152, 0, 51, 0, 79, 152, 81, 1, 16, 153, 0, 51, 0, 79, 153, 81, 1, 16, 154, 0, 51, 0, 79, 154, 81, 1, 16, 155, 0, 51, 0, 79, 155, 81, 1, 16, 156, 0, 51, 0, 79, 156, 81, 1, 16, 157, 0, 51, 0, 79, 157, 81, 1, 16, 158, 0, 51, 0, 79, 158, 81, 1, 16, 159, 0, 51, 0, 79, 159, 81, 1, 16, 160, 0, 51, 0, 79, 160, 81, 1, 16, 161, 0, 51, 0, 79, 161, 81, 1, 16, 162, 0, 51, 0, 79, 162, 81, 1, 16, 163, 0, 51, 0, 79, 163, 81, 1, 16, 164, 0, 51, 0, 79, 164, 81, 1, 16, 165, 0, 51, 0, 79, 165, 81, 1, 16, 166, 0, 51, 0, 79, 166, 81, 1, 16, 167, 0, 51, 0, 79, 167, 81, 1, 16, 168, 0, 51, 0, 79, 168, 81, 1, 16, 169, 0, 51, 0, 79, 169, 81, 1, 16, 170, 0, 51, 0, 79, 170, 81, 1, 16, 171, 0, 51, 0, 79, 171, 81, 1, 16, 172, 0, 51, 0, 79, 172, 81, 1, 16, 173, 0, 51, 0, 79, 173, 81, 1, 16, 174, 0, 51, 0, 79, 174, 81, 1, 16, 175, 0, 51, 0, 79, 175, 81, 1, 16, 176, 0, 51, 0, 79, 176, 81, 1, 16, 177, 0, 51, 0, 79, 177, 81, 1, 16, 178, 0, 51, 0, 79, 178, 81, 1, 16, 179, 0, 51, 0, 79, 179, 81, 1, 16, 180, 0, 51, 0, 79, 180, 81, 1, 16, 181, 0, 51, 0, 79, 181, 81, 1, 16, 182, 0, 51, 0, 79, 182, 81, 1, 16, 183, 0, 51, 0, 79, 183, 81, 1, 16, 184, 0, 51, 0, 79, 184, 81, 1, 16, 185, 0, 51, 0, 79, 185, 81, 1, 16, 186, 0, 51, 0, 79, 186, 81, 1, 16, 187, 0, 51, 0, 79, 187, 81, 1, 16, 188, 0, 51, 0, 79, 188, 81, 1, 16, 189, 0, 51, 0, 79, 189, 81, 1, 16, 190, 0, 51, 0, 79, 190, 81, 1, 16, 191, 0, 51, 0, 79, 191, 81, 1, 16, 192, 0, 51, 0, 79, 192, 81, 1, 16, 193, 0, 51, 0, 79, 193, 81, 1, 16, 194, 0, 51, 0, 79, 194, 81, 1, 16, 195, 0, 51, 0, 79, 195, 81, 1, 16, 196, 0, 51, 0, 79, 196, 81, 1, 16, 197, 0, 51, 0, 79, 197, 81, 1, 16, 198, 0, 51, 0, 79, 198, 81, 1, 16, 199, 0, 51, 0, 79, 199, 81, 1, 16, 200, 0, 51, 0, 79, 200, 81, 1, 16, 201, 0, 51, 0, 79, 201, 81, 1, 16, 202, 0, 51, 0, 79, 202, 81, 1, 16, 203, 0, 51, 0, 79, 203, 81, 1, 16, 204, 0, 51, 0, 79, 204, 81, 1, 16, 205, 0, 51, 0, 79, 205, 81, 1, 16, 206, 0, 51, 0, 79, 206, 81, 1, 16, 207, 0, 51, 0, 79, 207, 81, 1, 16, 208, 0, 51, 0, 79, 208, 81, 1, 16, 209, 0, 51, 0, 79, 209, 81, 1, 16, 210, 0, 51, 0, 79, 210, 81, 1, 16, 211, 0, 51, 0, 79, 211, 81, 1, 16, 212, 0, 51, 0, 79, 212, 81, 1, 16, 213, 0, 51, 0, 79, 213, 81, 1, 16, 214, 0, 51, 0, 79, 214, 81, 1, 16, 215, 0, 51, 0, 79, 215, 81, 1, 16, 216, 0, 51, 0, 79, 216, 81, 1, 16, 217, 0, 51, 0, 79, 217, 81, 1, 16, 218, 0, 51, 0, 79, 218, 81, 1, 16, 219, 0, 51, 0, 79, 219, 81, 1, 16, 220, 0, 51, 0, 79, 220, 81, 1, 16, 221, 0, 51, 0, 79, 221, 81, 1, 16, 222, 0, 51, 0, 79, 222, 81, 1, 16, 223, 0, 51, 0, 79, 223, 81, 1, 16, 224, 0, 51, 0, 79, 224, 81, 1, 16, 225, 0, 51, 0, 79, 225, 81, 1, 16, 226, 0, 51, 0, 79, 226, 81, 1, 16, 227, 0, 51, 0, 79, 227, 81, 1, 16, 228, 0, 51, 0, 79, 228, 81, 1, 16, 229, 0, 51, 0, 79, 229, 81, 1, 16, 230, 0, 51, 0, 79, 230, 81, 1, 16, 231, 0, 51, 0, 79, 231, 81, 1, 16, 232, 0, 51, 0, 79, 232, 81, 1, 16, 233, 0, 51, 0, 79, 233, 81, 1, 16, 234, 0, 51, 0, 79, 234, 81, 1, 16, 235, 0, 51, 0, 79, 235, 81, 1, 16, 236, 0, 51, 0, 79, 236, 81, 1, 16, 237, 0, 51, 0, 79, 237, 81, 1, 16, 238, 0, 51, 0, 79, 238, 81, 1, 16, 239, 0, 51, 0, 79, 239, 81, 1, 16, 240, 0, 51, 0, 79, 240, 81, 1, 16, 241, 0, 51, 0, 79, 241, 81, 1, 16, 242, 0, 51, 0, 79, 242, 81, 1, 16, 243, 0, 51, 0, 79, 243, 81, 1, 16, 244, 0, 51, 0, 79, 244, 81, 1, 16, 245, 0, 51, 0, 79, 245, 81, 1, 16, 246, 0, 51, 0, 79, 246, 81, 1, 16, 247, 0, 51, 0, 79, 247, 81, 1, 16, 248, 0, 51, 0, 79, 248, 81, 1, 16, 249, 0, 51, 0, 79, 249, 81, 1, 16, 250, 0, 51, 0, 79, 250, 81, 1, 16, 251, 0, 51, 0, 79, 251, 81, 1, 16, 252, 0, 51, 0, 79, 252, 81, 1, 16, 253, 0, 51, 0, 79, 253, 81, 1, 16, 254, 0, 51, 0, 79, 254, 81, 1, 16, 255, 0, 51, 0, 79, 255, 81, 1, 16, 256, 0, 51, 0, 79, 256, 81, 1, 16, 257, 0, 51, 0, 79, 257, 81, 1, 16, 258, 0, 51, 0, 79, 258, 81, 1, 16, 259, 0, 51, 0, 79, 259, 81, 1, 16, 260, 0, 51, 0, 79, 260, 81, 1, 16, 261, 0, 51, 0, 79, 261, 81, 1, 16, 262, 0, 51, 0, 79, 262, 81, 1, 16, 263, 0, 51, 0, 79, 263, 81, 1, 16, 264, 0, 51, 0, 79, 264, 81, 1, 16, 265, 0, 51, 0, 79, 265, 81, 1, 16, 266, 0, 51, 0, 79, 266, 81, 1, 16, 267, 0, 51, 0, 79, 267, 81, 1, 16, 268, 0, 51, 0, 79, 268, 81, 1, 16, 269, 0, 51, 0, 79, 269, 81, 1, 16, 270, 0, 51, 0, 79, 270, 81, 1, 16, 271, 0, 51, 0, 79, 271, 81, 1, 16, 272, 0, 51, 0, 79, 272, 81, 1, 16, 273, 0, 51, 0, 79, 273, 81, 1, 16, 274, 0, 51, 0, 79, 274, 81, 1, 16, 275, 0, 51, 0, 79, 275, 81, 1, 16, 276, 0, 51, 0, 79, 276, 81, 1, 16, 277, 0, 51, 0, 79, 277, 81, 1, 16, 278, 0, 51, 0, 79, 278, 81, 1, 16, 279, 0, 51, 0, 79, 279, 81, 1, 16, 280, 0, 51, 0, 79, 280, 81, 1, 16, 281, 0, 51, 0, 79, 281, 81, 1, 16, 282, 0, 51, 0, 79, 282, 81, 1, 16, 283, 0, 51, 0, 79, 283, 81, 1, 16, 284, 0, 51, 0, 79, 284, 81, 1, 16, 285, 0, 51, 0, 79, 285, 81, 1, 16, 286, 0, 51, 0, 79, 286, 81, 1, 16, 287, 0, 51, 0, 79, 287, 81, 1, 16, 288, 0, 51, 0, 79, 288, 81, 1, 16, 289, 0, 51, 0, 79, 289, 81, 1, 16, 290, 0, 51, 0, 79, 290, 81, 1, 16, 291, 0, 51, 0, 79, 291, 81, 1, 16, 292, 0, 51, 0, 79, 292, 81, 1, 16, 293, 0, 51, 0, 79, 293, 81, 1, 16, 294, 0, 51, 0, 79, 294, 81, 1, 16, 295, 0, 51, 0, 79, 295, 81, 1, 16, 296, 0, 51, 0, 79, 296, 81, 1, 16, 297, 0, 51, 0, 79, 297, 81, 1, 16, 298, 0, 51, 0, 79, 298, 81, 1, 16, 299, 0, 51, 0, 79, 299, 81, 1, 16, 300, 0, 51, 0, 79, 300, 81, 1, 16, 301, 0, 51, 0, 79, 301, 81, 1, 16, 302, 0, 0, 0, 1, 302, -1, 7, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 9, 8, 303, 0, 274, 0, 79, 303, 304, 1, 16, 305, 0, 274, 0, 47, 304, 306, 1, 16, 307, 0, 0, 0, 1, 305, -1, 7, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 9, 8, 308, 0, 277, 0, 36, 306, 309, 2, 16, 310, 17, 311, 0, 277, 0, 36, 307, 309, 2, 16, 312, 17, 313, 0, 277, 0, 36, 308, 309, 2, 16, 314, 17, 315, 0, 277, 0, 36, 309, 309, 2, 16, 316, 17, 317, 0, 277, 0, 36, 310, 318, 2, 16, 319, 17, 320, 0, 277, 0, 36, 311, 318, 2, 16, 321, 17, 322, 0, 277, 0, 36, 312, 318, 2, 16, 323, 17, 324, 0, 277, 0, 36, 313, 318, 2, 16, 325, 17, 326, 0, 277, 0, 36, 314, 318, 2, 16, 327, 17, 328, 0, 277, 0, 36, 315, 309, 2, 16, 329, 17, 330, 0, 277, 0, 36, 316, 318, 2, 16, 331, 17, 332, 0, 277, 0, 36, 317, 309, 2, 16, 333, 17, 334, 0, 277, 0, 36, 318, 318, 2, 16, 335, 17, 336, 0, 277, 0, 36, 36, 337, 1, 16, 338, 0, 277, 0, 36, 319, 337, 1, 16, 339, 0, 277, 0, 36, 320, 337, 1, 16, 340, 0, 277, 0, 36, 321, 309, 2, 16, 341, 17, 334, 0, 277, 0, 36, 322, 309, 2, 16, 342, 17, 334, 0, 277, 0, 36, 323, 309, 2, 16, 343, 17, 344, 0, 277, 0, 36, 324, 309, 2, 16, 345, 17, 346, 0, 277, 0, 36, 325, 318, 2, 16, 347, 17, 348, 0, 277, 0, 36, 326, 318, 2, 16, 349, 17, 350, 0, 277, 0, 36, 327, 309, 2, 16, 351, 17, 352, 0, 277, 0, 36, 328, 309, 2, 16, 353, 17, 354, 0, 277, 0, 36, 329, 318, 2, 16, 355, 17, 336, 0, 0, 0, 1, 330, -1, 7, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 9, 8, 356, 0, 303, 0, 47, 331, 357, 2, 16, 358, 17, 359, 0, 303, 0, 47, 332, 357, 2, 16, 360, 17, 361, 0, 303, 0, 47, 333, 357, 2, 16, 362, 17, 363, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+		<resource name="script/script"></resource>
+	</main_resource>
+</resource_file>

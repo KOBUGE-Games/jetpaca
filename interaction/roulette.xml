@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="17" version="0.99" version_name="Godot Engine v0.99.3672-pre-beta">
+	<ext_resource path="res://art/ruleta.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/ruleta_pointer.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/ruleta_engranaje.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/ruleta_central_face.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/ruleta_spinning_inner_circle.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/button.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/ruleta_spinning_inner_shadow.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/ruleta_brake.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://art/ruleta_base.*" type="ImageTexture"></ext_resource>
+	<ext_resource path="res://interaction/roulette.*" type="GDScript"></ext_resource>
+	<resource type="Animation" path="local://1">
+		<string name="resource/name"> "button" </string>
+		<real name="length"> 1.2 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.5 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "button:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="8" shared="true">
+				<int> 0 </int>
+				<int> 1 </int>
+				<int> 2 </int>
+				<int> 3 </int>
+				<int> 4 </int>
+				<int> 5 </int>
+				<int> 6 </int>
+				<int> 7 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="8"> 				0, 0.1, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://2">
+		<string name="resource/name"> "idle" </string>
+		<real name="length"> 5 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.25 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "Ruleta/Position2D/pointer:transform/pos" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="true">
+				<vector2> 0, -13.4123 </vector2>
+				<vector2> 0, -13.4123 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 5 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "Ruleta/brake_1:transform/pos" </node_path>
+		<int name="tracks/1/interp"> 1 </int>
+		<dictionary name="tracks/1/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="true">
+				<vector2> 0.0156884, 39.1979 </vector2>
+				<vector2> 0.0156884, 39.1979 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 5 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "Ruleta/brake_ 2:transform/pos" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="true">
+				<vector2> -33, 18 </vector2>
+				<vector2> -33, 18 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 5 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "Ruleta/brake_ 3:transform/pos" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="true">
+				<vector2> 33, 18 </vector2>
+				<vector2> 33, 18 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 5 </real_array>
+		</dictionary>
+		<string name="tracks/4/type"> "value" </string>
+		<node_path name="tracks/4/path"> "Ruleta/brake_ 4:transform/pos" </node_path>
+		<int name="tracks/4/interp"> 1 </int>
+		<dictionary name="tracks/4/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="true">
+				<vector2> 33, -18 </vector2>
+				<vector2> 33, -18 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 5 </real_array>
+		</dictionary>
+		<string name="tracks/5/type"> "value" </string>
+		<node_path name="tracks/5/path"> "Ruleta/brake_ 5:transform/pos" </node_path>
+		<int name="tracks/5/interp"> 1 </int>
+		<dictionary name="tracks/5/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="true">
+				<vector2> -33, -18 </vector2>
+				<vector2> -33, -18 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 5 </real_array>
+		</dictionary>
+		<string name="tracks/6/type"> "value" </string>
+		<node_path name="tracks/6/path"> "Ruleta/Position2D/gear:transform/rot" </node_path>
+		<int name="tracks/6/interp"> 1 </int>
+		<dictionary name="tracks/6/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				2.54912, 1, 2.54912 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="true">
+				<real> 90 </real>
+				<real> 81.369255 </real>
+				<real> 90 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.75, 5 </real_array>
+		</dictionary>
+		<string name="tracks/7/type"> "value" </string>
+		<node_path name="tracks/7/path"> "Ruleta/Position2D/gear 2:transform/rot" </node_path>
+		<int name="tracks/7/interp"> 1 </int>
+		<dictionary name="tracks/7/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				2.14355, 1, 2.14355 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="true">
+				<real> 90 </real>
+				<real> 79.78968 </real>
+				<real> 90 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.75, 5 </real_array>
+		</dictionary>
+		<string name="tracks/8/type"> "value" </string>
+		<node_path name="tracks/8/path"> "Ruleta/spinning_inner_ring:transform/rot" </node_path>
+		<int name="tracks/8/interp"> 1 </int>
+		<dictionary name="tracks/8/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="true">
+				<real> 0 </real>
+				<real> 3.212948 </real>
+				<real> 0 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 2.5, 5 </real_array>
+		</dictionary>
+		<string name="tracks/9/type"> "value" </string>
+		<node_path name="tracks/9/path"> "Ruleta/ruleta_select/ruleta:transform/rot" </node_path>
+		<int name="tracks/9/interp"> 2 </int>
+		<dictionary name="tracks/9/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				3.4822, 1, 3.4822 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="true">
+				<real> 0 </real>
+				<real> -1.890505 </real>
+				<real> 0 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 3.25, 5 </real_array>
+		</dictionary>
+		<string name="tracks/10/type"> "value" </string>
+		<node_path name="tracks/10/path"> "Ruleta/Position2D:transform/rot" </node_path>
+		<int name="tracks/10/interp"> 2 </int>
+		<dictionary name="tracks/10/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="true">
+				<real> 0 </real>
+				<real> 0 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 5 </real_array>
+		</dictionary>
+		<string name="tracks/11/type"> "value" </string>
+		<node_path name="tracks/11/path"> "Ruleta:transform/pos" </node_path>
+		<int name="tracks/11/interp"> 2 </int>
+		<dictionary name="tracks/11/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="true">
+				<vector2> 0, -2.86594 </vector2>
+				<vector2> 0, -5.51963 </vector2>
+				<vector2> 0, -2.86594 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 2.5, 5 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://3">
+		<string name="resource/name"> "prize_select_alpha" </string>
+		<real name="length"> 15 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.25 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "Ruleta/Position2D/pointer:transform/pos" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="9" shared="true">
+				<vector2> 0, -13.4123 </vector2>
+				<vector2> 0, -13.4123 </vector2>
+				<vector2> 0, -13.4123 </vector2>
+				<vector2> 1.46302, -13.4123 </vector2>
+				<vector2> 0, -13.4123 </vector2>
+				<vector2> 1.17042, -13.4123 </vector2>
+				<vector2> 0, -13.4123 </vector2>
+				<vector2> 0.330032, -41.0054 </vector2>
+				<vector2> 0.330032, -41.0054 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="9"> 				0, 10, 11.9, 12.1, 12.3, 12.5, 13.1, 14.3, 15 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "Ruleta/brake_1:transform/pos" </node_path>
+		<int name="tracks/1/interp"> 1 </int>
+		<dictionary name="tracks/1/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<vector2> 0.0156884, 39.1979 </vector2>
+				<vector2> 0.0156884, 39.1979 </vector2>
+				<vector2> 0.0156884, 39.1979 </vector2>
+				<vector2> 0.0156899, 57.0128 </vector2>
+				<vector2> 0.0156899, 57.0128 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 10, 11.3, 11.9, 15 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "Ruleta/brake_ 2:transform/pos" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<vector2> -33, 18 </vector2>
+				<vector2> -33, 18 </vector2>
+				<vector2> -33, 18 </vector2>
+				<vector2> -48.7347, 28.3209 </vector2>
+				<vector2> -48.7347, 28.3209 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 10, 10.7, 11.3, 15 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "Ruleta/brake_ 3:transform/pos" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<vector2> 33, 18 </vector2>
+				<vector2> 33, 18 </vector2>
+				<vector2> 33, 18 </vector2>
+				<vector2> 49.4928, 28.3209 </vector2>
+				<vector2> 49.4928, 28.3209 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 10, 11.9, 12.5, 15 </real_array>
+		</dictionary>
+		<string name="tracks/4/type"> "value" </string>
+		<node_path name="tracks/4/path"> "Ruleta/brake_ 4:transform/pos" </node_path>
+		<int name="tracks/4/interp"> 1 </int>
+		<dictionary name="tracks/4/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<vector2> 33, -18 </vector2>
+				<vector2> 33, -18 </vector2>
+				<vector2> 33, -18 </vector2>
+				<vector2> 48.9864, -28.1192 </vector2>
+				<vector2> 48.9864, -28.1192 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 10, 12.5, 13.1, 15 </real_array>
+		</dictionary>
+		<string name="tracks/5/type"> "value" </string>
+		<node_path name="tracks/5/path"> "Ruleta/brake_ 5:transform/pos" </node_path>
+		<int name="tracks/5/interp"> 1 </int>
+		<dictionary name="tracks/5/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="4" shared="true">
+				<vector2> -33, -18 </vector2>
+				<vector2> -33, -18 </vector2>
+				<vector2> -49.4353, -28.1451 </vector2>
+				<vector2> -49.4353, -28.1451 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 10, 10.7, 15 </real_array>
+		</dictionary>
+		<string name="tracks/6/type"> "value" </string>
+		<node_path name="tracks/6/path"> "Ruleta/Position2D/gear:transform/rot" </node_path>
+		<int name="tracks/6/interp"> 1 </int>
+		<dictionary name="tracks/6/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				2.54912, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<real> 90 </real>
+				<real> -2880 </real>
+				<real> -475.714264 </real>
+				<real> 245 </real>
+				<real> 64.821434 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 8.75, 13, 14, 15 </real_array>
+		</dictionary>
+		<string name="tracks/7/type"> "value" </string>
+		<node_path name="tracks/7/path"> "Ruleta/Position2D/gear 2:transform/rot" </node_path>
+		<int name="tracks/7/interp"> 1 </int>
+		<dictionary name="tracks/7/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				2.14355, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<real> 90 </real>
+				<real> -2880 </real>
+				<real> -475.716003 </real>
+				<real> -1195 </real>
+				<real> -1015.179016 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 8.75, 13, 14, 15 </real_array>
+		</dictionary>
+		<string name="tracks/8/type"> "value" </string>
+		<node_path name="tracks/8/path"> "Ruleta/spinning_inner_ring:transform/rot" </node_path>
+		<int name="tracks/8/interp"> 1 </int>
+		<dictionary name="tracks/8/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				1, -2, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<real> 0 </real>
+				<real> 0 </real>
+				<real> 2520 </real>
+				<real> 2507.385254 </real>
+				<real> 2520 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 1, 12, 13.75, 15 </real_array>
+		</dictionary>
+		<string name="tracks/9/type"> "value" </string>
+		<node_path name="tracks/9/path"> "Ruleta/ruleta_select/ruleta:transform/rot" </node_path>
+		<int name="tracks/9/interp"> 2 </int>
+		<dictionary name="tracks/9/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				3.4822, -2, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<real> 0 </real>
+				<real> 0 </real>
+				<real> -2880 </real>
+				<real> -2885.058105 </real>
+				<real> -2880 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 1.5, 13, 14.25, 15 </real_array>
+		</dictionary>
+		<string name="tracks/10/type"> "value" </string>
+		<node_path name="tracks/10/path"> "Ruleta/Position2D:transform/rot" </node_path>
+		<int name="tracks/10/interp"> 2 </int>
+		<dictionary name="tracks/10/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="16"> 				1, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="16" shared="true">
+				<real> 0 </real>
+				<real> 5.899285 </real>
+				<real> -1.596702 </real>
+				<real> 0 </real>
+				<real> -4.584081 </real>
+				<real> 0 </real>
+				<real> -13.601135 </real>
+				<real> -10.042149 </real>
+				<real> -5.809733 </real>
+				<real> -9.665949 </real>
+				<real> -8.814479 </real>
+				<real> -16.161699 </real>
+				<real> -5.617436 </real>
+				<real> 1.257291 </real>
+				<real> 0 </real>
+				<real> 0 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="16"> 				0, 2, 4, 5, 6, 7, 8, 9, 9.5, 10, 10.5, 11, 11.75, 12.5, 13, 15 </real_array>
+		</dictionary>
+		<string name="tracks/11/type"> "value" </string>
+		<node_path name="tracks/11/path"> "Ruleta:transform/pos" </node_path>
+		<int name="tracks/11/interp"> 2 </int>
+		<dictionary name="tracks/11/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="true">
+				<vector2> 0, -2.86594 </vector2>
+				<vector2> 0, -5.56775 </vector2>
+				<vector2> 0, -2.86594 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 7, 15 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://4">
+		<string name="resource/name"> "button_press" </string>
+		<real name="length"> 6 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.25 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "button:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="9" shared="true">
+				<int> 0 </int>
+				<int> 2 </int>
+				<int> 3 </int>
+				<int> 4 </int>
+				<int> 5 </int>
+				<int> 5 </int>
+				<int> 6 </int>
+				<int> 7 </int>
+				<int> 7 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="9"> 				0, 1.5, 3, 3.75, 4.5, 4.875, 5.25, 5.625, 6 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://5">
+		<string name="resource/name"> "prize_select" </string>
+		<real name="length"> 17 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "Ruleta/Position2D/pointer:transform/pos" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="10"> 				1, 1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="10" shared="true">
+				<vector2> 0, -13.4123 </vector2>
+				<vector2> 0, -13.4123 </vector2>
+				<vector2> 0, -13.4123 </vector2>
+				<vector2> 1.46302, -13.4123 </vector2>
+				<vector2> 0, -13.4123 </vector2>
+				<vector2> 1.17042, -13.4123 </vector2>
+				<vector2> 0, -13.4123 </vector2>
+				<vector2> 0.330032, -41.0054 </vector2>
+				<vector2> 0.330032, -30.6093 </vector2>
+				<vector2> 0.330032, -30.6093 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="10"> 				0, 10, 11.9, 12.1, 12.3, 12.5, 13.1, 14.3, 15, 17 </real_array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "Ruleta/brake_1:transform/pos" </node_path>
+		<int name="tracks/1/interp"> 1 </int>
+		<dictionary name="tracks/1/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<vector2> 0.0156884, 39.1979 </vector2>
+				<vector2> 0.0156884, 39.1979 </vector2>
+				<vector2> 0.0156884, 39.1979 </vector2>
+				<vector2> 0.01569, 55 </vector2>
+				<vector2> 0.01569, 55 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 10, 11.3, 11.9, 17 </real_array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "Ruleta/brake_ 2:transform/pos" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<vector2> -33, 18 </vector2>
+				<vector2> -33, 18 </vector2>
+				<vector2> -33, 18 </vector2>
+				<vector2> -47, 27 </vector2>
+				<vector2> -47, 27 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 10, 10.7, 11.3, 17 </real_array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "Ruleta/brake_ 3:transform/pos" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<vector2> 33, 18 </vector2>
+				<vector2> 33, 18 </vector2>
+				<vector2> 33, 18 </vector2>
+				<vector2> 47, 27 </vector2>
+				<vector2> 47, 27 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 10, 11.9, 12.5, 17 </real_array>
+		</dictionary>
+		<string name="tracks/4/type"> "value" </string>
+		<node_path name="tracks/4/path"> "Ruleta/brake_ 4:transform/pos" </node_path>
+		<int name="tracks/4/interp"> 1 </int>
+		<dictionary name="tracks/4/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="true">
+				<vector2> 33, -18 </vector2>
+				<vector2> 33, -18 </vector2>
+				<vector2> 33, -18 </vector2>
+				<vector2> 47, -28 </vector2>
+				<vector2> 47, -28 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 10, 12.5, 13.1, 17 </real_array>
+		</dictionary>
+		<string name="tracks/5/type"> "value" </string>
+		<node_path name="tracks/5/path"> "Ruleta/brake_ 5:transform/pos" </node_path>
+		<int name="tracks/5/interp"> 1 </int>
+		<dictionary name="tracks/5/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="4" shared="true">
+				<vector2> -33, -18 </vector2>
+				<vector2> -33, -18 </vector2>
+				<vector2> -47, -27 </vector2>
+				<vector2> -47, -27 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 10, 10.7, 17 </real_array>
+		</dictionary>
+		<string name="tracks/6/type"> "value" </string>
+		<node_path name="tracks/6/path"> "Ruleta/Position2D/gear:transform/rot" </node_path>
+		<int name="tracks/6/interp"> 1 </int>
+		<dictionary name="tracks/6/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="6"> 				2.54912, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="6" shared="true">
+				<real> 90 </real>
+				<real> -2880 </real>
+				<real> -475.714264 </real>
+				<real> 245 </real>
+				<real> 64.821434 </real>
+				<real> 64.821434 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="6"> 				0, 8.75, 13, 14, 15, 17 </real_array>
+		</dictionary>
+		<string name="tracks/7/type"> "value" </string>
+		<node_path name="tracks/7/path"> "Ruleta/Position2D/gear 2:transform/rot" </node_path>
+		<int name="tracks/7/interp"> 1 </int>
+		<dictionary name="tracks/7/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="6"> 				2.14355, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="6" shared="true">
+				<real> 90 </real>
+				<real> -2880 </real>
+				<real> -475.716003 </real>
+				<real> -1195 </real>
+				<real> -1015.179016 </real>
+				<real> -1015.179016 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="6"> 				0, 8.75, 13, 14, 15, 17 </real_array>
+		</dictionary>
+		<string name="tracks/8/type"> "value" </string>
+		<node_path name="tracks/8/path"> "Ruleta/spinning_inner_ring:transform/rot" </node_path>
+		<int name="tracks/8/interp"> 1 </int>
+		<dictionary name="tracks/8/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="7"> 				1, -2, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="7" shared="true">
+				<real> 0 </real>
+				<real> 0 </real>
+				<real> 2520 </real>
+				<real> 2507.385254 </real>
+				<real> 2520 </real>
+				<real> 2521.175293 </real>
+				<real> 2520 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="7"> 				0, 1, 12, 13.75, 15, 16, 17 </real_array>
+		</dictionary>
+		<string name="tracks/9/type"> "value" </string>
+		<node_path name="tracks/9/path"> "Ruleta/ruleta_select/ruleta:transform/rot" </node_path>
+		<int name="tracks/9/interp"> 1 </int>
+		<dictionary name="tracks/9/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="7"> 				3.4822, -2, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="7" shared="true">
+				<real> 0 </real>
+				<real> 0 </real>
+				<real> -2880 </real>
+				<real> -2885.058105 </real>
+				<real> -2880 </real>
+				<real> -2881.091553 </real>
+				<real> -2880 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="7"> 				0, 1.5, 13, 14.25, 15, 16, 17 </real_array>
+		</dictionary>
+		<string name="tracks/10/type"> "value" </string>
+		<node_path name="tracks/10/path"> "Ruleta/Position2D:transform/rot" </node_path>
+		<int name="tracks/10/interp"> 1 </int>
+		<dictionary name="tracks/10/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="17"> 				1, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="17" shared="true">
+				<real> 0 </real>
+				<real> 5.899285 </real>
+				<real> -1.596702 </real>
+				<real> 0 </real>
+				<real> -4.584081 </real>
+				<real> 0 </real>
+				<real> -13.601135 </real>
+				<real> -10.042149 </real>
+				<real> -5.809733 </real>
+				<real> -9.665949 </real>
+				<real> -8.814479 </real>
+				<real> -16.161699 </real>
+				<real> -5.617436 </real>
+				<real> 1.257291 </real>
+				<real> 0 </real>
+				<real> 0 </real>
+				<real> 0 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="17"> 				0, 2, 4, 5, 6, 7, 8, 9, 9.5, 10, 10.5, 11, 11.75, 12.5, 13, 15, 17 </real_array>
+		</dictionary>
+		<string name="tracks/11/type"> "value" </string>
+		<node_path name="tracks/11/path"> "Ruleta:transform/pos" </node_path>
+		<int name="tracks/11/interp"> 1 </int>
+		<dictionary name="tracks/11/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="4" shared="true">
+				<vector2> 0, -2.86594 </vector2>
+				<vector2> 0, -5.56775 </vector2>
+				<vector2> 0, -2.86594 </vector2>
+				<vector2> 0, -2.86594 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 7, 15, 17 </real_array>
+		</dictionary>
+		<string name="tracks/12/type"> "method" </string>
+		<node_path name="tracks/12/path"> "." </node_path>
+		<int name="tracks/12/interp"> 1 </int>
+		<dictionary name="tracks/12/keys" shared="false">
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="true">
+				<dictionary  shared="false">
+					<string> "args" </string>
+					<array  len="0" shared="true">
+					</array>
+					<string> "method" </string>
+					<string> "_random_select_prize" </string>
+				</dictionary>
+				<dictionary  shared="false">
+					<string> "args" </string>
+					<array  len="0" shared="true">
+					</array>
+					<string> "method" </string>
+					<string> "_end_spin" </string>
+				</dictionary>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				8, 16.75 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="RectangleShape2D" path="local://6">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 20, 10 </vector2>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "names" </string>
+			<string_array  len="69">
+				<string> "roulette" </string>
+				<string> "Node2D" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "Ruleta" </string>
+				<string> "ruleta_select" </string>
+				<string> "ruleta" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "brake_ 3" </string>
+				<string> "brake_ 4" </string>
+				<string> "brake_ 2" </string>
+				<string> "brake_ 5" </string>
+				<string> "base_fixed" </string>
+				<string> "brake_1" </string>
+				<string> "spinning_inner_ring" </string>
+				<string> "inner_ring_shadow" </string>
+				<string> "Position2D" </string>
+				<string> "gear" </string>
+				<string> "gear 2" </string>
+				<string> "pointer" </string>
+				<string> "central_face" </string>
+				<string> "button" </string>
+				<string> "anim" </string>
+				<string> "AnimationPlayer" </string>
+				<string> "playback/process_mode" </string>
+				<string> "playback/default_blend_time" </string>
+				<string> "root/root" </string>
+				<string> "speed" </string>
+				<string> "anims/button" </string>
+				<string> "anims/idle" </string>
+				<string> "anims/prize_select_alpha" </string>
+				<string> "anims/default" </string>
+				<string> "anims/prize_select" </string>
+				<string> "blend_times" </string>
+				<string> "autoplay" </string>
+				<string> "button_area" </string>
+				<string> "Area2D" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "gravity_point" </string>
+				<string> "gravity_vec" </string>
+				<string> "gravity" </string>
+				<string> "density" </string>
+				<string> "monitoring" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "shape" </string>
+				<string> "trigger" </string>
+				<string> "_on_body_enter" </string>
+				<string> "body_enter" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 1 </int>
+			<string> "node_count" </string>
+			<int> 21 </int>
+			<string> "variants" </string>
+			<array  len="56" shared="true">
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0, -146.895 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<resource  resource_type="GDScript" path="res://interaction/roulette.*">  </resource>
+				<dictionary  shared="false">
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "Script" </string>
+						<dictionary  shared="false">
+							<string> "current" </string>
+							<int> 4 </int>
+							<string> "sources" </string>
+							<array  len="6" shared="true">
+								<string> "res://player/checkpoint.gd" </string>
+								<string> "res://player/crosshair.gd" </string>
+								<string> "res://player/alpaca.gd" </string>
+								<string> "res://interaction/key.gd" </string>
+								<string> "res://interaction/roulette.gd" </string>
+								<string> "res://interaction/jar.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "zoom" </string>
+							<real> 1.50734 </real>
+							<string> "ofs" </string>
+							<vector2> -145.434, -293.931 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "viewports" </string>
+							<array  len="4" shared="true">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+							</array>
+							<string> "viewport_mode" </string>
+							<int> 1 </int>
+							<string> "default_light" </string>
+							<bool> True </bool>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<vector2> 0, -2.86594 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 0, 0 </vector2>
+				<vector2> 4.26349e-08, -0.487686 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/ruleta.*">  </resource>
+				<bool> False </bool>
+				<int> 1 </int>
+				<int> 0 </int>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<vector2> 33, 18 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/ruleta_brake.*">  </resource>
+				<vector2> 33, -18 </vector2>
+				<vector2> -33, 18 </vector2>
+				<vector2> -33, -18 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/ruleta_base.*">  </resource>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 0.0156884, 39.1979 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<resource  resource_type="ImageTexture" path="res://art/ruleta_spinning_inner_circle.*">  </resource>
+				<resource  resource_type="ImageTexture" path="res://art/ruleta_spinning_inner_shadow.*">  </resource>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -24.7534, 0.529822 </vector2>
+				<real> 90 </real>
+				<resource  resource_type="ImageTexture" path="res://art/ruleta_engranaje.*">  </resource>
+				<vector2> 24.0007, 0.529814 </vector2>
+				<vector2> 0, -13.4123 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/ruleta_pointer.*">  </resource>
+				<resource  resource_type="ImageTexture" path="res://art/ruleta_central_face.*">  </resource>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 0, 144.626 </vector2>
+				<resource  resource_type="ImageTexture" path="res://art/button.*">  </resource>
+				<int> 8 </int>
+				<int> 7 </int>
+				<node_path> ".." </node_path>
+				<resource  resource_type="Animation" path="local://1">  </resource>
+				<resource  resource_type="Animation" path="local://2">  </resource>
+				<resource  resource_type="Animation" path="local://3">  </resource>
+				<resource  resource_type="Animation" path="local://4">  </resource>
+				<resource  resource_type="Animation" path="local://5">  </resource>
+				<array  len="0" shared="true">
+				</array>
+				<string> "" </string>
+				<resource  resource_type="RectangleShape2D" path="local://6">  </resource>
+				<matrix32> 1, -0, 0, 2.50545, -0.814514, 122.968 </matrix32>
+				<vector2> 0, 1 </vector2>
+				<real> 98 </real>
+				<real> 0.1 </real>
+				<vector2> -0.814514, 122.968 </vector2>
+				<vector2> 1, 2.50545 </vector2>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="793"> 				-1, -1, 1, 0, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 9, 5, 10, 6, 0, 0, 0, 1, 11, -1, 8, 2, 0, 3, 1, 4, 1, 5, 0, 6, 7, 7, 3, 8, 4, 10, 8, 0, 1, 0, 1, 12, -1, 7, 2, 0, 3, 1, 4, 1, 5, 0, 6, 9, 7, 3, 8, 4, 0, 2, 0, 14, 13, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 10, 7, 3, 8, 4, 15, 11, 16, 0, 17, 9, 18, 12, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 0, 1, 0, 14, 26, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 17, 7, 3, 8, 4, 15, 18, 16, 0, 17, 9, 18, 12, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 0, 1, 0, 14, 27, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 19, 7, 3, 8, 4, 15, 18, 16, 0, 17, 9, 18, 12, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 0, 1, 0, 14, 28, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 20, 7, 3, 8, 4, 15, 18, 16, 0, 17, 9, 18, 0, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 0, 1, 0, 14, 29, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 21, 7, 3, 8, 4, 15, 18, 16, 0, 17, 9, 18, 0, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 0, 1, 0, 14, 30, -1, 19, 2, 0, 3, 1, 4, 1, 5, 0, 6, 9, 7, 3, 8, 4, 15, 22, 16, 0, 17, 9, 18, 12, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 10, 23, 0, 1, 0, 14, 31, -1, 19, 2, 0, 3, 1, 4, 1, 5, 0, 6, 24, 7, 3, 8, 4, 15, 18, 16, 0, 17, 9, 18, 0, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 10, 25, 0, 1, 0, 14, 32, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 9, 7, 3, 8, 4, 15, 26, 16, 0, 17, 9, 18, 12, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 0, 1, 0, 14, 33, -1, 19, 2, 0, 3, 1, 4, 1, 5, 0, 6, 9, 7, 3, 8, 4, 15, 27, 16, 0, 17, 9, 18, 12, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 10, 28, 0, 1, 0, 34, 34, -1, 7, 2, 0, 3, 1, 4, 1, 5, 0, 6, 9, 7, 3, 8, 4, 0, 12, 0, 14, 35, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 29, 7, 30, 8, 4, 15, 31, 16, 0, 17, 9, 18, 12, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 0, 12, 0, 14, 36, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 32, 7, 30, 8, 4, 15, 31, 16, 0, 17, 9, 18, 12, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 0, 12, 0, 14, 37, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 33, 7, 3, 8, 4, 15, 34, 16, 0, 17, 9, 18, 12, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 0, 12, 0, 14, 38, -1, 19, 2, 0, 3, 1, 4, 1, 5, 0, 6, 9, 7, 3, 8, 4, 15, 35, 16, 0, 17, 9, 18, 12, 19, 12, 20, 13, 21, 13, 22, 14, 23, 15, 24, 12, 25, 16, 10, 36, 0, 0, 0, 14, 39, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 37, 7, 3, 8, 4, 15, 38, 16, 0, 17, 9, 18, 12, 19, 12, 20, 13, 21, 39, 22, 40, 23, 15, 24, 12, 25, 16, 0, 0, 0, 41, 40, -1, 11, 42, 13, 43, 3, 44, 41, 45, 1, 46, 42, 47, 43, 48, 44, 49, 45, 50, 46, 51, 47, 52, 48, 0, 0, 0, 54, 53, -1, 16, 2, 0, 3, 1, 4, 1, 5, 0, 6, 9, 7, 3, 8, 4, 55, 13, 56, 49, 57, 50, 58, 12, 59, 12, 60, 51, 61, 52, 62, 53, 63, 0, 0, 19, 0, 64, 64, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 54, 7, 3, 8, 55, 65, 49, 66, 12, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="6"> 				19, 0, 68, 67, 2, 0 </int_array>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
