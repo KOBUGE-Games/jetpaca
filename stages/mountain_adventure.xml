@@ -1,56 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="15" version="0.99" version_name="Godot Engine v0.99.2890-pre-beta">
-	<ext_resource path="res://enemies/area_trigger.gd" type="GDScript"></ext_resource>
-	<ext_resource path="res://stages/stage.gd" type="GDScript"></ext_resource>
-	<ext_resource path="res://tilesets/mountain_tilemap.xml" type="TileSet"></ext_resource>
-	<ext_resource path="res://enemies/heatseeker.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://player/checkpoint.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://enemies/fluff.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://player/fruit.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://enemies/mountain_spikes.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://player/goal.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://enemies/cannon.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://enemies/floating_spike.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://player/large_fruit.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://enemies/mountain_elevator.xml" type="PackedScene"></ext_resource>
+<resource_file type="PackedScene" subresource_count="15" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
+	<ext_resource path="res://enemies/heatseeker.xml" type="PackedScene" index="8"></ext_resource>
+	<ext_resource path="res://stages/stage.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://player/large_fruit.xml" type="PackedScene" index="3"></ext_resource>
+	<ext_resource path="res://tilesets/mountain_tilemap.xml" type="TileSet" index="1"></ext_resource>
+	<ext_resource path="res://enemies/area_trigger.gd" type="Script" index="10"></ext_resource>
+	<ext_resource path="res://player/fruit.xml" type="PackedScene" index="2"></ext_resource>
+	<ext_resource path="res://player/goal.xml" type="PackedScene" index="5"></ext_resource>
+	<ext_resource path="res://enemies/mountain_elevator.xml" type="PackedScene" index="9"></ext_resource>
+	<ext_resource path="res://enemies/cannon.xml" type="PackedScene" index="11"></ext_resource>
+	<ext_resource path="res://enemies/mountain_spikes.xml" type="PackedScene" index="12"></ext_resource>
+	<ext_resource path="res://player/checkpoint.xml" type="PackedScene" index="4"></ext_resource>
+	<ext_resource path="res://enemies/fluff.xml" type="PackedScene" index="6"></ext_resource>
+	<ext_resource path="res://enemies/floating_spike.xml" type="PackedScene" index="7"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
-		<string name="resource/name"> "" </string>
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2 name="extents"> 400, 200 </vector2>
-		<resource name="script/script"></resource>
+
 	</resource>
 	<main_resource>
-		<string name="resource/name"> "" </string>
-		<dictionary name="_bundled">
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
 			<string> "names" </string>
-			<string_array  len="85">
+			<string_array  len="81">
 				<string> "Node" </string>
-				<string> "process/process" </string>
-				<string> "process/fixed_process" </string>
-				<string> "process/input" </string>
-				<string> "process/unhandled_input" </string>
-				<string> "process/mode" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
 				<string> "tiles" </string>
-				<string> "TileMap" </string>
-				<string> "visibility/visible" </string>
-				<string> "visibility/toplevel" </string>
-				<string> "visibility/opacity" </string>
-				<string> "visibility/self_opacity" </string>
-				<string> "visibility/on_top" </string>
-				<string> "visibility/blend_mode" </string>
-				<string> "transform/notify" </string>
-				<string> "transform/pos" </string>
-				<string> "transform/rot" </string>
-				<string> "transform/scale" </string>
-				<string> "cell_size" </string>
-				<string> "quadrant_size" </string>
+				<string> "mode" </string>
 				<string> "tile_set" </string>
+				<string> "cell/size" </string>
+				<string> "cell/quadrant_size" </string>
+				<string> "cell/custom_transform" </string>
+				<string> "cell/half_offset" </string>
+				<string> "cell/tile_origin" </string>
+				<string> "cell/y_sort" </string>
+				<string> "collision/use_kinematic" </string>
+				<string> "collision/friction" </string>
+				<string> "collision/bounce" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
+				<string> "occluder/light_mask" </string>
 				<string> "tile_data" </string>
+				<string> "TileMap" </string>
 				<string> "fruits" </string>
 				<string> "fruit" </string>
-				<string> "Area2D" </string>
+				<string> "transform/pos" </string>
+				<string> "linear_damp" </string>
 				<string> "fruit 2" </string>
 				<string> "fruit 3" </string>
 				<string> "fruit 4" </string>
@@ -66,11 +68,10 @@
 				<string> "Position2D" </string>
 				<string> "enemies" </string>
 				<string> "fluff 2" </string>
-				<string> "RigidBody2D" </string>
 				<string> "fluff_type" </string>
 				<string> "fluff 3" </string>
 				<string> "circular_spike" </string>
-				<string> "StaticBody2D" </string>
+				<string> "RigidBody2D" </string>
 				<string> "RigidBody2D 2" </string>
 				<string> "RigidBody2D 3" </string>
 				<string> "RigidBody2D 4" </string>
@@ -82,26 +83,26 @@
 				<string> "RigidBody2D 10" </string>
 				<string> "RigidBody2D 11" </string>
 				<string> "heatseeker 4" </string>
+				<string> "transform/rot" </string>
 				<string> "interaction" </string>
 				<string> "elevator" </string>
-				<string> "Node2D" </string>
 				<string> "distance" </string>
 				<string> "max_speed" </string>
 				<string> "elevator_1" </string>
 				<string> "elevator_switch" </string>
-				<string> "shape_count" </string>
+				<string> "input/pickable" </string>
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
-				<string> "space_override" </string>
-				<string> "gravity_point" </string>
+				<string> "shapes/0/trigger" </string>
 				<string> "gravity_vec" </string>
 				<string> "gravity" </string>
-				<string> "density" </string>
-				<string> "priority" </string>
-				<string> "monitoring" </string>
+				<string> "angular_damp" </string>
 				<string> "group" </string>
+				<string> "Area2D" </string>
 				<string> "CollisionShape2D" </string>
 				<string> "shape" </string>
+				<string> "trigger" </string>
+				<string> "_update_shape_index" </string>
 				<string> "cannon" </string>
 				<string> "cannon 2" </string>
 				<string> "type" </string>
@@ -110,113 +111,55 @@
 				<string> "spikes 2" </string>
 				<string> "spikes 3" </string>
 			</string_array>
-			<string> "version" </string>
-			<int> 1 </int>
-			<string> "conn_count" </string>
-			<int> 0 </int>
 			<string> "node_count" </string>
 			<int> 40 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="459"> 				-1, -1, 0, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 19, 3, -1, 16, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 9, 7, 10, 2, 11, 8, 12, 8, 13, 9, 14, 10, 15, 11, 16, 11, 17, 11, 18, 12, 2, 13, 0, 0, 0, 0, 20, -1, 0, 0, 2, 0, 2147483647, 21, 14, 2, 22, 15, 23, 16, 0, 2, 0, 2147483647, 24, 14, 2, 22, 17, 23, 16, 0, 2, 0, 2147483647, 25, 14, 2, 22, 18, 23, 16, 0, 2, 0, 2147483647, 26, 14, 2, 22, 19, 23, 16, 0, 2, 0, 2147483647, 27, 20, 2, 22, 21, 23, 16, 0, 2, 0, 2147483647, 28, 20, 3, 22, 22, 23, 16, 29, 11, 0, 2, 0, 2147483647, 30, 20, 3, 22, 23, 23, 16, 29, 7, 0, 0, 0, 0, 31, -1, 0, 0, 10, 0, 2147483647, 32, 24, 2, 22, 25, 23, 16, 0, 10, 0, 2147483647, 33, 26, 3, 22, 27, 23, 16, 34, 28, 0, 0, 0, 36, 35, -1, 1, 22, 29, 0, 0, 0, 0, 37, -1, 0, 0, 14, 0, 2147483647, 38, 30, 2, 22, 31, 39, 7, 0, 14, 0, 2147483647, 40, 30, 1, 22, 32, 0, 14, 0, 2147483647, 41, 33, 1, 22, 34, 0, 14, 0, 2147483647, 42, 33, 1, 22, 35, 0, 14, 0, 2147483647, 43, 33, 1, 22, 36, 0, 14, 0, 2147483647, 44, 33, 1, 22, 37, 0, 14, 0, 2147483647, 45, 33, 1, 22, 38, 0, 14, 0, 2147483647, 46, 33, 1, 22, 39, 0, 14, 0, 2147483647, 47, 33, 1, 22, 40, 0, 14, 0, 2147483647, 48, 33, 1, 22, 41, 0, 14, 0, 2147483647, 49, 33, 1, 22, 42, 0, 14, 0, 2147483647, 50, 33, 1, 22, 43, 0, 14, 0, 2147483647, 51, 33, 1, 22, 44, 0, 14, 0, 2147483647, 52, 33, 1, 22, 45, 0, 14, 0, 2147483647, 53, 46, 2, 22, 47, 54, 48, 0, 0, 0, 0, 55, -1, 0, 0, 30, 0, 2147483647, 56, 49, 3, 22, 50, 57, 51, 58, 52, 1, 59, 30, 0, 69, 60, -1, 11, 22, 53, 61, 54, 62, 55, 63, 56, 64, 8, 65, 57, 66, 58, 23, 16, 67, 9, 1, 59, 68, 60, 0, 32, 0, 70, 70, -1, 4, 22, 61, 71, 55, 72, 8, 73, 62, 0, 30, 0, 2147483647, 74, 63, 2, 22, 64, 54, 65, 0, 30, 0, 2147483647, 75, 63, 3, 22, 66, 54, 65, 76, 11, 0, 30, 0, 2147483647, 77, 63, 3, 22, 67, 54, 65, 76, 7, 0, 30, 0, 2147483647, 78, 68, 2, 22, 69, 54, 70, 0, 30, 0, 2147483647, 79, 68, 2, 22, 71, 54, 70, 0, 30, 0, 2147483647, 80, 68, 2, 22, 72, 54, 70, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="74">
-				<bool> False </bool>
-				<int> 0 </int>
-				<resource  resource_type="GDScript" path="res://stages/stage.gd">  </resource>
-				<dictionary>
-					<string> "__editor_plugin_states__" </string>
-					<dictionary>
-						<string> "Script" </string>
-						<dictionary>
-							<string> "current" </string>
-							<int> 2 </int>
-							<string> "sources" </string>
-							<array  len="5">
-								<string> "res://interaction/bubble.gd" </string>
-								<string> "res://enemies/heatseeker.gd" </string>
-								<string> "res://interaction/elevator.gd" </string>
-								<string> "res://player/checkpoint.gd" </string>
-								<string> "res://enemies/area_trigger.gd" </string>
-							</array>
-						</dictionary>
-						<string> "2D" </string>
-						<dictionary>
-							<string> "zoom" </string>
-							<real> 0.598735 </real>
-							<string> "ofs" </string>
-							<vector2> 591.396, 806.944 </vector2>
-						</dictionary>
-						<string> "3D" </string>
-						<dictionary>
-							<string> "zfar" </string>
-							<real> 500 </real>
-							<string> "fov" </string>
-							<real> 45 </real>
-							<string> "window_mode" </string>
-							<int> 0 </int>
-							<string> "window_0" </string>
-							<dictionary>
-								<string> "distance" </string>
-								<real> 4 </real>
-								<string> "default_light" </string>
-								<bool> True </bool>
-								<string> "x_rot" </string>
-								<real> 0.337 </real>
-								<string> "y_rot" </string>
-								<real> -0.575 </real>
-								<string> "show_grid" </string>
-								<bool> True </bool>
-								<string> "show_origin" </string>
-								<bool> True </bool>
-								<string> "pos" </string>
-								<vector3> 0, 0, 0 </vector3>
-							</dictionary>
-							<string> "znear" </string>
-							<real> 0.1 </real>
-						</dictionary>
-					</dictionary>
-					<string> "__editor_run_settings__" </string>
-					<dictionary>
-						<string> "custom_args" </string>
-						<string> "" </string>
-						<string> "run_mode" </string>
-						<int> 0 </int>
-					</dictionary>
+			<array  len="73" shared="false">
+				<resource  external="0">  </resource>
+				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
 				</dictionary>
-				<bool> True </bool>
-				<real> 1 </real>
-				<vector2> 0, 0 </vector2>
-				<real> 0 </real>
-				<vector2> 1, 1 </vector2>
-				<int> 64 </int>
+				<int> 0 </int>
+				<resource  external="1">  </resource>
+				<vector2> 64, 64 </vector2>
 				<int> 16 </int>
-				<resource  resource_type="TileSet" path="res://tilesets/mountain_tilemap.xml">  </resource>
+				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<int> 2 </int>
+				<bool> False </bool>
+				<real> 1 </real>
+				<real> 0 </real>
+				<int> 1 </int>
 				<int_array  len="216"> 					524289, 10, 524291, 8, 524293, 8, 524295, 8, 524297, 8, 524298, 8, 524300, 8, 524302, 8, 524304, 536870922, 589825, 6, 589840, 536870918, 720897, 6, 720912, 536870918, 851969, 6, 851984, 536870918, 983041, 6, 983056, 536870918, 1048592, 536870918, 1114113, 6, 1114153, 536870921, 1114154, 8, 1114156, 8, 1114158, 8, 1114160, 8, 1114162, 8, 1179664, 536870918, 1179688, 536870921, 1245185, 6, 1245222, 10, 1310736, 536870918, 1310757, 536870921, 1310758, 7, 1376257, 6, 1376292, 536870921, 1441808, 536870919, 1441810, 9, 1441827, 536870921, 1441834, 536870916, 1441836, 1, 1441837, 1, 1441838, 1, 1441839, 1, 1441840, 1, 1441841, 1, 1441842, 1, 1441843, 1, 1441844, 0, 1441845, 0, 1441846, 0, 1441847, 0, 1441848, 0, 1441849, 0, 1441850, 0, 1441851, 0, 1441852, 0, 1441853, 0, 1507329, 6, 1507347, 9, 1507362, 536870921, 1507369, 536870915, 1572884, 9, 1572897, 536870921, 1572904, 536870915, 1638401, 6, 1638421, 9, 1638432, 536870921, 1638439, 536870915, 1703958, 8, 1703960, 8, 1703962, 8, 1703964, 8, 1703966, 8, 1703973, 536870916, 1769473, 6, 1769508, 536870915, 1835043, 536870915, 1900545, 11, 1900547, 0, 1900548, 0, 1900549, 1, 1900550, 0, 1900551, 0, 1900552, 1, 1900553, 0, 1900554, 0, 1900555, 1, 1900556, 1, 1900557, 0, 1900558, 0, 1900559, 1, 1900560, 0, 1900561, 4, 1900578, 536870915, 1966099, 3, 1966113, 536870915, 2031636, 1, 2031637, 1, 2031638, 1, 2031639, 0, 2031640, 0, 2031641, 1, 2031642, 1, 2031643, 0, 2031644, 0, 2031645, 0, 2031646, 1, 2031647, 1, 2031648, 1 </int_array>
-				<resource name=""></resource>				<dictionary>
+				<dictionary  shared="false">
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
 				</dictionary>
-				<resource  resource_type="PackedScene" path="res://player/fruit.xml">  </resource>
+				<resource  external="2">  </resource>
 				<vector2> 1590.28, 1796.89 </vector2>
+				<real> 0.1 </real>
 				<vector2> 1703.85, 1796.89 </vector2>
 				<vector2> 1814.08, 1796.89 </vector2>
 				<vector2> 1915.88, 1790.13 </vector2>
-				<resource  resource_type="PackedScene" path="res://player/large_fruit.xml">  </resource>
+				<resource  external="3">  </resource>
 				<vector2> 2380.23, 1561.7 </vector2>
 				<vector2> 2647.36, 1380.19 </vector2>
-				<int> 1 </int>
 				<vector2> 2948.74, 1274.02 </vector2>
-				<int> 2 </int>
-				<resource  resource_type="PackedScene" path="res://player/checkpoint.xml">  </resource>
+				<resource  external="4">  </resource>
 				<vector2> 1745.53, 1941.48 </vector2>
-				<resource  resource_type="PackedScene" path="res://player/goal.xml">  </resource>
+				<resource  external="5">  </resource>
 				<vector2> 4415.27, 1676.25 </vector2>
 				<vector2> 2, 2 </vector2>
 				<vector2> 290.826, 1360.97 </vector2>
-				<resource  resource_type="PackedScene" path="res://enemies/fluff.xml">  </resource>
+				<resource  external="6">  </resource>
 				<vector2> 1989.39, 1914.85 </vector2>
 				<vector2> 1435.36, 1850.04 </vector2>
-				<resource  resource_type="PackedScene" path="res://enemies/floating_spike.xml">  </resource>
+				<resource  external="7">  </resource>
 				<vector2> 643.327, 1475.87 </vector2>
 				<vector2> 3471.9, 878.711 </vector2>
 				<vector2> 3786.8, 770.302 </vector2>
@@ -229,38 +172,37 @@
 				<vector2> 3709.36, 331.504 </vector2>
 				<vector2> 4112.02, 300.53 </vector2>
 				<vector2> 3957.15, 207.608 </vector2>
-				<resource  resource_type="PackedScene" path="res://enemies/heatseeker.xml">  </resource>
+				<resource  external="8">  </resource>
 				<vector2> 721.905, 1331.32 </vector2>
 				<real> 26.857643 </real>
-				<resource  resource_type="PackedScene" path="res://enemies/mountain_elevator.xml">  </resource>
+				<resource  external="9">  </resource>
 				<vector2> 3847.35, 1295.06 </vector2>
 				<int> -8000 </int>
 				<real> 128 </real>
 				<vector2> 4070.2, 1295.06 </vector2>
-				<resource  resource_type="RectangleShape2D" path="local://1">  </resource>
+				<bool> True </bool>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
 				<matrix32> 1, -0, 0, 1, -134.552, -4.20471 </matrix32>
 				<vector2> 0, 1 </vector2>
 				<real> 98 </real>
-				<real> 0.1 </real>
-				<resource  resource_type="GDScript" path="res://enemies/area_trigger.gd">  </resource>
+				<resource  external="10">  </resource>
 				<string> "elevator_1" </string>
 				<vector2> -134.552, -4.20471 </vector2>
-				<resource  resource_type="PackedScene" path="res://enemies/cannon.xml">  </resource>
+				<int> -1 </int>
+				<resource  external="11">  </resource>
 				<vector2> 252.206, 1867.77 </vector2>
 				<real> -90.639046 </real>
 				<vector2> 398.419, 1864.76 </vector2>
 				<vector2> 546.139, 1863.25 </vector2>
-				<resource  resource_type="PackedScene" path="res://enemies/mountain_spikes.xml">  </resource>
+				<resource  external="12">  </resource>
 				<vector2> 1169.14, 1497.94 </vector2>
 				<real> 137.705246 </real>
 				<vector2> 1255.99, 1576.44 </vector2>
 				<vector2> 1347.85, 1661.62 </vector2>
 			</array>
-			<string> "nodes" </string>
-			<int_array  len="597"> 				-1, -1, 0, 0, -1, 7, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 3, 0, 0, 0, 9, 8, -1, 21, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 10, 4, 11, 0, 12, 5, 13, 5, 14, 4, 15, 1, 16, 4, 17, 6, 18, 7, 19, 8, 20, 9, 21, 10, 22, 11, 23, 12, 6, 13, 7, 14, 0, 0, 0, 0, 24, -1, 6, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 13, 0, 2, 0, 26, 25, 15, 1, 17, 16, 0, 2, 0, 26, 27, 15, 1, 17, 17, 0, 2, 0, 26, 28, 15, 1, 17, 18, 0, 2, 0, 26, 29, 15, 1, 17, 19, 0, 2, 0, 26, 30, 20, 1, 17, 21, 0, 2, 0, 26, 31, 20, 2, 17, 22, 32, 23, 0, 2, 0, 26, 33, 20, 2, 17, 24, 32, 25, 0, 0, 0, 0, 34, -1, 6, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 13, 0, 10, 0, 26, 35, 26, 1, 17, 27, 0, 10, 0, 26, 36, 28, 2, 17, 29, 37, 30, 0, 0, 0, 39, 38, -1, 16, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 10, 4, 11, 0, 12, 5, 13, 5, 14, 4, 15, 1, 16, 0, 17, 31, 18, 7, 19, 8, 6, 13, 0, 0, 0, 0, 40, -1, 6, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 13, 0, 14, 0, 42, 41, 32, 2, 17, 33, 43, 25, 0, 14, 0, 42, 44, 32, 1, 17, 34, 0, 14, 0, 46, 45, 35, 1, 17, 36, 0, 14, 0, 46, 42, 35, 1, 17, 37, 0, 14, 0, 46, 47, 35, 1, 17, 38, 0, 14, 0, 46, 48, 35, 1, 17, 39, 0, 14, 0, 46, 49, 35, 1, 17, 40, 0, 14, 0, 46, 50, 35, 1, 17, 41, 0, 14, 0, 46, 51, 35, 1, 17, 42, 0, 14, 0, 46, 52, 35, 1, 17, 43, 0, 14, 0, 46, 53, 35, 1, 17, 44, 0, 14, 0, 46, 54, 35, 1, 17, 45, 0, 14, 0, 46, 55, 35, 1, 17, 46, 0, 14, 0, 46, 56, 35, 1, 17, 47, 0, 14, 0, 42, 57, 48, 2, 17, 49, 18, 50, 0, 0, 0, 0, 58, -1, 6, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 13, 0, 30, 0, 60, 59, 51, 3, 17, 52, 61, 53, 62, 54, 1, 63, 30, 0, 26, 64, -1, 27, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 10, 4, 11, 0, 12, 5, 13, 5, 14, 4, 15, 1, 16, 4, 17, 55, 18, 7, 19, 8, 65, 23, 66, 56, 67, 57, 68, 1, 69, 0, 70, 58, 71, 59, 72, 60, 73, 7, 74, 4, 6, 61, 75, 62, 0, 32, 0, 76, 76, -1, 17, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 10, 4, 11, 0, 12, 5, 13, 5, 14, 4, 15, 1, 16, 4, 17, 63, 18, 7, 19, 8, 77, 56, 6, 13, 0, 30, 0, 46, 78, 64, 2, 17, 65, 18, 66, 0, 30, 0, 46, 79, 64, 3, 17, 67, 18, 66, 80, 23, 0, 30, 0, 46, 81, 64, 3, 17, 68, 18, 66, 80, 25, 0, 30, 0, 46, 82, 69, 2, 17, 70, 18, 71, 0, 30, 0, 46, 83, 69, 2, 17, 72, 18, 71, 0, 30, 0, 46, 84, 69, 2, 17, 73, 18, 71, 0 </int_array>
-			<string> "conns" </string>
-			<int_array  len="0"> 				 </int_array>
+			<string> "version" </string>
+			<int> 2 </int>
 		</dictionary>
-		<resource name="script/script"></resource>
+
 	</main_resource>
 </resource_file>

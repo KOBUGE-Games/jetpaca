@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="16" version="0.99" version_name="Godot Engine v0.99.3672-pre-beta">
-	<ext_resource path="res://art/sporadic_flower_pieces/front_petals.*" type="ImageTexture"></ext_resource>
-	<ext_resource path="res://art/sporadic_flower_pieces/back_petal.*" type="ImageTexture"></ext_resource>
-	<ext_resource path="res://enemies/sporadic_flower.*" type="GDScript"></ext_resource>
-	<ext_resource path="res://art/sporadic_flower_pieces/leaf2.*" type="ImageTexture"></ext_resource>
-	<ext_resource path="res://art/sporadic_flower_pieces/mid_petals.*" type="ImageTexture"></ext_resource>
-	<ext_resource path="res://art/sporadic_flower_pieces/pistilethingies.*" type="ImageTexture"></ext_resource>
-	<ext_resource path="res://art/sporadic_flower_pieces/pistile.*" type="ImageTexture"></ext_resource>
-	<ext_resource path="res://art/sporadic_flower_pieces/leaf1.*" type="ImageTexture"></ext_resource>
-	<ext_resource path="res://art/sporadic_flower_pieces/center.*" type="ImageTexture"></ext_resource>
+<resource_file type="PackedScene" subresource_count="16" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
+	<ext_resource path="res://art/sporadic_flower_pieces/front_petals.png" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://enemies/sporadic_flower.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://art/sporadic_flower_pieces/leaf2.png" type="Texture" index="8"></ext_resource>
+	<ext_resource path="res://art/sporadic_flower_pieces/center.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://art/sporadic_flower_pieces/leaf1.png" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://art/sporadic_flower_pieces/mid_petals.png" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://art/sporadic_flower_pieces/pistile.png" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://art/sporadic_flower_pieces/back_petal.png" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://art/sporadic_flower_pieces/pistilethingies.png" type="Texture" index="6"></ext_resource>
 	<resource type="CircleShape2D" path="local://1">
-		<string name="resource/name"> "" </string>
 		<real name="custom_solver_bias"> 0 </real>
 		<real name="radius"> 30 </real>
-		<resource name="script/script"></resource>
+
 	</resource>
 	<resource type="Animation" path="local://2">
 		<string name="resource/name"> "1closed" </string>
@@ -26,15 +25,15 @@
 		<dictionary name="tracks/0/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<int> 0 </int>
 				<int> 0 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/1/type"> "value" </string>
 		<node_path name="tracks/1/path"> "center/2petal_md 2:frame" </node_path>
@@ -42,15 +41,15 @@
 		<dictionary name="tracks/1/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<int> 0 </int>
 				<int> 0 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/2/type"> "value" </string>
 		<node_path name="tracks/2/path"> "center/4petal_md1:frame" </node_path>
@@ -58,15 +57,15 @@
 		<dictionary name="tracks/2/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<int> 0 </int>
 				<int> 0 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/3/type"> "value" </string>
 		<node_path name="tracks/3/path"> "center/5petal_fg1:frame" </node_path>
@@ -74,15 +73,15 @@
 		<dictionary name="tracks/3/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<int> 0 </int>
 				<int> 0 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/4/type"> "value" </string>
 		<node_path name="tracks/4/path"> "center/1petal_fg 2:frame" </node_path>
@@ -90,15 +89,15 @@
 		<dictionary name="tracks/4/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<int> 0 </int>
 				<int> 0 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/5/type"> "value" </string>
 		<node_path name="tracks/5/path"> "center/3rear_petal:transform/rot" </node_path>
@@ -106,16 +105,16 @@
 		<dictionary name="tracks/5/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.875, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> 5.219821 </real>
 				<real> 7.881693 </real>
 				<real> 5.219821 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.875, 6 </real_array>
 		</dictionary>
 		<string name="tracks/6/type"> "value" </string>
 		<node_path name="tracks/6/path"> "center/2petal_md 2:transform/rot" </node_path>
@@ -123,17 +122,17 @@
 		<dictionary name="tracks/6/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 3, 4.3125, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="4" shared="true">
+			<array  len="4" shared="false">
 				<real> -18.527496 </real>
 				<real> -18.648355 </real>
 				<real> -21.758575 </real>
 				<real> -18.527496 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 3, 4.3125, 6 </real_array>
 		</dictionary>
 		<string name="tracks/7/type"> "value" </string>
 		<node_path name="tracks/7/path"> "center/4petal_md1:transform/rot" </node_path>
@@ -141,16 +140,16 @@
 		<dictionary name="tracks/7/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 4.125, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> 13.938738 </real>
 				<real> 21.464451 </real>
 				<real> 13.938738 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 4.125, 6 </real_array>
 		</dictionary>
 		<string name="tracks/8/type"> "value" </string>
 		<node_path name="tracks/8/path"> "center/5petal_fg1:transform/rot" </node_path>
@@ -158,16 +157,16 @@
 		<dictionary name="tracks/8/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.875, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> 24.383183 </real>
 				<real> 22.493887 </real>
 				<real> 24.383183 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.875, 6 </real_array>
 		</dictionary>
 		<string name="tracks/9/type"> "value" </string>
 		<node_path name="tracks/9/path"> "center/1petal_fg 2:transform/rot" </node_path>
@@ -175,16 +174,16 @@
 		<dictionary name="tracks/9/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 3.75, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> -26.157078 </real>
 				<real> -24.008595 </real>
 				<real> -26.157078 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 3.75, 6 </real_array>
 		</dictionary>
 		<string name="tracks/10/type"> "value" </string>
 		<node_path name="tracks/10/path"> "center/3rear_petal:transform/pos" </node_path>
@@ -192,15 +191,15 @@
 		<dictionary name="tracks/10/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 8.86966, -7.00663 </vector2>
 				<vector2> 8.86966, -7.00663 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/11/type"> "value" </string>
 		<node_path name="tracks/11/path"> "center/2petal_md 2:transform/pos" </node_path>
@@ -208,15 +207,15 @@
 		<dictionary name="tracks/11/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> -12.2563, -0.213528 </vector2>
 				<vector2> -12.2563, -0.213528 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/12/type"> "value" </string>
 		<node_path name="tracks/12/path"> "center/4petal_md1:transform/pos" </node_path>
@@ -224,15 +223,15 @@
 		<dictionary name="tracks/12/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 10.5439, -0.0477274 </vector2>
 				<vector2> 10.5439, -0.0477274 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/13/type"> "value" </string>
 		<node_path name="tracks/13/path"> "center/5petal_fg1:transform/pos" </node_path>
@@ -240,15 +239,15 @@
 		<dictionary name="tracks/13/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 9.73067, 7.252 </vector2>
 				<vector2> 9.73067, 7.252 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/14/type"> "value" </string>
 		<node_path name="tracks/14/path"> "center/1petal_fg 2:transform/pos" </node_path>
@@ -256,15 +255,15 @@
 		<dictionary name="tracks/14/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> -12.7036, 7.252 </vector2>
 				<vector2> -12.7036, 7.252 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/15/type"> "value" </string>
 		<node_path name="tracks/15/path"> "center/1petal_fg 2:transform/scale" </node_path>
@@ -272,17 +271,17 @@
 		<dictionary name="tracks/15/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 1.875, 4.125, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="4" shared="true">
+			<array  len="4" shared="false">
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1.1, 0.8 </vector2>
 				<vector2> 1.02222, 0.9 </vector2>
 				<vector2> 1, 0.8 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 1.875, 4.125, 6 </real_array>
 		</dictionary>
 		<string name="tracks/16/type"> "value" </string>
 		<node_path name="tracks/16/path"> "center/3rear_petal:transform/scale" </node_path>
@@ -290,16 +289,16 @@
 		<dictionary name="tracks/16/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 3.75, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1, 0.7 </vector2>
 				<vector2> 1, 0.8 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 3.75, 6 </real_array>
 		</dictionary>
 		<string name="tracks/17/type"> "value" </string>
 		<node_path name="tracks/17/path"> "center/2petal_md 2:transform/scale" </node_path>
@@ -307,15 +306,15 @@
 		<dictionary name="tracks/17/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1, 0.8 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/18/type"> "value" </string>
 		<node_path name="tracks/18/path"> "center/4petal_md1:transform/scale" </node_path>
@@ -323,15 +322,15 @@
 		<dictionary name="tracks/18/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1, 0.8 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/19/type"> "value" </string>
 		<node_path name="tracks/19/path"> "center/5petal_fg1:transform/scale" </node_path>
@@ -339,17 +338,17 @@
 		<dictionary name="tracks/19/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 1.125, 3.375, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="4" shared="true">
+			<array  len="4" shared="false">
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1.1, 0.8 </vector2>
 				<vector2> 1.02222, 0.9 </vector2>
 				<vector2> 1, 0.8 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 1.125, 3.375, 6 </real_array>
 		</dictionary>
 		<string name="tracks/20/type"> "value" </string>
 		<node_path name="tracks/20/path"> "center/leaf1:transform/pos" </node_path>
@@ -357,15 +356,15 @@
 		<dictionary name="tracks/20/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> -6.16906, 0.106178 </vector2>
 				<vector2> -6.16906, 0.106178 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/21/type"> "value" </string>
 		<node_path name="tracks/21/path"> "center/leaf1:transform/rot" </node_path>
@@ -373,14 +372,14 @@
 		<dictionary name="tracks/21/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="1"> 				3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="1"> 				1 </real_array>
 			<string> "values" </string>
-			<array  len="1" shared="true">
+			<array  len="1" shared="false">
 				<real> -36.744102 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="1"> 				3 </real_array>
 		</dictionary>
 		<string name="tracks/22/type"> "value" </string>
 		<node_path name="tracks/22/path"> "center/leaf2:transform/pos" </node_path>
@@ -388,15 +387,15 @@
 		<dictionary name="tracks/22/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 3.68051, 2.51825 </vector2>
 				<vector2> 3.68051, 2.51825 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/23/type"> "value" </string>
 		<node_path name="tracks/23/path"> "center/leaf2:transform/rot" </node_path>
@@ -404,16 +403,16 @@
 		<dictionary name="tracks/23/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.5, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> -68.917145 </real>
 				<real> -62.05188 </real>
 				<real> -68.917145 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.5, 6 </real_array>
 		</dictionary>
 		<string name="tracks/24/type"> "value" </string>
 		<node_path name="tracks/24/path"> "leaf 3:transform/rot" </node_path>
@@ -421,17 +420,17 @@
 		<dictionary name="tracks/24/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 2.8125, 4.5, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="4" shared="true">
+			<array  len="4" shared="false">
 				<real> 63.554672 </real>
 				<real> 65.858246 </real>
 				<real> 60.584946 </real>
 				<real> 63.554672 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 2.8125, 4.5, 6 </real_array>
 		</dictionary>
 		<string name="tracks/25/type"> "value" </string>
 		<node_path name="tracks/25/path"> "center/pistiles/pollen_thingies:transform/rot" </node_path>
@@ -439,15 +438,15 @@
 		<dictionary name="tracks/25/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<real> 22.447857 </real>
 				<real> 22.447857 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/26/type"> "value" </string>
 		<node_path name="tracks/26/path"> "center/pistiles/pollen_thingies 2:transform/rot" </node_path>
@@ -455,15 +454,15 @@
 		<dictionary name="tracks/26/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<real> -29.172588 </real>
 				<real> -29.172588 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/27/type"> "value" </string>
 		<node_path name="tracks/27/path"> "center/pistiles:transform/scale" </node_path>
@@ -471,15 +470,15 @@
 		<dictionary name="tracks/27/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 0.6, 0.6 </vector2>
 				<vector2> 0.6, 0.6 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/28/type"> "value" </string>
 		<node_path name="tracks/28/path"> "center/pistiles/pollen_thingies:transform/pos" </node_path>
@@ -487,15 +486,15 @@
 		<dictionary name="tracks/28/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 9.6455, -5.36009 </vector2>
 				<vector2> 9.6455, -5.36009 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/29/type"> "value" </string>
 		<node_path name="tracks/29/path"> "center/pistiles/pollen_thingies 2:transform/pos" </node_path>
@@ -503,15 +502,15 @@
 		<dictionary name="tracks/29/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> -11.6632, -4.6811 </vector2>
 				<vector2> -11.6632, -4.6811 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 6 </real_array>
 		</dictionary>
 		<string name="tracks/30/type"> "value" </string>
 		<node_path name="tracks/30/path"> "center:transform/rot" </node_path>
@@ -519,569 +518,18 @@
 		<dictionary name="tracks/30/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 2.625, 6 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> 0.552565 </real>
 				<real> -1.890511 </real>
 				<real> 0.552565 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 2.625, 6 </real_array>
 		</dictionary>
-		<resource name="script/script"></resource>
-	</resource>
-	<resource type="Animation" path="local://3">
-		<string name="resource/name"> "4closing" </string>
-		<real name="length"> 3 </real>
-		<bool name="loop"> False </bool>
-		<real name="step"> 0.25 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "center/3rear_petal:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="8" shared="true">
-				<int> 5 </int>
-				<int> 4 </int>
-				<int> 3 </int>
-				<int> 2 </int>
-				<int> 1 </int>
-				<int> 0 </int>
-				<int> 0 </int>
-				<int> 0 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="8"> 				0, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 3 </real_array>
-		</dictionary>
-		<string name="tracks/1/type"> "value" </string>
-		<node_path name="tracks/1/path"> "center/2petal_md 2:frame" </node_path>
-		<int name="tracks/1/interp"> 1 </int>
-		<dictionary name="tracks/1/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="8" shared="true">
-				<int> 5 </int>
-				<int> 4 </int>
-				<int> 3 </int>
-				<int> 2 </int>
-				<int> 1 </int>
-				<int> 0 </int>
-				<int> 0 </int>
-				<int> 0 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="8"> 				0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 3 </real_array>
-		</dictionary>
-		<string name="tracks/2/type"> "value" </string>
-		<node_path name="tracks/2/path"> "center/4petal_md1:frame" </node_path>
-		<int name="tracks/2/interp"> 1 </int>
-		<dictionary name="tracks/2/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="8" shared="true">
-				<int> 5 </int>
-				<int> 4 </int>
-				<int> 3 </int>
-				<int> 2 </int>
-				<int> 1 </int>
-				<int> 0 </int>
-				<int> 0 </int>
-				<int> 0 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="8"> 				0, 0.75, 1, 1.25, 1.5, 1.75, 2, 3 </real_array>
-		</dictionary>
-		<string name="tracks/3/type"> "value" </string>
-		<node_path name="tracks/3/path"> "center/5petal_fg1:frame" </node_path>
-		<int name="tracks/3/interp"> 1 </int>
-		<dictionary name="tracks/3/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="8" shared="true">
-				<int> 5 </int>
-				<int> 4 </int>
-				<int> 3 </int>
-				<int> 2 </int>
-				<int> 1 </int>
-				<int> 0 </int>
-				<int> 0 </int>
-				<int> 0 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="8"> 				0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 3 </real_array>
-		</dictionary>
-		<string name="tracks/4/type"> "value" </string>
-		<node_path name="tracks/4/path"> "center/1petal_fg 2:frame" </node_path>
-		<int name="tracks/4/interp"> 1 </int>
-		<dictionary name="tracks/4/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="8" shared="true">
-				<int> 5 </int>
-				<int> 4 </int>
-				<int> 3 </int>
-				<int> 2 </int>
-				<int> 1 </int>
-				<int> 0 </int>
-				<int> 0 </int>
-				<int> 0 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="8"> 				0, 0.75, 1, 1.25, 1.5, 1.75, 2, 3 </real_array>
-		</dictionary>
-		<string name="tracks/5/type"> "value" </string>
-		<node_path name="tracks/5/path"> "center/3rear_petal:transform/rot" </node_path>
-		<int name="tracks/5/interp"> 2 </int>
-		<dictionary name="tracks/5/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="3"> 				1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="3" shared="true">
-				<real> 0 </real>
-				<real> 2.60991 </real>
-				<real> 5.219821 </real>
-			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.25, 3 </real_array>
-		</dictionary>
-		<string name="tracks/6/type"> "value" </string>
-		<node_path name="tracks/6/path"> "center/2petal_md 2:transform/rot" </node_path>
-		<int name="tracks/6/interp"> 2 </int>
-		<dictionary name="tracks/6/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="3"> 				1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="3" shared="true">
-				<real> 0.671935 </real>
-				<real> -8.927781 </real>
-				<real> -18.527496 </real>
-			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 2, 3 </real_array>
-		</dictionary>
-		<string name="tracks/7/type"> "value" </string>
-		<node_path name="tracks/7/path"> "center/4petal_md1:transform/rot" </node_path>
-		<int name="tracks/7/interp"> 2 </int>
-		<dictionary name="tracks/7/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="3"> 				1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="3" shared="true">
-				<real> -8.636727 </real>
-				<real> 2.651005 </real>
-				<real> 13.938738 </real>
-			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.5, 3 </real_array>
-		</dictionary>
-		<string name="tracks/8/type"> "value" </string>
-		<node_path name="tracks/8/path"> "center/5petal_fg1:transform/rot" </node_path>
-		<int name="tracks/8/interp"> 2 </int>
-		<dictionary name="tracks/8/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="3"> 				1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="3" shared="true">
-				<real> -14.460542 </real>
-				<real> 4.96132 </real>
-				<real> 24.383183 </real>
-			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.75, 3 </real_array>
-		</dictionary>
-		<string name="tracks/9/type"> "value" </string>
-		<node_path name="tracks/9/path"> "center/1petal_fg 2:transform/rot" </node_path>
-		<int name="tracks/9/interp"> 2 </int>
-		<dictionary name="tracks/9/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="3"> 				1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="3" shared="true">
-				<real> 13.552298 </real>
-				<real> -6.30239 </real>
-				<real> -26.157078 </real>
-			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1, 3 </real_array>
-		</dictionary>
-		<string name="tracks/10/type"> "value" </string>
-		<node_path name="tracks/10/path"> "center/3rear_petal:transform/pos" </node_path>
-		<int name="tracks/10/interp"> 1 </int>
-		<dictionary name="tracks/10/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> 2.59636, -4.8854 </vector2>
-				<vector2> 8.86966, -7.00663 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/11/type"> "value" </string>
-		<node_path name="tracks/11/path"> "center/2petal_md 2:transform/pos" </node_path>
-		<int name="tracks/11/interp"> 1 </int>
-		<dictionary name="tracks/11/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> -21.6387, -0.213531 </vector2>
-				<vector2> -12.2563, -0.213528 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/12/type"> "value" </string>
-		<node_path name="tracks/12/path"> "center/4petal_md1:transform/pos" </node_path>
-		<int name="tracks/12/interp"> 1 </int>
-		<dictionary name="tracks/12/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> 21.8676, 1.24641 </vector2>
-				<vector2> 10.5439, -0.0477274 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/13/type"> "value" </string>
-		<node_path name="tracks/13/path"> "center/5petal_fg1:transform/pos" </node_path>
-		<int name="tracks/13/interp"> 1 </int>
-		<dictionary name="tracks/13/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> 4.64028, 8.54614 </vector2>
-				<vector2> 9.73067, 7.252 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/14/type"> "value" </string>
-		<node_path name="tracks/14/path"> "center/1petal_fg 2:transform/pos" </node_path>
-		<int name="tracks/14/interp"> 1 </int>
-		<dictionary name="tracks/14/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> -3.82739, 8.54615 </vector2>
-				<vector2> -12.7036, 7.252 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/15/type"> "value" </string>
-		<node_path name="tracks/15/path"> "center/1petal_fg 2:transform/scale" </node_path>
-		<int name="tracks/15/interp"> 1 </int>
-		<dictionary name="tracks/15/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> 1, 1 </vector2>
-				<vector2> 1, 0.8 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/16/type"> "value" </string>
-		<node_path name="tracks/16/path"> "center/3rear_petal:transform/scale" </node_path>
-		<int name="tracks/16/interp"> 1 </int>
-		<dictionary name="tracks/16/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> 1, 1 </vector2>
-				<vector2> 1, 0.8 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/17/type"> "value" </string>
-		<node_path name="tracks/17/path"> "center/2petal_md 2:transform/scale" </node_path>
-		<int name="tracks/17/interp"> 1 </int>
-		<dictionary name="tracks/17/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> 1, 1 </vector2>
-				<vector2> 1, 0.8 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/18/type"> "value" </string>
-		<node_path name="tracks/18/path"> "center/4petal_md1:transform/scale" </node_path>
-		<int name="tracks/18/interp"> 1 </int>
-		<dictionary name="tracks/18/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> 1, 1 </vector2>
-				<vector2> 1, 0.8 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/19/type"> "value" </string>
-		<node_path name="tracks/19/path"> "center/5petal_fg1:transform/scale" </node_path>
-		<int name="tracks/19/interp"> 1 </int>
-		<dictionary name="tracks/19/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> 1, 1 </vector2>
-				<vector2> 1, 0.8 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/20/type"> "value" </string>
-		<node_path name="tracks/20/path"> "center/leaf1:transform/pos" </node_path>
-		<int name="tracks/20/interp"> 1 </int>
-		<dictionary name="tracks/20/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> -6.16906, 0.106178 </vector2>
-				<vector2> -6.16906, 0.106178 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/21/type"> "value" </string>
-		<node_path name="tracks/21/path"> "center/leaf1:transform/rot" </node_path>
-		<int name="tracks/21/interp"> 1 </int>
-		<dictionary name="tracks/21/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="3"> 				1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="3" shared="true">
-				<real> -36.541241 </real>
-				<real> -51.741478 </real>
-				<real> -36.541241 </real>
-			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.25, 3 </real_array>
-		</dictionary>
-		<string name="tracks/22/type"> "value" </string>
-		<node_path name="tracks/22/path"> "center/leaf2:transform/pos" </node_path>
-		<int name="tracks/22/interp"> 1 </int>
-		<dictionary name="tracks/22/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> 3.68051, 2.51825 </vector2>
-				<vector2> 3.68051, 2.51825 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/23/type"> "value" </string>
-		<node_path name="tracks/23/path"> "center/leaf2:transform/rot" </node_path>
-		<int name="tracks/23/interp"> 1 </int>
-		<dictionary name="tracks/23/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="3"> 				1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="3" shared="true">
-				<real> -68.917145 </real>
-				<real> -46.624012 </real>
-				<real> -68.917145 </real>
-			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.5, 3 </real_array>
-		</dictionary>
-		<string name="tracks/24/type"> "value" </string>
-		<node_path name="tracks/24/path"> "leaf 3:transform/rot" </node_path>
-		<int name="tracks/24/interp"> 1 </int>
-		<dictionary name="tracks/24/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="3"> 				1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="3" shared="true">
-				<real> 63.554672 </real>
-				<real> 75.121277 </real>
-				<real> 63.554672 </real>
-			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.75, 3 </real_array>
-		</dictionary>
-		<string name="tracks/25/type"> "value" </string>
-		<node_path name="tracks/25/path"> "center/pistiles/pollen_thingies:transform/rot" </node_path>
-		<int name="tracks/25/interp"> 1 </int>
-		<dictionary name="tracks/25/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<real> -7.184067 </real>
-				<real> 22.447857 </real>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/26/type"> "value" </string>
-		<node_path name="tracks/26/path"> "center/pistiles/pollen_thingies 2:transform/rot" </node_path>
-		<int name="tracks/26/interp"> 1 </int>
-		<dictionary name="tracks/26/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="3"> 				1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="3" shared="true">
-				<real> -4.667229 </real>
-				<real> -29.172588 </real>
-				<real> -29.172588 </real>
-			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 2, 3 </real_array>
-		</dictionary>
-		<string name="tracks/27/type"> "value" </string>
-		<node_path name="tracks/27/path"> "center/pistiles:transform/scale" </node_path>
-		<int name="tracks/27/interp"> 1 </int>
-		<dictionary name="tracks/27/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> 1, 1 </vector2>
-				<vector2> 0.6, 0.6 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/28/type"> "value" </string>
-		<node_path name="tracks/28/path"> "center/pistiles/pollen_thingies:transform/pos" </node_path>
-		<int name="tracks/28/interp"> 1 </int>
-		<dictionary name="tracks/28/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> 9.07621, -21.7316 </vector2>
-				<vector2> 9.6455, -5.36009 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/29/type"> "value" </string>
-		<node_path name="tracks/29/path"> "center/pistiles/pollen_thingies 2:transform/pos" </node_path>
-		<int name="tracks/29/interp"> 1 </int>
-		<dictionary name="tracks/29/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="2" shared="true">
-				<vector2> -12.2325, -21.0526 </vector2>
-				<vector2> -11.6632, -4.6811 </vector2>
-			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
-		</dictionary>
-		<string name="tracks/30/type"> "value" </string>
-		<node_path name="tracks/30/path"> "center:transform/rot" </node_path>
-		<int name="tracks/30/interp"> 1 </int>
-		<dictionary name="tracks/30/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="4" shared="true">
-				<real> -0.839761 </real>
-				<real> -5.721661 </real>
-				<real> 1.285671 </real>
-				<real> -0.839761 </real>
-			</array>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 1.5, 2.5, 3 </real_array>
-		</dictionary>
-		<resource name="script/script"></resource>
-	</resource>
-	<resource type="Animation" path="local://4">
-		<string name="resource/name"> "pollenlife" </string>
-		<real name="length"> 1.25 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.25 </real>
-		<resource name="script/script"></resource>
+
 	</resource>
 	<resource type="Animation" path="local://5">
 		<string name="resource/name"> "2opening" </string>
@@ -1094,10 +542,12 @@
 		<dictionary name="tracks/0/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="8"> 				0, 2, 2.35, 2.6, 2.85, 3.1, 3.35, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="8" shared="true">
+			<array  len="8" shared="false">
 				<int> 0 </int>
 				<int> 0 </int>
 				<int> 1 </int>
@@ -1107,8 +557,6 @@
 				<int> 5 </int>
 				<int> 5 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="8"> 				0, 2, 2.35, 2.6, 2.85, 3.1, 3.35, 4 </real_array>
 		</dictionary>
 		<string name="tracks/1/type"> "value" </string>
 		<node_path name="tracks/1/path"> "center/2petal_md 2:frame" </node_path>
@@ -1116,10 +564,12 @@
 		<dictionary name="tracks/1/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="8"> 				0, 2, 2.25, 2.5, 2.75, 3, 3.25, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="8" shared="true">
+			<array  len="8" shared="false">
 				<int> 0 </int>
 				<int> 0 </int>
 				<int> 1 </int>
@@ -1129,8 +579,6 @@
 				<int> 5 </int>
 				<int> 5 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="8"> 				0, 2, 2.25, 2.5, 2.75, 3, 3.25, 4 </real_array>
 		</dictionary>
 		<string name="tracks/2/type"> "value" </string>
 		<node_path name="tracks/2/path"> "center/4petal_md1:frame" </node_path>
@@ -1138,10 +586,12 @@
 		<dictionary name="tracks/2/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="8"> 				0, 2, 2.3, 2.55, 2.8, 3.05, 3.3, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="8" shared="true">
+			<array  len="8" shared="false">
 				<int> 0 </int>
 				<int> 0 </int>
 				<int> 1 </int>
@@ -1151,8 +601,6 @@
 				<int> 5 </int>
 				<int> 5 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="8"> 				0, 2, 2.3, 2.55, 2.8, 3.05, 3.3, 4 </real_array>
 		</dictionary>
 		<string name="tracks/3/type"> "value" </string>
 		<node_path name="tracks/3/path"> "center/5petal_fg1:frame" </node_path>
@@ -1160,10 +608,12 @@
 		<dictionary name="tracks/3/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="8"> 				0, 2, 2.2, 2.45, 2.7, 2.95, 3.2, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="8" shared="true">
+			<array  len="8" shared="false">
 				<int> 0 </int>
 				<int> 0 </int>
 				<int> 1 </int>
@@ -1173,8 +623,6 @@
 				<int> 5 </int>
 				<int> 5 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="8"> 				0, 2, 2.2, 2.45, 2.7, 2.95, 3.2, 4 </real_array>
 		</dictionary>
 		<string name="tracks/4/type"> "value" </string>
 		<node_path name="tracks/4/path"> "center/1petal_fg 2:frame" </node_path>
@@ -1182,10 +630,12 @@
 		<dictionary name="tracks/4/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="7"> 				0, 2, 2.25, 2.5, 2.75, 3, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="7"> 				1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="7" shared="true">
+			<array  len="7" shared="false">
 				<int> 0 </int>
 				<int> 0 </int>
 				<int> 1 </int>
@@ -1194,8 +644,6 @@
 				<int> 4 </int>
 				<int> 5 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="7"> 				0, 2, 2.25, 2.5, 2.75, 3, 4 </real_array>
 		</dictionary>
 		<string name="tracks/5/type"> "value" </string>
 		<node_path name="tracks/5/path"> "center/3rear_petal:transform/rot" </node_path>
@@ -1203,18 +651,18 @@
 		<dictionary name="tracks/5/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 2, 3.25, 3.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="5" shared="true">
+			<array  len="5" shared="false">
 				<real> 5.219821 </real>
 				<real> 5.219821 </real>
 				<real> 0 </real>
 				<real> -5.02585 </real>
 				<real> 0 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="5"> 				0, 2, 3.25, 3.5, 4 </real_array>
 		</dictionary>
 		<string name="tracks/6/type"> "value" </string>
 		<node_path name="tracks/6/path"> "center/2petal_md 2:transform/rot" </node_path>
@@ -1222,10 +670,12 @@
 		<dictionary name="tracks/6/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="7"> 				0, 1.25, 2, 2.25, 3.25, 3.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="7"> 				1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="7" shared="true">
+			<array  len="7" shared="false">
 				<real> -18.527496 </real>
 				<real> -27.934214 </real>
 				<real> -18.527496 </real>
@@ -1234,8 +684,6 @@
 				<real> 15.077232 </real>
 				<real> 0.671935 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="7"> 				0, 1.25, 2, 2.25, 3.25, 3.5, 4 </real_array>
 		</dictionary>
 		<string name="tracks/7/type"> "value" </string>
 		<node_path name="tracks/7/path"> "center/4petal_md1:transform/rot" </node_path>
@@ -1243,10 +691,12 @@
 		<dictionary name="tracks/7/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="7"> 				0, 1.25, 2, 2.25, 3.25, 3.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="7"> 				1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="7" shared="true">
+			<array  len="7" shared="false">
 				<real> 13.938738 </real>
 				<real> 23.558271 </real>
 				<real> 13.938738 </real>
@@ -1255,8 +705,6 @@
 				<real> -19.798822 </real>
 				<real> -8.636727 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="7"> 				0, 1.25, 2, 2.25, 3.25, 3.5, 4 </real_array>
 		</dictionary>
 		<string name="tracks/8/type"> "value" </string>
 		<node_path name="tracks/8/path"> "center/5petal_fg1:transform/rot" </node_path>
@@ -1264,10 +712,12 @@
 		<dictionary name="tracks/8/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="6"> 				0, 1.25, 2, 3.25, 3.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="6"> 				1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="6" shared="true">
+			<array  len="6" shared="false">
 				<real> 24.383183 </real>
 				<real> 29.579704 </real>
 				<real> 24.383183 </real>
@@ -1275,8 +725,6 @@
 				<real> -25.742624 </real>
 				<real> -14.460542 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="6"> 				0, 1.25, 2, 3.25, 3.5, 4 </real_array>
 		</dictionary>
 		<string name="tracks/9/type"> "value" </string>
 		<node_path name="tracks/9/path"> "center/1petal_fg 2:transform/rot" </node_path>
@@ -1284,10 +732,12 @@
 		<dictionary name="tracks/9/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="6"> 				0, 1.25, 2, 3.25, 3.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="6"> 				1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="6" shared="true">
+			<array  len="6" shared="false">
 				<real> -26.157078 </real>
 				<real> -32.306618 </real>
 				<real> -26.157078 </real>
@@ -1295,8 +745,6 @@
 				<real> 20.921604 </real>
 				<real> 13.552298 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="6"> 				0, 1.25, 2, 3.25, 3.5, 4 </real_array>
 		</dictionary>
 		<string name="tracks/10/type"> "value" </string>
 		<node_path name="tracks/10/path"> "center/3rear_petal:transform/pos" </node_path>
@@ -1304,10 +752,12 @@
 		<dictionary name="tracks/10/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="7"> 				0, 1, 2, 2.75, 3.25, 3.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="7"> 				1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="7" shared="true">
+			<array  len="7" shared="false">
 				<vector2> 8.86966, -7.00663 </vector2>
 				<vector2> 8.57767, 0.58509 </vector2>
 				<vector2> 8.86966, -7.00663 </vector2>
@@ -1316,8 +766,6 @@
 				<vector2> 2.59636, -4.8854 </vector2>
 				<vector2> 2.59636, -4.8854 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="7"> 				0, 1, 2, 2.75, 3.25, 3.5, 4 </real_array>
 		</dictionary>
 		<string name="tracks/11/type"> "value" </string>
 		<node_path name="tracks/11/path"> "center/2petal_md 2:transform/pos" </node_path>
@@ -1325,10 +773,12 @@
 		<dictionary name="tracks/11/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="7"> 				0, 2, 2.25, 2.75, 3.25, 3.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="7"> 				1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="7" shared="true">
+			<array  len="7" shared="false">
 				<vector2> -12.2563, -0.213528 </vector2>
 				<vector2> -12.2563, -0.213528 </vector2>
 				<vector2> -13.5504, -2.32729 </vector2>
@@ -1337,8 +787,6 @@
 				<vector2> -16.8953, -0.740568 </vector2>
 				<vector2> -21.6387, -0.213531 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="7"> 				0, 2, 2.25, 2.75, 3.25, 3.5, 4 </real_array>
 		</dictionary>
 		<string name="tracks/12/type"> "value" </string>
 		<node_path name="tracks/12/path"> "center/4petal_md1:transform/pos" </node_path>
@@ -1346,10 +794,12 @@
 		<dictionary name="tracks/12/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="7"> 				0, 2, 2.25, 2.75, 3.25, 3.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="7"> 				1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="7" shared="true">
+			<array  len="7" shared="false">
 				<vector2> 10.5439, -0.0477274 </vector2>
 				<vector2> 10.5439, -0.0477274 </vector2>
 				<vector2> 12.0969, -1.32029 </vector2>
@@ -1358,8 +808,6 @@
 				<vector2> 14.489, -0.0711924 </vector2>
 				<vector2> 21.8676, 1.24641 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="7"> 				0, 2, 2.25, 2.75, 3.25, 3.5, 4 </real_array>
 		</dictionary>
 		<string name="tracks/13/type"> "value" </string>
 		<node_path name="tracks/13/path"> "center/5petal_fg1:transform/pos" </node_path>
@@ -1367,10 +815,12 @@
 		<dictionary name="tracks/13/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="6"> 				0, 2, 2.75, 3.25, 3.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="6"> 				1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="6" shared="true">
+			<array  len="6" shared="false">
 				<vector2> 9.73067, 7.252 </vector2>
 				<vector2> 9.73067, 7.252 </vector2>
 				<vector2> 4.44616, 10.0991 </vector2>
@@ -1378,8 +828,6 @@
 				<vector2> -1.42067, 6.7015 </vector2>
 				<vector2> 4.64028, 8.54614 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="6"> 				0, 2, 2.75, 3.25, 3.5, 4 </real_array>
 		</dictionary>
 		<string name="tracks/14/type"> "value" </string>
 		<node_path name="tracks/14/path"> "center/1petal_fg 2:transform/pos" </node_path>
@@ -1387,10 +835,12 @@
 		<dictionary name="tracks/14/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="6"> 				0, 2, 2.75, 3.25, 3.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="6"> 				1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="6" shared="true">
+			<array  len="6" shared="false">
 				<vector2> -12.7036, 7.252 </vector2>
 				<vector2> -12.7036, 7.252 </vector2>
 				<vector2> -4.02151, 10.0991 </vector2>
@@ -1398,8 +848,6 @@
 				<vector2> 1.17949, 6.17447 </vector2>
 				<vector2> -3.82739, 8.54615 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="6"> 				0, 2, 2.75, 3.25, 3.5, 4 </real_array>
 		</dictionary>
 		<string name="tracks/15/type"> "value" </string>
 		<node_path name="tracks/15/path"> "center/1petal_fg 2:transform/scale" </node_path>
@@ -1407,18 +855,18 @@
 		<dictionary name="tracks/15/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 0.75, 2, 3.25, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="5" shared="true">
+			<array  len="5" shared="false">
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1, 0.6 </vector2>
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1, 1 </vector2>
 				<vector2> 1, 1 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="5"> 				0, 0.75, 2, 3.25, 4 </real_array>
 		</dictionary>
 		<string name="tracks/16/type"> "value" </string>
 		<node_path name="tracks/16/path"> "center/3rear_petal:transform/scale" </node_path>
@@ -1426,18 +874,18 @@
 		<dictionary name="tracks/16/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 0.75, 2, 3.25, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="5" shared="true">
+			<array  len="5" shared="false">
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 0.75, 0.64 </vector2>
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1, 1 </vector2>
 				<vector2> 1, 1 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="5"> 				0, 0.75, 2, 3.25, 4 </real_array>
 		</dictionary>
 		<string name="tracks/17/type"> "value" </string>
 		<node_path name="tracks/17/path"> "center/2petal_md 2:transform/scale" </node_path>
@@ -1445,18 +893,18 @@
 		<dictionary name="tracks/17/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 0.75, 2, 3.25, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="5" shared="true">
+			<array  len="5" shared="false">
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1, 0.6 </vector2>
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1, 1 </vector2>
 				<vector2> 1, 1 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="5"> 				0, 0.75, 2, 3.25, 4 </real_array>
 		</dictionary>
 		<string name="tracks/18/type"> "value" </string>
 		<node_path name="tracks/18/path"> "center/4petal_md1:transform/scale" </node_path>
@@ -1464,18 +912,18 @@
 		<dictionary name="tracks/18/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 0.75, 2, 3.25, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="5" shared="true">
+			<array  len="5" shared="false">
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1, 0.6 </vector2>
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1, 1 </vector2>
 				<vector2> 1, 1 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="5"> 				0, 0.75, 2, 3.25, 4 </real_array>
 		</dictionary>
 		<string name="tracks/19/type"> "value" </string>
 		<node_path name="tracks/19/path"> "center/5petal_fg1:transform/scale" </node_path>
@@ -1483,18 +931,18 @@
 		<dictionary name="tracks/19/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 0.75, 2, 3.25, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="5" shared="true">
+			<array  len="5" shared="false">
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1, 0.6 </vector2>
 				<vector2> 1, 0.8 </vector2>
 				<vector2> 1, 1 </vector2>
 				<vector2> 1, 1 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="5"> 				0, 0.75, 2, 3.25, 4 </real_array>
 		</dictionary>
 		<string name="tracks/20/type"> "value" </string>
 		<node_path name="tracks/20/path"> "center/leaf1:transform/pos" </node_path>
@@ -1502,16 +950,16 @@
 		<dictionary name="tracks/20/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 2, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<vector2> -6.16906, 0.106178 </vector2>
 				<vector2> -6.16906, 0.106178 </vector2>
 				<vector2> -6.16906, 0.106178 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 2, 4 </real_array>
 		</dictionary>
 		<string name="tracks/21/type"> "value" </string>
 		<node_path name="tracks/21/path"> "center/leaf1:transform/rot" </node_path>
@@ -1519,16 +967,16 @@
 		<dictionary name="tracks/21/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0.25, 1.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> -36.541241 </real>
 				<real> -48.111477 </real>
 				<real> -36.541241 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0.25, 1.5, 4 </real_array>
 		</dictionary>
 		<string name="tracks/22/type"> "value" </string>
 		<node_path name="tracks/22/path"> "center/leaf2:transform/pos" </node_path>
@@ -1536,16 +984,16 @@
 		<dictionary name="tracks/22/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 2, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<vector2> 3.68051, 2.51825 </vector2>
 				<vector2> 3.68051, 2.51825 </vector2>
 				<vector2> 3.68051, 2.51825 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 2, 4 </real_array>
 		</dictionary>
 		<string name="tracks/23/type"> "value" </string>
 		<node_path name="tracks/23/path"> "center/leaf2:transform/rot" </node_path>
@@ -1553,16 +1001,16 @@
 		<dictionary name="tracks/23/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> -68.917145 </real>
 				<real> -54.288296 </real>
 				<real> -68.917145 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1, 4 </real_array>
 		</dictionary>
 		<string name="tracks/24/type"> "value" </string>
 		<node_path name="tracks/24/path"> "leaf 3:transform/rot" </node_path>
@@ -1570,18 +1018,18 @@
 		<dictionary name="tracks/24/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 0.5, 2, 3, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="5" shared="true">
+			<array  len="5" shared="false">
 				<real> 63.554672 </real>
 				<real> 63.554672 </real>
 				<real> 67.219666 </real>
 				<real> 56.13789 </real>
 				<real> 63.554672 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="5"> 				0, 0.5, 2, 3, 4 </real_array>
 		</dictionary>
 		<string name="tracks/25/type"> "value" </string>
 		<node_path name="tracks/25/path"> "center/pistiles/pollen_thingies:transform/rot" </node_path>
@@ -1589,17 +1037,17 @@
 		<dictionary name="tracks/25/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 2, 3.25, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="4" shared="true">
+			<array  len="4" shared="false">
 				<real> 22.447857 </real>
 				<real> 22.447857 </real>
 				<real> -26.51465 </real>
 				<real> -7.184067 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 2, 3.25, 4 </real_array>
 		</dictionary>
 		<string name="tracks/26/type"> "value" </string>
 		<node_path name="tracks/26/path"> "center/pistiles/pollen_thingies 2:transform/rot" </node_path>
@@ -1607,17 +1055,17 @@
 		<dictionary name="tracks/26/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 2, 3.25, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="4" shared="true">
+			<array  len="4" shared="false">
 				<real> -29.172588 </real>
 				<real> -29.172588 </real>
 				<real> 14.983395 </real>
 				<real> -4.667229 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 2, 3.25, 4 </real_array>
 		</dictionary>
 		<string name="tracks/27/type"> "value" </string>
 		<node_path name="tracks/27/path"> "center/pistiles:transform/scale" </node_path>
@@ -1625,17 +1073,17 @@
 		<dictionary name="tracks/27/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 1.5, 3, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="4" shared="true">
+			<array  len="4" shared="false">
 				<vector2> 0.6, 0.6 </vector2>
 				<vector2> 0.6, 0.6 </vector2>
 				<vector2> 1, 1 </vector2>
 				<vector2> 1, 1 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 1.5, 3, 4 </real_array>
 		</dictionary>
 		<string name="tracks/28/type"> "value" </string>
 		<node_path name="tracks/28/path"> "center/pistiles/pollen_thingies:transform/pos" </node_path>
@@ -1643,17 +1091,17 @@
 		<dictionary name="tracks/28/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 0.75, 2.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="4" shared="true">
+			<array  len="4" shared="false">
 				<vector2> 9.6455, -5.36009 </vector2>
 				<vector2> 9.6455, -5.36009 </vector2>
 				<vector2> 9.07621, -21.7316 </vector2>
 				<vector2> 9.07621, -21.7316 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 0.75, 2.5, 4 </real_array>
 		</dictionary>
 		<string name="tracks/29/type"> "value" </string>
 		<node_path name="tracks/29/path"> "center/pistiles/pollen_thingies 2:transform/pos" </node_path>
@@ -1661,19 +1109,19 @@
 		<dictionary name="tracks/29/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 0.75, 2.5, 4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="4" shared="true">
+			<array  len="4" shared="false">
 				<vector2> -11.6632, -4.6811 </vector2>
 				<vector2> -11.6632, -4.6811 </vector2>
 				<vector2> -12.2325, -21.0526 </vector2>
 				<vector2> -12.2325, -21.0526 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 0.75, 2.5, 4 </real_array>
 		</dictionary>
-		<resource name="script/script"></resource>
+
 	</resource>
 	<resource type="Animation" path="local://6">
 		<string name="resource/name"> "3opened" </string>
@@ -1686,15 +1134,15 @@
 		<dictionary name="tracks/0/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<int> 5 </int>
 				<int> 5 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/1/type"> "value" </string>
 		<node_path name="tracks/1/path"> "center/2petal_md 2:frame" </node_path>
@@ -1702,15 +1150,15 @@
 		<dictionary name="tracks/1/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<int> 5 </int>
 				<int> 5 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/2/type"> "value" </string>
 		<node_path name="tracks/2/path"> "center/4petal_md1:frame" </node_path>
@@ -1718,15 +1166,15 @@
 		<dictionary name="tracks/2/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<int> 5 </int>
 				<int> 5 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/3/type"> "value" </string>
 		<node_path name="tracks/3/path"> "center/5petal_fg1:frame" </node_path>
@@ -1734,15 +1182,15 @@
 		<dictionary name="tracks/3/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<int> 5 </int>
 				<int> 5 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/4/type"> "value" </string>
 		<node_path name="tracks/4/path"> "center/1petal_fg 2:frame" </node_path>
@@ -1750,15 +1198,15 @@
 		<dictionary name="tracks/4/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<int> 5 </int>
 				<int> 5 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/5/type"> "value" </string>
 		<node_path name="tracks/5/path"> "center/3rear_petal:transform/rot" </node_path>
@@ -1766,16 +1214,16 @@
 		<dictionary name="tracks/5/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.5, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> 0 </real>
 				<real> 2.327242 </real>
 				<real> 0 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.5, 3 </real_array>
 		</dictionary>
 		<string name="tracks/6/type"> "value" </string>
 		<node_path name="tracks/6/path"> "center/2petal_md 2:transform/rot" </node_path>
@@ -1783,16 +1231,16 @@
 		<dictionary name="tracks/6/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.75, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> 0.671935 </real>
 				<real> -5.191526 </real>
 				<real> 0.671935 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.75, 3 </real_array>
 		</dictionary>
 		<string name="tracks/7/type"> "value" </string>
 		<node_path name="tracks/7/path"> "center/4petal_md1:transform/rot" </node_path>
@@ -1800,16 +1248,16 @@
 		<dictionary name="tracks/7/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.25, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> -8.636727 </real>
 				<real> -3.369068 </real>
 				<real> -8.636727 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.25, 3 </real_array>
 		</dictionary>
 		<string name="tracks/8/type"> "value" </string>
 		<node_path name="tracks/8/path"> "center/5petal_fg1:transform/rot" </node_path>
@@ -1817,16 +1265,16 @@
 		<dictionary name="tracks/8/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> -14.460542 </real>
 				<real> -7.055731 </real>
 				<real> -14.460542 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1, 3 </real_array>
 		</dictionary>
 		<string name="tracks/9/type"> "value" </string>
 		<node_path name="tracks/9/path"> "center/1petal_fg 2:transform/rot" </node_path>
@@ -1834,16 +1282,16 @@
 		<dictionary name="tracks/9/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 2, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> 13.552298 </real>
 				<real> 3.945536 </real>
 				<real> 13.552298 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 2, 3 </real_array>
 		</dictionary>
 		<string name="tracks/10/type"> "value" </string>
 		<node_path name="tracks/10/path"> "center/3rear_petal:transform/pos" </node_path>
@@ -1851,15 +1299,15 @@
 		<dictionary name="tracks/10/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 2.59636, -4.8854 </vector2>
 				<vector2> 2.59636, -4.8854 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/11/type"> "value" </string>
 		<node_path name="tracks/11/path"> "center/2petal_md 2:transform/pos" </node_path>
@@ -1867,15 +1315,15 @@
 		<dictionary name="tracks/11/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> -21.6387, -0.213531 </vector2>
 				<vector2> -21.6387, -0.213531 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/12/type"> "value" </string>
 		<node_path name="tracks/12/path"> "center/4petal_md1:transform/pos" </node_path>
@@ -1883,15 +1331,15 @@
 		<dictionary name="tracks/12/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 21.8676, 1.24641 </vector2>
 				<vector2> 21.8676, 1.24641 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/13/type"> "value" </string>
 		<node_path name="tracks/13/path"> "center/5petal_fg1:transform/pos" </node_path>
@@ -1899,15 +1347,15 @@
 		<dictionary name="tracks/13/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 4.64028, 8.54614 </vector2>
 				<vector2> 4.64028, 8.54614 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/14/type"> "value" </string>
 		<node_path name="tracks/14/path"> "center/1petal_fg 2:transform/pos" </node_path>
@@ -1915,15 +1363,15 @@
 		<dictionary name="tracks/14/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> -3.82739, 8.54615 </vector2>
 				<vector2> -3.82739, 8.54615 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/15/type"> "value" </string>
 		<node_path name="tracks/15/path"> "center/1petal_fg 2:transform/scale" </node_path>
@@ -1931,15 +1379,15 @@
 		<dictionary name="tracks/15/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 1, 1 </vector2>
 				<vector2> 1, 1 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/16/type"> "value" </string>
 		<node_path name="tracks/16/path"> "center/3rear_petal:transform/scale" </node_path>
@@ -1947,15 +1395,15 @@
 		<dictionary name="tracks/16/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 1, 1 </vector2>
 				<vector2> 1, 1 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/17/type"> "value" </string>
 		<node_path name="tracks/17/path"> "center/2petal_md 2:transform/scale" </node_path>
@@ -1963,15 +1411,15 @@
 		<dictionary name="tracks/17/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 1, 1 </vector2>
 				<vector2> 1, 1 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/18/type"> "value" </string>
 		<node_path name="tracks/18/path"> "center/4petal_md1:transform/scale" </node_path>
@@ -1979,15 +1427,15 @@
 		<dictionary name="tracks/18/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 1, 1 </vector2>
 				<vector2> 1, 1 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/19/type"> "value" </string>
 		<node_path name="tracks/19/path"> "center/5petal_fg1:transform/scale" </node_path>
@@ -1995,15 +1443,15 @@
 		<dictionary name="tracks/19/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 1, 1 </vector2>
 				<vector2> 1, 1 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/20/type"> "value" </string>
 		<node_path name="tracks/20/path"> "center/leaf1:transform/pos" </node_path>
@@ -2011,15 +1459,15 @@
 		<dictionary name="tracks/20/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> -6.16906, 0.106178 </vector2>
 				<vector2> -6.16906, 0.106178 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/21/type"> "value" </string>
 		<node_path name="tracks/21/path"> "center/leaf1:transform/rot" </node_path>
@@ -2027,16 +1475,16 @@
 		<dictionary name="tracks/21/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> -36.541241 </real>
 				<real> -43.478878 </real>
 				<real> -36.541241 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1, 3 </real_array>
 		</dictionary>
 		<string name="tracks/22/type"> "value" </string>
 		<node_path name="tracks/22/path"> "center/leaf2:transform/pos" </node_path>
@@ -2044,15 +1492,15 @@
 		<dictionary name="tracks/22/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 3.68051, 2.51825 </vector2>
 				<vector2> 3.68051, 2.51825 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/23/type"> "value" </string>
 		<node_path name="tracks/23/path"> "center/leaf2:transform/rot" </node_path>
@@ -2060,16 +1508,16 @@
 		<dictionary name="tracks/23/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.5, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> -68.917145 </real>
 				<real> -61.41814 </real>
 				<real> -68.917145 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.5, 3 </real_array>
 		</dictionary>
 		<string name="tracks/24/type"> "value" </string>
 		<node_path name="tracks/24/path"> "leaf 3:transform/rot" </node_path>
@@ -2077,15 +1525,15 @@
 		<dictionary name="tracks/24/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<real> 63.554672 </real>
 				<real> 63.554672 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/25/type"> "value" </string>
 		<node_path name="tracks/25/path"> "center/pistiles/pollen_thingies:transform/rot" </node_path>
@@ -2093,16 +1541,16 @@
 		<dictionary name="tracks/25/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 2, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> -7.184067 </real>
 				<real> -13.395846 </real>
 				<real> -7.184067 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 2, 3 </real_array>
 		</dictionary>
 		<string name="tracks/26/type"> "value" </string>
 		<node_path name="tracks/26/path"> "center/pistiles/pollen_thingies 2:transform/rot" </node_path>
@@ -2110,16 +1558,16 @@
 		<dictionary name="tracks/26/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.25, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> -4.667229 </real>
 				<real> 1.721269 </real>
 				<real> -4.667229 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.25, 3 </real_array>
 		</dictionary>
 		<string name="tracks/27/type"> "value" </string>
 		<node_path name="tracks/27/path"> "center/pistiles:transform/scale" </node_path>
@@ -2127,17 +1575,17 @@
 		<dictionary name="tracks/27/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 1, 2, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="4" shared="true">
+			<array  len="4" shared="false">
 				<vector2> 1, 1 </vector2>
 				<vector2> 1.1, 1 </vector2>
 				<vector2> 1.05, 1.1 </vector2>
 				<vector2> 1, 1 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 1, 2, 3 </real_array>
 		</dictionary>
 		<string name="tracks/28/type"> "value" </string>
 		<node_path name="tracks/28/path"> "center/pistiles/pollen_thingies:transform/pos" </node_path>
@@ -2145,15 +1593,15 @@
 		<dictionary name="tracks/28/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> 9.07621, -21.7316 </vector2>
 				<vector2> 9.07621, -21.7316 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/29/type"> "value" </string>
 		<node_path name="tracks/29/path"> "center/pistiles/pollen_thingies 2:transform/pos" </node_path>
@@ -2161,15 +1609,15 @@
 		<dictionary name="tracks/29/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<vector2> -12.2325, -21.0526 </vector2>
 				<vector2> -12.2325, -21.0526 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 3 </real_array>
 		</dictionary>
 		<string name="tracks/30/type"> "value" </string>
 		<node_path name="tracks/30/path"> "center:transform/rot" </node_path>
@@ -2177,73 +1625,618 @@
 		<dictionary name="tracks/30/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.5, 3 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<real> -0.839761 </real>
 				<real> 2.172416 </real>
 				<real> -0.839761 </real>
 			</array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://3">
+		<string name="resource/name"> "4closing" </string>
+		<real name="length"> 3 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.25 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "center/3rear_petal:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="8"> 				0, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="8" shared="false">
+				<int> 5 </int>
+				<int> 4 </int>
+				<int> 3 </int>
+				<int> 2 </int>
+				<int> 1 </int>
+				<int> 0 </int>
+				<int> 0 </int>
+				<int> 0 </int>
+			</array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "center/2petal_md 2:frame" </node_path>
+		<int name="tracks/1/interp"> 1 </int>
+		<dictionary name="tracks/1/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="8"> 				0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="8" shared="false">
+				<int> 5 </int>
+				<int> 4 </int>
+				<int> 3 </int>
+				<int> 2 </int>
+				<int> 1 </int>
+				<int> 0 </int>
+				<int> 0 </int>
+				<int> 0 </int>
+			</array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "center/4petal_md1:frame" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="8"> 				0, 0.75, 1, 1.25, 1.5, 1.75, 2, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="8" shared="false">
+				<int> 5 </int>
+				<int> 4 </int>
+				<int> 3 </int>
+				<int> 2 </int>
+				<int> 1 </int>
+				<int> 0 </int>
+				<int> 0 </int>
+				<int> 0 </int>
+			</array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "center/5petal_fg1:frame" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="8"> 				0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="8" shared="false">
+				<int> 5 </int>
+				<int> 4 </int>
+				<int> 3 </int>
+				<int> 2 </int>
+				<int> 1 </int>
+				<int> 0 </int>
+				<int> 0 </int>
+				<int> 0 </int>
+			</array>
+		</dictionary>
+		<string name="tracks/4/type"> "value" </string>
+		<node_path name="tracks/4/path"> "center/1petal_fg 2:frame" </node_path>
+		<int name="tracks/4/interp"> 1 </int>
+		<dictionary name="tracks/4/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="8"> 				0, 0.75, 1, 1.25, 1.5, 1.75, 2, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="8" shared="false">
+				<int> 5 </int>
+				<int> 4 </int>
+				<int> 3 </int>
+				<int> 2 </int>
+				<int> 1 </int>
+				<int> 0 </int>
+				<int> 0 </int>
+				<int> 0 </int>
+			</array>
+		</dictionary>
+		<string name="tracks/5/type"> "value" </string>
+		<node_path name="tracks/5/path"> "center/3rear_petal:transform/rot" </node_path>
+		<int name="tracks/5/interp"> 2 </int>
+		<dictionary name="tracks/5/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.25, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<real> 0 </real>
+				<real> 2.60991 </real>
+				<real> 5.219821 </real>
+			</array>
+		</dictionary>
+		<string name="tracks/6/type"> "value" </string>
+		<node_path name="tracks/6/path"> "center/2petal_md 2:transform/rot" </node_path>
+		<int name="tracks/6/interp"> 2 </int>
+		<dictionary name="tracks/6/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 2, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<real> 0.671935 </real>
+				<real> -8.927781 </real>
+				<real> -18.527496 </real>
+			</array>
+		</dictionary>
+		<string name="tracks/7/type"> "value" </string>
+		<node_path name="tracks/7/path"> "center/4petal_md1:transform/rot" </node_path>
+		<int name="tracks/7/interp"> 2 </int>
+		<dictionary name="tracks/7/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
 			<string> "times" </string>
 			<real_array  len="3"> 				0, 1.5, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<real> -8.636727 </real>
+				<real> 2.651005 </real>
+				<real> 13.938738 </real>
+			</array>
 		</dictionary>
-		<resource name="script/script"></resource>
+		<string name="tracks/8/type"> "value" </string>
+		<node_path name="tracks/8/path"> "center/5petal_fg1:transform/rot" </node_path>
+		<int name="tracks/8/interp"> 2 </int>
+		<dictionary name="tracks/8/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.75, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<real> -14.460542 </real>
+				<real> 4.96132 </real>
+				<real> 24.383183 </real>
+			</array>
+		</dictionary>
+		<string name="tracks/9/type"> "value" </string>
+		<node_path name="tracks/9/path"> "center/1petal_fg 2:transform/rot" </node_path>
+		<int name="tracks/9/interp"> 2 </int>
+		<dictionary name="tracks/9/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<real> 13.552298 </real>
+				<real> -6.30239 </real>
+				<real> -26.157078 </real>
+			</array>
+		</dictionary>
+		<string name="tracks/10/type"> "value" </string>
+		<node_path name="tracks/10/path"> "center/3rear_petal:transform/pos" </node_path>
+		<int name="tracks/10/interp"> 1 </int>
+		<dictionary name="tracks/10/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 2.59636, -4.8854 </vector2>
+				<vector2> 8.86966, -7.00663 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/11/type"> "value" </string>
+		<node_path name="tracks/11/path"> "center/2petal_md 2:transform/pos" </node_path>
+		<int name="tracks/11/interp"> 1 </int>
+		<dictionary name="tracks/11/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> -21.6387, -0.213531 </vector2>
+				<vector2> -12.2563, -0.213528 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/12/type"> "value" </string>
+		<node_path name="tracks/12/path"> "center/4petal_md1:transform/pos" </node_path>
+		<int name="tracks/12/interp"> 1 </int>
+		<dictionary name="tracks/12/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 21.8676, 1.24641 </vector2>
+				<vector2> 10.5439, -0.0477274 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/13/type"> "value" </string>
+		<node_path name="tracks/13/path"> "center/5petal_fg1:transform/pos" </node_path>
+		<int name="tracks/13/interp"> 1 </int>
+		<dictionary name="tracks/13/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 4.64028, 8.54614 </vector2>
+				<vector2> 9.73067, 7.252 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/14/type"> "value" </string>
+		<node_path name="tracks/14/path"> "center/1petal_fg 2:transform/pos" </node_path>
+		<int name="tracks/14/interp"> 1 </int>
+		<dictionary name="tracks/14/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> -3.82739, 8.54615 </vector2>
+				<vector2> -12.7036, 7.252 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/15/type"> "value" </string>
+		<node_path name="tracks/15/path"> "center/1petal_fg 2:transform/scale" </node_path>
+		<int name="tracks/15/interp"> 1 </int>
+		<dictionary name="tracks/15/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 1, 1 </vector2>
+				<vector2> 1, 0.8 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/16/type"> "value" </string>
+		<node_path name="tracks/16/path"> "center/3rear_petal:transform/scale" </node_path>
+		<int name="tracks/16/interp"> 1 </int>
+		<dictionary name="tracks/16/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 1, 1 </vector2>
+				<vector2> 1, 0.8 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/17/type"> "value" </string>
+		<node_path name="tracks/17/path"> "center/2petal_md 2:transform/scale" </node_path>
+		<int name="tracks/17/interp"> 1 </int>
+		<dictionary name="tracks/17/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 1, 1 </vector2>
+				<vector2> 1, 0.8 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/18/type"> "value" </string>
+		<node_path name="tracks/18/path"> "center/4petal_md1:transform/scale" </node_path>
+		<int name="tracks/18/interp"> 1 </int>
+		<dictionary name="tracks/18/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 1, 1 </vector2>
+				<vector2> 1, 0.8 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/19/type"> "value" </string>
+		<node_path name="tracks/19/path"> "center/5petal_fg1:transform/scale" </node_path>
+		<int name="tracks/19/interp"> 1 </int>
+		<dictionary name="tracks/19/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 1, 1 </vector2>
+				<vector2> 1, 0.8 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/20/type"> "value" </string>
+		<node_path name="tracks/20/path"> "center/leaf1:transform/pos" </node_path>
+		<int name="tracks/20/interp"> 1 </int>
+		<dictionary name="tracks/20/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> -6.16906, 0.106178 </vector2>
+				<vector2> -6.16906, 0.106178 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/21/type"> "value" </string>
+		<node_path name="tracks/21/path"> "center/leaf1:transform/rot" </node_path>
+		<int name="tracks/21/interp"> 1 </int>
+		<dictionary name="tracks/21/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.25, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<real> -36.541241 </real>
+				<real> -51.741478 </real>
+				<real> -36.541241 </real>
+			</array>
+		</dictionary>
+		<string name="tracks/22/type"> "value" </string>
+		<node_path name="tracks/22/path"> "center/leaf2:transform/pos" </node_path>
+		<int name="tracks/22/interp"> 1 </int>
+		<dictionary name="tracks/22/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 3.68051, 2.51825 </vector2>
+				<vector2> 3.68051, 2.51825 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/23/type"> "value" </string>
+		<node_path name="tracks/23/path"> "center/leaf2:transform/rot" </node_path>
+		<int name="tracks/23/interp"> 1 </int>
+		<dictionary name="tracks/23/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.5, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<real> -68.917145 </real>
+				<real> -46.624012 </real>
+				<real> -68.917145 </real>
+			</array>
+		</dictionary>
+		<string name="tracks/24/type"> "value" </string>
+		<node_path name="tracks/24/path"> "leaf 3:transform/rot" </node_path>
+		<int name="tracks/24/interp"> 1 </int>
+		<dictionary name="tracks/24/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.75, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<real> 63.554672 </real>
+				<real> 75.121277 </real>
+				<real> 63.554672 </real>
+			</array>
+		</dictionary>
+		<string name="tracks/25/type"> "value" </string>
+		<node_path name="tracks/25/path"> "center/pistiles/pollen_thingies:transform/rot" </node_path>
+		<int name="tracks/25/interp"> 1 </int>
+		<dictionary name="tracks/25/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<real> -7.184067 </real>
+				<real> 22.447857 </real>
+			</array>
+		</dictionary>
+		<string name="tracks/26/type"> "value" </string>
+		<node_path name="tracks/26/path"> "center/pistiles/pollen_thingies 2:transform/rot" </node_path>
+		<int name="tracks/26/interp"> 1 </int>
+		<dictionary name="tracks/26/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 2, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<real> -4.667229 </real>
+				<real> -29.172588 </real>
+				<real> -29.172588 </real>
+			</array>
+		</dictionary>
+		<string name="tracks/27/type"> "value" </string>
+		<node_path name="tracks/27/path"> "center/pistiles:transform/scale" </node_path>
+		<int name="tracks/27/interp"> 1 </int>
+		<dictionary name="tracks/27/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 1, 1 </vector2>
+				<vector2> 0.6, 0.6 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/28/type"> "value" </string>
+		<node_path name="tracks/28/path"> "center/pistiles/pollen_thingies:transform/pos" </node_path>
+		<int name="tracks/28/interp"> 1 </int>
+		<dictionary name="tracks/28/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 9.07621, -21.7316 </vector2>
+				<vector2> 9.6455, -5.36009 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/29/type"> "value" </string>
+		<node_path name="tracks/29/path"> "center/pistiles/pollen_thingies 2:transform/pos" </node_path>
+		<int name="tracks/29/interp"> 1 </int>
+		<dictionary name="tracks/29/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> -12.2325, -21.0526 </vector2>
+				<vector2> -11.6632, -4.6811 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/30/type"> "value" </string>
+		<node_path name="tracks/30/path"> "center:transform/rot" </node_path>
+		<int name="tracks/30/interp"> 1 </int>
+		<dictionary name="tracks/30/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 1.5, 2.5, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="4" shared="false">
+				<real> -0.839761 </real>
+				<real> -5.721661 </real>
+				<real> 1.285671 </real>
+				<real> -0.839761 </real>
+			</array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://4">
+		<string name="resource/name"> "pollenlife" </string>
+		<real name="length"> 1.25 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.25 </real>
+
 	</resource>
 	<main_resource>
-		<string name="resource/name"> "" </string>
 		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 2 </int>
+			<string> "conns" </string>
+			<int_array  len="12"> 				16, 0, 71, 70, 2, 0, 16, 0, 73, 72, 2, 0 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
 			<string> "names" </string>
-			<string_array  len="84">
+			<string_array  len="74">
 				<string> "sporadic_flower" </string>
-				<string> "RigidBody2D" </string>
-				<string> "process/process" </string>
-				<string> "process/fixed_process" </string>
-				<string> "process/input" </string>
-				<string> "process/unhandled_input" </string>
-				<string> "process/pause_mode" </string>
-				<string> "visibility/visible" </string>
-				<string> "visibility/opacity" </string>
-				<string> "visibility/self_opacity" </string>
-				<string> "visibility/on_top" </string>
-				<string> "visibility/blend_mode" </string>
-				<string> "transform/pos" </string>
-				<string> "transform/rot" </string>
-				<string> "transform/scale" </string>
-				<string> "shape_count" </string>
+				<string> "input/pickable" </string>
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
 				<string> "shapes/0/trigger" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
 				<string> "mode" </string>
 				<string> "mass" </string>
 				<string> "friction" </string>
 				<string> "bounce" </string>
+				<string> "gravity_scale" </string>
 				<string> "custom_integrator" </string>
 				<string> "continuous_cd" </string>
 				<string> "contacts_reported" </string>
 				<string> "contact_monitor" </string>
-				<string> "active" </string>
+				<string> "sleeping" </string>
 				<string> "can_sleep" </string>
 				<string> "velocity/linear" </string>
 				<string> "velocity/angular" </string>
+				<string> "damp_override/linear" </string>
+				<string> "damp_override/angular" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
 				<string> "drop" </string>
+				<string> "RigidBody2D" </string>
 				<string> "leaf 3" </string>
-				<string> "Sprite" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
 				<string> "texture" </string>
-				<string> "centered" </string>
 				<string> "offset" </string>
 				<string> "flip_h" </string>
-				<string> "flip_v" </string>
-				<string> "vframes" </string>
-				<string> "hframes" </string>
-				<string> "frame" </string>
-				<string> "modulate" </string>
-				<string> "region" </string>
-				<string> "region_rect" </string>
+				<string> "Sprite" </string>
 				<string> "center" </string>
 				<string> "3rear_petal" </string>
+				<string> "transform/scale" </string>
+				<string> "hframes" </string>
 				<string> "2petal_md 2" </string>
 				<string> "4petal_md1" </string>
 				<string> "pistiles" </string>
@@ -2254,22 +2247,24 @@
 				<string> "1petal_fg 2" </string>
 				<string> "leaf2" </string>
 				<string> "anim" </string>
-				<string> "AnimationPlayer" </string>
 				<string> "playback/process_mode" </string>
 				<string> "playback/default_blend_time" </string>
 				<string> "root/root" </string>
-				<string> "speed" </string>
 				<string> "anims/1closed" </string>
-				<string> "anims/4closing" </string>
-				<string> "anims/pollenlife" </string>
 				<string> "anims/2opening" </string>
 				<string> "anims/3opened" </string>
+				<string> "anims/4closing" </string>
+				<string> "anims/pollenlife" </string>
+				<string> "playback/active" </string>
+				<string> "playback/speed" </string>
 				<string> "blend_times" </string>
 				<string> "autoplay" </string>
+				<string> "AnimationPlayer" </string>
 				<string> "csh" </string>
-				<string> "CollisionShape2D" </string>
 				<string> "shape" </string>
 				<string> "trigger" </string>
+				<string> "_update_shape_index" </string>
+				<string> "CollisionShape2D" </string>
 				<string> "shooter" </string>
 				<string> "Position2D" </string>
 				<string> "VisibilityNotifier2D" </string>
@@ -2280,161 +2275,58 @@
 				<string> "_on_exit_screen" </string>
 				<string> "exit_screen" </string>
 			</string_array>
-			<string> "version" </string>
-			<int> 1 </int>
-			<string> "conn_count" </string>
-			<int> 2 </int>
 			<string> "node_count" </string>
 			<int> 18 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="338"> 				-1, -1, 25, 0, -1, 24, 1, 0, 2, 1, 3, 2, 4, 0, 5, 3, 6, 3, 7, 3, 8, 4, 9, 4, 10, 5, 11, 4, 12, 0, 13, 6, 14, 6, 15, 0, 16, 0, 17, 7, 18, 8, 19, 5, 20, 9, 21, 9, 22, 10, 23, 11, 24, 6, 0, 0, 0, 32, 26, -1, 5, 27, 12, 28, 13, 29, 14, 30, 15, 31, 7, 0, 0, 0, 32, 33, -1, 4, 27, 16, 28, 17, 29, 18, 30, 19, 0, 2, 0, 32, 34, -1, 6, 27, 20, 28, 21, 35, 22, 29, 23, 30, 24, 36, 25, 0, 2, 0, 32, 37, -1, 7, 27, 26, 28, 27, 35, 28, 29, 29, 30, 30, 31, 7, 36, 25, 0, 2, 0, 32, 38, -1, 6, 27, 31, 28, 32, 35, 28, 29, 29, 30, 33, 36, 25, 0, 2, 0, 32, 39, -1, 4, 27, 34, 35, 35, 29, 36, 30, 19, 0, 6, 0, 32, 40, -1, 4, 27, 37, 28, 38, 29, 39, 30, 40, 0, 6, 0, 32, 41, -1, 5, 27, 41, 28, 42, 29, 39, 30, 43, 31, 7, 0, 2, 0, 32, 42, -1, 4, 27, 44, 28, 45, 29, 14, 30, 46, 0, 2, 0, 32, 43, -1, 6, 27, 47, 28, 48, 35, 49, 29, 50, 30, 51, 36, 25, 0, 2, 0, 32, 44, -1, 7, 27, 52, 28, 53, 35, 54, 29, 50, 30, 55, 31, 7, 36, 25, 0, 2, 0, 32, 45, -1, 4, 27, 56, 28, 57, 29, 58, 30, 59, 0, 0, 0, 59, 46, -1, 12, 47, 3, 48, 60, 49, 61, 50, 62, 51, 63, 52, 64, 53, 65, 54, 66, 55, 7, 56, 67, 57, 68, 58, 69, 0, 0, 0, 64, 60, -1, 5, 27, 70, 35, 71, 61, 1, 62, 0, 63, 72, 0, 0, 0, 66, 65, -1, 1, 27, 73, 0, 0, 0, 67, 67, -1, 1, 68, 74, 0, 0, 0, 67, 69, -1, 1, 68, 74, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="77" shared="true">
+			<array  len="75" shared="false">
 				<bool> False </bool>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 0.451408, -0, 0, 0.451408, 0.619371, -9.71656 </matrix32>
+				<int> 1 </int>
+				<real> 1 </real>
+				<real> 0 </real>
 				<int> 0 </int>
 				<bool> True </bool>
-				<real> 1 </real>
 				<vector2> 0, 0 </vector2>
-				<real> 0 </real>
-				<vector2> 1, 1 </vector2>
-				<int> 1 </int>
-				<resource  resource_type="CircleShape2D" path="local://1">  </resource>
-				<matrix32> 0.451408, -0, 0, 0.451408, 0.619371, -9.71656 </matrix32>
-				<resource  resource_type="GDScript" path="res://enemies/sporadic_flower.*">  </resource>
+				<real> -1 </real>
+				<resource  external="0">  </resource>
 				<dictionary  shared="false">
-					<string> "__editor_plugin_states__" </string>
-					<dictionary  shared="false">
-						<string> "Script" </string>
-						<dictionary  shared="false">
-							<string> "current" </string>
-							<int> 0 </int>
-							<string> "sources" </string>
-							<array  len="1" shared="true">
-								<string> "res://enemies/sporadic_flower.gd" </string>
-							</array>
-						</dictionary>
-						<string> "2D" </string>
-						<dictionary  shared="false">
-							<string> "zoom" </string>
-							<real> 1.108033 </real>
-							<string> "ofs" </string>
-							<vector2> -217.592, -283.116 </vector2>
-						</dictionary>
-						<string> "3D" </string>
-						<dictionary  shared="false">
-							<string> "zfar" </string>
-							<real> 500 </real>
-							<string> "fov" </string>
-							<real> 45 </real>
-							<string> "viewports" </string>
-							<array  len="4" shared="true">
-								<dictionary  shared="false">
-									<string> "distance" </string>
-									<real> 4 </real>
-									<string> "x_rot" </string>
-									<real> 0 </real>
-									<string> "y_rot" </string>
-									<real> 0 </real>
-									<string> "use_orthogonal" </string>
-									<bool> False </bool>
-									<string> "use_environment" </string>
-									<bool> False </bool>
-									<string> "pos" </string>
-									<vector3> 0, 0, 0 </vector3>
-								</dictionary>
-								<dictionary  shared="false">
-									<string> "distance" </string>
-									<real> 4 </real>
-									<string> "x_rot" </string>
-									<real> 0 </real>
-									<string> "y_rot" </string>
-									<real> 0 </real>
-									<string> "use_orthogonal" </string>
-									<bool> False </bool>
-									<string> "use_environment" </string>
-									<bool> False </bool>
-									<string> "pos" </string>
-									<vector3> 0, 0, 0 </vector3>
-								</dictionary>
-								<dictionary  shared="false">
-									<string> "distance" </string>
-									<real> 4 </real>
-									<string> "x_rot" </string>
-									<real> 0 </real>
-									<string> "y_rot" </string>
-									<real> 0 </real>
-									<string> "use_orthogonal" </string>
-									<bool> False </bool>
-									<string> "use_environment" </string>
-									<bool> False </bool>
-									<string> "pos" </string>
-									<vector3> 0, 0, 0 </vector3>
-								</dictionary>
-								<dictionary  shared="false">
-									<string> "distance" </string>
-									<real> 4 </real>
-									<string> "x_rot" </string>
-									<real> 0 </real>
-									<string> "y_rot" </string>
-									<real> 0 </real>
-									<string> "use_orthogonal" </string>
-									<bool> False </bool>
-									<string> "use_environment" </string>
-									<bool> False </bool>
-									<string> "pos" </string>
-									<vector3> 0, 0, 0 </vector3>
-								</dictionary>
-							</array>
-							<string> "viewport_mode" </string>
-							<int> 1 </int>
-							<string> "default_light" </string>
-							<bool> True </bool>
-							<string> "show_grid" </string>
-							<bool> True </bool>
-							<string> "show_origin" </string>
-							<bool> True </bool>
-							<string> "znear" </string>
-							<real> 0.1 </real>
-						</dictionary>
-					</dictionary>
-					<string> "__editor_run_settings__" </string>
-					<dictionary  shared="false">
-						<string> "custom_args" </string>
-						<string> "-l $scene" </string>
-						<string> "run_mode" </string>
-						<int> 0 </int>
-					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 				</dictionary>
 				<vector2> 1.96684, -8.22343 </vector2>
 				<real> 65.332565 </real>
-				<resource  resource_type="ImageTexture" path="res://art/sporadic_flower_pieces/leaf1.*">  </resource>
+				<resource  external="1">  </resource>
 				<vector2> 30, 15 </vector2>
-				<color> 1, 1, 1, 1 </color>
-				<rect2> 0, 0, 0, 0 </rect2>
-				<resource name=""></resource>				<vector2> 1.80527, -5.53392 </vector2>
+				<vector2> 1.80527, -5.53392 </vector2>
 				<real> -1.633013 </real>
-				<resource  resource_type="ImageTexture" path="res://art/sporadic_flower_pieces/center.*">  </resource>
+				<resource  external="2">  </resource>
 				<vector2> 0, -25 </vector2>
 				<vector2> 8.86966, -7.00663 </vector2>
 				<real> 7.168168 </real>
 				<vector2> 1, 0.720514 </vector2>
-				<resource  resource_type="ImageTexture" path="res://art/sporadic_flower_pieces/back_petal.*">  </resource>
+				<resource  external="3">  </resource>
 				<vector2> -5, -55 </vector2>
 				<int> 6 </int>
 				<vector2> -12.2563, -0.213528 </vector2>
 				<real> -18.647579 </real>
 				<vector2> 1, 0.8 </vector2>
-				<resource  resource_type="ImageTexture" path="res://art/sporadic_flower_pieces/mid_petals.*">  </resource>
+				<resource  external="4">  </resource>
 				<vector2> -20, -55 </vector2>
 				<vector2> 10.5439, -0.0477274 </vector2>
 				<real> 19.376814 </real>
 				<vector2> 20, -55 </vector2>
 				<vector2> -2.16626, -15.606 </vector2>
 				<vector2> 0.6, 0.6 </vector2>
-				<resource  resource_type="ImageTexture" path="res://art/sporadic_flower_pieces/pistile.*">  </resource>
+				<resource  external="5">  </resource>
 				<vector2> 9.6455, -5.36009 </vector2>
 				<real> 22.447857 </real>
-				<resource  resource_type="ImageTexture" path="res://art/sporadic_flower_pieces/pistilethingies.*">  </resource>
+				<resource  external="6">  </resource>
 				<vector2> 8, -28 </vector2>
 				<vector2> -11.6632, -4.6811 </vector2>
 				<real> -29.172588 </real>
@@ -2445,7 +2337,7 @@
 				<vector2> 9.73067, 7.252 </vector2>
 				<real> 23.000319 </real>
 				<vector2> 1.03585, 0.882477 </vector2>
-				<resource  resource_type="ImageTexture" path="res://art/sporadic_flower_pieces/front_petals.*">  </resource>
+				<resource  external="7">  </resource>
 				<vector2> 30, -42 </vector2>
 				<vector2> -12.7036, 7.252 </vector2>
 				<real> -24.449337 </real>
@@ -2453,29 +2345,28 @@
 				<vector2> -30, -42 </vector2>
 				<vector2> 3.68051, 2.51825 </vector2>
 				<real> -64.31089 </real>
-				<resource  resource_type="ImageTexture" path="res://art/sporadic_flower_pieces/leaf2.*">  </resource>
+				<resource  external="8">  </resource>
 				<vector2> 24, -18 </vector2>
 				<real> 0.5 </real>
 				<node_path> ".." </node_path>
-				<real> 3 </real>
 				<resource  resource_type="Animation" path="local://2">  </resource>
-				<resource  resource_type="Animation" path="local://3">  </resource>
-				<resource  resource_type="Animation" path="local://4">  </resource>
 				<resource  resource_type="Animation" path="local://5">  </resource>
 				<resource  resource_type="Animation" path="local://6">  </resource>
-				<array  len="0" shared="true">
+				<resource  resource_type="Animation" path="local://3">  </resource>
+				<resource  resource_type="Animation" path="local://4">  </resource>
+				<real> 3 </real>
+				<array  len="0" shared="false">
 				</array>
 				<string> "" </string>
 				<vector2> 0.619371, -9.71656 </vector2>
 				<vector2> 0.451408, 0.451408 </vector2>
+				<int> -1 </int>
 				<vector2> -1.07545, -46.6032 </vector2>
 				<rect2> -10, -10, 20, 20 </rect2>
 			</array>
-			<string> "nodes" </string>
-			<int_array  len="944"> 				-1, -1, 1, 0, -1, 32, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 4, 13, 5, 14, 6, 15, 7, 16, 8, 17, 9, 18, 0, 19, 7, 20, 3, 21, 3, 22, 5, 23, 0, 24, 0, 25, 1, 26, 0, 27, 2, 28, 2, 29, 4, 30, 5, 31, 10, 32, 11, 33, 1, 0, 0, 0, 35, 34, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 12, 13, 13, 14, 6, 36, 14, 37, 2, 38, 15, 39, 2, 40, 0, 41, 7, 42, 7, 43, 1, 44, 16, 45, 0, 46, 17, 31, 18, 0, 0, 0, 35, 47, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 19, 13, 20, 14, 6, 36, 21, 37, 2, 38, 22, 39, 0, 40, 0, 41, 7, 42, 7, 43, 1, 44, 16, 45, 0, 46, 17, 31, 18, 0, 2, 0, 35, 48, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 23, 13, 24, 14, 25, 36, 26, 37, 2, 38, 27, 39, 0, 40, 0, 41, 7, 42, 28, 43, 1, 44, 16, 45, 0, 46, 17, 31, 18, 0, 2, 0, 35, 49, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 29, 13, 30, 14, 31, 36, 32, 37, 2, 38, 33, 39, 2, 40, 0, 41, 7, 42, 28, 43, 1, 44, 16, 45, 0, 46, 17, 31, 18, 0, 2, 0, 35, 50, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 34, 13, 35, 14, 31, 36, 32, 37, 2, 38, 36, 39, 0, 40, 0, 41, 7, 42, 28, 43, 1, 44, 16, 45, 0, 46, 17, 31, 18, 0, 2, 0, 35, 51, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 37, 13, 5, 14, 38, 36, 39, 37, 2, 38, 22, 39, 0, 40, 0, 41, 7, 42, 7, 43, 1, 44, 16, 45, 0, 46, 17, 31, 18, 0, 6, 0, 35, 52, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 40, 13, 41, 14, 6, 36, 42, 37, 2, 38, 43, 39, 0, 40, 0, 41, 7, 42, 7, 43, 1, 44, 16, 45, 0, 46, 17, 31, 18, 0, 6, 0, 35, 53, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 44, 13, 45, 14, 6, 36, 42, 37, 2, 38, 46, 39, 2, 40, 0, 41, 7, 42, 7, 43, 1, 44, 16, 45, 0, 46, 17, 31, 18, 0, 2, 0, 35, 54, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 47, 13, 48, 14, 6, 36, 14, 37, 2, 38, 49, 39, 0, 40, 0, 41, 7, 42, 7, 43, 1, 44, 16, 45, 0, 46, 17, 31, 18, 0, 2, 0, 35, 55, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 50, 13, 51, 14, 52, 36, 53, 37, 2, 38, 54, 39, 0, 40, 0, 41, 7, 42, 28, 43, 1, 44, 16, 45, 0, 46, 17, 31, 18, 0, 2, 0, 35, 56, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 55, 13, 56, 14, 57, 36, 53, 37, 2, 38, 58, 39, 2, 40, 0, 41, 7, 42, 28, 43, 1, 44, 16, 45, 0, 46, 17, 31, 18, 0, 2, 0, 35, 57, -1, 25, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 59, 13, 60, 14, 6, 36, 61, 37, 2, 38, 62, 39, 0, 40, 0, 41, 7, 42, 7, 43, 1, 44, 16, 45, 0, 46, 17, 31, 18, 0, 0, 0, 59, 58, -1, 17, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 60, 7, 61, 63, 62, 64, 63, 65, 64, 66, 65, 67, 66, 68, 67, 69, 68, 70, 69, 71, 70, 72, 31, 18, 0, 0, 0, 72, 71, -1, 16, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 73, 13, 5, 14, 74, 73, 8, 74, 0, 31, 18, 0, 0, 0, 76, 75, -1, 14, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 75, 13, 5, 14, 6, 31, 18, 0, 0, 0, 77, 77, -1, 15, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 4, 13, 5, 14, 6, 78, 76, 31, 18, 0, 0, 0, 77, 79, -1, 15, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 9, 3, 10, 2, 11, 1, 12, 4, 13, 5, 14, 6, 78, 76, 31, 18, 0 </int_array>
-			<string> "conns" </string>
-			<int_array  len="12"> 				16, 0, 81, 80, 2, 0, 16, 0, 83, 82, 2, 0 </int_array>
+			<string> "version" </string>
+			<int> 2 </int>
 		</dictionary>
-		<resource name="script/script"></resource>
+
 	</main_resource>
 </resource_file>

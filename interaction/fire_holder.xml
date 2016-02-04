@@ -1,203 +1,106 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="5" version="0.99" version_name="Godot Engine v0.99.2976-pre-beta">
-	<ext_resource path="res://art/smoke.png" type="Texture"></ext_resource>
-	<ext_resource path="res://art/forest_fire_holder_over.png" type="Texture"></ext_resource>
-	<ext_resource path="res://interaction/fire_holder.gd" type="GDScript"></ext_resource>
-	<ext_resource path="res://art/forest_fire_holder.png" type="Texture"></ext_resource>
+<resource_file type="PackedScene" subresource_count="6" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
+	<ext_resource path="res://art/forest_fire_holder.png" type="Texture" index="0"></ext_resource>
+	<ext_resource path="res://art/smoke.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://art/forest_fire_holder_over.png" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://interaction/fire_holder.gd" type="Script" index="1"></ext_resource>
+	<resource type="ColorRamp" path="local://1">
+		<real_array name="offsets" len="3"> 			0, 0.2, 0.8 </real_array>
+		<color_array name="colors" len="3"> 			1, 0.884956, 0.265487, 1, 1, 0.0884956, 0, 1, 0.054902, 0.159292, 0.115044, 1 </color_array>
+
+	</resource>
 	<main_resource>
-		<string name="resource/name"> "" </string>
-		<dictionary name="_bundled">
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
 			<string> "names" </string>
-			<string_array  len="80">
+			<string_array  len="40">
 				<string> "torch_trigger" </string>
-				<string> "Sprite" </string>
-				<string> "process/process" </string>
-				<string> "process/fixed_process" </string>
-				<string> "process/input" </string>
-				<string> "process/unhandled_input" </string>
-				<string> "process/mode" </string>
-				<string> "visibility/visible" </string>
-				<string> "visibility/toplevel" </string>
-				<string> "visibility/opacity" </string>
-				<string> "visibility/self_opacity" </string>
-				<string> "visibility/on_top" </string>
-				<string> "visibility/blend_mode" </string>
-				<string> "transform/notify" </string>
-				<string> "transform/pos" </string>
-				<string> "transform/rot" </string>
-				<string> "transform/scale" </string>
 				<string> "texture" </string>
-				<string> "centered" </string>
-				<string> "offset" </string>
-				<string> "flip_h" </string>
-				<string> "flip_v" </string>
-				<string> "vframes" </string>
-				<string> "hframes" </string>
-				<string> "frame" </string>
-				<string> "modulate" </string>
-				<string> "region" </string>
-				<string> "region_rect" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
 				<string> "trigger_name" </string>
 				<string> "_fire_triggers" </string>
+				<string> "Sprite" </string>
 				<string> "fire" </string>
-				<string> "Particles2D" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/blend_mode" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
 				<string> "config/amount" </string>
 				<string> "config/lifetime" </string>
-				<string> "config/preprocess" </string>
-				<string> "config/emit_timeout" </string>
 				<string> "config/emitting" </string>
-				<string> "config/offset" </string>
 				<string> "config/half_extents" </string>
 				<string> "config/local_space" </string>
-				<string> "config/explosiveness" </string>
 				<string> "config/texture" </string>
 				<string> "params/direction" </string>
 				<string> "params/spread" </string>
 				<string> "params/linear_velocity" </string>
 				<string> "params/spin_velocity" </string>
+				<string> "params/orbit_velocity" </string>
 				<string> "params/gravity_direction" </string>
 				<string> "params/gravity_strength" </string>
 				<string> "params/radial_accel" </string>
 				<string> "params/tangential_accel" </string>
 				<string> "params/damping" </string>
+				<string> "params/initial_angle" </string>
 				<string> "params/initial_size" </string>
 				<string> "params/final_size" </string>
 				<string> "params/hue_variation" </string>
-				<string> "randomness/direction" </string>
-				<string> "randomness/spread" </string>
-				<string> "randomness/linear_velocity" </string>
+				<string> "params/anim_speed_scale" </string>
+				<string> "params/anim_initial_pos" </string>
 				<string> "randomness/spin_velocity" </string>
-				<string> "randomness/gravity_direction" </string>
-				<string> "randomness/gravity_strength" </string>
-				<string> "randomness/radial_accel" </string>
-				<string> "randomness/tangential_accel" </string>
-				<string> "randomness/damping" </string>
-				<string> "randomness/initial_size" </string>
-				<string> "randomness/final_size" </string>
-				<string> "randomness/hue_variation" </string>
-				<string> "color_phases/count" </string>
-				<string> "phase_0/pos" </string>
-				<string> "phase_0/color" </string>
-				<string> "phase_1/pos" </string>
-				<string> "phase_1/color" </string>
-				<string> "phase_2/pos" </string>
-				<string> "phase_2/color" </string>
-				<string> "phase_3/pos" </string>
-				<string> "phase_3/color" </string>
+				<string> "color/color_ramp" </string>
+				<string> "Particles2D" </string>
 				<string> "top" </string>
 				<string> "firepos" </string>
 				<string> "Position2D" </string>
 			</string_array>
-			<string> "version" </string>
-			<int> 1 </int>
-			<string> "conn_count" </string>
-			<int> 0 </int>
 			<string> "node_count" </string>
 			<int> 4 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="99"> 				-1, -1, 6, 0, -1, 4, 1, 0, 2, 1, 3, 2, 4, 3, 1, 5, 0, 0, 36, 7, -1, 28, 8, 4, 9, 5, 10, 6, 11, 7, 12, 8, 13, 9, 14, 10, 15, 11, 16, 10, 17, 12, 18, 13, 19, 14, 20, 15, 21, 16, 22, 13, 23, 13, 24, 17, 25, 13, 26, 13, 27, 13, 28, 13, 29, 18, 30, 19, 31, 13, 32, 9, 33, 13, 34, 9, 35, 20, 0, 0, 0, 6, 37, -1, 2, 10, 21, 1, 22, 0, 0, 0, 39, 38, -1, 1, 10, 23, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="37">
-				<bool> False </bool>
-				<int> 0 </int>
-				<bool> True </bool>
-				<real> 1 </real>
-				<vector2> 0, 0 </vector2>
-				<real> 0 </real>
-				<vector2> 1, 1 </vector2>
-				<resource  resource_type="Texture" path="res://art/forest_fire_holder.png">  </resource>
-				<int> 1 </int>
-				<color> 1, 1, 1, 1 </color>
-				<rect2> 0, 0, 0, 0 </rect2>
-				<resource  resource_type="GDScript" path="res://interaction/fire_holder.gd">  </resource>
-				<dictionary>
-					<string> "__editor_plugin_states__" </string>
-					<dictionary>
-						<string> "Script" </string>
-						<dictionary>
-							<string> "current" </string>
-							<int> 1 </int>
-							<string> "sources" </string>
-							<array  len="2">
-								<string> "res://interaction/carry_platform.gd" </string>
-								<string> "res://interaction/fire_holder.gd" </string>
-							</array>
-						</dictionary>
-						<string> "2D" </string>
-						<dictionary>
-							<string> "zoom" </string>
-							<real> 1.108033 </real>
-							<string> "ofs" </string>
-							<vector2> -326.599, -320.861 </vector2>
-						</dictionary>
-						<string> "3D" </string>
-						<dictionary>
-							<string> "zfar" </string>
-							<real> 500 </real>
-							<string> "fov" </string>
-							<real> 45 </real>
-							<string> "window_mode" </string>
-							<int> 0 </int>
-							<string> "window_0" </string>
-							<dictionary>
-								<string> "distance" </string>
-								<real> 4 </real>
-								<string> "default_light" </string>
-								<bool> True </bool>
-								<string> "x_rot" </string>
-								<real> 0.337 </real>
-								<string> "y_rot" </string>
-								<real> -0.575 </real>
-								<string> "show_grid" </string>
-								<bool> True </bool>
-								<string> "show_origin" </string>
-								<bool> True </bool>
-								<string> "pos" </string>
-								<vector3> 0, 0, 0 </vector3>
-							</dictionary>
-							<string> "znear" </string>
-							<real> 0.1 </real>
-						</dictionary>
-					</dictionary>
-					<string> "__editor_run_settings__" </string>
-					<dictionary>
-						<string> "custom_args" </string>
-						<string> "-l $scene" </string>
-						<string> "run_mode" </string>
-						<int> 0 </int>
-					</dictionary>
+			<array  len="24" shared="false">
+				<resource  external="0">  </resource>
+				<resource  external="1">  </resource>
+				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 				</dictionary>
 				<string> "" </string>
 				<real> 0.480909 </real>
+				<int> 1 </int>
 				<vector2> -1.19546, -96.7243 </vector2>
 				<real> 179.668335 </real>
 				<int> 16 </int>
+				<real> 1 </real>
+				<bool> False </bool>
 				<vector2> 5, 0 </vector2>
-				<resource  resource_type="Texture" path="res://art/smoke.png">  </resource>
+				<resource  external="2">  </resource>
+				<real> 0 </real>
 				<real> 10 </real>
 				<real> 60 </real>
 				<real> 2 </real>
 				<real> 9.8 </real>
 				<real> 0.5 </real>
 				<real> 0.1 </real>
-				<int> 3 </int>
-				<color> 1, 0.884956, 0.265487, 1 </color>
-				<real> 0.2 </real>
-				<color> 1, 0.0884956, 0, 1 </color>
-				<real> 0.8 </real>
-				<color> 0.054902, 0.159292, 0.115044, 1 </color>
-				<color> 0, 0, 0, 0 </color>
-				<resource name=""></resource>				<vector2> -0.114742, -95.6436 </vector2>
-				<resource  resource_type="Texture" path="res://art/forest_fire_holder_over.png">  </resource>
+				<resource  resource_type="ColorRamp" path="local://1">  </resource>
+				<vector2> -0.114742, -95.6436 </vector2>
+				<resource  external="3">  </resource>
 				<vector2> 1.68146, -93.6408 </vector2>
 			</array>
-			<string> "nodes" </string>
-			<int_array  len="291"> 				-1, -1, 1, 0, -1, 29, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 4, 15, 5, 16, 6, 17, 7, 18, 2, 19, 4, 20, 0, 21, 0, 22, 8, 23, 8, 24, 1, 25, 9, 26, 0, 27, 10, 28, 11, 29, 12, 30, 13, 1, 31, 0, 0, 33, 32, -1, 59, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 14, 10, 3, 11, 2, 12, 8, 13, 0, 14, 15, 15, 16, 16, 6, 34, 17, 35, 3, 36, 5, 37, 5, 38, 0, 39, 4, 40, 18, 41, 0, 42, 3, 43, 19, 44, 5, 45, 20, 46, 21, 47, 22, 48, 5, 49, 23, 50, 5, 51, 5, 52, 5, 53, 24, 54, 25, 55, 5, 56, 5, 57, 5, 58, 5, 59, 3, 60, 5, 61, 5, 62, 5, 63, 5, 64, 5, 65, 5, 66, 5, 67, 5, 68, 26, 69, 5, 70, 27, 71, 28, 72, 29, 73, 30, 74, 31, 75, 3, 76, 32, 28, 33, 0, 0, 0, 1, 77, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 34, 15, 5, 16, 6, 17, 35, 18, 2, 19, 4, 20, 0, 21, 0, 22, 8, 23, 8, 24, 1, 25, 9, 26, 0, 27, 10, 28, 33, 0, 0, 0, 79, 78, -1, 16, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 36, 15, 5, 16, 6, 28, 33, 0 </int_array>
-			<string> "conns" </string>
-			<int_array  len="0"> 				 </int_array>
+			<string> "version" </string>
+			<int> 2 </int>
 		</dictionary>
-		<resource name="script/script"></resource>
+
 	</main_resource>
 </resource_file>

@@ -1,127 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="5" version="0.99" version_name="Godot Engine v0.99.3002-pre-beta">
-	<ext_resource path="res://tilesets/temple_tilemap.xml" type="TileSet"></ext_resource>
-	<ext_resource path="res://stages/stage.gd" type="GDScript"></ext_resource>
-	<ext_resource path="res://tilesets/temple_parallax.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://interaction/fountain.xml" type="PackedScene"></ext_resource>
+<resource_file type="PackedScene" subresource_count="5" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
+	<ext_resource path="res://stages/stage.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://interaction/fountain.xml" type="PackedScene" index="2"></ext_resource>
+	<ext_resource path="res://tilesets/temple_parallax.xml" type="PackedScene" index="3"></ext_resource>
+	<ext_resource path="res://tilesets/temple_tilemap.xml" type="TileSet" index="1"></ext_resource>
 	<main_resource>
-		<string name="resource/name"> "" </string>
-		<dictionary name="_bundled">
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
 			<string> "names" </string>
-			<string_array  len="32">
+			<string_array  len="29">
 				<string> "stage" </string>
-				<string> "Node" </string>
-				<string> "process/process" </string>
-				<string> "process/fixed_process" </string>
-				<string> "process/input" </string>
-				<string> "process/unhandled_input" </string>
-				<string> "process/mode" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
+				<string> "Node" </string>
 				<string> "tilemap" </string>
-				<string> "TileMap" </string>
-				<string> "visibility/visible" </string>
-				<string> "visibility/toplevel" </string>
-				<string> "visibility/opacity" </string>
-				<string> "visibility/self_opacity" </string>
-				<string> "visibility/on_top" </string>
-				<string> "visibility/blend_mode" </string>
-				<string> "transform/notify" </string>
 				<string> "transform/pos" </string>
-				<string> "transform/rot" </string>
-				<string> "transform/scale" </string>
-				<string> "cell_size" </string>
-				<string> "quadrant_size" </string>
+				<string> "mode" </string>
 				<string> "tile_set" </string>
+				<string> "cell/size" </string>
+				<string> "cell/quadrant_size" </string>
+				<string> "cell/custom_transform" </string>
+				<string> "cell/half_offset" </string>
+				<string> "cell/tile_origin" </string>
+				<string> "cell/y_sort" </string>
+				<string> "collision/use_kinematic" </string>
+				<string> "collision/friction" </string>
+				<string> "collision/bounce" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
+				<string> "occluder/light_mask" </string>
 				<string> "tile_data" </string>
+				<string> "TileMap" </string>
 				<string> "interm" </string>
 				<string> "fuente_base" </string>
-				<string> "Sprite" </string>
+				<string> "transform/scale" </string>
 				<string> "launch" </string>
 				<string> "Position2D" </string>
 				<string> "temple_bg" </string>
-				<string> "ParallaxBackground" </string>
+				<string> "scroll/ignore_camera_zoom" </string>
 			</string_array>
-			<string> "version" </string>
-			<int> 1 </int>
-			<string> "conn_count" </string>
-			<int> 0 </int>
 			<string> "node_count" </string>
 			<int> 6 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="86"> 				-1, -1, 3, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 21, 4, -1, 16, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 3, 13, 9, 14, 9, 15, 10, 16, 11, 17, 12, 18, 12, 19, 12, 20, 13, 0, 0, 0, 3, 22, -1, 0, 0, 2, 0, 2147483647, 23, 14, 2, 5, 15, 24, 16, 0, 0, 0, 26, 25, -1, 1, 5, 17, 0, 0, 0, 2147483647, 27, 18, 1, 28, 9, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="19">
-				<bool> False </bool>
-				<int> 0 </int>
-				<resource  resource_type="GDScript" path="res://stages/stage.gd">  </resource>
-				<dictionary>
-					<string> "__editor_plugin_states__" </string>
-					<dictionary>
-						<string> "2D" </string>
-						<dictionary>
-							<string> "zoom" </string>
-							<real> 0.902499 </real>
-							<string> "ofs" </string>
-							<vector2> 285.081, 2.57874 </vector2>
-						</dictionary>
-						<string> "3D" </string>
-						<dictionary>
-							<string> "zfar" </string>
-							<real> 500 </real>
-							<string> "fov" </string>
-							<real> 45 </real>
-							<string> "window_mode" </string>
-							<int> 0 </int>
-							<string> "window_0" </string>
-							<dictionary>
-								<string> "distance" </string>
-								<real> 4 </real>
-								<string> "default_light" </string>
-								<bool> True </bool>
-								<string> "x_rot" </string>
-								<real> 0.337 </real>
-								<string> "y_rot" </string>
-								<real> -0.575 </real>
-								<string> "show_grid" </string>
-								<bool> True </bool>
-								<string> "show_origin" </string>
-								<bool> True </bool>
-								<string> "pos" </string>
-								<vector3> 0, 0, 0 </vector3>
-							</dictionary>
-							<string> "znear" </string>
-							<real> 0.1 </real>
-						</dictionary>
-					</dictionary>
-					<string> "__editor_run_settings__" </string>
-					<dictionary>
-						<string> "custom_args" </string>
-						<string> "-l $scene" </string>
-						<string> "run_mode" </string>
-						<int> 0 </int>
-					</dictionary>
+			<array  len="19" shared="false">
+				<resource  external="0">  </resource>
+				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
 				</dictionary>
-				<bool> True </bool>
-				<real> 1 </real>
 				<vector2> -2.78955, 0 </vector2>
-				<real> 0 </real>
-				<vector2> 1, 1 </vector2>
-				<int> 64 </int>
+				<int> 0 </int>
+				<resource  external="1">  </resource>
+				<vector2> 64, 64 </vector2>
 				<int> 16 </int>
-				<resource  resource_type="TileSet" path="res://tilesets/temple_tilemap.xml">  </resource>
+				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<int> 2 </int>
+				<bool> False </bool>
+				<real> 1 </real>
+				<real> 0 </real>
+				<int> 1 </int>
 				<int_array  len="312"> 					0, 536870938, 2, 14, 4, 14, 6, 14, 8, 14, 10, 14, 12, 14, 14, 536870933, 17, 21, 20, 12, 23, 13, 25, 536870933, 28, 21, 31, 13, 33, 13, 35, 13, 37, 26, 39, 23, 41, 23, 43, 23, 45, 23, 47, 23, 49, 23, 65544, 7, 65575, 23, 131072, 536870931, 131092, 10, 131109, 536870928, 131113, 23, 131115, 23, 131117, 23, 131119, 23, 131121, 23, 196608, 536870931, 196616, 9, 196628, 11, 196647, 26, 262152, 9, 262164, 10, 262185, 23, 262187, 23, 262189, 23, 262191, 23, 262193, 23, 327680, 536870931, 327688, 9, 327700, 10, 327703, 536870915, 327706, 0, 327708, 0, 327710, 3, 327719, 536870928, 393224, 8, 393236, 15, 393257, 14, 393259, 13, 393261, 14, 458752, 536870931, 458760, 9, 458772, 10, 458778, 24, 458779, 536870936, 458780, 24, 458781, 536870936, 524296, 4, 524308, 5, 589824, 536870930, 589826, 0, 589828, 0, 589830, 1, 589834, 2, 589836, 1, 589837, 1, 589839, 1, 589840, 1, 589842, 1, 589857, 1, 589859, 1, 589861, 1, 589863, 1, 589865, 1, 720896, 23, 720898, 23, 720900, 23, 720902, 23, 720904, 23, 720906, 23, 720908, 23, 720910, 23, 720912, 23, 720914, 23, 720916, 23, 720918, 23, 720920, 23, 720922, 23, 720924, 23, 720926, 23, 720928, 23, 720930, 23, 720932, 23, 720934, 23, 720936, 23, 720938, 23, 720940, 23, 720942, 23, 720944, 23, 851968, 23, 851970, 23, 851972, 23, 851974, 23, 851976, 23, 851978, 23, 851980, 23, 851982, 23, 851984, 23, 851986, 23, 851988, 23, 851990, 23, 851992, 23, 851994, 23, 851996, 23, 851998, 23, 852000, 23, 852002, 23, 852004, 23, 852006, 23, 852008, 23, 852010, 23, 852012, 23, 852014, 23, 852016, 23, 983040, 23, 983042, 23, 983044, 23, 983046, 23, 983048, 23, 983050, 23, 983052, 23, 983054, 23, 983056, 23, 983058, 23, 983060, 23, 983062, 23, 983064, 23, 983066, 23, 983068, 23, 983070, 23, 983072, 23, 983074, 23, 983076, 23, 983078, 23, 983080, 23, 983082, 23, 983084, 23, 983086, 23, 983088, 23 </int_array>
-				<resource name=""></resource>				<resource  resource_type="PackedScene" path="res://interaction/fountain.xml">  </resource>
+				<resource  external="2">  </resource>
 				<vector2> 939.308, 468.735 </vector2>
 				<vector2> 0.5, 0.5 </vector2>
 				<vector2> 231.712, 397.806 </vector2>
-				<resource  resource_type="PackedScene" path="res://tilesets/temple_parallax.xml">  </resource>
+				<resource  external="3">  </resource>
 			</array>
-			<string> "nodes" </string>
-			<int_array  len="144"> 				-1, -1, 1, 0, -1, 7, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 0, 0, 0, 10, 9, -1, 20, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 11, 4, 12, 0, 13, 5, 14, 5, 15, 4, 16, 1, 17, 4, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 7, 13, 0, 0, 0, 1, 25, -1, 6, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 13, 0, 2, 0, 27, 26, 14, 2, 18, 15, 20, 16, 0, 0, 0, 29, 28, -1, 16, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 11, 4, 12, 0, 13, 5, 14, 5, 15, 4, 16, 1, 17, 0, 18, 17, 19, 7, 20, 8, 7, 13, 0, 0, 0, 31, 30, 18, 0, 0 </int_array>
-			<string> "conns" </string>
-			<int_array  len="0"> 				 </int_array>
+			<string> "version" </string>
+			<int> 2 </int>
 		</dictionary>
-		<resource name="script/script"></resource>
+
 	</main_resource>
 </resource_file>
