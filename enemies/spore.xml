@@ -1,60 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="7" version="0.99" version_name="Godot Engine v0.99.2982-pre-beta">
-	<ext_resource path="res://enemies/spore.gd" type="GDScript"></ext_resource>
-	<ext_resource path="res://art/sporadic_flower_pieces/spike_pollen.png" type="Texture"></ext_resource>
+<resource_file type="PackedScene" subresource_count="7" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
+	<ext_resource path="res://art/sporadic_flower_pieces/spike_pollen.png" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://enemies/spore.gd" type="Script" index="0"></ext_resource>
 	<resource type="CircleShape2D" path="local://1">
-		<string name="resource/name"> "" </string>
 		<real name="custom_solver_bias"> 0 </real>
 		<real name="radius"> 10 </real>
-		<resource name="script/script"></resource>
-	</resource>
-	<resource type="Animation" path="local://2">
-		<string name="resource/name"> "spike" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> False </bool>
-		<real name="step"> 0 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="3"> 				0, 0, 0 </real_array>
-			<string> "values" </string>
-			<array  len="3">
-				<int> 0 </int>
-				<int> 1 </int>
-				<int> 2 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 0.490335, 0.916529 </real_array>
-		</dictionary>
-		<resource name="script/script"></resource>
-	</resource>
-	<resource type="Animation" path="local://3">
-		<string name="resource/name"> "fall" </string>
-		<real name="length"> 2 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "sprite:transform/rot" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "transitions" </string>
-			<real_array  len="3"> 				-2, -2, 0 </real_array>
-			<string> "values" </string>
-			<array  len="3">
-				<real> -8.7 </real>
-				<real> 8.7 </real>
-				<real> -8.7 </real>
-			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1, 2 </real_array>
-		</dictionary>
-		<resource name="script/script"></resource>
+
 	</resource>
 	<resource type="Animation" path="local://4">
 		<string name="resource/name"> "dissolve" </string>
@@ -64,203 +15,185 @@
 		<string name="tracks/0/type"> "value" </string>
 		<node_path name="tracks/0/path"> "sprite:visibility/opacity" </node_path>
 		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys">
+		<dictionary name="tracks/0/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 0.05 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				0, 0 </real_array>
 			<string> "values" </string>
-			<array  len="2">
+			<array  len="2" shared="false">
 				<real> 1 </real>
 				<real> 0.8 </real>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 0.05 </real_array>
 		</dictionary>
 		<string name="tracks/1/type"> "value" </string>
 		<node_path name="tracks/1/path"> "sprite:frame" </node_path>
 		<int name="tracks/1/interp"> 1 </int>
-		<dictionary name="tracks/1/keys">
+		<dictionary name="tracks/1/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="1"> 				1 </real_array>
 			<string> "values" </string>
-			<array  len="1">
+			<array  len="1" shared="false">
 				<int> 3 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="1"> 				0 </real_array>
 		</dictionary>
-		<resource name="script/script"></resource>
+
+	</resource>
+	<resource type="Animation" path="local://3">
+		<string name="resource/name"> "fall" </string>
+		<real name="length"> 2 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "sprite:transform/rot" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1, 2 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				-2, -2, 0 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<real> -8.7 </real>
+				<real> 8.7 </real>
+				<real> -8.7 </real>
+			</array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://2">
+		<string name="resource/name"> "spike" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 0.490335, 0.916529 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				0, 0, 0 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<int> 0 </int>
+				<int> 1 </int>
+				<int> 2 </int>
+			</array>
+		</dictionary>
+
 	</resource>
 	<main_resource>
-		<string name="resource/name"> "" </string>
-		<dictionary name="_bundled">
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
 			<string> "names" </string>
-			<string_array  len="62">
+			<string_array  len="48">
 				<string> "spore" </string>
-				<string> "RigidBody2D" </string>
-				<string> "process/process" </string>
-				<string> "process/fixed_process" </string>
-				<string> "process/input" </string>
-				<string> "process/unhandled_input" </string>
-				<string> "process/mode" </string>
-				<string> "visibility/visible" </string>
-				<string> "visibility/toplevel" </string>
-				<string> "visibility/opacity" </string>
-				<string> "visibility/self_opacity" </string>
-				<string> "visibility/on_top" </string>
-				<string> "visibility/blend_mode" </string>
-				<string> "transform/notify" </string>
-				<string> "transform/pos" </string>
-				<string> "transform/rot" </string>
-				<string> "transform/scale" </string>
-				<string> "shape_count" </string>
+				<string> "input/pickable" </string>
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
 				<string> "mode" </string>
 				<string> "mass" </string>
 				<string> "friction" </string>
 				<string> "bounce" </string>
+				<string> "gravity_scale" </string>
 				<string> "custom_integrator" </string>
 				<string> "continuous_cd" </string>
 				<string> "contacts_reported" </string>
 				<string> "contact_monitor" </string>
-				<string> "active" </string>
+				<string> "sleeping" </string>
 				<string> "can_sleep" </string>
 				<string> "velocity/linear" </string>
 				<string> "velocity/angular" </string>
+				<string> "damp_override/linear" </string>
+				<string> "damp_override/angular" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
 				<string> "drop" </string>
+				<string> "RigidBody2D" </string>
 				<string> "sprite" </string>
-				<string> "Sprite" </string>
+				<string> "transform/pos" </string>
 				<string> "texture" </string>
-				<string> "centered" </string>
-				<string> "offset" </string>
-				<string> "flip_h" </string>
-				<string> "flip_v" </string>
-				<string> "vframes" </string>
 				<string> "hframes" </string>
-				<string> "frame" </string>
-				<string> "modulate" </string>
-				<string> "region" </string>
-				<string> "region_rect" </string>
+				<string> "Sprite" </string>
 				<string> "collision" </string>
-				<string> "CollisionShape2D" </string>
 				<string> "shape" </string>
+				<string> "trigger" </string>
+				<string> "_update_shape_index" </string>
+				<string> "CollisionShape2D" </string>
 				<string> "anim" </string>
-				<string> "AnimationPlayer" </string>
 				<string> "playback/process_mode" </string>
 				<string> "playback/default_blend_time" </string>
 				<string> "root/root" </string>
-				<string> "speed" </string>
-				<string> "anims/spike" </string>
-				<string> "anims/fall" </string>
 				<string> "anims/dissolve" </string>
+				<string> "anims/fall" </string>
+				<string> "anims/spike" </string>
+				<string> "playback/active" </string>
+				<string> "playback/speed" </string>
 				<string> "blend_times" </string>
 				<string> "autoplay" </string>
+				<string> "AnimationPlayer" </string>
 			</string_array>
-			<string> "version" </string>
-			<int> 1 </int>
-			<string> "conn_count" </string>
-			<int> 0 </int>
 			<string> "node_count" </string>
 			<int> 4 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="108"> 				-1, -1, 25, 0, -1, 24, 1, 0, 2, 1, 3, 2, 4, 0, 5, 3, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 6, 12, 8, 13, 9, 14, 9, 15, 0, 16, 0, 17, 8, 18, 10, 19, 7, 20, 11, 21, 11, 22, 12, 23, 13, 24, 9, 0, 0, 0, 30, 26, -1, 3, 27, 14, 28, 15, 29, 16, 0, 0, 0, 35, 31, -1, 3, 32, 1, 33, 0, 34, 17, 0, 0, 0, 47, 36, -1, 10, 37, 3, 38, 7, 39, 18, 40, 19, 41, 20, 42, 21, 43, 8, 44, 6, 45, 22, 46, 23, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="26">
+			<array  len="24" shared="false">
 				<bool> False </bool>
-				<int> 0 </int>
-				<bool> True </bool>
-				<real> 1 </real>
-				<vector2> 0, 0 </vector2>
-				<real> 0 </real>
-				<vector2> 1, 1 </vector2>
-				<int> 1 </int>
-				<resource  resource_type="CircleShape2D" path="local://1">  </resource>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
 				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<int> 1 </int>
 				<int> 2 </int>
 				<real> 0.1 </real>
-				<resource  resource_type="GDScript" path="res://enemies/spore.gd">  </resource>
-				<dictionary>
-					<string> "__editor_plugin_states__" </string>
-					<dictionary>
-						<string> "Script" </string>
-						<dictionary>
-							<string> "current" </string>
-							<int> 0 </int>
-							<string> "sources" </string>
-							<array  len="3">
-								<string> "res://enemies/spore.gd" </string>
-								<string> "res://enemies/sporadic_flower.gd" </string>
-								<string> "res://enemies/enemy.gd" </string>
-							</array>
-						</dictionary>
-						<string> "2D" </string>
-						<dictionary>
-							<string> "zoom" </string>
-							<real> 5.162316 </real>
-							<string> "ofs" </string>
-							<vector2> -406.927, -242.756 </vector2>
-						</dictionary>
-						<string> "3D" </string>
-						<dictionary>
-							<string> "zfar" </string>
-							<real> 500 </real>
-							<string> "fov" </string>
-							<real> 45 </real>
-							<string> "window_mode" </string>
-							<int> 0 </int>
-							<string> "window_0" </string>
-							<dictionary>
-								<string> "distance" </string>
-								<real> 4 </real>
-								<string> "default_light" </string>
-								<bool> True </bool>
-								<string> "x_rot" </string>
-								<real> 0.337 </real>
-								<string> "y_rot" </string>
-								<real> -0.575 </real>
-								<string> "show_grid" </string>
-								<bool> True </bool>
-								<string> "show_origin" </string>
-								<bool> True </bool>
-								<string> "pos" </string>
-								<vector3> 0, 0, 0 </vector3>
-							</dictionary>
-							<string> "znear" </string>
-							<real> 0.1 </real>
-						</dictionary>
-					</dictionary>
-					<string> "__editor_run_settings__" </string>
-					<dictionary>
-						<string> "custom_args" </string>
-						<string> "-l $scene" </string>
-						<string> "run_mode" </string>
-						<int> 0 </int>
-					</dictionary>
+				<real> 1 </real>
+				<real> 0 </real>
+				<bool> True </bool>
+				<int> 0 </int>
+				<vector2> 0, 0 </vector2>
+				<real> -1 </real>
+				<resource  external="0">  </resource>
+				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
 				</dictionary>
 				<vector2> 0, -13.7235 </vector2>
-				<resource  resource_type="Texture" path="res://art/sporadic_flower_pieces/spike_pollen.png">  </resource>
+				<resource  external="1">  </resource>
 				<int> 4 </int>
-				<color> 1, 1, 1, 1 </color>
-				<rect2> 0, 0, 0, 0 </rect2>
-				<resource name=""></resource>				<node_path> ".." </node_path>
-				<resource  resource_type="Animation" path="local://2">  </resource>
-				<resource  resource_type="Animation" path="local://3">  </resource>
+				<int> -1 </int>
+				<node_path> ".." </node_path>
 				<resource  resource_type="Animation" path="local://4">  </resource>
-				<array  len="0">
+				<resource  resource_type="Animation" path="local://3">  </resource>
+				<resource  resource_type="Animation" path="local://2">  </resource>
+				<array  len="0" shared="false">
 				</array>
 				<string> "" </string>
 			</array>
-			<string> "nodes" </string>
-			<int_array  len="212"> 				-1, -1, 1, 0, -1, 33, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 17, 7, 18, 8, 19, 9, 20, 10, 21, 11, 22, 3, 23, 5, 24, 2, 25, 0, 26, 1, 27, 0, 28, 2, 29, 2, 30, 4, 31, 5, 32, 12, 33, 13, 34, 1, 0, 0, 0, 36, 35, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 14, 15, 5, 16, 6, 37, 15, 38, 2, 39, 4, 40, 0, 41, 0, 42, 7, 43, 16, 44, 1, 45, 17, 46, 0, 47, 18, 32, 19, 0, 0, 0, 49, 48, -1, 17, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 50, 8, 32, 19, 0, 0, 0, 52, 51, -1, 15, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 53, 7, 54, 5, 55, 20, 56, 3, 57, 21, 58, 22, 59, 23, 60, 24, 61, 25, 32, 19, 0 </int_array>
-			<string> "conns" </string>
-			<int_array  len="0"> 				 </int_array>
+			<string> "version" </string>
+			<int> 2 </int>
 		</dictionary>
-		<resource name="script/script"></resource>
+
 	</main_resource>
 </resource_file>

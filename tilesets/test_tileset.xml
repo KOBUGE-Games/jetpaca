@@ -1,65 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="TileSet" subresource_count="6" version="0.99" version_name="Godot Engine v0.99.3246-pre-beta">
-	<ext_resource path="res://art/tilestest.png" type="Texture"></ext_resource>
+<resource_file type="TileSet" subresource_count="6" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
+	<ext_resource path="res://art/tilestest.png" type="Texture" index="0"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
-		<string name="resource/name"> "" </string>
-		<bool name="resource/edited"> False </bool>
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="4"> 			0, 64, 0, 0, 64, 0, 64, 64 </vector2_array>
-		<resource name="script/script"></resource>
+
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://2">
-		<string name="resource/name"> "" </string>
-		<bool name="resource/edited"> False </bool>
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="3"> 			64, 64, 0, 64, 0, 0 </vector2_array>
-		<resource name="script/script"></resource>
+
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://3">
-		<string name="resource/name"> "" </string>
-		<bool name="resource/edited"> False </bool>
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="3"> 			128, 64, 0, 64, 0, 0 </vector2_array>
-		<resource name="script/script"></resource>
+
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://4">
-		<string name="resource/name"> "" </string>
-		<bool name="resource/edited"> False </bool>
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="3"> 			64, 128, 0, 128, 0, 0 </vector2_array>
-		<resource name="script/script"></resource>
+
 	</resource>
 	<main_resource>
-		<string name="resource/name"> "" </string>
-		<bool name="resource/edited"> False </bool>
 		<string name="0/name"> "block" </string>
-		<resource name="0/texture" resource_type="Texture" path="res://art/tilestest.png">  </resource>
-		<vector2 name="0/offset"> 0, 0 </vector2>
-		<rect2 name="0/region"> 0, 0, 64, 64 </rect2>
-		<array name="0/shapes" len="1">
-			<resource  resource_type="ConvexPolygonShape2D" path="local://1">  </resource>
+		<resource name="0/texture" external="0">  </resource>
+		<vector2 name="0/tex_offset"> 0, 0 </vector2>
+		<resource name="0/material"></resource>		<rect2 name="0/region"> 0, 0, 64, 64 </rect2>
+		<vector2 name="0/occluder_offset"> -0, -0 </vector2>
+		<resource name="0/occluder"></resource>		<vector2 name="0/navigation_offset"> -0, -0 </vector2>
+		<resource name="0/navigation"></resource>		<vector2 name="0/shape_offset"> -0, -0 </vector2>
+		<array name="0/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
 		</array>
 		<string name="1/name"> "ramp" </string>
-		<resource name="1/texture" resource_type="Texture" path="res://art/tilestest.png">  </resource>
-		<vector2 name="1/offset"> 0, 0 </vector2>
-		<rect2 name="1/region"> 64, 0, 64, 64 </rect2>
-		<array name="1/shapes" len="1">
-			<resource  resource_type="ConvexPolygonShape2D" path="local://2">  </resource>
+		<resource name="1/texture" external="0">  </resource>
+		<vector2 name="1/tex_offset"> 0, 0 </vector2>
+		<resource name="1/material"></resource>		<rect2 name="1/region"> 64, 0, 64, 64 </rect2>
+		<vector2 name="1/occluder_offset"> -0, -0 </vector2>
+		<resource name="1/occluder"></resource>		<vector2 name="1/navigation_offset"> -0, -0 </vector2>
+		<resource name="1/navigation"></resource>		<vector2 name="1/shape_offset"> -0, -0 </vector2>
+		<array name="1/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://2">  </resource>
 		</array>
 		<string name="2/name"> "ramp 2" </string>
-		<resource name="2/texture" resource_type="Texture" path="res://art/tilestest.png">  </resource>
-		<vector2 name="2/offset"> 0, 0 </vector2>
-		<rect2 name="2/region"> 0, 64, 128, 64 </rect2>
-		<array name="2/shapes" len="1">
-			<resource  resource_type="ConvexPolygonShape2D" path="local://3">  </resource>
+		<resource name="2/texture" external="0">  </resource>
+		<vector2 name="2/tex_offset"> 0, 0 </vector2>
+		<resource name="2/material"></resource>		<rect2 name="2/region"> 0, 64, 128, 64 </rect2>
+		<vector2 name="2/occluder_offset"> -0, -0 </vector2>
+		<resource name="2/occluder"></resource>		<vector2 name="2/navigation_offset"> -0, -0 </vector2>
+		<resource name="2/navigation"></resource>		<vector2 name="2/shape_offset"> -0, -0 </vector2>
+		<array name="2/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://3">  </resource>
 		</array>
 		<string name="3/name"> "ramp 3" </string>
-		<resource name="3/texture" resource_type="Texture" path="res://art/tilestest.png">  </resource>
-		<vector2 name="3/offset"> 0, 0 </vector2>
-		<rect2 name="3/region"> 128, 0, 64, 128 </rect2>
-		<array name="3/shapes" len="1">
-			<resource  resource_type="ConvexPolygonShape2D" path="local://4">  </resource>
+		<resource name="3/texture" external="0">  </resource>
+		<vector2 name="3/tex_offset"> 0, 0 </vector2>
+		<resource name="3/material"></resource>		<rect2 name="3/region"> 128, 0, 64, 128 </rect2>
+		<vector2 name="3/occluder_offset"> -0, -0 </vector2>
+		<resource name="3/occluder"></resource>		<vector2 name="3/navigation_offset"> -0, -0 </vector2>
+		<resource name="3/navigation"></resource>		<vector2 name="3/shape_offset"> -0, -0 </vector2>
+		<array name="3/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://4">  </resource>
 		</array>
-		<resource name="script/script"></resource>
+
 	</main_resource>
 </resource_file>

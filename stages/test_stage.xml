@@ -1,56 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="14" version="0.99" version_name="Godot Engine v0.99.3144-pre-beta">
-	<ext_resource path="res://stages/stage.gd" type="GDScript"></ext_resource>
-	<ext_resource path="res://tilesets/test_tileset.xml" type="TileSet"></ext_resource>
-	<ext_resource path="res://interaction/carry_plank.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://interaction/spinning_log.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://enemies/warrior.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://interaction/mountain_rock.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://enemies/fluff.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://interaction/fire_holder.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://interaction/ghost_stop.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://interaction/breakable_stone.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://interaction/ghost_directed.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://interaction/Ghost_push.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://interaction/locked_door.xml" type="PackedScene"></ext_resource>
+<resource_file type="PackedScene" subresource_count="14" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
+	<ext_resource path="res://tilesets/test_tileset.xml" type="TileSet" index="1"></ext_resource>
+	<ext_resource path="res://stages/stage.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://interaction/locked_door.xml" type="PackedScene" index="5"></ext_resource>
+	<ext_resource path="res://enemies/fluff.xml" type="PackedScene" index="12"></ext_resource>
+	<ext_resource path="res://interaction/mountain_rock.xml" type="PackedScene" index="11"></ext_resource>
+	<ext_resource path="res://interaction/spinning_log.xml" type="PackedScene" index="2"></ext_resource>
+	<ext_resource path="res://interaction/carry_plank.xml" type="PackedScene" index="3"></ext_resource>
+	<ext_resource path="res://enemies/warrior.xml" type="PackedScene" index="6"></ext_resource>
+	<ext_resource path="res://interaction/fire_holder.xml" type="PackedScene" index="4"></ext_resource>
+	<ext_resource path="res://interaction/ghost_stop.xml" type="PackedScene" index="10"></ext_resource>
+	<ext_resource path="res://interaction/ghost_directed.xml" type="PackedScene" index="9"></ext_resource>
+	<ext_resource path="res://interaction/breakable_stone.xml" type="PackedScene" index="7"></ext_resource>
+	<ext_resource path="res://interaction/Ghost_push.xml" type="PackedScene" index="8"></ext_resource>
 	<main_resource>
-		<string name="resource/name"> "" </string>
-		<bool name="resource/edited"> False </bool>
-		<dictionary name="_bundled">
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
 			<string> "names" </string>
-			<string_array  len="74">
+			<string_array  len="72">
 				<string> "stage" </string>
-				<string> "Node" </string>
-				<string> "process/process" </string>
-				<string> "process/fixed_process" </string>
-				<string> "process/input" </string>
-				<string> "process/unhandled_input" </string>
-				<string> "process/pause_mode" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
+				<string> "Node" </string>
 				<string> "launch" </string>
-				<string> "Position2D" </string>
-				<string> "visibility/visible" </string>
-				<string> "visibility/opacity" </string>
-				<string> "visibility/self_opacity" </string>
-				<string> "visibility/on_top" </string>
-				<string> "visibility/blend_mode" </string>
 				<string> "transform/pos" </string>
-				<string> "transform/rot" </string>
-				<string> "transform/scale" </string>
+				<string> "Position2D" </string>
 				<string> "tilemap" </string>
-				<string> "TileMap" </string>
-				<string> "cell_size" </string>
-				<string> "quadrant_size" </string>
+				<string> "mode" </string>
 				<string> "tile_set" </string>
+				<string> "cell/size" </string>
+				<string> "cell/quadrant_size" </string>
+				<string> "cell/custom_transform" </string>
+				<string> "cell/half_offset" </string>
+				<string> "cell/tile_origin" </string>
+				<string> "cell/y_sort" </string>
+				<string> "collision/use_kinematic" </string>
+				<string> "collision/friction" </string>
+				<string> "collision/bounce" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
+				<string> "occluder/light_mask" </string>
 				<string> "tile_data" </string>
+				<string> "TileMap" </string>
 				<string> "Moving Platforms" </string>
 				<string> "spinning_log" </string>
-				<string> "StaticBody2D" </string>
 				<string> "spinning_log 2" </string>
 				<string> "spinning_log 3" </string>
 				<string> "carryplat" </string>
-				<string> "Area2D" </string>
+				<string> "linear_damp" </string>
 				<string> "spinning_log 4" </string>
 				<string> "spinning_log 5" </string>
 				<string> "spinning_log 6" </string>
@@ -64,18 +67,17 @@
 				<string> "spinning_log 14" </string>
 				<string> "torches" </string>
 				<string> "torch_trigger" </string>
-				<string> "Sprite" </string>
 				<string> "trigger_name" </string>
 				<string> "door" </string>
-				<string> "Node2D" </string>
 				<string> "no_key" </string>
 				<string> "warrior" </string>
-				<string> "RigidBody2D" </string>
 				<string> "breakable_stone" </string>
+				<string> "StaticBody2D" </string>
 				<string> "StaticBody2D 2" </string>
 				<string> "StaticBody2D 3" </string>
 				<string> "ghost_push" </string>
 				<string> "ghost_push 2" </string>
+				<string> "transform/rot" </string>
 				<string> "ghost_push 3" </string>
 				<string> "ghost_push 4" </string>
 				<string> "ghost_push 5" </string>
@@ -86,6 +88,7 @@
 				<string> "ghost_push 10" </string>
 				<string> "ghost_push 11" </string>
 				<string> "ghost_push 12" </string>
+				<string> "RigidBody2D" </string>
 				<string> "RigidBody2D 2" </string>
 				<string> "RigidBody2D 3" </string>
 				<string> "RigidBody2D 4" </string>
@@ -94,75 +97,47 @@
 				<string> "ghost_push 13" </string>
 				<string> "sacra_pinchorb" </string>
 			</string_array>
-			<string> "version" </string>
-			<int> 1 </int>
-			<string> "conn_count" </string>
-			<int> 0 </int>
 			<string> "node_count" </string>
 			<int> 47 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="484"> 				-1, -1, 3, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 6, 4, -1, 1, 5, 2, 0, 0, 0, 23, 7, -1, 16, 8, 3, 9, 4, 10, 5, 11, 6, 12, 7, 13, 8, 14, 3, 15, 9, 16, 9, 17, 10, 18, 11, 19, 12, 20, 12, 21, 12, 22, 13, 2, 14, 0, 0, 0, 3, 24, -1, 1, 2, 15, 0, 3, 0, 2147483647, 25, 16, 1, 5, 17, 0, 3, 0, 2147483647, 26, 16, 1, 5, 18, 0, 3, 0, 2147483647, 27, 16, 1, 5, 19, 0, 3, 0, 2147483647, 28, 20, 2, 5, 21, 29, 22, 0, 3, 0, 2147483647, 30, 16, 1, 5, 23, 0, 3, 0, 2147483647, 31, 16, 1, 5, 24, 0, 3, 0, 2147483647, 32, 16, 1, 5, 25, 0, 3, 0, 2147483647, 33, 16, 1, 5, 26, 0, 3, 0, 2147483647, 34, 16, 1, 5, 27, 0, 3, 0, 2147483647, 35, 16, 1, 5, 28, 0, 3, 0, 2147483647, 36, 16, 1, 5, 29, 0, 3, 0, 2147483647, 37, 16, 1, 5, 30, 0, 3, 0, 2147483647, 38, 16, 1, 5, 31, 0, 3, 0, 2147483647, 39, 16, 1, 5, 32, 0, 3, 0, 2147483647, 40, 16, 1, 5, 33, 0, 0, 0, 3, 41, -1, 1, 2, 34, 0, 19, 0, 2147483647, 42, 35, 2, 5, 36, 43, 37, 0, 19, 0, 2147483647, 44, 38, 2, 5, 39, 45, 40, 1, 44, 0, 0, 2147483647, 46, 41, 1, 5, 42, 0, 0, 0, 2147483647, 47, 43, 1, 5, 44, 0, 0, 0, 2147483647, 48, 45, 1, 5, 46, 0, 0, 0, 2147483647, 49, 45, 1, 5, 47, 0, 0, 0, 2147483647, 50, 45, 1, 5, 48, 0, 0, 0, 2147483647, 51, 49, 1, 5, 50, 0, 0, 0, 2147483647, 52, 49, 2, 5, 51, 53, 52, 0, 0, 0, 2147483647, 54, 49, 2, 5, 53, 53, 54, 0, 0, 0, 2147483647, 55, 49, 2, 5, 55, 53, 56, 0, 0, 0, 2147483647, 56, 49, 2, 5, 57, 53, 58, 0, 0, 0, 2147483647, 57, 59, 1, 5, 60, 0, 0, 0, 2147483647, 58, 49, 2, 5, 61, 53, 62, 0, 0, 0, 2147483647, 59, 49, 2, 5, 63, 53, 64, 0, 0, 0, 2147483647, 60, 59, 1, 5, 65, 0, 0, 0, 2147483647, 61, 49, 2, 5, 66, 53, 67, 0, 0, 0, 2147483647, 62, 49, 2, 5, 68, 53, 69, 0, 0, 0, 2147483647, 63, 49, 2, 5, 70, 53, 71, 0, 0, 0, 2147483647, 64, 72, 1, 5, 73, 0, 0, 0, 2147483647, 65, 72, 1, 5, 74, 0, 0, 0, 2147483647, 66, 72, 1, 5, 75, 0, 0, 0, 2147483647, 67, 72, 1, 5, 76, 0, 0, 0, 2147483647, 68, 72, 2, 5, 76, 53, 77, 0, 0, 0, 2147483647, 69, 72, 2, 5, 78, 53, 77, 0, 0, 0, 2147483647, 70, 59, 1, 5, 79, 0, 0, 0, 2147483647, 71, 80, 1, 5, 81, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="81">
-				<bool> False </bool>
-				<int> 0 </int>
-				<resource  resource_type="GDScript" path="res://stages/stage.gd">  </resource>
-				<dictionary>
-					<string> "__editor_plugin_states__" </string>
-					<dictionary>
-						<string> "Script" </string>
-						<dictionary>
-							<string> "current" </string>
-							<int> 0 </int>
-							<string> "sources" </string>
-							<array  len="5">
-								<string> "res://interaction/locked_door.gd" </string>
-								<string> "res://enemies/warrior.gd" </string>
-								<string> "res://enemies/enemy.gd" </string>
-								<string> "res://interaction/ghost_push.gd" </string>
-								<string> "res://player/alpaca.gd" </string>
-							</array>
-						</dictionary>
-						<string> "2D" </string>
-						<dictionary>
-							<string> "zoom" </string>
-							<real> 0.358486 </real>
-							<string> "ofs" </string>
-							<vector2> -591.119, 480.285 </vector2>
-						</dictionary>
-					</dictionary>
-					<string> "__editor_run_settings__" </string>
-					<dictionary>
-						<string> "custom_args" </string>
-						<string> "-l $scene" </string>
-						<string> "run_mode" </string>
-						<int> 0 </int>
-					</dictionary>
+			<array  len="82" shared="false">
+				<resource  external="0">  </resource>
+				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
 				</dictionary>
-				<bool> True </bool>
-				<real> 1 </real>
 				<vector2> 237.049, 309.938 </vector2>
-				<real> 0 </real>
-				<vector2> 1, 1 </vector2>
-				<resource name=""></resource>				<vector2> 0, 0 </vector2>
-				<int> 64 </int>
+				<int> 0 </int>
+				<resource  external="1">  </resource>
+				<vector2> 64, 64 </vector2>
 				<int> 16 </int>
-				<resource  resource_type="TileSet" path="res://tilesets/test_tileset.xml">  </resource>
+				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<int> 2 </int>
+				<bool> False </bool>
+				<real> 1 </real>
+				<real> 0 </real>
+				<int> 1 </int>
 				<int_array  len="292"> 					0, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 19, 0, 20, 0, 21, 0, 22, 0, 23, 0, 24, 0, 25, 0, 26, 0, 27, 0, 28, 0, 29, 0, 30, 0, 31, 0, 32, 0, 33, 0, 34, 0, 35, 0, 36, 0, 37, 0, 38, 0, 39, 0, 40, 0, 41, 0, 42, 0, 43, 0, 44, 0, 45, 0, 46, 0, 47, 0, 65536, 0, 131072, 0, 196608, 0, 262144, 0, 327680, 0, 393216, 0, 458752, 0, 458753, 0, 458754, 0, 458755, 0, 458756, 0, 524288, 0, 589824, 0, 655360, 0, 720896, 0, 786432, 0, 851968, 0, 917504, 0, 983040, 0, 1048576, 0, 1114112, 0, 1179648, 0, 1245184, 0, 1310720, 0, 1376256, 0, 1441792, 0, 1507328, 0, 1572864, 0, 1638400, 0, 1703936, 0, 1769472, 0, 1835008, 0, 1900544, 0, 1966080, 0, 2031616, 0, 2097152, 0, 2162688, 0, 2228224, 0, 2293760, 0, 2359296, 0, 2424832, 0, 2490368, 0, 2555904, 0, 2621440, 0, 2686976, 0, 2752512, 0, 2818048, 0, 2883584, 0, 2949120, 0, 3014656, 0, 3080192, 0, 3080193, 0, 3080194, 0, 3080195, 0, 3080196, 0, 3080197, 0, 3080198, 0, 3080199, 0, 3080200, 0, 3080201, 0, 3080202, 0, 3080203, 0, 3080204, 0, 3080205, 0, 3080206, 0, 3080207, 0, 3080208, 0, 3080209, 0, 3080210, 0, 3080211, 0, 3080212, 0, 3080213, 0, 3080214, 0, 3080215, 0, 3080216, 0, 3080217, 0, 3080218, 0, 3080219, 0, 3080220, 0, 3080221, 0, 3080222, 0, 3080223, 0, 3080224, 0, 3080225, 0, 3080226, 0, 3080227, 0, 3080228, 0, 3080229, 0, 3080230, 0, 3080231, 0, 3080232, 0, 3080233, 0, 3080234, 0, 3080235, 0, 3080236, 0, 3080237, 0, 3080238, 0, 3080239, 0 </int_array>
-				<dictionary>
+				<dictionary  shared="false">
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
 				</dictionary>
-				<dictionary>
+				<dictionary  shared="false">
 					<string> "_editor_collapsed" </string>
 					<bool> True </bool>
 				</dictionary>
-				<resource  resource_type="PackedScene" path="res://interaction/spinning_log.xml">  </resource>
+				<resource  external="2">  </resource>
 				<vector2> 441.991, 507.217 </vector2>
 				<vector2> 555.563, 503.877 </vector2>
 				<vector2> 674.146, 513.898 </vector2>
-				<resource  resource_type="PackedScene" path="res://interaction/carry_plank.xml">  </resource>
+				<resource  external="3">  </resource>
 				<vector2> 1597.79, 680.041 </vector2>
+				<real> 0.1 </real>
 				<vector2> 802.75, 569.014 </vector2>
 				<vector2> 974.779, 632.481 </vector2>
 				<vector2> 1148.48, 694.277 </vector2>
@@ -174,24 +149,25 @@
 				<vector2> 2404.46, 1178.63 </vector2>
 				<vector2> 2653.31, 1288.86 </vector2>
 				<vector2> 2832.02, 1295.54 </vector2>
-				<dictionary>
+				<dictionary  shared="false">
 					<string> "_editor_collapsed" </string>
 					<bool> True </bool>
 				</dictionary>
-				<resource  resource_type="PackedScene" path="res://interaction/fire_holder.xml">  </resource>
+				<resource  external="4">  </resource>
 				<vector2> 1161.88, 647.53 </vector2>
 				<string> "door" </string>
-				<resource  resource_type="PackedScene" path="res://interaction/locked_door.xml">  </resource>
+				<resource  external="5">  </resource>
 				<vector2> 1104.64, 1129.8 </vector2>
-				<resource  resource_type="PackedScene" path="res://enemies/warrior.xml">  </resource>
+				<bool> True </bool>
+				<resource  external="6">  </resource>
 				<vector2> 503.834, 942.538 </vector2>
-				<resource  resource_type="PackedScene" path="res://interaction/breakable_stone.xml">  </resource>
+				<resource  external="7">  </resource>
 				<vector2> 897.549, 1151.08 </vector2>
-				<resource  resource_type="PackedScene" path="res://interaction/Ghost_push.xml">  </resource>
+				<resource  external="8">  </resource>
 				<vector2> 736.962, 571.627 </vector2>
 				<vector2> 1028.94, 159.153 </vector2>
 				<vector2> 1497.15, 401.584 </vector2>
-				<resource  resource_type="PackedScene" path="res://interaction/ghost_directed.xml">  </resource>
+				<resource  external="9">  </resource>
 				<vector2> 600.602, 1555.84 </vector2>
 				<vector2> 1492.19, 1550.86 </vector2>
 				<real> -59.327393 </real>
@@ -201,7 +177,7 @@
 				<real> -268.443024 </real>
 				<vector2> 1035.65, 2106.55 </vector2>
 				<real> -233.559814 </real>
-				<resource  resource_type="PackedScene" path="res://interaction/ghost_stop.xml">  </resource>
+				<resource  external="10">  </resource>
 				<vector2> 2685.03, 1873.36 </vector2>
 				<vector2> 2271.92, 1589.59 </vector2>
 				<real> -30.607853 </real>
@@ -214,7 +190,7 @@
 				<real> 57.902149 </real>
 				<vector2> 370.443, 468.293 </vector2>
 				<real> 48.395531 </real>
-				<resource  resource_type="PackedScene" path="res://interaction/mountain_rock.xml">  </resource>
+				<resource  external="11">  </resource>
 				<vector2> 112.911, 321.049 </vector2>
 				<vector2> 180.93, 378.184 </vector2>
 				<vector2> 104.749, 399.95 </vector2>
@@ -222,14 +198,12 @@
 				<real> 86.106201 </real>
 				<vector2> 116.992, 229.903 </vector2>
 				<vector2> 558.513, 153.623 </vector2>
-				<resource  resource_type="PackedScene" path="res://enemies/fluff.xml">  </resource>
+				<resource  external="12">  </resource>
 				<vector2> 1417.07, 1829.92 </vector2>
 			</array>
-			<string> "nodes" </string>
-			<int_array  len="548"> 				-1, -1, 1, 0, -1, 7, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 3, 0, 0, 0, 10, 9, -1, 14, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 11, 4, 12, 5, 13, 5, 14, 4, 15, 1, 16, 6, 17, 7, 18, 8, 7, 9, 0, 0, 0, 20, 19, -1, 19, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 11, 4, 12, 5, 13, 5, 14, 4, 15, 1, 16, 10, 17, 7, 18, 8, 21, 11, 22, 12, 23, 13, 24, 14, 7, 9, 8, 15, 0, 0, 0, 1, 25, -1, 7, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 9, 8, 16, 0, 3, 0, 27, 26, 17, 1, 16, 18, 0, 3, 0, 27, 28, 17, 1, 16, 19, 0, 3, 0, 27, 29, 17, 1, 16, 20, 0, 3, 0, 31, 30, 21, 1, 16, 22, 0, 3, 0, 27, 32, 17, 1, 16, 23, 0, 3, 0, 27, 33, 17, 1, 16, 24, 0, 3, 0, 27, 34, 17, 1, 16, 25, 0, 3, 0, 27, 35, 17, 1, 16, 26, 0, 3, 0, 27, 36, 17, 1, 16, 27, 0, 3, 0, 27, 37, 17, 1, 16, 28, 0, 3, 0, 27, 38, 17, 1, 16, 29, 0, 3, 0, 27, 39, 17, 1, 16, 30, 0, 3, 0, 27, 40, 17, 1, 16, 31, 0, 3, 0, 27, 41, 17, 1, 16, 32, 0, 3, 0, 27, 42, 17, 1, 16, 33, 0, 0, 0, 1, 43, -1, 7, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 9, 8, 34, 0, 19, 0, 45, 44, 35, 2, 16, 36, 46, 37, 0, 19, 0, 48, 47, 38, 2, 16, 39, 49, 4, 1, 47, 0, 0, 51, 50, 40, 1, 16, 41, 0, 0, 0, 48, 52, 42, 1, 16, 43, 0, 0, 0, 51, 27, 44, 1, 16, 45, 0, 0, 0, 51, 53, 44, 1, 16, 46, 0, 0, 0, 51, 54, 44, 1, 16, 47, 0, 0, 0, 51, 55, 48, 1, 16, 49, 0, 0, 0, 51, 56, 48, 2, 16, 50, 17, 51, 0, 0, 0, 51, 57, 48, 2, 16, 52, 17, 53, 0, 0, 0, 51, 58, 48, 2, 16, 54, 17, 55, 0, 0, 0, 51, 59, 48, 2, 16, 56, 17, 57, 0, 0, 0, 51, 60, 58, 1, 16, 59, 0, 0, 0, 51, 61, 48, 2, 16, 60, 17, 61, 0, 0, 0, 51, 62, 48, 2, 16, 62, 17, 63, 0, 0, 0, 51, 63, 58, 1, 16, 64, 0, 0, 0, 51, 64, 48, 2, 16, 65, 17, 66, 0, 0, 0, 51, 65, 48, 2, 16, 67, 17, 68, 0, 0, 0, 51, 66, 48, 2, 16, 69, 17, 70, 0, 0, 0, 51, 51, 71, 1, 16, 72, 0, 0, 0, 51, 67, 71, 1, 16, 73, 0, 0, 0, 51, 68, 71, 1, 16, 74, 0, 0, 0, 51, 69, 71, 1, 16, 75, 0, 0, 0, 51, 70, 71, 2, 16, 75, 17, 76, 0, 0, 0, 51, 71, 71, 2, 16, 77, 17, 76, 0, 0, 0, 51, 72, 58, 1, 16, 78, 0, 0, 0, 51, 73, 79, 1, 16, 80, 0 </int_array>
-			<string> "conns" </string>
-			<int_array  len="0"> 				 </int_array>
+			<string> "version" </string>
+			<int> 2 </int>
 		</dictionary>
-		<resource name="script/script"></resource>
+
 	</main_resource>
 </resource_file>

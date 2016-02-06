@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="7" version="0.99" version_name="Godot Engine v0.99.3672-pre-beta">
-	<ext_resource path="res://art/tuteboard.*" type="ImageTexture"></ext_resource>
-	<ext_resource path="res://art/button_right.*" type="ImageTexture"></ext_resource>
-	<ext_resource path="res://art/button_left.*" type="ImageTexture"></ext_resource>
-	<ext_resource path="res://art/tutepaca.*" type="ImageTexture"></ext_resource>
+<resource_file type="PackedScene" subresource_count="7" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
+	<ext_resource path="res://art/button_left.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://art/button_right.png" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://art/tuteboard.png" type="Texture" index="0"></ext_resource>
+	<ext_resource path="res://art/tutepaca.png" type="Texture" index="1"></ext_resource>
 	<resource type="Animation" path="local://1">
 		<string name="resource/name"> "tuto1" </string>
 		<real name="length"> 2.3 </real>
@@ -15,10 +15,12 @@
 		<dictionary name="tracks/0/keys" shared="false">
 			<string> "cont" </string>
 			<bool> False </bool>
+			<string> "times" </string>
+			<real_array  len="8"> 				0, 0.2, 0.4, 0.6, 1.2, 1.4, 1.6, 1.8 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="8" shared="true">
+			<array  len="8" shared="false">
 				<int> 0 </int>
 				<int> 1 </int>
 				<int> 0 </int>
@@ -28,8 +30,6 @@
 				<int> 0 </int>
 				<int> 1 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="8"> 				0, 0.2, 0.4, 0.6, 1.2, 1.4, 1.6, 1.8 </real_array>
 		</dictionary>
 		<string name="tracks/1/type"> "value" </string>
 		<node_path name="tracks/1/path"> "left:visibility/visible" </node_path>
@@ -37,16 +37,16 @@
 		<dictionary name="tracks/1/keys" shared="false">
 			<string> "cont" </string>
 			<bool> False </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1.2, 2 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<bool> False </bool>
 				<bool> True </bool>
 				<bool> False </bool>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 1.2, 2 </real_array>
 		</dictionary>
 		<string name="tracks/2/type"> "value" </string>
 		<node_path name="tracks/2/path"> "right:visibility/visible" </node_path>
@@ -54,15 +54,15 @@
 		<dictionary name="tracks/2/keys" shared="false">
 			<string> "cont" </string>
 			<bool> False </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 0.7 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<bool> True </bool>
 				<bool> False </bool>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 0.7 </real_array>
 		</dictionary>
 		<string name="tracks/3/type"> "value" </string>
 		<node_path name="tracks/3/path"> "alpaca:flip_h" </node_path>
@@ -70,15 +70,15 @@
 		<dictionary name="tracks/3/keys" shared="false">
 			<string> "cont" </string>
 			<bool> False </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1.2 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="true">
+			<array  len="2" shared="false">
 				<bool> False </bool>
 				<bool> True </bool>
 			</array>
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 1.2 </real_array>
 		</dictionary>
 
 	</resource>
@@ -93,10 +93,12 @@
 		<dictionary name="tracks/0/keys" shared="false">
 			<string> "cont" </string>
 			<bool> False </bool>
+			<string> "times" </string>
+			<real_array  len="12"> 				0, 0.7, 0.9, 1.1, 1.3, 1.5, 1.7, 1.9, 2.1, 2.3, 2.5, 2.7 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="12"> 				1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="12" shared="true">
+			<array  len="12" shared="false">
 				<int> 1 </int>
 				<int> 2 </int>
 				<int> 3 </int>
@@ -110,8 +112,6 @@
 				<int> 3 </int>
 				<int> 0 </int>
 			</array>
-			<string> "times" </string>
-			<real_array  len="12"> 				0, 0.7, 0.9, 1.1, 1.3, 1.5, 1.7, 1.9, 2.1, 2.3, 2.5, 2.7 </real_array>
 		</dictionary>
 		<string name="tracks/1/type"> "value" </string>
 		<node_path name="tracks/1/path"> "right:visibility/visible" </node_path>
@@ -119,16 +119,16 @@
 		<dictionary name="tracks/1/keys" shared="false">
 			<string> "cont" </string>
 			<bool> False </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 0.7, 2.7 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<bool> False </bool>
 				<bool> True </bool>
 				<bool> False </bool>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 0.7, 2.7 </real_array>
 		</dictionary>
 		<string name="tracks/2/type"> "value" </string>
 		<node_path name="tracks/2/path"> "left:visibility/visible" </node_path>
@@ -136,16 +136,16 @@
 		<dictionary name="tracks/2/keys" shared="false">
 			<string> "cont" </string>
 			<bool> False </bool>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 0.7, 2.7 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="3"> 				1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="3" shared="true">
+			<array  len="3" shared="false">
 				<bool> False </bool>
 				<bool> True </bool>
 				<bool> False </bool>
 			</array>
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 0.7, 2.7 </real_array>
 		</dictionary>
 		<string name="tracks/3/type"> "value" </string>
 		<node_path name="tracks/3/path"> "alpaca:transform/pos" </node_path>
@@ -153,202 +153,99 @@
 		<dictionary name="tracks/3/keys" shared="false">
 			<string> "cont" </string>
 			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 0.7, 2.7, 3.5 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="4"> 				1, 2.37841, 2.21914, 1 </real_array>
 			<string> "values" </string>
-			<array  len="4" shared="true">
+			<array  len="4" shared="false">
 				<vector2> 0, 28.5271 </vector2>
 				<vector2> 0, 28.5271 </vector2>
 				<vector2> 0, -47.7664 </vector2>
 				<vector2> 0, 28.5271 </vector2>
 			</array>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 0.7, 2.7, 3.5 </real_array>
 		</dictionary>
 
 	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
 			<string> "names" </string>
-			<string_array  len="40">
+			<string_array  len="30">
 				<string> "sprite" </string>
-				<string> "Sprite" </string>
-				<string> "visibility/visible" </string>
-				<string> "visibility/opacity" </string>
-				<string> "visibility/self_opacity" </string>
-				<string> "visibility/on_top" </string>
-				<string> "transform/pos" </string>
-				<string> "transform/rot" </string>
-				<string> "transform/scale" </string>
 				<string> "texture" </string>
-				<string> "centered" </string>
-				<string> "offset" </string>
-				<string> "flip_h" </string>
-				<string> "flip_v" </string>
-				<string> "vframes" </string>
-				<string> "hframes" </string>
-				<string> "frame" </string>
-				<string> "modulate" </string>
-				<string> "region" </string>
-				<string> "region_rect" </string>
 				<string> "__meta__" </string>
+				<string> "Sprite" </string>
 				<string> "alpaca" </string>
+				<string> "transform/pos" </string>
+				<string> "flip_h" </string>
+				<string> "hframes" </string>
 				<string> "left" </string>
 				<string> "right" </string>
+				<string> "visibility/visible" </string>
 				<string> "anim" </string>
-				<string> "AnimationPlayer" </string>
-				<string> "process/process" </string>
 				<string> "playback/process_mode" </string>
 				<string> "playback/default_blend_time" </string>
 				<string> "root/root" </string>
-				<string> "speed" </string>
 				<string> "anims/tuto1" </string>
 				<string> "anims/tuto2" </string>
+				<string> "playback/active" </string>
+				<string> "playback/speed" </string>
 				<string> "blend_times" </string>
 				<string> "autoplay" </string>
+				<string> "AnimationPlayer" </string>
 				<string> "enabler" </string>
-				<string> "VisibilityEnabler2D" </string>
 				<string> "rect" </string>
 				<string> "enabler/pause_animations" </string>
 				<string> "enabler/freeze_bodies" </string>
+				<string> "enabler/pause_particles" </string>
+				<string> "enabler/process_parent" </string>
+				<string> "enabler/fixed_process_parent" </string>
+				<string> "VisibilityEnabler2D" </string>
 			</string_array>
-			<string> "version" </string>
-			<int> 1 </int>
-			<string> "conn_count" </string>
-			<int> 0 </int>
 			<string> "node_count" </string>
 			<int> 6 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="98"> 				-1, -1, 3, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 3, 4, -1, 4, 5, 2, 1, 3, 6, 4, 7, 5, 0, 0, 0, 3, 8, -1, 3, 5, 6, 1, 7, 7, 8, 0, 0, 0, 3, 9, -1, 4, 10, 9, 5, 10, 1, 11, 7, 8, 0, 0, 0, 21, 11, -1, 9, 12, 12, 13, 13, 14, 14, 15, 15, 16, 16, 17, 4, 18, 17, 19, 18, 20, 19, 0, 0, 0, 29, 22, -1, 6, 23, 20, 24, 4, 25, 4, 26, 4, 27, 9, 28, 9, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="27" shared="true">
-				<bool> True </bool>
-				<real> 1 </real>
-				<vector2> 0, 0 </vector2>
-				<real> 0 </real>
-				<vector2> 1, 1 </vector2>
-				<resource  resource_type="ImageTexture" path="res://art/tuteboard.*">  </resource>
-				<bool> False </bool>
-				<int> 1 </int>
-				<int> 0 </int>
-				<color> 1, 1, 1, 1 </color>
-				<rect2> 0, 0, 0, 0 </rect2>
+			<array  len="21" shared="false">
+				<resource  external="0">  </resource>
 				<dictionary  shared="false">
-					<string> "__editor_plugin_states__" </string>
-					<dictionary  shared="false">
-						<string> "2D" </string>
-						<dictionary  shared="false">
-							<string> "zoom" </string>
-							<real> 1.50734 </real>
-							<string> "ofs" </string>
-							<vector2> -182.998, -164.927 </vector2>
-						</dictionary>
-						<string> "3D" </string>
-						<dictionary  shared="false">
-							<string> "zfar" </string>
-							<real> 500 </real>
-							<string> "fov" </string>
-							<real> 45 </real>
-							<string> "viewports" </string>
-							<array  len="4" shared="true">
-								<dictionary  shared="false">
-									<string> "distance" </string>
-									<real> 4 </real>
-									<string> "x_rot" </string>
-									<real> 0 </real>
-									<string> "y_rot" </string>
-									<real> 0 </real>
-									<string> "use_orthogonal" </string>
-									<bool> False </bool>
-									<string> "use_environment" </string>
-									<bool> False </bool>
-									<string> "pos" </string>
-									<vector3> 0, 0, 0 </vector3>
-								</dictionary>
-								<dictionary  shared="false">
-									<string> "distance" </string>
-									<real> 4 </real>
-									<string> "x_rot" </string>
-									<real> 0 </real>
-									<string> "y_rot" </string>
-									<real> 0 </real>
-									<string> "use_orthogonal" </string>
-									<bool> False </bool>
-									<string> "use_environment" </string>
-									<bool> False </bool>
-									<string> "pos" </string>
-									<vector3> 0, 0, 0 </vector3>
-								</dictionary>
-								<dictionary  shared="false">
-									<string> "distance" </string>
-									<real> 4 </real>
-									<string> "x_rot" </string>
-									<real> 0 </real>
-									<string> "y_rot" </string>
-									<real> 0 </real>
-									<string> "use_orthogonal" </string>
-									<bool> False </bool>
-									<string> "use_environment" </string>
-									<bool> False </bool>
-									<string> "pos" </string>
-									<vector3> 0, 0, 0 </vector3>
-								</dictionary>
-								<dictionary  shared="false">
-									<string> "distance" </string>
-									<real> 4 </real>
-									<string> "x_rot" </string>
-									<real> 0 </real>
-									<string> "y_rot" </string>
-									<real> 0 </real>
-									<string> "use_orthogonal" </string>
-									<bool> False </bool>
-									<string> "use_environment" </string>
-									<bool> False </bool>
-									<string> "pos" </string>
-									<vector3> 0, 0, 0 </vector3>
-								</dictionary>
-							</array>
-							<string> "viewport_mode" </string>
-							<int> 1 </int>
-							<string> "default_light" </string>
-							<bool> True </bool>
-							<string> "show_grid" </string>
-							<bool> True </bool>
-							<string> "show_origin" </string>
-							<bool> True </bool>
-							<string> "znear" </string>
-							<real> 0.1 </real>
-						</dictionary>
-					</dictionary>
-					<string> "__editor_run_settings__" </string>
-					<dictionary  shared="false">
-						<string> "custom_args" </string>
-						<string> "-l $scene" </string>
-						<string> "run_mode" </string>
-						<int> 0 </int>
-					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
 				</dictionary>
 				<vector2> 0, 28.5271 </vector2>
-				<resource  resource_type="ImageTexture" path="res://art/tutepaca.*">  </resource>
+				<resource  external="1">  </resource>
+				<bool> True </bool>
 				<int> 6 </int>
 				<vector2> -100, 32.5077 </vector2>
-				<resource  resource_type="ImageTexture" path="res://art/button_left.*">  </resource>
+				<resource  external="2">  </resource>
 				<int> 2 </int>
+				<bool> False </bool>
 				<vector2> 102, 33.5077 </vector2>
-				<resource  resource_type="ImageTexture" path="res://art/button_right.*">  </resource>
+				<resource  external="3">  </resource>
+				<int> 1 </int>
+				<real> 0 </real>
 				<node_path> ".." </node_path>
-				<real> 0.8 </real>
 				<resource  resource_type="Animation" path="local://1">  </resource>
 				<resource  resource_type="Animation" path="local://2">  </resource>
-				<array  len="0" shared="true">
+				<real> 0.8 </real>
+				<array  len="0" shared="false">
 				</array>
 				<string> "tuto1" </string>
 				<rect2> -10, -10, 20, 20 </rect2>
 			</array>
-			<string> "nodes" </string>
-			<int_array  len="226"> 				-1, -1, 1, 0, -1, 19, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 9, 5, 10, 0, 11, 2, 12, 6, 13, 6, 14, 7, 15, 7, 16, 8, 17, 9, 18, 6, 19, 10, 20, 11, 0, 0, 0, 1, 21, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 12, 7, 3, 8, 4, 9, 13, 10, 0, 11, 2, 12, 0, 13, 6, 14, 7, 15, 14, 16, 8, 17, 9, 18, 6, 19, 10, 0, 0, 0, 1, 22, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 15, 7, 3, 8, 4, 9, 16, 10, 0, 11, 2, 12, 6, 13, 6, 14, 7, 15, 17, 16, 8, 17, 9, 18, 6, 19, 10, 0, 0, 0, 1, 23, -1, 18, 2, 6, 3, 1, 4, 1, 5, 0, 6, 18, 7, 3, 8, 4, 9, 19, 10, 0, 11, 2, 12, 6, 13, 6, 14, 7, 15, 17, 16, 8, 17, 9, 18, 6, 19, 10, 0, 0, 0, 25, 24, -1, 9, 26, 0, 27, 7, 28, 3, 29, 20, 30, 21, 31, 22, 32, 23, 33, 24, 34, 25, 0, 0, 0, 36, 35, -1, 10, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 37, 26, 38, 0, 39, 0, 0 </int_array>
-			<string> "conns" </string>
-			<int_array  len="0"> 				 </int_array>
+			<string> "version" </string>
+			<int> 2 </int>
 		</dictionary>
 
 	</main_resource>

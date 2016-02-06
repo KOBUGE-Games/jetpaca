@@ -1,101 +1,97 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="9" version="0.99" version_name="Godot Engine v0.99.2890-pre-beta">
-	<ext_resource path="res://art/jar1.png" type="Texture"></ext_resource>
-	<ext_resource path="res://art/jar1_piece.png" type="Texture"></ext_resource>
-	<ext_resource path="res://sound/ceramic_break.wav" type="Sample"></ext_resource>
-	<ext_resource path="res://interaction/jar.gd" type="GDScript"></ext_resource>
+<resource_file type="PackedScene" subresource_count="10" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
+	<ext_resource path="res://art/jar1_piece.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://sound/ceramic_break.wav" type="Sample" index="3"></ext_resource>
+	<ext_resource path="res://interaction/jar.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://art/jar1.png" type="Texture" index="1"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
-		<string name="resource/name"> "" </string>
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="7"> 			26.1026, -23.2028, 21.5731, -10.9085, -15.3097, 24.6802, -27.2805, 8.50351, -21.1333, -10.9085, -12.0744, -28.3793, 13.1612, -28.3793 </vector2_array>
-		<resource name="script/script"></resource>
+
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://2">
-		<string name="resource/name"> "" </string>
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="3"> 			-24.3687, -21.9086, -12.0744, -28.3793, -21.1333, -10.9085 </vector2_array>
-		<resource name="script/script"></resource>
+
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://3">
-		<string name="resource/name"> "" </string>
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="6"> 			28.6908, 6.88585, 20.279, 23.0625, 9.60237, 28.8861, -4.95663, 28.8861, -15.3097, 24.6802, 21.5731, -10.9085 </vector2_array>
-		<resource name="script/script"></resource>
+
+	</resource>
+	<resource type="ColorRamp" path="local://5">
+		<real_array name="offsets" len="3"> 			0, 0.8, 1 </real_array>
+		<color_array name="colors" len="3"> 			1, 1, 1, 1, 0.435294, 0.442478, 0.469027, 1, 0, 0, 0, 0 </color_array>
+
 	</resource>
 	<resource type="SampleLibrary" path="local://4">
-		<string name="resource/name"> "" </string>
-		<resource name="samples/break" resource_type="Sample" path="res://sound/ceramic_break.wav">  </resource>
-		<resource name="script/script"></resource>
+		<dictionary name="samples/break" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="3">  </resource>
+		</dictionary>
+
 	</resource>
 	<main_resource>
-		<string name="resource/name"> "" </string>
-		<dictionary name="_bundled">
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 1 </int>
+			<string> "conns" </string>
+			<int_array  len="6"> 				4, 0, 87, 86, 2, 0 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
 			<string> "names" </string>
-			<string_array  len="117">
+			<string_array  len="88">
 				<string> "jar" </string>
-				<string> "RigidBody2D" </string>
-				<string> "process/process" </string>
-				<string> "process/fixed_process" </string>
-				<string> "process/input" </string>
-				<string> "process/unhandled_input" </string>
-				<string> "process/mode" </string>
-				<string> "visibility/visible" </string>
-				<string> "visibility/toplevel" </string>
-				<string> "visibility/opacity" </string>
-				<string> "visibility/self_opacity" </string>
-				<string> "visibility/on_top" </string>
-				<string> "visibility/blend_mode" </string>
-				<string> "transform/notify" </string>
-				<string> "transform/pos" </string>
-				<string> "transform/rot" </string>
-				<string> "transform/scale" </string>
-				<string> "shape_count" </string>
+				<string> "input/pickable" </string>
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
 				<string> "shapes/1/shape" </string>
 				<string> "shapes/1/transform" </string>
+				<string> "shapes/1/trigger" </string>
 				<string> "shapes/2/shape" </string>
 				<string> "shapes/2/transform" </string>
+				<string> "shapes/2/trigger" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
 				<string> "mode" </string>
 				<string> "mass" </string>
 				<string> "friction" </string>
 				<string> "bounce" </string>
+				<string> "gravity_scale" </string>
 				<string> "custom_integrator" </string>
 				<string> "continuous_cd" </string>
 				<string> "contacts_reported" </string>
 				<string> "contact_monitor" </string>
-				<string> "active" </string>
+				<string> "sleeping" </string>
 				<string> "can_sleep" </string>
 				<string> "velocity/linear" </string>
 				<string> "velocity/angular" </string>
+				<string> "damp_override/linear" </string>
+				<string> "damp_override/angular" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
 				<string> "has_key" </string>
 				<string> "key_index" </string>
+				<string> "RigidBody2D" </string>
 				<string> "sprite" </string>
-				<string> "Sprite" </string>
 				<string> "texture" </string>
-				<string> "centered" </string>
-				<string> "offset" </string>
-				<string> "flip_h" </string>
-				<string> "flip_v" </string>
-				<string> "vframes" </string>
-				<string> "hframes" </string>
-				<string> "frame" </string>
-				<string> "modulate" </string>
-				<string> "region" </string>
-				<string> "region_rect" </string>
+				<string> "Sprite" </string>
 				<string> "CollisionPolygon2D" </string>
 				<string> "build_mode" </string>
 				<string> "polygon" </string>
+				<string> "shape_range" </string>
+				<string> "trigger" </string>
 				<string> "particles" </string>
-				<string> "Particles2D" </string>
 				<string> "config/amount" </string>
 				<string> "config/lifetime" </string>
-				<string> "config/preprocess" </string>
 				<string> "config/emit_timeout" </string>
 				<string> "config/emitting" </string>
-				<string> "config/offset" </string>
 				<string> "config/half_extents" </string>
 				<string> "config/local_space" </string>
 				<string> "config/explosiveness" </string>
@@ -104,42 +100,29 @@
 				<string> "params/spread" </string>
 				<string> "params/linear_velocity" </string>
 				<string> "params/spin_velocity" </string>
+				<string> "params/orbit_velocity" </string>
 				<string> "params/gravity_direction" </string>
 				<string> "params/gravity_strength" </string>
 				<string> "params/radial_accel" </string>
 				<string> "params/tangential_accel" </string>
 				<string> "params/damping" </string>
+				<string> "params/initial_angle" </string>
 				<string> "params/initial_size" </string>
 				<string> "params/final_size" </string>
 				<string> "params/hue_variation" </string>
-				<string> "randomness/direction" </string>
-				<string> "randomness/spread" </string>
+				<string> "params/anim_speed_scale" </string>
+				<string> "params/anim_initial_pos" </string>
 				<string> "randomness/linear_velocity" </string>
 				<string> "randomness/spin_velocity" </string>
-				<string> "randomness/gravity_direction" </string>
-				<string> "randomness/gravity_strength" </string>
-				<string> "randomness/radial_accel" </string>
-				<string> "randomness/tangential_accel" </string>
-				<string> "randomness/damping" </string>
-				<string> "randomness/initial_size" </string>
-				<string> "randomness/final_size" </string>
-				<string> "randomness/hue_variation" </string>
-				<string> "color_phases/count" </string>
-				<string> "phase_0/pos" </string>
-				<string> "phase_0/color" </string>
-				<string> "phase_1/pos" </string>
-				<string> "phase_1/color" </string>
-				<string> "phase_2/pos" </string>
-				<string> "phase_2/color" </string>
-				<string> "phase_3/pos" </string>
-				<string> "phase_3/color" </string>
+				<string> "color/color_ramp" </string>
+				<string> "Particles2D" </string>
 				<string> "death" </string>
-				<string> "Timer" </string>
+				<string> "process_mode" </string>
 				<string> "wait_time" </string>
 				<string> "one_shot" </string>
 				<string> "autostart" </string>
+				<string> "Timer" </string>
 				<string> "player" </string>
-				<string> "SamplePlayer2D" </string>
 				<string> "params/volume_db" </string>
 				<string> "params/pitch_scale" </string>
 				<string> "params/attenuation/min_distance" </string>
@@ -147,115 +130,57 @@
 				<string> "params/attenuation/distance_exp" </string>
 				<string> "config/polyphony" </string>
 				<string> "config/samples" </string>
+				<string> "config/pitch_random" </string>
+				<string> "SamplePlayer2D" </string>
 				<string> "_on_timeout" </string>
 				<string> "timeout" </string>
 			</string_array>
-			<string> "version" </string>
-			<int> 1 </int>
-			<string> "conn_count" </string>
-			<int> 1 </int>
 			<string> "node_count" </string>
 			<int> 6 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="192"> 				-1, -1, 32, 0, -1, 31, 1, 0, 2, 1, 3, 2, 4, 0, 5, 3, 6, 2, 7, 0, 8, 4, 9, 2, 10, 0, 11, 5, 12, 5, 13, 6, 14, 7, 15, 7, 16, 8, 17, 7, 18, 0, 19, 6, 20, 6, 21, 0, 22, 0, 23, 9, 24, 10, 25, 8, 26, 11, 27, 11, 28, 12, 29, 13, 30, 0, 31, 6, 0, 0, 0, 35, 33, -1, 1, 34, 14, 0, 0, 0, 36, 36, -1, 4, 37, 6, 38, 15, 39, 16, 40, 0, 0, 0, 0, 69, 41, -1, 27, 42, 17, 43, 18, 44, 18, 45, 0, 46, 19, 47, 0, 48, 20, 49, 21, 50, 8, 51, 22, 52, 23, 53, 24, 54, 8, 55, 8, 56, 25, 57, 8, 58, 8, 59, 8, 60, 8, 61, 7, 62, 7, 63, 8, 64, 7, 65, 8, 66, 7, 67, 7, 68, 26, 0, 0, 0, 75, 70, -1, 4, 71, 5, 72, 7, 73, 0, 74, 0, 0, 0, 0, 85, 76, -1, 8, 77, 8, 78, 27, 79, 7, 80, 28, 81, 7, 82, 5, 83, 29, 84, 8, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="35">
+			<array  len="30" shared="false">
 				<bool> False </bool>
-				<int> 0 </int>
-				<bool> True </bool>
-				<real> 1 </real>
-				<vector2> 0, 0 </vector2>
-				<real> 0 </real>
-				<vector2> 1, 1 </vector2>
-				<int> 3 </int>
-				<resource  resource_type="ConvexPolygonShape2D" path="local://1">  </resource>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
 				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
-				<resource  resource_type="ConvexPolygonShape2D" path="local://2">  </resource>
-				<resource  resource_type="ConvexPolygonShape2D" path="local://3">  </resource>
-				<resource  resource_type="GDScript" path="res://interaction/jar.gd">  </resource>
-				<dictionary>
-					<string> "__editor_plugin_states__" </string>
-					<dictionary>
-						<string> "Script" </string>
-						<dictionary>
-							<string> "current" </string>
-							<int> 1 </int>
-							<string> "sources" </string>
-							<array  len="2">
-								<string> "res://interaction/key.gd" </string>
-								<string> "res://interaction/jar.gd" </string>
-							</array>
-						</dictionary>
-						<string> "2D" </string>
-						<dictionary>
-							<string> "zoom" </string>
-							<real> 1.670183 </real>
-							<string> "ofs" </string>
-							<vector2> -151.831, -247.051 </vector2>
-						</dictionary>
-						<string> "3D" </string>
-						<dictionary>
-							<string> "zfar" </string>
-							<real> 500 </real>
-							<string> "fov" </string>
-							<real> 45 </real>
-							<string> "window_mode" </string>
-							<int> 0 </int>
-							<string> "window_0" </string>
-							<dictionary>
-								<string> "distance" </string>
-								<real> 4 </real>
-								<string> "default_light" </string>
-								<bool> True </bool>
-								<string> "x_rot" </string>
-								<real> 0.337 </real>
-								<string> "y_rot" </string>
-								<real> -0.575 </real>
-								<string> "show_grid" </string>
-								<bool> True </bool>
-								<string> "show_origin" </string>
-								<bool> True </bool>
-								<string> "pos" </string>
-								<vector3> 0, 0, 0 </vector3>
-							</dictionary>
-							<string> "znear" </string>
-							<real> 0.1 </real>
-						</dictionary>
-					</dictionary>
-					<string> "__editor_run_settings__" </string>
-					<dictionary>
-						<string> "custom_args" </string>
-						<string> "-l $scene" </string>
-						<string> "run_mode" </string>
-						<int> 0 </int>
-					</dictionary>
+				<resource  resource_type="Shape2D" path="local://2">  </resource>
+				<resource  resource_type="Shape2D" path="local://3">  </resource>
+				<int> 1 </int>
+				<int> 0 </int>
+				<real> 1 </real>
+				<real> 0 </real>
+				<bool> True </bool>
+				<vector2> 0, 0 </vector2>
+				<real> -1 </real>
+				<resource  external="0">  </resource>
+				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
 				</dictionary>
-				<resource  resource_type="Texture" path="res://art/jar1.png">  </resource>
-				<int> 1 </int>
-				<color> 1, 1, 1, 1 </color>
-				<rect2> 0, 0, 0, 0 </rect2>
-				<resource name=""></resource>				<vector2_array  len="12"> 					-21.1333, -10.9085, -24.3687, -21.9086, -12.0744, -28.3793, 13.1612, -28.3793, 26.1026, -23.2028, 21.5731, -10.9085, 28.6908, 6.88585, 20.279, 23.0625, 9.60237, 28.8861, -4.95663, 28.8861, -15.3097, 24.6802, -27.2805, 8.50351 </vector2_array>
+				<resource  external="1">  </resource>
+				<vector2_array  len="12"> 					-21.1333, -10.9085, -24.3687, -21.9086, -12.0744, -28.3793, 13.1612, -28.3793, 26.1026, -23.2028, 21.5731, -10.9085, 28.6908, 6.88585, 20.279, 23.0625, 9.60237, 28.8861, -4.95663, 28.8861, -15.3097, 24.6802, -27.2805, 8.50351 </vector2_array>
+				<vector2> -1, -1 </vector2>
 				<int> 16 </int>
 				<real> 0.7 </real>
 				<vector2> 16, 16 </vector2>
 				<real> 0.1 </real>
-				<resource  resource_type="Texture" path="res://art/jar1_piece.png">  </resource>
+				<resource  external="2">  </resource>
 				<real> 180 </real>
 				<real> 60 </real>
 				<real> 3 </real>
 				<real> 195.981812 </real>
-				<real> 0.8 </real>
-				<color> 0.435294, 0.442478, 0.469027, 1 </color>
-				<color> 0, 0, 0, 0 </color>
+				<resource  resource_type="ColorRamp" path="local://5">  </resource>
 				<real> 0.6 </real>
 				<real> 2048 </real>
 				<resource  resource_type="SampleLibrary" path="local://4">  </resource>
 			</array>
-			<string> "nodes" </string>
-			<int_array  len="390"> 				-1, -1, 1, 0, -1, 38, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 17, 7, 18, 8, 19, 9, 20, 10, 21, 9, 22, 11, 23, 9, 24, 1, 25, 3, 26, 3, 27, 5, 28, 0, 29, 0, 30, 1, 31, 0, 32, 2, 33, 2, 34, 4, 35, 5, 36, 12, 37, 13, 38, 0, 39, 1, 0, 0, 0, 41, 40, -1, 27, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 4, 15, 5, 16, 6, 42, 14, 43, 2, 44, 4, 45, 0, 46, 0, 47, 15, 48, 15, 49, 1, 50, 16, 51, 0, 52, 17, 36, 18, 0, 0, 0, 53, 53, -1, 18, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 54, 1, 55, 19, 36, 18, 0, 0, 0, 57, 56, -1, 59, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 0, 14, 4, 15, 5, 16, 6, 58, 20, 59, 21, 60, 5, 61, 21, 62, 0, 63, 4, 64, 22, 65, 0, 66, 23, 67, 24, 68, 5, 69, 25, 70, 26, 71, 27, 72, 5, 73, 28, 74, 5, 75, 5, 76, 5, 77, 3, 78, 3, 79, 5, 80, 5, 81, 5, 82, 3, 83, 3, 84, 5, 85, 5, 86, 5, 87, 5, 88, 5, 89, 5, 90, 5, 91, 5, 92, 7, 93, 5, 94, 16, 95, 29, 96, 30, 97, 3, 98, 31, 99, 3, 100, 31, 36, 18, 0, 0, 0, 102, 101, -1, 9, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 103, 3, 104, 0, 105, 0, 36, 18, 0, 0, 0, 107, 106, -1, 23, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 2, 8, 0, 9, 3, 10, 3, 11, 2, 12, 1, 13, 2, 14, 4, 15, 5, 16, 6, 108, 5, 109, 32, 110, 3, 111, 33, 112, 3, 113, 15, 114, 34, 36, 18, 0 </int_array>
-			<string> "conns" </string>
-			<int_array  len="6"> 				4, 0, 116, 115, 2, 0 </int_array>
+			<string> "version" </string>
+			<int> 2 </int>
 		</dictionary>
-		<resource name="script/script"></resource>
+
 	</main_resource>
 </resource_file>
