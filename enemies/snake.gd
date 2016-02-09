@@ -23,12 +23,12 @@ var timeout=4.0
 
 func _on_enter_screen():
 
-	set_active(true)
+	set_sleeping(false)
 
 
 func _on_exit_screen():
 
-	set_active(false)
+	set_sleeping(true)
 
 func _integrate_forces(state):
 
@@ -100,7 +100,7 @@ func _integrate_forces(state):
 
 
 func _init():
-	set_active(false)
+	set_sleeping(true)
 
 func _ready():
 	# Initalization here

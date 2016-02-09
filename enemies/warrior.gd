@@ -74,7 +74,7 @@ func _on_body_exit(body):
 func _on_damage_enter(body):
 	if (body extends preload("res://player/alpaca.gd")):
 		body.hit_begin()
-	body.set_linear_velocity( (body.get_global_pos() - get_global_pos()).normalized()*700 )
+		body.set_linear_velocity( (body.get_global_pos() - get_global_pos()).normalized()*700 )
 		
 
 func _on_damage_exit(body):

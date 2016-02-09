@@ -152,7 +152,7 @@ func _integrate_forces(state):
 func _on_enter_screen():
 	get_node("anim").set_active(true)
 	set_mode(MODE_CHARACTER)
-	set_active(true)
+	set_sleeping(false)
 	
 func _on_exit_screen():
 	get_node("anim").set_active(false)

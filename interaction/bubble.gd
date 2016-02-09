@@ -47,7 +47,7 @@ func _on_timeout():
 func _on_enter_screen():
 	get_node("anim").set_active(true)
 	set_mode(MODE_CHARACTER)
-	set_active(true)
+	set_sleeping(true)
 
 func _on_exit_screen():
 	get_node("anim").set_active(false)

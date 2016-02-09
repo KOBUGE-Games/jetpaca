@@ -208,7 +208,7 @@ func _on_enter_screen():
 	disabled=false
 	current_anim=""
 #	get_node("smoke").set_emitting(true)
-	#set_active(true)
+	#set_sleeping(false)
 	get_node("anim").set_active(true)
 
 

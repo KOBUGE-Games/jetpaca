@@ -59,7 +59,7 @@ func _on_body_enter(body):
 		return
 	if (body extends preload("res://player/alpaca.gd")):	
 		get_node("platform").set_mode(RigidBody2D.MODE_RIGID)
-		get_node("platform").set_active(false) # suspend
+		get_node("platform").set_sleeping(false) # suspend
 		active=true
 		set_process(true)
 	
