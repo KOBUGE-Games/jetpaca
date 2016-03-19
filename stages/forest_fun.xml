@@ -4,9 +4,9 @@
 	<ext_resource path="res://interaction/spinning_log.tscn" type="PackedScene" index="5"></ext_resource>
 	<ext_resource path="res://interaction/locked_door.tscn" type="PackedScene" index="2"></ext_resource>
 	<ext_resource path="res://interaction/carry_plank.tscn" type="PackedScene" index="6"></ext_resource>
-	<ext_resource path="res://player/checkpoint.xml" type="PackedScene" index="7"></ext_resource>
+	<ext_resource path="res://player/checkpoint.tscn" type="PackedScene" index="7"></ext_resource>
 	<ext_resource path="res://art/tree_branch4.png" type="Texture" index="19"></ext_resource>
-	<ext_resource path="res://player/wise_alpaca.xml" type="PackedScene" index="9"></ext_resource>
+	<ext_resource path="res://player/wise_alpaca.tscn" type="PackedScene" index="9"></ext_resource>
 	<ext_resource path="res://art/plant1.png" type="Texture" index="26"></ext_resource>
 	<ext_resource path="res://interaction/roulette.tscn" type="PackedScene" index="10"></ext_resource>
 	<ext_resource path="res://enemies/frog.tscn" type="PackedScene" index="13"></ext_resource>
@@ -22,9 +22,9 @@
 	<ext_resource path="res://art/flower3.png" type="Texture" index="24"></ext_resource>
 	<ext_resource path="res://art/tree_bush3.png" type="Texture" index="17"></ext_resource>
 	<ext_resource path="res://enemies/sporadic_flower.tscn" type="PackedScene" index="15"></ext_resource>
-	<ext_resource path="res://tilesets/forest_parallax.xml" type="PackedScene" index="11"></ext_resource>
-	<ext_resource path="res://player/large_fruit.xml" type="PackedScene" index="8"></ext_resource>
-	<ext_resource path="res://player/fruit.xml" type="PackedScene" index="16"></ext_resource>
+	<ext_resource path="res://tilesets/forest_parallax.tscn" type="PackedScene" index="11"></ext_resource>
+	<ext_resource path="res://player/large_fruit.tscn" type="PackedScene" index="8"></ext_resource>
+	<ext_resource path="res://player/fruit.tscn" type="PackedScene" index="16"></ext_resource>
 	<ext_resource path="res://interaction/fire_holder.tscn" type="PackedScene" index="1"></ext_resource>
 	<ext_resource path="res://interaction/tree_bottom.tscn" type="PackedScene" index="4"></ext_resource>
 	<main_resource>

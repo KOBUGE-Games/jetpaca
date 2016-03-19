@@ -1,0 +1,100 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://art/tuteboard.png" type="Texture" id=1]
+[ext_resource path="res://art/tutepaca.png" type="Texture" id=2]
+[ext_resource path="res://art/button_left.png" type="Texture" id=3]
+[ext_resource path="res://art/button_right.png" type="Texture" id=4]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "tuto1"
+length = 2.3
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("alpaca:frame")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":false, "times":FloatArray( 0, 0.2, 0.4, 0.6, 1.2, 1.4, 1.6, 1.8 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 0, 1, 0, 1, 0, 1, 0, 1 ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("left:visibility/visible")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":false, "times":FloatArray( 0, 1.2, 2 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("right:visibility/visible")
+tracks/2/interp = 1
+tracks/2/keys = { "cont":false, "times":FloatArray( 0, 0.7 ), "transitions":FloatArray( 1, 1 ), "values":[ true, false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("alpaca:flip_h")
+tracks/3/interp = 1
+tracks/3/keys = { "cont":false, "times":FloatArray( 0, 1.2 ), "transitions":FloatArray( 1, 1 ), "values":[ false, true ] }
+
+[sub_resource type="Animation" id=2]
+
+resource/name = "tuto2"
+length = 3.5
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("alpaca:frame")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":false, "times":FloatArray( 0, 0.7, 0.9, 1.1, 1.3, 1.5, 1.7, 1.9, 2.1, 2.3, 2.5, 2.7 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 1, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 0 ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("right:visibility/visible")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":false, "times":FloatArray( 0, 0.7, 2.7 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("left:visibility/visible")
+tracks/2/interp = 1
+tracks/2/keys = { "cont":false, "times":FloatArray( 0, 0.7, 2.7 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("alpaca:transform/pos")
+tracks/3/interp = 1
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 0.7, 2.7, 3.5 ), "transitions":FloatArray( 1, 2.37841, 2.21914, 1 ), "values":[ Vector2( 0, 28.5271 ), Vector2( 0, 28.5271 ), Vector2( 0, -47.7664 ), Vector2( 0, 28.5271 ) ] }
+
+[node name="sprite" type="Sprite"]
+
+texture = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+
+[node name="alpaca" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, -39.8564 )
+texture = ExtResource( 2 )
+hframes = 6
+
+[node name="left" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( -100, 32.5077 )
+texture = ExtResource( 3 )
+hframes = 2
+
+[node name="right" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 102, 33.5077 )
+texture = ExtResource( 4 )
+hframes = 2
+
+[node name="anim" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/tuto1 = SubResource( 1 )
+anims/tuto2 = SubResource( 2 )
+playback/active = true
+playback/speed = 0.8
+blend_times = [  ]
+autoplay = "tuto2"
+
+[node name="enabler" type="VisibilityEnabler2D" parent="."]
+
+rect = Rect2( -10, -10, 20, 20 )
+enabler/pause_animations = true
+enabler/freeze_bodies = true
+enabler/pause_particles = true
+enabler/process_parent = false
+enabler/fixed_process_parent = false
+
+

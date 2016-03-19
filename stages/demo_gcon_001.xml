@@ -8,9 +8,9 @@
 	<ext_resource path="res://interaction/roulette.tscn" type="PackedScene" index="13"></ext_resource>
 	<ext_resource path="res://art/arbol.png" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://art/small_bush.png" type="Texture" index="3"></ext_resource>
-	<ext_resource path="res://player/large_fruit.xml" type="PackedScene" index="26"></ext_resource>
+	<ext_resource path="res://player/large_fruit.tscn" type="PackedScene" index="26"></ext_resource>
 	<ext_resource path="res://interaction/breakable_stone.tscn" type="PackedScene" index="16"></ext_resource>
-	<ext_resource path="res://player/checkpoint.xml" type="PackedScene" index="12"></ext_resource>
+	<ext_resource path="res://player/checkpoint.tscn" type="PackedScene" index="12"></ext_resource>
 	<ext_resource path="res://interaction/plank.tscn" type="PackedScene" index="18"></ext_resource>
 	<ext_resource path="res://art/arbol2.png" type="Texture" index="6"></ext_resource>
 	<ext_resource path="res://art/tree_bush5.png" type="Texture" index="34"></ext_resource>
@@ -33,8 +33,8 @@
 	<ext_resource path="res://interaction/locked_door.tscn" type="PackedScene" index="21"></ext_resource>
 	<ext_resource path="res://enemies/mountain_long_spikes.tscn" type="PackedScene" index="23"></ext_resource>
 	<ext_resource path="res://enemies/mountain_spikes.tscn" type="PackedScene" index="24"></ext_resource>
-	<ext_resource path="res://player/fruit.xml" type="PackedScene" index="25"></ext_resource>
-	<ext_resource path="res://tilesets/mountain_parallax.xml" type="PackedScene" index="27"></ext_resource>
+	<ext_resource path="res://player/fruit.tscn" type="PackedScene" index="25"></ext_resource>
+	<ext_resource path="res://tilesets/mountain_parallax.tscn" type="PackedScene" index="27"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>

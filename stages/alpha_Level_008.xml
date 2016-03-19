@@ -14,17 +14,17 @@
 	<ext_resource path="res://sound/spikes_appear.wav" type="Sample" index="15"></ext_resource>
 	<ext_resource path="res://art/cachos_sacra_pincho/sclera.png" type="Texture" index="5"></ext_resource>
 	<ext_resource path="res://art/cachos_sacra_pincho/parpados_superiores.png" type="Texture" index="9"></ext_resource>
-	<ext_resource path="res://player/large_fruit.xml" type="PackedScene" index="18"></ext_resource>
+	<ext_resource path="res://player/large_fruit.tscn" type="PackedScene" index="18"></ext_resource>
 	<ext_resource path="res://interaction/ghost_directed.tscn" type="PackedScene" index="3"></ext_resource>
 	<ext_resource path="res://enemies/fluff.tscn" type="PackedScene" index="4"></ext_resource>
-	<ext_resource path="res://player/checkpoint.xml" type="PackedScene" index="20"></ext_resource>
+	<ext_resource path="res://player/checkpoint.tscn" type="PackedScene" index="20"></ext_resource>
 	<ext_resource path="res://enemies/warrior.tscn" type="PackedScene" index="17"></ext_resource>
 	<ext_resource path="res://interaction/roulette.tscn" type="PackedScene" index="21"></ext_resource>
-	<ext_resource path="res://player/large_fruit_physic.xml" type="PackedScene" index="19"></ext_resource>
+	<ext_resource path="res://player/large_fruit_physic.tscn" type="PackedScene" index="19"></ext_resource>
 	<ext_resource path="res://interaction/spinning_log.tscn" type="PackedScene" index="22"></ext_resource>
 	<ext_resource path="res://interaction/ghost_push.tscn" type="PackedScene" index="2"></ext_resource>
 	<ext_resource path="res://interaction/jar3.tscn" type="PackedScene" index="23"></ext_resource>
-	<ext_resource path="res://player/fruit.xml" type="PackedScene" index="25"></ext_resource>
+	<ext_resource path="res://player/fruit.tscn" type="PackedScene" index="25"></ext_resource>
 	<ext_resource path="res://enemies/mountain_long_spikes.tscn" type="PackedScene" index="24"></ext_resource>
 	<resource type="ColorRamp" path="local://1">
 		<real_array name="offsets" len="4"> 			0, 0.2, 0.8, 1 </real_array>

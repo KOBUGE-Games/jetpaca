@@ -31,7 +31,7 @@ func restart():
 func _enter_tree():
 
 	get_tree().get_root().get_node("game_data").make_world_current(get_filename())
-	var charnode = preload("res://player/alpaca.xml").instance()
+	var charnode = preload("res://player/alpaca.tscn").instance()
 	get_node("launch").add_child(charnode)
 	var gd = get_tree().get_root().get_node("game_data")
 	gd.current_large_fruits=[false,false,false]

@@ -4,7 +4,7 @@
 	<ext_resource path="res://enemies/sacra_pinchorb.tscn" type="PackedScene" index="4"></ext_resource>
 	<ext_resource path="res://interaction/fountain.tscn" type="PackedScene" index="2"></ext_resource>
 	<ext_resource path="res://tilesets/temple_tilemap.xml" type="TileSet" index="1"></ext_resource>
-	<ext_resource path="res://tilesets/temple_parallax.xml" type="PackedScene" index="3"></ext_resource>
+	<ext_resource path="res://tilesets/temple_parallax.tscn" type="PackedScene" index="3"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>

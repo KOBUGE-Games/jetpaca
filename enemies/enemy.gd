@@ -47,7 +47,7 @@ func explode():
 		
 		var dropscene=null
 		if (drop==DROP_HEART):
-			dropscene = preload("res://player/heart.xml").instance()
+			dropscene = preload("res://player/heart.tscn").instance()
 		elif (drop==DROP_KEY1):
 			dropscene = preload("res://interaction/key.tscn").instance()
 			dropscene.key_index=0

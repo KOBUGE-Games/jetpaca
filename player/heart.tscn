@@ -1,0 +1,172 @@
+[gd_scene load_steps=8 format=1]
+
+[ext_resource path="res://player/heart.gd" type="Script" id=1]
+[ext_resource path="res://art/life_heart.png" type="Texture" id=2]
+[ext_resource path="res://art/miniparticle.png" type="Texture" id=3]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 0.480537, 27.6801, -22.5579, 1.86115, -18.5857, -18.794, 18.7524, -19.5884, 23.9162, -0.919357 )
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 34.0
+
+[sub_resource type="ColorRamp" id=3]
+
+offsets = FloatArray( 0, 1 )
+colors = ColorArray( 1, 0.40708, 0.256637, 1, 1, 1, 1, 0 )
+
+[sub_resource type="ColorRamp" id=4]
+
+offsets = FloatArray( 0, 1 )
+colors = ColorArray( 1, 0.920354, 0.893805, 1, 1, 1, 1, 0 )
+
+[node name="heart" type="RigidBody2D"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+script/script = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+
+[node name="sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+hframes = 2
+frame = 1
+
+[node name="cpoly" type="CollisionPolygon2D" parent="."]
+
+visibility/visible = false
+build_mode = 0
+polygon = Vector2Array( 0.480537, 27.6801, -22.5579, 1.86115, -18.5857, -18.794, 18.7524, -19.5884, 23.9162, -0.919357 )
+shape_range = Vector2( -1, -1 )
+trigger = false
+
+[node name="area" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+monitoring = false
+
+[node name="cshape" type="CollisionShape2D" parent="area"]
+
+visibility/visible = false
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = -1
+
+[node name="shine" type="Particles2D" parent="."]
+
+config/amount = 12
+config/lifetime = 0.5
+config/emitting = false
+config/half_extents = Vector2( 15, 15 )
+config/local_space = false
+config/texture = ExtResource( 3 )
+params/direction = 0.0
+params/spread = 180.0
+params/linear_velocity = 20.0
+params/spin_velocity = 3.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 34.9091
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.1
+params/final_size = 1.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spin_velocity = 1.0
+color/color_ramp = SubResource( 3 )
+
+[node name="sp2d" type="VisibilityNotifier2D" parent="."]
+
+rect = Rect2( -10, -10, 20, 20 )
+
+[node name="shine_end" type="Particles2D" parent="."]
+
+config/amount = 12
+config/lifetime = 0.5
+config/emit_timeout = 0.8
+config/emitting = false
+config/half_extents = Vector2( 20, 20 )
+config/local_space = false
+config/explosiveness = 0.1
+config/texture = ExtResource( 3 )
+params/direction = 0.0
+params/spread = 180.0
+params/linear_velocity = 20.0
+params/spin_velocity = 3.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 34.9091
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.5
+params/final_size = 2.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spin_velocity = 1.0
+color/color_ramp = SubResource( 4 )
+
+[node name="death" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 0.8
+one_shot = true
+autostart = false
+
+[node name="activate" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = true
+autostart = false
+
+[connection signal="body_enter" from="area" to="." method="_on_body_enter"]
+
+[connection signal="body_exit" from="area" to="." method="_on_body_exit"]
+
+[connection signal="enter_screen" from="sp2d" to="." method="_on_enter_screen"]
+
+[connection signal="exit_screen" from="sp2d" to="." method="_on_exit_screen"]
+
+[connection signal="timeout" from="death" to="." method="_on_timeout"]
+
+[connection signal="timeout" from="activate" to="." method="_on_activate"]
+
+

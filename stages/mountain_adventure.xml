@@ -2,15 +2,15 @@
 <resource_file type="PackedScene" subresource_count="15" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
 	<ext_resource path="res://enemies/heatseeker.tscn" type="PackedScene" index="8"></ext_resource>
 	<ext_resource path="res://stages/stage.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://player/large_fruit.xml" type="PackedScene" index="3"></ext_resource>
+	<ext_resource path="res://player/large_fruit.tscn" type="PackedScene" index="3"></ext_resource>
 	<ext_resource path="res://tilesets/mountain_tilemap.xml" type="TileSet" index="1"></ext_resource>
 	<ext_resource path="res://enemies/area_trigger.gd" type="Script" index="10"></ext_resource>
-	<ext_resource path="res://player/fruit.xml" type="PackedScene" index="2"></ext_resource>
-	<ext_resource path="res://player/goal.xml" type="PackedScene" index="5"></ext_resource>
+	<ext_resource path="res://player/fruit.tscn" type="PackedScene" index="2"></ext_resource>
+	<ext_resource path="res://player/goal.tscn" type="PackedScene" index="5"></ext_resource>
 	<ext_resource path="res://enemies/mountain_elevator.tscn" type="PackedScene" index="9"></ext_resource>
 	<ext_resource path="res://enemies/cannon.tscn" type="PackedScene" index="11"></ext_resource>
 	<ext_resource path="res://enemies/mountain_spikes.tscn" type="PackedScene" index="12"></ext_resource>
-	<ext_resource path="res://player/checkpoint.xml" type="PackedScene" index="4"></ext_resource>
+	<ext_resource path="res://player/checkpoint.tscn" type="PackedScene" index="4"></ext_resource>
 	<ext_resource path="res://enemies/fluff.tscn" type="PackedScene" index="6"></ext_resource>
 	<ext_resource path="res://enemies/floating_spike.tscn" type="PackedScene" index="7"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
