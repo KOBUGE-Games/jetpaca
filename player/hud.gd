@@ -23,7 +23,7 @@ func _on_pause_pressed():
 		
 func _on_back_pressed():
 	get_tree().set_pause(false)
-	get_tree().get_root().get_node("main").goto_scene("res://menu/stage_select.xml")
+	get_tree().get_root().get_node("main").goto_scene("res://menu/stage_select.tscn")
 
 
 func hint_show(text):

@@ -1,0 +1,100 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://enemies/spore.gd" type="Script" id=1]
+[ext_resource path="res://art/sporadic_flower_pieces/spike_pollen.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[sub_resource type="Animation" id=4]
+
+resource/name = "dissolve"
+length = 0.1
+loop = true
+step = 0.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite:visibility/opacity")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.05 ), "transitions":FloatArray( 0, 0 ), "values":[ 1.0, 0.8 ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("sprite:frame")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 3 ] }
+
+[sub_resource type="Animation" id=3]
+
+resource/name = "fall"
+length = 2.0
+loop = true
+step = 0.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite:transform/rot")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1, 2 ), "transitions":FloatArray( -2, -2, 0 ), "values":[ -8.7, 8.7, -8.7 ] }
+
+[sub_resource type="Animation" id=2]
+
+resource/name = "spike"
+length = 1.0
+loop = false
+step = 0.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite:frame")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.490335, 0.916529 ), "transitions":FloatArray( 0, 0, 0 ), "values":[ 0, 1, 2 ] }
+
+[node name="spore" type="RigidBody2D"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 2
+mass = 0.1
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = true
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+script/script = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+drop = 0
+
+[node name="sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, -13.7235 )
+texture = ExtResource( 2 )
+hframes = 4
+
+[node name="collision" type="CollisionShape2D" parent="."]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = -1
+
+[node name="anim" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/dissolve = SubResource( 4 )
+anims/fall = SubResource( 3 )
+anims/spike = SubResource( 2 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+

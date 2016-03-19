@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="25" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
-	<ext_resource path="res://interaction/key.xml" type="PackedScene" index="12"></ext_resource>
+	<ext_resource path="res://interaction/key.tscn" type="PackedScene" index="12"></ext_resource>
 	<ext_resource path="res://stages/stage.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://enemies/fluff.xml" type="PackedScene" index="2"></ext_resource>
+	<ext_resource path="res://enemies/fluff.tscn" type="PackedScene" index="2"></ext_resource>
 	<ext_resource path="res://tilesets/cave_tilemap.xml" type="TileSet" index="1"></ext_resource>
 	<ext_resource path="res://art/cave_crystal_1.png" type="Texture" index="19"></ext_resource>
 	<ext_resource path="res://player/large_fruit.xml" type="PackedScene" index="3"></ext_resource>
 	<ext_resource path="res://art/cave_crystals_2.png" type="Texture" index="18"></ext_resource>
 	<ext_resource path="res://art/cave_crystals_4.png" type="Texture" index="22"></ext_resource>
-	<ext_resource path="res://interaction/locked_door.xml" type="PackedScene" index="11"></ext_resource>
-	<ext_resource path="res://enemies/mountain_long_spikes.xml" type="PackedScene" index="8"></ext_resource>
+	<ext_resource path="res://interaction/locked_door.tscn" type="PackedScene" index="11"></ext_resource>
+	<ext_resource path="res://enemies/mountain_long_spikes.tscn" type="PackedScene" index="8"></ext_resource>
 	<ext_resource path="res://art/cave_crystals_6.png" type="Texture" index="23"></ext_resource>
-	<ext_resource path="res://enemies/rb_spike_big.xml" type="PackedScene" index="6"></ext_resource>
-	<ext_resource path="res://interaction/mountain_rock_big.xml" type="PackedScene" index="10"></ext_resource>
-	<ext_resource path="res://enemies/mountain_spikes.xml" type="PackedScene" index="9"></ext_resource>
+	<ext_resource path="res://enemies/rb_spike_big.tscn" type="PackedScene" index="6"></ext_resource>
+	<ext_resource path="res://interaction/mountain_rock_big.tscn" type="PackedScene" index="10"></ext_resource>
+	<ext_resource path="res://enemies/mountain_spikes.tscn" type="PackedScene" index="9"></ext_resource>
 	<ext_resource path="res://player/fruit.xml" type="PackedScene" index="4"></ext_resource>
 	<ext_resource path="res://art/cave_crystals_3.png" type="Texture" index="20"></ext_resource>
-	<ext_resource path="res://interaction/roulette.xml" type="PackedScene" index="16"></ext_resource>
+	<ext_resource path="res://interaction/roulette.tscn" type="PackedScene" index="16"></ext_resource>
 	<ext_resource path="res://tilesets/cave_parallax.xml" type="PackedScene" index="17"></ext_resource>
-	<ext_resource path="res://interaction/breakable_stone_tall.xml" type="PackedScene" index="7"></ext_resource>
+	<ext_resource path="res://interaction/breakable_stone_tall.tscn" type="PackedScene" index="7"></ext_resource>
 	<ext_resource path="res://player/large_fruit_physic.xml" type="PackedScene" index="5"></ext_resource>
 	<ext_resource path="res://art/cave_crystals_1.png" type="Texture" index="21"></ext_resource>
-	<ext_resource path="res://enemies/floating_spike.xml" type="PackedScene" index="13"></ext_resource>
-	<ext_resource path="res://interaction/breakable_stone.xml" type="PackedScene" index="14"></ext_resource>
+	<ext_resource path="res://enemies/floating_spike.tscn" type="PackedScene" index="13"></ext_resource>
+	<ext_resource path="res://interaction/breakable_stone.tscn" type="PackedScene" index="14"></ext_resource>
 	<ext_resource path="res://player/checkpoint.xml" type="PackedScene" index="15"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">

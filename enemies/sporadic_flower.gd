@@ -62,7 +62,7 @@ func _process(delta):
 		while(spit_timeout<0):
 			spit_timeout+=SPIT_INTERVAL
 			print("SPIT!!")
-			var s = preload("res://enemies/spore.xml")
+			var s = preload("res://enemies/spore.tscn")
 			var sp = s.instance()
 			sp.set_pos( get_node("shooter").get_global_pos() )
 			sp.connect("exit_scene",self,"_seed_died")

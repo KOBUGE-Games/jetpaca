@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="39" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
 	<ext_resource path="res://tilesets/test_tileset.xml" type="TileSet" index="33"></ext_resource>
-	<ext_resource path="res://interaction/key.xml" type="PackedScene" index="31"></ext_resource>
+	<ext_resource path="res://interaction/key.tscn" type="PackedScene" index="31"></ext_resource>
 	<ext_resource path="res://stages/stage.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://art/arbol.png" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://art/small_bush.png" type="Texture" index="36"></ext_resource>
@@ -20,24 +20,24 @@
 	<ext_resource path="res://art/tree_bush.png" type="Texture" index="6"></ext_resource>
 	<ext_resource path="res://art/tree_bush2.png" type="Texture" index="13"></ext_resource>
 	<ext_resource path="res://art/flower_bush2.png" type="Texture" index="5"></ext_resource>
-	<ext_resource path="res://interaction/jar3.xml" type="PackedScene" index="24"></ext_resource>
-	<ext_resource path="res://interaction/mountain_rock.xml" type="PackedScene" index="21"></ext_resource>
-	<ext_resource path="res://enemies/rb_spike.xml" type="PackedScene" index="25"></ext_resource>
-	<ext_resource path="res://enemies/floating_spike.xml" type="PackedScene" index="26"></ext_resource>
-	<ext_resource path="res://interaction/jar1.xml" type="PackedScene" index="22"></ext_resource>
+	<ext_resource path="res://interaction/jar3.tscn" type="PackedScene" index="24"></ext_resource>
+	<ext_resource path="res://interaction/mountain_rock.tscn" type="PackedScene" index="21"></ext_resource>
+	<ext_resource path="res://enemies/rb_spike.tscn" type="PackedScene" index="25"></ext_resource>
+	<ext_resource path="res://enemies/floating_spike.tscn" type="PackedScene" index="26"></ext_resource>
+	<ext_resource path="res://interaction/jar1.tscn" type="PackedScene" index="22"></ext_resource>
 	<ext_resource path="res://player/checkpoint.xml" type="PackedScene" index="14"></ext_resource>
 	<ext_resource path="res://player/large_fruit_physic.xml" type="PackedScene" index="19"></ext_resource>
-	<ext_resource path="res://interaction/breakable_stone_tall.xml" type="PackedScene" index="20"></ext_resource>
+	<ext_resource path="res://interaction/breakable_stone_tall.tscn" type="PackedScene" index="20"></ext_resource>
 	<ext_resource path="res://art/plant1.png" type="Texture" index="9"></ext_resource>
-	<ext_resource path="res://interaction/roulette.xml" type="PackedScene" index="15"></ext_resource>
-	<ext_resource path="res://enemies/mountain_spikes.xml" type="PackedScene" index="17"></ext_resource>
-	<ext_resource path="res://interaction/locked_door.xml" type="PackedScene" index="30"></ext_resource>
+	<ext_resource path="res://interaction/roulette.tscn" type="PackedScene" index="15"></ext_resource>
+	<ext_resource path="res://enemies/mountain_spikes.tscn" type="PackedScene" index="17"></ext_resource>
+	<ext_resource path="res://interaction/locked_door.tscn" type="PackedScene" index="30"></ext_resource>
 	<ext_resource path="res://tilesets/mountain_parallax.xml" type="PackedScene" index="37"></ext_resource>
-	<ext_resource path="res://enemies/mountain_long_spikes.xml" type="PackedScene" index="16"></ext_resource>
-	<ext_resource path="res://interaction/jar2.xml" type="PackedScene" index="23"></ext_resource>
-	<ext_resource path="res://enemies/fluff.xml" type="PackedScene" index="27"></ext_resource>
+	<ext_resource path="res://enemies/mountain_long_spikes.tscn" type="PackedScene" index="16"></ext_resource>
+	<ext_resource path="res://interaction/jar2.tscn" type="PackedScene" index="23"></ext_resource>
+	<ext_resource path="res://enemies/fluff.tscn" type="PackedScene" index="27"></ext_resource>
 	<ext_resource path="res://player/fruit.xml" type="PackedScene" index="29"></ext_resource>
-	<ext_resource path="res://enemies/warrior.xml" type="PackedScene" index="28"></ext_resource>
+	<ext_resource path="res://enemies/warrior.tscn" type="PackedScene" index="28"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>

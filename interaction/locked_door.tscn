@@ -1,0 +1,230 @@
+[gd_scene load_steps=14 format=1]
+
+[ext_resource path="res://interaction/locked_door.gd" type="Script" id=1]
+[ext_resource path="res://art/smoke.png" type="Texture" id=2]
+[ext_resource path="res://art/locked_door.png" type="Texture" id=3]
+[ext_resource path="res://sound/stonedoor.wav" type="Sample" id=4]
+[ext_resource path="res://sound/door_slam.wav" type="Sample" id=5]
+[ext_resource path="res://interaction/lock.tscn" type="PackedScene" id=6]
+
+[sub_resource type="ColorRamp" id=6]
+
+offsets = FloatArray( 0, 1 )
+colors = ColorArray( 0.654902, 0.628319, 0.646018, 1, 0.309804, 0.230089, 0.247788, 0 )
+
+[sub_resource type="ColorRamp" id=7]
+
+offsets = FloatArray( 0, 1 )
+colors = ColorArray( 0.654902, 0.628319, 0.646018, 1, 0.309804, 0.230089, 0.247788, 0 )
+
+[sub_resource type="ConcavePolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+segments = Vector2Array( -8.17093, -62.7563, -7.63057, 44.235, -7.63057, 44.235, 11.8224, 63.688, 11.8224, 63.688, 12.9031, -62.7563, 12.9031, -62.7563, -8.17093, -62.7563 )
+
+[sub_resource type="ConcavePolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+segments = Vector2Array( 8.57231, -62.8426, -8.71921, -48.2528, -8.71921, -48.2528, -7.09813, 64.1421, -7.09813, 64.1421, 13.4356, 63.6017, 13.4356, 63.6017, 8.57231, -62.8426 )
+
+[sub_resource type="Animation" id=3]
+
+resource/name = "open"
+length = 2.0
+loop = false
+step = 0.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("up:transform/pos")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 2 ), "transitions":FloatArray( -2, 1 ), "values":[ Vector2( -1.629, -68.4185 ), Vector2( 0, -144.982 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("down/CollisionPolygon2D:transform/pos")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( 0, 0 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("lock:visibility/opacity")
+tracks/2/interp = 1
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 2 ), "transitions":FloatArray( 1, 1 ), "values":[ 1.0, 0.0 ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("down:transform/pos")
+tracks/3/interp = 1
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 2 ), "transitions":FloatArray( -2, 1 ), "values":[ Vector2( 0, 54.7333 ), Vector2( 0, 126.755 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("smoke:config/emitting")
+tracks/4/interp = 1
+tracks/4/keys = { "cont":false, "times":FloatArray( 0, 2 ), "transitions":FloatArray( 1, 1 ), "values":[ true, false ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("smoke 2:config/emitting")
+tracks/5/interp = 1
+tracks/5/keys = { "cont":false, "times":FloatArray( 0, 2 ), "transitions":FloatArray( 1, 1 ), "values":[ true, false ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("SamplePlayer2D:play/play")
+tracks/6/interp = 1
+tracks/6/keys = { "cont":false, "times":FloatArray( 0, 1.74 ), "transitions":FloatArray( 1, 1 ), "values":[ "door_open", "door_slam" ] }
+
+[sub_resource type="SampleLibrary" id=4]
+
+samples/door_open = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
+samples/door_slam = { "db":0.0, "pitch":1.0, "sample":ExtResource( 5 ) }
+
+[sub_resource type="CircleShape2D" id=5]
+
+custom_solver_bias = 0.0
+radius = 128.0
+
+[node name="door" type="Node2D"]
+
+script/script = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+key_idx = 0
+no_key = false
+
+[node name="smoke" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0.735107, -125.701 )
+config/amount = 32
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 2 )
+params/direction = 0.0
+params/spread = 180.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.0
+params/final_size = 1.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+color/color_ramp = SubResource( 6 )
+
+[node name="smoke 2" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 2.20529, 112.469 )
+config/amount = 32
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 2 )
+params/direction = 0.0
+params/spread = 180.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.0
+params/final_size = 1.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+color/color_ramp = SubResource( 7 )
+
+[node name="up" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( -1.629, -68.4185 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="up"]
+
+texture = ExtResource( 3 )
+flip_h = true
+flip_v = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="up"]
+
+build_mode = 0
+polygon = Vector2Array( -8.17093, -62.7563, -7.63057, 44.235, 11.8224, 63.688, 12.9031, -62.7563 )
+shape_range = Vector2( -1, -1 )
+trigger = false
+
+[node name="down" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( 0, 54.7333 )
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="down"]
+
+texture = ExtResource( 3 )
+flip_h = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="down"]
+
+build_mode = 0
+polygon = Vector2Array( 8.57231, -62.8426, -8.71921, -48.2528, -7.09813, 64.1421, 13.4356, 63.6017 )
+shape_range = Vector2( -1, -1 )
+trigger = false
+
+[node name="anim" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/open = SubResource( 3 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="SamplePlayer2D" type="SamplePlayer2D" parent="."]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 4 )
+config/pitch_random = 0.0
+
+[node name="area" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 5 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="area"]
+
+shape = SubResource( 5 )
+trigger = false
+_update_shape_index = -1
+
+[node name="lock" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 1.32684, -17.2489 )
+
+[connection signal="body_enter" from="area" to="." method="_on_body_enter"]
+
+

@@ -1,0 +1,1404 @@
+[gd_scene load_steps=21 format=1]
+
+[ext_resource path="res://art/cachos_mage/chest bg.png" type="Texture" id=1]
+[ext_resource path="res://art/cachos_mage/cape_segment_l1.png" type="Texture" id=2]
+[ext_resource path="res://art/cachos_mage/aros.png" type="Texture" id=3]
+[ext_resource path="res://art/cachos_mage/sclera.png" type="Texture" id=4]
+[ext_resource path="res://art/cachos_mage/eyes.png" type="Texture" id=5]
+[ext_resource path="res://art/cachos_mage/face.png" type="Texture" id=6]
+[ext_resource path="res://art/cachos_mage/hat.png" type="Texture" id=7]
+[ext_resource path="res://art/cachos_mage/feather.png" type="Texture" id=8]
+[ext_resource path="res://art/cachos_mage/eyebrows.png" type="Texture" id=9]
+[ext_resource path="res://art/cachos_mage/mouth.png" type="Texture" id=10]
+[ext_resource path="res://art/cachos_mage/skull.png" type="Texture" id=11]
+[ext_resource path="res://art/cachos_mage/cape_segment_r1.png" type="Texture" id=12]
+[ext_resource path="res://art/cachos_mage/stick.png" type="Texture" id=13]
+[ext_resource path="res://art/cachos_mage/arms.png" type="Texture" id=14]
+[ext_resource path="res://art/cachos_mage/hands.png" type="Texture" id=15]
+[ext_resource path="res://art/cachos_mage/staff.png" type="Texture" id=16]
+[ext_resource path="res://art/cachos_mage/darkflame.png" type="Texture" id=17]
+
+[sub_resource type="Animation" id=2]
+
+resource/name = "Idle"
+length = 2.5
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:transform/rot")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2:transform/rot")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3:transform/rot")
+tracks/2/interp = 1
+tracks/2/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4:transform/rot")
+tracks/3/interp = 1
+tracks/3/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5:transform/rot")
+tracks/4/interp = 1
+tracks/4/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:transform/rot")
+tracks/5/interp = 1
+tracks/5/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("Node2D/chest/R-Cape Inner:transform/rot")
+tracks/6/interp = 1
+tracks/6/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2:transform/rot")
+tracks/7/interp = 1
+tracks/7/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3:transform/rot")
+tracks/8/interp = 1
+tracks/8/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4:transform/rot")
+tracks/9/interp = 1
+tracks/9/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5:transform/rot")
+tracks/10/interp = 1
+tracks/10/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:transform/rot")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("Node2D/chest/Head/sclera:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("Node2D/chest/Head/sclera/eyetracker/eyes:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("Node2D/chest/Head/face:transform/rot")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("Node2D/chest/Head/face/hat:transform/rot")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("Node2D/chest/Head/face/feather-r:transform/rot")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/17/type = "value"
+tracks/17/path = NodePath("Node2D/chest/Head/face/feather-l:transform/rot")
+tracks/17/interp = 1
+tracks/17/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/18/type = "value"
+tracks/18/path = NodePath("Node2D/chest/Head/face/earring-R:transform/rot")
+tracks/18/interp = 1
+tracks/18/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/19/type = "value"
+tracks/19/path = NodePath("Node2D/chest/Head/face/eyebrows:transform/rot")
+tracks/19/interp = 1
+tracks/19/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/20/type = "value"
+tracks/20/path = NodePath("Node2D/chest/Head/face/mouth:transform/rot")
+tracks/20/interp = 1
+tracks/20/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/21/type = "value"
+tracks/21/path = NodePath("Node2D/chest/Head/face/mouth/skull:transform/rot")
+tracks/21/interp = 1
+tracks/21/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/22/type = "value"
+tracks/22/path = NodePath(".:transform/rot")
+tracks/22/interp = 1
+tracks/22/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/23/type = "value"
+tracks/23/path = NodePath("Node2D/chest:transform/rot")
+tracks/23/interp = 1
+tracks/23/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/24/type = "value"
+tracks/24/path = NodePath("Node2D:transform/rot")
+tracks/24/interp = 1
+tracks/24/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/25/type = "value"
+tracks/25/path = NodePath("Node2D/chest/Head:transform/rot")
+tracks/25/interp = 1
+tracks/25/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/26/type = "value"
+tracks/26/path = NodePath("Node2D/chest/Head/sclera/eyetracker:transform/rot")
+tracks/26/interp = 1
+tracks/26/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/27/type = "value"
+tracks/27/path = NodePath("Node2D/chest/Head/face/earring-L:transform/rot")
+tracks/27/interp = 1
+tracks/27/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/28/type = "value"
+tracks/28/path = NodePath("Node2D/chest/L-Cape Outer:transform/rot")
+tracks/28/interp = 1
+tracks/28/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/29/type = "value"
+tracks/29/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2:transform/rot")
+tracks/29/interp = 1
+tracks/29/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/30/type = "value"
+tracks/30/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3:transform/rot")
+tracks/30/interp = 1
+tracks/30/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/31/type = "value"
+tracks/31/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4:transform/rot")
+tracks/31/interp = 1
+tracks/31/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/32/type = "value"
+tracks/32/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5:transform/rot")
+tracks/32/interp = 1
+tracks/32/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/33/type = "value"
+tracks/33/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:transform/rot")
+tracks/33/interp = 1
+tracks/33/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/34/type = "value"
+tracks/34/path = NodePath("Node2D/chest/L-Cape Inner 2:transform/rot")
+tracks/34/interp = 1
+tracks/34/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/35/type = "value"
+tracks/35/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2:transform/rot")
+tracks/35/interp = 1
+tracks/35/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/36/type = "value"
+tracks/36/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3:transform/rot")
+tracks/36/interp = 1
+tracks/36/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/37/type = "value"
+tracks/37/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4:transform/rot")
+tracks/37/interp = 1
+tracks/37/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/38/type = "value"
+tracks/38/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5:transform/rot")
+tracks/38/interp = 1
+tracks/38/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/39/type = "value"
+tracks/39/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:transform/rot")
+tracks/39/interp = 1
+tracks/39/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/40/type = "value"
+tracks/40/path = NodePath("Node2D/chest/arm_bg:transform/rot")
+tracks/40/interp = 1
+tracks/40/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -90.0 ] }
+tracks/41/type = "value"
+tracks/41/path = NodePath("Node2D/chest/arm_bg/forearm_bg:transform/rot")
+tracks/41/interp = 1
+tracks/41/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/42/type = "value"
+tracks/42/path = NodePath("Node2D/chest/arm_bg/forearm_bg/hand:transform/rot")
+tracks/42/interp = 1
+tracks/42/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 90.0 ] }
+tracks/43/type = "value"
+tracks/43/path = NodePath("Node2D/chest/arm_bg/forearm_bg/hand/staff:transform/rot")
+tracks/43/interp = 1
+tracks/43/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/44/type = "value"
+tracks/44/path = NodePath("Node2D/chest/arm_bg/forearm_bg/hand/staff/dangling_stuff:transform/rot")
+tracks/44/interp = 1
+tracks/44/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/45/type = "value"
+tracks/45/path = NodePath("Node2D/chest/arm_bg/forearm_bg/hand/staff/dangling_stuff 2:transform/rot")
+tracks/45/interp = 1
+tracks/45/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/46/type = "value"
+tracks/46/path = NodePath("Node2D/chest/arm_fg:transform/rot")
+tracks/46/interp = 1
+tracks/46/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 90.0 ] }
+tracks/47/type = "value"
+tracks/47/path = NodePath("Node2D/chest/arm_fg/forearm_fg:transform/rot")
+tracks/47/interp = 1
+tracks/47/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/48/type = "value"
+tracks/48/path = NodePath("Node2D/chest/arm_fg/forearm_fg/hand:transform/rot")
+tracks/48/interp = 1
+tracks/48/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -90.0 ] }
+tracks/49/type = "value"
+tracks/49/path = NodePath("Node2D/chest/arm_fg/forearm_fg/hand/darkflame:transform/rot")
+tracks/49/interp = 1
+tracks/49/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/50/type = "value"
+tracks/50/path = NodePath("Node2D:transform/pos")
+tracks/50/interp = 1
+tracks/50/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( 0, 0 ) ] }
+tracks/51/type = "value"
+tracks/51/path = NodePath("Node2D/chest/Head:transform/pos")
+tracks/51/interp = 1
+tracks/51/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( 0.441632, -62.5579 ) ] }
+tracks/52/type = "value"
+tracks/52/path = NodePath("Node2D/chest/R-Cape Outer:frame")
+tracks/52/interp = 1
+tracks/52/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/53/type = "value"
+tracks/53/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2:frame")
+tracks/53/interp = 1
+tracks/53/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/54/type = "value"
+tracks/54/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3:frame")
+tracks/54/interp = 1
+tracks/54/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/55/type = "value"
+tracks/55/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4:frame")
+tracks/55/interp = 1
+tracks/55/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/56/type = "value"
+tracks/56/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5:frame")
+tracks/56/interp = 1
+tracks/56/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/57/type = "value"
+tracks/57/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:frame")
+tracks/57/interp = 1
+tracks/57/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/58/type = "value"
+tracks/58/path = NodePath("Node2D/chest/R-Cape Outer:modulate")
+tracks/58/interp = 1
+tracks/58/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/59/type = "value"
+tracks/59/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2:modulate")
+tracks/59/interp = 1
+tracks/59/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/60/type = "value"
+tracks/60/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3:modulate")
+tracks/60/interp = 1
+tracks/60/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/61/type = "value"
+tracks/61/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4:modulate")
+tracks/61/interp = 1
+tracks/61/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/62/type = "value"
+tracks/62/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5:modulate")
+tracks/62/interp = 1
+tracks/62/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/63/type = "value"
+tracks/63/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:modulate")
+tracks/63/interp = 1
+tracks/63/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/64/type = "value"
+tracks/64/path = NodePath("Node2D/chest/R-Cape Inner:frame")
+tracks/64/interp = 1
+tracks/64/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/65/type = "value"
+tracks/65/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2:frame")
+tracks/65/interp = 1
+tracks/65/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/66/type = "value"
+tracks/66/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3:frame")
+tracks/66/interp = 1
+tracks/66/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/67/type = "value"
+tracks/67/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4:frame")
+tracks/67/interp = 1
+tracks/67/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/68/type = "value"
+tracks/68/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5:frame")
+tracks/68/interp = 1
+tracks/68/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/69/type = "value"
+tracks/69/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:frame")
+tracks/69/interp = 1
+tracks/69/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/70/type = "value"
+tracks/70/path = NodePath("Node2D/chest/R-Cape Inner:modulate")
+tracks/70/interp = 1
+tracks/70/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/71/type = "value"
+tracks/71/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2:modulate")
+tracks/71/interp = 1
+tracks/71/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/72/type = "value"
+tracks/72/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3:modulate")
+tracks/72/interp = 1
+tracks/72/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/73/type = "value"
+tracks/73/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4:modulate")
+tracks/73/interp = 1
+tracks/73/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/74/type = "value"
+tracks/74/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5:modulate")
+tracks/74/interp = 1
+tracks/74/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/75/type = "value"
+tracks/75/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:modulate")
+tracks/75/interp = 1
+tracks/75/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/76/type = "value"
+tracks/76/path = NodePath("Node2D/chest/L-Cape Inner 2:frame")
+tracks/76/interp = 1
+tracks/76/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/77/type = "value"
+tracks/77/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2:frame")
+tracks/77/interp = 1
+tracks/77/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/78/type = "value"
+tracks/78/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3:frame")
+tracks/78/interp = 1
+tracks/78/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/79/type = "value"
+tracks/79/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4:frame")
+tracks/79/interp = 1
+tracks/79/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/80/type = "value"
+tracks/80/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5:frame")
+tracks/80/interp = 1
+tracks/80/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/81/type = "value"
+tracks/81/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:frame")
+tracks/81/interp = 1
+tracks/81/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/82/type = "value"
+tracks/82/path = NodePath("Node2D/chest/L-Cape Inner 2:modulate")
+tracks/82/interp = 1
+tracks/82/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/83/type = "value"
+tracks/83/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2:modulate")
+tracks/83/interp = 1
+tracks/83/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/84/type = "value"
+tracks/84/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3:modulate")
+tracks/84/interp = 1
+tracks/84/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/85/type = "value"
+tracks/85/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4:modulate")
+tracks/85/interp = 1
+tracks/85/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/86/type = "value"
+tracks/86/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5:modulate")
+tracks/86/interp = 1
+tracks/86/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/87/type = "value"
+tracks/87/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:modulate")
+tracks/87/interp = 1
+tracks/87/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/88/type = "value"
+tracks/88/path = NodePath("Node2D/chest/L-Cape Outer:frame")
+tracks/88/interp = 1
+tracks/88/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/89/type = "value"
+tracks/89/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2:frame")
+tracks/89/interp = 1
+tracks/89/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/90/type = "value"
+tracks/90/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3:frame")
+tracks/90/interp = 1
+tracks/90/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/91/type = "value"
+tracks/91/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4:frame")
+tracks/91/interp = 1
+tracks/91/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/92/type = "value"
+tracks/92/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5:frame")
+tracks/92/interp = 1
+tracks/92/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/93/type = "value"
+tracks/93/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:frame")
+tracks/93/interp = 1
+tracks/93/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
+tracks/94/type = "value"
+tracks/94/path = NodePath("Node2D/chest/L-Cape Outer:modulate")
+tracks/94/interp = 1
+tracks/94/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/95/type = "value"
+tracks/95/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2:modulate")
+tracks/95/interp = 1
+tracks/95/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/96/type = "value"
+tracks/96/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3:modulate")
+tracks/96/interp = 1
+tracks/96/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/97/type = "value"
+tracks/97/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4:modulate")
+tracks/97/interp = 1
+tracks/97/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/98/type = "value"
+tracks/98/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5:modulate")
+tracks/98/interp = 1
+tracks/98/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/99/type = "value"
+tracks/99/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:modulate")
+tracks/99/interp = 1
+tracks/99/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
+
+[sub_resource type="Animation" id=3]
+
+resource/name = "casterpose"
+length = 1.0
+loop = false
+step = 0.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:transform/rot")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 32.8679 ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2:transform/rot")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -32.7775 ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3:transform/rot")
+tracks/2/interp = 1
+tracks/2/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -32.6317 ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4:transform/rot")
+tracks/3/interp = 1
+tracks/3/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 30.5508 ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5:transform/rot")
+tracks/4/interp = 1
+tracks/4/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 23.9748 ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:transform/rot")
+tracks/5/interp = 1
+tracks/5/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 18.6759 ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("Node2D/chest/R-Cape Inner:transform/rot")
+tracks/6/interp = 1
+tracks/6/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 19.3438 ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2:transform/rot")
+tracks/7/interp = 1
+tracks/7/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -20.2125 ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3:transform/rot")
+tracks/8/interp = 1
+tracks/8/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -25.8274 ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4:transform/rot")
+tracks/9/interp = 1
+tracks/9/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 23.5692 ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5:transform/rot")
+tracks/10/interp = 1
+tracks/10/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 13.7464 ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:transform/rot")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 13.3953 ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("Node2D/chest/Head/sclera:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("Node2D/chest/Head/sclera/eyetracker/eyes:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("Node2D/chest/Head/face:transform/rot")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("Node2D/chest/Head/face/hat:transform/rot")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("Node2D/chest/Head/face/feather-r:transform/rot")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 5.02628 ] }
+tracks/17/type = "value"
+tracks/17/path = NodePath("Node2D/chest/Head/face/feather-l:transform/rot")
+tracks/17/interp = 1
+tracks/17/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 5.27716 ] }
+tracks/18/type = "value"
+tracks/18/path = NodePath("Node2D/chest/Head/face/earring-R:transform/rot")
+tracks/18/interp = 1
+tracks/18/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 13.4671 ] }
+tracks/19/type = "value"
+tracks/19/path = NodePath("Node2D/chest/Head/face/eyebrows:transform/rot")
+tracks/19/interp = 1
+tracks/19/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 7.72776 ] }
+tracks/20/type = "value"
+tracks/20/path = NodePath("Node2D/chest/Head/face/mouth:transform/rot")
+tracks/20/interp = 1
+tracks/20/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 8.1769 ] }
+tracks/21/type = "value"
+tracks/21/path = NodePath("Node2D/chest/Head/face/mouth/skull:transform/rot")
+tracks/21/interp = 1
+tracks/21/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -6.38512 ] }
+tracks/22/type = "value"
+tracks/22/path = NodePath(".:transform/rot")
+tracks/22/interp = 1
+tracks/22/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/23/type = "value"
+tracks/23/path = NodePath("Node2D/chest:transform/rot")
+tracks/23/interp = 1
+tracks/23/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 6.87368 ] }
+tracks/24/type = "value"
+tracks/24/path = NodePath("Node2D:transform/rot")
+tracks/24/interp = 1
+tracks/24/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/25/type = "value"
+tracks/25/path = NodePath("Node2D/chest/Head:transform/rot")
+tracks/25/interp = 1
+tracks/25/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -11.667 ] }
+tracks/26/type = "value"
+tracks/26/path = NodePath("Node2D/chest/Head/sclera/eyetracker:transform/rot")
+tracks/26/interp = 1
+tracks/26/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/27/type = "value"
+tracks/27/path = NodePath("Node2D/chest/Head/face/earring-L:transform/rot")
+tracks/27/interp = 1
+tracks/27/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 37.7592 ] }
+tracks/28/type = "value"
+tracks/28/path = NodePath("Node2D/chest/L-Cape Outer:transform/rot")
+tracks/28/interp = 1
+tracks/28/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -29.9994 ] }
+tracks/29/type = "value"
+tracks/29/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2:transform/rot")
+tracks/29/interp = 1
+tracks/29/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 22.3752 ] }
+tracks/30/type = "value"
+tracks/30/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3:transform/rot")
+tracks/30/interp = 1
+tracks/30/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 28.7889 ] }
+tracks/31/type = "value"
+tracks/31/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4:transform/rot")
+tracks/31/interp = 1
+tracks/31/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -6.98054 ] }
+tracks/32/type = "value"
+tracks/32/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5:transform/rot")
+tracks/32/interp = 1
+tracks/32/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -34.3598 ] }
+tracks/33/type = "value"
+tracks/33/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:transform/rot")
+tracks/33/interp = 1
+tracks/33/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -26.027 ] }
+tracks/34/type = "value"
+tracks/34/path = NodePath("Node2D/chest/L-Cape Inner 2:transform/rot")
+tracks/34/interp = 1
+tracks/34/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -13.9696 ] }
+tracks/35/type = "value"
+tracks/35/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2:transform/rot")
+tracks/35/interp = 1
+tracks/35/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 16.276 ] }
+tracks/36/type = "value"
+tracks/36/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3:transform/rot")
+tracks/36/interp = 1
+tracks/36/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 17.9694 ] }
+tracks/37/type = "value"
+tracks/37/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4:transform/rot")
+tracks/37/interp = 1
+tracks/37/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -17.8011 ] }
+tracks/38/type = "value"
+tracks/38/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5:transform/rot")
+tracks/38/interp = 1
+tracks/38/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -17.48 ] }
+tracks/39/type = "value"
+tracks/39/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:transform/rot")
+tracks/39/interp = 1
+tracks/39/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -3.16676 ] }
+tracks/40/type = "value"
+tracks/40/path = NodePath("Node2D/chest/arm_bg:transform/rot")
+tracks/40/interp = 1
+tracks/40/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -65.1586 ] }
+tracks/41/type = "value"
+tracks/41/path = NodePath("Node2D/chest/arm_bg/forearm_bg:transform/rot")
+tracks/41/interp = 1
+tracks/41/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -67.6978 ] }
+tracks/42/type = "value"
+tracks/42/path = NodePath("Node2D/chest/arm_bg/forearm_bg/hand:transform/rot")
+tracks/42/interp = 1
+tracks/42/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 39.0008 ] }
+tracks/43/type = "value"
+tracks/43/path = NodePath("Node2D/chest/arm_bg/forearm_bg/hand/staff:transform/rot")
+tracks/43/interp = 1
+tracks/43/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 59.0589 ] }
+tracks/44/type = "value"
+tracks/44/path = NodePath("Node2D/chest/arm_bg/forearm_bg/hand/staff/dangling_stuff:transform/rot")
+tracks/44/interp = 1
+tracks/44/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 25.434 ] }
+tracks/45/type = "value"
+tracks/45/path = NodePath("Node2D/chest/arm_bg/forearm_bg/hand/staff/dangling_stuff 2:transform/rot")
+tracks/45/interp = 1
+tracks/45/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 20.7006 ] }
+tracks/46/type = "value"
+tracks/46/path = NodePath("Node2D/chest/arm_fg:transform/rot")
+tracks/46/interp = 1
+tracks/46/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 27.9162 ] }
+tracks/47/type = "value"
+tracks/47/path = NodePath("Node2D/chest/arm_fg/forearm_fg:transform/rot")
+tracks/47/interp = 1
+tracks/47/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 49.7694 ] }
+tracks/48/type = "value"
+tracks/48/path = NodePath("Node2D/chest/arm_fg/forearm_fg/hand:transform/rot")
+tracks/48/interp = 1
+tracks/48/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 291.807 ] }
+tracks/49/type = "value"
+tracks/49/path = NodePath("Node2D/chest/arm_fg/forearm_fg/hand/darkflame:transform/rot")
+tracks/49/interp = 1
+tracks/49/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -18.8761 ] }
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "default_pose"
+length = 2.5
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:transform/rot")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2:transform/rot")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3:transform/rot")
+tracks/2/interp = 1
+tracks/2/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4:transform/rot")
+tracks/3/interp = 1
+tracks/3/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5:transform/rot")
+tracks/4/interp = 1
+tracks/4/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:transform/rot")
+tracks/5/interp = 1
+tracks/5/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("Node2D/chest/R-Cape Inner:transform/rot")
+tracks/6/interp = 1
+tracks/6/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2:transform/rot")
+tracks/7/interp = 1
+tracks/7/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3:transform/rot")
+tracks/8/interp = 1
+tracks/8/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4:transform/rot")
+tracks/9/interp = 1
+tracks/9/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5:transform/rot")
+tracks/10/interp = 1
+tracks/10/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:transform/rot")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("Node2D/chest/Head/sclera:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("Node2D/chest/Head/sclera/eyetracker/eyes:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("Node2D/chest/Head/face:transform/rot")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("Node2D/chest/Head/face/hat:transform/rot")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("Node2D/chest/Head/face/feather-r:transform/rot")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/17/type = "value"
+tracks/17/path = NodePath("Node2D/chest/Head/face/feather-l:transform/rot")
+tracks/17/interp = 1
+tracks/17/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/18/type = "value"
+tracks/18/path = NodePath("Node2D/chest/Head/face/earring-R:transform/rot")
+tracks/18/interp = 1
+tracks/18/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/19/type = "value"
+tracks/19/path = NodePath("Node2D/chest/Head/face/eyebrows:transform/rot")
+tracks/19/interp = 1
+tracks/19/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/20/type = "value"
+tracks/20/path = NodePath("Node2D/chest/Head/face/mouth:transform/rot")
+tracks/20/interp = 1
+tracks/20/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/21/type = "value"
+tracks/21/path = NodePath("Node2D/chest/Head/face/mouth/skull:transform/rot")
+tracks/21/interp = 1
+tracks/21/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/22/type = "value"
+tracks/22/path = NodePath(".:transform/rot")
+tracks/22/interp = 1
+tracks/22/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/23/type = "value"
+tracks/23/path = NodePath("Node2D/chest:transform/rot")
+tracks/23/interp = 1
+tracks/23/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/24/type = "value"
+tracks/24/path = NodePath("Node2D:transform/rot")
+tracks/24/interp = 1
+tracks/24/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/25/type = "value"
+tracks/25/path = NodePath("Node2D/chest/Head:transform/rot")
+tracks/25/interp = 1
+tracks/25/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/26/type = "value"
+tracks/26/path = NodePath("Node2D/chest/Head/sclera/eyetracker:transform/rot")
+tracks/26/interp = 1
+tracks/26/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/27/type = "value"
+tracks/27/path = NodePath("Node2D/chest/Head/face/earring-L:transform/rot")
+tracks/27/interp = 1
+tracks/27/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/28/type = "value"
+tracks/28/path = NodePath("Node2D/chest/L-Cape Outer:transform/rot")
+tracks/28/interp = 1
+tracks/28/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/29/type = "value"
+tracks/29/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2:transform/rot")
+tracks/29/interp = 1
+tracks/29/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/30/type = "value"
+tracks/30/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3:transform/rot")
+tracks/30/interp = 1
+tracks/30/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/31/type = "value"
+tracks/31/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4:transform/rot")
+tracks/31/interp = 1
+tracks/31/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/32/type = "value"
+tracks/32/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5:transform/rot")
+tracks/32/interp = 1
+tracks/32/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/33/type = "value"
+tracks/33/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:transform/rot")
+tracks/33/interp = 1
+tracks/33/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/34/type = "value"
+tracks/34/path = NodePath("Node2D/chest/L-Cape Inner 2:transform/rot")
+tracks/34/interp = 1
+tracks/34/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/35/type = "value"
+tracks/35/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2:transform/rot")
+tracks/35/interp = 1
+tracks/35/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/36/type = "value"
+tracks/36/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3:transform/rot")
+tracks/36/interp = 1
+tracks/36/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/37/type = "value"
+tracks/37/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4:transform/rot")
+tracks/37/interp = 1
+tracks/37/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/38/type = "value"
+tracks/38/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5:transform/rot")
+tracks/38/interp = 1
+tracks/38/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/39/type = "value"
+tracks/39/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:transform/rot")
+tracks/39/interp = 1
+tracks/39/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/40/type = "value"
+tracks/40/path = NodePath("Node2D/chest/arm_bg:transform/rot")
+tracks/40/interp = 1
+tracks/40/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -90.0 ] }
+tracks/41/type = "value"
+tracks/41/path = NodePath("Node2D/chest/arm_bg/forearm_bg:transform/rot")
+tracks/41/interp = 1
+tracks/41/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/42/type = "value"
+tracks/42/path = NodePath("Node2D/chest/arm_bg/forearm_bg/hand:transform/rot")
+tracks/42/interp = 1
+tracks/42/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 90.0 ] }
+tracks/43/type = "value"
+tracks/43/path = NodePath("Node2D/chest/arm_bg/forearm_bg/hand/staff:transform/rot")
+tracks/43/interp = 1
+tracks/43/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/44/type = "value"
+tracks/44/path = NodePath("Node2D/chest/arm_bg/forearm_bg/hand/staff/dangling_stuff:transform/rot")
+tracks/44/interp = 1
+tracks/44/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/45/type = "value"
+tracks/45/path = NodePath("Node2D/chest/arm_bg/forearm_bg/hand/staff/dangling_stuff 2:transform/rot")
+tracks/45/interp = 1
+tracks/45/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/46/type = "value"
+tracks/46/path = NodePath("Node2D/chest/arm_fg:transform/rot")
+tracks/46/interp = 1
+tracks/46/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 90.0 ] }
+tracks/47/type = "value"
+tracks/47/path = NodePath("Node2D/chest/arm_fg/forearm_fg:transform/rot")
+tracks/47/interp = 1
+tracks/47/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/48/type = "value"
+tracks/48/path = NodePath("Node2D/chest/arm_fg/forearm_fg/hand:transform/rot")
+tracks/48/interp = 1
+tracks/48/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -90.0 ] }
+tracks/49/type = "value"
+tracks/49/path = NodePath("Node2D/chest/arm_fg/forearm_fg/hand/darkflame:transform/rot")
+tracks/49/interp = 1
+tracks/49/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/50/type = "value"
+tracks/50/path = NodePath("Node2D:transform/pos")
+tracks/50/interp = 1
+tracks/50/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( 0, 0 ) ] }
+tracks/51/type = "value"
+tracks/51/path = NodePath("Node2D/chest/Head:transform/pos")
+tracks/51/interp = 1
+tracks/51/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( 0.441632, -62.5579 ) ] }
+tracks/52/type = "value"
+tracks/52/path = NodePath("Node2D/chest/R-Cape Outer:frame")
+tracks/52/interp = 1
+tracks/52/keys = { "cont":false, "times":FloatArray( 0, 0.25, 0.5, 0.75, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ 0, 1, 2, 3, 0 ] }
+tracks/53/type = "value"
+tracks/53/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2:frame")
+tracks/53/interp = 1
+tracks/53/keys = { "cont":false, "times":FloatArray( 0, 0.25, 0.5, 0.75, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/54/type = "value"
+tracks/54/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3:frame")
+tracks/54/interp = 1
+tracks/54/keys = { "cont":false, "times":FloatArray( 0, 0.5, 0.75, 1, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/55/type = "value"
+tracks/55/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4:frame")
+tracks/55/interp = 1
+tracks/55/keys = { "cont":false, "times":FloatArray( 0, 0.75, 1, 1.25, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/56/type = "value"
+tracks/56/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5:frame")
+tracks/56/interp = 1
+tracks/56/keys = { "cont":false, "times":FloatArray( 0, 1, 1.25, 1.5, 1.75, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/57/type = "value"
+tracks/57/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:frame")
+tracks/57/interp = 1
+tracks/57/keys = { "cont":false, "times":FloatArray( 0, 1.25, 1.5, 1.75, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/58/type = "value"
+tracks/58/path = NodePath("Node2D/chest/R-Cape Outer:modulate")
+tracks/58/interp = 1
+tracks/58/keys = { "cont":true, "times":FloatArray( 0, 0.75, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/59/type = "value"
+tracks/59/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2:modulate")
+tracks/59/interp = 1
+tracks/59/keys = { "cont":true, "times":FloatArray( 0, 0.25, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/60/type = "value"
+tracks/60/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3:modulate")
+tracks/60/interp = 1
+tracks/60/keys = { "cont":true, "times":FloatArray( 0, 0.5, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/61/type = "value"
+tracks/61/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4:modulate")
+tracks/61/interp = 1
+tracks/61/keys = { "cont":true, "times":FloatArray( 0, 0.75, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/62/type = "value"
+tracks/62/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5:modulate")
+tracks/62/interp = 1
+tracks/62/keys = { "cont":true, "times":FloatArray( 0, 1, 1.75, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/63/type = "value"
+tracks/63/path = NodePath("Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:modulate")
+tracks/63/interp = 1
+tracks/63/keys = { "cont":true, "times":FloatArray( 0, 1.25, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/64/type = "value"
+tracks/64/path = NodePath("Node2D/chest/R-Cape Inner:frame")
+tracks/64/interp = 1
+tracks/64/keys = { "cont":false, "times":FloatArray( 0, 0.25, 0.5, 0.75, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ 0, 1, 2, 3, 3 ] }
+tracks/65/type = "value"
+tracks/65/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2:frame")
+tracks/65/interp = 1
+tracks/65/keys = { "cont":false, "times":FloatArray( 0, 0.25, 0.5, 0.75, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 3 ] }
+tracks/66/type = "value"
+tracks/66/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3:frame")
+tracks/66/interp = 1
+tracks/66/keys = { "cont":false, "times":FloatArray( 0, 0.5, 0.75, 1, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 3 ] }
+tracks/67/type = "value"
+tracks/67/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4:frame")
+tracks/67/interp = 1
+tracks/67/keys = { "cont":false, "times":FloatArray( 0, 0.75, 1, 1.25, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 3 ] }
+tracks/68/type = "value"
+tracks/68/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5:frame")
+tracks/68/interp = 1
+tracks/68/keys = { "cont":false, "times":FloatArray( 0, 1, 1.25, 1.5, 1.75, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 3 ] }
+tracks/69/type = "value"
+tracks/69/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:frame")
+tracks/69/interp = 1
+tracks/69/keys = { "cont":false, "times":FloatArray( 0, 1.25, 1.5, 1.75, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 3 ] }
+tracks/70/type = "value"
+tracks/70/path = NodePath("Node2D/chest/R-Cape Inner:modulate")
+tracks/70/interp = 1
+tracks/70/keys = { "cont":true, "times":FloatArray( 0, 0.75, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/71/type = "value"
+tracks/71/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2:modulate")
+tracks/71/interp = 1
+tracks/71/keys = { "cont":true, "times":FloatArray( 0, 0.25, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/72/type = "value"
+tracks/72/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3:modulate")
+tracks/72/interp = 1
+tracks/72/keys = { "cont":true, "times":FloatArray( 0, 0.5, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/73/type = "value"
+tracks/73/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4:modulate")
+tracks/73/interp = 1
+tracks/73/keys = { "cont":true, "times":FloatArray( 0, 0.75, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/74/type = "value"
+tracks/74/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5:modulate")
+tracks/74/interp = 1
+tracks/74/keys = { "cont":true, "times":FloatArray( 0, 1, 1.75, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/75/type = "value"
+tracks/75/path = NodePath("Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5/dangling_stuff:modulate")
+tracks/75/interp = 1
+tracks/75/keys = { "cont":true, "times":FloatArray( 0, 1.25, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/76/type = "value"
+tracks/76/path = NodePath("Node2D/chest/L-Cape Inner 2:frame")
+tracks/76/interp = 1
+tracks/76/keys = { "cont":false, "times":FloatArray( 0, 0.25, 0.5, 0.75, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ 0, 1, 2, 3, 0 ] }
+tracks/77/type = "value"
+tracks/77/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2:frame")
+tracks/77/interp = 1
+tracks/77/keys = { "cont":false, "times":FloatArray( 0, 0.25, 0.5, 0.75, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/78/type = "value"
+tracks/78/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3:frame")
+tracks/78/interp = 1
+tracks/78/keys = { "cont":false, "times":FloatArray( 0, 0.5, 0.75, 1, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/79/type = "value"
+tracks/79/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4:frame")
+tracks/79/interp = 1
+tracks/79/keys = { "cont":false, "times":FloatArray( 0, 0.75, 1, 1.25, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/80/type = "value"
+tracks/80/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5:frame")
+tracks/80/interp = 1
+tracks/80/keys = { "cont":false, "times":FloatArray( 0, 1, 1.25, 1.5, 1.75, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/81/type = "value"
+tracks/81/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:frame")
+tracks/81/interp = 1
+tracks/81/keys = { "cont":false, "times":FloatArray( 0, 1.25, 1.5, 1.75, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/82/type = "value"
+tracks/82/path = NodePath("Node2D/chest/L-Cape Inner 2:modulate")
+tracks/82/interp = 1
+tracks/82/keys = { "cont":true, "times":FloatArray( 0, 0.75, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/83/type = "value"
+tracks/83/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2:modulate")
+tracks/83/interp = 1
+tracks/83/keys = { "cont":true, "times":FloatArray( 0, 0.25, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/84/type = "value"
+tracks/84/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3:modulate")
+tracks/84/interp = 1
+tracks/84/keys = { "cont":true, "times":FloatArray( 0, 0.5, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/85/type = "value"
+tracks/85/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4:modulate")
+tracks/85/interp = 1
+tracks/85/keys = { "cont":true, "times":FloatArray( 0, 0.75, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/86/type = "value"
+tracks/86/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5:modulate")
+tracks/86/interp = 1
+tracks/86/keys = { "cont":true, "times":FloatArray( 0, 1, 1.75, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/87/type = "value"
+tracks/87/path = NodePath("Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:modulate")
+tracks/87/interp = 1
+tracks/87/keys = { "cont":true, "times":FloatArray( 0, 1.25, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/88/type = "value"
+tracks/88/path = NodePath("Node2D/chest/L-Cape Outer:frame")
+tracks/88/interp = 1
+tracks/88/keys = { "cont":false, "times":FloatArray( 0, 0.25, 0.5, 0.75, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ 0, 1, 2, 3, 0 ] }
+tracks/89/type = "value"
+tracks/89/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2:frame")
+tracks/89/interp = 1
+tracks/89/keys = { "cont":false, "times":FloatArray( 0, 0.25, 0.5, 0.75, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/90/type = "value"
+tracks/90/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3:frame")
+tracks/90/interp = 1
+tracks/90/keys = { "cont":false, "times":FloatArray( 0, 0.5, 0.75, 1, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/91/type = "value"
+tracks/91/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4:frame")
+tracks/91/interp = 1
+tracks/91/keys = { "cont":false, "times":FloatArray( 0, 0.75, 1, 1.25, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/92/type = "value"
+tracks/92/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5:frame")
+tracks/92/interp = 1
+tracks/92/keys = { "cont":false, "times":FloatArray( 0, 1, 1.25, 1.5, 1.75, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/93/type = "value"
+tracks/93/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:frame")
+tracks/93/interp = 1
+tracks/93/keys = { "cont":false, "times":FloatArray( 0, 1.25, 1.5, 1.75, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 3, 0 ] }
+tracks/94/type = "value"
+tracks/94/path = NodePath("Node2D/chest/L-Cape Outer:modulate")
+tracks/94/interp = 1
+tracks/94/keys = { "cont":true, "times":FloatArray( 0, 0.75, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/95/type = "value"
+tracks/95/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2:modulate")
+tracks/95/interp = 1
+tracks/95/keys = { "cont":true, "times":FloatArray( 0, 0.25, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/96/type = "value"
+tracks/96/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3:modulate")
+tracks/96/interp = 1
+tracks/96/keys = { "cont":true, "times":FloatArray( 0, 0.5, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/97/type = "value"
+tracks/97/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4:modulate")
+tracks/97/interp = 1
+tracks/97/keys = { "cont":true, "times":FloatArray( 0, 0.75, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/98/type = "value"
+tracks/98/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5:modulate")
+tracks/98/interp = 1
+tracks/98/keys = { "cont":true, "times":FloatArray( 0, 1, 1.75, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+tracks/99/type = "value"
+tracks/99/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5/dangling_stuff:modulate")
+tracks/99/interp = 1
+tracks/99/keys = { "cont":true, "times":FloatArray( 0, 1.25, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 0.392157, 0.392157, 1 ) ] }
+
+[node name="RigidBody2D" type="RigidBody2D"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+__meta__ = { "__editor_plugin_screen__":"2D" }
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="chest" type="Sprite" parent="Node2D"]
+
+visibility/behind_parent = true
+transform/pos = Vector2( 0, 35.9123 )
+texture = ExtResource( 1 )
+offset = Vector2( -0.71698, -24.7355 )
+
+[node name="R-Cape Outer" type="Sprite" parent="Node2D/chest"]
+
+transform/pos = Vector2( 30.8985, -58.9919 )
+transform/scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 2 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="r-cape 2" type="Sprite" parent="Node2D/chest/R-Cape Outer"]
+
+transform/pos = Vector2( 0, 14 )
+texture = ExtResource( 2 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="r-cape 3" type="Sprite" parent="Node2D/chest/R-Cape Outer/r-cape 2"]
+
+transform/pos = Vector2( -0.016803, 12.8918 )
+texture = ExtResource( 2 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="r-cape 4" type="Sprite" parent="Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3"]
+
+transform/pos = Vector2( 0.419583, 14.0753 )
+texture = ExtResource( 2 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="r-cape 5" type="Sprite" parent="Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4"]
+
+transform/pos = Vector2( 0.313552, 13.9829 )
+texture = ExtResource( 2 )
+offset = Vector2( 2, 6.4 )
+hframes = 4
+
+[node name="dangling_stuff" type="Sprite" parent="Node2D/chest/R-Cape Outer/r-cape 2/r-cape 3/r-cape 4/r-cape 5"]
+
+transform/pos = Vector2( 0.314929, 19.1828 )
+texture = ExtResource( 3 )
+offset = Vector2( 2.11687, 11.1178 )
+hframes = 4
+
+[node name="R-Cape Inner" type="Sprite" parent="Node2D/chest"]
+
+transform/pos = Vector2( 15.4445, -58.5626 )
+texture = ExtResource( 2 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="r-cape 2" type="Sprite" parent="Node2D/chest/R-Cape Inner"]
+
+transform/pos = Vector2( 0, 14 )
+texture = ExtResource( 2 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="r-cape 3" type="Sprite" parent="Node2D/chest/R-Cape Inner/r-cape 2"]
+
+transform/pos = Vector2( -0.016803, 12.8918 )
+texture = ExtResource( 2 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="r-cape 4" type="Sprite" parent="Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3"]
+
+transform/pos = Vector2( 0.419583, 14.0753 )
+texture = ExtResource( 2 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="r-cape 5" type="Sprite" parent="Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4"]
+
+transform/pos = Vector2( 0.313552, 13.9829 )
+texture = ExtResource( 2 )
+offset = Vector2( 2, 6.4 )
+hframes = 4
+
+[node name="dangling_stuff" type="Sprite" parent="Node2D/chest/R-Cape Inner/r-cape 2/r-cape 3/r-cape 4/r-cape 5"]
+
+transform/pos = Vector2( 0.314929, 19.1828 )
+texture = ExtResource( 3 )
+offset = Vector2( 2.11687, 11.1178 )
+hframes = 4
+
+[node name="Head" type="Node2D" parent="Node2D/chest"]
+
+transform/pos = Vector2( 0.441632, -62.5579 )
+
+[node name="sclera" type="Sprite" parent="Node2D/chest/Head"]
+
+transform/pos = Vector2( -0.713482, -55.5786 )
+texture = ExtResource( 4 )
+
+[node name="eyetracker" type="Node2D" parent="Node2D/chest/Head/sclera"]
+
+transform/pos = Vector2( -1.64505, -0.536983 )
+
+[node name="eyes" type="Sprite" parent="Node2D/chest/Head/sclera/eyetracker"]
+
+texture = ExtResource( 5 )
+
+[node name="face" type="Sprite" parent="Node2D/chest/Head"]
+
+transform/pos = Vector2( 0.448599, -40.2442 )
+texture = ExtResource( 6 )
+
+[node name="hat" type="Sprite" parent="Node2D/chest/Head/face"]
+
+transform/pos = Vector2( -2.19841, -22.2101 )
+transform/scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 7 )
+offset = Vector2( 0, -15.5613 )
+
+[node name="feather-r" type="Sprite" parent="Node2D/chest/Head/face"]
+
+transform/pos = Vector2( 27.1212, -15.6286 )
+texture = ExtResource( 8 )
+offset = Vector2( 7.11212, 0.0497818 )
+
+[node name="feather-l" type="Sprite" parent="Node2D/chest/Head/face"]
+
+visibility/behind_parent = true
+transform/pos = Vector2( -22.8765, -10.85 )
+texture = ExtResource( 8 )
+offset = Vector2( -8.94951, 0.568466 )
+flip_h = true
+
+[node name="earring-R" type="Sprite" parent="Node2D/chest/Head/face"]
+
+visibility/behind_parent = true
+transform/pos = Vector2( -21.7712, -12.3554 )
+texture = ExtResource( 3 )
+offset = Vector2( 1.9697, 10.9229 )
+hframes = 4
+
+[node name="eyebrows" type="Sprite" parent="Node2D/chest/Head/face"]
+
+transform/pos = Vector2( -2.30004, -20.316 )
+texture = ExtResource( 9 )
+
+[node name="mouth" type="Sprite" parent="Node2D/chest/Head/face"]
+
+transform/pos = Vector2( -4.19396, 22.8837 )
+texture = ExtResource( 10 )
+offset = Vector2( 1.46896, 6.05252 )
+
+[node name="skull" type="Sprite" parent="Node2D/chest/Head/face/mouth"]
+
+transform/pos = Vector2( -0.300712, -50.6723 )
+texture = ExtResource( 11 )
+
+[node name="earring-L" type="Sprite" parent="Node2D/chest/Head/face"]
+
+transform/pos = Vector2( 19.3388, -12.3554 )
+texture = ExtResource( 3 )
+offset = Vector2( 1.9697, 10.9229 )
+hframes = 4
+
+[node name="L-Cape Outer" type="Sprite" parent="Node2D/chest"]
+
+visibility/behind_parent = true
+transform/pos = Vector2( -31.1481, -58.5626 )
+transform/scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 12 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="l-cape 2" type="Sprite" parent="Node2D/chest/L-Cape Outer"]
+
+transform/pos = Vector2( 0, 14 )
+texture = ExtResource( 12 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="l-cape 3" type="Sprite" parent="Node2D/chest/L-Cape Outer/l-cape 2"]
+
+transform/pos = Vector2( -0.016803, 12.8918 )
+texture = ExtResource( 12 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="l-cape 4" type="Sprite" parent="Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3"]
+
+transform/pos = Vector2( 0.419583, 14.0753 )
+texture = ExtResource( 12 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="l-cape 5" type="Sprite" parent="Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4"]
+
+transform/pos = Vector2( 0.313552, 13.9829 )
+texture = ExtResource( 12 )
+offset = Vector2( 2, 6.4 )
+hframes = 4
+
+[node name="dangling_stuff" type="Sprite" parent="Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/l-cape 5"]
+
+transform/pos = Vector2( 0.314929, 19.1828 )
+texture = ExtResource( 3 )
+offset = Vector2( 2.11687, 11.1178 )
+hframes = 4
+
+[node name="L-Cape Inner 2" type="Sprite" parent="Node2D/chest"]
+
+transform/pos = Vector2( -20.0456, -58.5626 )
+texture = ExtResource( 12 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="l-cape 2" type="Sprite" parent="Node2D/chest/L-Cape Inner 2"]
+
+transform/pos = Vector2( 0, 14 )
+texture = ExtResource( 12 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="l-cape 3" type="Sprite" parent="Node2D/chest/L-Cape Inner 2/l-cape 2"]
+
+transform/pos = Vector2( -0.016803, 12.8918 )
+texture = ExtResource( 12 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="l-cape 4" type="Sprite" parent="Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3"]
+
+transform/pos = Vector2( 0.419583, 14.0753 )
+texture = ExtResource( 12 )
+offset = Vector2( 2, 6.5 )
+hframes = 4
+
+[node name="l-cape 5" type="Sprite" parent="Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4"]
+
+transform/pos = Vector2( 0.313552, 13.9829 )
+texture = ExtResource( 12 )
+offset = Vector2( 2, 6.4 )
+hframes = 4
+
+[node name="dangling_stuff" type="Sprite" parent="Node2D/chest/L-Cape Inner 2/l-cape 2/l-cape 3/l-cape 4/l-cape 5"]
+
+transform/pos = Vector2( 0.314929, 19.1828 )
+texture = ExtResource( 3 )
+offset = Vector2( 2.11687, 11.1178 )
+hframes = 4
+
+[node name="arm_bg" type="Sprite" parent="Node2D/chest"]
+
+visibility/behind_parent = true
+transform/pos = Vector2( -24.7242, -58.3377 )
+transform/rot = -90.0
+texture = ExtResource( 13 )
+offset = Vector2( -0.875969, 16.0594 )
+
+[node name="forearm_bg" type="Sprite" parent="Node2D/chest/arm_bg"]
+
+transform/pos = Vector2( 0.516391, 33.6331 )
+texture = ExtResource( 14 )
+offset = Vector2( 1, 30 )
+hframes = 2
+
+[node name="hand" type="Sprite" parent="Node2D/chest/arm_bg/forearm_bg"]
+
+transform/pos = Vector2( 0.453187, 62.5337 )
+transform/rot = 90.0
+texture = ExtResource( 15 )
+hframes = 2
+frame = 1
+
+[node name="staff" type="Sprite" parent="Node2D/chest/arm_bg/forearm_bg/hand"]
+
+transform/pos = Vector2( -3.4523, 4.02976 )
+texture = ExtResource( 16 )
+offset = Vector2( 0.0773392, -15.0537 )
+
+[node name="dangling_stuff" type="Sprite" parent="Node2D/chest/arm_bg/forearm_bg/hand/staff"]
+
+transform/pos = Vector2( 9.86102, -56.749 )
+texture = ExtResource( 3 )
+offset = Vector2( 2.11687, 11.1178 )
+hframes = 4
+
+[node name="dangling_stuff 2" type="Sprite" parent="Node2D/chest/arm_bg/forearm_bg/hand/staff"]
+
+visibility/behind_parent = true
+transform/pos = Vector2( -13.1482, -56.6378 )
+texture = ExtResource( 3 )
+offset = Vector2( 2.11687, 11.1178 )
+hframes = 4
+
+[node name="arm_fg" type="Sprite" parent="Node2D/chest"]
+
+transform/pos = Vector2( 20.4532, -60.0623 )
+transform/rot = 90.0
+texture = ExtResource( 13 )
+offset = Vector2( -0.875969, 16.0594 )
+
+[node name="forearm_fg" type="Sprite" parent="Node2D/chest/arm_fg"]
+
+transform/pos = Vector2( 0.639059, 33.3681 )
+texture = ExtResource( 14 )
+offset = Vector2( 1, 30 )
+hframes = 2
+frame = 1
+
+[node name="hand" type="Sprite" parent="Node2D/chest/arm_fg/forearm_fg"]
+
+transform/pos = Vector2( 2.82314, 59.9365 )
+transform/rot = -90.0
+texture = ExtResource( 15 )
+hframes = 2
+
+[node name="darkflame" type="Sprite" parent="Node2D/chest/arm_fg/forearm_fg/hand"]
+
+transform/pos = Vector2( 1.14041, -9.82325 )
+transform/scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 17 )
+offset = Vector2( -0.284607, -11.9676 )
+
+[node name="mage_anim" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/Idle = SubResource( 2 )
+anims/casterpose = SubResource( 3 )
+anims/default_pose = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+

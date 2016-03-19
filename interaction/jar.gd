@@ -26,7 +26,7 @@ func attacked(by):
 	get_node("player").play("break")
 	broken=true
 	if (has_key):
-		var ki = preload("res://interaction/key.xml").instance()
+		var ki = preload("res://interaction/key.tscn").instance()
 		ki.set_pos(get_global_pos())
 		ki.key_index=key_index
 		get_parent().add_child(ki)

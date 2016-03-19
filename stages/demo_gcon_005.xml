@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="43" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
 	<ext_resource path="res://tilesets/test_tileset.xml" type="TileSet" index="37"></ext_resource>
-	<ext_resource path="res://interaction/key.xml" type="PackedScene" index="26"></ext_resource>
+	<ext_resource path="res://interaction/key.tscn" type="PackedScene" index="26"></ext_resource>
 	<ext_resource path="res://stages/stage.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://player/large_fruit.xml" type="PackedScene" index="18"></ext_resource>
-	<ext_resource path="res://interaction/plank.xml" type="PackedScene" index="28"></ext_resource>
+	<ext_resource path="res://interaction/plank.tscn" type="PackedScene" index="28"></ext_resource>
 	<ext_resource path="res://art/flower1.png" type="Texture" index="14"></ext_resource>
 	<ext_resource path="res://art/flower2.png" type="Texture" index="15"></ext_resource>
 	<ext_resource path="res://art/Ligth 1.png" type="Texture" index="36"></ext_resource>
@@ -13,24 +13,24 @@
 	<ext_resource path="res://art/flower4.png" type="Texture" index="39"></ext_resource>
 	<ext_resource path="res://art/flower_bush2.png" type="Texture" index="2"></ext_resource>
 	<ext_resource path="res://tilesets/glacier_parallax.xml" type="PackedScene" index="41"></ext_resource>
-	<ext_resource path="res://interaction/fire_holder.xml" type="PackedScene" index="38"></ext_resource>
+	<ext_resource path="res://interaction/fire_holder.tscn" type="PackedScene" index="38"></ext_resource>
 	<ext_resource path="res://player/checkpoint.xml" type="PackedScene" index="29"></ext_resource>
-	<ext_resource path="res://interaction/breakable_stone_physic.xml" type="PackedScene" index="27"></ext_resource>
-	<ext_resource path="res://interaction/locked_door.xml" type="PackedScene" index="25"></ext_resource>
-	<ext_resource path="res://interaction/breakable_stone.xml" type="PackedScene" index="24"></ext_resource>
+	<ext_resource path="res://interaction/breakable_stone_physic.tscn" type="PackedScene" index="27"></ext_resource>
+	<ext_resource path="res://interaction/locked_door.tscn" type="PackedScene" index="25"></ext_resource>
+	<ext_resource path="res://interaction/breakable_stone.tscn" type="PackedScene" index="24"></ext_resource>
 	<ext_resource path="res://player/wise_alpaca.xml" type="PackedScene" index="23"></ext_resource>
 	<ext_resource path="res://player/fruit.xml" type="PackedScene" index="22"></ext_resource>
-	<ext_resource path="res://interaction/mountain_rock.xml" type="PackedScene" index="21"></ext_resource>
-	<ext_resource path="res://enemies/rb_spike.xml" type="PackedScene" index="20"></ext_resource>
+	<ext_resource path="res://interaction/mountain_rock.tscn" type="PackedScene" index="21"></ext_resource>
+	<ext_resource path="res://enemies/rb_spike.tscn" type="PackedScene" index="20"></ext_resource>
 	<ext_resource path="res://player/large_fruit_physic.xml" type="PackedScene" index="19"></ext_resource>
-	<ext_resource path="res://interaction/spinning_log.xml" type="PackedScene" index="17"></ext_resource>
-	<ext_resource path="res://interaction/carry_plank.xml" type="PackedScene" index="16"></ext_resource>
-	<ext_resource path="res://interaction/ghost_directed.xml" type="PackedScene" index="35"></ext_resource>
-	<ext_resource path="res://interaction/seesaw_big.xml" type="PackedScene" index="34"></ext_resource>
-	<ext_resource path="res://enemies/fluff.xml" type="PackedScene" index="33"></ext_resource>
-	<ext_resource path="res://enemies/mountain_spikes.xml" type="PackedScene" index="32"></ext_resource>
-	<ext_resource path="res://enemies/mountain_long_spikes.xml" type="PackedScene" index="31"></ext_resource>
-	<ext_resource path="res://interaction/roulette.xml" type="PackedScene" index="30"></ext_resource>
+	<ext_resource path="res://interaction/spinning_log.tscn" type="PackedScene" index="17"></ext_resource>
+	<ext_resource path="res://interaction/carry_plank.tscn" type="PackedScene" index="16"></ext_resource>
+	<ext_resource path="res://interaction/ghost_directed.tscn" type="PackedScene" index="35"></ext_resource>
+	<ext_resource path="res://interaction/seesaw_big.tscn" type="PackedScene" index="34"></ext_resource>
+	<ext_resource path="res://enemies/fluff.tscn" type="PackedScene" index="33"></ext_resource>
+	<ext_resource path="res://enemies/mountain_spikes.tscn" type="PackedScene" index="32"></ext_resource>
+	<ext_resource path="res://enemies/mountain_long_spikes.tscn" type="PackedScene" index="31"></ext_resource>
+	<ext_resource path="res://interaction/roulette.tscn" type="PackedScene" index="30"></ext_resource>
 	<ext_resource path="res://art/glacier_clifftree_1.png" type="Texture" index="3"></ext_resource>
 	<ext_resource path="res://art/glacier_tree_2.png" type="Texture" index="8"></ext_resource>
 	<ext_resource path="res://art/glacier_tree_1.png" type="Texture" index="6"></ext_resource>

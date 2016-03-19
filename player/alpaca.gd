@@ -593,7 +593,7 @@ func _unhandled_input(event):
 	if (event.is_echo()):
 		return
 	if (event.is_action("quit") && event.is_pressed()):
-		get_node("/root/main").goto_scene("res://menu/stage_select.xml")
+		get_node("/root/main").goto_scene("res://menu/stage_select.tscn")
 
 	if (event.is_action("jetpack_tap_right")):
 		moving_right=event.is_pressed()

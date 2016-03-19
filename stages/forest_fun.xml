@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="28" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
 	<ext_resource path="res://stages/stage.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://interaction/spinning_log.xml" type="PackedScene" index="5"></ext_resource>
-	<ext_resource path="res://interaction/locked_door.xml" type="PackedScene" index="2"></ext_resource>
-	<ext_resource path="res://interaction/carry_plank.xml" type="PackedScene" index="6"></ext_resource>
+	<ext_resource path="res://interaction/spinning_log.tscn" type="PackedScene" index="5"></ext_resource>
+	<ext_resource path="res://interaction/locked_door.tscn" type="PackedScene" index="2"></ext_resource>
+	<ext_resource path="res://interaction/carry_plank.tscn" type="PackedScene" index="6"></ext_resource>
 	<ext_resource path="res://player/checkpoint.xml" type="PackedScene" index="7"></ext_resource>
 	<ext_resource path="res://art/tree_branch4.png" type="Texture" index="19"></ext_resource>
 	<ext_resource path="res://player/wise_alpaca.xml" type="PackedScene" index="9"></ext_resource>
 	<ext_resource path="res://art/plant1.png" type="Texture" index="26"></ext_resource>
-	<ext_resource path="res://interaction/roulette.xml" type="PackedScene" index="10"></ext_resource>
-	<ext_resource path="res://enemies/frog.xml" type="PackedScene" index="13"></ext_resource>
-	<ext_resource path="res://enemies/floating_spike.xml" type="PackedScene" index="14"></ext_resource>
+	<ext_resource path="res://interaction/roulette.tscn" type="PackedScene" index="10"></ext_resource>
+	<ext_resource path="res://enemies/frog.tscn" type="PackedScene" index="13"></ext_resource>
+	<ext_resource path="res://enemies/floating_spike.tscn" type="PackedScene" index="14"></ext_resource>
 	<ext_resource path="res://art/flower2.png" type="Texture" index="23"></ext_resource>
 	<ext_resource path="res://art/tree_bush4.png" type="Texture" index="18"></ext_resource>
 	<ext_resource path="res://tilesets/forest_tilemap.xml" type="TileSet" index="3"></ext_resource>
 	<ext_resource path="res://art/flower1.png" type="Texture" index="22"></ext_resource>
-	<ext_resource path="res://enemies/snake.xml" type="PackedScene" index="12"></ext_resource>
+	<ext_resource path="res://enemies/snake.tscn" type="PackedScene" index="12"></ext_resource>
 	<ext_resource path="res://art/tree_bush2.png" type="Texture" index="21"></ext_resource>
 	<ext_resource path="res://art/flower4.png" type="Texture" index="25"></ext_resource>
 	<ext_resource path="res://art/tree_bush.png" type="Texture" index="20"></ext_resource>
 	<ext_resource path="res://art/flower3.png" type="Texture" index="24"></ext_resource>
 	<ext_resource path="res://art/tree_bush3.png" type="Texture" index="17"></ext_resource>
-	<ext_resource path="res://enemies/sporadic_flower.xml" type="PackedScene" index="15"></ext_resource>
+	<ext_resource path="res://enemies/sporadic_flower.tscn" type="PackedScene" index="15"></ext_resource>
 	<ext_resource path="res://tilesets/forest_parallax.xml" type="PackedScene" index="11"></ext_resource>
 	<ext_resource path="res://player/large_fruit.xml" type="PackedScene" index="8"></ext_resource>
 	<ext_resource path="res://player/fruit.xml" type="PackedScene" index="16"></ext_resource>
-	<ext_resource path="res://interaction/fire_holder.xml" type="PackedScene" index="1"></ext_resource>
-	<ext_resource path="res://interaction/tree_bottom.xml" type="PackedScene" index="4"></ext_resource>
+	<ext_resource path="res://interaction/fire_holder.tscn" type="PackedScene" index="1"></ext_resource>
+	<ext_resource path="res://interaction/tree_bottom.tscn" type="PackedScene" index="4"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>

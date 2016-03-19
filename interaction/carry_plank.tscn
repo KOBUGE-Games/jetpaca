@@ -1,0 +1,90 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://interaction/carry_platform.gd" type="Script" id=1]
+[ext_resource path="res://interaction/plank.tscn" type="PackedScene" id=2]
+[ext_resource path="res://art/forest_torch.png" type="Texture" id=3]
+[ext_resource path="res://art/smoke.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 300, 80 )
+
+[sub_resource type="ColorRamp" id=2]
+
+offsets = FloatArray( 0, 0.2, 1 )
+colors = ColorArray( 1, 0.79646, 0, 1, 1, 0.247788, 0, 1, 0, 0, 0, 0 )
+
+[node name="carryplat" type="Area2D"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, -0, 0, 1, -2, 2 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+max_distance = 1200.0
+
+[node name="platform" parent="." instance=ExtResource( 2 )]
+
+[node name="Sprite" type="Sprite" parent="platform"]
+
+transform/pos = Vector2( 216.474, -72.5428 )
+texture = ExtResource( 3 )
+
+[node name="fire" type="Particles2D" parent="platform"]
+
+visibility/opacity = 0.363636
+visibility/blend_mode = 1
+transform/pos = Vector2( 215.382, -130.846 )
+transform/rot = -179.267
+config/amount = 16
+config/lifetime = 2.0
+config/half_extents = Vector2( 5, 5 )
+config/local_space = false
+config/texture = ExtResource( 4 )
+params/direction = 0.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 2.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.6
+params/final_size = 0.1
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spin_velocity = 1.0
+color/color_ramp = SubResource( 2 )
+
+[node name="trigger" type="Position2D" parent="platform"]
+
+transform/pos = Vector2( 216.792, -125.981 )
+
+[node name="screenprox" type="VisibilityNotifier2D" parent="platform"]
+
+rect = Rect2( -10, -10, 20, 20 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -2, 2 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = -1
+
+[connection signal="body_enter" from="." to="." method="_on_body_enter"]
+
+[connection signal="enter_screen" from="platform/screenprox" to="." method="_on_enter_screen"]
+
+[connection signal="exit_screen" from="platform/screenprox" to="." method="_on_exit_screen"]
+
+

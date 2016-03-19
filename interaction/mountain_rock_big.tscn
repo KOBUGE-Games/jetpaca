@@ -1,0 +1,234 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://art/ball.png" type="Texture" id=1]
+[ext_resource path="res://art/cachos_sacra_pincho/pincho_luz.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[node name="RigidBody2D" type="RigidBody2D"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 24, -0, 0, 24, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 30.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+__meta__ = { "__editor_plugin_screen__":"2D", "_editor_collapsed":true }
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/scale = Vector2( 8, 8 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+transform/scale = Vector2( 24, 24 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = -1
+
+[node name="Sprite 2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 272.007, 0.0147734 )
+transform/rot = -90.0265
+texture = ExtResource( 2 )
+
+[node name="Sprite 3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 259.482, -43.0754 )
+transform/rot = -83.8144
+texture = ExtResource( 2 )
+
+[node name="Sprite 4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 252.679, -82.5461 )
+transform/rot = -79.2971
+texture = ExtResource( 2 )
+
+[node name="Sprite 5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 228.847, -131.479 )
+transform/rot = -74.7499
+texture = ExtResource( 2 )
+
+[node name="Sprite 6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 196.033, -181.707 )
+transform/rot = -53.057
+texture = ExtResource( 2 )
+
+[node name="Sprite 7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 158.26, -219.361 )
+transform/rot = -40.1989
+texture = ExtResource( 2 )
+
+[node name="Sprite 8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 114.068, -246.571 )
+transform/rot = -32.5501
+texture = ExtResource( 2 )
+
+[node name="Sprite 9" type="Sprite" parent="."]
+
+transform/pos = Vector2( 54.4276, -270.355 )
+transform/rot = -13.8268
+texture = ExtResource( 2 )
+
+[node name="Sprite 10" type="Sprite" parent="."]
+
+transform/pos = Vector2( -0.752051, -276.877 )
+transform/rot = 0.444816
+texture = ExtResource( 2 )
+
+[node name="Sprite 11" type="Sprite" parent="."]
+
+transform/pos = Vector2( -263.875, 0.749851 )
+transform/rot = -269.984
+texture = ExtResource( 2 )
+
+[node name="Sprite 12" type="Sprite" parent="."]
+
+transform/pos = Vector2( -1.11045, 278.232 )
+transform/rot = 180.084
+texture = ExtResource( 2 )
+
+[node name="Sprite 13" type="Sprite" parent="."]
+
+transform/pos = Vector2( -57.7675, -266.288 )
+transform/rot = 12.5518
+texture = ExtResource( 2 )
+
+[node name="Sprite 14" type="Sprite" parent="."]
+
+transform/pos = Vector2( -110.71, -248.369 )
+transform/rot = 24.3121
+texture = ExtResource( 2 )
+
+[node name="Sprite 15" type="Sprite" parent="."]
+
+transform/pos = Vector2( -153.065, -208.458 )
+transform/rot = 50.0347
+texture = ExtResource( 2 )
+
+[node name="Sprite 16" type="Sprite" parent="."]
+
+transform/pos = Vector2( -194.604, -174.249 )
+transform/rot = 50.0347
+texture = ExtResource( 2 )
+
+[node name="Sprite 17" type="Sprite" parent="."]
+
+transform/pos = Vector2( -231.257, -126.193 )
+transform/rot = 65.7186
+texture = ExtResource( 2 )
+
+[node name="Sprite 18" type="Sprite" parent="."]
+
+transform/pos = Vector2( -253.249, -71.6213 )
+transform/rot = 76.3471
+texture = ExtResource( 2 )
+
+[node name="Sprite 19" type="Sprite" parent="."]
+
+transform/pos = Vector2( -253.249, 54.6272 )
+transform/rot = 104.906
+texture = ExtResource( 2 )
+
+[node name="Sprite 20" type="Sprite" parent="."]
+
+transform/pos = Vector2( -243.475, 96.9815 )
+transform/rot = 113.821
+texture = ExtResource( 2 )
+
+[node name="Sprite 21" type="Sprite" parent="."]
+
+transform/pos = Vector2( -224.741, 138.521 )
+transform/rot = 120.87
+texture = ExtResource( 2 )
+
+[node name="Sprite 22" type="Sprite" parent="."]
+
+transform/pos = Vector2( -200.306, 180.061 )
+transform/rot = 130.039
+texture = ExtResource( 2 )
+
+[node name="Sprite 23" type="Sprite" parent="."]
+
+transform/pos = Vector2( -164.468, 213.456 )
+transform/rot = 135.686
+texture = ExtResource( 2 )
+
+[node name="Sprite 24" type="Sprite" parent="."]
+
+transform/pos = Vector2( -127.815, 240.335 )
+transform/rot = 147.745
+texture = ExtResource( 2 )
+
+[node name="Sprite 25" type="Sprite" parent="."]
+
+transform/pos = Vector2( -73.2431, 265.584 )
+transform/rot = 154.897
+texture = ExtResource( 2 )
+
+[node name="Sprite 26" type="Sprite" parent="."]
+
+transform/pos = Vector2( 55.4489, 268.028 )
+transform/rot = 188.756
+texture = ExtResource( 2 )
+
+[node name="Sprite 27" type="Sprite" parent="."]
+
+transform/pos = Vector2( 111.65, 247.665 )
+transform/rot = 201.678
+texture = ExtResource( 2 )
+
+[node name="Sprite 28" type="Sprite" parent="."]
+
+transform/pos = Vector2( 154.819, 220.786 )
+transform/rot = 213.246
+texture = ExtResource( 2 )
+
+[node name="Sprite 29" type="Sprite" parent="."]
+
+transform/pos = Vector2( 195.544, 189.021 )
+transform/rot = 229.347
+texture = ExtResource( 2 )
+
+[node name="Sprite 30" type="Sprite" parent="."]
+
+transform/pos = Vector2( 222.423, 149.11 )
+transform/rot = 233.107
+texture = ExtResource( 2 )
+
+[node name="Sprite 31" type="Sprite" parent="."]
+
+transform/pos = Vector2( 246.043, 106.756 )
+transform/rot = 243.645
+texture = ExtResource( 2 )
+
+[node name="Sprite 32" type="Sprite" parent="."]
+
+transform/pos = Vector2( 262.333, 52.9981 )
+transform/rot = 252.14
+texture = ExtResource( 2 )
+
+

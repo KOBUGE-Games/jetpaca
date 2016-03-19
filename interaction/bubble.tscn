@@ -1,0 +1,126 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://interaction/bubble.gd" type="Script" id=1]
+[ext_resource path="res://art/bubble.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 50.0
+
+[sub_resource type="Animation" id=4]
+
+resource/name = "appear"
+length = 1.0
+loop = false
+step = 0.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite:transform/scale")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1 ), "transitions":FloatArray( 2.37842, 1 ), "values":[ Vector2( 0.1, 0.1 ), Vector2( 2, 2 ) ] }
+
+[sub_resource type="Animation" id=2]
+
+resource/name = "burst"
+length = 0.2
+loop = false
+step = 0.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite:transform/scale")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.15 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 2, 2 ), Vector2( 4, 4 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("sprite:visibility/self_opacity")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.2 ), "transitions":FloatArray( 1, 1 ), "values":[ 1.0, 0.0 ] }
+
+[sub_resource type="Animation" id=3]
+
+resource/name = "wobble"
+length = 1.0
+loop = true
+step = 0.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite:transform/scale")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.51, 1 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 2.1, 2 ), Vector2( 2, 2.1 ), Vector2( 2.1, 2 ) ] }
+
+[node name="bubble" type="RigidBody2D"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 1
+mass = 8.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = true
+continuous_cd = 0
+contacts_reported = 2
+contact_monitor = true
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+script/script = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+
+[node name="sprite" type="Sprite" parent="."]
+
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = -1
+
+[node name="anim" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/appear = SubResource( 4 )
+anims/burst = SubResource( 2 )
+anims/wobble = SubResource( 3 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "wobble"
+
+[node name="player" type="SamplePlayer2D" parent="."]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = null
+config/pitch_random = 0.0
+
+[node name="sprox" type="VisibilityNotifier2D" parent="."]
+
+rect = Rect2( -10, -10, 20, 20 )
+
+[node name="burst" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 0.5
+one_shot = true
+autostart = false
+
+[connection signal="enter_screen" from="sprox" to="." method="_on_enter_screen"]
+
+[connection signal="exit_screen" from="sprox" to="." method="_on_exit_screen"]
+
+[connection signal="timeout" from="burst" to="." method="_on_timeout"]
+
+

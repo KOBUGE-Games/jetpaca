@@ -19,7 +19,7 @@ func _random_select_prize():
 	get_node("Ruleta/ruleta_select").set_rot( prize / 6.0 * 2.0 * PI ) # rotate randomly
 
 func _end_spin():
-	get_node("/root/main").goto_scene("res://menu/stage_select.xml")
+	get_node("/root/main").goto_scene("res://menu/stage_select.tscn")
 	pass
 # member variables here, example:
 # var a=2

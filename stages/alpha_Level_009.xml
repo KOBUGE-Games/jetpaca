@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="22" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
 	<ext_resource path="res://tilesets/test_tileset.xml" type="TileSet" index="1"></ext_resource>
-	<ext_resource path="res://interaction/key.xml" type="PackedScene" index="14"></ext_resource>
+	<ext_resource path="res://interaction/key.tscn" type="PackedScene" index="14"></ext_resource>
 	<ext_resource path="res://player/heart.xml" type="PackedScene" index="15"></ext_resource>
 	<ext_resource path="res://stages/stage.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://player/large_fruit.xml" type="PackedScene" index="12"></ext_resource>
-	<ext_resource path="res://enemies/warrior.xml" type="PackedScene" index="10"></ext_resource>
-	<ext_resource path="res://interaction/locked_door.xml" type="PackedScene" index="13"></ext_resource>
+	<ext_resource path="res://enemies/warrior.tscn" type="PackedScene" index="10"></ext_resource>
+	<ext_resource path="res://interaction/locked_door.tscn" type="PackedScene" index="13"></ext_resource>
 	<ext_resource path="res://player/large_fruit_physic.xml" type="PackedScene" index="11"></ext_resource>
-	<ext_resource path="res://interaction/roulette.xml" type="PackedScene" index="17"></ext_resource>
+	<ext_resource path="res://interaction/roulette.tscn" type="PackedScene" index="17"></ext_resource>
 	<ext_resource path="res://player/checkpoint.xml" type="PackedScene" index="16"></ext_resource>
-	<ext_resource path="res://interaction/mountain_rock.xml" type="PackedScene" index="6"></ext_resource>
-	<ext_resource path="res://interaction/ghost_directed.xml" type="PackedScene" index="4"></ext_resource>
-	<ext_resource path="res://interaction/seesaw_big.xml" type="PackedScene" index="3"></ext_resource>
-	<ext_resource path="res://interaction/ghost_stop.xml" type="PackedScene" index="5"></ext_resource>
-	<ext_resource path="res://enemies/mountain_spikes.xml" type="PackedScene" index="2"></ext_resource>
-	<ext_resource path="res://enemies/rb_spike.xml" type="PackedScene" index="7"></ext_resource>
-	<ext_resource path="res://interaction/spinning_log.xml" type="PackedScene" index="8"></ext_resource>
+	<ext_resource path="res://interaction/mountain_rock.tscn" type="PackedScene" index="6"></ext_resource>
+	<ext_resource path="res://interaction/ghost_directed.tscn" type="PackedScene" index="4"></ext_resource>
+	<ext_resource path="res://interaction/seesaw_big.tscn" type="PackedScene" index="3"></ext_resource>
+	<ext_resource path="res://interaction/ghost_stop.tscn" type="PackedScene" index="5"></ext_resource>
+	<ext_resource path="res://enemies/mountain_spikes.tscn" type="PackedScene" index="2"></ext_resource>
+	<ext_resource path="res://enemies/rb_spike.tscn" type="PackedScene" index="7"></ext_resource>
+	<ext_resource path="res://interaction/spinning_log.tscn" type="PackedScene" index="8"></ext_resource>
 	<ext_resource path="res://player/fruit.xml" type="PackedScene" index="18"></ext_resource>
-	<ext_resource path="res://enemies/fluff.xml" type="PackedScene" index="9"></ext_resource>
-	<ext_resource path="res://interaction/breakable_stone_tall.xml" type="PackedScene" index="19"></ext_resource>
-	<ext_resource path="res://enemies/rb_spike_big.xml" type="PackedScene" index="20"></ext_resource>
+	<ext_resource path="res://enemies/fluff.tscn" type="PackedScene" index="9"></ext_resource>
+	<ext_resource path="res://interaction/breakable_stone_tall.tscn" type="PackedScene" index="19"></ext_resource>
+	<ext_resource path="res://enemies/rb_spike_big.tscn" type="PackedScene" index="20"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>

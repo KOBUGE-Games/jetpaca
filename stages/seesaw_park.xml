@@ -5,20 +5,20 @@
 	<ext_resource path="res://art/mountain_platform.png" type="Texture" index="2"></ext_resource>
 	<ext_resource path="res://art/seesaw.png" type="Texture" index="5"></ext_resource>
 	<ext_resource path="res://player/large_fruit.xml" type="PackedScene" index="15"></ext_resource>
-	<ext_resource path="res://interaction/plank.xml" type="PackedScene" index="9"></ext_resource>
+	<ext_resource path="res://interaction/plank.tscn" type="PackedScene" index="9"></ext_resource>
 	<ext_resource path="res://tilesets/mountain_tilemap.xml" type="TileSet" index="6"></ext_resource>
 	<ext_resource path="res://enemies/area_trigger.gd" type="Script" index="3"></ext_resource>
-	<ext_resource path="res://interaction/ghost_directed.xml" type="PackedScene" index="17"></ext_resource>
-	<ext_resource path="res://enemies/fluff.xml" type="PackedScene" index="18"></ext_resource>
-	<ext_resource path="res://enemies/frog.xml" type="PackedScene" index="19"></ext_resource>
+	<ext_resource path="res://interaction/ghost_directed.tscn" type="PackedScene" index="17"></ext_resource>
+	<ext_resource path="res://enemies/fluff.tscn" type="PackedScene" index="18"></ext_resource>
+	<ext_resource path="res://enemies/frog.tscn" type="PackedScene" index="19"></ext_resource>
 	<ext_resource path="res://player/goal.xml" type="PackedScene" index="14"></ext_resource>
-	<ext_resource path="res://enemies/rb_spike.xml" type="PackedScene" index="16"></ext_resource>
-	<ext_resource path="res://interaction/mountain_rock.xml" type="PackedScene" index="13"></ext_resource>
-	<ext_resource path="res://enemies/floating_spike.xml" type="PackedScene" index="10"></ext_resource>
-	<ext_resource path="res://enemies/cannon.xml" type="PackedScene" index="11"></ext_resource>
-	<ext_resource path="res://interaction/seesaw_big.xml" type="PackedScene" index="12"></ext_resource>
-	<ext_resource path="res://interaction/seesaw.xml" type="PackedScene" index="8"></ext_resource>
-	<ext_resource path="res://enemies/mountain_long_spikes.xml" type="PackedScene" index="4"></ext_resource>
+	<ext_resource path="res://enemies/rb_spike.tscn" type="PackedScene" index="16"></ext_resource>
+	<ext_resource path="res://interaction/mountain_rock.tscn" type="PackedScene" index="13"></ext_resource>
+	<ext_resource path="res://enemies/floating_spike.tscn" type="PackedScene" index="10"></ext_resource>
+	<ext_resource path="res://enemies/cannon.tscn" type="PackedScene" index="11"></ext_resource>
+	<ext_resource path="res://interaction/seesaw_big.tscn" type="PackedScene" index="12"></ext_resource>
+	<ext_resource path="res://interaction/seesaw.tscn" type="PackedScene" index="8"></ext_resource>
+	<ext_resource path="res://enemies/mountain_long_spikes.tscn" type="PackedScene" index="4"></ext_resource>
 	<ext_resource path="res://player/checkpoint.xml" type="PackedScene" index="7"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>

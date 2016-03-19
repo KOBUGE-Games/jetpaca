@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://art/intro_sky_bg.png" type="Texture" id=1]
+[ext_resource path="res://menu/stage_select.gd" type="Script" id=2]
+[ext_resource path="res://art/world1.png" type="Texture" id=3]
+[ext_resource path="res://art/intro_menu_back.png" type="Texture" id=4]
+[ext_resource path="res://art/intro_menu_back_focus.png" type="Texture" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[node name="TextureFrame" type="TextureFrame"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+texture = ExtResource( 1 )
+expand = true
+script/script = ExtResource( 2 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+
+[node name="vbox" type="VBoxContainer" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+margin/left = 20.0
+margin/top = 20.0
+margin/right = 20.0
+margin/bottom = 20.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+alignment = 0
+
+[node name="center" type="CenterContainer" parent="vbox"]
+
+margin/right = 1240.0
+margin/bottom = 64.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+use_top_left = false
+
+[node name="world" type="TextureFrame" parent="vbox/center"]
+
+margin/left = 364.0
+margin/right = 876.0
+margin/bottom = 64.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+texture = ExtResource( 3 )
+
+[node name="tabs" type="TabContainer" parent="vbox"]
+
+margin/top = 68.0
+margin/right = 1240.0
+margin/bottom = 612.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 3
+custom_styles/panel = SubResource( 1 )
+tab_align = 1
+tabs_visible = false
+
+[node name="hbox" type="HBoxContainer" parent="vbox"]
+
+margin/top = 616.0
+margin/right = 1240.0
+margin/bottom = 680.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+alignment = 0
+
+[node name="back" type="TextureButton" parent="vbox/hbox"]
+
+margin/right = 64.0
+margin/bottom = 64.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+toggle_mode = false
+textures/normal = ExtResource( 4 )
+textures/focused = ExtResource( 5 )
+
+[connection signal="pressed" from="vbox/hbox/back" to="." method="_on_back_pressed"]
+
+

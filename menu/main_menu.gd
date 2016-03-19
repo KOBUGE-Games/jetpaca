@@ -10,7 +10,7 @@ extends ReferenceFrame
 
 func _on_play_pressed():
 	print("please load it?")
-	get_tree().get_root().get_node("main").goto_scene("res://menu/stage_select.xml")
+	get_tree().get_root().get_node("main").goto_scene("res://menu/stage_select.tscn")
 	
 func _on_settings_pressed():
 	pass

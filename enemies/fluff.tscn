@@ -1,0 +1,1680 @@
+[gd_scene load_steps=38 format=1]
+
+[ext_resource path="res://enemies/fluff.gd" type="Script" id=1]
+[ext_resource path="res://art/vortex.png" type="Texture" id=2]
+[ext_resource path="res://art/vortex_center.png" type="Texture" id=3]
+[ext_resource path="res://art/twirly_particle.png" type="Texture" id=4]
+[ext_resource path="res://art/oily_shadow.png" type="Texture" id=5]
+[ext_resource path="res://art/cachos_sacra_pincho/pincho_luz.png" type="Texture" id=6]
+[ext_resource path="res://art/cachos_sacra_pincho/pincho_sombra.png" type="Texture" id=7]
+[ext_resource path="res://art/cachos_sacra_pincho/sclera.png" type="Texture" id=8]
+[ext_resource path="res://art/cachos_sacra_pincho/pupilas.png" type="Texture" id=9]
+[ext_resource path="res://art/cachos_sacra_pincho/eye_sparkle.png" type="Texture" id=10]
+[ext_resource path="res://art/cachos_sacra_pincho/parpados_inferiores.png" type="Texture" id=11]
+[ext_resource path="res://art/cachos_sacra_pincho/parpados_superiores.png" type="Texture" id=12]
+[ext_resource path="res://art/cachos_sacra_pincho/mascara.png" type="Texture" id=13]
+[ext_resource path="res://art/cachos_sacra_pincho/eye_glow.png" type="Texture" id=14]
+[ext_resource path="res://art/cachos_sacra_pincho/cejas.png" type="Texture" id=15]
+[ext_resource path="res://art/halo.png" type="Texture" id=16]
+[ext_resource path="res://sound/spikes_appear.wav" type="Sample" id=17]
+[ext_resource path="res://sound/spikes_hide.wav" type="Sample" id=18]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 40.0
+
+[sub_resource type="ColorRamp" id=19]
+
+offsets = FloatArray( 0, 0.2, 0.8, 1 )
+colors = ColorArray( 1, 1, 1, 0, 1, 1, 1, 0.530973, 1, 1, 1, 0.584071, 1, 1, 1, 0 )
+
+[sub_resource type="Animation" id=15]
+
+resource/name = "awake_loop"
+length = 4.0
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 1, 2, 3, 4 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( -0.427185, 8.33139 ), Vector2( -0.427185, 12.7112 ), Vector2( -0.427185, 8.33139 ), Vector2( -0.427185, 12.7112 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.4375, 1.6875, 2.4375, 3.4375, 4 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( -61, -23 ), Vector2( -68, -25 ), Vector2( -61, -23 ), Vector2( -68, -25 ), Vector2( -68, -25 ), Vector2( -61, -23 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 0.25, 1.5, 2.25, 3.25, 4 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( -59, 25 ), Vector2( -65, 28 ), Vector2( -59, 25 ), Vector2( -65, 28 ), Vector2( -65, 28 ), Vector2( -59, 25 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 0.625, 1.875, 2.625, 3.625, 4 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( -28, -58 ), Vector2( -32, -66 ), Vector2( -28, -58 ), Vector2( -32, -66 ), Vector2( -32, -66 ), Vector2( -28, -58 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 0, 0.625, 1.875, 2.625, 3.625, 4 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 28, -58 ), Vector2( 32, -66 ), Vector2( 28, -58 ), Vector2( 32, -66 ), Vector2( 32, -66 ), Vector2( 28, -58 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 0, 0.4375, 1.6875, 2.4375, 3.4375, 4 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 61, -23 ), Vector2( 68, -25 ), Vector2( 61, -23 ), Vector2( 68, -25 ), Vector2( 68, -25 ), Vector2( 61, -23 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 0, 0.25, 1.5, 2.25, 3.25, 4 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 59, 25 ), Vector2( 65, 28 ), Vector2( 59, 25 ), Vector2( 65, 28 ), Vector2( 65, 28 ), Vector2( 59, 25 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 2
+tracks/7/keys = { "cont":true, "times":FloatArray( 0, 1, 2, 3, 4 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 0, -2.89871 ), Vector2( 0, 0 ), Vector2( 0, -2.89871 ), Vector2( 0, 0 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 0, 1.75, 2, 2.25, 4 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, 14.7446 ), Vector2( 0, 14.7446 ), Vector2( 0, 7.44487 ), Vector2( 0, 14.7446 ), Vector2( 0, 14.7446 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 0, 1, 1.50647, 1.75, 2, 2.25, 2.75, 4 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, -14 ), Vector2( -5.92934e-07, -15.4539 ), Vector2( -1.51046e-06, -13.6825 ), Vector2( -8.97409e-07, -13.9307 ), Vector2( 0, -2.33595 ), Vector2( 1.15214e-06, -12.5067 ), Vector2( -3.54408e-07, -14.4074 ), Vector2( 0, -14 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/Position2D/pupils:transform/pos")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0, 1, 3, 4 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 0, 1.58166 ), Vector2( 0, 2.45763 ), Vector2( 0, 2.45763 ), Vector2( 0, 1.58166 ) ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, 0.0 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("base_sclera/unibrow:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.455379, -0.455379 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("base_sclera/upper_eyelids:transform/rot")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.602308, -0.602308 ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("vortex:transform/scale")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("vortex_center:transform/scale")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+
+[sub_resource type="Animation" id=11]
+
+resource/name = "awakening"
+length = 1.5
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.78, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -0.427185, 9.03744 ), Vector2( -0.427185, 3.88049 ), Vector2( -0.427185, 9.79134 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 1, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -61, -23 ), Vector2( -68, -25 ), Vector2( -61, -23 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 1, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -59, 25 ), Vector2( -65, 28 ), Vector2( -59, 25 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 1.3, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -28, -58 ), Vector2( -32, -66 ), Vector2( -28, -58 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 0, 1.3, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 28, -58 ), Vector2( 32, -66 ), Vector2( 28, -58 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 0, 1, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 61, -23 ), Vector2( 68, -25 ), Vector2( 61, -23 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 0, 0.78, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 59, 25 ), Vector2( 65, 28 ), Vector2( 59, 25 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 2
+tracks/7/keys = { "cont":true, "times":FloatArray( 0, 0.75, 1, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 0.35849, -4.3741 ), Vector2( 0, -2.89871 ), Vector2( 0, 0 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 4.99436 ), Vector2( 0, 14.7446 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, -4.75655 ), Vector2( 0, -16.3514 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/Position2D/pupils:transform/pos")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0, 0.75, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 9.34646 ), Vector2( 0, 3.19932 ), Vector2( 0, 1.58166 ) ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera/unibrow:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.455379, -0.455379 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("base_sclera:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0, 0.5, 1, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ 0.0, 5.47795, -3.62559, 0.0 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("base_sclera/upper_eyelids:transform/rot")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.602308, -0.602308 ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("vortex_center:transform/scale")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("vortex:transform/scale")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+
+[sub_resource type="Animation" id=12]
+
+resource/name = "die"
+length = 1.5
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.165, 0.33, 0.66, 0.9, 1.25 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( -0.427185, 12.7112 ), Vector2( -0.690711, 14.8194 ), Vector2( -0.954224, 12.1842 ), Vector2( -1.32509, 8.65104 ), Vector2( -0.427185, 12.7112 ), Vector2( -0.427208, 9.85727 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( -61, -23 ), Vector2( -61, -23 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( -59, 25 ), Vector2( -59, 25 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( -28, -58 ), Vector2( -28, -58 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 28, -58 ), Vector2( 28, -58 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 61, -23 ), Vector2( 61, -23 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 59, 25 ), Vector2( 59, 25 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 1
+tracks/7/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, -0.482617 ), Vector2( -8.08833, 14.3999 ), Vector2( -18.1676, 5.63964 ), Vector2( -9.04084, -8.0913 ), Vector2( -1.53169, -15.1359 ), Vector2( 2.78834, -6.7433 ), Vector2( -0.268192, -0.356625 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 0, 0.25, 1.25 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 14.7446 ), Vector2( 0, 10.2259 ), Vector2( 0, 14.7446 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 0, 0.25, 1.25 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 3.78883e-07, -13.6692 ), Vector2( 3.78883e-07, -5.82091 ), Vector2( 3.78883e-07, -13.6692 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/Position2D/pupils:transform/pos")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0, 0.1, 0.4, 0.6, 1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, 1.58166 ), Vector2( -3.30093, 2.0781 ), Vector2( 0.204201, 6.13906 ), Vector2( 0, 1.58166 ), Vector2( 0, 1.58166 ) ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0, 1.25 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, 540.0 ] }
+tracks/13/type = "method"
+tracks/13/path = NodePath(".")
+tracks/13/interp = 1
+tracks/13/keys = { "times":FloatArray( 1.5 ), "transitions":FloatArray( 1 ), "values":[ { "args":[  ], "method":"damage_end" } ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("spike1_L:visibility/visible")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("spike2_L:visibility/visible")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("spike3_L:visibility/visible")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/17/type = "value"
+tracks/17/path = NodePath("spike4_L:visibility/visible")
+tracks/17/interp = 1
+tracks/17/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/18/type = "value"
+tracks/18/path = NodePath("spike5_D:visibility/visible")
+tracks/18/interp = 1
+tracks/18/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/19/type = "value"
+tracks/19/path = NodePath("spike6_D:visibility/visible")
+tracks/19/interp = 1
+tracks/19/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/20/type = "value"
+tracks/20/path = NodePath("base_sclera:transform/scale")
+tracks/20/interp = 1
+tracks/20/keys = { "cont":true, "times":FloatArray( 0, 0.3, 1.2, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 0.769231, 0.769231 ), Vector2( 0, 0 ), Vector2( 0, 0 ) ] }
+tracks/21/type = "value"
+tracks/21/path = NodePath("vortex:transform/scale")
+tracks/21/interp = 1
+tracks/21/keys = { "cont":true, "times":FloatArray( 0, 0.8, 1, 1.2, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 0.7, 0.7 ), Vector2( 1.3, 0.1 ), Vector2( 0.1, 1.3 ), Vector2( 0, 0 ) ] }
+tracks/22/type = "value"
+tracks/22/path = NodePath("vortex_center:transform/scale")
+tracks/22/interp = 1
+tracks/22/keys = { "cont":true, "times":FloatArray( 0, 0.8, 1.2, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 0.25, 0.25 ), Vector2( 0, 0 ), Vector2( 0, 0 ) ] }
+tracks/23/type = "value"
+tracks/23/path = NodePath("vortex_center:transform/rot")
+tracks/23/interp = 1
+tracks/23/keys = { "cont":true, "times":FloatArray( 1.5 ), "transitions":FloatArray( 1 ), "values":[ -720.0 ] }
+tracks/24/type = "value"
+tracks/24/path = NodePath("vortex:transform/rot")
+tracks/24/interp = 1
+tracks/24/keys = { "cont":true, "times":FloatArray( 1 ), "transitions":FloatArray( 1 ), "values":[ -180.0 ] }
+
+[sub_resource type="Animation" id=5]
+
+resource/name = "die_old"
+length = 1.2
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.165, 0.33, 0.66, 0.9, 1 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( -0.427185, 12.7112 ), Vector2( -0.690711, 14.8194 ), Vector2( -0.954224, 12.1842 ), Vector2( -1.32509, 8.65104 ), Vector2( -0.427185, 12.7112 ), Vector2( 0.760738, 2.59777 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( -61, -23 ), Vector2( -61, -23 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( -59, 25 ), Vector2( -59, 25 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( -28, -58 ), Vector2( -28, -58 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 28, -58 ), Vector2( 28, -58 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 61, -23 ), Vector2( 61, -23 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 59, 25 ), Vector2( 59, 25 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 2
+tracks/7/keys = { "cont":true, "times":FloatArray( 0, 0.3, 0.6, 0.7, 0.8, 0.9 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 5.43774, 11.6338 ), Vector2( 0.849197, 4.76732 ), Vector2( 0.495671, 1.67289 ), Vector2( -0.480046, 3.55802 ), Vector2( 0, 0 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 0, 0.33, 0.9 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 14.7446 ), Vector2( 0, 7.89307 ), Vector2( 0, 14.7446 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.6, 0.995955 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 3.78883e-07, -13.6692 ), Vector2( -0.175138, -5.97692 ), Vector2( -0.128546, -4.81709 ), Vector2( 0.909513, -18.0947 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/Position2D/pupils:transform/pos")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0, 0.1, 0.4, 0.6, 1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, 1.58166 ), Vector2( -3.30093, 2.0781 ), Vector2( 0.204201, 6.13906 ), Vector2( 0, 1.58166 ), Vector2( 0, 1.58166 ) ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0, 0.7, 1.15 ), "transitions":FloatArray( 0.63728, 1, 1 ), "values":[ 0.0, 380.0, 350.0 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("base_sclera/unibrow:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.4, 0.6, 0.805359, 0.86785, 0.910486, 0.997041, 1.08552, 1.15 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ -0.455379, 9.36931, -6.43766, -0.455379, -9.73836, 1.17488, -7.57719, 1.65007, -6.52928, 6.60642 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("base_sclera/upper_eyelids:transform/rot")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.3, 0.6, 1, 1.14393 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ -0.602308, -14.5447, -0.602308, 11.0595, -0.602308, -0.602308 ] }
+tracks/15/type = "method"
+tracks/15/path = NodePath(".")
+tracks/15/interp = 1
+tracks/15/keys = { "times":FloatArray( 1.15 ), "transitions":FloatArray( 1 ), "values":[ { "args":[  ], "method":"damage_end" } ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("spike1_L:visibility/visible")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/17/type = "value"
+tracks/17/path = NodePath("spike2_L:visibility/visible")
+tracks/17/interp = 1
+tracks/17/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/18/type = "value"
+tracks/18/path = NodePath("spike3_L:visibility/visible")
+tracks/18/interp = 1
+tracks/18/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/19/type = "value"
+tracks/19/path = NodePath("spike4_L:visibility/visible")
+tracks/19/interp = 1
+tracks/19/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/20/type = "value"
+tracks/20/path = NodePath("spike5_D:visibility/visible")
+tracks/20/interp = 1
+tracks/20/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/21/type = "value"
+tracks/21/path = NodePath("spike6_D:visibility/visible")
+tracks/21/interp = 1
+tracks/21/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/22/type = "value"
+tracks/22/path = NodePath("halo 2:visibility/visible")
+tracks/22/interp = 1
+tracks/22/keys = { "cont":false, "times":FloatArray( 0.7 ), "transitions":FloatArray( 1 ), "values":[ true ] }
+tracks/23/type = "value"
+tracks/23/path = NodePath("halo:visibility/visible")
+tracks/23/interp = 1
+tracks/23/keys = { "cont":false, "times":FloatArray( 0.7 ), "transitions":FloatArray( 1 ), "values":[ true ] }
+tracks/24/type = "value"
+tracks/24/path = NodePath("halo:transform/rot")
+tracks/24/interp = 1
+tracks/24/keys = { "cont":true, "times":FloatArray( 0.7, 1.2 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, 40.0 ] }
+tracks/25/type = "value"
+tracks/25/path = NodePath("halo 2:transform/rot")
+tracks/25/interp = 1
+tracks/25/keys = { "cont":true, "times":FloatArray( 0.7, 1.2 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, -40.0 ] }
+tracks/26/type = "value"
+tracks/26/path = NodePath("halo:visibility/self_opacity")
+tracks/26/interp = 1
+tracks/26/keys = { "cont":true, "times":FloatArray( 0.7, 1.2 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, 0.4 ] }
+tracks/27/type = "value"
+tracks/27/path = NodePath("halo 2:visibility/self_opacity")
+tracks/27/interp = 1
+tracks/27/keys = { "cont":true, "times":FloatArray( 0.7, 1.2 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, 0.4 ] }
+
+[sub_resource type="Animation" id=7]
+
+resource/name = "eyeglow"
+length = 1.0
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/face/glow:frame")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":false, "times":FloatArray( 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ 3, 2, 1, 0, 1, 2, 3 ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("base_sclera/face/glow:visibility/visible")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":false, "times":FloatArray( 0, 0.125, 0.875, 1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ false, true, true, false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/2/interp = 1
+tracks/2/keys = { "cont":true, "times":FloatArray(  ), "transitions":FloatArray(  ), "values":[  ] }
+
+[sub_resource type="Animation" id=6]
+
+resource/name = "sleep_loop"
+length = 4.0
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 2.5, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -0.427185, 9.03744 ), Vector2( -0.427185, 6.70153 ), Vector2( -0.427185, 9.03744 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 2, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -61, -23 ), Vector2( -67, -25 ), Vector2( -61, -23 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 1, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -59, 25 ), Vector2( -64, 27 ), Vector2( -59, 25 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 3, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -28, -58 ), Vector2( -30, -63 ), Vector2( -28, -58 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 0, 3, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 28, -58 ), Vector2( 30, -63 ), Vector2( 28, -58 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 0, 2, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 61, -23 ), Vector2( 67, -25 ), Vector2( 61, -23 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 0, 1, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 59, 25 ), Vector2( 64, 27 ), Vector2( 59, 25 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 2
+tracks/7/keys = { "cont":true, "times":FloatArray( 0, 1.5, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 0, -2.37167 ), Vector2( 0, 0 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 4.99436 ), Vector2( 0, 4.99436 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, -4.75655 ), Vector2( 0, -4.75655 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/unibrow:transform/rot")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.455379, -0.455379 ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera/upper_eyelids:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.602308, -0.602308 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("base_sclera:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("vortex:transform/scale")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("vortex_center:transform/scale")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+
+[sub_resource type="Animation" id=2]
+
+resource/name = "spike_burst"
+length = 2.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1.35, 1.5, 1.89375 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( -0.427185, 12.7112 ), Vector2( -0.734902, 16.8333 ), Vector2( -0.427185, 12.7112 ), Vector2( -0.427167, 9.21469 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 1.06875, 1.5, 1.89375, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -4, 3 ), Vector2( -4, 3 ), Vector2( -27, -8 ), Vector2( -66, -25 ), Vector2( -61, -23 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 1.06875, 1.5, 1.89375, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 3, 1 ), Vector2( 3, 1 ), Vector2( -24, 10 ), Vector2( -63, 27 ), Vector2( -59, 25 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 1.06875, 1.5, 1.89375, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -5, -1 ), Vector2( -5, -1 ), Vector2( -12, -23 ), Vector2( -30, -64 ), Vector2( -28, -58 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 0, 1.06875, 1.5, 1.89375, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 5, -1 ), Vector2( 5, -1 ), Vector2( 12, -23 ), Vector2( 30, -64 ), Vector2( 28, -58 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 0, 1.06875, 1.5, 1.89375, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 4, -3 ), Vector2( 4, -3 ), Vector2( 27, -8 ), Vector2( 66, -25 ), Vector2( 61, -23 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 0, 1.06875, 1.5, 1.89375, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -3, 1 ), Vector2( -3, 1 ), Vector2( 24, 10 ), Vector2( 63, 27 ), Vector2( 59, 25 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 2
+tracks/7/keys = { "cont":true, "times":FloatArray( 0, 1.5, 1.89375 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 0, 5.53393 ), Vector2( 0, 0 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 0, 1.5, 1.89375 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 14.7446 ), Vector2( 0, 11.6452 ), Vector2( 0, 14.4223 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 0, 1.5, 1.89375 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, -16.3514 ), Vector2( 4.44492e-05, -4.72872 ), Vector2( 4.62271e-06, -15.1426 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/Position2D/pupils:transform/pos")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 1.58166 ), Vector2( 0, 1.58166 ) ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0, 0.375, 0.75, 0.9, 1.05, 1.2, 1.35, 1.5, 1.65, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 0.0, -3.25486, -9.057, -5.42478, -13.3728, -8.13716, -5.42478, -13.3728, -8.13716, 13.0141, 0.0 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("base_sclera/unibrow:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.455379, -0.455379 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("base_sclera/upper_eyelids:transform/rot")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.602308, -0.602308 ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("spike1_L:visibility/visible")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":false, "times":FloatArray( 0, 1.2, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("spike2_L:visibility/visible")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":false, "times":FloatArray( 0, 1.2, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/17/type = "value"
+tracks/17/path = NodePath("spike3_L:visibility/visible")
+tracks/17/interp = 1
+tracks/17/keys = { "cont":false, "times":FloatArray( 0, 1.2, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/18/type = "value"
+tracks/18/path = NodePath("spike4_L:visibility/visible")
+tracks/18/interp = 1
+tracks/18/keys = { "cont":false, "times":FloatArray( 0, 1.2, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/19/type = "value"
+tracks/19/path = NodePath("spike5_D:visibility/visible")
+tracks/19/interp = 1
+tracks/19/keys = { "cont":false, "times":FloatArray( 0, 1.2, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/20/type = "value"
+tracks/20/path = NodePath("spike6_D:visibility/visible")
+tracks/20/interp = 1
+tracks/20/keys = { "cont":false, "times":FloatArray( 0, 1.2, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/21/type = "value"
+tracks/21/path = NodePath("spike_area:monitoring")
+tracks/21/interp = 1
+tracks/21/keys = { "cont":false, "times":FloatArray( 2.025 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/22/type = "value"
+tracks/22/path = NodePath("player:play/play")
+tracks/22/interp = 1
+tracks/22/keys = { "cont":false, "times":FloatArray( 1.78125 ), "transitions":FloatArray( 1 ), "values":[ "spikes_appear" ] }
+tracks/23/type = "value"
+tracks/23/path = NodePath(".:doing_damage")
+tracks/23/interp = 1
+tracks/23/keys = { "cont":false, "times":FloatArray( 1.95 ), "transitions":FloatArray( 1 ), "values":[ true ] }
+tracks/24/type = "value"
+tracks/24/path = NodePath("base_sclera/face/glow:frame")
+tracks/24/interp = 1
+tracks/24/keys = { "cont":false, "times":FloatArray( 0.075, 0.16875, 0.2625, 0.35625, 0.45, 0.54375, 0.6375, 0.73125, 0.825, 0.91875, 1.0125, 1.10625, 1.2, 1.29375, 1.3875, 1.48125, 1.575, 1.66875, 1.7625 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3 ] }
+tracks/25/type = "value"
+tracks/25/path = NodePath("base_sclera/face/glow:visibility/visible")
+tracks/25/interp = 1
+tracks/25/keys = { "cont":false, "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "values":[ false, false ] }
+tracks/26/type = "value"
+tracks/26/path = NodePath("vortex_center:transform/scale")
+tracks/26/interp = 1
+tracks/26/keys = { "cont":true, "times":FloatArray( 0, 1.65, 1.875, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 0.8, 0.8 ) ] }
+tracks/27/type = "value"
+tracks/27/path = NodePath("vortex:transform/scale")
+tracks/27/interp = 1
+tracks/27/keys = { "cont":true, "times":FloatArray( 0, 1.65, 1.875, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ] }
+tracks/28/type = "value"
+tracks/28/path = NodePath("base_sclera/face:modulate")
+tracks/28/interp = 1
+tracks/28/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.196078, 0.196078, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/29/type = "value"
+tracks/29/path = NodePath("base_sclera/unibrow:modulate")
+tracks/29/interp = 1
+tracks/29/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/30/type = "value"
+tracks/30/path = NodePath("base_sclera/upper_eyelids:modulate")
+tracks/30/interp = 1
+tracks/30/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/31/type = "value"
+tracks/31/path = NodePath("base_sclera/lower_eyelids:modulate")
+tracks/31/interp = 1
+tracks/31/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ] }
+
+[sub_resource type="Animation" id=13]
+
+resource/name = "spike_burst"
+length = 3.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 2, 2.5, 2.75, 3 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( -0.427185, 12.7112 ), Vector2( -0.734902, 16.8333 ), Vector2( -0.427185, 12.7112 ), Vector2( -0.427167, 9.21469 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 2, 2.25, 2.75, 3, 3.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -4, 3 ), Vector2( -4, 3 ), Vector2( -27, -8 ), Vector2( -66, -25 ), Vector2( -61, -23 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 2, 2.25, 2.75, 3, 3.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 3, 1 ), Vector2( 3, 1 ), Vector2( -24, 10 ), Vector2( -63, 27 ), Vector2( -59, 25 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 2, 2.25, 2.75, 3, 3.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -5, -1 ), Vector2( -5, -1 ), Vector2( -12, -23 ), Vector2( -30, -64 ), Vector2( -28, -58 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 2, 2.25, 2.75, 3, 3.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 5, -1 ), Vector2( 5, -1 ), Vector2( 12, -23 ), Vector2( 30, -64 ), Vector2( 28, -58 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 2, 2.25, 2.75, 3, 3.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 4, -3 ), Vector2( 4, -3 ), Vector2( 27, -8 ), Vector2( 66, -25 ), Vector2( 61, -23 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 2, 2.25, 2.75, 3, 3.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -3, 1 ), Vector2( -3, 1 ), Vector2( 24, 10 ), Vector2( 63, 27 ), Vector2( 59, 25 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 2
+tracks/7/keys = { "cont":true, "times":FloatArray( 2, 2.75, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 0, 5.53393 ), Vector2( 0, 0 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 2, 2.75, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 14.7446 ), Vector2( 0, 11.6452 ), Vector2( 0, 14.4223 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 2, 2.75, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, -16.3514 ), Vector2( 4.44492e-05, -4.72872 ), Vector2( 4.62271e-06, -15.1426 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 2, 3.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/Position2D/pupils:transform/pos")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 2, 3.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 1.58166 ), Vector2( 0, 1.58166 ) ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 2, 2.3, 2.4, 2.5, 2.6, 2.7, 3, 3.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 0.0, -3.25486, -9.057, -5.42478, -13.3728, -8.13716, 13.0141, 0.0 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("base_sclera/unibrow:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 2, 3.5 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.455379, -0.455379 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("base_sclera/upper_eyelids:transform/rot")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 2, 3.5 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.602308, -0.602308 ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("spike1_L:visibility/visible")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":false, "times":FloatArray( 2, 2.1, 3.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("spike2_L:visibility/visible")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":false, "times":FloatArray( 2, 2.1, 3.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/17/type = "value"
+tracks/17/path = NodePath("spike3_L:visibility/visible")
+tracks/17/interp = 1
+tracks/17/keys = { "cont":false, "times":FloatArray( 2, 2.1, 3.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/18/type = "value"
+tracks/18/path = NodePath("spike4_L:visibility/visible")
+tracks/18/interp = 1
+tracks/18/keys = { "cont":false, "times":FloatArray( 2, 2.1, 3.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/19/type = "value"
+tracks/19/path = NodePath("spike5_D:visibility/visible")
+tracks/19/interp = 1
+tracks/19/keys = { "cont":false, "times":FloatArray( 2, 2.1, 3.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/20/type = "value"
+tracks/20/path = NodePath("spike6_D:visibility/visible")
+tracks/20/interp = 1
+tracks/20/keys = { "cont":false, "times":FloatArray( 2, 2.1, 3.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/21/type = "value"
+tracks/21/path = NodePath("spike_area:monitoring")
+tracks/21/interp = 1
+tracks/21/keys = { "cont":false, "times":FloatArray( 3 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/22/type = "value"
+tracks/22/path = NodePath("player:play/play")
+tracks/22/interp = 1
+tracks/22/keys = { "cont":false, "times":FloatArray( 2.75 ), "transitions":FloatArray( 1 ), "values":[ "spikes_appear" ] }
+tracks/23/type = "value"
+tracks/23/path = NodePath(".:doing_damage")
+tracks/23/interp = 1
+tracks/23/keys = { "cont":false, "times":FloatArray( 2.9 ), "transitions":FloatArray( 1 ), "values":[ true ] }
+tracks/24/type = "value"
+tracks/24/path = NodePath("base_sclera/face/glow:frame")
+tracks/24/interp = 1
+tracks/24/keys = { "cont":false, "times":FloatArray( 0.1, 0.225, 0.35, 0.475, 0.6, 0.725, 0.85, 0.975, 1.1, 1.225, 1.35, 1.475, 1.6, 1.725, 1.85, 1.975, 2.1, 2.225, 2.35 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3 ] }
+tracks/25/type = "value"
+tracks/25/path = NodePath("base_sclera/face/glow:visibility/visible")
+tracks/25/interp = 1
+tracks/25/keys = { "cont":false, "times":FloatArray( 0, 0.1, 2.35, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ false, true, true, false ] }
+
+[sub_resource type="Animation" id=14]
+
+resource/name = "spike_burst_glow_bod"
+length = 3.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1.8, 2.2, 2.525 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( -0.427185, 12.7112 ), Vector2( -0.734902, 16.8333 ), Vector2( -0.427185, 12.7112 ), Vector2( -0.427167, 9.21469 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 1.425, 2.2, 2.525, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -4, 3 ), Vector2( -4, 3 ), Vector2( -27, -8 ), Vector2( -66, -25 ), Vector2( -61, -23 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 1.425, 2.2, 2.525, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 3, 1 ), Vector2( 3, 1 ), Vector2( -24, 10 ), Vector2( -63, 27 ), Vector2( -59, 25 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 1.425, 2.2, 2.525, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -5, -1 ), Vector2( -5, -1 ), Vector2( -12, -23 ), Vector2( -30, -64 ), Vector2( -28, -58 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 0, 1.425, 2.2, 2.525, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 5, -1 ), Vector2( 5, -1 ), Vector2( 12, -23 ), Vector2( 30, -64 ), Vector2( 28, -58 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 0, 1.425, 2.2, 2.525, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 4, -3 ), Vector2( 4, -3 ), Vector2( 27, -8 ), Vector2( 66, -25 ), Vector2( 61, -23 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 0, 1.425, 2.2, 2.525, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -3, 1 ), Vector2( -3, 1 ), Vector2( 24, 10 ), Vector2( 63, 27 ), Vector2( 59, 25 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 2
+tracks/7/keys = { "cont":true, "times":FloatArray( 0, 2.2, 2.525 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 0, 5.53393 ), Vector2( 0, 0 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 0, 2.2, 2.525 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 14.7446 ), Vector2( 0, 11.6452 ), Vector2( 0, 14.4223 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 0, 2.2, 2.525 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, -16.3514 ), Vector2( 4.44492e-05, -4.72872 ), Vector2( 4.62271e-06, -15.1426 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/Position2D/pupils:transform/pos")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 1.58166 ), Vector2( 0, 1.58166 ) ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0, 0.5, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 0.0, -3.25486, -9.057, -5.42478, -13.3728, -8.13716, -5.42478, -13.3728, -8.13716, 13.0141, 0.0 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("base_sclera/unibrow:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.455379, -0.455379 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("base_sclera/upper_eyelids:transform/rot")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.602308, -0.602308 ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("spike1_L:visibility/visible")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":false, "times":FloatArray( 0, 1.6, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("spike2_L:visibility/visible")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":false, "times":FloatArray( 0, 1.6, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/17/type = "value"
+tracks/17/path = NodePath("spike3_L:visibility/visible")
+tracks/17/interp = 1
+tracks/17/keys = { "cont":false, "times":FloatArray( 0, 1.6, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/18/type = "value"
+tracks/18/path = NodePath("spike4_L:visibility/visible")
+tracks/18/interp = 1
+tracks/18/keys = { "cont":false, "times":FloatArray( 0, 1.6, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/19/type = "value"
+tracks/19/path = NodePath("spike5_D:visibility/visible")
+tracks/19/interp = 1
+tracks/19/keys = { "cont":false, "times":FloatArray( 0, 1.6, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/20/type = "value"
+tracks/20/path = NodePath("spike6_D:visibility/visible")
+tracks/20/interp = 1
+tracks/20/keys = { "cont":false, "times":FloatArray( 0, 1.6, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/21/type = "value"
+tracks/21/path = NodePath("spike_area:monitoring")
+tracks/21/interp = 1
+tracks/21/keys = { "cont":false, "times":FloatArray( 2.7 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/22/type = "value"
+tracks/22/path = NodePath("player:play/play")
+tracks/22/interp = 1
+tracks/22/keys = { "cont":false, "times":FloatArray( 2.375 ), "transitions":FloatArray( 1 ), "values":[ "spikes_appear" ] }
+tracks/23/type = "value"
+tracks/23/path = NodePath(".:doing_damage")
+tracks/23/interp = 1
+tracks/23/keys = { "cont":false, "times":FloatArray( 2.6 ), "transitions":FloatArray( 1 ), "values":[ true ] }
+tracks/24/type = "value"
+tracks/24/path = NodePath("base_sclera/face/glow:frame")
+tracks/24/interp = 1
+tracks/24/keys = { "cont":false, "times":FloatArray( 0.1, 0.225, 0.35, 0.475, 0.6, 0.725, 0.85, 0.975, 1.1, 1.225, 1.35, 1.475, 1.6, 1.725, 1.85, 1.975, 2.1, 2.225, 2.35 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3 ] }
+tracks/25/type = "value"
+tracks/25/path = NodePath("base_sclera/face/glow:visibility/visible")
+tracks/25/interp = 1
+tracks/25/keys = { "cont":false, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ false, false ] }
+tracks/26/type = "value"
+tracks/26/path = NodePath("vortex_center:transform/scale")
+tracks/26/interp = 1
+tracks/26/keys = { "cont":true, "times":FloatArray( 0, 2.2, 2.5, 3 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 0.8, 0.8 ) ] }
+tracks/27/type = "value"
+tracks/27/path = NodePath("vortex:transform/scale")
+tracks/27/interp = 1
+tracks/27/keys = { "cont":true, "times":FloatArray( 0, 2.2, 2.5, 3 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ] }
+tracks/28/type = "value"
+tracks/28/path = NodePath("base_sclera/face:modulate")
+tracks/28/interp = 1
+tracks/28/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.509804, 0.509804, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/29/type = "value"
+tracks/29/path = NodePath("base_sclera/unibrow:modulate")
+tracks/29/interp = 1
+tracks/29/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.509804, 0.509804, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/30/type = "value"
+tracks/30/path = NodePath("base_sclera/upper_eyelids:modulate")
+tracks/30/interp = 1
+tracks/30/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.509804, 0.509804, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/31/type = "value"
+tracks/31/path = NodePath("base_sclera/lower_eyelids:modulate")
+tracks/31/interp = 1
+tracks/31/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.509804, 0.509804, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ] }
+
+[sub_resource type="Animation" id=4]
+
+resource/name = "spike_burst_gloweyes"
+length = 3.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1.8, 2.2, 2.525 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( -0.427185, 12.7112 ), Vector2( -0.734902, 16.8333 ), Vector2( -0.427185, 12.7112 ), Vector2( -0.427167, 9.21469 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 1.425, 2.2, 2.525, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -4, 3 ), Vector2( -4, 3 ), Vector2( -27, -8 ), Vector2( -66, -25 ), Vector2( -61, -23 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 1.425, 2.2, 2.525, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 3, 1 ), Vector2( 3, 1 ), Vector2( -24, 10 ), Vector2( -63, 27 ), Vector2( -59, 25 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 1.425, 2.2, 2.525, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -5, -1 ), Vector2( -5, -1 ), Vector2( -12, -23 ), Vector2( -30, -64 ), Vector2( -28, -58 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 0, 1.425, 2.2, 2.525, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 5, -1 ), Vector2( 5, -1 ), Vector2( 12, -23 ), Vector2( 30, -64 ), Vector2( 28, -58 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 0, 1.425, 2.2, 2.525, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 4, -3 ), Vector2( 4, -3 ), Vector2( 27, -8 ), Vector2( 66, -25 ), Vector2( 61, -23 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 0, 1.425, 2.2, 2.525, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -3, 1 ), Vector2( -3, 1 ), Vector2( 24, 10 ), Vector2( 63, 27 ), Vector2( 59, 25 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 2
+tracks/7/keys = { "cont":true, "times":FloatArray( 0, 2.2, 2.525 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 0, 5.53393 ), Vector2( 0, 0 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 0, 2.2, 2.525 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 14.7446 ), Vector2( 0, 11.6452 ), Vector2( 0, 14.4223 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 0, 2.2, 2.525 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, -16.3514 ), Vector2( 4.44492e-05, -4.72872 ), Vector2( 4.62271e-06, -15.1426 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/Position2D/pupils:transform/pos")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 1.58166 ), Vector2( 0, 1.58166 ) ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0, 0.5, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 0.0, -3.25486, -9.057, -5.42478, -13.3728, -8.13716, -5.42478, -13.3728, -8.13716, 13.0141, 0.0 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("base_sclera/unibrow:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.455379, -0.455379 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("base_sclera/upper_eyelids:transform/rot")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.602308, -0.602308 ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("spike1_L:visibility/visible")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":false, "times":FloatArray( 0, 1.6, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("spike2_L:visibility/visible")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":false, "times":FloatArray( 0, 1.6, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/17/type = "value"
+tracks/17/path = NodePath("spike3_L:visibility/visible")
+tracks/17/interp = 1
+tracks/17/keys = { "cont":false, "times":FloatArray( 0, 1.6, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/18/type = "value"
+tracks/18/path = NodePath("spike4_L:visibility/visible")
+tracks/18/interp = 1
+tracks/18/keys = { "cont":false, "times":FloatArray( 0, 1.6, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/19/type = "value"
+tracks/19/path = NodePath("spike5_D:visibility/visible")
+tracks/19/interp = 1
+tracks/19/keys = { "cont":false, "times":FloatArray( 0, 1.6, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/20/type = "value"
+tracks/20/path = NodePath("spike6_D:visibility/visible")
+tracks/20/interp = 1
+tracks/20/keys = { "cont":false, "times":FloatArray( 0, 1.6, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ false, true, true ] }
+tracks/21/type = "value"
+tracks/21/path = NodePath("spike_area:monitoring")
+tracks/21/interp = 1
+tracks/21/keys = { "cont":false, "times":FloatArray( 2.7 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/22/type = "value"
+tracks/22/path = NodePath("player:play/play")
+tracks/22/interp = 1
+tracks/22/keys = { "cont":false, "times":FloatArray( 2.375 ), "transitions":FloatArray( 1 ), "values":[ "spikes_appear" ] }
+tracks/23/type = "value"
+tracks/23/path = NodePath(".:doing_damage")
+tracks/23/interp = 1
+tracks/23/keys = { "cont":false, "times":FloatArray( 2.6 ), "transitions":FloatArray( 1 ), "values":[ true ] }
+tracks/24/type = "value"
+tracks/24/path = NodePath("base_sclera/face/glow:frame")
+tracks/24/interp = 1
+tracks/24/keys = { "cont":false, "times":FloatArray( 0.1, 0.225, 0.35, 0.475, 0.6, 0.725, 0.85, 0.975, 1.1, 1.225, 1.35, 1.475, 1.6, 1.725, 1.85, 1.975, 2.1, 2.225, 2.35 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3 ] }
+tracks/25/type = "value"
+tracks/25/path = NodePath("base_sclera/face/glow:visibility/visible")
+tracks/25/interp = 1
+tracks/25/keys = { "cont":false, "times":FloatArray( 0, 0.0999999, 2.35, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ false, true, true, false ] }
+tracks/26/type = "value"
+tracks/26/path = NodePath("vortex_center:transform/scale")
+tracks/26/interp = 1
+tracks/26/keys = { "cont":true, "times":FloatArray( 0, 2.2, 2.5, 3 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 0.8, 0.8 ) ] }
+tracks/27/type = "value"
+tracks/27/path = NodePath("vortex:transform/scale")
+tracks/27/interp = 1
+tracks/27/keys = { "cont":true, "times":FloatArray( 0, 2.2, 2.5, 3 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ] }
+tracks/28/type = "value"
+tracks/28/path = NodePath("base_sclera/face:modulate")
+tracks/28/interp = 1
+tracks/28/keys = { "cont":true, "times":FloatArray( 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/29/type = "value"
+tracks/29/path = NodePath("base_sclera/unibrow:modulate")
+tracks/29/interp = 1
+tracks/29/keys = { "cont":true, "times":FloatArray( 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/30/type = "value"
+tracks/30/path = NodePath("base_sclera/upper_eyelids:modulate")
+tracks/30/interp = 1
+tracks/30/keys = { "cont":true, "times":FloatArray( 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/31/type = "value"
+tracks/31/path = NodePath("base_sclera/lower_eyelids:modulate")
+tracks/31/interp = 1
+tracks/31/keys = { "cont":true, "times":FloatArray( 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ) ] }
+
+[sub_resource type="Animation" id=10]
+
+resource/name = "spike_retract"
+length = 1.5
+loop = false
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.375, 0.5625, 1.125, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -0.427185, 12.7112 ), Vector2( -0.427185, 12.7112 ), Vector2( -0.427147, 9.12634 ), Vector2( -0.427177, 15.9376 ), Vector2( -0.427177, 15.9376 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.375, 0.525, 0.6, 0.75, 0.825, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( -61, -23 ), Vector2( -61, -23 ), Vector2( -63.248, -23.944 ), Vector2( -67.2675, -25.6619 ), Vector2( -69.78, -26.715 ), Vector2( -66, -25 ), Vector2( -27, -8 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 0.525, 0.675, 0.75, 0.9, 0.975, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( -59, 25 ), Vector2( -59, 25 ), Vector2( -61.048, 25.944 ), Vector2( -64.8769, 27.6619 ), Vector2( -67.155, 28.715 ), Vector2( -63, 27 ), Vector2( -24, 10 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 0.225, 0.375, 0.45, 0.6, 0.675, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( -28, -58 ), Vector2( -28, -58 ), Vector2( -28.976, -60.512 ), Vector2( -30.7725, -64.8794 ), Vector2( -31.86, -67.695 ), Vector2( -30, -64 ), Vector2( -12, -23 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 0, 0.225, 0.375, 0.45, 0.6, 0.675, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 28, -58 ), Vector2( 28, -58 ), Vector2( 28.976, -60.512 ), Vector2( 30.7725, -64.8794 ), Vector2( 31.86, -67.695 ), Vector2( 30, -64 ), Vector2( 12, -23 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 0, 0.375, 0.525, 0.6, 0.75, 0.825, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 61, -23 ), Vector2( 61, -23 ), Vector2( 63.248, -23.944 ), Vector2( 67.2675, -25.6619 ), Vector2( 69.78, -26.715 ), Vector2( 66, -25 ), Vector2( 27, -8 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 0, 0.525, 0.675, 0.75, 0.9, 0.975, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 59, 25 ), Vector2( 59, 25 ), Vector2( 61.048, 25.944 ), Vector2( 64.8769, 27.6619 ), Vector2( 67.155, 28.715 ), Vector2( 63, 27 ), Vector2( 24, 10 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 2
+tracks/7/keys = { "cont":true, "times":FloatArray( 0, 0.375, 0.5625, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, -2.15092 ), Vector2( 0, 0 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 0, 0.375, 0.75, 0.975, 1.05, 1.125, 1.2, 1.425 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, 14.4223 ), Vector2( 0, 14.4223 ), Vector2( 0, 9.45848 ), Vector2( 0, 12.1073 ), Vector2( -0.529755, 12.0154 ), Vector2( 0, 14.7446 ), Vector2( 0.116911, 12.5969 ), Vector2( 0, 14.7446 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 0, 0.375, 0.75, 1.125, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 3.75645e-06, -14.1959 ), Vector2( 4.62271e-06, -15.1426 ), Vector2( 4.62271e-06, -15.1426 ), Vector2( 0, -16.3514 ), Vector2( 0.63112, -11.7758 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 0, 0.375, 1.125 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/Position2D/pupils:transform/pos")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0, 0.375, 1.125 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 1.58166 ), Vector2( 0, 1.58166 ), Vector2( 0, 1.58166 ) ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0, 0.5625, 0.9375, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ 0.0, -4.63569, 10.3859, 0.0 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("base_sclera/unibrow:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0, 0.375, 0.75, 0.975, 1.05, 1.125, 1.2, 1.425 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ -0.455379, -0.455379, -4.1182, -1.92051, 1.44731, -3.07582, -0.828277, -2.51125 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("spike6_D:visibility/visible")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":false, "times":FloatArray( 0, 1.425, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ true, true, false ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("spike5_D:visibility/visible")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":false, "times":FloatArray( 0, 1.425, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ true, true, false ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("spike4_L:visibility/visible")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":false, "times":FloatArray( 0, 1.425, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ true, true, false ] }
+tracks/17/type = "value"
+tracks/17/path = NodePath("spike3_L:visibility/visible")
+tracks/17/interp = 1
+tracks/17/keys = { "cont":false, "times":FloatArray( 0, 1.425, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ true, true, false ] }
+tracks/18/type = "value"
+tracks/18/path = NodePath("spike2_L:visibility/visible")
+tracks/18/interp = 1
+tracks/18/keys = { "cont":false, "times":FloatArray( 0, 1.425, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ true, true, false ] }
+tracks/19/type = "value"
+tracks/19/path = NodePath("spike1_L:visibility/visible")
+tracks/19/interp = 1
+tracks/19/keys = { "cont":false, "times":FloatArray( 0, 1.425, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ true, true, false ] }
+tracks/20/type = "value"
+tracks/20/path = NodePath("spike_area:monitoring")
+tracks/20/interp = 1
+tracks/20/keys = { "cont":false, "times":FloatArray( 1.08536 ), "transitions":FloatArray( 1 ), "values":[ true ] }
+tracks/21/type = "value"
+tracks/21/path = NodePath("player:play/play")
+tracks/21/interp = 1
+tracks/21/keys = { "cont":false, "times":FloatArray( 0.75 ), "transitions":FloatArray( 1 ), "values":[ "spikes_hide" ] }
+tracks/22/type = "value"
+tracks/22/path = NodePath(".:doing_damage")
+tracks/22/interp = 1
+tracks/22/keys = { "cont":false, "times":FloatArray( 1.25276 ), "transitions":FloatArray( 1 ), "values":[ false ] }
+tracks/23/type = "value"
+tracks/23/path = NodePath("vortex:transform/scale")
+tracks/23/interp = 1
+tracks/23/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+tracks/24/type = "value"
+tracks/24/path = NodePath("vortex_center:transform/scale")
+tracks/24/interp = 1
+tracks/24/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+
+[sub_resource type="Animation" id=3]
+
+resource/name = "take_damage"
+length = 1.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.165, 0.33, 0.66, 0.9 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -0.427185, 12.7112 ), Vector2( -0.690711, 14.8194 ), Vector2( -0.954224, 12.1842 ), Vector2( -1.32509, 8.65104 ), Vector2( -0.427185, 12.7112 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( -61, -23 ), Vector2( -61, -23 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( -59, 25 ), Vector2( -59, 25 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( -28, -58 ), Vector2( -28, -58 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 28, -58 ), Vector2( 28, -58 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 61, -23 ), Vector2( 61, -23 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 59, 25 ), Vector2( 59, 25 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 2
+tracks/7/keys = { "cont":true, "times":FloatArray( 0, 0.3, 0.6, 0.7, 0.8, 0.9 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 5.43774, 11.6338 ), Vector2( 0.849197, 4.76732 ), Vector2( 0.495671, 1.67289 ), Vector2( -0.480046, 3.55802 ), Vector2( 0, 0 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 0, 0.33, 0.9 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 14.7446 ), Vector2( 0, 7.89307 ), Vector2( 0, 14.7446 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.6, 0.9 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 3.78883e-07, -13.6692 ), Vector2( -0.175138, -5.97692 ), Vector2( -0.128546, -4.81709 ), Vector2( 0.31556, -13.038 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/Position2D/pupils:transform/pos")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0, 0.1, 0.4, 0.6, 0.9 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, 1.58166 ), Vector2( -3.30093, 2.0781 ), Vector2( 0.204201, 6.13906 ), Vector2( 0, 1.58166 ), Vector2( 0, 1.58166 ) ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0, 0.3, 0.7, 0.9 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ 0.0, -13.4013, 10.6459, 0.0 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("base_sclera/unibrow:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0, 0.33, 0.66, 0.9 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ -0.455379, 9.36931, -6.43766, -0.455379 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("base_sclera/upper_eyelids:transform/rot")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 0, 0.2, 0.3, 0.6, 0.9 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ -0.602308, -14.5447, -0.602308, 11.0595, -0.602308 ] }
+tracks/15/type = "method"
+tracks/15/path = NodePath(".")
+tracks/15/interp = 1
+tracks/15/keys = { "times":FloatArray( 1 ), "transitions":FloatArray( 1 ), "values":[ { "args":[  ], "method":"damage_end" } ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("vortex:transform/scale")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+tracks/17/type = "value"
+tracks/17/path = NodePath("vortex_center:transform/scale")
+tracks/17/interp = 1
+tracks/17/keys = { "cont":true, "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+
+[sub_resource type="Animation" id=8]
+
+resource/name = "to_sleep"
+length = 1.5
+loop = false
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.45, 1.05 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -0.427185, 9.79134 ), Vector2( -0.427148, 5.3768 ), Vector2( -0.427158, 9.87315 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.45, 1.05 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -61, -23 ), Vector2( -68, -25 ), Vector2( -61, -23 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 0.6, 1.2 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -59, 25 ), Vector2( -65, 28 ), Vector2( -59, 25 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 0.3, 0.9 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -28, -58 ), Vector2( -32, -66 ), Vector2( -28, -58 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 0, 0.3, 0.9 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 28, -58 ), Vector2( 32, -66 ), Vector2( 28, -58 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 0, 0.45, 1.05 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 61, -23 ), Vector2( 68, -25 ), Vector2( 61, -23 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 0, 0.6, 1.2 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 59, 25 ), Vector2( 65, 28 ), Vector2( 59, 25 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 2
+tracks/7/keys = { "cont":true, "times":FloatArray( 0, 0.45, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 0, -2.89871 ), Vector2( 0, 0 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 0, 0.45, 0.9, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 0, 14.7446 ), Vector2( 0, 14.7446 ), Vector2( 0, 14.7446 ), Vector2( 0, 4.99436 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 0, 0.45, 0.737199, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 0, -16.3514 ), Vector2( 0, -16.3514 ), Vector2( 0.315552, -15.5356 ), Vector2( 0, -4.75655 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/Position2D/pupils:transform/pos")
+tracks/11/interp = 1
+tracks/11/keys = { "cont":true, "times":FloatArray( 0, 0.15, 0.3, 0.45, 0.6, 0.75, 0.9, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, 1.58166 ), Vector2( -2.15092, 1.9728 ), Vector2( -2.86789, -1.22091 ), Vector2( -2.86787, -3.62436 ), Vector2( 0.358475, -5.41679 ), Vector2( 2.15089, -3.26587 ), Vector2( 3.22993, -0.751091 ), Vector2( 1.07542, -0.39798 ) ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera/unibrow:transform/rot")
+tracks/12/interp = 1
+tracks/12/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.455379, -0.455379 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("base_sclera:transform/rot")
+tracks/13/interp = 1
+tracks/13/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, 0.0 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("base_sclera/upper_eyelids:transform/rot")
+tracks/14/interp = 1
+tracks/14/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ -0.602308, -0.602308 ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("vortex_center:transform/scale")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("vortex:transform/scale")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+
+[sub_resource type="Animation" id=9]
+
+resource/name = "tracking_loop"
+length = 4.0
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("base_sclera/unibrow:transform/pos")
+tracks/0/interp = 2
+tracks/0/keys = { "cont":true, "times":FloatArray( 1.5, 2, 2.5, 4 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( -0.427185, 12.7112 ), Vector2( -0.719182, 9.49931 ), Vector2( -0.427185, 12.7112 ), Vector2( -0.427185, 12.7112 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("spike1_L:transform/pos")
+tracks/1/interp = 2
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 1, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -61, -23 ), Vector2( -68, -25 ), Vector2( -61, -23 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("spike2_L:transform/pos")
+tracks/2/interp = 2
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 1.25, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -59, 25 ), Vector2( -65, 28 ), Vector2( -59, 25 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("spike3_L:transform/pos")
+tracks/3/interp = 2
+tracks/3/keys = { "cont":true, "times":FloatArray( 0, 1.75, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( -28, -58 ), Vector2( -32, -66 ), Vector2( -28, -58 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("spike4_L:transform/pos")
+tracks/4/interp = 2
+tracks/4/keys = { "cont":true, "times":FloatArray( 0, 1.75, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 28, -58 ), Vector2( 32, -66 ), Vector2( 28, -58 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("spike5_D:transform/pos")
+tracks/5/interp = 2
+tracks/5/keys = { "cont":true, "times":FloatArray( 0, 1, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 61, -23 ), Vector2( 68, -25 ), Vector2( 61, -23 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("spike6_D:transform/pos")
+tracks/6/interp = 2
+tracks/6/keys = { "cont":true, "times":FloatArray( 0, 1.25, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 59, 25 ), Vector2( 65, 28 ), Vector2( 59, 25 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("base_sclera:transform/pos")
+tracks/7/interp = 2
+tracks/7/keys = { "cont":true, "times":FloatArray( 0, 2.25, 4 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 0, -2.33591 ), Vector2( 0, 0 ) ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("base_sclera/lower_eyelids:transform/pos")
+tracks/8/interp = 2
+tracks/8/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 10.6665 ), Vector2( 0, 10.6665 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("base_sclera/upper_eyelids:transform/pos")
+tracks/9/interp = 2
+tracks/9/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, -7.12193 ), Vector2( 0, -7.12193 ) ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("base_sclera/face:transform/pos")
+tracks/10/interp = 2
+tracks/10/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 7.82262 ), Vector2( 0, 7.82262 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("base_sclera/Position2D/pupils:transform/pos")
+tracks/11/interp = 2
+tracks/11/keys = { "cont":true, "times":FloatArray( 0, 0.75, 2, 2.25, 3.5, 4 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, 1.58166 ), Vector2( -3.43422, 2.01094 ), Vector2( -3.43422, 2.01094 ), Vector2( 3.94713, 1.5712 ), Vector2( 3.94713, 1.5712 ), Vector2( 0, 1.58166 ) ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath("base_sclera/unibrow:transform/rot")
+tracks/12/interp = 2
+tracks/12/keys = { "cont":true, "times":FloatArray( 0, 0.75, 1.5, 2.5, 3.5, 4 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0.0, -3.70786, -3.70786, 4.34155, 4.34155, 0.0 ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath("base_sclera/upper_eyelids:transform/rot")
+tracks/13/interp = 2
+tracks/13/keys = { "cont":true, "times":FloatArray( 0, 0.75, 1.75, 2, 2.25, 3.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0.0, -4.90421, -4.90421, 0.0, 6.95582, 6.95582 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("base_sclera:transform/rot")
+tracks/14/interp = 2
+tracks/14/keys = { "cont":true, "times":FloatArray( 0, 1.5, 2.75, 4 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ 0.0, -4.67129, 3.64831, 0.0 ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("vortex:transform/scale")
+tracks/15/interp = 1
+tracks/15/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("vortex_center:transform/scale")
+tracks/16/interp = 1
+tracks/16/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+
+[sub_resource type="Animation" id=16]
+
+resource/name = "vortex_spin"
+length = 6.0
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("vortex:transform/rot")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 6 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, 720.0 ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("vortex_center:transform/rot")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 6 ), "transitions":FloatArray( 1, 1 ), "values":[ 720.0, -360.0 ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("vortex_center:modulate")
+tracks/2/interp = 1
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 1, 2, 3, 4, 5, 6 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ) ] }
+
+[sub_resource type="CircleShape2D" id=17]
+
+custom_solver_bias = 0.0
+radius = 180.0
+
+[sub_resource type="SampleLibrary" id=18]
+
+samples/spikes_hide = { "db":0.0, "pitch":1.0, "sample":ExtResource( 18 ) }
+samples/spikes_appear = { "db":0.0, "pitch":1.0, "sample":ExtResource( 17 ) }
+
+[node name="sacra_pinchorb" type="RigidBody2D"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, -0, 0, 1, 0.291992, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 1
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = true
+continuous_cd = 0
+contacts_reported = 3
+contact_monitor = true
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+script/script = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+drop = 0
+doing_damage = false
+fluff_type = 1
+
+[node name="vortex" type="Sprite" parent="."]
+
+transform/rot = 35.7664
+texture = ExtResource( 2 )
+
+[node name="vortex_center" type="Sprite" parent="."]
+
+visibility/blend_mode = 1
+transform/pos = Vector2( 0.397223, 1.1698e-06 )
+transform/rot = 666.35
+texture = ExtResource( 3 )
+modulate = Color( 0.463217, 0, 0.0233767, 1 )
+
+[node name="smoke_twirl" type="Particles2D" parent="."]
+
+visibility/blend_mode = 1
+transform/pos = Vector2( -0.156686, 10.1065 )
+config/amount = 5
+config/lifetime = 5.0
+config/emitting = false
+config/local_space = false
+config/texture = ExtResource( 4 )
+params/direction = 0.0
+params/spread = 180.0
+params/linear_velocity = 30.0
+params/spin_velocity = 10.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 180.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 8.72727
+params/initial_angle = 0.0
+params/initial_size = 1.0
+params/final_size = 0.5
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spin_velocity = 1.0
+color/color_ramp = SubResource( 19 )
+
+[node name="smoke_up" type="Particles2D" parent="."]
+
+visibility/behind_parent = true
+transform/pos = Vector2( -0.980474, 8.6831e-07 )
+transform/rot = -179.335
+config/amount = 20
+config/lifetime = 7.0
+config/preprocess = 0.1
+config/emitting = false
+config/offset = Vector2( 0, 10 )
+config/half_extents = Vector2( 2, 0 )
+config/local_space = false
+config/texture = ExtResource( 5 )
+params/direction = 180.0
+params/spread = 270.0
+params/linear_velocity = 5.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 180.0
+params/gravity_strength = 10.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.0
+params/final_size = 0.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+color/color = Color( 1, 1, 1, 0 )
+
+[node name="spike1_L" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( -27, -8 )
+transform/rot = 67.5
+texture = ExtResource( 6 )
+
+[node name="spike2_L" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( -24, 10 )
+transform/rot = 112.5
+texture = ExtResource( 6 )
+
+[node name="spike3_L" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( -12, -23 )
+transform/rot = 22.5
+texture = ExtResource( 6 )
+flip_h = true
+
+[node name="spike4_L" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 12, -23 )
+transform/rot = -22.5
+texture = ExtResource( 6 )
+flip_h = true
+
+[node name="spike5_D" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 27, -8 )
+transform/rot = -67.5
+texture = ExtResource( 7 )
+flip_h = true
+
+[node name="spike6_D" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 24, 10 )
+transform/rot = -112.5
+texture = ExtResource( 7 )
+flip_h = true
+
+[node name="base_sclera" type="Sprite" parent="."]
+
+texture = ExtResource( 8 )
+modulate = Color( 0.705882, 0, 0.470588, 1 )
+
+[node name="Position2D" type="Position2D" parent="base_sclera"]
+
+[node name="pupils" type="Sprite" parent="base_sclera/Position2D"]
+
+transform/pos = Vector2( 0, 1.58166 )
+texture = ExtResource( 9 )
+modulate = Color( 0.705882, 0, 0.0784314, 1 )
+
+[node name="eye_sparkle" type="Sprite" parent="base_sclera/Position2D/pupils"]
+
+transform/pos = Vector2( -20, -1.4 )
+texture = ExtResource( 10 )
+
+[node name="eye_sparkle 2" type="Sprite" parent="base_sclera/Position2D/pupils"]
+
+transform/pos = Vector2( 16, -1.4 )
+texture = ExtResource( 10 )
+
+[node name="lower_eyelids" type="Sprite" parent="base_sclera"]
+
+transform/pos = Vector2( 0, 14.7446 )
+texture = ExtResource( 11 )
+
+[node name="upper_eyelids" type="Sprite" parent="base_sclera"]
+
+transform/pos = Vector2( 0.63112, -11.7758 )
+transform/rot = -0.602308
+texture = ExtResource( 12 )
+
+[node name="face" type="Sprite" parent="base_sclera"]
+
+transform/pos = Vector2( 0, 7.82262 )
+texture = ExtResource( 13 )
+
+[node name="glow" type="Sprite" parent="base_sclera/face"]
+
+visibility/visible = false
+visibility/blend_mode = 1
+transform/pos = Vector2( -0.427185, 6 )
+texture = ExtResource( 14 )
+vframes = 4
+frame = 3
+
+[node name="unibrow" type="Sprite" parent="base_sclera"]
+
+transform/pos = Vector2( -0.427177, 15.9376 )
+transform/rot = -2.51125
+texture = ExtResource( 15 )
+
+[node name="halo" type="Sprite" parent="."]
+
+visibility/visible = false
+visibility/self_opacity = 0.4
+visibility/blend_mode = 1
+transform/rot = 40.0
+transform/scale = Vector2( 1.3, 1.3 )
+texture = ExtResource( 16 )
+
+[node name="halo 2" type="Sprite" parent="."]
+
+visibility/visible = false
+visibility/self_opacity = 0.4
+visibility/behind_parent = true
+visibility/blend_mode = 1
+transform/rot = -40.0
+texture = ExtResource( 16 )
+
+[node name="anim" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/awake_loop = SubResource( 15 )
+anims/awakening = SubResource( 11 )
+anims/die = SubResource( 12 )
+anims/die_old = SubResource( 5 )
+anims/eyeglow = SubResource( 7 )
+anims/sleep_loop = SubResource( 6 )
+anims/spike_burst = SubResource( 2 )
+anims/spike_burst (copy) = SubResource( 13 )
+anims/spike_burst_glow_bod = SubResource( 14 )
+anims/spike_burst_gloweyes = SubResource( 4 )
+anims/spike_retract = SubResource( 10 )
+anims/take_damage = SubResource( 3 )
+anims/to_sleep = SubResource( 8 )
+anims/tracking_loop = SubResource( 9 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [ "spike_retract", "sleep_loop", 0.5, "sleep_loop", "spike_burst", 0.5 ]
+autoplay = ""
+
+[node name="vortex_anim" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/vortex_spin = SubResource( 16 )
+playback/active = true
+playback/speed = 0.15
+blend_times = [  ]
+autoplay = ""
+
+[node name="collision" type="CollisionShape2D" parent="."]
+
+visibility/visible = false
+visibility/opacity = 0.241935
+transform/pos = Vector2( 0.291992, 0 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = -1
+__meta__ = { "_edit_lock_":true }
+
+[node name="spike_area" type="Area2D" parent="."]
+
+visibility/visible = false
+input/pickable = true
+shapes/0/shape = SubResource( 17 )
+shapes/0/transform = Matrix32( 1.1, -0, 0, 1.1, -0.323532, 1.29414 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="collision" type="CollisionShape2D" parent="spike_area"]
+
+visibility/visible = false
+visibility/opacity = 0.5
+transform/pos = Vector2( -0.323532, 1.29414 )
+transform/scale = Vector2( 1.1, 1.1 )
+shape = SubResource( 17 )
+trigger = false
+_update_shape_index = -1
+
+[node name="player" type="SamplePlayer2D" parent="."]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 18 )
+config/pitch_random = 0.0
+
+[connection signal="body_enter" from="spike_area" to="." method="_on_body_enter_spikes"]
+
+[connection signal="body_exit" from="spike_area" to="." method="_on_body_exit_spikes"]
+
+

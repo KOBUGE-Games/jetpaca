@@ -1,0 +1,182 @@
+[gd_scene load_steps=10 format=1]
+
+[ext_resource path="res://interaction/key.gd" type="Script" id=1]
+[ext_resource path="res://art/spark_particle2.png" type="Texture" id=2]
+[ext_resource path="res://art/key1.png" type="Texture" id=3]
+[ext_resource path="res://sound/event2.wav" type="Sample" id=4]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -13.7389, 30.0446, -14.5975, -21.4687, -4.7241, -30.6982, 5.36393, -30.6982, 15.0227, -19.537, 3.43218, 29.6153 )
+
+[sub_resource type="ColorRamp" id=4]
+
+offsets = FloatArray( 0, 1 )
+colors = ColorArray( 1, 1, 1, 1, 0.909804, 0.707965, 0.831858, 0 )
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 30.0
+
+[sub_resource type="SampleLibrary" id=3]
+
+samples/gotkey = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
+
+[sub_resource type="ColorRamp" id=5]
+
+offsets = FloatArray( 0, 1 )
+colors = ColorArray( 1, 1, 1, 1, 0.909804, 0.707965, 0.831858, 0 )
+
+[node name="key" type="RigidBody2D"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+script/script = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+key_index = 0
+
+[node name="normal_shine" type="Particles2D" parent="."]
+
+config/amount = 8
+config/lifetime = 0.5
+config/emitting = false
+config/half_extents = Vector2( 16, 16 )
+config/local_space = false
+config/texture = ExtResource( 2 )
+params/direction = 0.0
+params/spread = 180.0
+params/linear_velocity = 50.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 2.0
+params/final_size = 1.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+color/color_ramp = SubResource( 4 )
+
+[node name="sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+visibility/visible = false
+build_mode = 0
+polygon = Vector2Array( -14.5975, -10.7368, -14.5975, -21.4687, -4.7241, -30.6982, 5.36393, -30.6982, 15.0227, -19.537, 3.43218, 29.6153, -13.7389, 30.0446 )
+shape_range = Vector2( -1, -1 )
+trigger = false
+
+[node name="monitor" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="monitor"]
+
+visibility/visible = false
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = -1
+
+[node name="player" type="SamplePlayer2D" parent="."]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 3 )
+config/pitch_random = 0.0
+
+[node name="death" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 2.0
+one_shot = true
+autostart = false
+
+[node name="enabler" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = true
+autostart = false
+
+[node name="shine" type="Particles2D" parent="."]
+
+config/amount = 16
+config/lifetime = 2.0
+config/emit_timeout = 0.5
+config/emitting = false
+config/local_space = false
+config/explosiveness = 0.05
+config/texture = ExtResource( 2 )
+params/direction = 0.0
+params/spread = 180.0
+params/linear_velocity = 140.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 2.0
+params/final_size = 1.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+color/color_ramp = SubResource( 5 )
+
+[node name="sp" type="VisibilityNotifier2D" parent="."]
+
+rect = Rect2( -10, -10, 20, 20 )
+
+[connection signal="body_enter" from="monitor" to="." method="_on_body_enter"]
+
+[connection signal="timeout" from="death" to="." method="_on_timeout"]
+
+[connection signal="timeout" from="enabler" to="." method="_on_timeout_enable"]
+
+[connection signal="enter_screen" from="sp" to="." method="_on_enter_screen"]
+
+[connection signal="exit_screen" from="sp" to="." method="_on_exit_screen"]
+
+

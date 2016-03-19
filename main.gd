@@ -49,7 +49,7 @@ func goto_scene(scene):
 func init():
 
 #	if (not get_tree().get_root().get_child(0)):
-#		goto_scene("res://menu/main_menu.xml")
+#		goto_scene("res://menu/main_menu.tscn")
 	pass
 
 func _ready():

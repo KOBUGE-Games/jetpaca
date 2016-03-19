@@ -1,0 +1,79 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://interaction/house.gd" type="Script" id=1]
+[ext_resource path="res://art/mountain_house.png" type="Texture" id=2]
+[ext_resource path="res://art/smoke.png" type="Texture" id=3]
+
+[sub_resource type="ConcavePolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+segments = Vector2Array( -165.353, 230.166, -182.542, 142.996, -182.542, 142.996, -234.107, 120.897, -234.107, 120.897, -148.165, -96.4125, -148.165, -96.4125, -35.2132, -123.423, -35.2132, -123.423, 129.304, -100.096, 129.304, -100.096, 205.423, 5.48978, 205.423, 5.48978, 236.117, 107.392, 236.117, 107.392, 199.285, 120.897, 199.285, 120.897, 177.185, 243.671, 177.185, 243.671, -5.74747, 255.948, -5.74747, 255.948, -165.353, 230.166 )
+
+[sub_resource type="ColorRamp" id=2]
+
+offsets = FloatArray( 0, 0.1, 0.8 )
+colors = ColorArray( 0.576471, 0.557522, 0.681416, 0, 0.54902, 0.522124, 0.557522, 0.690265, 0.282353, 0.283186, 0.300885, 0.646018 )
+
+[node name="house" type="StaticBody2D"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script/script = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+
+[node name="housespr" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+build_mode = 0
+polygon = Vector2Array( -165.353, 230.166, -182.542, 142.996, -234.107, 120.897, -148.165, -96.4125, -35.2132, -123.423, 129.304, -100.096, 205.423, 5.48978, 236.117, 107.392, 199.285, 120.897, 177.185, 243.671, -5.74747, 255.948 )
+shape_range = Vector2( -1, -1 )
+trigger = false
+
+[node name="parts" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 93.0797, -36.6167 )
+transform/rot = -179.109
+transform/scale = Vector2( 1.66329, 1.61914 )
+config/amount = 12
+config/lifetime = 3.0
+config/emitting = false
+config/texture = ExtResource( 3 )
+params/direction = 0.0
+params/spread = 10.0
+params/linear_velocity = 80.0
+params/spin_velocity = 1.3
+params/orbit_velocity = 0.0
+params/gravity_direction = 180.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.0
+params/final_size = 1.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spin_velocity = 1.0
+color/color_ramp = SubResource( 2 )
+
+[node name="screenprox" type="VisibilityNotifier2D" parent="."]
+
+rect = Rect2( -10, -10, 20, 20 )
+
+[connection signal="enter_screen" from="screenprox" to="." method="_on_enter_screen"]
+
+[connection signal="exit_screen" from="screenprox" to="." method="_on_exit_screen"]
+
+

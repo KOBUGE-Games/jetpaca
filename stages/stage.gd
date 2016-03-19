@@ -12,14 +12,14 @@ extends Node
 func level_end():
 	var gd = get_tree().get_root().get_node("game_data")
 	gd.stage_clear()
-	get_tree().get_root().get_node("main").goto_scene("res://menu/stage_select.xml")
+	get_tree().get_root().get_node("main").goto_scene("res://menu/stage_select.tscn")
 
 func restart():
 	var gd = get_tree().get_root().get_node("game_data")
 	if (gd.life_count<0): 
 		#out of lifes
 		gd.game_over()
-		get_tree().get_root().get_node("main").goto_scene("res://menu/stage_select.xml")
+		get_tree().get_root().get_node("main").goto_scene("res://menu/stage_select.tscn")
 	else:
 		#restart level
 		var wpc = gd.current_world.path

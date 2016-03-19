@@ -1,0 +1,103 @@
+[gd_scene load_steps=8 format=1]
+
+[ext_resource path="res://interaction/breakable_stone.gd" type="Script" id=1]
+[ext_resource path="res://art/mountain_breakable_stone.png" type="Texture" id=2]
+[ext_resource path="res://art/mountain_exploded_rock.png" type="Texture" id=3]
+[ext_resource path="res://sound/rock_explode.wav" type="Sample" id=4]
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 96.2306, -15.0583, 97.0451, 14.2639, 2, 21, -99.2509, 15.0784, -98.4364, -11.8003, -44, -20, 35, -21 )
+
+[sub_resource type="ColorRamp" id=3]
+
+offsets = FloatArray( 0, 1 )
+colors = ColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="SampleLibrary" id=1]
+
+samples/rock_explode = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
+
+[node name="breakable_stone" type="Node2D"]
+
+__meta__ = { "__editor_plugin_screen__":"2D" }
+
+[node name="body" type="RigidBody2D" parent="."]
+
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = false
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+script/script = ExtResource( 1 )
+drop = 0
+
+[node name="Sprite" type="Sprite" parent="body"]
+
+transform/scale = Vector2( 0.8, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="body"]
+
+build_mode = 0
+polygon = Vector2Array( -98.4364, -11.8003, -44, -20, 35, -21, 96.2306, -15.0583, 97.0451, 14.2639, 2, 21, -99.2509, 15.0784 )
+shape_range = Vector2( -1, -1 )
+trigger = false
+
+[node name="particles" type="Particles2D" parent="."]
+
+config/amount = 32
+config/lifetime = 2.0
+config/emit_timeout = 2.0
+config/emitting = false
+config/half_extents = Vector2( 128, 0 )
+config/explosiveness = 0.05
+config/texture = ExtResource( 3 )
+params/direction = 0.0
+params/spread = 180.0
+params/linear_velocity = 100.0
+params/spin_velocity = 3.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 100.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.0
+params/final_size = 1.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spin_velocity = 1.0
+color/color_ramp = SubResource( 3 )
+
+[node name="sample" type="SamplePlayer2D" parent="."]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 1 )
+config/pitch_random = 0.0
+
+

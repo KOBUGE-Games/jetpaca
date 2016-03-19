@@ -19,7 +19,7 @@ const LEVEL_COLUMNS = 3
 	
 func _on_back_pressed():
 	print("goback")	
-	get_tree().get_root().get_node("main").goto_scene("res://menu/main_menu.xml")
+	get_tree().get_root().get_node("main").goto_scene("res://menu/main_menu.tscn")
 
 func add_levels():
 	# Initalization here
