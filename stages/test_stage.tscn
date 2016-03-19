@@ -1,0 +1,235 @@
+[gd_scene load_steps=14 format=1]
+
+[ext_resource path="res://stages/stage.gd" type="Script" id=1]
+[ext_resource path="res://tilesets/test_tileset.xml" type="TileSet" id=2]
+[ext_resource path="res://interaction/spinning_log.tscn" type="PackedScene" id=3]
+[ext_resource path="res://interaction/carry_plank.tscn" type="PackedScene" id=4]
+[ext_resource path="res://interaction/fire_holder.tscn" type="PackedScene" id=5]
+[ext_resource path="res://interaction/locked_door.tscn" type="PackedScene" id=6]
+[ext_resource path="res://enemies/warrior.tscn" type="PackedScene" id=7]
+[ext_resource path="res://interaction/breakable_stone.tscn" type="PackedScene" id=8]
+[ext_resource path="res://interaction/ghost_push.tscn" type="PackedScene" id=9]
+[ext_resource path="res://interaction/ghost_directed.tscn" type="PackedScene" id=10]
+[ext_resource path="res://interaction/ghost_stop.tscn" type="PackedScene" id=11]
+[ext_resource path="res://interaction/mountain_rock.tscn" type="PackedScene" id=12]
+[ext_resource path="res://enemies/fluff.tscn" type="PackedScene" id=13]
+
+[node name="stage" type="Node"]
+
+script/script = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+
+[node name="launch" type="Position2D" parent="."]
+
+transform/pos = Vector2( 237.049, 309.938 )
+
+[node name="tilemap" type="TileMap" parent="."]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 19, 0, 20, 0, 21, 0, 22, 0, 23, 0, 24, 0, 25, 0, 26, 0, 27, 0, 28, 0, 29, 0, 30, 0, 31, 0, 32, 0, 33, 0, 34, 0, 35, 0, 36, 0, 37, 0, 38, 0, 39, 0, 40, 0, 41, 0, 42, 0, 43, 0, 44, 0, 45, 0, 46, 0, 47, 0, 65536, 0, 131072, 0, 196608, 0, 262144, 0, 327680, 0, 393216, 0, 458752, 0, 458753, 0, 458754, 0, 458755, 0, 458756, 0, 524288, 0, 589824, 0, 655360, 0, 720896, 0, 786432, 0, 851968, 0, 917504, 0, 983040, 0, 1048576, 0, 1114112, 0, 1179648, 0, 1245184, 0, 1310720, 0, 1376256, 0, 1441792, 0, 1507328, 0, 1572864, 0, 1638400, 0, 1703936, 0, 1769472, 0, 1835008, 0, 1900544, 0, 1966080, 0, 2031616, 0, 2097152, 0, 2162688, 0, 2228224, 0, 2293760, 0, 2359296, 0, 2424832, 0, 2490368, 0, 2555904, 0, 2621440, 0, 2686976, 0, 2752512, 0, 2818048, 0, 2883584, 0, 2949120, 0, 3014656, 0, 3080192, 0, 3080193, 0, 3080194, 0, 3080195, 0, 3080196, 0, 3080197, 0, 3080198, 0, 3080199, 0, 3080200, 0, 3080201, 0, 3080202, 0, 3080203, 0, 3080204, 0, 3080205, 0, 3080206, 0, 3080207, 0, 3080208, 0, 3080209, 0, 3080210, 0, 3080211, 0, 3080212, 0, 3080213, 0, 3080214, 0, 3080215, 0, 3080216, 0, 3080217, 0, 3080218, 0, 3080219, 0, 3080220, 0, 3080221, 0, 3080222, 0, 3080223, 0, 3080224, 0, 3080225, 0, 3080226, 0, 3080227, 0, 3080228, 0, 3080229, 0, 3080230, 0, 3080231, 0, 3080232, 0, 3080233, 0, 3080234, 0, 3080235, 0, 3080236, 0, 3080237, 0, 3080238, 0, 3080239, 0 )
+__meta__ = { "_edit_lock_":true }
+
+[node name="Moving Platforms" type="Node" parent="."]
+
+__meta__ = { "_editor_collapsed":true }
+
+[node name="spinning_log" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 441.991, 507.217 )
+
+[node name="spinning_log 2" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 555.563, 503.877 )
+
+[node name="spinning_log 3" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 674.146, 513.898 )
+
+[node name="carryplat" parent="Moving Platforms" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1597.79, 680.041 )
+linear_damp = 0.1
+
+[node name="spinning_log 4" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 802.75, 569.014 )
+
+[node name="spinning_log 5" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 974.779, 632.481 )
+
+[node name="spinning_log 6" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1148.48, 694.277 )
+
+[node name="spinning_log 7" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1317.17, 784.467 )
+
+[node name="spinning_log 8" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1510.91, 867.976 )
+
+[node name="spinning_log 9" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1718.01, 941.464 )
+
+[node name="spinning_log 10" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1901.73, 1016.62 )
+
+[node name="spinning_log 11" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 2123.86, 1085.1 )
+
+[node name="spinning_log 12" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 2404.46, 1178.63 )
+
+[node name="spinning_log 13" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 2653.31, 1288.86 )
+
+[node name="spinning_log 14" parent="Moving Platforms" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 2832.02, 1295.54 )
+
+[node name="torches" type="Node" parent="."]
+
+__meta__ = { "_editor_collapsed":true }
+
+[node name="torch_trigger" parent="torches" instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1161.88, 647.53 )
+trigger_name = "door"
+
+[node name="door" parent="torches" groups=[ "door" ] instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 1104.64, 1129.8 )
+no_key = true
+
+[node name="warrior" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 503.834, 942.538 )
+
+[node name="breakable_stone" parent="." instance=ExtResource( 8 )]
+
+transform/pos = Vector2( 897.549, 1151.08 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 736.962, 571.627 )
+
+[node name="StaticBody2D 2" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1028.94, 159.153 )
+
+[node name="StaticBody2D 3" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1497.15, 401.584 )
+
+[node name="ghost_push" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 600.602, 1555.84 )
+
+[node name="ghost_push 2" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1492.19, 1550.86 )
+transform/rot = -59.3274
+
+[node name="ghost_push 3" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1816.42, 2154.67 )
+transform/rot = -147.571
+
+[node name="ghost_push 4" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1063.05, 2640.82 )
+transform/rot = -268.443
+
+[node name="ghost_push 5" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1035.65, 2106.55 )
+transform/rot = -233.56
+
+[node name="ghost_push 6" parent="." instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2685.03, 1873.36 )
+
+[node name="ghost_push 7" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2271.92, 1589.59 )
+transform/rot = -30.6079
+
+[node name="ghost_push 8" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2888.38, 2034.81 )
+transform/rot = 50.386
+
+[node name="ghost_push 9" parent="." instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 3321.97, 1518.39 )
+
+[node name="ghost_push 10" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 3291.19, 1319.83 )
+transform/rot = 198.419
+
+[node name="ghost_push 11" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2543.48, 1234.23 )
+transform/rot = 57.9021
+
+[node name="ghost_push 12" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 370.443, 468.293 )
+transform/rot = 48.3955
+
+[node name="RigidBody2D" parent="." instance=ExtResource( 12 )]
+
+transform/pos = Vector2( 112.911, 321.049 )
+
+[node name="RigidBody2D 2" parent="." instance=ExtResource( 12 )]
+
+transform/pos = Vector2( 180.93, 378.184 )
+
+[node name="RigidBody2D 3" parent="." instance=ExtResource( 12 )]
+
+transform/pos = Vector2( 104.749, 399.95 )
+
+[node name="RigidBody2D 4" parent="." instance=ExtResource( 12 )]
+
+transform/pos = Vector2( 244.867, 412.194 )
+
+[node name="RigidBody2D 5" parent="." instance=ExtResource( 12 )]
+
+transform/pos = Vector2( 244.867, 412.194 )
+transform/rot = 86.1062
+
+[node name="RigidBody2D 6" parent="." instance=ExtResource( 12 )]
+
+transform/pos = Vector2( 116.992, 229.903 )
+transform/rot = 86.1062
+
+[node name="ghost_push 13" parent="." instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 558.513, 153.623 )
+
+[node name="sacra_pinchorb" parent="." instance=ExtResource( 13 )]
+
+transform/pos = Vector2( 1417.07, 1829.92 )
+
+

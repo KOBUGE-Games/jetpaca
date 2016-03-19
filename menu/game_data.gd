@@ -66,7 +66,7 @@ func _init():
 	for x in ld:
 		var li = LevelInfo.new()
 		li.id=x.id
-		li.path=x.path+".xml"
+		li.path=x.path+".tscn"
 		li.preview_path=x.path+".png"
 		if (li.id==Vector2(2,1)):
 			li.enabled=true

@@ -1,0 +1,2552 @@
+[gd_scene load_steps=47 format=1]
+
+[ext_resource path="res://stages/stage.gd" type="Script" id=1]
+[ext_resource path="res://art/branch.png" type="Texture" id=2]
+[ext_resource path="res://art/flower1.png" type="Texture" id=3]
+[ext_resource path="res://art/flower2.png" type="Texture" id=4]
+[ext_resource path="res://art/flower3.png" type="Texture" id=5]
+[ext_resource path="res://art/tree_bush.png" type="Texture" id=6]
+[ext_resource path="res://art/tree_bush4.png" type="Texture" id=7]
+[ext_resource path="res://art/tree_bush5.png" type="Texture" id=8]
+[ext_resource path="res://art/arbol2.png" type="Texture" id=9]
+[ext_resource path="res://art/glacier_clifftree_1.png" type="Texture" id=10]
+[ext_resource path="res://art/glacier_clifftree_1bare.png" type="Texture" id=11]
+[ext_resource path="res://art/glacier_tree_2.png" type="Texture" id=12]
+[ext_resource path="res://art/glacier_clifftree_2bare.png" type="Texture" id=13]
+[ext_resource path="res://art/glacier_house.png" type="Texture" id=14]
+[ext_resource path="res://art/glacier_ice1.png" type="Texture" id=15]
+[ext_resource path="res://art/glacier_ice2.png" type="Texture" id=16]
+[ext_resource path="res://art/glacier_ice3.png" type="Texture" id=17]
+[ext_resource path="res://art/glacier_tree_1.png" type="Texture" id=18]
+[ext_resource path="res://art/glacier_tree_1bare.png" type="Texture" id=19]
+[ext_resource path="res://art/glacier_tree_2bare.png" type="Texture" id=20]
+[ext_resource path="res://art/glacier_tree_3.png" type="Texture" id=21]
+[ext_resource path="res://art/glacier_tree_3bare.png" type="Texture" id=22]
+[ext_resource path="res://tilesets/test_tileset.xml" type="TileSet" id=23]
+[ext_resource path="res://enemies/fluff.tscn" type="PackedScene" id=24]
+[ext_resource path="res://enemies/warrior.tscn" type="PackedScene" id=25]
+[ext_resource path="res://interaction/mountain_rock_big.tscn" type="PackedScene" id=26]
+[ext_resource path="res://interaction/jar1.tscn" type="PackedScene" id=27]
+[ext_resource path="res://interaction/jar2.tscn" type="PackedScene" id=28]
+[ext_resource path="res://interaction/jar3.tscn" type="PackedScene" id=29]
+[ext_resource path="res://interaction/locked_door.tscn" type="PackedScene" id=30]
+[ext_resource path="res://interaction/key.tscn" type="PackedScene" id=31]
+[ext_resource path="res://interaction/breakable_stone_tall.tscn" type="PackedScene" id=32]
+[ext_resource path="res://interaction/breakable_stone.tscn" type="PackedScene" id=33]
+[ext_resource path="res://player/large_fruit.tscn" type="PackedScene" id=34]
+[ext_resource path="res://player/fruit.tscn" type="PackedScene" id=35]
+[ext_resource path="res://enemies/mountain_long_spikes.tscn" type="PackedScene" id=36]
+[ext_resource path="res://enemies/mountain_spikes.tscn" type="PackedScene" id=37]
+[ext_resource path="res://player/checkpoint.tscn" type="PackedScene" id=38]
+[ext_resource path="res://interaction/roulette.tscn" type="PackedScene" id=39]
+[ext_resource path="res://enemies/floating_spike.tscn" type="PackedScene" id=40]
+[ext_resource path="res://enemies/frog.tscn" type="PackedScene" id=41]
+[ext_resource path="res://art/flower4.png" type="Texture" id=42]
+[ext_resource path="res://art/small_bush.png" type="Texture" id=43]
+[ext_resource path="res://art/flower_bush1.png" type="Texture" id=44]
+[ext_resource path="res://art/flower_bush2.png" type="Texture" id=45]
+[ext_resource path="res://art/tree_bush2.png" type="Texture" id=46]
+
+[node name="stage" type="Node"]
+
+script/script = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+
+[node name="Decorative behind" type="Node" parent="."]
+
+__meta__ = { "_editor_collapsed":true }
+
+[node name="Sprite 3" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 214.787, 2905.46 )
+texture = ExtResource( 2 )
+
+[node name="Sprite 12" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 1471.27, 4812.95 )
+texture = ExtResource( 3 )
+
+[node name="Sprite 13" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 1254.79, 4807.81 )
+texture = ExtResource( 4 )
+
+[node name="Sprite 14" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 1151.15, 4836.47 )
+texture = ExtResource( 5 )
+
+[node name="Sprite 21" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 483.412, 1719.34 )
+transform/rot = -109.786
+texture = ExtResource( 6 )
+
+[node name="Sprite 23" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 584.213, 3956.59 )
+texture = ExtResource( 7 )
+
+[node name="Sprite 24" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 785.009, 3376.05 )
+transform/rot = 65.3715
+texture = ExtResource( 8 )
+
+[node name="Sprite 25" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 196.512, 2260.12 )
+transform/rot = -65.3838
+texture = ExtResource( 8 )
+
+[node name="Sprite 4" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 440.656, 2059.73 )
+transform/rot = 123.108
+texture = ExtResource( 2 )
+
+[node name="Sprite 5" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 782.927, 3084.97 )
+transform/rot = 106.659
+texture = ExtResource( 2 )
+
+[node name="Sprite 6" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 1705.92, 3831.88 )
+transform/rot = -131.129
+texture = ExtResource( 9 )
+
+[node name="Sprite 15" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 3645.49, 3510.48 )
+texture = ExtResource( 5 )
+
+[node name="Sprite 15 2" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 3749.12, 3481.83 )
+texture = ExtResource( 4 )
+
+[node name="Sprite 15 3" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 3965.61, 3486.96 )
+texture = ExtResource( 3 )
+
+[node name="Sprite 15 4" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 3696.58, 3015.1 )
+texture = ExtResource( 4 )
+
+[node name="Sprite 15 5" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 3501.98, 3023.33 )
+texture = ExtResource( 3 )
+
+[node name="Sprite 26" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 505.469, 5300.21 )
+texture = ExtResource( 10 )
+
+[node name="Sprite 27" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 906.17, 5307.06 )
+texture = ExtResource( 11 )
+
+[node name="Sprite 28" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 484.921, 5605.02 )
+texture = ExtResource( 12 )
+
+[node name="Sprite 29" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 1082.85, 5598.34 )
+texture = ExtResource( 13 )
+
+[node name="Sprite 30" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 12180.8, 4947.77 )
+texture = ExtResource( 14 )
+
+[node name="Sprite 31" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 787.396, 3827.04 )
+transform/rot = 124.179
+texture = ExtResource( 15 )
+
+[node name="Sprite 32" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 697.123, 4304.8 )
+transform/rot = -27.89
+texture = ExtResource( 16 )
+
+[node name="Sprite 33" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 145.337, 3713.99 )
+transform/rot = -136.148
+texture = ExtResource( 17 )
+
+[node name="Sprite 34" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 981.488, 4646.58 )
+texture = ExtResource( 18 )
+
+[node name="Sprite 35" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 264.457, 5959.1 )
+texture = ExtResource( 19 )
+
+[node name="Sprite 36" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 1628.92, 5195.9 )
+texture = ExtResource( 12 )
+
+[node name="Sprite 37" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 498.283, 6431.76 )
+texture = ExtResource( 20 )
+
+[node name="Sprite 38" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 583.359, 4596.56 )
+texture = ExtResource( 21 )
+
+[node name="Sprite 39" type="Sprite" parent="Decorative behind"]
+
+transform/pos = Vector2( 1734.5, 5742.4 )
+texture = ExtResource( 22 )
+
+[node name="launch" type="Position2D" parent="."]
+
+transform/pos = Vector2( 852.619, 4707.49 )
+
+[node name="tilemap" type="TileMap" parent="."]
+
+transform/pos = Vector2( 64, 960 )
+mode = 0
+tile_set = ExtResource( 23 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( -196608, 0, -196607, 0, -196606, 0, -196605, 0, -196604, 0, -196603, 0, -196602, 0, -196601, 0, -196600, 0, -196599, 0, -196598, 0, -196597, 0, -196596, 0, -196595, 0, -196594, 0, -196593, 0, -131072, 0, -131057, 0, -65536, 0, -65521, 0, 0, 0, 15, 0, 65536, 0, 65551, 0, 131072, 0, 131087, 0, 196608, 0, 196623, 0, 262144, 0, 262145, 1, 262159, 0, 327680, 0, 327681, 0, 327682, 1, 327695, 0, 327696, 0, 327697, 0, 327698, 0, 327699, 0, 327700, 0, 327701, 0, 327702, 0, 327703, 0, 327704, 0, 327705, 0, 393216, 0, 393217, 0, 393218, 1610612737, 393219, 1, 393241, 1610612738, 458752, 0, 458755, 1610612737, 458756, 1, 458779, 1610612738, 524288, 0, 524292, 1610612737, 524293, 1, 524317, 1610612738, 589824, 0, 589855, 1610612738, 655360, 0, 655393, 1610612738, 655410, 0, 655411, 0, 655412, 0, 655413, 0, 655414, 0, 655415, 0, 655416, 0, 655417, 0, 655418, 0, 655419, 0, 655420, 0, 655421, 0, 655422, 0, 655423, 0, 655424, 0, 655425, 0, 655426, 0, 655427, 0, 655428, 0, 655429, 0, 655430, 0, 655431, 0, 655432, 0, 655433, 0, 655434, 0, 655435, 0, 655436, 0, 655437, 0, 655438, 0, 655439, 0, 655440, 0, 655441, 0, 655442, 0, 655443, 0, 655444, 0, 655445, 0, 655446, 0, 655447, 0, 655448, 0, 655449, 0, 655450, 0, 655451, 0, 655452, 0, 655453, 0, 655454, 0, 655455, 0, 655456, 0, 655457, 0, 655458, 0, 655459, 0, 655460, 0, 655461, 0, 655462, 0, 655463, 0, 655464, 0, 655465, 0, 655466, 0, 655467, 0, 655468, 0, 655469, 0, 655470, 0, 655471, 0, 655472, 0, 655473, 0, 655474, 0, 655475, 0, 655476, 0, 655477, 0, 720896, 0, 720912, 0, 720913, 0, 720914, 0, 720915, 0, 720916, 2, 720931, 1610612738, 720946, 0, 721014, 1610612738, 786432, 0, 786437, 536870914, 786439, 1, 786448, 1610612737, 786451, 0, 786454, 2, 786469, 1610612738, 786482, 0, 786552, 1610612738, 851968, 0, 851973, 0, 851974, 0, 851975, 0, 851985, 1610612737, 851987, 0, 851992, 2, 852007, 1610612737, 852018, 0, 852090, 1610612738, 917504, 0, 917511, 0, 917522, 1610612737, 917523, 0, 917530, 2, 917544, 1610612737, 917554, 0, 917628, 1610612738, 983040, 0, 983047, 0, 983059, 0, 983068, 2, 983081, 1610612737, 983090, 0, 983096, 0, 983166, 1610612738, 1048576, 0, 1048583, 0, 1048595, 0, 1048606, 2, 1048618, 1610612737, 1048626, 0, 1048632, 0, 1048652, 536870914, 1048654, 0, 1048655, 0, 1048656, 0, 1048657, 0, 1048658, 0, 1048659, 0, 1048660, 0, 1048661, 0, 1048662, 0, 1048663, 0, 1048664, 0, 1048665, 0, 1048666, 0, 1048667, 0, 1048668, 0, 1048669, 0, 1048670, 0, 1048671, 0, 1048672, 0, 1048673, 0, 1048674, 0, 1048675, 0, 1048676, 0, 1048677, 0, 1048678, 0, 1048679, 0, 1048680, 0, 1048681, 0, 1048682, 0, 1048683, 0, 1048684, 0, 1048685, 0, 1048686, 0, 1048687, 0, 1048688, 0, 1048689, 0, 1048690, 0, 1048691, 0, 1048692, 0, 1048693, 0, 1048694, 2, 1048704, 1610612738, 1114112, 0, 1114119, 0, 1114131, 0, 1114144, 2, 1114155, 1610612737, 1114162, 0, 1114168, 0, 1114186, 536870914, 1114232, 2, 1114242, 1610612738, 1179648, 0, 1179655, 0, 1179667, 0, 1179682, 1, 1179692, 1610612737, 1179698, 0, 1179704, 0, 1179720, 536870914, 1179770, 2, 1179780, 1610612738, 1245184, 0, 1245192, 1610612737, 1245193, 1, 1245203, 1610612737, 1245219, 1, 1245229, 1610612737, 1245234, 0, 1245240, 0, 1245254, 536870914, 1245308, 2, 1245318, 1610612738, 1310720, 0, 1310729, 0, 1310740, 1610612738, 1310756, 1, 1310766, 1610612737, 1310770, 0, 1310776, 0, 1310788, 536870914, 1310846, 2, 1310856, 1610612738, 1376256, 0, 1376265, 0, 1376278, 1610612738, 1376293, 1, 1376303, 1610612737, 1376306, 0, 1376313, 1, 1376323, 536870913, 1376384, 2, 1376394, 1610612738, 1441792, 0, 1441801, 0, 1441816, 1610612738, 1441830, 1, 1441840, 1610612737, 1441842, 0, 1441850, 1, 1441858, 536870913, 1441922, 2, 1441932, 1610612738, 1507328, 0, 1507337, 0, 1507354, 1610612738, 1507367, 1, 1507377, 1610612737, 1507378, 0, 1507387, 1, 1507393, 536870913, 1507460, 2, 1507470, 1610612737, 1572864, 0, 1572873, 0, 1572874, 1, 1572892, 1610612738, 1572904, 1, 1572914, 0, 1572924, 1, 1572928, 536870913, 1572998, 2, 1573007, 1610612738, 1573009, 0, 1573010, 0, 1573011, 0, 1573012, 0, 1573013, 0, 1573014, 0, 1573015, 0, 1573016, 0, 1573017, 0, 1573018, 0, 1573019, 0, 1573020, 0, 1573021, 0, 1573022, 0, 1573023, 0, 1573024, 0, 1573025, 0, 1573026, 0, 1573027, 0, 1573028, 0, 1573029, 0, 1573030, 0, 1573031, 0, 1573032, 0, 1573033, 0, 1573034, 0, 1573035, 0, 1573036, 0, 1573037, 0, 1573038, 0, 1638400, 0, 1638409, 1610612737, 1638410, 0, 1638411, 1, 1638430, 1610612738, 1638441, 1, 1638450, 0, 1638460, 0, 1638464, 0, 1638536, 2, 1638574, 0, 1703936, 0, 1703946, 1610612737, 1703947, 0, 1703948, 1, 1703968, 1610612738, 1703978, 1, 1703986, 0, 1703996, 0, 1704000, 0, 1704074, 2, 1704110, 0, 1769472, 0, 1769483, 1610612737, 1769484, 0, 1769485, 2, 1769506, 1610612738, 1769515, 1, 1769522, 0, 1769532, 0, 1769536, 0, 1769612, 2, 1769646, 0, 1835008, 0, 1835020, 0, 1835023, 2, 1835044, 1610612738, 1835052, 1, 1835058, 0, 1835068, 0, 1835072, 0, 1835150, 0, 1835151, 0, 1835152, 0, 1835153, 0, 1835154, 0, 1835155, 0, 1835156, 0, 1835157, 0, 1835158, 0, 1835159, 0, 1835160, 0, 1835161, 0, 1835162, 0, 1835163, 0, 1835164, 0, 1835165, 0, 1835166, 0, 1835167, 0, 1835168, 0, 1835169, 0, 1835170, 0, 1835171, 0, 1835182, 0, 1900544, 0, 1900556, 0, 1900561, 2, 1900582, 1610612738, 1900589, 1, 1900594, 0, 1900604, 0, 1900608, 0, 1900707, 0, 1900718, 0, 1966080, 0, 1966092, 0, 1966099, 2, 1966120, 1610612738, 1966125, 0, 1966130, 0, 1966140, 0, 1966144, 0, 1966243, 0, 1966254, 0, 2031616, 0, 2031628, 0, 2031630, 0, 2031631, 0, 2031632, 0, 2031633, 0, 2031634, 0, 2031635, 0, 2031636, 0, 2031637, 2, 2031658, 1610612737, 2031661, 0, 2031666, 0, 2031676, 0, 2031680, 0, 2031779, 0, 2031790, 0, 2097152, 0, 2097164, 0, 2097166, 0, 2097174, 0, 2097175, 2, 2097195, 0, 2097197, 0, 2097202, 0, 2097212, 0, 2097216, 0, 2097315, 0, 2097326, 0, 2162688, 0, 2162700, 0, 2162702, 0, 2162704, 0, 2162705, 0, 2162707, 0, 2162708, 0, 2162710, 0, 2162713, 2, 2162731, 0, 2162733, 0, 2162738, 0, 2162739, 536870912, 2162740, 536870912, 2162741, 536870912, 2162742, 536870912, 2162743, 536870912, 2162744, 536870912, 2162745, 536870912, 2162746, 536870912, 2162747, 536870912, 2162748, 0, 2162752, 0, 2162851, 0, 2162862, 0, 2228224, 0, 2228236, 0, 2228238, 0, 2228242, 0, 2228246, 0, 2228251, 2, 2228267, 0, 2228269, 0, 2228274, 0, 2228284, 0, 2228288, 0, 2228387, 0, 2228398, 0, 2293760, 0, 2293772, 0, 2293774, 0, 2293778, 0, 2293782, 0, 2293789, 2, 2293803, 0, 2293805, 0, 2293810, 1610612736, 2293820, 1610612736, 2293824, 0, 2293923, 0, 2293934, 0, 2359296, 0, 2359308, 0, 2359310, 0, 2359318, 0, 2359327, 1, 2359339, 0, 2359341, 0, 2359346, 1610612736, 2359347, 1610612736, 2359348, 1610612736, 2359349, 1610612736, 2359350, 1610612736, 2359351, 1610612736, 2359352, 1610612736, 2359353, 1610612736, 2359354, 1610612736, 2359355, 1610612736, 2359356, 1610612736, 2359360, 0, 2359459, 0, 2359470, 0, 2424832, 0, 2424844, 0, 2424846, 0, 2424850, 0, 2424854, 0, 2424863, 1073741825, 2424875, 0, 2424877, 0, 2424896, 0, 2424995, 0, 2425006, 0, 2490368, 0, 2490380, 0, 2490382, 0, 2490390, 0, 2490397, 1073741826, 2490411, 0, 2490413, 0, 2490432, 0, 2490531, 0, 2490542, 0, 2555904, 0, 2555916, 0, 2555918, 0, 2555919, 0, 2555920, 0, 2555921, 0, 2555922, 0, 2555923, 0, 2555924, 0, 2555925, 0, 2555926, 0, 2555931, 1073741826, 2555947, 0, 2555949, 0, 2555968, 0, 2556067, 0, 2556078, 0, 2621440, 0, 2621452, 0, 2621465, 1073741826, 2621483, 0, 2621485, 0, 2621490, 0, 2621491, 0, 2621492, 0, 2621493, 0, 2621494, 0, 2621495, 0, 2621496, 0, 2621497, 0, 2621498, 0, 2621499, 0, 2621500, 0, 2621501, 0, 2621502, 0, 2621503, 0, 2621504, 0, 2621603, 0, 2621614, 0, 2686976, 0, 2686988, 0, 2686999, 1073741826, 2687019, 0, 2687021, 0, 2687026, 0, 2687139, 0, 2687150, 0, 2752512, 0, 2752524, 0, 2752533, 1073741826, 2752555, 0, 2752557, 0, 2752562, 0, 2752675, 0, 2752686, 0, 2818049, 1, 2818060, 0, 2818067, 1073741826, 2818089, 536870914, 2818093, 0, 2818098, 0, 2818211, 0, 2818222, 0, 2883586, 2, 2883596, 0, 2883601, 1073741826, 2883623, 536870914, 2883629, 1073741825, 2883634, 0, 2883747, 0, 2883758, 0, 2949124, 2, 2949132, 0, 2949135, 1073741826, 2949157, 536870914, 2949164, 1073741825, 2949170, 0, 2949283, 0, 2949294, 0, 3014662, 2, 3014668, 0, 3014669, 1073741826, 3014691, 536870914, 3014699, 1073741825, 3014706, 0, 3014819, 0, 3014830, 0, 3080200, 0, 3080204, 0, 3080225, 536870914, 3080234, 1073741825, 3080241, 536870913, 3080242, 0, 3080355, 0, 3080366, 0, 3145736, 0, 3145740, 0, 3145759, 536870914, 3145769, 1073741825, 3145776, 536870913, 3145891, 0, 3145902, 0, 3211272, 0, 3211276, 0, 3211293, 536870914, 3211303, 1073741826, 3211311, 536870913, 3211395, 0, 3211396, 0, 3211397, 0, 3211398, 0, 3211399, 0, 3211400, 0, 3211401, 0, 3211402, 0, 3211403, 0, 3211404, 0, 3211405, 0, 3211406, 0, 3211407, 0, 3211408, 0, 3211409, 0, 3211410, 0, 3211411, 0, 3211412, 0, 3211413, 0, 3211414, 0, 3211415, 0, 3211416, 0, 3211417, 0, 3211418, 0, 3211419, 0, 3211420, 0, 3211421, 0, 3211422, 0, 3211423, 0, 3211424, 0, 3211425, 0, 3211426, 0, 3211427, 0, 3211438, 0, 3276808, 0, 3276812, 0, 3276827, 536870914, 3276837, 1073741826, 3276846, 536870913, 3276931, 0, 3276963, 0, 3276974, 0, 3342344, 0, 3342348, 0, 3342361, 536870914, 3342371, 1073741826, 3342381, 536870913, 3342467, 0, 3342499, 0, 3342510, 0, 3407880, 0, 3407884, 0, 3407895, 536870914, 3407905, 1073741826, 3407915, 536870914, 3408003, 0, 3408035, 0, 3408046, 0, 3473416, 0, 3473420, 0, 3473430, 536870913, 3473439, 1073741826, 3473449, 536870914, 3473539, 0, 3473571, 0, 3473582, 0, 3538951, 536870913, 3538952, 0, 3538956, 0, 3538957, 1, 3538965, 536870913, 3538973, 1073741826, 3538983, 536870914, 3539075, 0, 3539107, 0, 3539118, 0, 3604486, 536870913, 3604487, 0, 3604488, 1073741825, 3604492, 1610612737, 3604493, 0, 3604494, 1, 3604500, 536870913, 3604507, 1073741826, 3604517, 536870914, 3604611, 0, 3604618, 0, 3604619, 0, 3604620, 0, 3604621, 0, 3604622, 0, 3604623, 0, 3604624, 0, 3604625, 0, 3604626, 0, 3604627, 0, 3604628, 0, 3604629, 0, 3604630, 0, 3604631, 0, 3604632, 0, 3604633, 0, 3604634, 0, 3604635, 0, 3604636, 0, 3604637, 0, 3604638, 0, 3604643, 0, 3604653, 536870913, 3670021, 536870913, 3670022, 0, 3670023, 1073741825, 3670029, 1610612737, 3670030, 0, 3670031, 1, 3670035, 536870913, 3670036, 0, 3670037, 0, 3670038, 0, 3670039, 0, 3670040, 0, 3670041, 1073741826, 3670051, 536870914, 3670147, 0, 3670154, 0, 3670174, 0, 3670179, 0, 3670188, 536870913, 3735557, 0, 3735558, 1073741825, 3735566, 1610612737, 3735567, 0, 3735585, 536870914, 3735683, 0, 3735690, 0, 3735710, 0, 3735715, 0, 3735723, 536870913, 3801093, 0, 3801103, 0, 3801119, 536870914, 3801219, 0, 3801226, 0, 3801246, 0, 3801251, 0, 3801258, 536870913, 3866629, 0, 3866639, 0, 3866653, 536870914, 3866755, 0, 3866762, 0, 3866763, 0, 3866764, 0, 3866765, 0, 3866766, 0, 3866767, 0, 3866768, 0, 3866769, 0, 3866770, 0, 3866771, 0, 3866772, 0, 3866773, 0, 3866774, 0, 3866775, 0, 3866776, 0, 3866777, 0, 3866778, 0, 3866779, 0, 3866780, 0, 3866781, 0, 3866782, 0, 3866787, 0, 3866793, 536870913, 3866794, 0, 3866795, 0, 3866796, 0, 3866797, 0, 3866798, 0, 3866799, 0, 3866800, 0, 3866801, 0, 3866802, 0, 3866803, 0, 3866804, 0, 3866805, 0, 3866806, 0, 3866807, 0, 3866808, 0, 3866809, 0, 3866810, 0, 3866811, 0, 3866812, 0, 3866813, 0, 3932165, 0, 3932175, 0, 3932187, 536870914, 3932291, 0, 3932349, 0, 3997701, 0, 3997702, 0, 3997703, 0, 3997704, 0, 3997705, 0, 3997706, 0, 3997707, 0, 3997708, 0, 3997709, 0, 3997710, 0, 3997711, 0, 3997712, 0, 3997713, 0, 3997714, 0, 3997715, 0, 3997716, 0, 3997717, 0, 3997718, 0, 3997719, 0, 3997720, 0, 3997721, 0, 3997722, 0, 3997827, 0, 3997885, 0, 4063363, 0, 4063421, 0, 4128899, 0, 4128940, 536870913, 4128941, 0, 4128942, 1, 4128957, 0, 4194435, 0, 4194476, 0, 4194479, 1, 4194493, 0, 4259971, 0, 4260012, 0, 4260016, 1, 4260029, 0, 4325507, 0, 4325508, 0, 4325509, 0, 4325510, 0, 4325511, 0, 4325512, 0, 4325513, 0, 4325514, 0, 4325515, 0, 4325516, 0, 4325517, 0, 4325518, 0, 4325519, 0, 4325520, 0, 4325521, 0, 4325522, 0, 4325523, 0, 4325524, 0, 4325525, 0, 4325526, 0, 4325527, 0, 4325528, 0, 4325529, 0, 4325530, 0, 4325531, 0, 4325532, 0, 4325533, 0, 4325534, 0, 4325535, 0, 4325536, 0, 4325537, 0, 4325538, 0, 4325539, 0, 4325540, 0, 4325541, 0, 4325542, 0, 4325543, 0, 4325544, 0, 4325545, 0, 4325546, 0, 4325547, 0, 4325548, 0, 4325549, 0, 4325550, 0, 4325551, 0, 4325552, 0, 4325553, 0, 4325554, 0, 4325555, 0, 4325556, 0, 4325557, 0, 4325558, 0, 4325559, 0, 4325560, 0, 4325561, 0, 4325562, 0, 4325563, 0, 4325564, 0, 4325565, 0 )
+__meta__ = { "_edit_lock_":true }
+
+[node name="Enemies" type="Node" parent="."]
+
+__meta__ = { "_editor_collapsed":true }
+
+[node name="sacra_pinchorb" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 362.946, 3442.86 )
+
+[node name="sacra_pinchorb 2" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 604.91, 3147.58 )
+
+[node name="sacra_pinchorb 3" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 309.632, 2848.2 )
+
+[node name="sacra_pinchorb 5" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 512, 2784 )
+
+[node name="sacra_pinchorb 6" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 623.365, 3572.04 )
+
+[node name="sacra_pinchorb 7" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 4059.07, 2553.48 )
+
+[node name="sacra_pinchorb 8" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 3799.98, 2127.84 )
+
+[node name="sacra_pinchorb 9" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 4299.65, 2098.23 )
+
+[node name="sacra_pinchorb 10" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 4044.26, 1927.97 )
+
+[node name="sacra_pinchorb 11" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 5411.04, 1790.65 )
+
+[node name="sacra_pinchorb 12" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 5689.92, 1880.87 )
+
+[node name="sacra_pinchorb 13" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 5933.93, 1768.09 )
+
+[node name="sacra_pinchorb 14" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 6175.9, 1887.02 )
+
+[node name="sacra_pinchorb 15" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 6460.92, 1755.79 )
+
+[node name="sacra_pinchorb 16" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 6723.39, 1895.92 )
+
+[node name="sacra_pinchorb 17" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 6942.8, 1772.19 )
+drop = 3
+
+[node name="sacra_pinchorb 19" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 4497.27, 1896.4 )
+
+[node name="sacra_pinchorb 20" parent="Enemies" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 4724.33, 1917.43 )
+
+[node name="warrior" parent="Enemies" instance=ExtResource( 25 )]
+
+transform/pos = Vector2( 544, 2400 )
+
+[node name="warrior 2" parent="Enemies" instance=ExtResource( 25 )]
+
+transform/pos = Vector2( 224, 2048 )
+
+[node name="warrior 3" parent="Enemies" instance=ExtResource( 25 )]
+
+transform/pos = Vector2( 4064, 2176 )
+
+[node name="warrior 4" parent="Enemies" instance=ExtResource( 25 )]
+
+transform/pos = Vector2( 7264, 1792 )
+
+[node name="warrior 5" parent="Enemies" instance=ExtResource( 25 )]
+
+transform/pos = Vector2( 10336, 4352 )
+
+[node name="Physics" type="Node" parent="."]
+
+__meta__ = { "_editor_collapsed":true }
+
+[node name="RigidBody2D" parent="Physics" instance=ExtResource( 26 )]
+
+transform/pos = Vector2( 436.936, 1139.86 )
+
+[node name="jar" parent="Physics" instance=ExtResource( 27 )]
+
+transform/pos = Vector2( 172.107, 882.743 )
+
+[node name="jar2" parent="Physics" instance=ExtResource( 28 )]
+
+transform/pos = Vector2( 257.235, 884.594 )
+
+[node name="jar3" parent="Physics" instance=ExtResource( 29 )]
+
+transform/pos = Vector2( 177.659, 962.319 )
+
+[node name="jar 2" parent="Physics" instance=ExtResource( 27 )]
+
+transform/pos = Vector2( 4116.69, 2719.01 )
+transform/rot = -30.6167
+
+[node name="jar 3" parent="Physics" instance=ExtResource( 28 )]
+
+transform/pos = Vector2( 4029.79, 2847.79 )
+transform/rot = 23.1493
+
+[node name="jar 4" parent="Physics" instance=ExtResource( 29 )]
+
+transform/pos = Vector2( 4023.7, 3105.9 )
+transform/rot = -77.4667
+
+[node name="jar 5" parent="Physics" instance=ExtResource( 27 )]
+
+transform/pos = Vector2( 7530.64, 1953.95 )
+transform/rot = -30.6167
+
+[node name="Doors" type="Node" parent="."]
+
+__meta__ = { "_editor_collapsed":true }
+
+[node name="door" parent="Doors" instance=ExtResource( 30 )]
+
+transform/pos = Vector2( 1585.15, 4740.35 )
+
+[node name="key" parent="Doors" instance=ExtResource( 31 )]
+
+transform/pos = Vector2( 1352.54, 4734.18 )
+
+[node name="door 2" parent="Doors" instance=ExtResource( 30 )]
+
+transform/pos = Vector2( 3673.6, 1793.9 )
+key_idx = 1
+
+[node name="door 3" parent="Doors" instance=ExtResource( 30 )]
+
+transform/pos = Vector2( 10360.7, 4768.34 )
+transform/rot = -89.9811
+key_idx = 2
+
+[node name="key 2" parent="Doors" instance=ExtResource( 31 )]
+
+transform/pos = Vector2( 10110, 4389.39 )
+key_index = 2
+
+[node name="Interactions" type="Node" parent="."]
+
+__meta__ = { "_editor_collapsed":true }
+
+[node name="breakable_stone 2" parent="Interactions" instance=ExtResource( 32 )]
+
+transform/pos = Vector2( 713.444, 1700.42 )
+transform/rot = 78.9765
+
+[node name="breakable_stone" parent="Interactions" instance=ExtResource( 33 )]
+
+transform/pos = Vector2( 736.144, 3996.51 )
+
+[node name="breakable_stone 3" parent="Interactions" instance=ExtResource( 33 )]
+
+transform/pos = Vector2( 4067.31, 3167.21 )
+
+[node name="breakable_stone 5" parent="Interactions" instance=ExtResource( 33 )]
+
+transform/pos = Vector2( 4064, 3040 )
+
+[node name="breakable_stone 8" parent="Interactions" instance=ExtResource( 33 )]
+
+transform/pos = Vector2( 4064.2, 2912.2 )
+transform/rot = 0.351419
+
+[node name="breakable_stone 9" parent="Interactions" instance=ExtResource( 33 )]
+
+transform/pos = Vector2( 4064.2, 2784.2 )
+transform/rot = 0.351419
+
+[node name="breakable_stone 11" parent="Interactions" instance=ExtResource( 33 )]
+
+transform/pos = Vector2( 4064.2, 2656.2 )
+transform/rot = 0.351419
+
+[node name="breakable_stone 14" parent="Interactions" instance=ExtResource( 33 )]
+
+transform/pos = Vector2( 7510.7, 1763.38 )
+transform/rot = 76.9513
+
+[node name="breakable_stone 15" parent="Interactions" instance=ExtResource( 33 )]
+
+transform/pos = Vector2( 7434.9, 1877.61 )
+transform/rot = 76.3715
+
+[node name="breakable_stone 16" parent="Interactions" instance=ExtResource( 33 )]
+
+transform/pos = Vector2( 7511.73, 1900.99 )
+transform/rot = 49.5858
+
+[node name="Collectable" type="Node" parent="."]
+
+__meta__ = { "_editor_collapsed":true }
+
+[node name="large_fruit" parent="Collectable" instance=ExtResource( 34 )]
+
+transform/pos = Vector2( 1194.41, 4705.03 )
+linear_damp = 0.1
+
+[node name="fruit" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 736, 4448 )
+linear_damp = 0.1
+
+[node name="fruit 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 736, 4352 )
+linear_damp = 0.1
+
+[node name="fruit 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 736, 4256 )
+linear_damp = 0.1
+
+[node name="fruit 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 736, 4160 )
+linear_damp = 0.1
+
+[node name="fruit 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 736, 4544 )
+linear_damp = 0.1
+
+[node name="fruit 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 736, 4640 )
+linear_damp = 0.1
+
+[node name="fruit 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1472, 1504 )
+linear_damp = 0.1
+
+[node name="fruit 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1568, 1536 )
+linear_damp = 0.1
+
+[node name="fruit 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1664, 1568 )
+linear_damp = 0.1
+
+[node name="fruit 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1760, 1616 )
+linear_damp = 0.1
+
+[node name="fruit 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1856, 1648 )
+linear_damp = 0.1
+
+[node name="fruit 12 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1952, 1680 )
+linear_damp = 0.1
+
+[node name="fruit 12 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2048, 1712 )
+linear_damp = 0.1
+
+[node name="fruit 12 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2144, 1760 )
+linear_damp = 0.1
+
+[node name="fruit 12 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2240, 1808 )
+linear_damp = 0.1
+
+[node name="fruit 12 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2336, 1872 )
+linear_damp = 0.1
+
+[node name="fruit 12 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2432, 1952 )
+linear_damp = 0.1
+
+[node name="fruit 12 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2528, 2016 )
+linear_damp = 0.1
+
+[node name="fruit 12 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2592, 2080 )
+linear_damp = 0.1
+
+[node name="fruit 12 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2656, 2144 )
+linear_damp = 0.1
+
+[node name="fruit 12 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2720, 2208 )
+linear_damp = 0.1
+
+[node name="fruit 12 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2784, 2272 )
+linear_damp = 0.1
+
+[node name="fruit 12 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2848, 2336 )
+linear_damp = 0.1
+
+[node name="fruit 12 14" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2912, 2400 )
+linear_damp = 0.1
+
+[node name="fruit 12 15" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2976, 2464 )
+linear_damp = 0.1
+
+[node name="fruit 12 16" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3040, 2528 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3168, 3232 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3104, 3232 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3104, 3296 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3168, 3296 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3104, 3360 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3168, 3360 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3168, 3424 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3104, 3424 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1920, 4640 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2016, 4576 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2112, 4544 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2208, 4512 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2304, 4480 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2400, 4416 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 14" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2496, 4384 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 15" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2592, 4320 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 16" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2688, 4288 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 17" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2784, 4224 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 18" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2880, 4160 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 19" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2976, 4096 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 20" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3072, 4000 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2496, 3296 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2432, 3296 )
+linear_damp = 0.1
+
+[node name="fruit 12 31" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1152, 1408 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1216, 1472 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 12 6 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1216, 1536 )
+linear_damp = 0.1
+
+[node name="fruit 12 31 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1152, 1600 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 12 6 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1280, 1504 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 960, 2048 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 896, 2048 )
+linear_damp = 0.1
+
+[node name="large_fruit 2" parent="Collectable" instance=ExtResource( 34 )]
+
+transform/pos = Vector2( 3612.91, 2961.59 )
+linear_damp = 0.1
+fruit_index = 1
+
+[node name="fruit 12 26 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3520, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 6 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3456, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3456, 2656 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 11 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3520, 2656 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 11 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3456, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3520, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 5 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3520, 2784 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 5 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3456, 2784 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3648, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 6 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3584, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3584, 2656 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 11 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3648, 2656 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 11 4 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3584, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3648, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 5 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3648, 2784 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 5 4 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3584, 2784 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3776, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 5 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3776, 2784 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 5 4 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3712, 2784 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3776, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 6 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3712, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 13 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3712, 2656 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 11 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3776, 2656 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 11 4 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3712, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 15" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3526.15, 1956.33 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 6 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3462.15, 1956.33 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 15 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3462.15, 2020.33 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 11 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3526.15, 2020.33 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 11 6 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3462.15, 2084.33 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3526.15, 2084.33 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 5 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3526.15, 2148.33 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 5 6 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3462.15, 2148.33 )
+linear_damp = 0.1
+
+[node name="large_fruit 3" parent="Collectable" instance=ExtResource( 34 )]
+
+transform/pos = Vector2( 10369.9, 4559.38 )
+linear_damp = 0.1
+fruit_index = 2
+
+[node name="fruit 12 32" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10717.7, 4851.66 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10781.7, 4915.66 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 16" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10717.7, 4947.66 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 12 6 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10781.7, 4979.66 )
+linear_damp = 0.1
+
+[node name="fruit 12 31 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10717.7, 5043.66 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 12 6 5 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10845.7, 4947.66 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 12 6 5 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10653.7, 4947.66 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 12 6 4 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10589.7, 4947.66 )
+linear_damp = 0.1
+
+[node name="fruit 12 33" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10656, 4480 )
+linear_damp = 0.1
+
+[node name="fruit 12 34" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10720, 4480 )
+linear_damp = 0.1
+
+[node name="fruit 12 35" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10912, 3872 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10976, 3872 )
+linear_damp = 0.1
+
+[node name="fruit 12 36" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10784, 3232 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10848, 3232 )
+linear_damp = 0.1
+
+[node name="fruit 12 37" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10784, 3296 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10848, 3296 )
+linear_damp = 0.1
+
+[node name="fruit 12 38" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10912, 3936 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10976, 3936 )
+linear_damp = 0.1
+
+[node name="fruit 12 39" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10080, 4992 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10144, 4992 )
+linear_damp = 0.1
+
+[node name="fruit 12 40" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9888, 4992 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9952, 4992 )
+linear_damp = 0.1
+
+[node name="fruit 12 41" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9696, 4992 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9760, 4992 )
+linear_damp = 0.1
+
+[node name="fruit 12 42" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9504, 4992 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9568, 4992 )
+linear_damp = 0.1
+
+[node name="fruit 12 43" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9312, 4992 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9376, 4992 )
+linear_damp = 0.1
+
+[node name="fruit 12 44" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8704, 4608 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8768, 4608 )
+linear_damp = 0.1
+
+[node name="fruit 12 45" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8704, 4672 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8768, 4672 )
+linear_damp = 0.1
+
+[node name="fruit 12 46" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8704, 4736 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8768, 4736 )
+linear_damp = 0.1
+
+[node name="fruit 12 47" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8704, 4800 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 14" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8768, 4800 )
+linear_damp = 0.1
+
+[node name="fruit 12 48" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8704, 4800 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 15" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8768, 4800 )
+linear_damp = 0.1
+
+[node name="fruit 12 49" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9568, 4320 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 16" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9632, 4320 )
+linear_damp = 0.1
+
+[node name="fruit 12 49 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9376, 4320 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 16 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9440, 4320 )
+linear_damp = 0.1
+
+[node name="fruit 12 49 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9184, 4320 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 16 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9248, 4320 )
+linear_damp = 0.1
+
+[node name="fruit 12 50" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10656, 4416 )
+linear_damp = 0.1
+
+[node name="fruit 12 50 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10720, 4416 )
+linear_damp = 0.1
+
+[node name="fruit 12 51" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10656, 4608 )
+linear_damp = 0.1
+
+[node name="fruit 12 51 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10720, 4608 )
+linear_damp = 0.1
+
+[node name="fruit 12 51 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10656, 4544 )
+linear_damp = 0.1
+
+[node name="fruit 12 50 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10720, 4544 )
+linear_damp = 0.1
+
+[node name="fruit 12 52" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10208, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 17" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10272, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 53" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10016, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 18" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10080, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 54" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9824, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 19" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9888, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 55" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9632, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 20" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9696, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 56" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9440, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 21" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9504, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 57" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10816, 3136 )
+linear_damp = 0.1
+
+[node name="fruit 12 58" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10816, 3008 )
+linear_damp = 0.1
+
+[node name="fruit 12 59" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10784, 2880 )
+linear_damp = 0.1
+
+[node name="fruit 12 60" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10944, 3712 )
+linear_damp = 0.1
+
+[node name="fruit 12 60 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10880, 3584 )
+linear_damp = 0.1
+
+[node name="fruit 12 60 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10816, 3424 )
+linear_damp = 0.1
+
+[node name="fruit 12 60 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10912, 4032 )
+linear_damp = 0.1
+
+[node name="fruit 12 61" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10720, 4288 )
+linear_damp = 0.1
+
+[node name="fruit 12 60 4 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 10816, 4160 )
+linear_damp = 0.1
+
+[node name="fruit 12 62" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9152, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 22" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9216, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 12 63" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9152, 2656 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 23" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 9216, 2656 )
+linear_damp = 0.1
+
+[node name="fruit 12 64" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8704, 2368 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 24" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8768, 2368 )
+linear_damp = 0.1
+
+[node name="fruit 12 65" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8480, 2240 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 25" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8544, 2240 )
+linear_damp = 0.1
+
+[node name="fruit 12 66" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8256, 2144 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 26" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8320, 2144 )
+linear_damp = 0.1
+
+[node name="fruit 12 67" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8064, 2048 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 27" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 8128, 2048 )
+linear_damp = 0.1
+
+[node name="fruit 12 68" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 7840, 1920 )
+linear_damp = 0.1
+
+[node name="fruit 12 35 28" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 7904, 1920 )
+linear_damp = 0.1
+
+[node name="fruit 12 69" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 992, 1408 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1056, 1472 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 12 6 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1056, 1536 )
+linear_damp = 0.1
+
+[node name="fruit 12 31 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 992, 1600 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 12 6 4 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1120, 1504 )
+linear_damp = 0.1
+
+[node name="fruit 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1472, 1568 )
+linear_damp = 0.1
+
+[node name="fruit 13 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1568, 1600 )
+linear_damp = 0.1
+
+[node name="fruit 13 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1664, 1632 )
+linear_damp = 0.1
+
+[node name="fruit 13 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1760, 1680 )
+linear_damp = 0.1
+
+[node name="fruit 13 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1856, 1712 )
+linear_damp = 0.1
+
+[node name="fruit 12 17" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1952, 1744 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2048, 1776 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2144, 1824 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2240, 1872 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2336, 1936 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2432, 2016 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2528, 2080 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2592, 2144 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2656, 2208 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2720, 2272 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2784, 2336 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2848, 2400 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2912, 2464 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 14" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2976, 2528 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 15" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3040, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 14" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1504, 1472 )
+linear_damp = 0.1
+
+[node name="fruit 13 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1600, 1504 )
+linear_damp = 0.1
+
+[node name="fruit 13 6 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1696, 1536 )
+linear_damp = 0.1
+
+[node name="fruit 13 6 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1792, 1584 )
+linear_damp = 0.1
+
+[node name="fruit 13 6 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1888, 1616 )
+linear_damp = 0.1
+
+[node name="fruit 12 18" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1984, 1648 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2080, 1680 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2176, 1728 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2272, 1776 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2368, 1840 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2464, 1920 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2560, 1984 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2624, 2048 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2688, 2112 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2752, 2176 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2816, 2240 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2880, 2304 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2944, 2368 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3008, 2432 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 14" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3072, 2496 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3072, 2432 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3008, 2368 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2944, 2304 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2880, 2240 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2816, 2176 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2752, 2112 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1920, 4576 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2016, 4512 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2112, 4480 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2208, 4448 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2304, 4416 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2400, 4352 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2496, 4320 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2592, 4256 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2688, 4224 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2784, 4160 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2880, 4096 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2976, 4032 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 9 21 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 3072, 3936 )
+linear_damp = 0.1
+
+[node name="fruit 15" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1504, 1408 )
+linear_damp = 0.1
+
+[node name="fruit 13 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1600, 1440 )
+linear_damp = 0.1
+
+[node name="fruit 13 6 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1696, 1472 )
+linear_damp = 0.1
+
+[node name="fruit 13 6 5 2" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1792, 1520 )
+linear_damp = 0.1
+
+[node name="fruit 13 6 5 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1888, 1552 )
+linear_damp = 0.1
+
+[node name="fruit 12 19" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1984, 1584 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 17" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2080, 1616 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2176, 1664 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2272, 1712 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2368, 1776 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2464, 1856 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2560, 1920 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2624, 1984 )
+linear_damp = 0.1
+
+[node name="fruit 12 17 16 15 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2688, 2048 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 960, 2112 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 896, 2112 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 960, 2176 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 896, 2176 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1152, 2400 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1088, 2400 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1152, 2336 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 3" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1088, 2336 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1280, 2528 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1216, 2528 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1280, 2464 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 4" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1216, 2464 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1408, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1344, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1408, 2528 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 5" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1344, 2528 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 14" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1536, 2656 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1472, 2656 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1536, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 6" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1472, 2592 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 15" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1664, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1600, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1664, 2656 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 7" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1600, 2656 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 16" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1792, 2784 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1728, 2784 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1792, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 8" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1728, 2720 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 17" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1920, 2848 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1856, 2848 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1920, 2784 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 9" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1856, 2784 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 18" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2048, 2912 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1984, 2912 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2048, 2848 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 10" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1984, 2848 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 19" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2176, 2976 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2112, 2976 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2176, 2912 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 11" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2112, 2912 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 20" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2624, 3360 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 14" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2560, 3360 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2624, 3296 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 12" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2560, 3296 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 21" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2496, 3424 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 15" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2432, 3424 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2496, 3360 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 13" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2432, 3360 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 22" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2368, 3360 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 16" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2304, 3360 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 14" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2368, 3296 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 14" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2304, 3296 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 23" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2368, 3488 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 17" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2304, 3488 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 15" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2368, 3424 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 15" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2304, 3424 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 24" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2080, 3712 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 18" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2016, 3712 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 16" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2080, 3648 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 16" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 2016, 3648 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 25" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1920, 3840 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 19" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1856, 3840 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 17" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1920, 3776 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 17" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1856, 3776 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 26" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1728, 3840 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 20" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1664, 3840 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 18" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1728, 3776 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 18" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1664, 3776 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 27" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1600, 4032 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 21" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1536, 4032 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 19" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1600, 3968 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 19" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1536, 3968 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 28" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1376, 4000 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 22" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1312, 4000 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 20" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1376, 3936 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 20" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1312, 3936 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 29" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1312, 4224 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 23" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1248, 4224 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 21" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1312, 4160 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 21" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1248, 4160 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 30" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1088, 4160 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 24" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1024, 4160 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 22" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1088, 4096 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 22" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1024, 4096 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 31" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1152, 4416 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 25" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1088, 4416 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 11 23" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1152, 4352 )
+linear_damp = 0.1
+
+[node name="fruit 12 26 10 10 7 5 23" parent="Collectable" instance=ExtResource( 35 )]
+
+transform/pos = Vector2( 1088, 4352 )
+linear_damp = 0.1
+
+[node name="WallSpikes" type="Node" parent="."]
+
+__meta__ = { "_editor_collapsed":true }
+
+[node name="spikes" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 2120.2, 4011.61 )
+transform/rot = 27.724
+
+[node name="spikes 2" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 2523.49, 3812.01 )
+transform/rot = 26.0174
+
+[node name="spikes 3" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 1616.69, 1755.9 )
+transform/rot = -26.8664
+
+[node name="spikes 4" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 2059.78, 1985 )
+transform/rot = -26.8664
+
+[node name="spikes 5" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 2475.17, 2294.65 )
+transform/rot = -45.5479
+
+[node name="spikes 6" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 2832.66, 2662.21 )
+transform/rot = -45.5479
+
+[node name="spikes 7" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 2133.77, 4653.9 )
+transform/rot = 27.4947
+
+[node name="spikes 8" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 1742.88, 4212.66 )
+transform/rot = 27.724
+
+[node name="spikes 9" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 1220.01, 2803.41 )
+transform/rot = -26.8664
+
+[node name="spikes 10" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 1666.38, 3034.65 )
+transform/rot = -26.8664
+
+[node name="spikes 11" parent="WallSpikes" instance=ExtResource( 37 )]
+
+transform/pos = Vector2( 1938.8, 3176.52 )
+transform/rot = -26.7965
+
+[node name="spikes 12" parent="WallSpikes" instance=ExtResource( 37 )]
+
+transform/pos = Vector2( 938.365, 2663.77 )
+transform/rot = -26.7965
+
+[node name="spikes 13" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 2587.88, 4422.64 )
+transform/rot = 27.4947
+
+[node name="spikes 14" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 3000.46, 4151.07 )
+transform/rot = 41.1196
+
+[node name="spikes 15" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 3223.11, 3764.65 )
+transform/rot = 86.3694
+
+[node name="spikes 16" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 7864.11, 1825.53 )
+transform/rot = 153.836
+
+[node name="spikes 17" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 8308.1, 2045.62 )
+transform/rot = 153.836
+
+[node name="spikes 18" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 8736.91, 2265.72 )
+transform/rot = 153.836
+
+[node name="spikes 19" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 9160.21, 2477.98 )
+transform/rot = 155.243
+
+[node name="spikes 20" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 9645.3, 2626.61 )
+transform/rot = 180.103
+
+[node name="spikes 21" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 10155.9, 2626.61 )
+transform/rot = 180.103
+
+[node name="spikes 22" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 10628.5, 2998.7 )
+transform/rot = 282.732
+
+[node name="spikes 23" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 10618.3, 3499.06 )
+transform/rot = 253.116
+
+[node name="spikes 24" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 10566.1, 4002.84 )
+transform/rot = 270.338
+
+[node name="spikes 25" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 11156.6, 3126.97 )
+transform/rot = 90.7672
+
+[node name="spikes 26" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 11107.6, 3610.68 )
+transform/rot = 76.5993
+
+[node name="spikes 27" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 11106.8, 4152.62 )
+transform/rot = 103.37
+
+[node name="spikes 28" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 11008.7, 4591.94 )
+transform/rot = 45.3184
+
+[node name="spikes 29" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 10782.7, 5152.63 )
+transform/rot = -0.326999
+
+[node name="spikes 30" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 10275, 5147.05 )
+transform/rot = -0.326999
+
+[node name="spikes 31" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 9758.99, 5141.47 )
+transform/rot = -0.326999
+
+[node name="spikes 32" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 9242.93, 5135.89 )
+transform/rot = -0.326999
+
+[node name="spikes 33" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 8746.4, 5021.53 )
+transform/rot = -29.5565
+
+[node name="spikes 34" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 8706.12, 4366.97 )
+transform/rot = -130.405
+
+[node name="spikes 35" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 9124.02, 4200.81 )
+transform/rot = -180.084
+
+[node name="spikes 36" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 9647.67, 4198.3 )
+transform/rot = -180.084
+
+[node name="spikes 37" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 9741.34, 4450.7 )
+transform/rot = -360.54
+
+[node name="spikes 38" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 9236.44, 4448 )
+transform/rot = -359.855
+
+[node name="spikes 39" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 9466.41, 4847.82 )
+transform/rot = -180.575
+
+[node name="spikes 40" parent="WallSpikes" instance=ExtResource( 36 )]
+
+transform/pos = Vector2( 9982.5, 4852.85 )
+transform/rot = -180.575
+
+[node name="spikes 41" parent="WallSpikes" instance=ExtResource( 37 )]
+
+transform/pos = Vector2( 8576.41, 4640.41 )
+transform/rot = -89.2587
+
+[node name="spikes 42" parent="WallSpikes" instance=ExtResource( 37 )]
+
+transform/pos = Vector2( 8576.41, 4800.41 )
+transform/rot = -89.2587
+
+[node name="Chekpoint" type="Node" parent="."]
+
+[node name="checkpoint" parent="Chekpoint" instance=ExtResource( 38 )]
+
+transform/pos = Vector2( 3397.42, 3473.11 )
+linear_damp = 0.1
+
+[node name="roulette" parent="Chekpoint" instance=ExtResource( 39 )]
+
+transform/pos = Vector2( 11769.2, 5034.27 )
+
+[node name="Spikes" type="Node" parent="."]
+
+__meta__ = { "_editor_collapsed":true }
+
+[node name="StaticBody2D" parent="Spikes" instance=ExtResource( 40 )]
+
+transform/pos = Vector2( 7782.91, 1906.91 )
+
+[node name="StaticBody2D 2" parent="Spikes" instance=ExtResource( 40 )]
+
+transform/pos = Vector2( 7987.83, 1994.19 )
+
+[node name="StaticBody2D 3" parent="Spikes" instance=ExtResource( 40 )]
+
+transform/pos = Vector2( 8196.54, 2089.06 )
+
+[node name="StaticBody2D 4" parent="Spikes" instance=ExtResource( 40 )]
+
+transform/pos = Vector2( 8424.23, 2191.51 )
+
+[node name="StaticBody2D 5" parent="Spikes" instance=ExtResource( 40 )]
+
+transform/pos = Vector2( 8629.14, 2297.77 )
+
+[node name="StaticBody2D 6" parent="Spikes" instance=ExtResource( 40 )]
+
+transform/pos = Vector2( 8837.85, 2407.82 )
+
+[node name="StaticBody2D 9" parent="Spikes" instance=ExtResource( 40 )]
+
+transform/pos = Vector2( 10720, 3232 )
+
+[node name="StaticBody2D 10" parent="Spikes" instance=ExtResource( 40 )]
+
+transform/pos = Vector2( 10912, 3232 )
+
+[node name="StaticBody2D 11" parent="Spikes" instance=ExtResource( 40 )]
+
+transform/pos = Vector2( 10848, 3872 )
+
+[node name="StaticBody2D 12" parent="Spikes" instance=ExtResource( 40 )]
+
+transform/pos = Vector2( 11040, 3872 )
+
+[node name="Wildlife" type="Node" parent="."]
+
+__meta__ = { "_editor_collapsed":true }
+
+[node name="frog" parent="Wildlife" instance=ExtResource( 41 )]
+
+transform/pos = Vector2( 3432.93, 2988.97 )
+
+[node name="frog 2" parent="Wildlife" instance=ExtResource( 41 )]
+
+transform/pos = Vector2( 3783.97, 2978.65 )
+
+[node name="frog 3" parent="Wildlife" instance=ExtResource( 41 )]
+
+transform/pos = Vector2( 526.555, 4769.97 )
+
+[node name="Decorative Front" type="Node" parent="."]
+
+__meta__ = { "_editor_collapsed":true }
+
+[node name="Sprite 15" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 1104.63, 4625.47 )
+transform/rot = -83.0246
+texture = ExtResource( 42 )
+
+[node name="Sprite 25" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 3873.66, 3485.7 )
+texture = ExtResource( 43 )
+
+[node name="Sprite 16" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 800.65, 2556.88 )
+transform/rot = -38.893
+texture = ExtResource( 44 )
+
+[node name="Sprite 17" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 1216.2, 1634.56 )
+texture = ExtResource( 45 )
+
+[node name="Sprite 18" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 1758.85, 4829.77 )
+transform/rot = 18.9771
+texture = ExtResource( 45 )
+
+[node name="Sprite 6" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 2709.94, 3069.14 )
+transform/rot = 123.108
+texture = ExtResource( 2 )
+
+[node name="Sprite 26" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 2731.73, 3543.02 )
+transform/rot = 65.3715
+texture = ExtResource( 8 )
+
+[node name="Sprite 22" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 2051.82, 3325.73 )
+texture = ExtResource( 46 )
+
+[node name="Sprite 22 2" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 3296.88, 2834.4 )
+transform/rot = -109.786
+texture = ExtResource( 6 )
+
+[node name="Sprite 22 3" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 4164.15, 3505.5 )
+transform/rot = -109.786
+texture = ExtResource( 6 )
+
+[node name="Sprite 19" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 3598.96, 3299.48 )
+transform/rot = -83.0246
+texture = ExtResource( 42 )
+
+[node name="Sprite 20" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 3299.15, 3123.3 )
+transform/rot = -214.565
+texture = ExtResource( 42 )
+
+[node name="Sprite 16 2" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 3929.85, 3173.58 )
+transform/rot = 163.47
+texture = ExtResource( 5 )
+
+[node name="Sprite 16 3" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 3577.49, 3102.49 )
+transform/rot = 163.47
+texture = ExtResource( 5 )
+
+[node name="Sprite 21" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 3768.96, 3089.3 )
+transform/rot = -83.0246
+texture = ExtResource( 42 )
+
+[node name="Sprite 22 4" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 2119.26, 2590.22 )
+transform/rot = -109.786
+texture = ExtResource( 6 )
+
+[node name="Sprite 26 2" type="Sprite" parent="Decorative Front"]
+
+transform/pos = Vector2( 1663.97, 2470.36 )
+transform/rot = -217.591
+texture = ExtResource( 8 )
+
+
