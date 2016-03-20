@@ -30,7 +30,7 @@
 [ext_resource path="res://interaction/breakable_stone.tscn" type="PackedScene" id=28]
 [ext_resource path="res://tilesets/mountain_parallax.tscn" type="PackedScene" id=29]
 [ext_resource path="res://art/Ligth 1.png" type="Texture" id=30]
-[ext_resource path="res://tilesets/test_tileset.xml" type="TileSet" id=31]
+[ext_resource path="res://tilesets/test_tileset.tres" type="TileSet" id=31]
 [ext_resource path="res://art/tree_bush2.png" type="Texture" id=32]
 [ext_resource path="res://art/tree_bush4.png" type="Texture" id=33]
 

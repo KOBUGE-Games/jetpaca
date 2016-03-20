@@ -36,7 +36,7 @@
 [ext_resource path="res://player/fruit.tscn" type="PackedScene" id=34]
 [ext_resource path="res://tilesets/mountain_parallax.tscn" type="PackedScene" id=35]
 [ext_resource path="res://art/Ligth 1.png" type="Texture" id=36]
-[ext_resource path="res://tilesets/test_tileset.xml" type="TileSet" id=37]
+[ext_resource path="res://tilesets/test_tileset.tres" type="TileSet" id=37]
 [ext_resource path="res://art/flower_bush1.png" type="Texture" id=38]
 [ext_resource path="res://art/flower3.png" type="Texture" id=39]
 [ext_resource path="res://art/flower4.png" type="Texture" id=40]

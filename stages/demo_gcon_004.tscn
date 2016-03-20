@@ -33,7 +33,7 @@
 [ext_resource path="res://interaction/locked_door.tscn" type="PackedScene" id=31]
 [ext_resource path="res://interaction/key.tscn" type="PackedScene" id=32]
 [ext_resource path="res://art/Ligth 1.png" type="Texture" id=33]
-[ext_resource path="res://tilesets/test_tileset.xml" type="TileSet" id=34]
+[ext_resource path="res://tilesets/test_tileset.tres" type="TileSet" id=34]
 [ext_resource path="res://art/flower2.png" type="Texture" id=35]
 [ext_resource path="res://art/flower1.png" type="Texture" id=36]
 [ext_resource path="res://art/small_bush.png" type="Texture" id=37]

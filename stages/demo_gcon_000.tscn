@@ -17,7 +17,7 @@
 [ext_resource path="res://tilesets/mountain_parallax.tscn" type="PackedScene" id=15]
 [ext_resource path="res://player/fruit.tscn" type="PackedScene" id=16]
 [ext_resource path="res://art/Ligth 1.png" type="Texture" id=17]
-[ext_resource path="res://tilesets/mountain_tilemap.xml" type="TileSet" id=18]
+[ext_resource path="res://tilesets/mountain_tileset.tres" type="TileSet" id=18]
 [ext_resource path="res://player/wise_alpaca.tscn" type="PackedScene" id=19]
 [ext_resource path="res://player/checkpoint.tscn" type="PackedScene" id=20]
 [ext_resource path="res://player/large_fruit.tscn" type="PackedScene" id=21]
