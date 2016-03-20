@@ -22,22 +22,22 @@
 [ext_resource path="res://art/fire.png" type="Texture" id=20]
 [ext_resource path="res://art/cachos_warrior/escudoshadow.png" type="Texture" id=21]
 
-[sub_resource type="CircleShape2D" id=17]
+[sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 80.0
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 50 )
 
-[sub_resource type="ColorRamp" id=18]
+[sub_resource type="ColorRamp" id=3]
 
 offsets = FloatArray( 0, 0.1, 0.8, 1 )
 colors = ColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0.0353982, 0, 0, 0, 0 )
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=4]
 
 resource/name = "2-Attack_to_tired"
 length = 3.0
@@ -172,7 +172,7 @@ tracks/31/path = NodePath("sprites/Rib:frame")
 tracks/31/interp = 1
 tracks/31/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 2 ] }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=5]
 
 resource/name = "block_down_idle"
 length = 3.0
@@ -295,9 +295,8 @@ tracks/28/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/28/interp = 1
 tracks/28/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 1 ] }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=6]
 
-resource/name = "attack"
 length = 2.6
 loop = false
 step = 0.1
@@ -458,7 +457,7 @@ tracks/38/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/
 tracks/38/interp = 1
 tracks/38/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( -33.5088, -33.6646 ) ] }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=7]
 
 resource/name = "block"
 length = 1.5
@@ -577,9 +576,8 @@ tracks/27/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/27/interp = 1
 tracks/27/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 1 ] }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=8]
 
-resource/name = "block_up_idle"
 length = 3.0
 loop = true
 step = 0.25
@@ -700,7 +698,7 @@ tracks/28/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:
 tracks/28/interp = 1
 tracks/28/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=9]
 
 resource/name = "block_up_impact"
 length = 1.5
@@ -827,7 +825,7 @@ tracks/29/path = NodePath("sprites/Rib/Chest/Head/Head/Mouth:transform/pos")
 tracks/29/interp = 1
 tracks/29/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( -23.7877, 21.164 ) ] }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=10]
 
 resource/name = "block_front_idle"
 length = 3.0
@@ -950,9 +948,8 @@ tracks/28/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:frame")
 tracks/28/interp = 1
 tracks/28/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=11]
 
-resource/name = "death"
 length = 7.5
 loop = false
 step = 0.25
@@ -1061,9 +1058,8 @@ tracks/25/path = NodePath("sprites/Rib/Chest:frame")
 tracks/25/interp = 1
 tracks/25/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 1 ] }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=12]
 
-resource/name = "flipping"
 length = 0.8
 loop = false
 step = 0.05
@@ -1224,9 +1220,8 @@ tracks/38/path = NodePath(".")
 tracks/38/interp = 1
 tracks/38/keys = { "times":FloatArray( 0.4 ), "transitions":FloatArray( 1 ), "values":[ { "args":[  ], "method":"_do_flip" } ] }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=13]
 
-resource/name = "idle"
 length = 9.0
 loop = true
 step = 0.1
@@ -1391,7 +1386,7 @@ tracks/39/path = NodePath("sprites/Rib/Chest/Head/sclera/eye_track/eyes:transfor
 tracks/39/interp = 1
 tracks/39/keys = { "cont":true, "times":FloatArray( 0, 2.6, 5.5, 7.6, 9 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( -4.06426, 9.27054 ), Vector2( -6.20192, 9.5089 ), Vector2( -5.42519, 9.31161 ), Vector2( -5.49273, 11.1086 ), Vector2( -4.06426, 9.27054 ) ] }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=14]
 
 resource/name = "moving_upwards"
 length = 3.0
@@ -1546,9 +1541,8 @@ tracks/36/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/36/interp = 1
 tracks/36/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 1 ] }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=15]
 
-resource/name = "take_damage"
 length = 3.5
 loop = false
 step = 0.25
@@ -1653,9 +1647,8 @@ tracks/24/path = NodePath("sprites/Rib:frame")
 tracks/24/interp = 1
 tracks/24/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 2 ] }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=16]
 
-resource/name = "tired"
 length = 4.5
 loop = true
 step = 0.25
@@ -1764,9 +1757,8 @@ tracks/25/path = NodePath("sprites/Rib/Chest:frame")
 tracks/25/interp = 1
 tracks/25/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 1 ] }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=17]
 
-resource/name = "moving_forward"
 length = 3.0
 loop = true
 step = 0.25
@@ -1919,7 +1911,7 @@ tracks/36/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/36/interp = 1
 tracks/36/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 1 ] }
 
-[sub_resource type="CircleShape2D" id=16]
+[sub_resource type="CircleShape2D" id=18]
 
 custom_solver_bias = 0.0
 radius = 180.0
@@ -1927,8 +1919,8 @@ radius = 180.0
 [node name="warrior" type="RigidBody2D"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 17 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, -3.6708, -18.3831 )
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, -3.6708, -18.3831 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -1986,8 +1978,8 @@ offset = Vector2( 0.291992, -41.1163 )
 [node name="damager" type="Area2D" parent="sprites/ArmBG/ForearmBG/HandBG/Sword"]
 
 input/pickable = true
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0.234528, -59.3896 )
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0.234528, -59.3896 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -1998,7 +1990,7 @@ angular_damp = 1.0
 
 visibility/visible = false
 transform/pos = Vector2( 0.234528, -59.3896 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 trigger = false
 _update_shape_index = -1
 
@@ -2164,7 +2156,7 @@ params/hue_variation = 0.0
 params/anim_speed_scale = 1.0
 params/anim_initial_pos = 0.0
 randomness/spin_velocity = 1.0
-color/color_ramp = SubResource( 18 )
+color/color_ramp = SubResource( 3 )
 
 [node name="shadow" type="Sprite" parent="sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield"]
 
@@ -2182,20 +2174,20 @@ remote_path = NodePath("../../../ArmBG")
 playback/process_mode = 1
 playback/default_blend_time = 1.0
 root/root = NodePath("..")
-anims/2-Attack_to_tired = SubResource( 13 )
-anims/4-take_damage = SubResource( 12 )
-anims/attack = SubResource( 2 )
-anims/block = SubResource( 8 )
-anims/block_down_impact = SubResource( 4 )
-anims/block_front_idle = SubResource( 11 )
-anims/block_up_impact = SubResource( 14 )
-anims/death = SubResource( 9 )
-anims/flipping = SubResource( 5 )
-anims/idle = SubResource( 3 )
-anims/moving_upwards = SubResource( 15 )
-anims/take_damage = SubResource( 6 )
-anims/tired = SubResource( 7 )
-anims/turn = SubResource( 10 )
+anims/2-Attack_to_tired = SubResource( 4 )
+anims/4-take_damage = SubResource( 5 )
+anims/attack = SubResource( 6 )
+anims/block = SubResource( 7 )
+anims/block_down_impact = SubResource( 8 )
+anims/block_front_idle = SubResource( 9 )
+anims/block_up_impact = SubResource( 10 )
+anims/death = SubResource( 11 )
+anims/flipping = SubResource( 12 )
+anims/idle = SubResource( 13 )
+anims/moving_upwards = SubResource( 14 )
+anims/take_damage = SubResource( 15 )
+anims/tired = SubResource( 16 )
+anims/turn = SubResource( 17 )
 playback/active = true
 playback/speed = 2.0
 blend_times = [  ]
@@ -2205,7 +2197,7 @@ autoplay = ""
 
 visibility/visible = false
 transform/pos = Vector2( -3.6708, -18.3831 )
-shape = SubResource( 17 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = -1
 
@@ -2213,8 +2205,8 @@ _update_shape_index = -1
 
 transform/pos = Vector2( -0.263527, 0 )
 input/pickable = true
-shapes/0/shape = SubResource( 16 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, -1.76053, -66.019 )
+shapes/0/shape = SubResource( 18 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, -1.76053, -66.019 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -2226,7 +2218,7 @@ angular_damp = 1.0
 visibility/visible = false
 visibility/self_opacity = 0.111111
 transform/pos = Vector2( -1.76053, -66.019 )
-shape = SubResource( 16 )
+shape = SubResource( 18 )
 trigger = false
 _update_shape_index = -1
 

@@ -19,7 +19,7 @@ colors = ColorArray( 1, 0.79646, 0, 1, 1, 0.247788, 0, 1, 0, 0, 0, 0 )
 
 input/pickable = true
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, -2, 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, -2, 2 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0

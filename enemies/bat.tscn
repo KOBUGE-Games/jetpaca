@@ -2,7 +2,7 @@
 
 [ext_resource path="res://art/pipistrello.png" type="Texture" id=1]
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=1]
 
 resource/name = "fly_cycle"
 length = 1.5
@@ -48,9 +48,8 @@ tracks/3/path = NodePath("Node2D/pipistrello:transform/rot")
 tracks/3/interp = 2
 tracks/3/keys = { "cont":true, "times":FloatArray( 0, 0.5, 1 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ 3.11624, -5.50652, 3.11624 ] }
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id=3]
 
-resource/name = "idle"
 length = 3.0
 loop = true
 step = 0.25
@@ -71,9 +70,8 @@ tracks/3/path = NodePath("Node2D/pipistrello:transform/rot")
 tracks/3/interp = 2
 tracks/3/keys = { "cont":true, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ -180.0, -180.0 ] }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 
-resource/name = "open_wings"
 length = 1.5
 loop = true
 step = 0.25
@@ -158,10 +156,10 @@ frame = 1
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/fly_cycle = SubResource( 4 )
+anims/fly_cycle = SubResource( 1 )
 anims/hurt = SubResource( 2 )
-anims/idle = SubResource( 1 )
-anims/open_wings = SubResource( 3 )
+anims/idle = SubResource( 3 )
+anims/open_wings = SubResource( 4 )
 anims/open_wings_to_fly = SubResource( 5 )
 playback/active = true
 playback/speed = 2.0

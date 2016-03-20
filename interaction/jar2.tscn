@@ -10,12 +10,12 @@
 custom_solver_bias = 0.0
 points = Vector2Array( -10.4691, -24.3332, 11.4031, -24.8603, 25.8967, -11.1572, 29.586, 7.81621, 20.6263, 20.7287, 9.0314, 27.3167, -7.04333, 27.3167, -17.3206, 22.5733, -27.2805, 8.50351, -24.9627, -9.3126 )
 
-[sub_resource type="ColorRamp" id=3]
+[sub_resource type="ColorRamp" id=2]
 
 offsets = FloatArray( 0, 0.8, 1 )
 colors = ColorArray( 1, 1, 1, 1, 0.435294, 0.442478, 0.469027, 1, 0, 0, 0, 0 )
 
-[sub_resource type="SampleLibrary" id=2]
+[sub_resource type="SampleLibrary" id=3]
 
 samples/break = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
 
@@ -23,7 +23,7 @@ samples/break = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -86,7 +86,7 @@ params/anim_speed_scale = 1.0
 params/anim_initial_pos = 0.0
 randomness/linear_velocity = 1.0
 randomness/spin_velocity = 1.0
-color/color_ramp = SubResource( 3 )
+color/color_ramp = SubResource( 2 )
 
 [node name="death" type="Timer" parent="."]
 
@@ -103,7 +103,7 @@ params/attenuation/min_distance = 1.0
 params/attenuation/max_distance = 2048.0
 params/attenuation/distance_exp = 1.0
 config/polyphony = 1
-config/samples = SubResource( 2 )
+config/samples = SubResource( 3 )
 config/pitch_random = 0.0
 
 [connection signal="timeout" from="death" to="." method="_on_timeout"]

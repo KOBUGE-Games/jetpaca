@@ -146,7 +146,7 @@ tracks/30/path = NodePath("center:transform/rot")
 tracks/30/interp = 1
 tracks/30/keys = { "cont":true, "times":FloatArray( 0, 2.625, 6 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ 0.552565, -1.89051, 0.552565 ] }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=3]
 
 resource/name = "2opening"
 length = 4.0
@@ -273,7 +273,7 @@ tracks/29/path = NodePath("center/pistiles/pollen_thingies 2:transform/pos")
 tracks/29/interp = 1
 tracks/29/keys = { "cont":true, "times":FloatArray( 0, 0.75, 2.5, 4 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( -11.6632, -4.6811 ), Vector2( -11.6632, -4.6811 ), Vector2( -12.2325, -21.0526 ), Vector2( -12.2325, -21.0526 ) ] }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=4]
 
 resource/name = "3opened"
 length = 3.0
@@ -404,9 +404,8 @@ tracks/30/path = NodePath("center:transform/rot")
 tracks/30/interp = 1
 tracks/30/keys = { "cont":true, "times":FloatArray( 0, 1.5, 3 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ -0.839761, 2.17242, -0.839761 ] }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=5]
 
-resource/name = "4closing"
 length = 3.0
 loop = false
 step = 0.25
@@ -535,9 +534,8 @@ tracks/30/path = NodePath("center:transform/rot")
 tracks/30/interp = 1
 tracks/30/keys = { "cont":true, "times":FloatArray( 0, 1.5, 2.5, 3 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ -0.839761, -5.72166, 1.28567, -0.839761 ] }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=6]
 
-resource/name = "pollenlife"
 length = 1.25
 loop = true
 step = 0.25
@@ -546,7 +544,7 @@ step = 0.25
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 0.451408, -0, 0, 0.451408, 0.619371, -9.71656 )
+shapes/0/transform = Matrix32( 0.451408, 0, 0, 0.451408, 0.619371, -9.71656 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -673,10 +671,10 @@ playback/process_mode = 1
 playback/default_blend_time = 0.5
 root/root = NodePath("..")
 anims/1closed = SubResource( 2 )
-anims/2opening = SubResource( 5 )
-anims/3opened = SubResource( 6 )
-anims/4closing = SubResource( 3 )
-anims/pollenlife = SubResource( 4 )
+anims/2opening = SubResource( 3 )
+anims/3opened = SubResource( 4 )
+anims/4closing = SubResource( 5 )
+anims/pollenlife = SubResource( 6 )
 playback/active = true
 playback/speed = 3.0
 blend_times = [  ]

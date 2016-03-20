@@ -7,29 +7,28 @@
 [ext_resource path="res://sound/door_slam.wav" type="Sample" id=5]
 [ext_resource path="res://interaction/lock.tscn" type="PackedScene" id=6]
 
-[sub_resource type="ColorRamp" id=6]
+[sub_resource type="ColorRamp" id=1]
 
 offsets = FloatArray( 0, 1 )
 colors = ColorArray( 0.654902, 0.628319, 0.646018, 1, 0.309804, 0.230089, 0.247788, 0 )
 
-[sub_resource type="ColorRamp" id=7]
+[sub_resource type="ColorRamp" id=2]
 
 offsets = FloatArray( 0, 1 )
 colors = ColorArray( 0.654902, 0.628319, 0.646018, 1, 0.309804, 0.230089, 0.247788, 0 )
 
-[sub_resource type="ConcavePolygonShape2D" id=1]
+[sub_resource type="ConcavePolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
 segments = Vector2Array( -8.17093, -62.7563, -7.63057, 44.235, -7.63057, 44.235, 11.8224, 63.688, 11.8224, 63.688, 12.9031, -62.7563, 12.9031, -62.7563, -8.17093, -62.7563 )
 
-[sub_resource type="ConcavePolygonShape2D" id=2]
+[sub_resource type="ConcavePolygonShape2D" id=4]
 
 custom_solver_bias = 0.0
 segments = Vector2Array( 8.57231, -62.8426, -8.71921, -48.2528, -8.71921, -48.2528, -7.09813, 64.1421, -7.09813, 64.1421, 13.4356, 63.6017, 13.4356, 63.6017, 8.57231, -62.8426 )
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=5]
 
-resource/name = "open"
 length = 2.0
 loop = false
 step = 0.0
@@ -62,12 +61,12 @@ tracks/6/path = NodePath("SamplePlayer2D:play/play")
 tracks/6/interp = 1
 tracks/6/keys = { "cont":false, "times":FloatArray( 0, 1.74 ), "transitions":FloatArray( 1, 1 ), "values":[ "door_open", "door_slam" ] }
 
-[sub_resource type="SampleLibrary" id=4]
+[sub_resource type="SampleLibrary" id=6]
 
-samples/door_open = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
 samples/door_slam = { "db":0.0, "pitch":1.0, "sample":ExtResource( 5 ) }
+samples/door_open = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
 
-[sub_resource type="CircleShape2D" id=5]
+[sub_resource type="CircleShape2D" id=7]
 
 custom_solver_bias = 0.0
 radius = 128.0
@@ -102,7 +101,7 @@ params/final_size = 1.0
 params/hue_variation = 0.0
 params/anim_speed_scale = 1.0
 params/anim_initial_pos = 0.0
-color/color_ramp = SubResource( 6 )
+color/color_ramp = SubResource( 1 )
 
 [node name="smoke 2" type="Particles2D" parent="."]
 
@@ -127,14 +126,14 @@ params/final_size = 1.0
 params/hue_variation = 0.0
 params/anim_speed_scale = 1.0
 params/anim_initial_pos = 0.0
-color/color_ramp = SubResource( 7 )
+color/color_ramp = SubResource( 2 )
 
 [node name="up" type="StaticBody2D" parent="."]
 
 transform/pos = Vector2( -1.629, -68.4185 )
 input/pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -160,8 +159,8 @@ trigger = false
 
 transform/pos = Vector2( 0, 54.7333 )
 input/pickable = false
-shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -187,7 +186,7 @@ trigger = false
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/open = SubResource( 3 )
+anims/open = SubResource( 5 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -201,13 +200,13 @@ params/attenuation/min_distance = 1.0
 params/attenuation/max_distance = 2048.0
 params/attenuation/distance_exp = 1.0
 config/polyphony = 1
-config/samples = SubResource( 4 )
+config/samples = SubResource( 6 )
 config/pitch_random = 0.0
 
 [node name="area" type="Area2D" parent="."]
 
 input/pickable = true
-shapes/0/shape = SubResource( 5 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -217,7 +216,7 @@ angular_damp = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area"]
 
-shape = SubResource( 5 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = -1
 

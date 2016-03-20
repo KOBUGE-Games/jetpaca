@@ -32,17 +32,17 @@
 custom_solver_bias = 0.0
 radius = 35.0
 
-[sub_resource type="ColorRamp" id=26]
+[sub_resource type="ColorRamp" id=2]
 
 offsets = FloatArray( 0, 0.2, 0.6, 1 )
 colors = ColorArray( 1, 0.814159, 0.230089, 1, 0.866667, 0.265487, 0, 1, 0.27451, 0.283186, 0.283186, 1, 0, 0, 0, 0 )
 
-[sub_resource type="ColorRamp" id=27]
+[sub_resource type="ColorRamp" id=3]
 
 offsets = FloatArray( 0, 0.2, 0.6, 1 )
 colors = ColorArray( 1, 0.814159, 0.230089, 1, 0.866667, 0.265487, 0, 1, 0.27451, 0.283186, 0.283186, 1, 0, 0, 0, 0 )
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=4]
 
 resource/name = "DEFAULT_POSE"
 length = 0.01
@@ -181,7 +181,7 @@ tracks/32/path = NodePath("body/culete/over/neck/head/face/l_eye:frame")
 tracks/32/interp = 1
 tracks/32/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0 ] }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=5]
 
 resource/name = "attack1_start"
 length = 1.5
@@ -320,7 +320,7 @@ tracks/32/path = NodePath("body/culete/over/neck/head/face/l_eye:frame")
 tracks/32/interp = 1
 tracks/32/keys = { "cont":false, "times":FloatArray( 0, 0.5, 1, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ 0, 1, 4, 4 ] }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=6]
 
 resource/name = "attack2_loop"
 length = 1.5
@@ -459,7 +459,7 @@ tracks/32/path = NodePath("body/culete/over/neck/head/face/r_eye:frame")
 tracks/32/interp = 1
 tracks/32/keys = { "cont":true, "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "values":[ 3, 4 ] }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=7]
 
 resource/name = "attack3_end_move"
 length = 4.75
@@ -590,7 +590,7 @@ tracks/30/path = NodePath("body/culete/over/neck/head/face/l_eye:frame")
 tracks/30/interp = 1
 tracks/30/keys = { "cont":false, "times":FloatArray( 0, 0.5, 3, 3.25, 3.5, 4.75 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 4, 6, 2, 1, 0, 1 ] }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=8]
 
 resource/name = "attack_TEST"
 length = 8.0
@@ -721,7 +721,7 @@ tracks/30/path = NodePath("body/culete/rear_leg1:transform/pos")
 tracks/30/interp = 1
 tracks/30/keys = { "cont":true, "times":FloatArray( 0, 8 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( -3.83724, 2.00663 ), Vector2( -3.83724, 2.00663 ) ] }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=9]
 
 resource/name = "damage_airborne"
 length = 4.0
@@ -860,7 +860,7 @@ tracks/32/path = NodePath("body/culete/over/neck/head/face/r_eye:frame")
 tracks/32/interp = 1
 tracks/32/keys = { "cont":false, "times":FloatArray( 0, 1, 1.25, 2.5, 2.75, 3, 4 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "values":[ 0, 1, 5, 2, 1, 0, 0 ] }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=10]
 
 resource/name = "damage_airborne_from_above"
 length = 4.0
@@ -999,7 +999,7 @@ tracks/32/path = NodePath("body/culete/over/neck/head/face/r_eye:frame")
 tracks/32/interp = 1
 tracks/32/keys = { "cont":false, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="Animation" id=22]
+[sub_resource type="Animation" id=11]
 
 resource/name = "damage_grounded"
 length = 4.0
@@ -1134,9 +1134,8 @@ tracks/31/path = NodePath("body/culete/over/neck/head/face/r_eye:frame")
 tracks/31/interp = 1
 tracks/31/keys = { "cont":false, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=12]
 
-resource/name = "damage_grounded_from_above"
 length = 4.0
 loop = true
 step = 0.25
@@ -1273,9 +1272,8 @@ tracks/32/path = NodePath("body/culete/over/neck/head/face/l_eye:frame")
 tracks/32/interp = 1
 tracks/32/keys = { "cont":false, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=13]
 
-resource/name = "dance_of_victory"
 length = 5.0
 loop = false
 step = 0.25
@@ -1396,9 +1394,8 @@ tracks/28/path = NodePath("body/culete/rocket_bg:frame")
 tracks/28/interp = 1
 tracks/28/keys = { "cont":true, "times":FloatArray( 0, 5 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=14]
 
-resource/name = "dance_of_victory_loop"
 length = 5.0
 loop = true
 step = 0.25
@@ -1527,7 +1524,7 @@ tracks/30/path = NodePath("body/culete/rocket_fg:frame")
 tracks/30/interp = 1
 tracks/30/keys = { "cont":true, "times":FloatArray( 0, 5 ), "transitions":FloatArray( 1, 1 ), "values":[ 1, 1 ] }
 
-[sub_resource type="Animation" id=21]
+[sub_resource type="Animation" id=15]
 
 resource/name = "death"
 length = 12.0
@@ -1662,7 +1659,7 @@ tracks/31/path = NodePath(".")
 tracks/31/interp = 1
 tracks/31/keys = { "times":FloatArray( 11.1 ), "transitions":FloatArray( 1 ), "values":[ { "args":[  ], "method":"_restart" } ] }
 
-[sub_resource type="Animation" id=23]
+[sub_resource type="Animation" id=16]
 
 resource/name = "fall"
 length = 3.0
@@ -1944,9 +1941,8 @@ tracks/32/path = NodePath("body/culete/over/neck/head/face/r_eye:frame")
 tracks/32/interp = 1
 tracks/32/keys = { "cont":false, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=18]
 
-resource/name = "fly_back_2"
 length = 3.0
 loop = true
 step = 0.25
@@ -2091,7 +2087,7 @@ tracks/34/path = NodePath("body/culete/over/neck/head/face/r_eye:frame")
 tracks/34/interp = 1
 tracks/34/keys = { "cont":false, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="Animation" id=20]
+[sub_resource type="Animation" id=19]
 
 resource/name = "fly_front"
 length = 4.0
@@ -2230,9 +2226,8 @@ tracks/32/path = NodePath("body/culete/over/neck/head/face/l_eye:frame")
 tracks/32/interp = 1
 tracks/32/keys = { "cont":false, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="Animation" id=19]
+[sub_resource type="Animation" id=20]
 
-resource/name = "fly_front_2"
 length = 4.0
 loop = true
 step = 0.25
@@ -2373,9 +2368,8 @@ tracks/33/path = NodePath("body/culete/over/neck/head/face/r_eye:frame")
 tracks/33/interp = 1
 tracks/33/keys = { "cont":false, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=21]
 
-resource/name = "fly_up"
 length = 3.0
 loop = true
 step = 0.1
@@ -2512,9 +2506,8 @@ tracks/32/path = NodePath("body/culete/over/neck/head/face/l_eye:frame")
 tracks/32/interp = 1
 tracks/32/keys = { "cont":false, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=22]
 
-resource/name = "fly_up_2"
 length = 3.0
 loop = true
 step = 0.25
@@ -2655,9 +2648,8 @@ tracks/33/path = NodePath("body/culete/over/neck/head/face/r_eye:frame")
 tracks/33/interp = 1
 tracks/33/keys = { "cont":false, "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=23]
 
-resource/name = "hover"
 length = 4.5
 loop = true
 step = 0.25
@@ -2786,9 +2778,8 @@ tracks/30/path = NodePath("body/culete/over/neck/head/face/r_eye:frame")
 tracks/30/interp = 1
 tracks/30/keys = { "cont":false, "times":FloatArray( 0, 4.5 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=24]
 
-resource/name = "idle"
 length = 18.0
 loop = true
 step = 0.25
@@ -2913,9 +2904,8 @@ tracks/29/path = NodePath("body/culete/over/neck/head/face/r_eye:frame")
 tracks/29/interp = 1
 tracks/29/keys = { "cont":false, "times":FloatArray( 0, 4, 4.25, 4.5, 4.75, 14, 14.25, 14.5, 14.75, 15.25, 15.5, 15.75, 16, 18 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 0, 1, 2, 1, 0, 1, 2, 1, 0, 1, 2, 1, 0, 0 ] }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=25]
 
-resource/name = "walk"
 length = 6.0
 loop = true
 step = 0.25
@@ -3040,14 +3030,14 @@ tracks/29/path = NodePath("body/culete/over/neck/head/face/r_eye:frame")
 tracks/29/interp = 1
 tracks/29/keys = { "cont":false, "times":FloatArray( 0, 6 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="SampleLibrary" id=24]
+[sub_resource type="SampleLibrary" id=26]
 
 samples/attack = { "db":0.0, "pitch":1.0, "sample":ExtResource( 22 ) }
-samples/jetpack_intro = { "db":0.0, "pitch":1.0, "sample":ExtResource( 25 ) }
-samples/jetpack = { "db":0.0, "pitch":1.0, "sample":ExtResource( 24 ) }
 samples/fruit = { "db":0.0, "pitch":1.0, "sample":ExtResource( 23 ) }
+samples/jetpack = { "db":0.0, "pitch":1.0, "sample":ExtResource( 24 ) }
+samples/jetpack_intro = { "db":0.0, "pitch":1.0, "sample":ExtResource( 25 ) }
 
-[sub_resource type="CircleShape2D" id=25]
+[sub_resource type="CircleShape2D" id=27]
 
 custom_solver_bias = 0.0
 radius = 300.0
@@ -3061,7 +3051,7 @@ colors = ColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -3237,7 +3227,7 @@ params/final_size = 1.5
 params/hue_variation = 0.0
 params/anim_speed_scale = 1.0
 params/anim_initial_pos = 0.0
-color/color_ramp = SubResource( 26 )
+color/color_ramp = SubResource( 2 )
 
 [node name="leg_bg1" type="Sprite" parent="body/culete"]
 
@@ -3323,35 +3313,35 @@ params/final_size = 1.5
 params/hue_variation = 0.0
 params/anim_speed_scale = 1.0
 params/anim_initial_pos = 0.0
-color/color_ramp = SubResource( 27 )
+color/color_ramp = SubResource( 3 )
 
 [node name="animation" type="AnimationPlayer" parent="."]
 
 playback/process_mode = 1
 playback/default_blend_time = 1.5
 root/root = NodePath("..")
-anims/DEFAULT_POSE = SubResource( 18 )
-anims/attack1_start = SubResource( 7 )
-anims/attack2_loop = SubResource( 10 )
-anims/attack3_end_move = SubResource( 16 )
-anims/attack_TEST = SubResource( 14 )
-anims/damage_airborne = SubResource( 15 )
-anims/damage_airborne_from_above = SubResource( 11 )
-anims/damage_grounded = SubResource( 22 )
-anims/damage_grounded_from_above = SubResource( 8 )
-anims/dance_of_victory = SubResource( 6 )
-anims/dance_of_victory_loop = SubResource( 4 )
-anims/death = SubResource( 21 )
-anims/fall = SubResource( 23 )
+anims/DEFAULT_POSE = SubResource( 4 )
+anims/attack1_start = SubResource( 5 )
+anims/attack2_loop = SubResource( 6 )
+anims/attack3_end_move = SubResource( 7 )
+anims/attack_TEST = SubResource( 8 )
+anims/damage_airborne = SubResource( 9 )
+anims/damage_airborne_from_above = SubResource( 10 )
+anims/damage_grounded = SubResource( 11 )
+anims/damage_grounded_from_above = SubResource( 12 )
+anims/dance_of_victory = SubResource( 13 )
+anims/dance_of_victory_loop = SubResource( 14 )
+anims/death = SubResource( 15 )
+anims/fall = SubResource( 16 )
 anims/fly_back = SubResource( 17 )
-anims/fly_back_2 = SubResource( 13 )
-anims/fly_front = SubResource( 20 )
-anims/fly_front_2 = SubResource( 19 )
-anims/fly_up = SubResource( 9 )
-anims/fly_up_2 = SubResource( 5 )
-anims/hover = SubResource( 3 )
-anims/idle = SubResource( 2 )
-anims/walk = SubResource( 12 )
+anims/fly_back_2 = SubResource( 18 )
+anims/fly_front = SubResource( 19 )
+anims/fly_front_2 = SubResource( 20 )
+anims/fly_up = SubResource( 21 )
+anims/fly_up_2 = SubResource( 22 )
+anims/hover = SubResource( 23 )
+anims/idle = SubResource( 24 )
+anims/walk = SubResource( 25 )
 playback/active = true
 playback/speed = 4.0
 blend_times = [  ]
@@ -3369,7 +3359,7 @@ scale = Vector2( 1, 1 )
 [node name="event_sounds" type="SamplePlayer" parent="."]
 
 config/polyphony = 1
-config/samples = SubResource( 24 )
+config/samples = SubResource( 26 )
 default/volume_db = 0.0
 default/pitch_scale = 1.0
 default/pan = 0.0
@@ -3386,7 +3376,7 @@ default/chorus_send = 0.0
 [node name="jetpack_sound" type="SamplePlayer" parent="."]
 
 config/polyphony = 1
-config/samples = SubResource( 24 )
+config/samples = SubResource( 26 )
 default/volume_db = 0.0
 default/pitch_scale = 1.0
 default/pan = 0.0
@@ -3446,7 +3436,7 @@ autostart = false
 
 transform/pos = Vector2( 2.82726, 1.1566 )
 input/pickable = true
-shapes/0/shape = SubResource( 25 )
+shapes/0/shape = SubResource( 27 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -3456,7 +3446,7 @@ angular_damp = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="attack_area"]
 
-shape = SubResource( 25 )
+shape = SubResource( 27 )
 trigger = false
 _update_shape_index = -1
 

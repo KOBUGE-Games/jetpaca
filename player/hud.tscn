@@ -33,7 +33,7 @@ expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 
 resource/name = "fadein"
 length = 1.0
@@ -52,9 +52,8 @@ tracks/2/path = NodePath("dialog:visibility/visible")
 tracks/2/interp = 1
 tracks/2/keys = { "cont":false, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ true ] }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=3]
 
-resource/name = "fadeout"
 length = 1.0
 loop = false
 step = 0.0
@@ -247,8 +246,8 @@ max_lines_visible = -1
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/fadein = SubResource( 3 )
-anims/fadeout = SubResource( 2 )
+anims/fadein = SubResource( 2 )
+anims/fadeout = SubResource( 3 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]

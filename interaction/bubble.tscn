@@ -8,7 +8,7 @@
 custom_solver_bias = 0.0
 radius = 50.0
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=2]
 
 resource/name = "appear"
 length = 1.0
@@ -19,9 +19,8 @@ tracks/0/path = NodePath("sprite:transform/scale")
 tracks/0/interp = 1
 tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1 ), "transitions":FloatArray( 2.37842, 1 ), "values":[ Vector2( 0.1, 0.1 ), Vector2( 2, 2 ) ] }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=3]
 
-resource/name = "burst"
 length = 0.2
 loop = false
 step = 0.0
@@ -34,9 +33,8 @@ tracks/1/path = NodePath("sprite:visibility/self_opacity")
 tracks/1/interp = 1
 tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.2 ), "transitions":FloatArray( 1, 1 ), "values":[ 1.0, 0.0 ] }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 
-resource/name = "wobble"
 length = 1.0
 loop = true
 step = 0.0
@@ -49,7 +47,7 @@ tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.51, 1 ), "transitions":F
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -87,9 +85,9 @@ _update_shape_index = -1
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/appear = SubResource( 4 )
-anims/burst = SubResource( 2 )
-anims/wobble = SubResource( 3 )
+anims/appear = SubResource( 2 )
+anims/burst = SubResource( 3 )
+anims/wobble = SubResource( 4 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]

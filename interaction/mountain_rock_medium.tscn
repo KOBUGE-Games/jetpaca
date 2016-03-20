@@ -11,7 +11,7 @@ radius = 28.0
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 2.06452, -0, 0, 2.06452, 0, 0 )
+shapes/0/transform = Matrix32( 2.06452, 0, 0, 2.06452, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1

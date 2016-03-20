@@ -10,17 +10,17 @@
 custom_solver_bias = 0.0
 points = Vector2Array( -13.7389, 30.0446, -14.5975, -21.4687, -4.7241, -30.6982, 5.36393, -30.6982, 15.0227, -19.537, 3.43218, 29.6153 )
 
-[sub_resource type="ColorRamp" id=4]
+[sub_resource type="ColorRamp" id=2]
 
 offsets = FloatArray( 0, 1 )
 colors = ColorArray( 1, 1, 1, 1, 0.909804, 0.707965, 0.831858, 0 )
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=3]
 
 custom_solver_bias = 0.0
 radius = 30.0
 
-[sub_resource type="SampleLibrary" id=3]
+[sub_resource type="SampleLibrary" id=4]
 
 samples/gotkey = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
 
@@ -33,7 +33,7 @@ colors = ColorArray( 1, 1, 1, 1, 0.909804, 0.707965, 0.831858, 0 )
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -80,7 +80,7 @@ params/final_size = 1.0
 params/hue_variation = 0.0
 params/anim_speed_scale = 1.0
 params/anim_initial_pos = 0.0
-color/color_ramp = SubResource( 4 )
+color/color_ramp = SubResource( 2 )
 
 [node name="sprite" type="Sprite" parent="."]
 
@@ -97,8 +97,8 @@ trigger = false
 [node name="monitor" type="Area2D" parent="."]
 
 input/pickable = true
-shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -109,7 +109,7 @@ monitoring = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="monitor"]
 
 visibility/visible = false
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 trigger = false
 _update_shape_index = -1
 
@@ -121,7 +121,7 @@ params/attenuation/min_distance = 1.0
 params/attenuation/max_distance = 2048.0
 params/attenuation/distance_exp = 1.0
 config/polyphony = 1
-config/samples = SubResource( 3 )
+config/samples = SubResource( 4 )
 config/pitch_random = 0.0
 
 [node name="death" type="Timer" parent="."]

@@ -22,7 +22,7 @@
 custom_solver_bias = 0.0
 radius = 200.0
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=2]
 
 resource/name = "cast"
 length = 8.0
@@ -149,7 +149,7 @@ tracks/29/path = NodePath("body/culete/arm__bg/elbow__bg/hand__bg/staff:frame")
 tracks/29/interp = 1
 tracks/29/keys = { "cont":false, "times":FloatArray( 0, 1.5, 2, 2.5, 2.75, 3, 3.25, 3.5, 3.75, 4, 4.25, 4.5, 5, 5.5, 8 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 0, 0, 1, 2, 1, 0, 1, 2, 1, 0, 1, 2, 1, 0, 0 ] }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=3]
 
 resource/name = "default"
 length = 0.01
@@ -272,7 +272,7 @@ tracks/28/path = NodePath("body/culete/over/neck/poncho:transform/pos")
 tracks/28/interp = 1
 tracks/28/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( 9.37554, -0.722082 ) ] }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 
 resource/name = "fall"
 length = 3.0
@@ -387,9 +387,8 @@ tracks/26/path = NodePath("body/culete/arm__bg:transform/scale")
 tracks/26/interp = 1
 tracks/26/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( 1, 1 ) ] }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 
-resource/name = "cast"
 length = 2.5
 loop = false
 step = 0.25
@@ -510,7 +509,7 @@ tracks/28/path = NodePath("body/culete/over/neck/poncho:transform/pos")
 tracks/28/interp = 1
 tracks/28/keys = { "cont":true, "times":FloatArray( 0, 1 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 9.37554, -0.722082 ), Vector2( 10.9564, -4.53607 ) ] }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=6]
 
 resource/name = "fly_front"
 length = 4.0
@@ -621,7 +620,7 @@ tracks/25/path = NodePath("body/culete/arm__bg:transform/scale")
 tracks/25/interp = 1
 tracks/25/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( 1, 1 ) ] }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=7]
 
 resource/name = "fly_up"
 length = 3.0
@@ -732,7 +731,7 @@ tracks/25/path = NodePath("body/culete/arm__bg:transform/scale")
 tracks/25/interp = 1
 tracks/25/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( 1, 1 ) ] }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=8]
 
 resource/name = "hey_listen"
 length = 6.0
@@ -855,9 +854,8 @@ tracks/28/path = NodePath("body/culete/over/neck/head/face/mouth:frame")
 tracks/28/interp = 1
 tracks/28/keys = { "cont":false, "times":FloatArray( 0, 6 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, 0 ] }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=9]
 
-resource/name = "hover"
 length = 4.5
 loop = true
 step = 0.25
@@ -966,9 +964,8 @@ tracks/25/path = NodePath("body/culete/arm__bg:transform/scale")
 tracks/25/interp = 1
 tracks/25/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( 1, 1 ) ] }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=10]
 
-resource/name = "idle"
 length = 6.0
 loop = true
 step = 0.25
@@ -1089,9 +1086,8 @@ tracks/28/path = NodePath("body/culete/over/neck/poncho:transform/pos")
 tracks/28/interp = 1
 tracks/28/keys = { "cont":true, "times":FloatArray( 0, 6 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 9.37554, -0.722082 ), Vector2( 9.37554, -0.722082 ) ] }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=11]
 
-resource/name = "rant"
 length = 6.0
 loop = true
 step = 0.25
@@ -1212,9 +1208,8 @@ tracks/28/path = NodePath("body/culete/over/neck/head/face/mouth:frame")
 tracks/28/interp = 1
 tracks/28/keys = { "cont":false, "times":FloatArray( 0, 0.5, 0.75, 1, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 4.25, 4.5, 4.75, 5, 5.25, 5.5, 6 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "values":[ 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 0 ] }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=12]
 
-resource/name = "walk"
 length = 6.0
 loop = false
 step = 0.25
@@ -1331,7 +1326,7 @@ tracks/26/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArra
 
 input/pickable = true
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -1512,20 +1507,20 @@ offset = Vector2( -8, -4 )
 playback/process_mode = 1
 playback/default_blend_time = 1.5
 root/root = NodePath("..")
-anims/cast = SubResource( 9 )
-anims/default = SubResource( 6 )
-anims/fall = SubResource( 5 )
-anims/fly_back = SubResource( 4 )
-anims/fly_front = SubResource( 8 )
-anims/fly_up = SubResource( 11 )
-anims/hey_listen = SubResource( 12 )
-anims/hover = SubResource( 3 )
-anims/idle = SubResource( 2 )
-anims/rant = SubResource( 7 )
-anims/walk = SubResource( 10 )
+anims/cast = SubResource( 2 )
+anims/default = SubResource( 3 )
+anims/fall = SubResource( 4 )
+anims/fly_back = SubResource( 5 )
+anims/fly_front = SubResource( 6 )
+anims/fly_up = SubResource( 7 )
+anims/hey_listen = SubResource( 8 )
+anims/hover = SubResource( 9 )
+anims/idle = SubResource( 10 )
+anims/rant = SubResource( 11 )
+anims/walk = SubResource( 12 )
 playback/active = true
 playback/speed = 2.0
-blend_times = [ "attack_back_1start", "attack_back_2loop", 0.5, "attack_down_1start", "attack_down_2loop", 0.5, "attack_up_1start", "attack_up_2loop", 0.5, "attack_front_1start", "attack_front_2loop", 0.5 ]
+blend_times = [ "attack_front_1start", "attack_front_2loop", 0.5, "attack_down_1start", "attack_down_2loop", 0.5, "attack_back_1start", "attack_back_2loop", 0.5, "attack_up_1start", "attack_up_2loop", 0.5 ]
 autoplay = ""
 
 [node name="Position2D" type="Position2D" parent="."]

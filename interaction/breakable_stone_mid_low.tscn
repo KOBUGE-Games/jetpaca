@@ -5,22 +5,22 @@
 [ext_resource path="res://art/mountain_exploded_rock.png" type="Texture" id=3]
 [ext_resource path="res://sound/rock_explode.wav" type="Sample" id=4]
 
-[sub_resource type="ConvexPolygonShape2D" id=3]
+[sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -452.92, -44.2428, -93.7813, -45.6031, 24.5713, 41.4608, -459.722, 31.9382 )
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
+[sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -93.7813, -45.6031, 434.044, -44.2428, 457.17, 26.4966, 24.5713, 41.4608 )
 
-[sub_resource type="ColorRamp" id=4]
+[sub_resource type="ColorRamp" id=3]
 
 offsets = FloatArray( 0, 1 )
 colors = ColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 
-[sub_resource type="SampleLibrary" id=2]
+[sub_resource type="SampleLibrary" id=4]
 
 samples/rock_explode = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
 
@@ -31,11 +31,11 @@ __meta__ = { "__editor_plugin_screen__":"2D" }
 [node name="body" type="RigidBody2D" parent="."]
 
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
-shapes/0/transform = Matrix32( 0.512601, -0, 0, 1, 145.574, -1.72598 )
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.512601, 0, 0, 1, 145.574, -1.72598 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 1 )
-shapes/1/transform = Matrix32( 0.512601, -0, 0, 1, 145.574, -1.72598 )
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 0.512601, 0, 0, 1, 145.574, -1.72598 )
 shapes/1/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -98,7 +98,7 @@ params/hue_variation = 0.0
 params/anim_speed_scale = 1.0
 params/anim_initial_pos = 0.0
 randomness/spin_velocity = 1.0
-color/color_ramp = SubResource( 4 )
+color/color_ramp = SubResource( 3 )
 
 [node name="sample" type="SamplePlayer2D" parent="."]
 
@@ -109,7 +109,7 @@ params/attenuation/min_distance = 1.0
 params/attenuation/max_distance = 2048.0
 params/attenuation/distance_exp = 1.0
 config/polyphony = 1
-config/samples = SubResource( 2 )
+config/samples = SubResource( 4 )
 config/pitch_random = 0.0
 
 

@@ -4,12 +4,12 @@
 [ext_resource path="res://enemies/explosion.gd" type="Script" id=2]
 [ext_resource path="res://sound/magic_explosion.wav" type="Sample" id=3]
 
-[sub_resource type="ColorRamp" id=2]
+[sub_resource type="ColorRamp" id=1]
 
 offsets = FloatArray( 0, 0.2, 0.8 )
 colors = ColorArray( 1, 0.59292, 0.238938, 0.345133, 0.529412, 0, 0.389381, 1, 0.133333, 0.19469, 0.19469, 0.176991 )
 
-[sub_resource type="SampleLibrary" id=1]
+[sub_resource type="SampleLibrary" id=2]
 
 samples/magic_explosion = { "db":0.0, "pitch":1.0, "sample":ExtResource( 3 ) }
 
@@ -40,7 +40,7 @@ params/hue_variation = 0.0
 params/anim_speed_scale = 1.0
 params/anim_initial_pos = 0.0
 randomness/spin_velocity = 1.0
-color/color_ramp = SubResource( 2 )
+color/color_ramp = SubResource( 1 )
 script/script = ExtResource( 2 )
 __meta__ = { "__editor_plugin_screen__":"2D" }
 
@@ -52,7 +52,7 @@ params/attenuation/min_distance = 1.0
 params/attenuation/max_distance = 2048.0
 params/attenuation/distance_exp = 1.0
 config/polyphony = 1
-config/samples = SubResource( 1 )
+config/samples = SubResource( 2 )
 config/pitch_random = 0.0
 
 [node name="timer" type="Timer" parent="."]

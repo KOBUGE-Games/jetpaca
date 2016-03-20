@@ -18,7 +18,7 @@
 [ext_resource path="res://art/cachos_mage/staff.png" type="Texture" id=16]
 [ext_resource path="res://art/cachos_mage/darkflame.png" type="Texture" id=17]
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 
 resource/name = "Idle"
 length = 2.5
@@ -425,7 +425,7 @@ tracks/99/path = NodePath("Node2D/chest/L-Cape Outer/l-cape 2/l-cape 3/l-cape 4/
 tracks/99/interp = 1
 tracks/99/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Color( 1, 1, 1, 1 ) ] }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 
 resource/name = "casterpose"
 length = 1.0
@@ -632,9 +632,8 @@ tracks/49/path = NodePath("Node2D/chest/arm_fg/forearm_fg/hand/darkflame:transfo
 tracks/49/interp = 1
 tracks/49/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -18.8761 ] }
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id=3]
 
-resource/name = "default_pose"
 length = 2.5
 loop = true
 step = 0.25
@@ -1393,9 +1392,9 @@ offset = Vector2( -0.284607, -11.9676 )
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/Idle = SubResource( 2 )
-anims/casterpose = SubResource( 3 )
-anims/default_pose = SubResource( 1 )
+anims/Idle = SubResource( 1 )
+anims/casterpose = SubResource( 2 )
+anims/default_pose = SubResource( 3 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
