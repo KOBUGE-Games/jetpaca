@@ -15,7 +15,6 @@ const CONTROL_FULL = 2
 var control_mode=CONTROL_TAP
 
 
-var moving_up = false
 var moving_left = false
 var moving_right = false
 var attack_begin = false
@@ -595,16 +594,10 @@ func _unhandled_input(event):
 	if (event.is_action("quit") && event.is_pressed()):
 		get_node("/root/main").goto_scene("res://menu/stage_select.tscn")
 
-	if (event.is_action("jetpack_tap_right")):
-		moving_right=event.is_pressed()
-	elif (event.is_action("jetpack_tap_left")):
-		moving_left=event.is_pressed()
-	elif (event.is_action("jetpack_right")):
+	if (event.is_action("jetpack_right")):
 		moving_right=event.is_pressed()
 	elif (event.is_action("jetpack_left")):
 		moving_left=event.is_pressed()
-	elif (event.is_action("jetpack_up")):
-		moving_up=event.is_pressed()
 	
 	if (event.is_action("attack") and !attack_begin and event.is_pressed() and closest_enemy):
 		attack_begin=true		
@@ -679,7 +672,7 @@ func _unhandled_input(event):
 					slide_2_time=0.0
 					
 		else:
-			moving_up=event.pressed
+			pass
 				
 		
 	

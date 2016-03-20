@@ -16,7 +16,7 @@ func _on_settings_pressed():
 	pass
 
 func _input(event):
-	if event.is_action("menu_accept") && event.pressed:
+	if event.is_action("ui_accept") && event.pressed:
 		_on_play_pressed()
 
 func _ready():
