@@ -84,19 +84,17 @@ segments = Vector2Array( 0, 16, 48, 32, 48, 32, 80, 64, 80, 64, 128, 80, 128, 80
 custom_solver_bias = 0.0
 points = Vector2Array( 0, 16, 62.9757, 11.1615, 128, 16, 128, 48, 0, 48 )
 
-[sub_resource type="ConcavePolygonShape2D" id=17]
+[sub_resource type="ConcavePolygonShape2D" id=19]
 
 custom_solver_bias = 0.0
-segments = Vector2Array( 126.337, 28.6486, 101.79, 8.0826, 101.79, 8.0826, 0, 16, 0, 16, 0, 48, 0, 48, 126.337, 28.6486 )
+segments = Vector2Array( 1.15607, 17.5328, 0, 48, 0, 48, 89.1561, 56.5328, 89.1561, 56.5328, 115.156, 43.5328, 115.156, 43.5328, 79.1561, 49.5328, 79.1561, 49.5328, 42.1561, 41.5328, 42.1561, 41.5328, 1.15607, 17.5328 )
 
-[sub_resource type="ConcavePolygonShape2D" id=18]
+[sub_resource type="ConcavePolygonShape2D" id=20]
 
 custom_solver_bias = 0.0
 segments = Vector2Array( 359.168, 255.026, 355.168, 195.026, 355.168, 195.026, 330.168, 161.026, 330.168, 161.026, 244.168, 177.026, 244.168, 177.026, 205.168, 178.026, 205.168, 178.026, 160.168, 144.026, 160.168, 144.026, 89.1683, 90.0255, 89.1683, 90.0255, 1.16824, 4.02548, 1.16824, 4.02548, 987.168, 0.0254822, 987.168, 0.0254822, 911.168, 40.0255, 911.168, 40.0255, 864.168, 102.026, 864.168, 102.026, 779.168, 133.026, 779.168, 133.026, 663.168, 110.026, 663.168, 110.026, 598.168, 170.026, 598.168, 170.026, 587.168, 256.026, 587.168, 256.026, 359.168, 255.026 )
 
 [node name="Node" type="Node"]
-
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="floor1" type="Sprite" parent="."]
 
@@ -109,7 +107,7 @@ region_rect = Rect2( 0, 0, 64, 128 )
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -125,7 +123,7 @@ polygon = Vector2Array( 0, 128, 64, 128, 64, 48, 0, 48 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
-[node name="floor 2" type="Sprite" parent="."]
+[node name="floor2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 64, 0 )
 texture = ExtResource( 1 )
@@ -133,11 +131,11 @@ centered = false
 region = true
 region_rect = Rect2( 64, 0, 64, 128 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="floor 2"]
+[node name="StaticBody2D" type="StaticBody2D" parent="floor2"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -146,7 +144,7 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="floor 2/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="floor2/StaticBody2D"]
 
 build_mode = 0
 polygon = Vector2Array( 64, 128, 64, 48, 0, 48, 0, 128 )
@@ -165,7 +163,7 @@ region_rect = Rect2( 128, 0, 128, 192 )
 
 input/pickable = false
 shapes/0/shape = SubResource( 3 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -193,7 +191,7 @@ region_rect = Rect2( 256, 64, 64, 192 )
 
 input/pickable = false
 shapes/0/shape = SubResource( 4 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -221,7 +219,7 @@ region_rect = Rect2( 320, 128, 192, 128 )
 
 input/pickable = false
 shapes/0/shape = SubResource( 5 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -249,7 +247,7 @@ region_rect = Rect2( 384, 256, 128, 64 )
 
 input/pickable = false
 shapes/0/shape = SubResource( 6 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -277,7 +275,7 @@ region_rect = Rect2( 384, 320, 128, 128 )
 
 input/pickable = false
 shapes/0/shape = SubResource( 7 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -293,7 +291,7 @@ polygon = Vector2Array( 0, 128, 128, 128, 128, 48, 80, 48, 64, 32, 64, 0, 0, 0 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
-[node name="uw_begin" type="Sprite" parent="."]
+[node name="passable_floor_begin" type="Sprite" parent="."]
 
 transform/pos = Vector2( 512, 320 )
 texture = ExtResource( 1 )
@@ -301,11 +299,11 @@ centered = false
 region = true
 region_rect = Rect2( 320, 0, 128, 128 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="uw_begin"]
+[node name="StaticBody2D" type="StaticBody2D" parent="passable_floor_begin"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 8 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -314,14 +312,15 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="uw_begin/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="passable_floor_begin/StaticBody2D"]
 
+visibility/visible = false
 build_mode = 0
 polygon = Vector2Array( 128, 128, 0, 128, 0, 48, 128, 112 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
-[node name="uw" type="Sprite" parent="."]
+[node name="passable_floor" type="Sprite" parent="."]
 
 transform/pos = Vector2( 640, 384 )
 texture = ExtResource( 1 )
@@ -329,11 +328,11 @@ centered = false
 region = true
 region_rect = Rect2( 448, 64, 64, 64 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="uw"]
+[node name="StaticBody2D" type="StaticBody2D" parent="passable_floor"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 9 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -342,14 +341,15 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="uw/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="passable_floor/StaticBody2D"]
 
+visibility/visible = false
 build_mode = 0
 polygon = Vector2Array( 64, 64, 64, 48, 0, 48, 0, 64 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
-[node name="tree" type="Sprite" parent="."]
+[node name="tree_trunk1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 384 )
 texture = ExtResource( 1 )
@@ -357,11 +357,11 @@ centered = false
 region = true
 region_rect = Rect2( 0, 384, 128, 128 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="tree"]
+[node name="StaticBody2D" type="StaticBody2D" parent="tree_trunk1"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 10 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -370,14 +370,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tree/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tree_trunk1/StaticBody2D"]
 
 build_mode = 0
 polygon = Vector2Array( 0, 0, 96, 0, 96, 128, 0, 128 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
-[node name="tree 2" type="Sprite" parent="."]
+[node name="tree_trunk2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 128, 384 )
 texture = ExtResource( 1 )
@@ -385,11 +385,11 @@ centered = false
 region = true
 region_rect = Rect2( 128, 384, 128, 128 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="tree 2"]
+[node name="StaticBody2D" type="StaticBody2D" parent="tree_trunk2"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 10 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -398,14 +398,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tree 2/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tree_trunk2/StaticBody2D"]
 
 build_mode = 0
 polygon = Vector2Array( 0, 0, 96, 0, 96, 128, 0, 128 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
-[node name="treeb" type="Sprite" parent="."]
+[node name="tree_branching" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 256 )
 texture = ExtResource( 1 )
@@ -413,11 +413,11 @@ centered = false
 region = true
 region_rect = Rect2( 0, 256, 128, 128 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="treeb"]
+[node name="StaticBody2D" type="StaticBody2D" parent="tree_branching"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 11 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -426,14 +426,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="treeb/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tree_branching/StaticBody2D"]
 
 build_mode = 0
 polygon = Vector2Array( 128, 48, 128, 112, 96, 128, 0, 128, 0, 0, 96, 0 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
-[node name="treepass1" type="Sprite" parent="."]
+[node name="treepass_top" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 128 )
 texture = ExtResource( 1 )
@@ -441,11 +441,11 @@ centered = false
 region = true
 region_rect = Rect2( 0, 128, 128, 64 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="treepass1"]
+[node name="StaticBody2D" type="StaticBody2D" parent="treepass_top"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 12 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -454,14 +454,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="treepass1/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="treepass_top/StaticBody2D"]
 
 build_mode = 0
 polygon = Vector2Array( 0, 0, 96, 0, 96, 16, 0, 32 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
-[node name="treepass2" type="Sprite" parent="."]
+[node name="treepass_bottom" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 192 )
 texture = ExtResource( 1 )
@@ -469,11 +469,11 @@ centered = false
 region = true
 region_rect = Rect2( 0, 192, 128, 64 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="treepass2"]
+[node name="StaticBody2D" type="StaticBody2D" parent="treepass_bottom"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 13 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -482,14 +482,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="treepass2/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="treepass_bottom/StaticBody2D"]
 
 build_mode = 0
 polygon = Vector2Array( 0, 32, 96, 16, 96, 64, 0, 64 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
-[node name="branchb" type="Sprite" parent="."]
+[node name="branch_start" type="Sprite" parent="."]
 
 transform/pos = Vector2( 128, 256 )
 texture = ExtResource( 1 )
@@ -497,11 +497,11 @@ centered = false
 region = true
 region_rect = Rect2( 128, 256, 128, 128 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="branchb"]
+[node name="StaticBody2D" type="StaticBody2D" parent="branch_start"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 14 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -510,14 +510,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="branchb/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="branch_start/StaticBody2D"]
 
 build_mode = 0
 polygon = Vector2Array( 0, 48, 128, 16, 128, 48, 0, 112 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
-[node name="branchss" type="Sprite" parent="."]
+[node name="branch_slope" type="Sprite" parent="."]
 
 transform/pos = Vector2( 256, 384 )
 texture = ExtResource( 1 )
@@ -525,11 +525,11 @@ centered = false
 region = true
 region_rect = Rect2( 256, 384, 128, 128 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="branchss"]
+[node name="StaticBody2D" type="StaticBody2D" parent="branch_slope"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 15 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -538,14 +538,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="branchss/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="branch_slope/StaticBody2D"]
 
 build_mode = 1
 polygon = Vector2Array( 0, 16, 48, 32, 80, 64, 128, 80, 128, 112, 80, 96, 32, 64, 0, 48 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
-[node name="branchss2" type="Sprite" parent="."]
+[node name="branch_straight" type="Sprite" parent="."]
 
 transform/pos = Vector2( 128, 192 )
 texture = ExtResource( 1 )
@@ -553,11 +553,11 @@ centered = false
 region = true
 region_rect = Rect2( 128, 192, 128, 64 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="branchss2"]
+[node name="StaticBody2D" type="StaticBody2D" parent="branch_straight"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 16 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -566,14 +566,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="branchss2/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="branch_straight/StaticBody2D"]
 
 build_mode = 0
 polygon = Vector2Array( 0, 16, 62.9757, 11.1615, 128, 16, 128, 48, 0, 48 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
-[node name="branchend" type="Sprite" parent="."]
+[node name="branch_end" type="Sprite" parent="."]
 
 transform/pos = Vector2( 400, 448 )
 texture = ExtResource( 1 )
@@ -581,11 +581,11 @@ centered = false
 region = true
 region_rect = Rect2( 384, 448, 128, 64 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="branchend"]
+[node name="StaticBody2D" type="StaticBody2D" parent="branch_end"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 17 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/shape = SubResource( 19 )
+shapes/0/transform = Matrix32( 1, -0, 0, 1, 2, 2 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -594,14 +594,15 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="branchend/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="branch_end/StaticBody2D"]
 
+transform/pos = Vector2( 2, 2 )
 build_mode = 1
-polygon = Vector2Array( 126.337, 28.6486, 101.79, 8.0826, 0, 16, 0, 48 )
-shape_range = Vector2( -1, -1 )
+polygon = Vector2Array( 1.15607, 17.5328, 0, 48, 89.1561, 56.5328, 115.156, 43.5328, 79.1561, 49.5328, 42.1561, 41.5328 )
+shape_range = Vector2( 0, 0 )
 trigger = false
 
-[node name="black" type="Sprite" parent="."]
+[node name="black_big" type="Sprite" parent="."]
 
 transform/pos = Vector2( 256, 256 )
 texture = ExtResource( 1 )
@@ -609,7 +610,7 @@ centered = false
 region = true
 region_rect = Rect2( 256, 256, 128, 128 )
 
-[node name="blacksmall" type="Sprite" parent="."]
+[node name="black" type="Sprite" parent="."]
 
 transform/pos = Vector2( 256, 256 )
 texture = ExtResource( 1 )
@@ -619,7 +620,7 @@ region_rect = Rect2( 256, 256, 64, 64 )
 
 [node name="treetop" type="Sprite" parent="."]
 
-transform/pos = Vector2( 181.975, 522.489 )
+transform/pos = Vector2( 204.136, 525.813 )
 texture = ExtResource( 2 )
 centered = false
 region_rect = Rect2( 256, 256, 64, 64 )
@@ -627,8 +628,8 @@ region_rect = Rect2( 256, 256, 64, 64 )
 [node name="StaticBody2D" type="StaticBody2D" parent="treetop"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 18 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/shape = SubResource( 20 )
+shapes/0/transform = Matrix32( 1, -0, 0, 1, 44.3213, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -639,33 +640,43 @@ bounce = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="treetop/StaticBody2D"]
 
+transform/pos = Vector2( 44.3213, 0 )
 build_mode = 1
 polygon = Vector2Array( 359.168, 255.026, 355.168, 195.026, 330.168, 161.026, 244.168, 177.026, 205.168, 178.026, 160.168, 144.026, 89.1683, 90.0255, 1.16824, 4.02548, 987.168, 0.0254822, 911.168, 40.0255, 864.168, 102.026, 779.168, 133.026, 663.168, 110.026, 598.168, 170.026, 587.168, 256.026 )
-shape_range = Vector2( -1, -1 )
+shape_range = Vector2( 0, 0 )
 trigger = false
 
-[node name="middle_tree" type="Sprite" parent="."]
+[node name="tree_cut_middle" type="Sprite" parent="."]
 
-transform/pos = Vector2( 713.086, 215.189 )
+transform/pos = Vector2( 704, 64 )
 texture = ExtResource( 3 )
 centered = false
 region = true
 region_rect = Rect2( 0, 0, 128, 64 )
 
-[node name="middle_low_cut" type="Sprite" parent="."]
+[node name="tree_cut_low" type="Sprite" parent="."]
 
-transform/pos = Vector2( 714.937, 318.824 )
+transform/pos = Vector2( 704, 0 )
 texture = ExtResource( 3 )
 centered = false
 region = true
 region_rect = Rect2( 0, 64, 128, 64 )
 
-[node name="middle_up_cut" type="Sprite" parent="."]
+[node name="tree_cut_up" type="Sprite" parent="."]
 
-transform/pos = Vector2( 883.343, 270.708 )
+transform/pos = Vector2( 704, 128 )
 texture = ExtResource( 3 )
 centered = false
 region = true
 region_rect = Rect2( 0, 128, 128, 64 )
+
+[node name="treepass_middle" type="Sprite" parent="."]
+
+transform/pos = Vector2( 704, 196 )
+transform/scale = Vector2( 1, 1 )
+texture = ExtResource( 3 )
+centered = false
+region = true
+region_rect = Rect2( 0, 192, 128, 64 )
 
 
