@@ -2,27 +2,21 @@
 # Copyright (c) 2009-2016 Juan Linietsky, Ariel Manzur
 # Distributed under the terms of the MIT license (cf. LICENSE.md file)
 
-extends ReferenceFrame
+extends Control
 
-# member variables here, example:
-# var a=2
-# var b="textvar"
+func _ready():
+	get_node("button_play").connect("pressed", self, "play_pressed")
+	get_node("button_play").show()
+	set_process_input(true)
 
-func _on_play_pressed():
-	print("please load it?")
-	get_tree().get_root().get_node("main").goto_scene("res://menu/stage_select.tscn")
+func play_pressed():
+	get_tree().change_scene("res://menu/stage_select.tscn")
 	
-func _on_settings_pressed():
-	pass
+func settings_pressed():
+	pass # TODO: make settings screen
 
 func _input(event):
 	if event.is_action("ui_accept") && event.pressed:
-		_on_play_pressed()
-
-func _ready():
-	# Initalization here
-	get_node("jp_play").show()
-	set_process_input(true)
-	pass
+		play_pressed()
 
 

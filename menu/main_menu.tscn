@@ -14,22 +14,22 @@
 resource/name = "sky_motion"
 length = 4.0
 loop = true
-step = 0.0
+step = 0.01
 tracks/0/type = "value"
-tracks/0/path = NodePath("sky_scroll1:margin/left")
+tracks/0/path = NodePath(".:margin/left")
 tracks/0/interp = 1
 tracks/0/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, -1024.0 ] }
 
 [sub_resource type="Animation" id=2]
 
-resource/name = "sky_moyion2"
+resource/name = "sky_motion"
 length = 2.0
 loop = true
-step = 0.0
+step = 0.1
 tracks/0/type = "value"
-tracks/0/path = NodePath("sky_scroll2:margin/left")
+tracks/0/path = NodePath(".:margin/left")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 2 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, -1024.0 ] }
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 2 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, -1024.0 ] }
 
 [sub_resource type="ColorRamp" id=3]
 
@@ -47,15 +47,15 @@ length = 4.0
 loop = false
 step = 0.0
 tracks/0/type = "value"
-tracks/0/path = NodePath("cc_alpaca/c/alpaca:transform/pos")
+tracks/0/path = NodePath("alpaca_container/center/alpaca:transform/pos")
 tracks/0/interp = 1
 tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1.99, 4 ), "transitions":FloatArray( 1, 0.574349, 1 ), "values":[ Vector2( 1400, -15 ), Vector2( 1400, -15 ), Vector2( 0, -15 ) ] }
 tracks/1/type = "value"
-tracks/1/path = NodePath("cc_logo/jp:visibility/opacity")
+tracks/1/path = NodePath("logo_container/logo:visibility/opacity")
 tracks/1/interp = 1
 tracks/1/keys = { "cont":true, "times":FloatArray( 3.61, 4 ), "transitions":FloatArray( 1.7411, 1 ), "values":[ 0.0, 1.0 ] }
 tracks/2/type = "value"
-tracks/2/path = NodePath("cc_taptofly/tap:visibility/opacity")
+tracks/2/path = NodePath("tap_to_fly_container/tap_to_fly:visibility/opacity")
 tracks/2/interp = 1
 tracks/2/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
 tracks/3/type = "value"
@@ -69,11 +69,11 @@ length = 4.0
 loop = true
 step = 0.1
 tracks/0/type = "value"
-tracks/0/path = NodePath("cc_alpaca/c/alpaca:transform/pos")
+tracks/0/path = NodePath("alpaca_container/center/alpaca:transform/pos")
 tracks/0/interp = 1
 tracks/0/keys = { "cont":true, "times":FloatArray( 0, 2, 4 ), "transitions":FloatArray( -2, -2, 1 ), "values":[ Vector2( 0, -15 ), Vector2( 0, 15 ), Vector2( 0, -15 ) ] }
 tracks/1/type = "value"
-tracks/1/path = NodePath("cc_taptofly/tap:visibility/opacity")
+tracks/1/path = NodePath("tap_to_fly_container/tap_to_fly:visibility/opacity")
 tracks/1/interp = 1
 tracks/1/keys = { "cont":true, "times":FloatArray( 0, 1, 2, 3, 4 ), "transitions":FloatArray( -2, -2, -2, -2, -2 ), "values":[ 0.3, 1.0, 0.3, 1.0, 0.3 ] }
 
@@ -112,7 +112,7 @@ content_margin/right = -1.0
 content_margin/top = -1.0
 content_margin/bottom = -1.0
 
-[node name="ReferenceFrame" type="ReferenceFrame"]
+[node name="main_menu" type="ReferenceFrame"]
 
 anchor/right = 1
 anchor/bottom = 1
@@ -120,152 +120,168 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
 script/script = ExtResource( 1 )
 __meta__ = { "__editor_plugin_screen__":"2D" }
 
-[node name="Label" type="Label" parent="."]
+[node name="copyright" type="Label" parent="."]
 
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
 margin/left = 46.0
 margin/top = 222.0
 margin/right = 178.0
 margin/bottom = 255.0
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
 text = "(c) 2012 Codenix - Work in Progress, don distribute!"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Label 2" type="Label" parent="."]
+[node name="welcome" type="Label" parent="."]
 
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
 margin/left = 45.0
 margin/top = 27.0
 margin/right = 177.0
 margin/bottom = 60.0
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
 text = "Welcome to JetPaca!"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="sky_scroll1" type="HBoxContainer" parent="."]
+[node name="sky_background" type="HBoxContainer" parent="."]
 
 anchor/top = 1
 anchor/bottom = 1
-margin/left = -896.998
-margin/top = 1024.0
-margin/right = 40.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = -864.847
+margin/top = 1024.0
+margin/right = 40.0
+margin/bottom = 0.0
 custom_constants/separation = -1
 alignment = 0
 
-[node name="TextureFrame" type="TextureFrame" parent="sky_scroll1"]
+[node name="center" type="TextureFrame" parent="sky_background"]
 
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
 margin/right = 1024.0
 margin/bottom = 1024.0
+texture = ExtResource( 2 )
+
+[node name="left" type="TextureFrame" parent="sky_background"]
+
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-texture = ExtResource( 2 )
-
-[node name="TextureFrame 2" type="TextureFrame" parent="sky_scroll1"]
-
 margin/left = 1023.0
+margin/top = 0.0
 margin/right = 2047.0
 margin/bottom = 1024.0
+texture = ExtResource( 2 )
+
+[node name="right" type="TextureFrame" parent="sky_background"]
+
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-texture = ExtResource( 2 )
-
-[node name="TextureFrame 3" type="TextureFrame" parent="sky_scroll1"]
-
 margin/left = 2046.0
+margin/top = 0.0
 margin/right = 3070.0
 margin/bottom = 1024.0
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
 texture = ExtResource( 2 )
 
-[node name="sky_anim" type="AnimationPlayer" parent="."]
+[node name="animation" type="AnimationPlayer" parent="sky_background"]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
 anims/sky_motion = SubResource( 1 )
 playback/active = true
-playback/speed = -1.0
+playback/speed = 1.0
 blend_times = [  ]
 autoplay = "sky_motion"
 
-[node name="sky_scroll2" type="HBoxContainer" parent="."]
+[node name="sky_foreground" type="HBoxContainer" parent="."]
 
 anchor/top = 1
 anchor/bottom = 1
-margin/left = -23.6275
-margin/top = 256.0
-margin/right = 2521.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = -1003.68
+margin/top = 256.0
+margin/right = 2521.0
+margin/bottom = 0.0
 custom_constants/separation = -1
 alignment = 0
 
-[node name="TextureFrame" type="TextureFrame" parent="sky_scroll2"]
+[node name="left" type="TextureFrame" parent="sky_foreground"]
 
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
 margin/right = 1024.0
 margin/bottom = 256.0
+texture = ExtResource( 3 )
+
+[node name="center" type="TextureFrame" parent="sky_foreground"]
+
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-texture = ExtResource( 3 )
-
-[node name="TextureFrame 2" type="TextureFrame" parent="sky_scroll2"]
-
 margin/left = 1023.0
+margin/top = 0.0
 margin/right = 2047.0
 margin/bottom = 256.0
+texture = ExtResource( 3 )
+
+[node name="right" type="TextureFrame" parent="sky_foreground"]
+
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-texture = ExtResource( 3 )
-
-[node name="TextureFrame 3" type="TextureFrame" parent="sky_scroll2"]
-
 margin/left = 2046.0
+margin/top = 0.0
 margin/right = 3070.0
 margin/bottom = 256.0
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
 texture = ExtResource( 3 )
 
-[node name="sky_anim 2" type="AnimationPlayer" parent="."]
+[node name="animation" type="AnimationPlayer" parent="sky_foreground"]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/sky_moyion2 = SubResource( 2 )
+anims/sky_motion = SubResource( 2 )
 playback/active = true
-playback/speed = -1.0
+playback/speed = 1.0
 blend_times = [  ]
-autoplay = "sky_moyion2"
+autoplay = "sky_motion"
 
-[node name="cc_alpaca" type="CenterContainer" parent="."]
+[node name="alpaca_container" type="CenterContainer" parent="."]
 
 anchor/right = 1
 anchor/bottom = 1
@@ -273,26 +289,30 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
 use_top_left = false
 
-[node name="c" type="Control" parent="cc_alpaca"]
+[node name="center" type="Control" parent="alpaca_container"]
 
-margin/left = 640.0
-margin/top = 360.0
-margin/right = 640.0
-margin/bottom = 360.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 640.0
+margin/top = 360.0
+margin/right = 640.0
+margin/bottom = 360.0
 
-[node name="alpaca" type="Sprite" parent="cc_alpaca/c"]
+[node name="alpaca" type="Sprite" parent="alpaca_container/center"]
 
 transform/pos = Vector2( 0, -15 )
 texture = ExtResource( 4 )
 offset = Vector2( 0, 60 )
 
-[node name="Particles2D" type="Particles2D" parent="cc_alpaca/c/alpaca"]
+[node name="jetpack_front" type="Particles2D" parent="alpaca_container/center/alpaca"]
 
 visibility/blend_mode = 1
 transform/pos = Vector2( 123.446, 139.028 )
@@ -319,7 +339,13 @@ params/anim_initial_pos = 0.0
 randomness/spin_velocity = 1.0
 color/color_ramp = SubResource( 3 )
 
-[node name="Particles2D 2" type="Particles2D" parent="cc_alpaca/c/alpaca"]
+[node name="mask" type="Sprite" parent="alpaca_container/center/alpaca/jetpack_front"]
+
+transform/pos = Vector2( 2.18399, -39.8748 )
+transform/rot = -66.1863
+texture = ExtResource( 6 )
+
+[node name="jetpack_back" type="Particles2D" parent="alpaca_container/center/alpaca"]
 
 visibility/behind_parent = true
 visibility/blend_mode = 1
@@ -347,11 +373,6 @@ params/anim_initial_pos = 0.0
 randomness/spin_velocity = 1.0
 color/color_ramp = SubResource( 4 )
 
-[node name="mask" type="Sprite" parent="cc_alpaca/c/alpaca"]
-
-transform/pos = Vector2( 87.8479, 120.93 )
-texture = ExtResource( 6 )
-
 [node name="intro_anim" type="AnimationPlayer" parent="."]
 
 playback/process_mode = 1
@@ -364,54 +385,60 @@ playback/speed = 1.0
 blend_times = [  ]
 autoplay = "intro"
 
-[node name="cc_logo" type="CenterContainer" parent="."]
+[node name="logo_container" type="CenterContainer" parent="."]
 
 anchor/right = 1
-margin/bottom = 40.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 40.0
 use_top_left = false
 
-[node name="jp" type="TextureFrame" parent="cc_logo"]
+[node name="logo" type="TextureFrame" parent="logo_container"]
 
-visibility/opacity = 0.98
-margin/left = 384.0
-margin/right = 896.0
-margin/bottom = 128.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 384.0
+margin/top = 0.0
+margin/right = 896.0
+margin/bottom = 128.0
 texture = ExtResource( 7 )
 
-[node name="cc_taptofly" type="CenterContainer" parent="."]
+[node name="tap_to_fly_container" type="CenterContainer" parent="."]
 
 anchor/top = 1
 anchor/right = 1
 anchor/bottom = 1
-margin/top = 150.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 150.0
+margin/right = 0.0
+margin/bottom = 0.0
 use_top_left = false
 
-[node name="tap" type="TextureFrame" parent="cc_taptofly"]
+[node name="tap_to_fly" type="TextureFrame" parent="tap_to_fly_container"]
 
 visibility/opacity = 0.3
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
 margin/left = 384.0
 margin/top = 43.0
 margin/right = 896.0
 margin/bottom = 107.0
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
 texture = ExtResource( 8 )
 
-[node name="jp_play" type="Button" parent="."]
+[node name="button_play" type="Button" parent="."]
 
 visibility/visible = false
 anchor/right = 1
@@ -420,6 +447,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
 custom_styles/hover = SubResource( 7 )
 custom_styles/pressed = SubResource( 8 )
 custom_styles/focus = SubResource( 9 )
@@ -428,7 +459,5 @@ custom_styles/normal = SubResource( 11 )
 toggle_mode = false
 click_on_press = true
 flat = false
-
-[connection signal="pressed" from="jp_play" to="." method="_on_play_pressed"]
 
 
