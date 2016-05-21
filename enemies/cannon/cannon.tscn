@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=1]
 
-[ext_resource path="res://enemies/cannon.gd" type="Script" id=1]
+[ext_resource path="res://enemies/cannon/cannon.gd" type="Script" id=1]
 [ext_resource path="res://art/pieces_missile_launcher/arm-r.png" type="Texture" id=2]
 [ext_resource path="res://art/pieces_missile_launcher/arm-l.png" type="Texture" id=3]
 [ext_resource path="res://art/pieces_missile_launcher/lower-lip.png" type="Texture" id=4]

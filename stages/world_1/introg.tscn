@@ -17,7 +17,7 @@
 [ext_resource path="res://interaction/roulette.tscn" type="PackedScene" id=15]
 [ext_resource path="res://interaction/house.tscn" type="PackedScene" id=16]
 [ext_resource path="res://interaction/breakable_stone.tscn" type="PackedScene" id=17]
-[ext_resource path="res://enemies/fluff.tscn" type="PackedScene" id=18]
+[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=18]
 [ext_resource path="res://tilesets/glacier_parallax.tscn" type="PackedScene" id=19]
 [ext_resource path="res://music/frozenwish.mpc" type="AudioStream" id=20]
 

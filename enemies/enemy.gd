@@ -69,7 +69,7 @@ func _on_exit_screen():
 
 func _enter_tree():
 
-	explosion = preload("res://enemies/explosion.tscn")
+	explosion = preload("res://enemies/explosion/explosion.tscn")
 	var c = VisibilityNotifier2D.new()
 	c.connect("enter_screen",self,"_on_enter_screen")
 	c.connect("exit_screen",self,"_on_exit_screen")

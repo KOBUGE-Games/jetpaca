@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=1]
 
-[ext_resource path="res://enemies/sporadic_flower.gd" type="Script" id=1]
+[ext_resource path="res://enemies/spore_flower/sporadic_flower.gd" type="Script" id=1]
 [ext_resource path="res://art/sporadic_flower_pieces/leaf1.png" type="Texture" id=2]
 [ext_resource path="res://art/sporadic_flower_pieces/center.png" type="Texture" id=3]
 [ext_resource path="res://art/sporadic_flower_pieces/back_petal.png" type="Texture" id=4]
