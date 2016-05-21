@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=1]
 
-[ext_resource path="res://menu/progress.gd" type="Script" id=1]
+[ext_resource path="res://shared/progress.gd" type="Script" id=1]
 
 [sub_resource type="Animation" id=1]
 
