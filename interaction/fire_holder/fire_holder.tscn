@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://art/forest_fire_holder.png" type="Texture" id=1]
+[ext_resource path="res://interaction/fire_holder/fire_holder.gd" type="Script" id=2]
+[ext_resource path="res://art/smoke.png" type="Texture" id=3]
+[ext_resource path="res://art/forest_fire_holder_over.png" type="Texture" id=4]
+
+[sub_resource type="ColorRamp" id=1]
+
+offsets = FloatArray( 0, 0.2, 0.8 )
+colors = ColorArray( 1, 0.884956, 0.265487, 1, 1, 0.0884956, 0, 1, 0.054902, 0.159292, 0.115044, 1 )
+
+[node name="torch_trigger" type="Sprite" groups=[ "_fire_triggers" ]]
+
+texture = ExtResource( 1 )
+script/script = ExtResource( 2 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+trigger_name = ""
+
+[node name="fire" type="Particles2D" parent="."]
+
+visibility/opacity = 0.480909
+visibility/blend_mode = 1
+transform/pos = Vector2( -1.19546, -96.7243 )
+transform/rot = 179.668
+config/amount = 16
+config/lifetime = 1.0
+config/emitting = false
+config/half_extents = Vector2( 5, 0 )
+config/local_space = false
+config/texture = ExtResource( 3 )
+params/direction = 0.0
+params/spread = 10.0
+params/linear_velocity = 60.0
+params/spin_velocity = 2.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.5
+params/final_size = 0.1
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spin_velocity = 1.0
+color/color_ramp = SubResource( 1 )
+
+[node name="top" type="Sprite" parent="."]
+
+transform/pos = Vector2( -0.114742, -95.6436 )
+texture = ExtResource( 4 )
+
+[node name="firepos" type="Position2D" parent="."]
+
+transform/pos = Vector2( 1.68146, -93.6408 )
+
+

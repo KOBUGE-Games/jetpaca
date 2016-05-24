@@ -47,15 +47,15 @@ func explode():
 		
 		var dropscene=null
 		if (drop==DROP_HEART):
-			dropscene = preload("res://player/heart.tscn").instance()
+			dropscene = preload("res://interaction/bonuses/heart.tscn").instance()
 		elif (drop==DROP_KEY1):
-			dropscene = preload("res://interaction/key.tscn").instance()
+			dropscene = preload("res://interaction/door/key.tscn").instance()
 			dropscene.key_index=0
 		elif (drop==DROP_KEY2):
-			dropscene = preload("res://interaction/key.tscn").instance()
+			dropscene = preload("res://interaction/door/key.tscn").instance()
 			dropscene.key_index=1
 		elif (drop==DROP_KEY3):
-			dropscene = preload("res://interaction/key.tscn").instance()
+			dropscene = preload("res://interaction/door/key.tscn").instance()
 			dropscene.key_index=2
 			
 		get_parent().call_deferred("add_child", dropscene )

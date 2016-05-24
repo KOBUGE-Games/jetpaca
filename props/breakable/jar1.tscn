@@ -1,0 +1,127 @@
+[gd_scene load_steps=10 format=1]
+
+[ext_resource path="res://props/breakable/jar.gd" type="Script" id=1]
+[ext_resource path="res://art/jar1.png" type="Texture" id=2]
+[ext_resource path="res://art/jar1_piece.png" type="Texture" id=3]
+[ext_resource path="res://sound/ceramic_break.wav" type="Sample" id=4]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 26.1026, -23.2028, 21.5731, -10.9085, -15.3097, 24.6802, -27.2805, 8.50351, -21.1333, -10.9085, -12.0744, -28.3793, 13.1612, -28.3793 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -24.3687, -21.9086, -12.0744, -28.3793, -21.1333, -10.9085 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 28.6908, 6.88585, 20.279, 23.0625, 9.60237, 28.8861, -4.95663, 28.8861, -15.3097, 24.6802, 21.5731, -10.9085 )
+
+[sub_resource type="ColorRamp" id=4]
+
+offsets = FloatArray( 0, 0.8, 1 )
+colors = ColorArray( 1, 1, 1, 1, 0.435294, 0.442478, 0.469027, 1, 0, 0, 0, 0 )
+
+[sub_resource type="SampleLibrary" id=5]
+
+samples/break = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
+
+[node name="jar" type="RigidBody2D"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 3 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+script/script = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+has_key = false
+key_index = 0
+
+[node name="sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+build_mode = 0
+polygon = Vector2Array( -21.1333, -10.9085, -24.3687, -21.9086, -12.0744, -28.3793, 13.1612, -28.3793, 26.1026, -23.2028, 21.5731, -10.9085, 28.6908, 6.88585, 20.279, 23.0625, 9.60237, 28.8861, -4.95663, 28.8861, -15.3097, 24.6802, -27.2805, 8.50351 )
+shape_range = Vector2( -1, -1 )
+trigger = false
+
+[node name="particles" type="Particles2D" parent="."]
+
+config/amount = 16
+config/lifetime = 0.7
+config/emit_timeout = 0.7
+config/emitting = false
+config/half_extents = Vector2( 16, 16 )
+config/local_space = false
+config/explosiveness = 0.1
+config/texture = ExtResource( 3 )
+params/direction = 0.0
+params/spread = 180.0
+params/linear_velocity = 60.0
+params/spin_velocity = 3.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 195.982
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.0
+params/final_size = 1.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/linear_velocity = 1.0
+randomness/spin_velocity = 1.0
+color/color_ramp = SubResource( 4 )
+
+[node name="death" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+[node name="player" type="SamplePlayer2D" parent="."]
+
+params/volume_db = 0.0
+params/pitch_scale = 0.6
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 5 )
+config/pitch_random = 0.0
+
+[connection signal="timeout" from="death" to="." method="_on_timeout"]
+
+

@@ -844,7 +844,7 @@ func _ready():
 		if (cp):
 			set_global_transform(cp.get_global_transform())
 			
-	crosshair=ResourceLoader.load("res://player/crosshair.tscn").instance()
+	crosshair=ResourceLoader.load("res://hud/crosshair.tscn").instance()
 	get_node("../..").call_deferred("add_child",crosshair)
 	get_node("attack_area").get_shape(0).set_extents( OS.get_video_mode_size() / 2 )
 

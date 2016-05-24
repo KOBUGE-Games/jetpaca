@@ -43,11 +43,11 @@ func fire():
 	var ofs = 0
 	
 	if (type==TYPE_SEEKER or type==TYPE_MISSILE):
-		s=preload("res://enemies/heatseeker/heatseeker.tscn").instance()
+		s=preload("res://enemies/cannon/heatseeker.tscn").instance()
 		s.set_rot( t.get_rotation() ) 
 		s.set_seek_heat(type==TYPE_SEEKER)
 	elif (type==TYPE_BUBBLE):
-		s=preload("res://interaction/bubble.tscn").instance()
+		s=preload("res://enemies/cannon/bubble.tscn").instance()
 		ofs=128
 		
 	var p=get_parent()
