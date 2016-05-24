@@ -1543,12 +1543,12 @@ hint = "Enemies are attacking town! Please save us!"
 transform/pos = Vector2( 7938.62, 5042.78 )
 linear_damp = 0.1
 
-[node name="large_fruit" parent="interaction" instance=ExtResource( 21 )]
+[node name="big_coin" parent="interaction" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 3444.72, 3387.63 )
 linear_damp = 0.1
 
-[node name="large_fruit 2" parent="interaction" instance=ExtResource( 21 )]
+[node name="big_coin 2" parent="interaction" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 9032.34, 4906.68 )
 linear_damp = 0.1
@@ -1558,7 +1558,7 @@ fruit_index = 1
 
 transform/pos = Vector2( 11382.5, 5502.71 )
 
-[node name="large_fruit 3" parent="interaction" instance=ExtResource( 21 )]
+[node name="big_coin 3" parent="interaction" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 10239, 5349.28 )
 linear_damp = 0.1
@@ -1586,7 +1586,7 @@ transform/rot = 89.0753
 transform/pos = Vector2( 4641.19, 3990.32 )
 transform/rot = 89.167
 
-[node name="large_fruit 4" parent="interaction" instance=ExtResource( 21 )]
+[node name="big_coin 4" parent="interaction" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 3444.72, 3387.63 )
 linear_damp = 0.1

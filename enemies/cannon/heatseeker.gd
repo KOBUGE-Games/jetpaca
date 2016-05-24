@@ -44,7 +44,7 @@ func _integrate_forces(state):
 	if (state.get_contact_count()): #explode at first contact
 		for i in range(state.get_contact_count()):
 			var co = state.get_contact_collider_object(i)
-			if (co):
+			if co and co.has_method("attacked"):
 				co.call("attacked",self)
 			
 			

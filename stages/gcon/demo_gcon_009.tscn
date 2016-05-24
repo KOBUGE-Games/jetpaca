@@ -502,464 +502,559 @@ transform/rot = -38.0587
 
 __meta__ = { "_editor_collapsed":true }
 
-[node name="ghost_push" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 8108.8, 3692.8 )
 transform/rot = 143.128
+drop = 0
 
-[node name="ghost_push 2" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 2" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6887.98, 3468.86 )
 transform/rot = 207.105
+drop = 0
 
-[node name="ghost_push 3" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 3" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3488.04, 5184.04 )
 transform/rot = 179.932
+drop = 0
 
-[node name="ghost_push 4" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 4" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 846.375, 5248.44 )
 transform/rot = 153.237
+drop = 0
 
-[node name="ghost_push 5" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 5" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 396.164, 4844.16 )
 transform/rot = 32.3944
+drop = 0
 
-[node name="ghost_push 6" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 6" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3853.08, 3149.08 )
 transform/rot = 140.0
+drop = 0
 
-[node name="ghost_push 10" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 10" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6855.98, 3532.86 )
 transform/rot = 205.506
+drop = 0
 
-[node name="ghost_push 11" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 11" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6823.98, 3596.86 )
 transform/rot = 208.263
+drop = 0
 
-[node name="ghost_push 12" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 12" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 8108.8, 3628.8 )
 transform/rot = 143.128
+drop = 0
 
-[node name="ghost_push 13" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 13" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 8108.8, 3756.8 )
 transform/rot = 143.128
+drop = 0
 
-[node name="ghost_push 14" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 14" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 810.982, 5162.98 )
 transform/rot = 153.237
+drop = 0
 
-[node name="ghost_push 15" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 15" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 874.982, 5322.98 )
 transform/rot = 153.237
+drop = 0
 
-[node name="ghost_push 17" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 17" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 332.164, 5036.16 )
 transform/rot = 32.3944
+drop = 0
 
-[node name="ghost_push 18" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 18" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3821.08, 3053.08 )
 transform/rot = 140.0
+drop = 0
 
-[node name="ghost_push 19" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 19" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3885.08, 3245.08 )
 transform/rot = 140.0
+drop = 0
 
-[node name="ghost_push 20" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 20" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1536, 704 )
+drop = 0
 
-[node name="ghost_push 21" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 21" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1472, 768 )
 transform/rot = 13.4046
+drop = 0
 
-[node name="ghost_push 22" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 22" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1408, 832 )
 transform/rot = 14.0248
+drop = 0
 
-[node name="ghost_push 23" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 23" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1888, 736 )
+drop = 0
 
-[node name="ghost_push 24" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 24" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 2624, 800 )
 transform/rot = 270.0
+drop = 0
 
-[node name="ghost_push 25" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 25" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 2624, 1216 )
+drop = 0
 
-[node name="ghost_push 26" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 26" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 2816, 1216 )
 transform/rot = 90.0
+drop = 0
 
-[node name="ghost_push 27" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 27" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 2816, 704 )
+drop = 0
 
-[node name="ghost_push 28" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 28" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3008, 704 )
 transform/rot = 270.0
+drop = 0
 
-[node name="ghost_push 29" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 29" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3008, 1216 )
+drop = 0
 
-[node name="ghost_push 31" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 31" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 2624, 704 )
 transform/rot = 270.0
+drop = 0
 
-[node name="ghost_push 32" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 32" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 2816, 960 )
 transform/rot = 90.0
+drop = 0
 
-[node name="ghost_push 33" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 33" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3008, 960 )
 transform/rot = 270.0
+drop = 0
 
-[node name="ghost_push 7" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 7" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 364.164, 4940.16 )
 transform/rot = 32.3944
+drop = 0
 
-[node name="ghost_push 35" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 35" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3424.04, 5248.04 )
 transform/rot = 179.932
+drop = 0
 
-[node name="ghost_push 36" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 36" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3360.04, 5312.04 )
 transform/rot = 179.932
+drop = 0
 
-[node name="ghost_push 41" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 41" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6296, 1396 )
 transform/rot = 180.0
+drop = 0
 
-[node name="ghost_push 43" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 43" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3305.57, 1985.54 )
+drop = 0
 
-[node name="ghost_push 44" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 44" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3341.65, 1910.66 )
+drop = 0
 
-[node name="ghost_push 45" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 45" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3375.01, 1842.58 )
+drop = 0
 
-[node name="ghost_push 46" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 46" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3277.65, 1398.66 )
 transform/rot = 270.0
+drop = 0
 
-[node name="ghost_push 46 2" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 46 2" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3341.65, 1494.66 )
 transform/rot = 270.0
+drop = 0
 
-[node name="ghost_push 46 3" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 46 3" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3405.65, 1590.66 )
 transform/rot = 270.0
+drop = 0
 
-[node name="ghost_push 47" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 47" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3807.23, 5782.55 )
 transform/rot = 32.3944
+drop = 0
 
-[node name="ghost_push 47 2" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 47 2" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3743.23, 5974.55 )
 transform/rot = 32.3944
+drop = 0
 
-[node name="ghost_push 47 3" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 47 3" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3775.23, 5878.55 )
 transform/rot = 32.3944
+drop = 0
 
-[node name="ghost_push 34" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 34" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4000, 992 )
+drop = 0
 
-[node name="ghost_push 48" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 48" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6848, 928 )
 transform/rot = 270.0
+drop = 0
 
-[node name="ghost_push 46 4" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 46 4" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6912, 1056 )
 transform/rot = 270.0
+drop = 0
 
-[node name="ghost_push 46 4 2" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 46 4 2" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6976, 1184 )
 transform/rot = 270.0
+drop = 0
 
-[node name="ghost_push 49" parent="Pushes" instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 4928, 1888 )
-
-[node name="ghost_push 50" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 49" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4928, 1888 )
+drop = 0
 
-[node name="ghost_push 52" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 50" parent="Pushes" instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 4928, 1888 )
+drop = 0
+
+[node name="booster_push 52" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4864, 1824 )
+drop = 0
 
-[node name="ghost_push 53" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 53" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4992, 1952 )
+drop = 0
 
-[node name="ghost_push 51" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 51" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6496, 1888 )
+drop = 0
 
-[node name="ghost_push 54" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6432, 1824 )
+drop = 0
 
-[node name="ghost_push 54 2" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 2" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6560, 1952 )
+drop = 0
 
-[node name="ghost_push 55" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 55" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 7904, 1888 )
 transform/rot = -25.0
+drop = 0
 
-[node name="ghost_push 55 2" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 55 2" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 7936, 1824 )
 transform/rot = -25.0
+drop = 0
 
-[node name="ghost_push 54 3" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 3" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 7872, 1952 )
 transform/rot = -25.0
+drop = 0
 
-[node name="ghost_push 54 5" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 5" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 8881.61, 2360.23 )
 transform/rot = -37.5476
+drop = 0
 
-[node name="ghost_push 54 6" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 6" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 8557.05, 3021.05 )
 transform/rot = -34.9473
+drop = 0
 
-[node name="ghost_push 54 8" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 8" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 8812.84, 3916.84 )
 transform/rot = -37.2757
+drop = 0
 
-[node name="ghost_push 54 11" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 11" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9065.75, 5590.12 )
 transform/rot = -35.2687
+drop = 0
 
-[node name="ghost_push 54 12" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 12" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 8889, 2825.69 )
 transform/rot = -148.966
+drop = 0
 
-[node name="ghost_push 54 13" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 13" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 8961.53, 3238.63 )
 transform/rot = -33.3587
+drop = 0
 
-[node name="ghost_push 54 14" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 14" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9494.99, 3541.83 )
 transform/rot = -148.966
+drop = 0
 
-[node name="ghost_push 54 15" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 15" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9176.63, 3714.91 )
 transform/rot = -148.966
+drop = 0
 
-[node name="ghost_push 54 16" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 16" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9627.9, 4376.36 )
 transform/rot = -148.966
+drop = 0
 
-[node name="ghost_push 54 16 2" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 16 2" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9321.9, 4540.17 )
 transform/rot = -148.966
+drop = 0
 
-[node name="ghost_push 54 17 2" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 17 2" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9763.89, 5189.25 )
 transform/rot = -148.966
+drop = 0
 
-[node name="ghost_push 54 16 3" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 16 3" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9457.9, 5353.06 )
 transform/rot = -148.966
+drop = 0
 
-[node name="ghost_push 54 9" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 9" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9159.02, 4108.48 )
 transform/rot = -33.5746
+drop = 0
 
-[node name="ghost_push 54 18" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 18" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9395.2, 5778.1 )
 transform/rot = -32.437
+drop = 0
 
-[node name="ghost_push 54 19" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 19" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 8931.57, 4751.94 )
 transform/rot = -32.437
+drop = 0
 
-[node name="ghost_push 8" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 8" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 7290.5, 2592.6 )
 transform/rot = 211.866
+drop = 0
 
-[node name="ghost_push 54 10" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 10" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9195.94, 2731.94 )
 transform/rot = -148.839
+drop = 0
 
-[node name="ghost_push 54 20" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 20" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 8915.63, 2453.9 )
 transform/rot = -37.0
+drop = 0
 
-[node name="ghost_push 54 21" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 21" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 8863.23, 2271.03 )
 transform/rot = -37.4066
+drop = 0
 
-[node name="ghost_push 54 22" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 22" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9259.94, 2635.94 )
 transform/rot = -148.839
+drop = 0
 
-[node name="ghost_push 54 23" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 23" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9291.94, 2539.94 )
 transform/rot = -148.839
+drop = 0
 
-[node name="ghost_push 54 16 4" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 16 4" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 10189.8, 5391.15 )
 transform/rot = -136.601
+drop = 0
 
-[node name="ghost_push 54 16 5" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 16 5" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 10392.5, 5193.9 )
 transform/rot = -136.601
+drop = 0
 
-[node name="ghost_push 54 16 6" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 16 6" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9834.72, 5755.73 )
 transform/rot = -136.601
+drop = 0
 
-[node name="ghost_push 54 16 7" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 54 16 7" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 9667.4, 5914.89 )
 transform/rot = -53.222
+drop = 0
 
-[node name="ghost_push 47 4" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 47 4" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3776, 7232 )
 transform/rot = 90.0
+drop = 0
 
-[node name="ghost_push 47 5" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 47 5" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3712, 7232 )
 transform/rot = 90.0
+drop = 0
 
-[node name="ghost_push 9" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 9" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6764.07, 2860.07 )
 transform/rot = 207.59
+drop = 0
 
-[node name="ghost_push 30" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 30" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6316.07, 3084.07 )
 transform/rot = 205.911
+drop = 0
 
-[node name="ghost_push 38" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 38" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5739.71, 3371.71 )
 transform/rot = 205.46
+drop = 0
 
-[node name="ghost_push 38 2" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 38 2" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5162.95, 3658.95 )
 transform/rot = 206.631
+drop = 0
 
-[node name="ghost_push 38 4" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 38 4" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4748.07, 3863.54 )
 transform/rot = 208.244
+drop = 0
 
-[node name="ghost_push 38 5" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 38 5" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4332.07, 4076.07 )
 transform/rot = 208.915
+drop = 0
 
-[node name="ghost_push 39" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 39" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3884.07, 4300.07 )
 transform/rot = 208.0
+drop = 0
 
-[node name="ghost_push 38 6 2" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 38 6 2" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3435.2, 4523.2 )
 transform/rot = 207.656
+drop = 0
 
-[node name="ghost_push 38 6 3" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 38 6 3" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3148.07, 4663.54 )
 transform/rot = 207.42
+drop = 0
 
-[node name="ghost_push 38 6 4" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 38 6 4" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 2604.07, 4940.07 )
 transform/rot = 208.552
+drop = 0
 
-[node name="ghost_push 40" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 40" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 2208.04, 5184.04 )
 transform/rot = 179.932
+drop = 0
 
-[node name="ghost_push 40 2" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 40 2" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 2144.04, 5248.04 )
 transform/rot = 179.932
+drop = 0
 
-[node name="ghost_push 40 3" parent="Pushes" instance=ExtResource( 5 )]
+[node name="booster_push 40 3" parent="Pushes" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 2080.04, 5312.04 )
 transform/rot = 179.932
+drop = 0
 
 [node name="Checkpoint" type="Node" parent="."]
 
@@ -984,46 +1079,51 @@ __meta__ = { "_editor_collapsed":true }
 
 transform/pos = Vector2( 4064, 1184 )
 
-[node name="ghost_push 48" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 48" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4064, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
 [node name="RigidBody2D 2" parent="spikeLine" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 6352, 896 )
 
-[node name="ghost_push 50" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 50" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4128, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
 [node name="RigidBody2D 3" parent="spikeLine" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 4128, 1176 )
 
-[node name="ghost_push 51" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 51" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4192, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
 [node name="RigidBody2D 4" parent="spikeLine" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 4192, 1168 )
 
-[node name="ghost_push 52" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 52" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4320, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 52 2" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 52 2" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4384, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
 [node name="RigidBody2D 5" parent="spikeLine" instance=ExtResource( 8 )]
@@ -1034,26 +1134,29 @@ transform/pos = Vector2( 4320, 1152 )
 
 transform/pos = Vector2( 4384, 1144 )
 
-[node name="ghost_push 52 3" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 52 3" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4256, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
 [node name="RigidBody2D 5 3" parent="spikeLine" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 4256, 1160 )
 
-[node name="ghost_push 53" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 53" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4512, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 53 2" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 53 2" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4576, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
 [node name="RigidBody2D 6" parent="spikeLine" instance=ExtResource( 8 )]
@@ -1064,10 +1167,11 @@ transform/pos = Vector2( 4512, 1128 )
 
 transform/pos = Vector2( 4576, 1120 )
 
-[node name="ghost_push 53 4" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 53 4" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4448, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
 [node name="RigidBody2D 6 4" parent="spikeLine" instance=ExtResource( 8 )]
@@ -1182,416 +1286,484 @@ transform/pos = Vector2( 6288, 904 )
 
 transform/pos = Vector2( 6160, 920 )
 
-[node name="ghost_push 49" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 49" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4640, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 54" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 54" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4704, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 54 2" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 54 2" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4768, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 54 3" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 54 3" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4896, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 52 4" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 52 4" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4960, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 52 4 2" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 52 4 2" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4832, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 54 4" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 54 4" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5088, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 53 3" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 53 3" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5152, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 53 5" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 53 5" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5024, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 55" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 55" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5216, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 55 2" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 55 2" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5280, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 54 5" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 54 5" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5344, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 54 5 2" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 54 5 2" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5472, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 52 5" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 52 5" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5536, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 52 4 3" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 52 4 3" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5408, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 54 5 3" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 54 5 3" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5664, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 53 6" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 53 6" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5728, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 53 6 2" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 53 6 2" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5600, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 56" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 56" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5792, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 55 3" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 55 3" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5856, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 54 6" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 54 6" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5920, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 54 5 4" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 54 5 4" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6048, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 52 6" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 52 6" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6112, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 52 4 4" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 52 4 4" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5984, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 54 5 4 2" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 54 5 4 2" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6240, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 53 7" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 53 7" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6304, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 53 6 3" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 53 6 3" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6176, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
-[node name="ghost_push 53 8" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 53 8" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6360.45, 1248 )
 transform/rot = 90.0
+drop = 0
 boost_value = 400
 
 [node name="RigidBody2D 10" parent="spikeLine" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 6240, 1576 )
 
-[node name="ghost_push 57" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 57" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6240, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 58" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 58" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6176, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 59" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 59" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6112, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 60" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 60" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 6048, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 61" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 61" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5984, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5920, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 2" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 2" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5856, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 3" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 3" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5792, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 4" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 4" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5728, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 5" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 5" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5664, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 63" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 63" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5600, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5536, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 2" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 2" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5472, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 3" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 3" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5408, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 4" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 4" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5344, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 64" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 64" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5280, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 7" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 7" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5216, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 5" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 5" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5152, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 5 2" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 5 2" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5088, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 5 3" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 5 3" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 5024, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 65" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 65" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4960, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 8" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 8" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4896, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 6" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 6" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4832, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 5 4" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 5 4" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4768, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 5 4 2" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 5 4 2" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4704, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 66" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 66" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4640, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 9" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 9" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4576, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 7" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 7" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4512, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 5 5" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 5 5" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4448, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 5 4 3" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 5 4 3" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4384, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 67" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 67" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4320, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 10" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 10" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4256, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 8" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 8" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4192, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 5 6" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 5 6" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4128, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 5 4 4" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 5 4 4" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4064, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 68" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 68" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4000, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 11" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 11" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3936, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 9" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 9" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3872, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 5 7" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 5 7" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3808, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
-[node name="ghost_push 62 6 5 4 5" parent="spikeLine" instance=ExtResource( 5 )]
+[node name="booster_push 62 6 5 4 5" parent="spikeLine" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 3744, 1632 )
 transform/rot = 90.0
+drop = 0
 boost_value = 300
 
 [node name="RigidBody2D 11" parent="spikeLine" instance=ExtResource( 8 )]
@@ -1754,18 +1926,18 @@ transform/pos = Vector2( 3744, 1420 )
 
 __meta__ = { "_editor_collapsed":true }
 
-[node name="large_fruit" parent="Goldcoins" instance=ExtResource( 9 )]
+[node name="big_coin" parent="Goldcoins" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 10499.9, 5015.28 )
 linear_damp = 0.1
 fruit_index = 2
 
-[node name="large_fruit 2" parent="Goldcoins" instance=ExtResource( 9 )]
+[node name="big_coin 2" parent="Goldcoins" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 7464.1, 2514.54 )
 linear_damp = 0.1
 
-[node name="large_fruit 3" parent="Goldcoins" instance=ExtResource( 9 )]
+[node name="big_coin 3" parent="Goldcoins" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 3074.03, 1708.38 )
 linear_damp = 0.1

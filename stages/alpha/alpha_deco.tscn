@@ -417,7 +417,7 @@ __meta__ = { "_editor_collapsed":true }
 transform/pos = Vector2( 1920, 320 )
 linear_damp = 0.1
 
-[node name="large_fruit" parent="Collectibles" instance=ExtResource( 19 )]
+[node name="big_coin" parent="Collectibles" instance=ExtResource( 19 )]
 
 transform/pos = Vector2( 1856, 640 )
 linear_damp = 0.1
@@ -637,12 +637,12 @@ linear_damp = 0.1
 transform/pos = Vector2( 5504, 640 )
 linear_damp = 0.1
 
-[node name="large_fruit 2" parent="Collectibles" instance=ExtResource( 19 )]
+[node name="big_coin 2" parent="Collectibles" instance=ExtResource( 19 )]
 
 transform/pos = Vector2( 6944, 576 )
 linear_damp = 0.1
 
-[node name="large_fruit 3" parent="Collectibles" instance=ExtResource( 19 )]
+[node name="big_coin 3" parent="Collectibles" instance=ExtResource( 19 )]
 
 transform/pos = Vector2( 6688, 4256 )
 linear_damp = 0.1

@@ -24,7 +24,7 @@ var airborne_time=1000
 var anim =""
 var attack_anim=""
 var fruit_count=0
-var large_fruits=[]
+var big_coins=[]
 
 var prev_jpa_emitting=false
 
@@ -822,10 +822,10 @@ func add_key(idx):
 	get_tree().get_root().get_node("game_data").current_keys[idx]=true
 	get_node("hud/base").update_keys()
 	
-func add_large_fruit(idx):
+func add_big_coin(idx):
 	
-	large_fruits.push_back(idx)
-	get_node("hud/base").set_large_fruit_on(idx)
+	big_coins.push_back(idx)
+	get_node("hud/base").set_big_coin_on(idx)
 
 func restore_life(amount):
 	energy+=amount

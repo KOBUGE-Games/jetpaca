@@ -106,12 +106,12 @@ transform/pos = Vector2( 19040, 8672 )
 
 __meta__ = { "_editor_collapsed":true }
 
-[node name="large_fruit" parent="Collectibles" instance=ExtResource( 4 )]
+[node name="big_coin" parent="Collectibles" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 11328, 8064 )
 linear_damp = 0.1
 
-[node name="large_fruit 2" parent="Collectibles" instance=ExtResource( 4 )]
+[node name="big_coin 2" parent="Collectibles" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 2208.94, 2355.29 )
 linear_damp = 0.1

@@ -805,13 +805,13 @@ transform/pos = Vector2( 15103.7, 4685.38 )
 transform/pos = Vector2( 18718.7, 6387.98 )
 linear_damp = 0.1
 
-[node name="large_fruit" parent="interaction" instance=ExtResource( 16 )]
+[node name="big_coin" parent="interaction" instance=ExtResource( 16 )]
 
 transform/pos = Vector2( 11018.3, 1894.86 )
 linear_damp = 0.1
 fruit_index = 1
 
-[node name="large_fruit 2" parent="interaction" instance=ExtResource( 16 )]
+[node name="big_coin 2" parent="interaction" instance=ExtResource( 16 )]
 
 transform/pos = Vector2( 14783.7, 5099.28 )
 linear_damp = 0.1
@@ -821,7 +821,7 @@ fruit_index = 2
 
 transform/pos = Vector2( 10765.6, 2136.51 )
 
-[node name="large_fruit 3" parent="interaction" instance=ExtResource( 16 )]
+[node name="big_coin 3" parent="interaction" instance=ExtResource( 16 )]
 
 transform/pos = Vector2( 6215.76, 5912.52 )
 linear_damp = 0.1
@@ -846,7 +846,7 @@ transform/pos = Vector2( 6230.75, 5583.77 )
 
 transform/pos = Vector2( 6280.38, 5583.77 )
 
-[node name="ghost_push" parent="interaction" instance=ExtResource( 18 )]
+[node name="booster_push" parent="interaction" instance=ExtResource( 18 )]
 
 transform/pos = Vector2( 6792.88, 5751.97 )
 transform/rot = -88.922

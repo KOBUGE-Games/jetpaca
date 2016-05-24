@@ -2,7 +2,7 @@
 # Copyright (c) 2009-2016 Juan Linietsky, Ariel Manzur
 # Distributed under the terms of the MIT license (cf. LICENSE.md file)
 
-extends "enemies/enemy.gd"
+extends "res://enemies/enemy.gd"
 
 # member variables here, example:
 # var a=2

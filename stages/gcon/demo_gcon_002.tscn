@@ -297,146 +297,146 @@ linear_damp = 0.1
 
 transform/pos = Vector2( 22559.3, 5925.31 )
 
-[node name="ghosts" type="Node" parent="."]
+[node name="boosters" type="Node" parent="."]
 
 __meta__ = { "_editor_collapsed":true }
 
-[node name="ghost_push 5" parent="ghosts" instance=ExtResource( 13 )]
+[node name="booster_push 5" parent="ghosts" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 6336, 2016 )
 
-[node name="ghost_push 12" parent="ghosts" instance=ExtResource( 13 )]
+[node name="booster_push 12" parent="ghosts" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 11680, 2272 )
 
-[node name="ghost_push 14" parent="ghosts" instance=ExtResource( 13 )]
+[node name="booster_push 14" parent="ghosts" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 13427.8, 2842.42 )
 
-[node name="ghost_push" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 2028.86, 1676.86 )
 transform/rot = -37.4414
 
-[node name="ghost_push 2" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 2" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 3104.17, 2208.17 )
 transform/rot = -0.311006
 
-[node name="ghost_push 3" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 3" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 5141.75, 2210.63 )
 transform/rot = -0.311006
 
-[node name="ghost_push 4" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 4" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 7222.73, 2424.8 )
 transform/rot = 37.7563
 
-[node name="ghost_push 6" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 6" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 7835.28, 1941.78 )
 transform/rot = 52.6578
 
-[node name="ghost_push 7" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 7" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 9334.85, 935.256 )
 transform/rot = -30.8677
 
-[node name="ghost_push 8" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 8" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 10105.1, 1512.36 )
 transform/rot = -35.083
 
-[node name="ghost_push 10" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 10" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 13824.1, 2720.06 )
 
-[node name="ghost_push 15" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 15" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 15733.8, 2750.33 )
 transform/rot = 0.107657
 
-[node name="ghost_push 16" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 16" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 16597.3, 2788.1 )
 transform/rot = 0.107657
 
-[node name="ghost_push 18" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 18" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 17491, 2772.99 )
 transform/rot = -19.5395
 
-[node name="ghost_push 19" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 19" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 18381.1, 3309.09 )
 transform/rot = -43.261
 
-[node name="ghost_push 20" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 20" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 19597.2, 4525.23 )
 transform/rot = -43.261
 
-[node name="ghost_push 21" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 21" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 20461.2, 5389.23 )
 transform/rot = -43.261
 
-[node name="ghost_push 9" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 9" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 2032.28, 1608.36 )
 transform/rot = -37.4414
 
-[node name="ghost_push 13" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 13" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 2018.59, 1748.78 )
 transform/rot = -35.7865
 
-[node name="ghost_push 22" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 22" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 21493.8, 5905.55 )
 transform/rot = 17.8839
 
-[node name="ghost_push 23" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 23" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 21901, 5820.42 )
 
-[node name="ghost_push 11" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 11" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 5071.32, 2153.83 )
 transform/rot = -0.311006
 
-[node name="ghost_push 17" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 17" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 5214.46, 2262.89 )
 transform/rot = -0.311006
 
-[node name="ghost_push 24" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 24" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 7241.27, 2328.98 )
 transform/rot = 37.7563
 
-[node name="ghost_push 25" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 25" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 7216.55, 2520.62 )
 transform/rot = 37.7563
 
-[node name="ghost_push 26" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 26" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 7724.24, 1895.51 )
 transform/rot = 52.6578
 
-[node name="ghost_push 27" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 27" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 7925.96, 2012.1 )
 transform/rot = 52.6578
 
-[node name="ghost_push 28" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 28" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 3165.24, 2152.65 )
 transform/rot = -0.311006
 
-[node name="ghost_push 29" parent="ghosts" instance=ExtResource( 14 )]
+[node name="booster_push 29" parent="ghosts" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 3057.9, 2269.24 )
 transform/rot = -0.311006
@@ -739,12 +739,12 @@ transform/pos = Vector2( 8928, 2560 )
 
 __meta__ = { "_editor_collapsed":true }
 
-[node name="large_fruit" parent="LargeFruits" instance=ExtResource( 29 )]
+[node name="big_coin" parent="LargeFruits" instance=ExtResource( 29 )]
 
 transform/pos = Vector2( 5376, 896 )
 linear_damp = 0.1
 
-[node name="large_fruit 2" parent="LargeFruits" instance=ExtResource( 29 )]
+[node name="big_coin 2" parent="LargeFruits" instance=ExtResource( 29 )]
 
 transform/pos = Vector2( 9120, 2720 )
 linear_damp = 0.1

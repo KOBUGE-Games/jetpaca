@@ -29,7 +29,7 @@ tracks/1/keys = { "cont":false, "times":FloatArray( 0, 1.05 ), "transitions":Flo
 
 samples/shine = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
 
-[node name="large_fruit" type="Area2D"]
+[node name="big_coin" type="Area2D"]
 
 input/pickable = true
 shapes/0/shape = SubResource( 1 )

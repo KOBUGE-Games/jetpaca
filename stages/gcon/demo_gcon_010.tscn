@@ -713,18 +713,18 @@ no_key = true
 
 __meta__ = { "_editor_collapsed":true }
 
-[node name="large_fruit" parent="Large Fruits" instance=ExtResource( 7 )]
+[node name="big_coin" parent="Large Fruits" instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 7328, 2208 )
 linear_damp = 0.1
 
-[node name="large_fruit 2" parent="Large Fruits" instance=ExtResource( 7 )]
+[node name="big_coin 2" parent="Large Fruits" instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 13728, 1440 )
 linear_damp = 0.1
 fruit_index = 1
 
-[node name="large_fruit 3" parent="Large Fruits" instance=ExtResource( 7 )]
+[node name="big_coin 3" parent="Large Fruits" instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 17222, 4782 )
 linear_damp = 0.1
@@ -836,17 +836,17 @@ transform/rot = -91.1671
 
 transform/pos = Vector2( 11872, 4288 )
 
-[node name="ghost_push" parent="shortcut" instance=ExtResource( 11 )]
+[node name="booster_push" parent="shortcut" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 11506.3, 4195.86 )
 transform/rot = 152.078
 
-[node name="ghost_push 2" parent="shortcut" instance=ExtResource( 11 )]
+[node name="booster_push 2" parent="shortcut" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 9993.02, 3439.2 )
 transform/rot = 152.078
 
-[node name="ghost_push 3" parent="shortcut" instance=ExtResource( 11 )]
+[node name="booster_push 3" parent="shortcut" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 8850.86, 2860.95 )
 transform/rot = 134.701

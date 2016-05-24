@@ -296,12 +296,12 @@ hint = "Try your luck at the end-of-the-world roulette!"
 transform/pos = Vector2( 8545.08, 5267.29 )
 linear_damp = 0.1
 
-[node name="large_fruit" parent="interaction" instance=ExtResource( 14 )]
+[node name="big_coin" parent="interaction" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 3507.28, 3093.29 )
 linear_damp = 0.1
 
-[node name="large_fruit 2" parent="interaction" instance=ExtResource( 14 )]
+[node name="big_coin 2" parent="interaction" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 8967.11, 4841.45 )
 linear_damp = 0.1
@@ -320,7 +320,7 @@ transform/pos = Vector2( 3211.87, 4008.02 )
 transform/pos = Vector2( 4379.72, 3871.69 )
 transform/scale = Vector2( -1, 1 )
 
-[node name="large_fruit 3" parent="interaction" instance=ExtResource( 14 )]
+[node name="big_coin 3" parent="interaction" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 10239, 5349.28 )
 linear_damp = 0.1

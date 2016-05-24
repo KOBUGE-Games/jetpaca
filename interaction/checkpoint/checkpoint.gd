@@ -19,13 +19,13 @@ func _on_body_enter(body):
 		var gd = get_tree().get_root().get_node("game_data")
 		gd.current_checkpoint=get_path()
 		var cw = gd.current_world
-		cw.large_fruits=[]
+		cw.big_coins=[]
 		body.restore_life(2)
-#		gd.current_world.large_fruits=[] bug
+#		gd.current_world.big_coins=[] bug
 		
 		# save the amount of large fruits collected
-		for x in gd.current_large_fruits: 
-			cw.large_fruits.push_back(x)
+		for x in gd.current_big_coins: 
+			cw.big_coins.push_back(x)
 		
 
 func _ready():

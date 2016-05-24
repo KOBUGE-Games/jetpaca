@@ -459,7 +459,7 @@ transform/rot = 49.5858
 
 __meta__ = { "_editor_collapsed":true }
 
-[node name="large_fruit" parent="Collectable" instance=ExtResource( 34 )]
+[node name="big_coin" parent="Collectable" instance=ExtResource( 34 )]
 
 transform/pos = Vector2( 1194.41, 4705.03 )
 linear_damp = 0.1
@@ -744,7 +744,7 @@ linear_damp = 0.1
 transform/pos = Vector2( 896, 2048 )
 linear_damp = 0.1
 
-[node name="large_fruit 2" parent="Collectable" instance=ExtResource( 34 )]
+[node name="big_coin 2" parent="Collectable" instance=ExtResource( 34 )]
 
 transform/pos = Vector2( 3612.91, 2961.59 )
 linear_damp = 0.1
@@ -910,7 +910,7 @@ linear_damp = 0.1
 transform/pos = Vector2( 3462.15, 2148.33 )
 linear_damp = 0.1
 
-[node name="large_fruit 3" parent="Collectable" instance=ExtResource( 34 )]
+[node name="big_coin 3" parent="Collectable" instance=ExtResource( 34 )]
 
 transform/pos = Vector2( 10369.9, 4559.38 )
 linear_damp = 0.1

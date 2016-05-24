@@ -6,7 +6,7 @@ extends Node
 
 class LevelInfo:
 	var id = Vector2()
-	var large_fruits = [false,false,false]
+	var big_coins = [false,false,false]
 	var max_fruit = 0
 	var preview_path = ""
 	var path = ""
@@ -18,7 +18,7 @@ var levels = []
 
 var current_checkpoint = ""
 var current_world = null
-var current_large_fruits = [false, false, false]
+var current_big_coins = [false, false, false]
 var current_keys = [false, false, false]
 var life_count=5
 
@@ -37,7 +37,7 @@ func stage_reset():
 	life_count = 5
 	current_checkpoint = ""
 	current_world = null
-	current_large_fruits = []
+	current_big_coins = []
 	current_keys = [false, false, false]
 
 func get_level(id):

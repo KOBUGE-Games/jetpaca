@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=1]
 
-[ext_resource path="res://enemies/spikes/spike_movable.gd" type="Script" id=1]
+[ext_resource path="res://enemies/spikes/spikes.gd" type="Script" id=1]
 [ext_resource path="res://art/mountain_floating_spike.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
@@ -8,7 +8,7 @@
 custom_solver_bias = 0.0
 radius = 10.0
 
-[node name="RigidBody2D" type="RigidBody2D"]
+[node name="spike_movable_big" type="RigidBody2D"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
@@ -33,6 +33,7 @@ damp_override/linear = -1.0
 damp_override/angular = -1.0
 script/script = ExtResource( 1 )
 __meta__ = { "__editor_plugin_screen__":"2D" }
+tutorial_mode = false
 
 [node name="sprite" type="Sprite" parent="."]
 
@@ -45,9 +46,5 @@ transform/scale = Vector2( 6.98327, 6.88883 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = -1
-
-[connection signal="body_enter" from="." to="." method="_on_body_enter"]
-
-[connection signal="body_exit" from="." to="." method="_on_body_exit"]
 
 

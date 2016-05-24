@@ -34,9 +34,9 @@ func _enter_tree():
 	var charnode = preload("res://player/alpaca.tscn").instance()
 	get_node("launch").add_child(charnode)
 	var gd = get_tree().get_root().get_node("game_data")
-	gd.current_large_fruits=[false,false,false]
-	for x in gd.current_world.large_fruits:
-		gd.current_large_fruits.push_back(x)
+	gd.current_big_coins=[false,false,false]
+	for x in gd.current_world.big_coins:
+		gd.current_big_coins.push_back(x)
 
 
 	

@@ -19,7 +19,7 @@ radius = 27.0
 offsets = FloatArray( 0, 1 )
 colors = ColorArray( 1, 1, 1, 1, 0.168627, 0.566372, 1, 0.0884956 )
 
-[node name="ghost_push" type="RigidBody2D"]
+[node name="booster_push" type="RigidBody2D"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )

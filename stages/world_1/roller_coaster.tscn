@@ -833,18 +833,18 @@ transform/pos = Vector2( 4322.65, 5332.01 )
 
 [node name="interaction" type="Node" parent="."]
 
-[node name="large_fruit" parent="interaction" instance=ExtResource( 14 )]
+[node name="big_coin" parent="interaction" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 2937.69, 6328.04 )
 linear_damp = 0.1
 fruit_index = 1
 
-[node name="large_fruit 2" parent="interaction" instance=ExtResource( 14 )]
+[node name="big_coin 2" parent="interaction" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 253.116, 5767.78 )
 linear_damp = 0.1
 
-[node name="large_fruit 3" parent="interaction" instance=ExtResource( 14 )]
+[node name="big_coin 3" parent="interaction" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 1269.54, 824.856 )
 linear_damp = 0.1

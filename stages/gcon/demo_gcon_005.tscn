@@ -451,7 +451,7 @@ constant_angular_velocity = 24.0
 
 __meta__ = { "_editor_collapsed":true }
 
-[node name="large_fruit" parent="LargeFruits" instance=ExtResource( 19 )]
+[node name="big_coin" parent="LargeFruits" instance=ExtResource( 19 )]
 
 transform/pos = Vector2( 5052.38, 2158.72 )
 linear_damp = 0.1
@@ -460,7 +460,7 @@ linear_damp = 0.1
 
 transform/pos = Vector2( 7303.36, 3265.24 )
 
-[node name="large_fruit 2" parent="LargeFruits" instance=ExtResource( 19 )]
+[node name="big_coin 2" parent="LargeFruits" instance=ExtResource( 19 )]
 
 transform/pos = Vector2( 9536, 3968 )
 linear_damp = 0.1
@@ -2181,62 +2181,62 @@ transform/rot = 0.063152
 
 transform/pos = Vector2( 2304, 2816 )
 
-[node name="ghost_push" parent="shortcut" instance=ExtResource( 36 )]
+[node name="booster_push" parent="shortcut" instance=ExtResource( 36 )]
 
 transform/pos = Vector2( 2083.77, 2724.04 )
 transform/rot = 149.261
 
-[node name="ghost_push 2" parent="shortcut" instance=ExtResource( 36 )]
+[node name="booster_push 2" parent="shortcut" instance=ExtResource( 36 )]
 
 transform/pos = Vector2( 812.813, 1900.81 )
 transform/rot = 143.017
 
-[node name="ghost_push 3" parent="shortcut" instance=ExtResource( 36 )]
+[node name="booster_push 3" parent="shortcut" instance=ExtResource( 36 )]
 
 transform/pos = Vector2( 160.013, 1312.01 )
 transform/rot = 89.9762
 
-[node name="ghost_push 4" parent="shortcut" instance=ExtResource( 36 )]
+[node name="booster_push 4" parent="shortcut" instance=ExtResource( 36 )]
 
 transform/pos = Vector2( 2059.86, 2635.86 )
 transform/rot = 149.261
 
-[node name="ghost_push 5" parent="shortcut" instance=ExtResource( 36 )]
+[node name="booster_push 5" parent="shortcut" instance=ExtResource( 36 )]
 
 transform/pos = Vector2( 2123.79, 2795.79 )
 transform/rot = 149.612
 
-[node name="ghost_push 6" parent="shortcut" instance=ExtResource( 36 )]
+[node name="booster_push 6" parent="shortcut" instance=ExtResource( 36 )]
 
 transform/pos = Vector2( 876.813, 1868.81 )
 transform/rot = 143.017
 
-[node name="ghost_push 7" parent="shortcut" instance=ExtResource( 36 )]
+[node name="booster_push 7" parent="shortcut" instance=ExtResource( 36 )]
 
 transform/pos = Vector2( 748.813, 1932.81 )
 transform/rot = 143.017
 
-[node name="ghost_push 8" parent="shortcut" instance=ExtResource( 36 )]
+[node name="booster_push 8" parent="shortcut" instance=ExtResource( 36 )]
 
 transform/pos = Vector2( 224.013, 1312.01 )
 transform/rot = 89.9762
 
-[node name="ghost_push 9 2" parent="shortcut" instance=ExtResource( 36 )]
+[node name="booster_push 9 2" parent="shortcut" instance=ExtResource( 36 )]
 
 transform/pos = Vector2( 1644.81, 2444.81 )
 transform/rot = 131.806
 
-[node name="ghost_push 9 3" parent="shortcut" instance=ExtResource( 36 )]
+[node name="booster_push 9 3" parent="shortcut" instance=ExtResource( 36 )]
 
 transform/pos = Vector2( 1580.81, 2476.81 )
 transform/rot = 125.19
 
-[node name="ghost_push 9 4" parent="shortcut" instance=ExtResource( 36 )]
+[node name="booster_push 9 4" parent="shortcut" instance=ExtResource( 36 )]
 
 transform/pos = Vector2( 1228.59, 2252.59 )
 transform/rot = 132.955
 
-[node name="ghost_push 9 5" parent="shortcut" instance=ExtResource( 36 )]
+[node name="booster_push 9 5" parent="shortcut" instance=ExtResource( 36 )]
 
 transform/pos = Vector2( 1292.95, 2220.95 )
 transform/rot = 134.207

@@ -42,7 +42,7 @@ func set_energy(level):
 			n.set_frame(0)
 			
 
-func set_large_fruit_on(idx):
+func set_big_coin_on(idx):
 	get_node("coins/base/large_coin_"+str(idx)).set_frame(1)
 
 func set_fruit_count(count):
@@ -64,9 +64,9 @@ func _ready():
 	# Initalization here
 	var gd = get_tree().get_root().get_node("game_data")
 	var cw = get_tree().get_root().get_node("game_data").current_world
-	for x in range(cw.large_fruits.size()):
-		if (cw.large_fruits[x]):
-			set_large_fruit_on(x)
+	for x in range(cw.big_coins.size()):
+		if (cw.big_coins[x]):
+			set_big_coin_on(x)
 	set_life_count(gd.life_count)
 	update_keys()
 	#make attack area the size of the screen

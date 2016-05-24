@@ -23,11 +23,11 @@ func _on_body_enter( body ):
 
 	if (body extends preload("res://player/alpaca.gd")):
 		print("BODY IN COIN")
-		body.add_large_fruit(fruit_index)
+		body.add_big_coin(fruit_index)
 		var gd = get_tree().get_root().get_node("game_data")
-		print("PRE-SET ",gd.current_large_fruits)
-		gd.current_large_fruits[fruit_index]=true
-		print("POST-SET ",gd.current_large_fruits)
+		print("PRE-SET ",gd.current_big_coins)
+		gd.current_big_coins[fruit_index]=true
+		print("POST-SET ",gd.current_big_coins)
 		get_node("sprite").hide()
 		get_node("shine").set_emitting(true)
 		get_node("sound").play("shine")
@@ -36,7 +36,7 @@ func _on_body_enter( body ):
 func _ready():
 	# Initalization here
 	var cw = get_tree().get_root().get_node("game_data").current_world
-	if (cw.large_fruits[fruit_index]):
+	if (cw.big_coins[fruit_index]):
 		get_node("sprite").set_self_opacity(0.5)
 		
 	
