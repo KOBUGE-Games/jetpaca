@@ -10,6 +10,7 @@ class LevelInfo:
 	var max_fruit = 0
 	var preview_path = ""
 	var path = ""
+	var name = ""
 	var enabled = true
 
 var last_level = 0
@@ -30,6 +31,7 @@ func _init():
 		level.path = stage.path + ".tscn"
 		level.preview_path= stage.path + ".png"
 		level.enabled = true
+		level.name = str(stage.id.x, "-", stage.id.y)
 		levels.push_back(level)
 		prints("Level:", level.id, "path:", level.path)
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=1]
 
-[ext_resource path="res://art/intro_sky_bg.png" type="Texture" id=1]
-[ext_resource path="res://menu/stage_select.gd" type="Script" id=2]
+[ext_resource path="res://menu/stage_select.gd" type="Script" id=1]
+[ext_resource path="res://art/intro_sky_bg.png" type="Texture" id=2]
 [ext_resource path="res://art/world1.png" type="Texture" id=3]
 [ext_resource path="res://art/intro_menu_back.png" type="Texture" id=4]
 [ext_resource path="res://art/intro_menu_back_focus.png" type="Texture" id=5]
@@ -13,7 +13,7 @@ content_margin/right = -1.0
 content_margin/top = -1.0
 content_margin/bottom = -1.0
 
-[node name="TextureFrame" type="TextureFrame"]
+[node name="stage_select" type="Control"]
 
 anchor/right = 1
 anchor/bottom = 1
@@ -21,82 +21,105 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-texture = ExtResource( 1 )
-expand = true
-script/script = ExtResource( 2 )
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 1 )
 __meta__ = { "__editor_plugin_screen__":"2D" }
+column_count = 3
 
-[node name="vbox" type="VBoxContainer" parent="."]
+[node name="background" type="TextureFrame" parent="."]
 
 anchor/right = 1
 anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="items" type="VBoxContainer" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
 margin/left = 20.0
 margin/top = 20.0
 margin/right = 20.0
 margin/bottom = 20.0
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
 alignment = 0
 
-[node name="center" type="CenterContainer" parent="vbox"]
+[node name="world_name" type="CenterContainer" parent="items"]
 
-margin/right = 1240.0
-margin/bottom = 64.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1240.0
+margin/bottom = 64.0
 use_top_left = false
 
-[node name="world" type="TextureFrame" parent="vbox/center"]
+[node name="texture" type="TextureFrame" parent="items/world_name"]
 
-margin/left = 364.0
-margin/right = 876.0
-margin/bottom = 64.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 364.0
+margin/top = 0.0
+margin/right = 876.0
+margin/bottom = 64.0
 texture = ExtResource( 3 )
 
-[node name="tabs" type="TabContainer" parent="vbox"]
+[node name="worlds" type="TabContainer" parent="items"]
 
-margin/top = 68.0
-margin/right = 1240.0
-margin/bottom = 612.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 68.0
+margin/right = 1240.0
+margin/bottom = 612.0
 custom_styles/panel = SubResource( 1 )
 tab_align = 1
 tabs_visible = false
 
-[node name="hbox" type="HBoxContainer" parent="vbox"]
+[node name="buttons" type="HBoxContainer" parent="items"]
 
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
 margin/top = 616.0
 margin/right = 1240.0
 margin/bottom = 680.0
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
 alignment = 0
 
-[node name="back" type="TextureButton" parent="vbox/hbox"]
+[node name="back" type="TextureButton" parent="items/buttons"]
 
-margin/right = 64.0
-margin/bottom = 64.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 64.0
 toggle_mode = false
 textures/normal = ExtResource( 4 )
 textures/focused = ExtResource( 5 )
-
-[connection signal="pressed" from="vbox/hbox/back" to="." method="_on_back_pressed"]
 
 
