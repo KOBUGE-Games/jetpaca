@@ -57,7 +57,6 @@ gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
 script/script = ExtResource( 1 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="collision" type="CollisionShape2D" parent="."]
 

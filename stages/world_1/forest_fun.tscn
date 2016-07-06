@@ -31,7 +31,6 @@
 [node name="stage" type="Node"]
 
 script/script = ExtResource( 1 )
-__meta__ = { "__editor_plugin_screen__":"Script" }
 
 [node name="behind" type="Node" parent="."]
 

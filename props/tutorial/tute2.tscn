@@ -62,7 +62,6 @@ tracks/3/keys = { "times":FloatArray( 0, 0.7, 2.7, 3.5 ), "transitions":FloatArr
 [node name="sprite" type="Sprite"]
 
 texture = ExtResource( 1 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="alpaca" type="Sprite" parent="."]
 

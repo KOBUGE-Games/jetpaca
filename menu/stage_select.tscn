@@ -26,7 +26,6 @@ margin/top = 0.0
 margin/right = 0.0
 margin/bottom = 0.0
 script/script = ExtResource( 1 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 column_count = 3
 
 [node name="background" type="TextureFrame" parent="."]

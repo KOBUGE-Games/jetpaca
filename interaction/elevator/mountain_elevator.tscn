@@ -11,7 +11,6 @@ extents = Vector2( 512, 64 )
 [node name="base" type="Node2D"]
 
 script/script = ExtResource( 1 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 distance = 100
 max_speed = 64.0
 

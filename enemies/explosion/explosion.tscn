@@ -42,7 +42,6 @@ params/anim_initial_pos = 0.0
 randomness/spin_velocity = 1.0
 color/color_ramp = SubResource( 1 )
 script/script = ExtResource( 2 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="player" type="SamplePlayer2D" parent="."]
 

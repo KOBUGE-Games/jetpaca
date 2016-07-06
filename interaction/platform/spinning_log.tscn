@@ -23,7 +23,6 @@ constant_angular_velocity = 6.0
 friction = 1.0
 bounce = 0.0
 script/script = ExtResource( 1 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="sprite" type="Sprite" parent="."]
 

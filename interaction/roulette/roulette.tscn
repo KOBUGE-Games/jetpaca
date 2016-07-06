@@ -248,7 +248,6 @@ extents = Vector2( 20, 10 )
 
 transform/pos = Vector2( 0, -146.895 )
 script/script = ExtResource( 1 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="Ruleta" type="Node2D" parent="."]
 

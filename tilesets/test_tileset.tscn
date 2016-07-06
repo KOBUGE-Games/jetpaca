@@ -24,7 +24,6 @@ points = Vector2Array( 64, 128, 0, 128, 0, 0 )
 
 [node name="Node" type="Node"]
 
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="block" type="Sprite" parent="."]
 

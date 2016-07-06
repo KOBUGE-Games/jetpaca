@@ -14,7 +14,6 @@ colors = ColorArray( 1, 0.884956, 0.265487, 1, 1, 0.0884956, 0, 1, 0.054902, 0.1
 
 texture = ExtResource( 1 )
 script/script = ExtResource( 2 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 trigger_name = ""
 
 [node name="fire" type="Particles2D" parent="."]

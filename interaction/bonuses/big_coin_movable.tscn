@@ -30,7 +30,6 @@ velocity/linear = Vector2( 0, 0 )
 velocity/angular = 0.0
 damp_override/linear = -1.0
 damp_override/angular = -1.0
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 

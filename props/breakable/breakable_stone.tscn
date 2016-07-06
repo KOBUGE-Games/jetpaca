@@ -21,7 +21,6 @@ samples/rock_explode = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
 
 [node name="breakable_stone" type="Node2D"]
 
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="body" type="RigidBody2D" parent="."]
 

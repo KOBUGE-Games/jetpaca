@@ -81,7 +81,6 @@ radius = 128.0
 [node name="door" type="Node2D"]
 
 script/script = ExtResource( 1 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 key_idx = 0
 no_key = false
 

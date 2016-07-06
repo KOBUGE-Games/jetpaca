@@ -15,7 +15,6 @@ scroll/base_scale = Vector2( 1, 1 )
 scroll/limit_begin = Vector2( 0, 0 )
 scroll/limit_end = Vector2( 0, 0 )
 scroll/ignore_camera_zoom = true
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="parallax_bg" type="ParallaxLayer" parent="."]
 

@@ -101,7 +101,6 @@ tracks/1/keys = { "times":FloatArray( 2.98023e-09, 0.2 ), "transitions":FloatArr
 [node name="crosshair" type="Node2D"]
 
 script/script = ExtResource( 1 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="circle" type="Sprite" parent="."]
 

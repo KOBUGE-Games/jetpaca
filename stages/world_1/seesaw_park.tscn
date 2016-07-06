@@ -54,7 +54,6 @@ points = Vector2Array( -65.7889, 15.4698, -533.315, 15.4698, -551.77, -9.1369, -
 [node name="stage" type="Node"]
 
 script/script = ExtResource( 1 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="behind" type="Node" parent="."]
 

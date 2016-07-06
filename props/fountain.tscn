@@ -26,7 +26,6 @@ tracks/1/keys = { "times":FloatArray( 0, 1, 2 ), "transitions":FloatArray( 1.931
 [node name="fuente_base" type="Sprite"]
 
 texture = ExtResource( 1 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="alpacocha" type="Sprite" parent="."]
 

@@ -15,7 +15,6 @@ points = Vector2Array( 231.825, 16.2526, -233.992, 14.4564, -254.35, -4.10443, 2
 
 [node name="Node2D" type="Node2D"]
 
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="base" type="StaticBody2D" parent="."]
 

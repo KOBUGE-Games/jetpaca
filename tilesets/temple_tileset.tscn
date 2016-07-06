@@ -99,7 +99,6 @@ points = Vector2Array( 48, 128, 48, 80, 128, 128 )
 
 [node name="Node" type="Node"]
 
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="floor1" type="Sprite" parent="."]
 

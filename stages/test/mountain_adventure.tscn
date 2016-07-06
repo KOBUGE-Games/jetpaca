@@ -22,7 +22,6 @@ extents = Vector2( 400, 200 )
 [node name="Node" type="Node"]
 
 script/script = ExtResource( 1 )
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="tiles" type="TileMap" parent="."]
 

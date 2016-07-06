@@ -21,7 +21,6 @@ scroll/base_scale = Vector2( 1, 0.05 )
 scroll/limit_begin = Vector2( 0, 0 )
 scroll/limit_end = Vector2( 0, 1024 )
 scroll/ignore_camera_zoom = false
-__meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="ocean_layer" type="ParallaxLayer" parent="."]
 
