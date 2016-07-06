@@ -18,7 +18,8 @@ step = 0.01
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:margin/left")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, -1024.0 ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 4 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, -1024.0 ] }
 
 [sub_resource type="Animation" id=2]
 
@@ -29,7 +30,8 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:margin/left")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 2 ), "transitions":FloatArray( 1, 1 ), "values":[ 0, -1024.0 ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 2 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0, -1024.0 ] }
 
 [sub_resource type="ColorRamp" id=3]
 
@@ -49,19 +51,23 @@ step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("alpaca_container/center/alpaca:transform/pos")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1.99, 4 ), "transitions":FloatArray( 1, 0.574349, 1 ), "values":[ Vector2( 1400, -15 ), Vector2( 1400, -15 ), Vector2( 0, -15 ) ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 1.99, 4 ), "transitions":FloatArray( 1, 0.574349, 1 ), "update":0, "values":[ Vector2( 1400, -15 ), Vector2( 1400, -15 ), Vector2( 0, -15 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("logo_container/logo:visibility/opacity")
 tracks/1/interp = 1
-tracks/1/keys = { "cont":true, "times":FloatArray( 3.61, 4 ), "transitions":FloatArray( 1.7411, 1 ), "values":[ 0.0, 1.0 ] }
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 3.61, 4 ), "transitions":FloatArray( 1.7411, 1 ), "update":0, "values":[ 0.0, 1.0 ] }
 tracks/2/type = "value"
 tracks/2/path = NodePath("tap_to_fly_container/tap_to_fly:visibility/opacity")
 tracks/2/interp = 1
-tracks/2/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 0.0 ] }
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
 tracks/3/type = "value"
 tracks/3/path = NodePath("intro_anim:playback/play")
 tracks/3/interp = 1
-tracks/3/keys = { "cont":false, "times":FloatArray( 3.93 ), "transitions":FloatArray( 1 ), "values":[ "regular" ] }
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 3.93 ), "transitions":FloatArray( 1 ), "update":1, "values":[ "regular" ] }
 
 [sub_resource type="Animation" id=6]
 
@@ -71,11 +77,13 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("alpaca_container/center/alpaca:transform/pos")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 2, 4 ), "transitions":FloatArray( -2, -2, 1 ), "values":[ Vector2( 0, -15 ), Vector2( 0, 15 ), Vector2( 0, -15 ) ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 2, 4 ), "transitions":FloatArray( -2, -2, 1 ), "update":0, "values":[ Vector2( 0, -15 ), Vector2( 0, 15 ), Vector2( 0, -15 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("tap_to_fly_container/tap_to_fly:visibility/opacity")
 tracks/1/interp = 1
-tracks/1/keys = { "cont":true, "times":FloatArray( 0, 1, 2, 3, 4 ), "transitions":FloatArray( -2, -2, -2, -2, -2 ), "values":[ 0.3, 1.0, 0.3, 1.0, 0.3 ] }
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 1, 2, 3, 4 ), "transitions":FloatArray( -2, -2, -2, -2, -2 ), "update":0, "values":[ 0.3, 1.0, 0.3, 1.0, 0.3 ] }
 
 [sub_resource type="StyleBoxEmpty" id=7]
 
@@ -133,6 +141,7 @@ visibility/visible = false
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
 margin/left = 46.0
 margin/top = 222.0
 margin/right = 178.0
@@ -148,6 +157,7 @@ visibility/visible = false
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
 margin/left = 45.0
 margin/top = 27.0
 margin/right = 177.0
@@ -183,6 +193,7 @@ margin/top = 0.0
 margin/right = 1024.0
 margin/bottom = 1024.0
 texture = ExtResource( 2 )
+stretch_mode = 0
 
 [node name="left" type="TextureFrame" parent="sky_background"]
 
@@ -195,6 +206,7 @@ margin/top = 0.0
 margin/right = 2047.0
 margin/bottom = 1024.0
 texture = ExtResource( 2 )
+stretch_mode = 0
 
 [node name="right" type="TextureFrame" parent="sky_background"]
 
@@ -207,6 +219,7 @@ margin/top = 0.0
 margin/right = 3070.0
 margin/bottom = 1024.0
 texture = ExtResource( 2 )
+stretch_mode = 0
 
 [node name="animation" type="AnimationPlayer" parent="sky_background"]
 
@@ -245,6 +258,7 @@ margin/top = 0.0
 margin/right = 1024.0
 margin/bottom = 256.0
 texture = ExtResource( 3 )
+stretch_mode = 0
 
 [node name="center" type="TextureFrame" parent="sky_foreground"]
 
@@ -257,6 +271,7 @@ margin/top = 0.0
 margin/right = 2047.0
 margin/bottom = 256.0
 texture = ExtResource( 3 )
+stretch_mode = 0
 
 [node name="right" type="TextureFrame" parent="sky_foreground"]
 
@@ -269,6 +284,7 @@ margin/top = 0.0
 margin/right = 3070.0
 margin/bottom = 256.0
 texture = ExtResource( 3 )
+stretch_mode = 0
 
 [node name="animation" type="AnimationPlayer" parent="sky_foreground"]
 
@@ -409,6 +425,7 @@ margin/top = 0.0
 margin/right = 896.0
 margin/bottom = 128.0
 texture = ExtResource( 7 )
+stretch_mode = 0
 
 [node name="tap_to_fly_container" type="CenterContainer" parent="."]
 
@@ -437,6 +454,7 @@ margin/top = 43.0
 margin/right = 896.0
 margin/bottom = 107.0
 texture = ExtResource( 8 )
+stretch_mode = 0
 
 [node name="button_play" type="Button" parent="."]
 
@@ -458,6 +476,8 @@ custom_styles/disabled = SubResource( 10 )
 custom_styles/normal = SubResource( 11 )
 toggle_mode = false
 click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
 flat = false
 
 

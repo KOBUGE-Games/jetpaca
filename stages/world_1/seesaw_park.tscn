@@ -60,9 +60,9 @@ __meta__ = { "__editor_plugin_screen__":"2D" }
 
 [node name="ereveta" type="Node2D" parent="behind" groups=[ "elevator_1" ]]
 
+editor/display_folded = true
 transform/pos = Vector2( 8946.44, 6107.07 )
 script/script = ExtResource( 2 )
-__meta__ = { "_editor_collapsed":true }
 distance = -3840
 max_speed = 80.0
 
@@ -71,7 +71,7 @@ max_speed = 80.0
 transform/pos = Vector2( -203.567, 257.235 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 4 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -96,7 +96,7 @@ _update_shape_index = -1
 transform/pos = Vector2( 303.501, 257.235 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 4 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -121,7 +121,7 @@ _update_shape_index = -1
 transform/pos = Vector2( -203.567, -133.295 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 4 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -146,7 +146,7 @@ _update_shape_index = -1
 transform/pos = Vector2( 303.501, -133.295 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 4 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -168,17 +168,17 @@ _update_shape_index = -1
 
 [node name="ereveta_switch" type="Area2D" parent="behind"]
 
+editor/display_folded = true
 transform/pos = Vector2( 9150.82, 6139.63 )
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
 script/script = ExtResource( 4 )
-__meta__ = { "_editor_collapsed":true }
 group = "elevator_1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="behind/ereveta_switch"]
@@ -204,20 +204,21 @@ transform/rot = -142.641
 
 [node name="spinnie" type="RigidBody2D" parent="behind"]
 
+editor/display_folded = true
 transform/pos = Vector2( 10722.9, 2703.65 )
 transform/rot = 9.98306
 input/pickable = false
 shapes/0/shape = SubResource( 3 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, -55, 9 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, -55, 9 )
 shapes/0/trigger = false
 shapes/1/shape = SubResource( 4 )
-shapes/1/transform = Matrix32( 1, -0, 0, 1, 19.2432, 83.4514 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 19.2432, 83.4514 )
 shapes/1/trigger = false
 shapes/2/shape = SubResource( 5 )
-shapes/2/transform = Matrix32( 1, -0, 0, 1, 0.639648, -70.4871 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0.639648, -70.4871 )
 shapes/2/trigger = false
 shapes/3/shape = SubResource( 6 )
-shapes/3/transform = Matrix32( 1, -0, 0, 1, 46.2529, -2.7207 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 46.2529, -2.7207 )
 shapes/3/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -236,7 +237,6 @@ velocity/linear = Vector2( 0, 0 )
 velocity/angular = 0.0
 damp_override/linear = -1.0
 damp_override/angular = -1.0
-__meta__ = { "_editor_collapsed":true }
 
 [node name="Sprite" type="Sprite" parent="behind/spinnie"]
 
@@ -303,9 +303,9 @@ softness = 0.0
 
 [node name="rot" type="Node2D" parent="behind"]
 
+editor/display_folded = true
 transform/pos = Vector2( 13492.2, 4366.05 )
 transform/rot = -90.0
-__meta__ = { "_editor_collapsed":true }
 
 [node name="ereveta 2" type="Node2D" parent="behind/rot" groups=[ "elevator_2" ]]
 
@@ -319,7 +319,7 @@ max_speed = 80.0
 transform/pos = Vector2( -203.567, 257.235 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 4 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -344,7 +344,7 @@ _update_shape_index = -1
 transform/pos = Vector2( 303.501, 257.235 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 4 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -369,7 +369,7 @@ _update_shape_index = -1
 transform/pos = Vector2( -203.567, -133.295 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 4 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -394,7 +394,7 @@ _update_shape_index = -1
 transform/pos = Vector2( 303.501, -133.295 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 4 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -419,7 +419,7 @@ _update_shape_index = -1
 transform/pos = Vector2( 13352.9, 5074.85 )
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -507,7 +507,6 @@ __meta__ = { "_edit_lock_":true }
 [node name="checkpoint" parent="." instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 7660.46, 6751.13 )
-linear_damp = 0.1
 
 [node name="launch" type="Position2D" parent="."]
 
@@ -803,18 +802,15 @@ transform/pos = Vector2( 15103.7, 4685.38 )
 [node name="stage_end" parent="interaction" instance=ExtResource( 15 )]
 
 transform/pos = Vector2( 18718.7, 6387.98 )
-linear_damp = 0.1
 
 [node name="big_coin" parent="interaction" instance=ExtResource( 16 )]
 
 transform/pos = Vector2( 11018.3, 1894.86 )
-linear_damp = 0.1
 fruit_index = 1
 
 [node name="big_coin 2" parent="interaction" instance=ExtResource( 16 )]
 
 transform/pos = Vector2( 14783.7, 5099.28 )
-linear_damp = 0.1
 fruit_index = 2
 
 [node name="floating_spike 59" parent="interaction" instance=ExtResource( 11 )]
@@ -824,7 +820,6 @@ transform/pos = Vector2( 10765.6, 2136.51 )
 [node name="big_coin 3" parent="interaction" instance=ExtResource( 16 )]
 
 transform/pos = Vector2( 6215.76, 5912.52 )
-linear_damp = 0.1
 
 [node name="plank 3" parent="interaction" instance=ExtResource( 10 )]
 
@@ -850,6 +845,7 @@ transform/pos = Vector2( 6280.38, 5583.77 )
 
 transform/pos = Vector2( 6792.88, 5751.97 )
 transform/rot = -88.922
+drop = null
 
 [node name="enemies" type="Node" parent="."]
 
@@ -900,6 +896,5 @@ transform/pos = Vector2( 2508.78, 4600.77 )
 [node name="checkpoint 2" parent="." instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 11538.6, 1571.01 )
-linear_damp = 0.1
 
 

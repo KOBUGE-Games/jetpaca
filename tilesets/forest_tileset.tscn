@@ -84,12 +84,12 @@ segments = Vector2Array( 0, 16, 48, 32, 48, 32, 80, 64, 80, 64, 128, 80, 128, 80
 custom_solver_bias = 0.0
 points = Vector2Array( 0, 16, 62.9757, 11.1615, 128, 16, 128, 48, 0, 48 )
 
-[sub_resource type="ConcavePolygonShape2D" id=19]
+[sub_resource type="ConcavePolygonShape2D" id=17]
 
 custom_solver_bias = 0.0
 segments = Vector2Array( 1.15607, 17.5328, 0, 48, 0, 48, 89.1561, 56.5328, 89.1561, 56.5328, 115.156, 43.5328, 115.156, 43.5328, 79.1561, 49.5328, 79.1561, 49.5328, 42.1561, 41.5328, 42.1561, 41.5328, 1.15607, 17.5328 )
 
-[sub_resource type="ConcavePolygonShape2D" id=20]
+[sub_resource type="ConcavePolygonShape2D" id=18]
 
 custom_solver_bias = 0.0
 segments = Vector2Array( 359.168, 255.026, 355.168, 195.026, 355.168, 195.026, 330.168, 161.026, 330.168, 161.026, 244.168, 177.026, 244.168, 177.026, 205.168, 178.026, 205.168, 178.026, 160.168, 144.026, 160.168, 144.026, 89.1683, 90.0255, 89.1683, 90.0255, 1.16824, 4.02548, 1.16824, 4.02548, 987.168, 0.0254822, 987.168, 0.0254822, 911.168, 40.0255, 911.168, 40.0255, 864.168, 102.026, 864.168, 102.026, 779.168, 133.026, 779.168, 133.026, 663.168, 110.026, 663.168, 110.026, 598.168, 170.026, 598.168, 170.026, 587.168, 256.026, 587.168, 256.026, 359.168, 255.026 )
@@ -584,8 +584,8 @@ region_rect = Rect2( 384, 448, 128, 64 )
 [node name="StaticBody2D" type="StaticBody2D" parent="branch_end"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 19 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 2, 2 )
+shapes/0/shape = SubResource( 17 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 2, 2 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -628,8 +628,8 @@ region_rect = Rect2( 256, 256, 64, 64 )
 [node name="StaticBody2D" type="StaticBody2D" parent="treetop"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 20 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 44.3213, 0 )
+shapes/0/shape = SubResource( 18 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 44.3213, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -673,7 +673,6 @@ region_rect = Rect2( 0, 128, 128, 64 )
 [node name="treepass_middle" type="Sprite" parent="."]
 
 transform/pos = Vector2( 704, 196 )
-transform/scale = Vector2( 1, 1 )
 texture = ExtResource( 3 )
 centered = false
 region = true

@@ -11,7 +11,8 @@ step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("ProgressBar:range/value")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.998316 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, 100.0 ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.998316 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, 100.0 ] }
 
 [node name="progress" type="Control"]
 
@@ -21,6 +22,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
 script/script = ExtResource( 1 )
 __meta__ = { "__editor_plugin_screen__":"2D" }
 
@@ -28,13 +33,14 @@ __meta__ = { "__editor_plugin_screen__":"2D" }
 
 anchor/left = 2
 anchor/top = 2
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
 margin/left = 0.176563
 margin/top = 0.484722
 margin/right = 1077.0
 margin/bottom = 380.0
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
 range/min = 0.0
 range/max = 100.0
 range/step = 1.0

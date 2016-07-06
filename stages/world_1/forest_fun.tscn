@@ -131,7 +131,6 @@ transform/pos = Vector2( 7683.26, 748.107 )
 [node name="carryplat" parent="interact" instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 6812.24, 709.315 )
-linear_damp = 0.1
 
 [node name="treebase 3" parent="interact" instance=ExtResource( 5 )]
 
@@ -268,7 +267,6 @@ transform/pos = Vector2( 15965.5, 2198.38 )
 [node name="carryplat 2" parent="interact" instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 13129.5, 1671.26 )
-linear_damp = 0.1
 
 [node name="spinning_log 14 5 16" parent="interact" instance=ExtResource( 6 )]
 
@@ -317,28 +315,23 @@ transform/pos = Vector2( 16956.2, 2364.62 )
 [node name="checkpoint 2" parent="interact" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 8305.06, 813.122 )
-linear_damp = 0.1
 
 [node name="checkpoint 3" parent="interact" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 13251.3, 916.74 )
-linear_damp = 0.1
 
 [node name="big_coin" parent="interact" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 5918.13, 1659.26 )
-linear_damp = 0.1
 
 [node name="big_coin 2" parent="interact" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 9316.47, 1697.49 )
-linear_damp = 0.1
 fruit_index = 1
 
 [node name="big_coin 3" parent="interact" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 16449.1, 1608.16 )
-linear_damp = 0.1
 fruit_index = 2
 
 [node name="spinning_log 14 5 24" parent="interact" instance=ExtResource( 6 )]
@@ -364,13 +357,11 @@ transform/pos = Vector2( 16713.8, 1865.26 )
 [node name="wise+alpaca" parent="interact" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 6267.65, 815.184 )
-linear_damp = 0.1
 hint = "If you mess up the platform, come back! I\'ll make a new one.."
 
 [node name="wise+alpaca 2" parent="interact" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 14045, 2290.06 )
-linear_damp = 0.1
 hint = "Be careful with that torch, don\'t want to start a fire!"
 
 [node name="roulette" parent="interact" instance=ExtResource( 11 )]
@@ -599,497 +590,398 @@ transform/rot = 44.1446
 [node name="fruit" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 2125.76, 782.048 )
-linear_damp = 0.1
 
 [node name="fruit 2" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 2125.76, 843.417 )
-linear_damp = 0.1
 
 [node name="fruit 3" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 2528, 352 )
-linear_damp = 0.1
 
 [node name="fruit 4" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 2592, 352 )
-linear_damp = 0.1
 
 [node name="fruit 5" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 2656, 352 )
-linear_damp = 0.1
 
 [node name="fruit 6" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 2720, 352 )
-linear_damp = 0.1
 
 [node name="fruit 7" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 3424, 480 )
-linear_damp = 0.1
 
 [node name="fruit 8" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 3456, 480 )
-linear_damp = 0.1
 
 [node name="fruit 9" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 3424, 512 )
-linear_damp = 0.1
 
 [node name="fruit 10" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 3456, 512 )
-linear_damp = 0.1
 
 [node name="fruit 11" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 3424, 544 )
-linear_damp = 0.1
 
 [node name="fruit 12" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 3456, 544 )
-linear_damp = 0.1
 
 [node name="fruit 13" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 4928, 800 )
-linear_damp = 0.1
 
 [node name="fruit 14" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 4928, 736 )
-linear_damp = 0.1
 
 [node name="fruit 15" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 4992, 736 )
-linear_damp = 0.1
 
 [node name="fruit 16" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 4992, 800 )
-linear_damp = 0.1
 
 [node name="fruit 17" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 4928, 672 )
-linear_damp = 0.1
 
 [node name="fruit 18" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 4992, 672 )
-linear_damp = 0.1
 
 [node name="fruit 19" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 6048, 768 )
-linear_damp = 0.1
 
 [node name="fruit 20" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 6048, 704 )
-linear_damp = 0.1
 
 [node name="fruit 21" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 6048, 640 )
-linear_damp = 0.1
 
 [node name="fruit 22" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 6976, 640 )
-linear_damp = 0.1
 
 [node name="fruit 23" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 7104, 640 )
-linear_damp = 0.1
 
 [node name="fruit 24" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 7232, 640 )
-linear_damp = 0.1
 
 [node name="fruit 25" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 7360, 640 )
-linear_damp = 0.1
 
 [node name="fruit 26" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 7488, 640 )
-linear_damp = 0.1
 
 [node name="fruit 27" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 8704, 288 )
-linear_damp = 0.1
 
 [node name="fruit 28" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 8768, 288 )
-linear_damp = 0.1
 
 [node name="fruit 29" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 8640, 288 )
-linear_damp = 0.1
 
 [node name="fruit 30" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 9440, 864 )
-linear_damp = 0.1
 
 [node name="fruit 31" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 9504, 864 )
-linear_damp = 0.1
 
 [node name="fruit 32" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 9440, 928 )
-linear_damp = 0.1
 
 [node name="fruit 33" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 9504, 928 )
-linear_damp = 0.1
 
 [node name="fruit 34" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 9216, 1120 )
-linear_damp = 0.1
 
 [node name="fruit 35" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 9088, 1184 )
-linear_damp = 0.1
 
 [node name="fruit 36" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 8960, 1248 )
-linear_damp = 0.1
 
 [node name="fruit 37" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 8832, 1504 )
-linear_damp = 0.1
 
 [node name="fruit 39" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 9248, 1504 )
-linear_damp = 0.1
 
 [node name="fruit 40" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 9376, 1440 )
-linear_damp = 0.1
 
 [node name="fruit 41" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 9504, 1376 )
-linear_damp = 0.1
 
 [node name="fruit 42" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10400, 1056 )
-linear_damp = 0.1
 
 [node name="fruit 43" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10400, 1152 )
-linear_damp = 0.1
 
 [node name="fruit 44" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10400, 1280 )
-linear_damp = 0.1
 
 [node name="fruit 45" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10400, 1376 )
-linear_damp = 0.1
 
 [node name="fruit 46" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10400, 1376 )
-linear_damp = 0.1
 
 [node name="fruit 47" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10496, 1056 )
-linear_damp = 0.1
 
 [node name="fruit 47 2" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10496, 1152 )
-linear_damp = 0.1
 
 [node name="fruit 47 3" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10496, 1280 )
-linear_damp = 0.1
 
 [node name="fruit 47 4" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10496, 1376 )
-linear_damp = 0.1
 
 [node name="fruit 47 5" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10496, 1376 )
-linear_damp = 0.1
 
 [node name="fruit 48" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10592, 1056 )
-linear_damp = 0.1
 
 [node name="fruit 47 6" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10592, 1152 )
-linear_damp = 0.1
 
 [node name="fruit 47 6 2" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10592, 1280 )
-linear_damp = 0.1
 
 [node name="fruit 47 6 3" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10592, 1376 )
-linear_damp = 0.1
 
 [node name="fruit 47 6 4" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10592, 1376 )
-linear_damp = 0.1
 
 [node name="fruit 49" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10688, 1056 )
-linear_damp = 0.1
 
 [node name="fruit 47 7" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10688, 1152 )
-linear_damp = 0.1
 
 [node name="fruit 47 6 5" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10688, 1280 )
-linear_damp = 0.1
 
 [node name="fruit 47 6 5 2" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10688, 1376 )
-linear_damp = 0.1
 
 [node name="fruit 47 6 5 3" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10688, 1376 )
-linear_damp = 0.1
 
 [node name="fruit 47 6 6" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10784, 1280 )
-linear_damp = 0.1
 
 [node name="fruit 50" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 11776, 1568 )
-linear_damp = 0.1
 
 [node name="fruit 47 8" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10784, 1152 )
-linear_damp = 0.1
 
 [node name="fruit 47 6 5 4" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10784, 1376 )
-linear_damp = 0.1
 
 [node name="fruit 47 6 5 4 2" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10784, 1376 )
-linear_damp = 0.1
 
 [node name="fruit 51" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 11776, 1632 )
-linear_damp = 0.1
 
 [node name="fruit 52" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 11776, 1696 )
-linear_damp = 0.1
 
 [node name="fruit 53" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 11744, 640 )
-linear_damp = 0.1
 
 [node name="fruit 54" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 11808, 640 )
-linear_damp = 0.1
 
 [node name="fruit 55" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 11040, 544 )
-linear_damp = 0.1
 
 [node name="fruit 56" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10912, 544 )
-linear_damp = 0.1
 
 [node name="fruit 57" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10784, 544 )
-linear_damp = 0.1
 
 [node name="fruit 58" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10784, 224 )
-linear_damp = 0.1
 
 [node name="fruit 38" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 8896, 1504 )
-linear_damp = 0.1
 
 [node name="fruit 59" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 10912, 224 )
-linear_damp = 0.1
 
 [node name="fruit 60" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 11040, 224 )
-linear_damp = 0.1
 
 [node name="fruit 61" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 11744, 288 )
-linear_damp = 0.1
 
 [node name="fruit 62" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 11808, 288 )
-linear_damp = 0.1
 
 [node name="fruit 63" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 12224, 288 )
-linear_damp = 0.1
 
 [node name="fruit 64" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 12288, 288 )
-linear_damp = 0.1
 
 [node name="fruit 65" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 13216, 704 )
-linear_damp = 0.1
 
 [node name="fruit 66" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 13216, 608 )
-linear_damp = 0.1
 
 [node name="fruit 67" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 13216, 512 )
-linear_damp = 0.1
 
 [node name="fruit 68" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 13504, 1632 )
-linear_damp = 0.1
 
 [node name="fruit 69" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 13632, 1632 )
-linear_damp = 0.1
 
 [node name="fruit 70" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 13760, 1632 )
-linear_damp = 0.1
 
 [node name="fruit 71" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 14080, 1696 )
-linear_damp = 0.1
 
 [node name="fruit 72" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 14240, 1792 )
-linear_damp = 0.1
 
 [node name="fruit 73" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 14432, 1888 )
-linear_damp = 0.1
 
 [node name="fruit 74" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 14592, 1984 )
-linear_damp = 0.1
 
 [node name="fruit 75" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 15264, 2112 )
-linear_damp = 0.1
 
 [node name="fruit 76" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 15392, 2112 )
-linear_damp = 0.1
 
 [node name="fruit 77" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 15520, 2112 )
-linear_damp = 0.1
 
 [node name="fruit 78" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 15648, 2112 )
-linear_damp = 0.1
 
 [node name="fruit 79" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 16704, 2080 )
-linear_damp = 0.1
 
 [node name="fruit 80" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 16704, 2016 )
-linear_damp = 0.1
 
 [node name="fruit 81" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 16768, 2016 )
-linear_damp = 0.1
 
 [node name="fruit 82" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 16768, 2080 )
-linear_damp = 0.1
 
 [node name="fruit 83" parent="fruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 16768, 2080 )
-linear_damp = 0.1
 
 [node name="over" type="Node" parent="."]
 

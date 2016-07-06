@@ -42,6 +42,4 @@ _update_shape_index = -1
 
 [node name="big_coin" parent="." instance=ExtResource( 1 )]
 
-linear_damp = 0.1
-
 

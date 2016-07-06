@@ -43,6 +43,7 @@ margin/right = 0.0
 margin/bottom = 0.0
 texture = ExtResource( 2 )
 expand = true
+stretch_mode = 0
 
 [node name="items" type="VBoxContainer" parent="."]
 
@@ -81,6 +82,7 @@ margin/top = 0.0
 margin/right = 876.0
 margin/bottom = 64.0
 texture = ExtResource( 3 )
+stretch_mode = 0
 
 [node name="worlds" type="TabContainer" parent="items"]
 
@@ -119,6 +121,8 @@ margin/top = 0.0
 margin/right = 64.0
 margin/bottom = 64.0
 toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
 textures/normal = ExtResource( 4 )
 textures/focused = ExtResource( 5 )
 

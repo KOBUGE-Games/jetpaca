@@ -810,22 +810,18 @@ __meta__ = { "_edit_lock_":true }
 [node name="checkpoint" parent="inbetween" instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 4874.51, 2907 )
-linear_damp = 0.1
 
 [node name="checkpoint 2" parent="inbetween" instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2451.62, 4639.05 )
-linear_damp = 0.1
 
 [node name="stage_end" parent="inbetween" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 4579.8, 7538.26 )
-linear_damp = 0.1
 
 [node name="checkpoint 4" parent="inbetween" instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2181.64, 3870.09 )
-linear_damp = 0.1
 
 [node name="launch" type="Position2D" parent="."]
 
@@ -836,18 +832,15 @@ transform/pos = Vector2( 4322.65, 5332.01 )
 [node name="big_coin" parent="interaction" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 2937.69, 6328.04 )
-linear_damp = 0.1
 fruit_index = 1
 
 [node name="big_coin 2" parent="interaction" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 253.116, 5767.78 )
-linear_damp = 0.1
 
 [node name="big_coin 3" parent="interaction" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 1269.54, 824.856 )
-linear_damp = 0.1
 fruit_index = 2
 
 [node name="house" parent="interaction" instance=ExtResource( 15 )]

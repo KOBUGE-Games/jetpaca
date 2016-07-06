@@ -26,6 +26,7 @@ __meta__ = { "__editor_plugin_screen__":"2D" }
 [node name="ocean_layer" type="ParallaxLayer" parent="."]
 
 motion/scale = Vector2( 0.01, 1 )
+motion/offset = Vector2( 0, 0 )
 motion/mirroring = Vector2( 1024, 0 )
 
 [node name="ocean" type="Sprite" parent="ocean_layer"]
@@ -61,6 +62,7 @@ color/color_ramp = SubResource( 1 )
 [node name="cave_layer" type="ParallaxLayer" parent="."]
 
 motion/scale = Vector2( 0.07, 1 )
+motion/offset = Vector2( 0, 0 )
 motion/mirroring = Vector2( 1024, 0 )
 
 [node name="cave" type="Sprite" parent="cave_layer"]

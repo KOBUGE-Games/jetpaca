@@ -1,31 +1,29 @@
-[gd_scene load_steps=29 format=1]
+[gd_scene load_steps=27 format=1]
 
 [ext_resource path="res://stages/stage.gd" type="Script" id=1]
 [ext_resource path="res://tilesets/test_tileset.tres" type="TileSet" id=2]
-[ext_resource path="res://interaction/boosters/boost_push.tscn" type="PackedScene" id=3]
-[ext_resource path="res://interaction/boosters/boost_directed.tscn" type="PackedScene" id=4]
-[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=5]
-[ext_resource path="res://art/cachos_sacra_pincho/sclera.png" type="Texture" id=6]
-[ext_resource path="res://art/cachos_sacra_pincho/pupilas.png" type="Texture" id=7]
-[ext_resource path="res://art/cachos_sacra_pincho/eye_sparkle.png" type="Texture" id=8]
-[ext_resource path="res://art/cachos_sacra_pincho/parpados_inferiores.png" type="Texture" id=9]
-[ext_resource path="res://art/cachos_sacra_pincho/parpados_superiores.png" type="Texture" id=10]
-[ext_resource path="res://art/cachos_sacra_pincho/mascara.png" type="Texture" id=11]
-[ext_resource path="res://art/cachos_sacra_pincho/eye_glow.png" type="Texture" id=12]
-[ext_resource path="res://art/cachos_sacra_pincho/cejas.png" type="Texture" id=13]
-[ext_resource path="res://art/twirly_particle.png" type="Texture" id=14]
-[ext_resource path="res://art/oily_shadow.png" type="Texture" id=15]
-[ext_resource path="res://sound/spikes_appear.wav" type="Sample" id=16]
-[ext_resource path="res://sound/spikes_hide.wav" type="Sample" id=17]
-[ext_resource path="res://enemies/warrior/warrior.tscn" type="PackedScene" id=18]
-[ext_resource path="res://interaction/bonuses/big_coin.tscn" type="PackedScene" id=19]
-[ext_resource path="res://interaction/bonuses/big_coin_movable.tscn" type="PackedScene" id=20]
-[ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=21]
-[ext_resource path="res://interaction/roulette/roulette.tscn" type="PackedScene" id=22]
-[ext_resource path="res://interaction/platform/spinning_log.tscn" type="PackedScene" id=23]
-[ext_resource path="res://props/breakable/jar3.tscn" type="PackedScene" id=24]
-[ext_resource path="res://enemies/spikes/mountain_long_spikes.tscn" type="PackedScene" id=25]
-[ext_resource path="res://interaction/bonuses/fruit.tscn" type="PackedScene" id=26]
+[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=3]
+[ext_resource path="res://art/cachos_sacra_pincho/sclera.png" type="Texture" id=4]
+[ext_resource path="res://art/cachos_sacra_pincho/pupilas.png" type="Texture" id=5]
+[ext_resource path="res://art/cachos_sacra_pincho/eye_sparkle.png" type="Texture" id=6]
+[ext_resource path="res://art/cachos_sacra_pincho/parpados_inferiores.png" type="Texture" id=7]
+[ext_resource path="res://art/cachos_sacra_pincho/parpados_superiores.png" type="Texture" id=8]
+[ext_resource path="res://art/cachos_sacra_pincho/mascara.png" type="Texture" id=9]
+[ext_resource path="res://art/cachos_sacra_pincho/eye_glow.png" type="Texture" id=10]
+[ext_resource path="res://art/cachos_sacra_pincho/cejas.png" type="Texture" id=11]
+[ext_resource path="res://art/twirly_particle.png" type="Texture" id=12]
+[ext_resource path="res://art/oily_shadow.png" type="Texture" id=13]
+[ext_resource path="res://sound/spikes_appear.wav" type="Sample" id=14]
+[ext_resource path="res://sound/spikes_hide.wav" type="Sample" id=15]
+[ext_resource path="res://enemies/warrior/warrior.tscn" type="PackedScene" id=16]
+[ext_resource path="res://interaction/bonuses/big_coin.tscn" type="PackedScene" id=17]
+[ext_resource path="res://interaction/bonuses/big_coin_movable.tscn" type="PackedScene" id=18]
+[ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=19]
+[ext_resource path="res://interaction/roulette/roulette.tscn" type="PackedScene" id=20]
+[ext_resource path="res://interaction/platform/spinning_log.tscn" type="PackedScene" id=21]
+[ext_resource path="res://props/breakable/jar3.tscn" type="PackedScene" id=22]
+[ext_resource path="res://enemies/spikes/mountain_long_spikes.tscn" type="PackedScene" id=23]
+[ext_resource path="res://interaction/bonuses/fruit.tscn" type="PackedScene" id=24]
 
 [sub_resource type="ColorRamp" id=1]
 
@@ -34,8 +32,8 @@ colors = ColorArray( 1, 1, 1, 0, 1, 1, 1, 0.530973, 1, 1, 1, 0.584071, 1, 1, 1, 
 
 [sub_resource type="SampleLibrary" id=2]
 
-samples/spikes_hide = { "db":0.0, "pitch":1.0, "sample":ExtResource( 17 ) }
-samples/spikes_appear = { "db":0.0, "pitch":1.0, "sample":ExtResource( 16 ) }
+samples/spikes_appear = { "db":0.0, "pitch":1.0, "sample":ExtResource( 14 ) }
+samples/spikes_hide = { "db":0.0, "pitch":1.0, "sample":ExtResource( 15 ) }
 
 [node name="stage" type="Node"]
 
@@ -67,123 +65,23 @@ __meta__ = { "_edit_lock_":true }
 
 [node name="boosters" type="Node" parent="."]
 
-__meta__ = { "_editor_collapsed":true }
-
-[node name="booster_push 5" parent="ghosts" instance=ExtResource( 3 )]
-
-transform/pos = Vector2( 6336, 2016 )
-
-[node name="booster_push 12" parent="ghosts" instance=ExtResource( 3 )]
-
-transform/pos = Vector2( 11680, 2272 )
-
-[node name="booster_push 14" parent="ghosts" instance=ExtResource( 3 )]
-
-transform/pos = Vector2( 13427.8, 2842.42 )
-
-[node name="booster_push" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 2028.86, 1676.86 )
-transform/rot = -37.4414
-
-[node name="booster_push 2" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 3104.17, 2208.17 )
-transform/rot = -0.311006
-
-[node name="booster_push 3" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 5141.75, 2221.79 )
-transform/rot = -0.311006
-
-[node name="booster_push 4" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 7222.73, 2424.8 )
-transform/rot = 37.7563
-
-[node name="booster_push 6" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 7835.28, 1941.78 )
-transform/rot = 52.6578
-
-[node name="booster_push 7" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 9334.85, 935.256 )
-transform/rot = -30.8677
-
-[node name="booster_push 8" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 10105.1, 1512.36 )
-transform/rot = -35.083
-
-[node name="booster_push 10" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 13824.1, 2720.06 )
-
-[node name="booster_push 15" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 15733.8, 2750.33 )
-transform/rot = 0.107657
-
-[node name="booster_push 16" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 16597.3, 2788.1 )
-transform/rot = 0.107657
-
-[node name="booster_push 18" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 17491, 2772.99 )
-transform/rot = -19.5395
-
-[node name="booster_push 19" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 18381.1, 3309.09 )
-transform/rot = -43.261
-
-[node name="booster_push 20" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 19597.2, 4525.23 )
-transform/rot = -43.261
-
-[node name="booster_push 21" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 20461.2, 5389.23 )
-transform/rot = -43.261
-
-[node name="booster_push 9" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 2032.28, 1608.36 )
-transform/rot = -37.4414
-
-[node name="booster_push 13" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 2018.59, 1748.78 )
-transform/rot = -35.7865
-
-[node name="booster_push 22" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 21493.8, 5905.55 )
-transform/rot = 17.8839
-
-[node name="booster_push 23" parent="ghosts" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 21901, 5820.42 )
+editor/display_folded = true
 
 [node name="enemies" type="Node" parent="."]
 
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
 
-[node name="sacra_pinchorb" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 736, 1440 )
 
-[node name="sacra_pinchorb 2" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 2" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 1600, 1536 )
 
 [node name="base_sclera 2" type="Sprite" parent="enemies/sacra_pinchorb 2"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 4 )
 modulate = Color( 0.705882, 0, 0.470588, 1 )
 
 [node name="Position2D" type="Position2D" parent="enemies/sacra_pinchorb 2/base_sclera 2"]
@@ -191,41 +89,41 @@ modulate = Color( 0.705882, 0, 0.470588, 1 )
 [node name="pupils" type="Sprite" parent="enemies/sacra_pinchorb 2/base_sclera 2/Position2D"]
 
 transform/pos = Vector2( 0, 1.58166 )
-texture = ExtResource( 7 )
+texture = ExtResource( 5 )
 modulate = Color( 0.705882, 0, 0.0784314, 1 )
 
 [node name="eye_sparkle" type="Sprite" parent="enemies/sacra_pinchorb 2/base_sclera 2/Position2D/pupils"]
 
 transform/pos = Vector2( -20, -1.4 )
-texture = ExtResource( 8 )
+texture = ExtResource( 6 )
 
 [node name="eye_sparkle 2" type="Sprite" parent="enemies/sacra_pinchorb 2/base_sclera 2/Position2D/pupils"]
 
 transform/pos = Vector2( 16, -1.4 )
-texture = ExtResource( 8 )
+texture = ExtResource( 6 )
 
 [node name="lower_eyelids" type="Sprite" parent="enemies/sacra_pinchorb 2/base_sclera 2"]
 
 transform/pos = Vector2( 0, 14.7446 )
-texture = ExtResource( 9 )
+texture = ExtResource( 7 )
 
 [node name="upper_eyelids" type="Sprite" parent="enemies/sacra_pinchorb 2/base_sclera 2"]
 
 transform/pos = Vector2( 0.63112, -11.7758 )
 transform/rot = -0.602308
-texture = ExtResource( 10 )
+texture = ExtResource( 8 )
 
 [node name="face" type="Sprite" parent="enemies/sacra_pinchorb 2/base_sclera 2"]
 
 transform/pos = Vector2( 0, 7.82262 )
-texture = ExtResource( 11 )
+texture = ExtResource( 9 )
 
 [node name="glow" type="Sprite" parent="enemies/sacra_pinchorb 2/base_sclera 2/face"]
 
 visibility/visible = false
 visibility/blend_mode = 1
 transform/pos = Vector2( -0.427185, 6 )
-texture = ExtResource( 12 )
+texture = ExtResource( 10 )
 vframes = 4
 frame = 3
 
@@ -233,9 +131,9 @@ frame = 3
 
 transform/pos = Vector2( -0.427177, 15.9376 )
 transform/rot = -2.51125
-texture = ExtResource( 13 )
+texture = ExtResource( 11 )
 
-[node name="sacra_pinchorb 3" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 3" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 1216, 1504 )
 
@@ -247,7 +145,7 @@ config/amount = 5
 config/lifetime = 5.0
 config/emitting = false
 config/local_space = false
-config/texture = ExtResource( 14 )
+config/texture = ExtResource( 12 )
 params/direction = 0.0
 params/spread = 180.0
 params/linear_velocity = 30.0
@@ -279,7 +177,7 @@ config/emitting = false
 config/offset = Vector2( 0, 10 )
 config/half_extents = Vector2( 2, 0 )
 config/local_space = false
-config/texture = ExtResource( 15 )
+config/texture = ExtResource( 13 )
 params/direction = 180.0
 params/spread = 270.0
 params/linear_velocity = 5.0
@@ -300,7 +198,7 @@ color/color = Color( 1, 1, 1, 0 )
 
 [node name="base_sclera 2" type="Sprite" parent="enemies/sacra_pinchorb 3"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 4 )
 modulate = Color( 0.705882, 0, 0.470588, 1 )
 
 [node name="Position2D" type="Position2D" parent="enemies/sacra_pinchorb 3/base_sclera 2"]
@@ -308,41 +206,41 @@ modulate = Color( 0.705882, 0, 0.470588, 1 )
 [node name="pupils" type="Sprite" parent="enemies/sacra_pinchorb 3/base_sclera 2/Position2D"]
 
 transform/pos = Vector2( 0, 1.58166 )
-texture = ExtResource( 7 )
+texture = ExtResource( 5 )
 modulate = Color( 0.705882, 0, 0.0784314, 1 )
 
 [node name="eye_sparkle" type="Sprite" parent="enemies/sacra_pinchorb 3/base_sclera 2/Position2D/pupils"]
 
 transform/pos = Vector2( -20, -1.4 )
-texture = ExtResource( 8 )
+texture = ExtResource( 6 )
 
 [node name="eye_sparkle 2" type="Sprite" parent="enemies/sacra_pinchorb 3/base_sclera 2/Position2D/pupils"]
 
 transform/pos = Vector2( 16, -1.4 )
-texture = ExtResource( 8 )
+texture = ExtResource( 6 )
 
 [node name="lower_eyelids" type="Sprite" parent="enemies/sacra_pinchorb 3/base_sclera 2"]
 
 transform/pos = Vector2( 0, 14.7446 )
-texture = ExtResource( 9 )
+texture = ExtResource( 7 )
 
 [node name="upper_eyelids" type="Sprite" parent="enemies/sacra_pinchorb 3/base_sclera 2"]
 
 transform/pos = Vector2( 0.63112, -11.7758 )
 transform/rot = -0.602308
-texture = ExtResource( 10 )
+texture = ExtResource( 8 )
 
 [node name="face" type="Sprite" parent="enemies/sacra_pinchorb 3/base_sclera 2"]
 
 transform/pos = Vector2( 0, 7.82262 )
-texture = ExtResource( 11 )
+texture = ExtResource( 9 )
 
 [node name="glow" type="Sprite" parent="enemies/sacra_pinchorb 3/base_sclera 2/face"]
 
 visibility/visible = false
 visibility/blend_mode = 1
 transform/pos = Vector2( -0.427185, 6 )
-texture = ExtResource( 12 )
+texture = ExtResource( 10 )
 vframes = 4
 frame = 3
 
@@ -350,7 +248,7 @@ frame = 3
 
 transform/pos = Vector2( -0.427177, 15.9376 )
 transform/rot = -2.51125
-texture = ExtResource( 13 )
+texture = ExtResource( 11 )
 
 [node name="player 2" type="SamplePlayer2D" parent="enemies/sacra_pinchorb 3"]
 
@@ -363,487 +261,484 @@ config/polyphony = 1
 config/samples = SubResource( 2 )
 config/pitch_random = 0.0
 
-[node name="sacra_pinchorb 4" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 4" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 8832, 928 )
 
-[node name="sacra_pinchorb 5" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 5" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6656, 1376 )
 
-[node name="sacra_pinchorb 6" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 6" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 5792, 1440 )
 
-[node name="sacra_pinchorb 7" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 7" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6016, 1248 )
 
-[node name="sacra_pinchorb 8" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 8" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6336, 1056 )
 
-[node name="sacra_pinchorb 9" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 9" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6496, 1152 )
 
-[node name="sacra_pinchorb 10" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 10" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6016, 928 )
 
-[node name="sacra_pinchorb 11" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 11" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6464, 960 )
 
-[node name="warrior" parent="enemies" instance=ExtResource( 18 )]
+[node name="warrior" parent="enemies" instance=ExtResource( 16 )]
 
 transform/pos = Vector2( 5696, 1024 )
 
-[node name="warrior 2" parent="enemies" instance=ExtResource( 18 )]
+[node name="warrior 2" parent="enemies" instance=ExtResource( 16 )]
 
 transform/pos = Vector2( 6432, 1504 )
 
-[node name="sacra_pinchorb 12" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 12" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 10688, 1632 )
 
-[node name="sacra_pinchorb 13" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 13" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 10528, 2016 )
 
-[node name="sacra_pinchorb 14" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 14" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 11072, 1920 )
 
-[node name="sacra_pinchorb 15" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 15" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 11424, 1664 )
 
-[node name="sacra_pinchorb 16" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 16" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 11264, 2240 )
 
-[node name="sacra_pinchorb 17" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 17" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 10912, 2240 )
 
-[node name="sacra_pinchorb 18" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 18" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 8160, 1248 )
 
-[node name="sacra_pinchorb 19" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 19" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 8384, 960 )
 
-[node name="warrior 3" parent="enemies" instance=ExtResource( 18 )]
+[node name="warrior 3" parent="enemies" instance=ExtResource( 16 )]
 
 transform/pos = Vector2( 9600, 2816 )
 
-[node name="warrior 5" parent="enemies" instance=ExtResource( 18 )]
+[node name="warrior 5" parent="enemies" instance=ExtResource( 16 )]
 
 transform/pos = Vector2( 19104, 3840 )
 
-[node name="warrior 6" parent="enemies" instance=ExtResource( 18 )]
+[node name="warrior 6" parent="enemies" instance=ExtResource( 16 )]
 
 transform/pos = Vector2( 20288, 5024 )
 
-[node name="sacra_pinchorb 20" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 20" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 9312, 2624 )
 
-[node name="sacra_pinchorb 21" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 21" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 8960, 3008 )
 
-[node name="sacra_pinchorb 22" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 22" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 9312, 3008 )
 
-[node name="sacra_pinchorb 23" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 23" parent="enemies" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 8928, 2560 )
 
 [node name="LargeFruits" type="Node" parent="."]
 
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
 
-[node name="big_coin" parent="LargeFruits" instance=ExtResource( 19 )]
+[node name="big_coin" parent="LargeFruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 5376, 896 )
-linear_damp = 0.1
 
-[node name="big_coin 2" parent="LargeFruits" instance=ExtResource( 19 )]
+[node name="big_coin 2" parent="LargeFruits" instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 9120, 2720 )
-linear_damp = 0.1
 fruit_index = 1
 
-[node name="RigidBody2D" parent="LargeFruits" instance=ExtResource( 20 )]
+[node name="RigidBody2D" parent="LargeFruits" instance=ExtResource( 18 )]
 
 transform/pos = Vector2( 13792, 2880 )
 
 [node name="Checkpoint" type="Node" parent="."]
 
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
 
-[node name="checkpoint" parent="Checkpoint" instance=ExtResource( 21 )]
+[node name="checkpoint" parent="Checkpoint" instance=ExtResource( 19 )]
 
 transform/pos = Vector2( 12960, 2816 )
-linear_damp = 0.1
 
-[node name="roulette" parent="Checkpoint" instance=ExtResource( 22 )]
+[node name="roulette" parent="Checkpoint" instance=ExtResource( 20 )]
 
 transform/pos = Vector2( 22559.3, 5925.31 )
 
 [node name="RollingLogs" type="Node" parent="."]
 
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
 
-[node name="spinning_log 5" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 5" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 13872, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 6" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 6" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 13904, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 7" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 7" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 13936, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 8" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 8" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 13968, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 9" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 9" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14000, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14064, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14096, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14128, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 4" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 4" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14160, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 5" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 5" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14032, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14224, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14256, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14288, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 4" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 4" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14320, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 5" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 5" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14384, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 6" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 6" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14416, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 6 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 6 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14448, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 6 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 6 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14480, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 6 4" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 6 4" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14352, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 6" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 6" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14192, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14544, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14576, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14608, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 4" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 4" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14640, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 5" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 5" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14704, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 7" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 7" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14736, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 7 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 7 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14768, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 7 4" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 7 4" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14672, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 7" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 7" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14512, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 13" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 13" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14800, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 7" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 7" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14832, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 7 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 7 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14864, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 7 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 7 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14896, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 7 4" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 7 4" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14960, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 8" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 8" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14992, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 6 5" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 6 5" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15024, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 6 5 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 6 5 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15056, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 6 5 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 6 5 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 14928, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 13 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 13 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15120, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 6" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 6" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15152, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 6 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 6 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15184, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 6 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 6 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15216, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 6 4" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 6 4" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15280, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 8 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 8 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15312, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 7 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 7 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15344, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 7 5" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 7 5" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15248, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 8" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 8" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15088, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 9" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 9" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15376, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 9" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 9" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15408, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 7 6" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 7 6" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15440, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 14" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 14" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15472, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 8" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 8" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15504, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 7 5" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 7 5" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15536, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 7 5 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 7 5 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15568, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 11 7 5 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 11 7 5 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15632, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 9 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 9 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15664, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 6 6" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 6 6" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15696, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 6 5 4" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 6 5 4" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15728, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 6 5 4 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 6 5 4 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15600, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 13 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 13 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15792, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 9 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 9 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15824, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 6 5" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 6 5" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15856, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 6 5 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 6 5 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15888, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 6 5 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 6 5 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15952, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 8 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 8 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15984, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 7 6 2" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 7 6 2" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 16016, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 10 7 6 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 10 7 6 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15920, 2992 )
 constant_angular_velocity = 200.0
 
-[node name="spinning_log 12 9 3" parent="RollingLogs" instance=ExtResource( 23 )]
+[node name="spinning_log 12 9 3" parent="RollingLogs" instance=ExtResource( 21 )]
 
 transform/pos = Vector2( 15760, 2992 )
 constant_angular_velocity = 200.0
 
 [node name="debris" type="Node" parent="."]
 
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
 
-[node name="jar3" parent="debris" instance=ExtResource( 24 )]
+[node name="jar3" parent="debris" instance=ExtResource( 22 )]
 
 transform/pos = Vector2( 13580.3, 2828.26 )
 transform/rot = -57.0532
@@ -852,1915 +747,1536 @@ transform/rot = -57.0532
 
 [node name="Spikes" type="Node" parent="."]
 
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
 
-[node name="spikes" parent="Spikes" instance=ExtResource( 25 )]
+[node name="spikes" parent="Spikes" instance=ExtResource( 23 )]
 
 transform/pos = Vector2( 21352.7, 6648.63 )
 transform/rot = -76.6778
 
-[node name="spikes 2" parent="Spikes" instance=ExtResource( 25 )]
+[node name="spikes 2" parent="Spikes" instance=ExtResource( 23 )]
 
 transform/pos = Vector2( 21407.5, 6631.5 )
 transform/rot = 79.7102
 
 [node name="collectibles" type="Node" parent="."]
 
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
 
-[node name="fruit" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 512, 1408 )
-linear_damp = 0.1
 
-[node name="fruit 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 576, 1408 )
-linear_damp = 0.1
 
-[node name="fruit 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 512, 1472 )
-linear_damp = 0.1
 
-[node name="fruit 3 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 576, 1472 )
-linear_damp = 0.1
 
-[node name="fruit 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 960, 1440 )
-linear_damp = 0.1
 
-[node name="fruit 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 1024, 1440 )
-linear_damp = 0.1
 
-[node name="fruit 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 960, 1504 )
-linear_damp = 0.1
 
-[node name="fruit 3 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 1024, 1504 )
-linear_damp = 0.1
 
-[node name="fruit 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 1376, 1504 )
-linear_damp = 0.1
 
-[node name="fruit 4 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 1440, 1504 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 1376, 1568 )
-linear_damp = 0.1
 
-[node name="fruit 3 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 1440, 1568 )
-linear_damp = 0.1
 
-[node name="fruit 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2144, 1760 )
-linear_damp = 0.1
 
-[node name="fruit 4 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2208, 1760 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2144, 1824 )
-linear_damp = 0.1
 
-[node name="fruit 3 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2208, 1824 )
-linear_damp = 0.1
 
-[node name="fruit 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2272, 1824 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2272, 1888 )
-linear_damp = 0.1
 
-[node name="fruit 3 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2336, 1888 )
-linear_damp = 0.1
 
-[node name="fruit 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2400, 1888 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2400, 1952 )
-linear_damp = 0.1
 
-[node name="fruit 3 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2464, 1952 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2528, 2016 )
-linear_damp = 0.1
 
-[node name="fruit 3 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2592, 2016 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2656, 2080 )
-linear_damp = 0.1
 
-[node name="fruit 3 9" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 9" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2720, 2080 )
-linear_damp = 0.1
 
-[node name="fruit 4 10" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 10" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2784, 2144 )
-linear_damp = 0.1
 
-[node name="fruit 12" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 12" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2848, 2144 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 9" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 9" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2848, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 3 11" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 11" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 2912, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 13" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 13" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3424, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 12" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 12" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3488, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 10" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 10" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3424, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 3 12" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 12" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3488, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 14" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 14" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3552, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 13" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 13" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3616, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 11" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 11" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3552, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 3 13" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 13" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3616, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 15" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 15" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3680, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 14" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 14" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3744, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 12" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 12" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3680, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 3 14" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 14" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3744, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 16" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 16" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3808, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 15" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 15" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3872, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 13" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 13" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3808, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 3 15" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 15" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3872, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 17" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 17" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3936, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 16" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 16" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4000, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 14" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 14" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 3936, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 3 16" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 16" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4000, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 18" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 18" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4064, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 17" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 17" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4128, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 15" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 15" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4064, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 3 17" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 17" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4128, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 19" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4192, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 18" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4256, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4192, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 3 18" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4256, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 19 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4320, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4384, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4320, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4384, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 19 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4448, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4512, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4448, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4512, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 19 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4576, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4640, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4576, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4640, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 19 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4704, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4768, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4704, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4768, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 19 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4832, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4896, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4832, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 4896, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 20" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 20" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5376, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 19" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 19" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5440, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 17" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 17" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5376, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 3 19" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 19" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5440, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 20 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 20 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5504, 2144 )
-linear_damp = 0.1
 
-[node name="fruit 4 19 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 19 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5568, 2144 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 17 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 17 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5504, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 3 19 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 19 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5568, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 20 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 20 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5632, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 19 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 19 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5696, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 17 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 17 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5632, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 3 19 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 19 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5696, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 20 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 20 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5760, 2144 )
-linear_damp = 0.1
 
-[node name="fruit 4 19 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 19 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5824, 2144 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 17 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 17 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5760, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 3 19 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 19 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5824, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 20 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 20 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5888, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 19 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 19 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5952, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 17 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 17 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5888, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 3 19 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 19 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 5952, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 20 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 20 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6016, 2144 )
-linear_damp = 0.1
 
-[node name="fruit 4 19 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 19 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6080, 2144 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 17 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 17 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6016, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 3 19 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 19 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6080, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6464, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6400, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6464, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6400, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 7 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 7 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6336, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 7 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 7 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6272, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 7 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 7 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6336, 2144 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6272, 2144 )
-linear_damp = 0.1
 
-[node name="fruit 3 19 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 19 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6208, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 17 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 17 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6144, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 4 19 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 19 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6208, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 20 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 20 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6144, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6720, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6656, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6720, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6656, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 9" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 9" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6848, 2336 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 9" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 9" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6784, 2336 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 9" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 9" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6848, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 6784, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 10" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 10" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7392, 2400 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 10" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 10" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7328, 2400 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 10" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 10" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7392, 2336 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7328, 2336 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 11" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 11" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7520, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 11" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 11" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7456, 2272 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 11" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 11" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7520, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7456, 2208 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 12" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 12" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7648, 2144 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 12" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 12" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7584, 2144 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 12" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 12" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7648, 2080 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7584, 2080 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 13" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 13" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7968, 1792 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 13" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 13" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7904, 1792 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 13" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 13" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7968, 1728 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 9" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 9" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 7904, 1728 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 14" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 14" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8096, 1728 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 14" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 14" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8032, 1728 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 14" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 14" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8096, 1664 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 10" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 10" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8032, 1664 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 15" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 15" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8160, 1600 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 15" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 15" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8096, 1600 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 15" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 15" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8160, 1536 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 11" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 11" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8096, 1536 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 16" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 16" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8224, 1472 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 16" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 16" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8160, 1472 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 16" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 16" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8224, 1408 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 12" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 12" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8160, 1408 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 17" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 17" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8704, 960 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 17" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 17" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8640, 960 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 17" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 17" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8704, 896 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 13" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 13" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8640, 896 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 18" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 18" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9056, 960 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 18" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 18" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8992, 960 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 18" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 18" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9056, 896 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 14" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 14" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8992, 896 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 19" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 19" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9664, 1152 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 19" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 19" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9600, 1152 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 19" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 19" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9664, 1088 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 15" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 15" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9600, 1088 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 20" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 20" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9792, 1216 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 20" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 20" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9728, 1216 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 20" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 20" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9792, 1152 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 16" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 16" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9728, 1152 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 21" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 21" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9920, 1280 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 21" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 21" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9856, 1280 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 21" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 21" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9920, 1216 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 17" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 17" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9856, 1216 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 22" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 22" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10560, 1792 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 22" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 22" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10496, 1792 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 22" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 22" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10560, 1728 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 18" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 18" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10496, 1728 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 22 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 22 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10688, 1856 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 22 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 22 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10624, 1856 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 22 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 22 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10688, 1792 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 18 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 18 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10624, 1792 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 22 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 22 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10816, 1920 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 22 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 22 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10752, 1920 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 22 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 22 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10816, 1856 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 18 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 18 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10752, 1856 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 23" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 23" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10944, 2112 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 23" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 23" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10880, 2112 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 23" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 23" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10944, 2048 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 19" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 19" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10880, 2048 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 22 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 22 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 11072, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 22 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 22 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 11008, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 22 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 22 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 11072, 2112 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 18 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 18 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 11008, 2112 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 22 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 22 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 11200, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 22 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 22 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 11136, 2240 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 22 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 22 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 11200, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 18 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 18 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 11136, 2176 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 24" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 24" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 12096, 2432 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 24" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 24" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 12032, 2432 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 24" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 24" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 12096, 2368 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 20" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 20" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 12032, 2368 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 22 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 22 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 12224, 2496 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 22 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 22 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 12160, 2496 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 22 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 22 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 12224, 2432 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 18 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 18 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 12160, 2432 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 22 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 22 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 12352, 2560 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 22 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 22 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 12288, 2560 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 22 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 22 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 12352, 2496 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 18 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 18 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 12288, 2496 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 25" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 25" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9280, 2880 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 25" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 25" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9216, 2880 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 25" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 25" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9280, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 21" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 21" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9216, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 26" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 26" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8992, 2880 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 26" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 26" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8928, 2880 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 26" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 26" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8992, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 22" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 22" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8928, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 27" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 27" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8992, 2656 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 27" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 27" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8928, 2656 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 27" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 27" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8992, 2592 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 23" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 23" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 8928, 2592 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 28" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 28" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9280, 2656 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 28" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 28" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9216, 2656 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 28" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 28" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9280, 2592 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 24" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 24" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9216, 2592 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 29" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 29" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10112, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 29" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 29" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10048, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 29" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 29" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10112, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 25" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 25" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10048, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 30" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 30" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9984, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 30" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 30" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9920, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 30" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 30" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9984, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 26" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 26" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9920, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 31" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 31" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9856, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 31" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 31" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9792, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 31" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 31" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9856, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 27" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 27" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 9792, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 32" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 32" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10400, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 32" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 32" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10336, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 32" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 32" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10400, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 28" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 28" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 10336, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 33" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 33" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14112, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 33" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 33" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14048, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 33" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 33" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14112, 2688 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 29" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 29" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14048, 2688 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 34" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 34" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14240, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 34" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 34" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14176, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 34" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 34" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14240, 2688 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 30" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 30" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14176, 2688 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14368, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 35" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 35" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14304, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 35" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 35" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14368, 2688 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 31" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 31" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14304, 2688 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14496, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 35 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 35 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14432, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 4 18 35 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 18 35 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14496, 2688 )
-linear_damp = 0.1
 
-[node name="fruit 19 7 31 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 19 7 31 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 14432, 2688 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 15200, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 15136, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 15328, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 15264, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 15456, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 15392, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 15584, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 35 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 35 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 15520, 2752 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 37" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 37" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16000, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 37" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 37" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 15936, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16128, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16064, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16256, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16192, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16384, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 35 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 35 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16320, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 38" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 38" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16000, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 38" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 38" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 15936, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16128, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16064, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16256, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16192, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16384, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 35 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 35 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16320, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 39" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 39" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16832, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 39" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 39" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16768, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16960, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16896, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 4 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 4 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17088, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 4 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 4 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17024, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17216, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 35 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 35 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17152, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 39 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 39 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16832, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 39 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 39 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16768, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 6 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 6 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16960, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 6 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 6 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 16896, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 4 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 4 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17088, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 4 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 4 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17024, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 6 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 6 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17216, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 35 6 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 35 6 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17152, 2720 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 35 6 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 35 6 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17984, 2880 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 6 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 6 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18048, 2880 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 4 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 4 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17856, 2848 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 4 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 4 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17920, 2848 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 6 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 6 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17728, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 6 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 6 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17792, 2816 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 39 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 39 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17600, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 39 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 39 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17664, 2784 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 35 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 35 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17984, 2944 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18048, 2944 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 4 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 4 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17856, 2912 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 4 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 4 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17920, 2912 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 36 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 36 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17728, 2880 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 36 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 36 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17792, 2880 )
-linear_damp = 0.1
 
-[node name="fruit 4 4 16 40" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 4 4 16 40" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17600, 2848 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 40" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 40" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 17664, 2848 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18528, 3488 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 9" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 9" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18592, 3552 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18656, 3616 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18720, 3680 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18784, 3744 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18848, 3808 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18912, 3872 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18976, 3936 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18528, 3424 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18592, 3488 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18656, 3552 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18720, 3616 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18976, 3872 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18912, 3808 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18848, 3744 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 18784, 3680 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19360, 4256 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19424, 4320 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19488, 4384 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19552, 4448 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19296, 4192 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19232, 4128 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19168, 4064 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 13" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 13" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19104, 4000 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19296, 4256 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 4 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 4 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19360, 4320 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19424, 4384 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 4 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 4 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19488, 4448 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19232, 4192 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19168, 4128 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 4 2" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 4 2" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19104, 4064 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 14" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 14" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19040, 4000 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19904, 4864 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 4 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 4 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19968, 4928 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20032, 4992 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 4 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 4 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20096, 5056 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19840, 4800 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19776, 4736 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 4 3" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 4 3" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19712, 4672 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 15" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 15" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19648, 4608 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19968, 4864 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 4 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 4 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20032, 4928 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20096, 4992 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 4 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 4 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20160, 5056 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19904, 4800 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19840, 4736 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 4 4" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 4 4" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19776, 4672 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 16" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 16" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 19712, 4608 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 9" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 9" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20480, 5376 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 4 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 4 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20544, 5440 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 9" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 9" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20608, 5504 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 4 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 4 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20672, 5568 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 9" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 9" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20416, 5312 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20352, 5248 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 4 5" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 4 5" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20288, 5184 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 17" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 17" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20224, 5120 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 10" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 10" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20384, 5376 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 4 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 4 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20448, 5440 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 11 10" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 11 10" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20512, 5504 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 4 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 4 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20576, 5568 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 10" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 10" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20320, 5312 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 8" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 8" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20256, 5248 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 4 6" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 4 6" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20192, 5184 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 18" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 18" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20128, 5120 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 11" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 11" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20960, 5888 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 10 11" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 10 11" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20896, 5824 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 9" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 9" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20832, 5760 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 12 5 4 7" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 12 5 4 7" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20768, 5696 )
-linear_damp = 0.1
 
-[node name="fruit 3 18 35 19" parent="collectibles" instance=ExtResource( 26 )]
+[node name="fruit 3 18 35 19" parent="collectibles" instance=ExtResource( 24 )]
 
 transform/pos = Vector2( 20704, 5632 )
-linear_damp = 0.1
 
 

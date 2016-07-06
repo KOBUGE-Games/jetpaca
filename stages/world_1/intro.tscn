@@ -285,47 +285,39 @@ texture = ExtResource( 11 )
 [node name="wise+alpaca 3" parent="interaction" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 2191.54, 4016.43 )
-linear_damp = 0.1
 hint = "Nice Flying!"
 
 [node name="wise+alpaca 4" parent="interaction" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 3665.88, 3247.8 )
-linear_damp = 0.1
 hint = "You have found a secret area! (only I know about it)!"
 
 [node name="wise+alpaca 5" parent="interaction" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 6378.56, 4340.2 )
-linear_damp = 0.1
 hint = "In mid-air, swipe down on both blue nubs to perform a ninja attack!"
 
 [node name="wise+alpaca 6" parent="interaction" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 7948.16, 5072.63 )
-linear_damp = 0.1
 hint = "Enemies are attacking town! Please save us!"
 
 [node name="wise+alpaca 7" parent="interaction" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 11088.6, 5678.3 )
-linear_damp = 0.1
 hint = "Try your luck at the end-of-the-world roulette!"
 
 [node name="checkpoint" parent="interaction" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 8545.08, 5267.29 )
-linear_damp = 0.1
 
 [node name="big_coin" parent="interaction" instance=ExtResource( 15 )]
 
 transform/pos = Vector2( 3507.28, 3093.29 )
-linear_damp = 0.1
 
 [node name="big_coin 2" parent="interaction" instance=ExtResource( 15 )]
 
 transform/pos = Vector2( 8967.11, 4841.45 )
-linear_damp = 0.1
 fruit_index = 1
 
 [node name="roulette" parent="interaction" instance=ExtResource( 16 )]
@@ -344,7 +336,6 @@ transform/scale = Vector2( -1, 1 )
 [node name="big_coin 3" parent="interaction" instance=ExtResource( 15 )]
 
 transform/pos = Vector2( 10239, 5349.28 )
-linear_damp = 0.1
 fruit_index = 2
 
 [node name="breakable_stone" parent="interaction" instance=ExtResource( 18 )]

@@ -10,6 +10,7 @@ radius = 10.0
 
 [node name="RigidBody2D" type="RigidBody2D"]
 
+editor/display_folded = true
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 24, 0, 0, 24, 0, 0 )
@@ -31,7 +32,6 @@ velocity/linear = Vector2( 0, 0 )
 velocity/angular = 0.0
 damp_override/linear = -1.0
 damp_override/angular = -1.0
-__meta__ = { "__editor_plugin_screen__":"2D", "_editor_collapsed":true }
 
 [node name="Sprite" type="Sprite" parent="."]
 

@@ -13,19 +13,23 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("lock:transform/pos")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1, 2, 3 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ) ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 1, 2, 3 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("lock:transform/rot")
 tracks/1/interp = 2
-tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.75, 1.3, 1.75, 2.25, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0.0, 0.0, -2.90706, 1.3486, 0.0, 0.0 ] }
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.75, 1.3, 1.75, 2.25, 3 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "update":0, "values":[ 0.0, 0.0, -2.90706, 1.3486, 0.0, 0.0 ] }
 tracks/2/type = "value"
 tracks/2/path = NodePath("lock/keyhole:transform/pos")
 tracks/2/interp = 1
-tracks/2/keys = { "cont":true, "times":FloatArray( 0, 1, 2, 3 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ Vector2( 0, 14.953 ), Vector2( 0, 14.953 ), Vector2( 0, 14.953 ), Vector2( 0, 14.953 ) ] }
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0, 1, 2, 3 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 14.953 ), Vector2( 0, 14.953 ), Vector2( 0, 14.953 ), Vector2( 0, 14.953 ) ] }
 tracks/3/type = "value"
 tracks/3/path = NodePath("lock/keyhole:transform/rot")
 tracks/3/interp = 1
-tracks/3/keys = { "cont":true, "times":FloatArray( 0, 1, 2, 3 ), "transitions":FloatArray( 1, 1, 1, 1 ), "values":[ 0.0, 0.0, 0.0, 0.0 ] }
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0, 1, 2, 3 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ 0.0, 0.0, 0.0, 0.0 ] }
 
 [sub_resource type="Animation" id=2]
 
@@ -36,19 +40,23 @@ step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("lock:transform/pos")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( 0, 0 ) ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 0, 0 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("lock:transform/rot")
 tracks/1/interp = 2
-tracks/1/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ -8.73539 ] }
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ -8.73539 ] }
 tracks/2/type = "value"
 tracks/2/path = NodePath("lock/keyhole:transform/pos")
 tracks/2/interp = 1
-tracks/2/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ Vector2( 3.94447, 29.1101 ) ] }
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 3.94447, 29.1101 ) ] }
 tracks/3/type = "value"
 tracks/3/path = NodePath("lock/keyhole:transform/rot")
 tracks/3/interp = 1
-tracks/3/keys = { "cont":true, "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "values":[ 18.9723 ] }
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 18.9723 ] }
 
 [sub_resource type="Animation" id=3]
 
@@ -58,19 +66,23 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("lock:transform/pos")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 2 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ) ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 2 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("lock:transform/rot")
 tracks/1/interp = 1
-tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.3, 0.8, 1.2, 1.6, 2 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "values":[ 0.0, -1.99336, 13.7292, -9.7435, -13.5396, -8.73539 ] }
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.3, 0.8, 1.2, 1.6, 2 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "update":0, "values":[ 0.0, -1.99336, 13.7292, -9.7435, -13.5396, -8.73539 ] }
 tracks/2/type = "value"
 tracks/2/path = NodePath("lock/keyhole:transform/pos")
 tracks/2/interp = 1
-tracks/2/keys = { "cont":true, "times":FloatArray( 0, 0.5, 1, 1.5, 2 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ Vector2( 0, 14.953 ), Vector2( 0, 24.8501 ), Vector2( 5.99561, 29.1101 ), Vector2( 2.52446, 27.2168 ), Vector2( 3.94447, 29.1101 ) ] }
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0, 0.5, 1, 1.5, 2 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 14.953 ), Vector2( 0, 24.8501 ), Vector2( 5.99561, 29.1101 ), Vector2( 2.52446, 27.2168 ), Vector2( 3.94447, 29.1101 ) ] }
 tracks/3/type = "value"
 tracks/3/path = NodePath("lock/keyhole:transform/rot")
 tracks/3/interp = 1
-tracks/3/keys = { "cont":true, "times":FloatArray( 0, 0.5, 1, 1.5, 2 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "values":[ 0.0, 0.0, 26.7832, 11.1613, 18.9723 ] }
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0, 0.5, 1, 1.5, 2 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":0, "values":[ 0.0, 0.0, 26.7832, 11.1613, 18.9723 ] }
 
 [node name="Node2D" type="Node2D"]
 

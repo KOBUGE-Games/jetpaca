@@ -48,38 +48,31 @@ __meta__ = { "_edit_lock_":true }
 [node name="fruit" parent="fruits" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 1590.28, 1796.89 )
-linear_damp = 0.1
 
 [node name="fruit 2" parent="fruits" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 1703.85, 1796.89 )
-linear_damp = 0.1
 
 [node name="fruit 3" parent="fruits" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 1814.08, 1796.89 )
-linear_damp = 0.1
 
 [node name="fruit 4" parent="fruits" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 1915.88, 1790.13 )
-linear_damp = 0.1
 
 [node name="big_coin" parent="fruits" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 2380.23, 1561.7 )
-linear_damp = 0.1
 
 [node name="big_coin 2" parent="fruits" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 2647.36, 1380.19 )
-linear_damp = 0.1
 fruit_index = 1
 
 [node name="big_coin 3" parent="fruits" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 2948.74, 1274.02 )
-linear_damp = 0.1
 fruit_index = 2
 
 [node name="checkpoints" type="Node" parent="."]
@@ -87,12 +80,10 @@ fruit_index = 2
 [node name="checkpoint" parent="checkpoints" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1745.53, 1941.48 )
-linear_damp = 0.1
 
 [node name="stage_end" parent="checkpoints" instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 4415.27, 1676.25 )
-linear_damp = 0.1
 next_world = Vector2( 2, 2 )
 
 [node name="launch" type="Position2D" parent="."]
@@ -176,7 +167,7 @@ max_speed = 128.0
 transform/pos = Vector2( 4070.2, 1295.06 )
 input/pickable = true
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, -134.552, -4.20471 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, -134.552, -4.20471 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0

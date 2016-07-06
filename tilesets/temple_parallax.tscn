@@ -19,6 +19,7 @@ __meta__ = { "__editor_plugin_screen__":"2D" }
 [node name="parallax_bg" type="ParallaxLayer" parent="."]
 
 motion/scale = Vector2( 0.3, 0.3 )
+motion/offset = Vector2( 0, 0 )
 motion/mirroring = Vector2( 1024, 1024 )
 
 [node name="Sprite" type="Sprite" parent="parallax_bg"]
