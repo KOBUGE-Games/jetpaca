@@ -54,7 +54,7 @@ func _process(delta):
 			var s = preload("res://enemies/spore_flower/spore.tscn")
 			var sp = s.instance()
 			sp.set_pos(get_node("shooter").get_global_pos())
-			sp.connect("exit_scene", self, "_seed_died")
+			sp.connect("exit_tree", self, "_seed_died")
 			var outvec = -get_global_transform()[1]
 			outvec = Matrix32().rotated((randf()*2.0 - 1.0)*PI*0.5).xform(outvec)
 

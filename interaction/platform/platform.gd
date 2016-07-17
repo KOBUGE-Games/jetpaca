@@ -43,7 +43,7 @@ func _ready():
 func _on_enter_screen():
 	get_node("platform/fire").set_emitting(true)
 
-func _on_enter_exit():
+func _on_exit_screen():
 	get_node("platform/fire").set_emitting(false)
 
 func _on_body_enter(body):

@@ -158,8 +158,6 @@ autostart = false
 
 [connection signal="body_enter" from="area" to="." method="_on_body_enter"]
 
-[connection signal="body_exit" from="area" to="." method="_on_body_exit"]
-
 [connection signal="enter_screen" from="sp2d" to="." method="_on_enter_screen"]
 
 [connection signal="exit_screen" from="sp2d" to="." method="_on_exit_screen"]

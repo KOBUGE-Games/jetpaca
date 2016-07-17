@@ -49,7 +49,7 @@ func fire():
 
 	spawn.set_pos(pos + dir*ofs)
 	parent.add_child(spawn)
-	spawn.connect("exit_scene", self, "_killed_one")
+	spawn.connect("exit_tree", self, "_killed_one")
 	alive += 1
 
 func _on_enter_screen():
