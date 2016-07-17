@@ -125,4 +125,6 @@ shortcut = null
 textures/normal = ExtResource( 4 )
 textures/focused = ExtResource( 5 )
 
+[connection signal="pressed" from="items/buttons/back" to="." method="back_pressed"]
+
 

@@ -9,6 +9,13 @@ onready var tabs = get_node("items/worlds")
 
 func _ready():
 	add_levels()
+	set_process_unhandled_key_input(true)
+
+func _unhandled_key_input(event):
+	if event.is_echo():
+		return
+	if event.is_action("quit") and event.is_pressed():
+		back_pressed()
 
 func add_levels():
 	var world_tabs = {}

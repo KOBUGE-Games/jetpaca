@@ -18,3 +18,5 @@ func settings_pressed():
 func _input(event):
 	if event.is_action("ui_accept") and event.pressed:
 		play_pressed()
+	if event.is_action("quit") and event.pressed:
+		get_tree().quit()
