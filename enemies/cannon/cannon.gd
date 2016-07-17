@@ -4,63 +4,53 @@
 
 extends StaticBody2D
 
-# member variables here, example:
-# var a=2
-# var b="textvar"
+const TYPE_MISSILE = 0
+const TYPE_SEEKER = 1
+const TYPE_BUBBLE = 2
 
-const TYPE_MISSILE=0
-const TYPE_SEEKER=1
-const TYPE_BUBBLE=2
+export(int) var interval = 2.0
+export(int) var max_alive = 4
+export(int, "missile", "heatseeker", "bubbles") var type = 0
 
-export(int) var interval=2.0
-export(int) var max_alive=4
-export(int,"missile","heatseeker","bubbles") var type=0
-
+var alive = 0
 
 func _killed_one():
-	alive-=1
-
-var alive=0
+	alive -= 1
 
 func _on_timeout():
-
 	get_node("anim").play("firing")
 	get_node("anim").queue("idle")
 
 func fire():
-
 	print("TIMEOUT")
 	get_node("timer").set_wait_time(interval)
 	get_node("timer").start()
 
-	if (alive>=max_alive):
+	if alive >= max_alive:
 		return
-	
+
 	var t = get_global_transform()
-	var s
+	var spawn
 	var dir = -t[0]
 	var pos = get_node("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d").get_global_pos()
 	var ofs = 0
-	
-	if (type==TYPE_SEEKER or type==TYPE_MISSILE):
-		s=preload("res://enemies/cannon/heatseeker.tscn").instance()
-		s.set_rot( t.get_rotation() ) 
-		s.set_seek_heat(type==TYPE_SEEKER)
-	elif (type==TYPE_BUBBLE):
-		s=preload("res://enemies/cannon/bubble.tscn").instance()
-		ofs=128
-		
-	var p=get_parent()
-	while(p extends CanvasItem):
-		p=get_parent()
-		
-	s.set_pos(pos+dir*ofs)
-	p.add_child(s)
-	s.connect("exit_scene",self,"_killed_one")
-	alive+=1
-	
 
+	if type == TYPE_SEEKER or type == TYPE_MISSILE:
+		spawn = preload("res://enemies/cannon/heatseeker.tscn").instance()
+		spawn.set_rot(t.get_rotation())
+		spawn.set_seek_heat(type == TYPE_SEEKER)
+	elif type == TYPE_BUBBLE:
+		spawn = preload("res://enemies/cannon/bubble.tscn").instance()
+		ofs = 128
 
+	var parent = get_parent()
+	while parent extends CanvasItem:
+		parent = get_parent()
+
+	spawn.set_pos(pos + dir*ofs)
+	parent.add_child(spawn)
+	spawn.connect("exit_scene", self, "_killed_one")
+	alive += 1
 
 func _on_enter_screen():
 	get_node("timer").set_wait_time(interval)
@@ -71,11 +61,6 @@ func _on_exit_screen():
 	get_node("timer").stop()
 	get_node("anim").set_active(false)
 
-
 func _ready():
-	# Initalization here
 	get_node("anim").play("idle")
 	get_node("anim").set_active(false)
-	pass
-
-

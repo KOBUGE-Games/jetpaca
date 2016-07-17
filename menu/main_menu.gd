@@ -11,12 +11,10 @@ func _ready():
 
 func play_pressed():
 	get_tree().change_scene("res://menu/stage_select.tscn")
-	
+
 func settings_pressed():
 	pass # TODO: make settings screen
 
 func _input(event):
-	if event.is_action("ui_accept") && event.pressed:
+	if event.is_action("ui_accept") and event.pressed:
 		play_pressed()
-
-

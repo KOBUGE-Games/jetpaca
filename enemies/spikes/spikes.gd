@@ -13,10 +13,10 @@ func _ready():
 
 func _on_body_enter(body):
 	if body extends preload("res://player/alpaca.gd"):
-		if !tutorial_mode:
+		if not tutorial_mode:
 			body.hit_begin()
 
 func _on_body_exit(body):
 	if body extends preload("res://player/alpaca.gd"):
-		if !tutorial_mode:
+		if not tutorial_mode:
 			body.hit_end()
