@@ -16,12 +16,10 @@ tracks/0/keys = { "times":FloatArray( 0, 0.25, 0.5, 0.75, 1, 1.4, 1.8, 2.5 ), "t
 
 [node name="button" type="Node2D"]
 
-
 [node name="button" type="Sprite" parent="."]
 
 texture = ExtResource( 1 )
 hframes = 8
-frame = 6
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="button"]
 
