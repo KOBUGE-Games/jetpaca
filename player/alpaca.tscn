@@ -8547,9 +8547,6 @@ scale = Vector2( 1, 1 )
 
 [node name="base" parent="hud" instance=ExtResource( 23 )]
 
-margin/top = 0.0
-margin/bottom = 0.0
-
 [node name="event_sounds" type="SamplePlayer" parent="."]
 
 config/polyphony = 1
@@ -8599,8 +8596,8 @@ anchor_mode = 1
 rotating = false
 current = true
 zoom = Vector2( 1, 1 )
-limit/left = 0
-limit/top = 0
+limit/left = 1
+limit/top = 1
 limit/right = 10000000
 limit/bottom = 10000000
 drag_margin/h_enabled = false
