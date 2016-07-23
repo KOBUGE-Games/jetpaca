@@ -495,7 +495,7 @@ func _unhandled_input(event):
 	if event.is_echo():
 		return
 	if event.is_action("quit") and event.is_pressed():
-		get_node("/root/main").goto_scene("res://menu/stage_select.tscn")
+		main.goto_scene("res://menu/stage_select.tscn")
 
 	if event.is_action("jetpack_right"):
 		moving_right = event.is_pressed()
@@ -587,8 +587,7 @@ func _process(delta):
 		get_node("hud/base").set_energy(energy)
 		if energy == 0: # you lose, player
 			dead = true
-			var gd = get_tree().get_root().get_node("game_data")
-			gd.life_count -= 1
+			game_data.life_count -= 1
 			set_mode(MODE_STATIC)
 			get_node("restart_wait").start()
 			get_node("animation").play("death")
@@ -658,7 +657,7 @@ func _level_end():
 	get_node("../..").level_end()
 
 func end_level(next):
-	get_tree().get_root().get_node("game_data").get_level(next).enabled = true
+	game_data.get_level(next).enabled = true
 	set_mode(MODE_STATIC)
 	get_node("level_end_wait").start()
 
@@ -674,7 +673,7 @@ func add_fruit():
 	get_node("hud/base").set_fruit_count(fruit_count)
 
 func add_key(idx):
-	get_tree().get_root().get_node("game_data").current_keys[idx] = true
+	game_data.current_keys[idx] = true
 	get_node("hud/base").update_keys()
 
 func add_big_coin(idx):
@@ -689,7 +688,7 @@ func restore_life(amount):
 	get_node("hud/base").set_energy(energy)
 
 func _ready():
-	var cp = get_tree().get_root().get_node("game_data").current_checkpoint
+	var cp = game_data.current_checkpoint
 	if cp:
 		print(cp)
 		cp = get_node(cp)

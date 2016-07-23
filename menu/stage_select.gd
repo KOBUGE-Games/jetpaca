@@ -61,8 +61,7 @@ func add_levels():
 
 func select_stage(stage):
 	game_data.current_world = stage
-# 	get_tree().get_root().get_node("game_data").current_checkpoint = null
-	get_tree().get_root().get_node("main").goto_scene(stage.path)
+	main.goto_scene(stage.path)
 
 func back_pressed():
 	get_tree().change_scene("res://menu/main_menu.tscn")

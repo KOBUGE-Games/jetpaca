@@ -5,25 +5,21 @@
 extends Node
 
 func level_end():
-	var gd = get_tree().get_root().get_node("game_data")
-	gd.stage_clear()
-	get_tree().get_root().get_node("main").goto_scene("res://menu/stage_select.tscn")
+	game_data.stage_clear()
+	main.goto_scene("res://menu/stage_select.tscn")
 
 func restart():
-	var gd = get_tree().get_root().get_node("game_data")
-	if gd.life_count < 0: # Out of lives
-		gd.game_over()
-		get_tree().get_root().get_node("main").goto_scene("res://menu/stage_select.tscn")
+	if game_data.life_count < 0: # Out of lives
+		game_data.game_over()
+		main.goto_scene("res://menu/stage_select.tscn")
 	else: # Restart level
-		var wpc = gd.current_world.path
-	# 	get_tree().get_root().get_node("game_data").current_checkpoint = null
-		get_tree().get_root().get_node("main").goto_scene(wpc)
+		var wpc = game_data.current_world.path
+		main.goto_scene(wpc)
 
 func _enter_tree():
-	get_tree().get_root().get_node("game_data").set_current_stage(get_filename())
+	game_data.set_current_stage(get_filename())
 	var charnode = preload("res://player/alpaca.tscn").instance()
 	get_node("launch").add_child(charnode)
-	var gd = get_tree().get_root().get_node("game_data")
-	gd.current_big_coins = [false, false, false]
-	for x in gd.current_world.big_coins:
-		gd.current_big_coins.push_back(x)
+	game_data.current_big_coins = [false, false, false]
+	for x in game_data.current_world.big_coins:
+		game_data.current_big_coins.push_back(x)

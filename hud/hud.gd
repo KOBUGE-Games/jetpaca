@@ -13,13 +13,9 @@ func _on_pause_pressed():
 		get_node("back").show()
 	get_tree().set_pause(!get_tree().is_paused())
 
-	#var gd = get_tree().get_root().get_node("game_data")
-	#var wpc = gd.current_world.path
-	#get_tree().get_root().get_node("main").goto_scene(wpc)
-
 func _on_back_pressed():
 	get_tree().set_pause(false)
-	get_tree().get_root().get_node("main").goto_scene("res://menu/stage_select.tscn")
+	main.goto_scene("res://menu/stage_select.tscn")
 
 func hint_show(text):
 	get_node("anim").get_animation("fadein").track_set_key_value(0, 1, text)
@@ -46,20 +42,17 @@ func set_life_count(count):
 	get_node("fruit_count/life_amount").set_text(str(count))
 
 func update_keys():
-	var gd = get_tree().get_root().get_node("game_data")
 	for x in range(3):
 		var n = get_node("keys/key_" + str(x))
-		if gd.current_keys[x]:
+		if game_data.current_keys[x]:
 			n.show()
 		else:
 			n.hide()
 
 func _ready():
-	var gd = get_tree().get_root().get_node("game_data")
-	var cw = get_tree().get_root().get_node("game_data").current_world
+	var cw = game_data.current_world
 	for x in range(cw.big_coins.size()):
 		if cw.big_coins[x]:
 			set_big_coin_on(x)
-	set_life_count(gd.life_count)
+	set_life_count(game_data.life_count)
 	update_keys()
-	# make attack area the size of the screen

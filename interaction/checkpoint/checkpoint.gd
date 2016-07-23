@@ -11,12 +11,11 @@ func _on_body_enter(body):
 		get_node("anim").play("checked")
 		get_node("tune").play()
 		checked = true
-		var gd = get_tree().get_root().get_node("game_data")
-		gd.current_checkpoint = get_path()
-		var cw = gd.current_world
-		cw.big_coins=[]
+		game_data.current_checkpoint = get_path()
+		var cw = game_data.current_world
+		cw.big_coins = []
 		body.restore_life(2)
 
 		# Save the amount of large fruits collected
-		for x in gd.current_big_coins:
+		for x in game_data.current_big_coins:
 			cw.big_coins.push_back(x)

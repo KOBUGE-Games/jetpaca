@@ -22,16 +22,15 @@ func _on_body_enter(body):
 		print("BODY IN COIN")
 		taken = true
 		body.add_big_coin(fruit_index)
-		var gd = get_tree().get_root().get_node("game_data")
-		print("PRE-SET ", gd.current_big_coins)
-		gd.current_big_coins[fruit_index] = true
-		print("POST-SET ", gd.current_big_coins)
+		print("PRE-SET ", game_data.current_big_coins)
+		game_data.current_big_coins[fruit_index] = true
+		print("POST-SET ", game_data.current_big_coins)
 		get_node("sprite").hide()
 		get_node("shine").set_emitting(true)
 		get_node("sound").play("shine")
 		get_node("deathclock").start()
 
 func _ready():
-	var cw = get_tree().get_root().get_node("game_data").current_world
+	var cw = game_data.current_world
 	if cw.big_coins[fruit_index]:
 		get_node("sprite").set_self_opacity(0.5)
