@@ -251,10 +251,13 @@ script/script = ExtResource( 1 )
 
 [node name="Ruleta" type="Node2D" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 0, -2.86594 )
 __meta__ = { "_edit_lock_":true }
 
 [node name="ruleta_select" type="Node2D" parent="Ruleta"]
+
+editor/display_folded = true
 
 [node name="ruleta" type="Sprite" parent="Ruleta/ruleta_select"]
 
@@ -333,7 +336,6 @@ __meta__ = { "_edit_lock_":true }
 transform/pos = Vector2( 0, 144.626 )
 texture = ExtResource( 10 )
 hframes = 8
-frame = 7
 
 [node name="anim" type="AnimationPlayer" parent="."]
 
