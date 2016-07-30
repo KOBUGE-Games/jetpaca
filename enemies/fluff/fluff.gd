@@ -24,7 +24,7 @@ export var doing_damage = false
 var colors = [Color(0.85, 0.5, 0.85), Color(0.85, 0.85, 0.5), Color(0.5, 0.85, 0.85)]
 
 var sleeping = true
-var action_time = SLEEP_TIME
+var action_time = 0.3 # Be more reactive to wake up
 
 var disabled = true
 var current_anim = ""
@@ -38,6 +38,7 @@ var dead = false
 var spiked_count = 0
 
 func _on_body_enter_spikes(body):
+	set_linear_velocity(get_linear_velocity()) # Wake up
 	if body extends preload("res://player/alpaca.gd"):
 		spiked_count += 1
 
@@ -53,8 +54,6 @@ func _enter_tree():
 	eyes = get_node("base_sclera/Position2D")
 	get_node("anim").play("sleep_loop")
 	get_node("anim").set_active(false)
-	if fluff_type != FLUFF_TYPE_SLEEPY:
-		action_time = SLEEP_TIME
 	var c = colors[fluff_type]
 	c.r *= 0.3
 	c.g *= 0.3
@@ -75,7 +74,6 @@ func attacked(bywho):
 	dead = true
 	get_node("anim").play("die")
 	Physics2DServer.body_add_collision_exception(get_rid(), bywho.get_rid())
-#	explode()
 
 func damage_end():
 	explode()
@@ -177,7 +175,6 @@ func _on_enter_screen():
 	disabled = false
 	current_anim = ""
 #	get_node("smoke").set_emitting(true)
-	#set_sleeping(false)
 	get_node("anim").set_active(true)
 
 func _on_exit_screen():

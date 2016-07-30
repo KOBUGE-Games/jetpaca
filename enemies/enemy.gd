@@ -10,8 +10,9 @@ const DROP_KEY1 = 2
 const DROP_KEY2 = 3
 const DROP_KEY3 = 4
 
+const explosion = preload("res://enemies/explosion/explosion.tscn")
+
 export(int, "None", "Heart", "Key1", "Key2", "Key3") var drop = DROP_NONE
-var explosion = null
 
 func inflicts_damage():
 	return true
@@ -62,7 +63,6 @@ func _on_exit_screen():
 	pass
 
 func _enter_tree():
-	explosion = preload("res://enemies/explosion/explosion.tscn")
 	var c = VisibilityNotifier2D.new()
 	c.connect("enter_screen", self, "_on_enter_screen")
 	c.connect("exit_screen", self, "_on_exit_screen")

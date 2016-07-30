@@ -262,7 +262,6 @@ func _integrate_forces(state):
 						attack_enemy = null
 
 				var attack_dir = attack_vector # (ae.get_global_pos() - pos).normalized()
-				print(attack_dir)
 				lv = attack_dir * ATTACK_SPEED
 
 			if attack_time < 0:
@@ -285,7 +284,6 @@ func _integrate_forces(state):
 		else:
 			v = 1.0
 		accel_x = v*sgn
-		print(accel_x)
 
 	if not jetpack_ignited and moving_left and moving_right:
 		if can_jetpack:
@@ -690,9 +688,7 @@ func restore_life(amount):
 func _ready():
 	var cp = game_data.current_checkpoint
 	if cp:
-		print(cp)
 		cp = get_node(cp)
-		print(cp)
 		if cp:
 			set_global_transform(cp.get_global_transform())
 
