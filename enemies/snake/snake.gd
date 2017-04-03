@@ -10,7 +10,7 @@ const ROLE_TAIL = 2
 const DIR_CHANGE_TIMEOUT = 3.0
 const TARGET_SPEED = 80.0
 const TURN_SPEED = 80.0
-const ATTACK_DISTANCE = 500.0
+const ATTACK_DISTANCE = 800.0
 export(int, "Head", "Middle", "Tail") var role = 0
 
 var target_a = randf()*PI*2.0
@@ -50,9 +50,9 @@ func _integrate_forces(state):
 		if rdist < 0.1 or rdist > 2*PI - 0.1:
 			av = 0
 		elif rdist > PI:
-			av = state.get_step()*TURN_SPEED
-		else:
 			av = -state.get_step()*TURN_SPEED
+		else:
+			av = state.get_step()*TURN_SPEED
 
 		lv = -t[1]*s
 

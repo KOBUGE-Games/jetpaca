@@ -1572,7 +1572,7 @@ _update_shape_index = -1
 
 [node name="screen_proximity" type="VisibilityNotifier2D" parent="."]
 
-rect = Rect2( -10, -10, 20, 20 )
+rect = Rect2( -40, -80, 80, 160 )
 
 [node name="sound" type="SamplePlayer2D" parent="."]
 

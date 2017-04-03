@@ -60,7 +60,7 @@ func _integrate_forces(state):
 		var c = get_closest_character()
 		if c:
 			var dvec = c.get_global_pos() - state.get_transform().get_origin()
-			if abs(dvec.x) < 100 and dvec.y < 0 and dvec.y < 500:
+			if abs(dvec.x) < 100 and dvec.y < 0:# and dvec.y < 500:
 				status = STATUS_JUMP_PREPARE
 				jump_go_up = false
 				new_anim = "jump_begin"
@@ -108,7 +108,7 @@ func _integrate_forces(state):
 	elif status == STATUS_JUMP_UP:
 		anim = "burst_fall"
 		new_anim = "burst_fall"
-		if not get_node("anim").is_active():
+		if get_node("anim").get_pos() >= get_node("anim").get_current_animation_length():
 			status = STATUS_JUMP_FALLING
 			get_node("anim").play("burst")
 			get_node("anim").queue("burst_fall")
