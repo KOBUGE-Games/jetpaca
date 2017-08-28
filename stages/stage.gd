@@ -21,5 +21,6 @@ func _enter_tree():
 	var charnode = preload("res://player/alpaca.tscn").instance()
 	get_node("launch").add_child(charnode)
 	game_data.current_big_coins = [false, false, false]
+	game_data.current_keys = [false, false, false]
 	for x in game_data.current_world.big_coins:
 		game_data.current_big_coins.push_back(x)
