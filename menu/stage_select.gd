@@ -8,6 +8,7 @@ export var column_count = 3
 onready var tabs = get_node("items/worlds")
 
 func _ready():
+	music.change_music_to("res://music/bgm.ogg")
 	add_levels()
 	set_process_unhandled_key_input(true)
 
@@ -61,6 +62,7 @@ func add_levels():
 
 func select_stage(stage):
 	game_data.current_world = stage
+	music.change_music_to(stage.music)
 	main.goto_scene(stage.path)
 
 func back_pressed():

@@ -687,10 +687,8 @@ func restore_life(amount):
 
 func _ready():
 	var cp = game_data.current_checkpoint
-	if cp:
-		cp = get_node(cp)
-		if cp:
-			set_global_transform(cp.get_global_transform())
+	if cp && has_node(cp):
+		set_global_transform(get_node(cp).get_global_transform())
 
 	crosshair = ResourceLoader.load("res://hud/crosshair.tscn").instance()
 	get_node("../..").call_deferred("add_child", crosshair)

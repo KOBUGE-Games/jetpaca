@@ -10,6 +10,7 @@ class LevelInfo:
 	var max_fruit = 0
 	var preview_path = ""
 	var path = ""
+	var music = ""
 	var name = ""
 	var enabled = true
 
@@ -30,6 +31,7 @@ func _init():
 		level.id = stage.id
 		level.path = stage.path + ".tscn"
 		level.preview_path= stage.path + ".png"
+		level.music = stage.music
 		level.enabled = true
 		level.name = str(stage.id.x, "-", stage.id.y)
 		levels.push_back(level)

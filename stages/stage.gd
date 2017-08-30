@@ -14,6 +14,7 @@ func restart():
 		main.goto_scene("res://menu/stage_select.tscn")
 	else: # Restart level
 		var wpc = game_data.current_world.path
+		music.restart_music()
 		main.goto_scene(wpc)
 
 func _enter_tree():
