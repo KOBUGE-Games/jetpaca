@@ -51,7 +51,7 @@ func add_levels():
 		var level_name = Label.new()
 		level_name.set_align(Label.ALIGN_CENTER)
 		level_name.set_text(level.name)
-		level_name.add_font_override("font", preload("res://art/font.xfnt"))
+		level_name.add_font_override("font", preload("res://art/font.fnt"))
 		level_vbox.add_child(level_name)
 
 		if !gave_focus:
