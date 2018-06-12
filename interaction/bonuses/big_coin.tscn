@@ -19,15 +19,32 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprite:frame")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1, 2 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ 0, 10, 0 ] }
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 1, 2 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 10, 0 ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprite:flip_h")
 tracks/1/interp = 1
-tracks/1/keys = { "cont":false, "times":FloatArray( 0, 1.05 ), "transitions":FloatArray( 1, 1 ), "values":[ false, true ] }
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 1.05 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
 
 [sub_resource type="SampleLibrary" id=3]
 
-samples/shine = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
+samples/shine = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 4 )
+}
 
 [node name="big_coin" type="Area2D"]
 
@@ -76,6 +93,7 @@ config/amount = 8
 config/lifetime = 0.3
 config/emit_timeout = 0.5
 config/emitting = false
+config/process_mode = 1
 config/half_extents = Vector2( 40, 40 )
 config/texture = ExtResource( 3 )
 params/direction = 0.0

@@ -14,37 +14,72 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("circle:transform/scale")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.2 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( 4, 4 ), Vector2( 1, 1 ) ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.2 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 4, 4 ), Vector2( 1, 1 ) ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("circle:visibility/opacity")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.2 ), "transitions":FloatArray( 4.43828, 1 ), "update":0, "values":[ 0.0, 0.7 ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 0.2 ),
+"transitions": FloatArray( 4.43828, 1 ),
+"update": 0,
+"values": [ 0.0, 0.7 ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("circle:transform/rot")
 tracks/2/interp = 1
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 0.2 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 90.0, 0.0 ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 0.2 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 90.0, 0.0 ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("circle/arrow:transform/pos")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 0, -28 ) ] }
+tracks/3/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -28 ) ]
+}
 tracks/4/type = "value"
 tracks/4/path = NodePath("circle/arrow 2:transform/pos")
 tracks/4/interp = 1
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 28, 0 ) ] }
+tracks/4/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Vector2( 28, 0 ) ]
+}
 tracks/5/type = "value"
 tracks/5/path = NodePath("circle/arrow 3:transform/pos")
 tracks/5/interp = 1
 tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 0, 28 ) ] }
+tracks/5/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 28 ) ]
+}
 tracks/6/type = "value"
 tracks/6/path = NodePath("circle/arrow 4:transform/pos")
 tracks/6/interp = 1
 tracks/6/imported = false
-tracks/6/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -28, 0 ) ] }
+tracks/6/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Vector2( -28, 0 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 
@@ -55,32 +90,62 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("circle:transform/rot")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 1 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, -90.0 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, -90.0 ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("circle/arrow 4:transform/pos")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0.00847012, 0.5, 1 ), "transitions":FloatArray( -2, -2, 1 ), "update":0, "values":[ Vector2( -28, 0 ), Vector2( -23, 0 ), Vector2( -28, 0 ) ] }
+tracks/1/keys = {
+"times": FloatArray( 0.00847012, 0.5, 1 ),
+"transitions": FloatArray( -2, -2, 1 ),
+"update": 0,
+"values": [ Vector2( -28, 0 ), Vector2( -23, 0 ), Vector2( -28, 0 ) ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("circle/arrow 3:transform/pos")
 tracks/2/interp = 1
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0.00847012, 0.5, 1 ), "transitions":FloatArray( -2, -2, 1 ), "update":0, "values":[ Vector2( 0, 28 ), Vector2( 0, 23 ), Vector2( 0, 28 ) ] }
+tracks/2/keys = {
+"times": FloatArray( 0.00847012, 0.5, 1 ),
+"transitions": FloatArray( -2, -2, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 28 ), Vector2( 0, 23 ), Vector2( 0, 28 ) ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("circle/arrow 2:transform/pos")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0.00847012, 0.5, 1 ), "transitions":FloatArray( -2, -2, 1 ), "update":0, "values":[ Vector2( 28, 0 ), Vector2( 23, 0 ), Vector2( 28, 0 ) ] }
+tracks/3/keys = {
+"times": FloatArray( 0.00847012, 0.5, 1 ),
+"transitions": FloatArray( -2, -2, 1 ),
+"update": 0,
+"values": [ Vector2( 28, 0 ), Vector2( 23, 0 ), Vector2( 28, 0 ) ]
+}
 tracks/4/type = "value"
 tracks/4/path = NodePath("circle/arrow:transform/pos")
 tracks/4/interp = 1
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0.00847012, 0.5, 1 ), "transitions":FloatArray( -2, -2, 1 ), "update":0, "values":[ Vector2( 0, -28 ), Vector2( 0, -23 ), Vector2( 0, -28 ) ] }
+tracks/4/keys = {
+"times": FloatArray( 0.00847012, 0.5, 1 ),
+"transitions": FloatArray( -2, -2, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -28 ), Vector2( 0, -23 ), Vector2( 0, -28 ) ]
+}
 tracks/5/type = "value"
 tracks/5/path = NodePath("circle:visibility/opacity")
 tracks/5/interp = 1
 tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.7 ] }
+tracks/5/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ 0.7 ]
+}
 
 [sub_resource type="Animation" id=3]
 
@@ -91,12 +156,22 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("circle:transform/scale")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 2.98023e-09, 0.2 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( 1, 1 ), Vector2( 4, 4 ) ] }
+tracks/0/keys = {
+"times": FloatArray( 2.98023e-09, 0.2 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 4, 4 ) ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("circle:visibility/opacity")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 2.98023e-09, 0.2 ), "transitions":FloatArray( 1, 4.43828 ), "update":0, "values":[ 0.7, 0.0 ] }
+tracks/1/keys = {
+"times": FloatArray( 2.98023e-09, 0.2 ),
+"transitions": FloatArray( 1, 4.43828 ),
+"update": 0,
+"values": [ 0.7, 0.0 ]
+}
 
 [node name="crosshair" type="Node2D"]
 

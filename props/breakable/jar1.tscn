@@ -27,7 +27,12 @@ colors = ColorArray( 1, 1, 1, 1, 0.435294, 0.442478, 0.469027, 1, 0, 0, 0, 0 )
 
 [sub_resource type="SampleLibrary" id=5]
 
-samples/break = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
+samples/break = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 4 )
+}
 
 [node name="jar" type="RigidBody2D"]
 
@@ -79,6 +84,7 @@ config/amount = 16
 config/lifetime = 0.7
 config/emit_timeout = 0.7
 config/emitting = false
+config/process_mode = 1
 config/half_extents = Vector2( 16, 16 )
 config/local_space = false
 config/explosiveness = 0.1

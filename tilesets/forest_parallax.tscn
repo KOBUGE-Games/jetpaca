@@ -87,6 +87,7 @@ visibility/blend_mode = 1
 transform/pos = Vector2( 512, 512 )
 config/amount = 64
 config/lifetime = 3.0
+config/process_mode = 1
 config/half_extents = Vector2( 512, 512 )
 config/texture = ExtResource( 6 )
 params/direction = 0.0

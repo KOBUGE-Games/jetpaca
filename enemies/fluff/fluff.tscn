@@ -3221,11 +3221,13 @@ radius = 180.0
 samples/spikes_appear = {
 "db": 0.0,
 "pitch": 1.0,
+"priority": 0,
 "sample": ExtResource( 17 )
 }
 samples/spikes_hide = {
 "db": 0.0,
 "pitch": 1.0,
+"priority": 0,
 "sample": ExtResource( 18 )
 }
 

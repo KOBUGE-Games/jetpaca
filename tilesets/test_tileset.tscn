@@ -24,7 +24,6 @@ points = Vector2Array( 64, 128, 0, 128, 0, 0 )
 
 [node name="Node" type="Node"]
 
-
 [node name="block" type="Sprite" parent="."]
 
 texture = ExtResource( 1 )

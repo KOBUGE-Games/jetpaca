@@ -38,6 +38,7 @@ centered = false
 transform/pos = Vector2( 512, 768 )
 config/amount = 32
 config/lifetime = 2.0
+config/process_mode = 1
 config/half_extents = Vector2( 512, 256 )
 config/texture = ExtResource( 2 )
 params/direction = 0.0

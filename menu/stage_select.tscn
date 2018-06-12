@@ -124,6 +124,8 @@ enabled_focus_mode = 2
 shortcut = null
 textures/normal = ExtResource( 4 )
 textures/focused = ExtResource( 5 )
+params/resize_mode = 0
+params/stretch_mode = 0
 
 [connection signal="pressed" from="items/buttons/back" to="." method="back_pressed"]
 

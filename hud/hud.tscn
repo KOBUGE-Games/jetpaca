@@ -43,17 +43,32 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("dialog/text:text")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 1 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ "", "It\'s dangerous to go out. Take this jetpack!" ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ "", "It's dangerous to go out. Take this jetpack!" ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("dialog:visibility/opacity")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 1 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, 1.0 ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("dialog:visibility/visible")
 tracks/2/interp = 1
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
+tracks/2/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=3]
 
@@ -64,12 +79,22 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("dialog:visibility/visible")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.93 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ true, false ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.93 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("dialog:visibility/opacity")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 1 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 1.0, 0.0 ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.0 ]
+}
 
 [sub_resource type="Animation" id=4]
 
@@ -81,22 +106,42 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("jp_right/attack:modulate")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.5, 1 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.672566, 1, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 0.672566, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("jp_right/attack:visibility/opacity")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.5, 1 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ 1.0, 0.6, 1.0 ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.6, 1.0 ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("jp_left/attack:modulate")
 tracks/2/interp = 1
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 0.5, 1 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.672566, 1, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 0.672566, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("jp_left/attack:visibility/opacity")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.5, 1 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ 1.0, 0.6, 1.0 ] }
+tracks/3/keys = {
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.6, 1.0 ]
+}
 
 [sub_resource type="Animation" id=5]
 
@@ -108,22 +153,42 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("jp_right/attack:modulate")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/0/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("jp_left/attack:modulate")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Color( 1, 1, 1, 1 ) ] }
+tracks/1/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("jp_left/attack:visibility/opacity")
 tracks/2/interp = 1
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 1 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.8, 0.1 ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.8, 0.1 ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("jp_right/attack:visibility/opacity")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 1 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.8, 0.1 ] }
+tracks/3/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.8, 0.1 ]
+}
 
 [node name="hud" type="ReferenceFrame"]
 
@@ -252,7 +317,7 @@ custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 0.707965 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
-text = "It\'s dangerous to go out. Take this jetpack!"
+text = "It's dangerous to go out. Take this jetpack!"
 autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -388,6 +453,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 textures/normal = ExtResource( 11 )
+params/resize_mode = 0
+params/stretch_mode = 0
 
 [node name="back" type="TextureButton" parent="."]
 
@@ -405,6 +472,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 textures/normal = ExtResource( 12 )
+params/resize_mode = 0
+params/stretch_mode = 0
 
 [node name="jp_left" type="Control" parent="."]
 

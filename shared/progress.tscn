@@ -12,7 +12,12 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("ProgressBar:range/value")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.998316 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, 100.0 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.998316 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 100.0 ]
+}
 
 [node name="progress" type="Control"]
 

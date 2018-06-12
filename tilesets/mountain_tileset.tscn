@@ -17,7 +17,7 @@ points = Vector2Array( 128, 192, 0, 192, 0, 24, 64, 48, 128, 88 )
 custom_solver_bias = 0.0
 points = Vector2Array( 0, 24, 64, 88, 64, 192, 0, 192 )
 
-[sub_resource type="ConcavePolygonShape2D" id=18]
+[sub_resource type="ConcavePolygonShape2D" id=4]
 
 custom_solver_bias = 0.0
 segments = Vector2Array( 0, 24, 64, 72, 64, 72, 128, 88, 128, 88, 128, 192, 128, 192, 0, 192, 0, 192, 0, 24 )
@@ -213,7 +213,7 @@ region_rect = Rect2( 256, 128, 128, 192 )
 [node name="static_body_2d" type="StaticBody2D" parent="Ramp End"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 18 )
+shapes/0/shape = SubResource( 4 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -225,7 +225,7 @@ bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Ramp End/static_body_2d"]
 
-shape = SubResource( 18 )
+shape = SubResource( 4 )
 trigger = false
 _update_shape_index = 0
 

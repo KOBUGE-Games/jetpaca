@@ -36,42 +36,87 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("up:transform/pos")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 2 ), "transitions":FloatArray( -2, 1 ), "update":0, "values":[ Vector2( -1.629, -68.4185 ), Vector2( 0, -144.982 ) ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 2 ),
+"transitions": FloatArray( -2, 1 ),
+"update": 0,
+"values": [ Vector2( -1.629, -68.4185 ), Vector2( 0, -144.982 ) ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("down/CollisionPolygon2D:transform/pos")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 0, 0 ) ] }
+tracks/1/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("lock:visibility/opacity")
 tracks/2/interp = 1
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 2 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 1.0, 0.0 ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 2 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.0 ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("down:transform/pos")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 2 ), "transitions":FloatArray( -2, 1 ), "update":0, "values":[ Vector2( 0, 54.7333 ), Vector2( 0, 126.755 ) ] }
+tracks/3/keys = {
+"times": FloatArray( 0, 2 ),
+"transitions": FloatArray( -2, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 54.7333 ), Vector2( 0, 126.755 ) ]
+}
 tracks/4/type = "value"
 tracks/4/path = NodePath("smoke:config/emitting")
 tracks/4/interp = 1
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 2 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ true, false ] }
+tracks/4/keys = {
+"times": FloatArray( 0, 2 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
 tracks/5/type = "value"
 tracks/5/path = NodePath("smoke 2:config/emitting")
 tracks/5/interp = 1
 tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0, 2 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ true, false ] }
+tracks/5/keys = {
+"times": FloatArray( 0, 2 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
 tracks/6/type = "value"
 tracks/6/path = NodePath("SamplePlayer2D:play/play")
 tracks/6/interp = 1
 tracks/6/imported = false
-tracks/6/keys = { "times":FloatArray( 0, 1.74 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ "door_open", "door_slam" ] }
+tracks/6/keys = {
+"times": FloatArray( 0, 1.74 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ "door_open", "door_slam" ]
+}
 
 [sub_resource type="SampleLibrary" id=6]
 
-samples/door_open = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
-samples/door_slam = { "db":0.0, "pitch":1.0, "sample":ExtResource( 5 ) }
+samples/door_open = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 4 )
+}
+samples/door_slam = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 5 )
+}
 
 [sub_resource type="CircleShape2D" id=7]
 
@@ -90,6 +135,7 @@ transform/pos = Vector2( 0.735107, -125.701 )
 config/amount = 32
 config/lifetime = 2.0
 config/emitting = false
+config/process_mode = 1
 config/texture = ExtResource( 2 )
 params/direction = 0.0
 params/spread = 180.0
@@ -115,6 +161,7 @@ transform/pos = Vector2( 2.20529, 112.469 )
 config/amount = 32
 config/lifetime = 2.0
 config/emitting = false
+config/process_mode = 1
 config/texture = ExtResource( 2 )
 params/direction = 0.0
 params/spread = 180.0

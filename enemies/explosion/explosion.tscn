@@ -11,7 +11,12 @@ colors = ColorArray( 1, 0.59292, 0.238938, 0.345133, 0.529412, 0, 0.389381, 1, 0
 
 [sub_resource type="SampleLibrary" id=2]
 
-samples/magic_explosion = { "db":0.0, "pitch":1.0, "sample":ExtResource( 3 ) }
+samples/magic_explosion = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 3 )
+}
 
 [node name="enemy_explosion" type="Particles2D"]
 
@@ -20,6 +25,7 @@ config/amount = 16
 config/lifetime = 2.0
 config/emit_timeout = 1.5
 config/emitting = false
+config/process_mode = 1
 config/half_extents = Vector2( 32, 32 )
 config/explosiveness = 0.1
 config/texture = ExtResource( 1 )

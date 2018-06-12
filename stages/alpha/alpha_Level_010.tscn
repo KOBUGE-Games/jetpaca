@@ -46,7 +46,9 @@ collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray( 1441851, 536870912, 1441852, 536870912, 1441853, 536870912, 1507385, 1073741826, 1507391, 1610612738, 1572919, 1073741826, 1572929, 1610612738, 1638453, 1073741826, 1638467, 1610612738, 1703987, 1073741826, 1704005, 1610612738, 1769521, 1073741826, 1769543, 1610612738, 1835055, 1073741826, 1835081, 1610612738, 1900589, 1073741826, 1900618, 536870912, 1966118, 536870912, 1966119, 536870912, 1966120, 536870912, 1966121, 536870912, 1966122, 536870912, 1966123, 1073741826, 1966154, 536870912, 2031654, 536870912, 2031690, 536870912, 2097190, 536870912, 2097226, 536870912, 2097227, 536870912, 2097228, 536870912, 2097229, 536870912, 2097230, 536870912, 2097231, 536870912, 2097232, 536870912, 2162726, 536870912, 2162770, 1610612738, 2162771, 536870912, 2162772, 536870912, 2162773, 536870912, 2162774, 536870912, 2162775, 536870912, 2162776, 536870912, 2162777, 536870912, 2162778, 536870912, 2162779, 536870912, 2162780, 536870912, 2162781, 536870912, 2162782, 536870912, 2162783, 536870912, 2162784, 536870912, 2162785, 536870912, 2162786, 536870912, 2162787, 536870912, 2162788, 536870912, 2162789, 536870912, 2162790, 536870912, 2162799, 536870912, 2162800, 536870912, 2162801, 536870912, 2162802, 536870912, 2162803, 536870912, 2162804, 536870912, 2162805, 536870912, 2162806, 536870912, 2162807, 536870912, 2228262, 536870912, 2228326, 536870912, 2228335, 536870912, 2228343, 536870912, 2293798, 536870912, 2293862, 536870912, 2293871, 536870912, 2293879, 536870912, 2359334, 536870912, 2359335, 536870912, 2359336, 536870912, 2359337, 536870912, 2359338, 536870912, 2359378, 536870914, 2359379, 536870912, 2359380, 536870912, 2359381, 536870912, 2359382, 536870912, 2359383, 536870912, 2359384, 536870912, 2359385, 536870912, 2359386, 536870912, 2359387, 536870912, 2359388, 536870912, 2359389, 536870912, 2359390, 536870912, 2359391, 536870912, 2359392, 536870912, 2359393, 536870912, 2359394, 536870912, 2359398, 536870912, 2359407, 536870912, 2359415, 536870912, 2424874, 0, 2424905, 536870914, 2424906, 536870912, 2424907, 536870912, 2424908, 536870912, 2424909, 536870912, 2424910, 536870912, 2424911, 536870912, 2424912, 536870912, 2424926, 536870912, 2424930, 536870912, 2424934, 536870912, 2424943, 536870912, 2424947, 1073741824, 2424951, 536870912, 2490410, 536870912, 2490439, 536870914, 2490462, 536870912, 2490466, 536870912, 2490470, 536870912, 2490479, 536870912, 2490483, 1073741824, 2490487, 536870912, 2555946, 536870912, 2555973, 536870914, 2555998, 536870912, 2556002, 536870912, 2556006, 536870912, 2556015, 536870912, 2556019, 1073741824, 2556023, 536870912, 2621482, 536870912, 2621507, 536870914, 2621534, 536870912, 2621538, 536870912, 2621542, 536870912, 2621551, 536870912, 2621555, 536870912, 2621559, 536870912, 2687018, 536870912, 2687034, 536870912, 2687035, 536870912, 2687036, 536870912, 2687037, 536870912, 2687038, 536870912, 2687039, 536870912, 2687040, 536870912, 2687041, 536870912, 2687070, 536870912, 2687074, 536870912, 2687078, 536870912, 2687087, 536870912, 2687091, 536870912, 2687095, 536870912, 2752554, 536870912, 2752570, 536870912, 2752606, 536870912, 2752610, 536870912, 2752614, 536870912, 2752623, 536870912, 2752627, 536870912, 2752631, 536870912, 2818090, 536870912, 2818106, 536870912, 2818142, 536870912, 2818146, 536870912, 2818150, 536870912, 2818159, 536870912, 2818163, 536870912, 2818167, 536870912, 2883626, 536870912, 2883642, 536870912, 2883678, 536870912, 2883682, 536870912, 2883686, 536870912, 2883695, 536870912, 2883699, 536870912, 2883703, 536870912, 2949162, 536870912, 2949178, 536870912, 2949214, 536870912, 2949218, 536870912, 2949222, 536870912, 2949231, 536870912, 2949235, 536870912, 2949239, 536870912, 3014698, 536870912, 3014714, 536870912, 3014750, 536870912, 3014754, 536870912, 3014758, 536870912, 3014767, 536870912, 3014771, 536870912, 3014775, 536870912, 3014856, 1073741824, 3014857, 1073741824, 3014858, 1073741824, 3014859, 1073741824, 3080234, 536870912, 3080250, 536870912, 3080286, 536870912, 3080290, 536870912, 3080294, 536870912, 3080303, 536870912, 3080307, 536870912, 3080311, 536870912, 3080391, 1073741825, 3080396, 1610612737, 3145770, 536870912, 3145786, 536870912, 3145822, 536870912, 3145826, 536870912, 3145830, 536870912, 3145831, 536870912, 3145832, 536870912, 3145833, 536870912, 3145834, 536870912, 3145835, 536870912, 3145836, 536870912, 3145837, 536870912, 3145838, 536870912, 3145839, 536870912, 3145843, 536870912, 3145847, 536870912, 3145926, 1073741825, 3145933, 1610612737, 3211306, 536870912, 3211322, 536870912, 3211358, 536870912, 3211362, 536870912, 3211379, 536870912, 3211383, 536870912, 3211394, 536870912, 3211395, 536870912, 3211396, 536870912, 3211397, 536870912, 3211398, 536870912, 3211399, 0, 3211400, 0, 3211401, 0, 3211402, 0, 3211403, 0, 3211404, 0, 3211405, 0, 3211406, 0, 3211407, 0, 3211408, 0, 3211409, 0, 3211410, 0, 3211411, 0, 3211412, 0, 3211413, 0, 3211414, 0, 3211415, 0, 3211416, 0, 3211417, 0, 3211418, 0, 3211419, 0, 3211420, 0, 3211421, 0, 3211422, 0, 3211423, 0, 3211424, 0, 3211425, 0, 3211426, 0, 3211427, 0, 3211428, 0, 3211429, 0, 3211430, 0, 3211431, 0, 3211432, 0, 3211433, 0, 3211434, 0, 3211435, 0, 3211436, 0, 3211437, 0, 3211438, 0, 3211439, 0, 3211440, 0, 3211441, 0, 3211442, 0, 3211443, 0, 3211444, 0, 3211445, 0, 3211446, 0, 3211447, 0, 3211448, 0, 3211449, 0, 3211450, 0, 3211451, 0, 3211452, 0, 3211453, 0, 3211454, 0, 3211455, 0, 3211456, 0, 3211457, 0, 3211458, 0, 3211459, 0, 3211460, 0, 3211461, 1073741825, 3211470, 1610612737, 3211471, 1610612736, 3211472, 0, 3211473, 0, 3211474, 0, 3211475, 0, 3211476, 0, 3276842, 536870912, 3276858, 536870912, 3276894, 536870912, 3276898, 536870912, 3276915, 536870912, 3276919, 536870912, 3276928, 1073741826, 3277012, 0, 3342378, 536870912, 3342394, 536870912, 3342416, 536870912, 3342417, 536870912, 3342418, 536870912, 3342419, 536870912, 3342420, 536870912, 3342421, 536870912, 3342422, 536870912, 3342423, 536870912, 3342424, 536870912, 3342425, 536870912, 3342426, 536870912, 3342427, 536870912, 3342428, 536870912, 3342429, 536870912, 3342430, 536870912, 3342434, 536870912, 3342435, 536870912, 3342436, 536870912, 3342437, 536870912, 3342438, 536870912, 3342439, 536870912, 3342440, 536870912, 3342441, 536870912, 3342442, 536870912, 3342443, 536870912, 3342444, 536870912, 3342445, 536870912, 3342446, 536870912, 3342447, 536870912, 3342448, 536870912, 3342449, 536870912, 3342450, 536870912, 3342451, 536870912, 3342455, 536870912, 3342462, 1073741826, 3342548, 0, 3407914, 536870912, 3407930, 536870912, 3407952, 536870912, 3407991, 536870912, 3407996, 1073741826, 3408084, 0, 3473450, 536870912, 3473466, 536870912, 3473488, 536870912, 3473527, 536870912, 3473530, 1073741826, 3473579, 0, 3473580, 1, 3473583, 1610612737, 3473584, 0, 3473585, 1, 3473620, 0, 3538986, 536870912, 3539002, 536870912, 3539024, 536870912, 3539027, 536870912, 3539028, 536870912, 3539029, 536870912, 3539030, 536870912, 3539031, 536870912, 3539032, 536870912, 3539033, 536870912, 3539034, 536870912, 3539035, 536870912, 3539036, 536870912, 3539037, 536870912, 3539038, 536870912, 3539039, 536870912, 3539040, 536870912, 3539041, 536870912, 3539042, 536870912, 3539043, 536870912, 3539044, 536870912, 3539045, 536870912, 3539046, 536870912, 3539047, 536870912, 3539048, 536870912, 3539049, 536870912, 3539050, 536870912, 3539051, 536870912, 3539052, 536870912, 3539053, 536870912, 3539054, 536870912, 3539055, 536870912, 3539056, 536870912, 3539057, 536870912, 3539058, 536870912, 3539059, 536870912, 3539060, 536870912, 3539061, 536870912, 3539062, 536870912, 3539063, 536870912, 3539064, 1073741826, 3539115, 0, 3539117, 1, 3539120, 1610612737, 3539122, 0, 3539123, 0, 3539156, 0, 3604522, 536870912, 3604538, 536870912, 3604560, 536870912, 3604563, 536870912, 3604572, 536870912, 3604580, 536870912, 3604598, 1073741826, 3604651, 0, 3604654, 1, 3604657, 1610612737, 3604659, 1610612736, 3604692, 0, 3670058, 536870912, 3670074, 536870912, 3670096, 536870912, 3670099, 536870912, 3670108, 536870912, 3670116, 536870912, 3670132, 1073741826, 3670139, 536870914, 3670140, 536870912, 3670141, 536870912, 3670142, 536870912, 3670143, 536870912, 3670144, 536870912, 3670145, 1, 3670187, 0, 3670191, 1, 3670194, 1610612737, 3670195, 1610612736, 3670228, 0, 3735594, 536870912, 3735610, 536870912, 3735632, 536870912, 3735635, 536870912, 3735644, 536870912, 3735652, 536870912, 3735666, 1073741826, 3735673, 536870914, 3735682, 1, 3735700, 0, 3735701, 0, 3735702, 0, 3735723, 0, 3735728, 1, 3735764, 0, 3801130, 536870912, 3801146, 536870912, 3801168, 536870912, 3801171, 536870912, 3801180, 536870912, 3801184, 536870912, 3801188, 536870912, 3801200, 1073741826, 3801207, 536870914, 3801219, 1, 3801236, 0, 3801237, 0, 3801238, 0, 3801259, 0, 3801265, 1, 3801300, 0, 3866666, 536870912, 3866682, 536870912, 3866704, 536870912, 3866707, 536870912, 3866716, 536870912, 3866720, 536870912, 3866724, 536870912, 3866734, 1073741826, 3866741, 536870914, 3866755, 0, 3866756, 0, 3866757, 0, 3866758, 0, 3866759, 0, 3866760, 0, 3866761, 0, 3866762, 0, 3866763, 0, 3866764, 0, 3866765, 0, 3866766, 0, 3866767, 0, 3866768, 0, 3866769, 0, 3866770, 0, 3866771, 0, 3866772, 0, 3866773, 0, 3866774, 0, 3866775, 0, 3866776, 0, 3866777, 0, 3866778, 0, 3866779, 0, 3866780, 0, 3866781, 0, 3866782, 0, 3866783, 0, 3866784, 0, 3866785, 0, 3866786, 0, 3866787, 0, 3866788, 0, 3866789, 0, 3866790, 0, 3866791, 0, 3866792, 0, 3866793, 0, 3866794, 0, 3866795, 0, 3866802, 1610612736, 3866803, 1610612736, 3866804, 1610612736, 3866805, 1610612736, 3866806, 1610612736, 3866807, 1610612736, 3866808, 1610612736, 3866809, 1610612736, 3866810, 1610612736, 3866811, 1610612736, 3866812, 0, 3866813, 0, 3866814, 0, 3866815, 0, 3866816, 0, 3866817, 0, 3866818, 0, 3866819, 0, 3866820, 0, 3866821, 0, 3866822, 0, 3866823, 0, 3866826, 0, 3866827, 0, 3866828, 0, 3866829, 0, 3866830, 0, 3866831, 0, 3866832, 0, 3866833, 0, 3866834, 0, 3866835, 0, 3866836, 0, 3932202, 536870912, 3932218, 536870912, 3932240, 536870912, 3932243, 536870912, 3932244, 536870912, 3932245, 536870912, 3932246, 536870912, 3932247, 536870912, 3932248, 536870912, 3932249, 536870912, 3932250, 536870912, 3932251, 536870912, 3932252, 536870912, 3932256, 536870912, 3932260, 536870912, 3932261, 536870912, 3932262, 536870912, 3932263, 536870912, 3932264, 536870912, 3932265, 536870912, 3932266, 536870912, 3932267, 536870912, 3932268, 1073741826, 3932275, 536870914, 3932359, 0, 3932362, 0, 3997738, 536870912, 3997754, 536870912, 3997776, 536870912, 3997792, 536870912, 3997809, 536870914, 3997895, 0, 3997898, 0, 4063274, 536870912, 4063290, 536870912, 4063312, 536870912, 4063328, 536870912, 4063343, 536870914, 4063431, 0, 4063434, 0, 4128810, 536870912, 4128826, 536870912, 4128848, 536870912, 4128849, 536870912, 4128850, 536870912, 4128851, 536870912, 4128852, 536870912, 4128853, 536870912, 4128854, 536870912, 4128855, 536870912, 4128856, 536870912, 4128857, 536870912, 4128858, 536870912, 4128859, 536870912, 4128860, 536870912, 4128861, 536870912, 4128862, 536870912, 4128863, 536870912, 4128864, 536870912, 4128865, 536870912, 4128866, 536870912, 4128867, 536870912, 4128868, 536870912, 4128869, 536870912, 4128870, 536870912, 4128871, 536870912, 4128872, 536870912, 4128873, 536870912, 4128874, 536870912, 4128875, 536870912, 4128876, 536870912, 4128877, 536870912, 4128967, 0, 4128970, 0, 4194346, 536870912, 4194362, 536870912, 4194503, 0, 4194506, 0, 4259882, 536870912, 4259898, 536870912, 4260039, 0, 4260042, 0, 4325418, 536870912, 4325434, 536870912, 4325575, 0, 4325578, 0, 4390954, 536870912, 4390970, 536870912, 4391111, 0, 4391112, 0, 4391113, 0, 4391114, 0, 4456490, 536870912, 4456506, 536870912, 4522026, 536870912, 4522042, 536870912, 4587562, 536870912, 4587578, 536870912, 4653098, 536870912, 4653114, 536870912, 4718634, 536870912, 4718650, 536870912, 4784170, 536870912, 4784186, 536870912, 4849706, 536870912, 4849722, 536870912, 4915242, 536870912, 4915258, 536870912, 4980778, 536870912, 4980794, 536870912, 5046314, 536870912, 5046330, 536870912, 5111850, 536870912, 5111866, 536870912, 5177386, 536870912, 5177402, 536870912, 5242922, 536870912, 5242938, 536870912, 5308458, 536870912, 5308474, 536870912, 5373994, 536870912, 5373995, 536870912, 5373996, 536870912, 5373997, 536870912, 5373998, 536870912, 5373999, 536870912, 5374000, 536870912, 5374001, 536870912, 5374002, 536870912, 5374003, 536870912, 5374004, 536870912, 5374005, 536870912, 5374006, 536870912, 5374007, 536870912, 5374008, 536870912, 5374009, 536870912, 5374010, 536870912 )
-__meta__ = { "_edit_lock_":true }
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Pushes" type="Node" parent="."]
 
@@ -56,181 +58,149 @@ editor/display_folded = true
 
 transform/pos = Vector2( 3160.91, 2577.78 )
 transform/rot = 87.0044
-drop = null
 
 [node name="booster_push 3" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 5392, 2240 )
-drop = null
 
 [node name="booster_push 4" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 5840, 2240 )
-drop = null
 
 [node name="booster_push 5" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6432, 2240 )
 transform/rot = -90.0
-drop = null
 
 [node name="booster_push 6" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 7520, 2288 )
 transform/rot = -90.0
-drop = null
 
 [node name="booster_push 7" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 7280, 2272 )
-drop = null
 
 [node name="booster_push 8" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6432, 3200 )
-drop = null
 
 [node name="booster_push 9" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6432, 2736 )
 transform/rot = -90.0
-drop = null
 
 [node name="booster_push 10" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6880, 3200 )
-drop = null
 
 [node name="booster_push 11" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 7264, 3184 )
 transform/rot = 90.0
-drop = null
 
 [node name="booster_push 12" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 7520, 2608 )
 transform/rot = -90.0
-drop = null
 
 [node name="booster_push 13" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 7520, 3392 )
 transform/rot = 180.0
-drop = null
 
 [node name="booster_push 14" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6944, 3392 )
 transform/rot = 180.0
-drop = null
 
 [node name="booster_push 15" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6528, 3392 )
 transform/rot = 180.0
-drop = null
 
 [node name="booster_push 16" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 5792, 3392 )
 transform/rot = 180.0
-drop = null
 
 [node name="booster_push" parent="Pushes" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 6176, 3232 )
-drop = null
 
 [node name="booster_push 17" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 7264, 2720 )
 transform/rot = 90.0
-drop = null
 
 [node name="booster_push 18" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 7264, 3392 )
 transform/rot = 180.0
-drop = null
 
 [node name="booster_push 19" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 7520, 2976 )
 transform/rot = -90.0
-drop = null
 
 [node name="booster_push 20" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 5504, 3392 )
 transform/rot = 180.0
-drop = null
 
 [node name="booster_push 21" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 5248, 3392 )
 transform/rot = 270.0
-drop = null
 
 [node name="booster_push 22" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 5248, 3968 )
-drop = null
 
 [node name="booster_push 23" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 5520, 3968 )
-drop = null
 
 [node name="booster_push 24" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 5808, 3968 )
-drop = null
 
 [node name="booster_push 25" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6048, 3968 )
 transform/rot = 90.0
-drop = null
 
 [node name="booster_push 26" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6048, 3600 )
-drop = null
 
 [node name="booster_push 27" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6304, 3600 )
 transform/rot = 270.0
-drop = null
 
 [node name="booster_push 28" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6304, 3984 )
-drop = null
 
 [node name="booster_push 29" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 6704, 3968 )
-drop = null
 
 [node name="booster_push 30" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 7019.87, 3947.87 )
 transform/rot = 30.7777
-drop = null
 
 [node name="booster_push 31" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 7627.65, 3643.65 )
 transform/rot = 29.692
-drop = null
 
 [node name="booster_push 32" parent="Pushes" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 7307.1, 3803.1 )
 transform/rot = 27.231
-drop = null
 
 [node name="FirePlanks" type="Node" parent="."]
 
@@ -245,7 +215,9 @@ transform/pos = Vector2( 3136, 2464 )
 transform/pos = Vector2( 4647.11, 1971.25 )
 trigger_name = "door 1"
 
-[node name="door" parent="FirePlanks" groups=[ "door 1" ] instance=ExtResource( 7 )]
+[node name="door" parent="FirePlanks" groups=[
+"door 1",
+] instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 4777.32, 2252.14 )
 no_key = true
@@ -469,67 +441,54 @@ transform/pos = Vector2( 3104, 5216 )
 [node name="booster_push" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 2784, 4960 )
-drop = null
 
 [node name="booster_push 2" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 2848, 4960 )
-drop = null
 
 [node name="booster_push 3" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 2912, 4960 )
-drop = null
 
 [node name="booster_push 4" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 3168, 4960 )
-drop = null
 
 [node name="booster_push 4 2" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 3232, 4960 )
-drop = null
 
 [node name="booster_push 4 3" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 3296, 4960 )
-drop = null
 
 [node name="booster_push 4 4" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 3488, 4960 )
-drop = null
 
 [node name="booster_push 5" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 3360, 4960 )
-drop = null
 
 [node name="booster_push 4 4 2" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 3424, 4960 )
-drop = null
 
 [node name="booster_push 4 5" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 3680, 4960 )
-drop = null
 
 [node name="booster_push 6" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 3552, 4960 )
-drop = null
 
 [node name="booster_push 4 4 3" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 3616, 4960 )
-drop = null
 
 [node name="booster_push 7" parent="bottom pit" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 2976, 4960 )
-drop = null
 
 [node name="Physics spikes" type="Node" parent="bottom pit"]
 
@@ -654,135 +613,113 @@ editor/display_folded = true
 
 transform/pos = Vector2( 11461.3, 3717.34 )
 transform/rot = -190.593
-drop = null
 
 [node name="booster_push 34" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 11320.5, 3624.5 )
 transform/rot = -225.934
-drop = null
 
 [node name="booster_push 35" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 11080.6, 3368.6 )
 transform/rot = -297.698
-drop = null
 boost_value = 400
 
 [node name="booster_push 39" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 11936, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 40" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 11872, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 41" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 11808, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 41 2" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 11744, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 42" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 11680, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 41 3" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 11616, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 36" parent="Puzzle Spiked wall" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 11648, 3424 )
-drop = null
 
 [node name="booster_push 37" parent="Puzzle Spiked wall" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 11776, 3424 )
-drop = null
 
 [node name="booster_push 38" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 11916, 3563.97 )
 transform/rot = -329.13
-drop = null
 boost_value = 2000
 
 [node name="booster_push 43" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12128, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 43 2" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12064, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 43 3" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12000, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 44" parent="Puzzle Spiked wall" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 12256, 3232 )
-drop = null
 
 [node name="booster_push 46" parent="Puzzle Spiked wall" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 12256, 3360 )
-drop = null
 
 [node name="booster_push 47" parent="Puzzle Spiked wall" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 12256, 3424 )
-drop = null
 
 [node name="booster_push 45" parent="Puzzle Spiked wall" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 12256, 3296 )
-drop = null
 
 [node name="booster_push 48" parent="Puzzle Spiked wall" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 12256, 3488 )
-drop = null
 
 [node name="booster_push 49" parent="Puzzle Spiked wall" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 12256, 3552 )
-drop = null
 
 [node name="booster_push 50" parent="Puzzle Spiked wall" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 12256, 3616 )
-drop = null
 
 [node name="RigidBody2D 2" parent="Puzzle Spiked wall" instance=ExtResource( 14 )]
 
@@ -818,21 +755,18 @@ mass = 0.1
 
 transform/pos = Vector2( 12192, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 57" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12256, 3680 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 58" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12256, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="RigidBody2D" parent="Puzzle Spiked wall" instance=ExtResource( 18 )]
@@ -843,67 +777,57 @@ transform/pos = Vector2( 11360, 3296 )
 
 transform/pos = Vector2( 12448, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 51 2" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12384, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 51 3" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12320, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 51 4" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12640, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 43 4" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12576, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 43 4 3" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12512, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 43 4 3 2" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12704, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 59" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12768, 3744 )
 transform/rot = -180.0
-drop = null
 boost_value = 600
 
 [node name="booster_push 52" parent="Puzzle Spiked wall" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 12832, 3808 )
-drop = null
 
 [node name="booster_push 53" parent="Puzzle Spiked wall" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 12896, 3808 )
-drop = null
 
 [node name="RigidBody2D 10" parent="Puzzle Spiked wall" instance=ExtResource( 14 )]
 
@@ -917,14 +841,12 @@ transform/pos = Vector2( 12896, 3808 )
 
 transform/pos = Vector2( 12652.9, 3564.91 )
 transform/rot = -307.883
-drop = null
 boost_value = 2500
 
 [node name="booster_push 56" parent="Puzzle Spiked wall" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 12864, 3104 )
 transform/rot = 270.0
-drop = null
 boost_value = 2500
 
 [node name="RigidBody2D 3" parent="Puzzle Spiked wall" instance=ExtResource( 14 )]

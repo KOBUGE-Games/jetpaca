@@ -91,6 +91,7 @@ config/amount = 20
 config/lifetime = 1.0
 config/emit_timeout = 1.0
 config/emitting = false
+config/process_mode = 1
 config/half_extents = Vector2( 15, 15 )
 config/explosiveness = 0.1
 config/texture = ExtResource( 3 )

@@ -16,12 +16,22 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("water1:visibility/opacity")
 tracks/0/interp = 2
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 1, 2 ), "transitions":FloatArray( 1, 2.2974, 1 ), "update":0, "values":[ 0.0, 1.0, 0.0 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 1, 2 ),
+"transitions": FloatArray( 1, 2.2974, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 0.0 ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("water2:visibility/opacity")
 tracks/1/interp = 2
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 1, 2 ), "transitions":FloatArray( 1.93187, 1, 1.93187 ), "update":0, "values":[ 1.0, 0.0, 1.0 ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 1, 2 ),
+"transitions": FloatArray( 1.93187, 1, 1.93187 ),
+"update": 0,
+"values": [ 1.0, 0.0, 1.0 ]
+}
 
 [node name="fuente_base" type="Sprite"]
 
@@ -63,6 +73,7 @@ transform/pos = Vector2( -159.581, -74.2997 )
 transform/rot = -3.22068
 config/amount = 16
 config/lifetime = 1.55
+config/process_mode = 1
 config/texture = ExtResource( 5 )
 params/direction = 0.0
 params/spread = 10.0

@@ -43,6 +43,7 @@ transform/pos = Vector2( 215.382, -130.846 )
 transform/rot = -179.267
 config/amount = 16
 config/lifetime = 2.0
+config/process_mode = 1
 config/half_extents = Vector2( 5, 5 )
 config/local_space = false
 config/texture = ExtResource( 4 )

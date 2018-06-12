@@ -24,42 +24,82 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("cannon_sprites_r90/r-arm:transform/pos")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -36.4533, 21.3428 ) ] }
+tracks/0/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Vector2( -36.4533, 21.3428 ) ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("cannon_sprites_r90/l-arm:transform/pos")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 38.1612, 21.0147 ) ] }
+tracks/1/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Vector2( 38.1612, 21.0147 ) ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body/eyebrows:transform/pos")
 tracks/2/interp = 1
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 0, 0 ) ] }
+tracks/2/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:transform/pos")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 0, -5.45116 ) ] }
+tracks/3/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -5.45116 ) ]
+}
 tracks/4/type = "value"
 tracks/4/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/tongue:transform/pos")
 tracks/4/interp = 1
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 0, 0 ) ] }
+tracks/4/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
 tracks/5/type = "value"
 tracks/5/path = NodePath("cannon_sprites_r90/r-arm:transform/rot")
 tracks/5/interp = 1
 tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/5/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
 tracks/6/type = "value"
 tracks/6/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation:transform/rot")
 tracks/6/interp = 1
 tracks/6/imported = false
-tracks/6/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/6/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
 tracks/7/type = "value"
 tracks/7/path = NodePath("cannon_sprites_r90/l-arm:transform/rot")
 tracks/7/interp = 1
 tracks/7/imported = false
-tracks/7/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/7/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
 
 [sub_resource type="Animation" id=3]
 
@@ -71,82 +111,164 @@ tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 1 ), "transitions":FloatArray( 1 ), "values":[ { "args":[  ], "method":"fire" } ] }
+tracks/0/keys = {
+"times": FloatArray( 1 ),
+"transitions": FloatArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "fire"
+} ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("cannon_sprites_r90/l-arm:transform/pos")
 tracks/1/interp = 2
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.5, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 46, 6 ), Vector2( 46, 6 ), Vector2( 46, 6 ), Vector2( 46, 6 ) ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 0.5, 1, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 46, 6 ), Vector2( 46, 6 ), Vector2( 46, 6 ), Vector2( 46, 6 ) ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("cannon_sprites_r90/r-arm:transform/pos")
 tracks/2/interp = 1
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 0.5, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( -46, 5.78106 ), Vector2( -46, 5.78106 ), Vector2( -46, 6 ), Vector2( -46, 5.78106 ) ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 0.5, 1, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -46, 5.78106 ), Vector2( -46, 5.78106 ), Vector2( -46, 6 ), Vector2( -46, 5.78106 ) ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("cannon_sprites_r90/l-arm:transform/rot")
 tracks/3/interp = 2
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.5, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ 0.0, 0.0, 8.61038, 0.0 ] }
+tracks/3/keys = {
+"times": FloatArray( 0, 0.5, 1, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 8.61038, 0.0 ]
+}
 tracks/4/type = "value"
 tracks/4/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body/eyebrows:transform/pos")
 tracks/4/interp = 2
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.25, 1, 1.375, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, -3.70439 ), Vector2( 0, 0 ), Vector2( 0, 4.64145 ), Vector2( 0, 0 ) ] }
+tracks/4/keys = {
+"times": FloatArray( 0, 0.25, 1, 1.375, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -3.70439 ), Vector2( 0, 0 ), Vector2( 0, 4.64145 ), Vector2( 0, 0 ) ]
+}
 tracks/5/type = "value"
 tracks/5/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:transform/pos")
 tracks/5/interp = 2
 tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0, 0.5, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, -5.45116 ), Vector2( 0, -13.7808 ), Vector2( 0, -4 ), Vector2( 0, -5.45116 ) ] }
+tracks/5/keys = {
+"times": FloatArray( 0, 0.5, 1.25, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -5.45116 ), Vector2( 0, -13.7808 ), Vector2( 0, -4 ), Vector2( 0, -5.45116 ) ]
+}
 tracks/6/type = "value"
 tracks/6/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/tongue:transform/pos")
 tracks/6/interp = 2
 tracks/6/imported = false
-tracks/6/keys = { "times":FloatArray( 0, 0.75, 1, 1.375, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 5.6176 ), Vector2( 0, 0 ), Vector2( 0, -18.7884 ), Vector2( 0, 9.2048 ), Vector2( 0, 5.6176 ) ] }
+tracks/6/keys = {
+"times": FloatArray( 0, 0.75, 1, 1.375, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 5.6176 ), Vector2( 0, 0 ), Vector2( 0, -18.7884 ), Vector2( 0, 9.2048 ), Vector2( 0, 5.6176 ) ]
+}
 tracks/7/type = "value"
 tracks/7/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body:transform/pos")
 tracks/7/interp = 2
 tracks/7/imported = false
-tracks/7/keys = { "times":FloatArray( 0, 1, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 8 ), Vector2( 0, 0 ) ] }
+tracks/7/keys = {
+"times": FloatArray( 0, 1, 1.5, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 8 ), Vector2( 0, 0 ) ]
+}
 tracks/8/type = "value"
 tracks/8/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation:transform/pos")
 tracks/8/interp = 2
 tracks/8/imported = false
-tracks/8/keys = { "times":FloatArray( 0, 0.75, 1, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( -1.18914, 6.51793e-08 ), Vector2( 0.891844, 4.40126 ), Vector2( 0, 0 ) ] }
+tracks/8/keys = {
+"times": FloatArray( 0, 0.75, 1, 1.5, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( -1.18914, 6.51793e-08 ), Vector2( 0.891844, 4.40126 ), Vector2( 0, 0 ) ]
+}
 tracks/9/type = "value"
 tracks/9/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:transform/rot")
 tracks/9/interp = 2
 tracks/9/imported = false
-tracks/9/keys = { "times":FloatArray( 0, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ 0.0, 0.0, 0.0 ] }
+tracks/9/keys = {
+"times": FloatArray( 0, 1, 2.5 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0 ]
+}
 tracks/10/type = "value"
 tracks/10/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d:transform/pos")
 tracks/10/interp = 2
 tracks/10/imported = false
-tracks/10/keys = { "times":FloatArray( 0, 0.8, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 8.58406e-07, -19.638 ), Vector2( 3.67526e-06, -84.0798 ), Vector2( 0, 0 ) ] }
+tracks/10/keys = {
+"times": FloatArray( 0, 0.8, 1, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 8.58406e-07, -19.638 ), Vector2( 3.67526e-06, -84.0798 ), Vector2( 0, 0 ) ]
+}
 tracks/11/type = "value"
 tracks/11/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:visibility/visible")
 tracks/11/interp = 1
 tracks/11/imported = false
-tracks/11/keys = { "times":FloatArray( 0, 0.1, 1, 1.075, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ false, true, true, false, false ] }
+tracks/11/keys = {
+"times": FloatArray( 0, 0.1, 1, 1.075, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, true, false, false ]
+}
 tracks/12/type = "value"
 tracks/12/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:frame")
 tracks/12/interp = 1
 tracks/12/imported = false
-tracks/12/keys = { "times":FloatArray( 0, 0.858292, 0.880806, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ 0, 0, 1, 1, 0 ] }
+tracks/12/keys = {
+"times": FloatArray( 0, 0.858292, 0.880806, 2, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 0, 1, 1, 0 ]
+}
 tracks/13/type = "value"
 tracks/13/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:transform/scale")
 tracks/13/interp = 1
 tracks/13/imported = false
-tracks/13/keys = { "times":FloatArray( 0, 0.25, 0.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0.5, 1 ), Vector2( 0.5, 1 ), Vector2( 1, 1 ), Vector2( 0.5, 1 ) ] }
+tracks/13/keys = {
+"times": FloatArray( 0, 0.25, 0.5, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.5, 1 ), Vector2( 0.5, 1 ), Vector2( 1, 1 ), Vector2( 0.5, 1 ) ]
+}
 tracks/14/type = "value"
 tracks/14/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:transform/pos")
 tracks/14/interp = 1
 tracks/14/imported = false
-tracks/14/keys = { "times":FloatArray( 0, 0.25, 0.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( -13.5222, 0 ), Vector2( 0, 0 ) ] }
+tracks/14/keys = {
+"times": FloatArray( 0, 0.25, 0.5, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( -13.5222, 0 ), Vector2( 0, 0 ) ]
+}
 tracks/15/type = "value"
 tracks/15/path = NodePath("cannon_sprites_r90/r-arm:transform/rot")
 tracks/15/interp = 1
 tracks/15/imported = false
-tracks/15/keys = { "times":FloatArray( 0, 0.5, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ -16.6609, -16.6609, -24.0, -16.6609 ] }
+tracks/15/keys = {
+"times": FloatArray( 0, 0.5, 1, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -16.6609, -16.6609, -24.0, -16.6609 ]
+}
 
 [sub_resource type="Animation" id=4]
 
@@ -158,87 +280,172 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("cannon_sprites_r90/r-arm:transform/pos")
 tracks/0/interp = 2
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.5, 1, 1.75, 2, 2.25, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "update":0, "values":[ Vector2( -46, 6 ), Vector2( -46, 6 ), Vector2( -46, 6 ), Vector2( -46, 24.7099 ), Vector2( -53.9443, 20.4507 ), Vector2( -50.9652, 8.7208 ), Vector2( -46, 6 ) ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5, 1, 1.75, 2, 2.25, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -46, 6 ), Vector2( -46, 6 ), Vector2( -46, 6 ), Vector2( -46, 24.7099 ), Vector2( -53.9443, 20.4507 ), Vector2( -50.9652, 8.7208 ), Vector2( -46, 6 ) ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("cannon_sprites_r90/l-arm:transform/pos")
 tracks/1/interp = 2
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.5, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 46, 6 ), Vector2( 46, 6 ), Vector2( 46, 6 ), Vector2( 46, 6 ) ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 0.5, 1, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 46, 6 ), Vector2( 46, 6 ), Vector2( 46, 6 ), Vector2( 46, 6 ) ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body/eyebrows:transform/pos")
 tracks/2/interp = 2
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 0.25, 1, 1.375, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, -3.70439 ), Vector2( 0, 0 ), Vector2( 0, 4.64145 ), Vector2( 0, 0 ) ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 0.25, 1, 1.375, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -3.70439 ), Vector2( 0, 0 ), Vector2( 0, 4.64145 ), Vector2( 0, 0 ) ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:transform/pos")
 tracks/3/interp = 2
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.5, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, -5.45116 ), Vector2( 0, -13.7808 ), Vector2( 0, -4 ), Vector2( 0, -5.45116 ) ] }
+tracks/3/keys = {
+"times": FloatArray( 0, 0.5, 1.25, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -5.45116 ), Vector2( 0, -13.7808 ), Vector2( 0, -4 ), Vector2( 0, -5.45116 ) ]
+}
 tracks/4/type = "value"
 tracks/4/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/tongue:transform/pos")
 tracks/4/interp = 2
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.75, 1, 1.375, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 5.6176 ), Vector2( 0, 0 ), Vector2( 0, -18.7884 ), Vector2( 0, 9.2048 ), Vector2( 0, 5.6176 ) ] }
+tracks/4/keys = {
+"times": FloatArray( 0, 0.75, 1, 1.375, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 5.6176 ), Vector2( 0, 0 ), Vector2( 0, -18.7884 ), Vector2( 0, 9.2048 ), Vector2( 0, 5.6176 ) ]
+}
 tracks/5/type = "value"
 tracks/5/path = NodePath("cannon_sprites_r90/r-arm:transform/rot")
 tracks/5/interp = 2
 tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0, 0.5, 1.04, 1.17, 1.3, 1.43, 1.56, 1.81, 2.25, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "update":0, "values":[ 0.0, -15.0, -30.6, -39.8294, -38.1111, -26.531, 0.0, -15.5341, -42.5189, 0.0 ] }
+tracks/5/keys = {
+"times": FloatArray( 0, 0.5, 1.04, 1.17, 1.3, 1.43, 1.56, 1.81, 2.25, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -15.0, -30.6, -39.8294, -38.1111, -26.531, 0.0, -15.5341, -42.5189, 0.0 ]
+}
 tracks/6/type = "value"
 tracks/6/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation:transform/rot")
 tracks/6/interp = 2
 tracks/6/imported = false
-tracks/6/keys = { "times":FloatArray( 0, 1, 1.1875, 1.375, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":0, "values":[ 0.0, 0.0, -5.38287, 9.20015, 0.0 ] }
+tracks/6/keys = {
+"times": FloatArray( 0, 1, 1.1875, 1.375, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, -5.38287, 9.20015, 0.0 ]
+}
 tracks/7/type = "value"
 tracks/7/path = NodePath("cannon_sprites_r90/l-arm:transform/rot")
 tracks/7/interp = 2
 tracks/7/imported = false
-tracks/7/keys = { "times":FloatArray( 0, 0.5, 1, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":0, "values":[ 0.0, 0.0, 8.61038, 31.9963, 0.0 ] }
+tracks/7/keys = {
+"times": FloatArray( 0, 0.5, 1, 1.5, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 8.61038, 31.9963, 0.0 ]
+}
 tracks/8/type = "value"
 tracks/8/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body:transform/pos")
 tracks/8/interp = 2
 tracks/8/imported = false
-tracks/8/keys = { "times":FloatArray( 0, 1, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 8 ), Vector2( 0, 0 ) ] }
+tracks/8/keys = {
+"times": FloatArray( 0, 1, 1.5, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 8 ), Vector2( 0, 0 ) ]
+}
 tracks/9/type = "value"
 tracks/9/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation:transform/pos")
 tracks/9/interp = 2
 tracks/9/imported = false
-tracks/9/keys = { "times":FloatArray( 0, 0.75, 1, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( -1.18914, 6.51793e-08 ), Vector2( 2.61609, 7.37265 ), Vector2( 0, 0 ) ] }
+tracks/9/keys = {
+"times": FloatArray( 0, 0.75, 1, 1.5, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( -1.18914, 6.51793e-08 ), Vector2( 2.61609, 7.37265 ), Vector2( 0, 0 ) ]
+}
 tracks/10/type = "value"
 tracks/10/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:transform/rot")
 tracks/10/interp = 2
 tracks/10/imported = false
-tracks/10/keys = { "times":FloatArray( 0, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ 0.0, 0.0, 0.0 ] }
+tracks/10/keys = {
+"times": FloatArray( 0, 1, 2.5 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0 ]
+}
 tracks/11/type = "value"
 tracks/11/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d:transform/pos")
 tracks/11/interp = 2
 tracks/11/imported = false
-tracks/11/keys = { "times":FloatArray( 0, 0.8, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 8.58406e-07, -19.638 ), Vector2( 3.67526e-06, -84.0798 ), Vector2( 0, 0 ) ] }
+tracks/11/keys = {
+"times": FloatArray( 0, 0.8, 1, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 8.58406e-07, -19.638 ), Vector2( 3.67526e-06, -84.0798 ), Vector2( 0, 0 ) ]
+}
 tracks/12/type = "value"
 tracks/12/path = NodePath("cannon_sprites_r90/r-arm:transform/scale")
 tracks/12/interp = 2
 tracks/12/imported = false
-tracks/12/keys = { "times":FloatArray( 0, 1.5, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1.1, 1.1 ), Vector2( 1, 1 ) ] }
+tracks/12/keys = {
+"times": FloatArray( 0, 1.5, 2, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1.1, 1.1 ), Vector2( 1, 1 ) ]
+}
 tracks/13/type = "value"
 tracks/13/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:visibility/visible")
 tracks/13/interp = 1
 tracks/13/imported = false
-tracks/13/keys = { "times":FloatArray( 0, 0.1, 1, 1.075, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ false, true, true, false, false ] }
+tracks/13/keys = {
+"times": FloatArray( 0, 0.1, 1, 1.075, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, true, false, false ]
+}
 tracks/14/type = "value"
 tracks/14/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:frame")
 tracks/14/interp = 1
 tracks/14/imported = false
-tracks/14/keys = { "times":FloatArray( 0, 0.858292, 0.880806, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ 0, 0, 1, 1, 0 ] }
+tracks/14/keys = {
+"times": FloatArray( 0, 0.858292, 0.880806, 2, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 0, 1, 1, 0 ]
+}
 tracks/15/type = "value"
 tracks/15/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:transform/scale")
 tracks/15/interp = 1
 tracks/15/imported = false
-tracks/15/keys = { "times":FloatArray( 0, 0.25, 0.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0.5, 1 ), Vector2( 0.5, 1 ), Vector2( 1, 1 ), Vector2( 0.5, 1 ) ] }
+tracks/15/keys = {
+"times": FloatArray( 0, 0.25, 0.5, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.5, 1 ), Vector2( 0.5, 1 ), Vector2( 1, 1 ), Vector2( 0.5, 1 ) ]
+}
 tracks/16/type = "value"
 tracks/16/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:transform/pos")
 tracks/16/interp = 1
 tracks/16/imported = false
-tracks/16/keys = { "times":FloatArray( 0, 0.25, 0.5, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( -13.5222, 0 ), Vector2( 0, 0 ) ] }
+tracks/16/keys = {
+"times": FloatArray( 0, 0.25, 0.5, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( -13.5222, 0 ), Vector2( 0, 0 ) ]
+}
 
 [sub_resource type="Animation" id=5]
 
@@ -249,77 +456,152 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("cannon_sprites_r90/r-arm:transform/pos")
 tracks/0/interp = 2
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( -46, 6 ), Vector2( -46, 6 ) ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 2.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -46, 6 ), Vector2( -46, 6 ) ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("cannon_sprites_r90/l-arm:transform/pos")
 tracks/1/interp = 2
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( 46, 6 ), Vector2( 46, 6 ) ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 2.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 46, 6 ), Vector2( 46, 6 ) ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body/eyebrows:transform/pos")
 tracks/2/interp = 2
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, -1.81922 ), Vector2( 0, 0 ) ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 1.25, 2.5 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -1.81922 ), Vector2( 0, 0 ) ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:transform/pos")
 tracks/3/interp = 2
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 1.5, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Vector2( 0, -5.45116 ), Vector2( 0, -8.78074 ), Vector2( 0, -5.45116 ) ] }
+tracks/3/keys = {
+"times": FloatArray( 0, 1.5, 2.5 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -5.45116 ), Vector2( 0, -8.78074 ), Vector2( 0, -5.45116 ) ]
+}
 tracks/4/type = "value"
 tracks/4/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/tongue:transform/pos")
 tracks/4/interp = 2
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 1.5, 1.75, 2, 2.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 5.6176 ), Vector2( 0, -1.81236 ), Vector2( 0, 5.6176 ), Vector2( 0, -1.81236 ), Vector2( 0, 5.6176 ) ] }
+tracks/4/keys = {
+"times": FloatArray( 0, 1.5, 1.75, 2, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 5.6176 ), Vector2( 0, -1.81236 ), Vector2( 0, 5.6176 ), Vector2( 0, -1.81236 ), Vector2( 0, 5.6176 ) ]
+}
 tracks/5/type = "value"
 tracks/5/path = NodePath("cannon_sprites_r90/r-arm:transform/rot")
 tracks/5/interp = 2
 tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ 0.0, -5.0, 0.0 ] }
+tracks/5/keys = {
+"times": FloatArray( 0, 1.25, 2.5 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -5.0, 0.0 ]
+}
 tracks/6/type = "value"
 tracks/6/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation:transform/rot")
 tracks/6/interp = 2
 tracks/6/imported = false
-tracks/6/keys = { "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, 0.0 ] }
+tracks/6/keys = {
+"times": FloatArray( 0, 2.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
 tracks/7/type = "value"
 tracks/7/path = NodePath("cannon_sprites_r90/l-arm:transform/rot")
 tracks/7/interp = 2
 tracks/7/imported = false
-tracks/7/keys = { "times":FloatArray( 0, 1.25, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ 0.0, 5.0, 0.0 ] }
+tracks/7/keys = {
+"times": FloatArray( 0, 1.25, 2.5 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 5.0, 0.0 ]
+}
 tracks/8/type = "value"
 tracks/8/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body:transform/pos")
 tracks/8/interp = 2
 tracks/8/imported = false
-tracks/8/keys = { "times":FloatArray( 0, 1, 2.5 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, -2.88043 ), Vector2( 0, 0 ) ] }
+tracks/8/keys = {
+"times": FloatArray( 0, 1, 2.5 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -2.88043 ), Vector2( 0, 0 ) ]
+}
 tracks/9/type = "value"
 tracks/9/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation:transform/pos")
 tracks/9/interp = 2
 tracks/9/imported = false
-tracks/9/keys = { "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ) ] }
+tracks/9/keys = {
+"times": FloatArray( 0, 2.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+}
 tracks/10/type = "value"
 tracks/10/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:transform/rot")
 tracks/10/interp = 2
 tracks/10/imported = false
-tracks/10/keys = { "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, 0.0 ] }
+tracks/10/keys = {
+"times": FloatArray( 0, 2.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
 tracks/11/type = "value"
 tracks/11/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d:transform/pos")
 tracks/11/interp = 2
 tracks/11/imported = false
-tracks/11/keys = { "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( 0, 0 ), Vector2( 0, 0 ) ] }
+tracks/11/keys = {
+"times": FloatArray( 0, 2.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+}
 tracks/12/type = "value"
 tracks/12/path = NodePath("cannon_sprites_r90/r-arm:transform/scale")
 tracks/12/interp = 2
 tracks/12/imported = false
-tracks/12/keys = { "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( 1, 1 ), Vector2( 1, 1 ) ] }
+tracks/12/keys = {
+"times": FloatArray( 0, 2.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
+}
 tracks/13/type = "value"
 tracks/13/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:visibility/visible")
 tracks/13/interp = 1
 tracks/13/imported = false
-tracks/13/keys = { "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, false ] }
+tracks/13/keys = {
+"times": FloatArray( 0, 2.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ false, false ]
+}
 tracks/14/type = "value"
 tracks/14/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:frame")
 tracks/14/interp = 1
 tracks/14/imported = false
-tracks/14/keys = { "times":FloatArray( 0, 2.5 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ 0, 0 ] }
+tracks/14/keys = {
+"times": FloatArray( 0, 2.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
 
 [node name="cannon" type="StaticBody2D"]
 

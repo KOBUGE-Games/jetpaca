@@ -22,7 +22,12 @@ radius = 30.0
 
 [sub_resource type="SampleLibrary" id=4]
 
-samples/gotkey = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
+samples/gotkey = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 4 )
+}
 
 [sub_resource type="ColorRamp" id=5]
 
@@ -60,6 +65,7 @@ key_index = 0
 config/amount = 8
 config/lifetime = 0.5
 config/emitting = false
+config/process_mode = 1
 config/half_extents = Vector2( 16, 16 )
 config/local_space = false
 config/texture = ExtResource( 2 )
@@ -143,6 +149,7 @@ config/amount = 16
 config/lifetime = 2.0
 config/emit_timeout = 0.5
 config/emitting = false
+config/process_mode = 1
 config/local_space = false
 config/explosiveness = 0.05
 config/texture = ExtResource( 2 )

@@ -47,6 +47,7 @@ transform/scale = Vector2( 1.66329, 1.61914 )
 config/amount = 12
 config/lifetime = 3.0
 config/emitting = false
+config/process_mode = 1
 config/texture = ExtResource( 3 )
 params/direction = 0.0
 params/spread = 10.0

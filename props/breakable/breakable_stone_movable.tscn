@@ -17,10 +17,14 @@ colors = ColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 
 [sub_resource type="SampleLibrary" id=3]
 
-samples/rock_explode = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
+samples/rock_explode = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 4 )
+}
 
 [node name="breakable_stone" type="Node2D"]
-
 
 [node name="body" type="RigidBody2D" parent="."]
 
@@ -66,6 +70,7 @@ config/amount = 32
 config/lifetime = 2.0
 config/emit_timeout = 2.0
 config/emitting = false
+config/process_mode = 1
 config/half_extents = Vector2( 128, 0 )
 config/explosiveness = 0.05
 config/texture = ExtResource( 3 )

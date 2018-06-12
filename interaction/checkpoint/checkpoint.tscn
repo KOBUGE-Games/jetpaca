@@ -24,27 +24,52 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("sprite 2:visibility/self_opacity")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 2.97 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, 1.0 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 2.97 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprite 2:visibility/visible")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
+tracks/1/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("particles:config/emitting")
 tracks/2/interp = 1
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 2.97 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ true, false ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 2.97 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("particles:params/radial_accel")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 2.2 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, 128.0 ] }
+tracks/3/keys = {
+"times": FloatArray( 0, 2.2 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 128.0 ]
+}
 tracks/4/type = "value"
 tracks/4/path = NodePath("particles:params/tangential_accel")
 tracks/4/interp = 1
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 2.21 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, 55.0 ] }
+tracks/4/keys = {
+"times": FloatArray( 0, 2.21 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 55.0 ]
+}
 
 [node name="checkpoint" type="Area2D"]
 
@@ -85,6 +110,7 @@ transform/pos = Vector2( -1.47018, -27.1984 )
 config/amount = 32
 config/lifetime = 1.0
 config/emitting = false
+config/process_mode = 1
 config/half_extents = Vector2( 66, 90 )
 config/local_space = false
 config/texture = ExtResource( 3 )

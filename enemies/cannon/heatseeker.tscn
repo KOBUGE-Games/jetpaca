@@ -24,7 +24,12 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("pacaseeker:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.5 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ 0, 0 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
 
 [sub_resource type="Animation" id=4]
 
@@ -35,7 +40,12 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("pacaseeker:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.1, 0.15, 0.3, 0.45, 0.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "update":1, "values":[ 1, 1, 3, 2, 1, 1 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.1, 0.15, 0.3, 0.45, 0.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 1, 1, 3, 2, 1, 1 ]
+}
 
 [node name="heatseeker" type="RigidBody2D"]
 
@@ -88,6 +98,7 @@ transform/rot = 88.3607
 config/amount = 15
 config/lifetime = 1.0
 config/emitting = false
+config/process_mode = 1
 config/local_space = false
 config/texture = ExtResource( 3 )
 params/direction = 0.0

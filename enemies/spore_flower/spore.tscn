@@ -18,12 +18,22 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("sprite:visibility/opacity")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.05 ), "transitions":FloatArray( 0, 0 ), "update":0, "values":[ 1.0, 0.8 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.05 ),
+"transitions": FloatArray( 0, 0 ),
+"update": 0,
+"values": [ 1.0, 0.8 ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprite:frame")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 3 ] }
+tracks/1/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ 3 ]
+}
 
 [sub_resource type="Animation" id=3]
 
@@ -35,7 +45,12 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("sprite:transform/rot")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 1, 2 ), "transitions":FloatArray( -2, -2, 0 ), "update":0, "values":[ -8.7, 8.7, -8.7 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 1, 2 ),
+"transitions": FloatArray( -2, -2, 0 ),
+"update": 0,
+"values": [ -8.7, 8.7, -8.7 ]
+}
 
 [sub_resource type="Animation" id=4]
 
@@ -46,7 +61,12 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("sprite:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.490335, 0.916529 ), "transitions":FloatArray( 0, 0, 0 ), "update":0, "values":[ 0, 1, 2 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.490335, 0.916529 ),
+"transitions": FloatArray( 0, 0, 0 ),
+"update": 0,
+"values": [ 0, 1, 2 ]
+}
 
 [node name="spore" type="RigidBody2D"]
 

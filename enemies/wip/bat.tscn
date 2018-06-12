@@ -12,22 +12,42 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/pipistrello:frame")
 tracks/0/interp = 0
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.25, 0.5, 0.75, 1, 1.25, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1 ), "update":0, "values":[ 0, 1, 2, 3, 4, 5, 0 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.25, 0.5, 0.75, 1, 1.25, 1.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 0 ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("Node2D/pipistrello:transform/pos")
 tracks/1/interp = 2
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.75, 1.5 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Vector2( 0.375539, 0.0264967 ), Vector2( 0.375542, -16.5906 ), Vector2( 0.375539, 0.0264967 ) ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 0.75, 1.5 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.375539, 0.0264967 ), Vector2( 0.375542, -16.5906 ), Vector2( 0.375539, 0.0264967 ) ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("Node2D/pipistrello:transform/scale")
 tracks/2/interp = 1
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( 1.05282, 1.00002 ), Vector2( 1.05282, 1.00002 ) ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 1.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.05282, 1.00002 ), Vector2( 1.05282, 1.00002 ) ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("Node2D/pipistrello:transform/rot")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 2.69836, 2.69836 ] }
+tracks/3/keys = {
+"times": FloatArray( 0, 1.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 2.69836, 2.69836 ]
+}
 
 [sub_resource type="Animation" id=2]
 
@@ -39,22 +59,42 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/pipistrello:frame")
 tracks/0/interp = 0
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 1 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 13, 13 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 13, 13 ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("Node2D/pipistrello:transform/pos")
 tracks/1/interp = 2
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 1 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( 0.375539, 0.0264967 ), Vector2( 0.375539, 0.0264967 ) ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.375539, 0.0264967 ), Vector2( 0.375539, 0.0264967 ) ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("Node2D/pipistrello:transform/scale")
 tracks/2/interp = 2
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 0.5, 1 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Vector2( 1.05279, 1 ), Vector2( 1.07807, 1.02022 ), Vector2( 1.05279, 1 ) ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.05279, 1 ), Vector2( 1.07807, 1.02022 ), Vector2( 1.05279, 1 ) ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("Node2D/pipistrello:transform/rot")
 tracks/3/interp = 2
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.5, 1 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ 3.11624, -5.50652, 3.11624 ] }
+tracks/3/keys = {
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 3.11624, -5.50652, 3.11624 ]
+}
 
 [sub_resource type="Animation" id=3]
 
@@ -65,22 +105,42 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/pipistrello:frame")
 tracks/0/interp = 0
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 8, 8 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 3 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 8, 8 ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("Node2D/pipistrello:transform/pos")
 tracks/1/interp = 2
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 2, 3 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Vector2( 0.375539, 0.0264967 ), Vector2( 0.375539, 0.997097 ), Vector2( 0.375539, 0.0264967 ) ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 2, 3 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.375539, 0.0264967 ), Vector2( 0.375539, 0.997097 ), Vector2( 0.375539, 0.0264967 ) ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("Node2D/pipistrello:transform/scale")
 tracks/2/interp = 2
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 2, 3 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Vector2( 1.01255, 1 ), Vector2( 1.02772, 1.02022 ), Vector2( 1.01255, 1 ) ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 2, 3 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.01255, 1 ), Vector2( 1.02772, 1.02022 ), Vector2( 1.01255, 1 ) ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("Node2D/pipistrello:transform/rot")
 tracks/3/interp = 2
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ -180.0, -180.0 ] }
+tracks/3/keys = {
+"times": FloatArray( 0, 3 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ -180.0, -180.0 ]
+}
 
 [sub_resource type="Animation" id=4]
 
@@ -91,22 +151,42 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/pipistrello:frame")
 tracks/0/interp = 0
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.25, 0.5, 0.75, 1, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "update":0, "values":[ 8, 9, 10, 11, 12, 12 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.25, 0.5, 0.75, 1, 1.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 8, 9, 10, 11, 12, 12 ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("Node2D/pipistrello:transform/pos")
 tracks/1/interp = 2
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( 0.375539, 0.0264967 ), Vector2( 0.375539, 0.0264967 ) ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 1.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.375539, 0.0264967 ), Vector2( 0.375539, 0.0264967 ) ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("Node2D/pipistrello:transform/scale")
 tracks/2/interp = 1
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 0.75, 1, 1.5 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 1.01255, 1 ), Vector2( 1.05279, 1 ), Vector2( 1.05279, 1 ), Vector2( 1.01255, 1 ) ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 0.75, 1, 1.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.01255, 1 ), Vector2( 1.05279, 1 ), Vector2( 1.05279, 1 ), Vector2( 1.01255, 1 ) ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("Node2D/pipistrello:transform/rot")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 1.5 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ -180.0, -180.0 ] }
+tracks/3/keys = {
+"times": FloatArray( 0, 1.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ -180.0, -180.0 ]
+}
 
 [sub_resource type="Animation" id=5]
 
@@ -118,22 +198,42 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/pipistrello:frame")
 tracks/0/interp = 0
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.6, 0.72, 0.84, 1.08, 1.25 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1 ), "update":0, "values":[ 12, 0, 3, 4, 5, 0 ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.6, 0.72, 0.84, 1.08, 1.25 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 12, 0, 3, 4, 5, 0 ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("Node2D/pipistrello:transform/pos")
 tracks/1/interp = 2
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.36, 0.6, 0.72, 0.84, 0.96, 1.08, 1.25 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 0.375539, 0.0264967 ), Vector2( 0.375535, 40.1419 ), Vector2( 23.8701, 44.8375 ), Vector2( 27.9174, 32.4832 ), Vector2( 41.7656, 26.7959 ), Vector2( 27.5619, 1.1803 ), Vector2( 17.2864, -10.7231 ), Vector2( 0.375539, 0.0264967 ) ] }
+tracks/1/keys = {
+"times": FloatArray( 0, 0.36, 0.6, 0.72, 0.84, 0.96, 1.08, 1.25 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.375539, 0.0264967 ), Vector2( 0.375535, 40.1419 ), Vector2( 23.8701, 44.8375 ), Vector2( 27.9174, 32.4832 ), Vector2( 41.7656, 26.7959 ), Vector2( 27.5619, 1.1803 ), Vector2( 17.2864, -10.7231 ), Vector2( 0.375539, 0.0264967 ) ]
+}
 tracks/2/type = "value"
 tracks/2/path = NodePath("Node2D/pipistrello:transform/scale")
 tracks/2/interp = 2
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 1.25 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( 1.01255, 1 ), Vector2( 1.01255, 1 ) ] }
+tracks/2/keys = {
+"times": FloatArray( 0, 1.25 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.01255, 1 ), Vector2( 1.01255, 1 ) ]
+}
 tracks/3/type = "value"
 tracks/3/path = NodePath("Node2D/pipistrello:transform/rot")
 tracks/3/interp = 2
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.36, 0.72, 1.25 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":0, "values":[ -180.0, -180.0, -90.0, 0.0 ] }
+tracks/3/keys = {
+"times": FloatArray( 0, 0.36, 0.72, 1.25 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -180.0, -180.0, -90.0, 0.0 ]
+}
 
 [node name="RigidBody2D" type="RigidBody2D"]
 
