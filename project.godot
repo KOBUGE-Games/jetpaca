@@ -26,6 +26,10 @@ main="*res://shared/main.gd"
 music="*res://shared/music.tscn"
 progress="res://shared/progress.tscn"
 
+[debug]
+
+gdscript/warnings/enable=false
+
 [display]
 
 window/size/width=1280
