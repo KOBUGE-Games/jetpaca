@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://interaction/boosters/booster.gd" type="Script" id=1]
 [ext_resource path="res://art/boost.png" type="Texture" id=2]
@@ -14,23 +14,12 @@ radius = 27.0
 custom_solver_bias = 0.0
 radius = 27.0
 
-[sub_resource type="Gradient" id=3]
-
-offsets = PoolRealArray( 0, 1 )
-colors = PoolColorArray( 1, 1, 1, 1, 0.168627, 0.566372, 1, 0.0884956 )
-
 [node name="booster_push" type="RigidBody2D"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = true
 collision_layer = 1
 collision_mask = 1
 mode = 3
 mass = 1.0
-friction = 1.0
-bounce = 0.0
 gravity_scale = 1.0
 custom_integrator = false
 continuous_cd = 0
@@ -39,83 +28,61 @@ contact_monitor = false
 sleeping = false
 can_sleep = true
 linear_velocity = Vector2( 0, 0 )
-angular_velocity = 0.0
 linear_damp = -1.0
+angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
-drop = null
+drop = 0
 boost_mode = 1
 boost_value = 1150
 
 [node name="Sprite" type="Sprite" parent="."]
-
 position = Vector2( 6.29762, 0 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-
 shape = SubResource( 1 )
-trigger = true
-_update_shape_index = -1
 
 [node name="area" type="Area2D" parent="."]
-
 input_pickable = true
-shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
 
 [node name="shape" type="CollisionShape2D" parent="area"]
-
 shape = SubResource( 2 )
-trigger = false
-_update_shape_index = -1
 
 [node name="timer" type="Timer" parent="."]
-
 process_mode = 1
 wait_time = 1.0
 one_shot = true
 autostart = false
 
 [node name="particles" type="Particles2D" parent="."]
-
-visibility/blend_mode = 1
 position = Vector2( -11.4031, 0.814498 )
-rotation_degrees = -89.3689
+rotation = -1.55978
+emitting = false
 amount = 20
 lifetime = 1.0
-config/emit_timeout = 1.0
-emitting = false
-config/process_mode = 1
-config/half_extents = Vector2( 15, 15 )
+one_shot = false
+preprocess = 0.0
+speed_scale = 1.0
 explosiveness = 0.1
+randomness = 0.0
+fixed_fps = 0
+fract_delta = true
+visibility_rect = Rect2( -100, -100, 200, 200 )
+local_coords = true
+draw_order = 0
+process_material = null
 texture = ExtResource( 3 )
-params/direction = 0.0
-params/spread = 15.4518
-params/linear_velocity = 1000.0
-params/spin_velocity = 0.0
-params/orbit_velocity = 0.0
-params/gravity_direction = 0.0
-params/gravity_strength = 9.8
-params/radial_accel = 0.0
-params/tangential_accel = 0.0
-params/damping = 300.0
-params/initial_angle = 0.0
-params/initial_size = 4.0
-params/final_size = 1.0
-params/hue_variation = 0.0
-params/anim_speed_scale = 1.0
-params/anim_initial_pos = 0.0
-randomness/linear_velocity = 1.0
-color/color_ramp = SubResource( 3 )
+normal_map = null
+h_frames = 1
+v_frames = 1
 
-[connection signal="body_entered" from="area" to="." method="_on_push_enter" binds=[  ]]
-
-[connection signal="body_exited" from="area" to="." method="_on_push_exit" binds=[  ]]
-
-[connection signal="timeout" from="timer" to="." method="_on_timeout" binds=[  ]]
+[connection signal="body_entered" from="area" to="." method="_on_push_enter"]
+[connection signal="body_exited" from="area" to="." method="_on_push_exit"]
+[connection signal="timeout" from="timer" to="." method="_on_timeout"]

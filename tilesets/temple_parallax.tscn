@@ -1,13 +1,13 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://art/temple_bg.png" type="Texture" id=1]
 
 [node name="temple_bg" type="ParallaxBackground"]
-
 layer = -1
 offset = Vector2( 0, 0 )
 rotation = 0.0
 scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 scroll_offset = Vector2( 0, 0 )
 scroll_base_offset = Vector2( 0, 0 )
 scroll_base_scale = Vector2( 1, 1 )
@@ -16,34 +16,30 @@ scroll_limit_end = Vector2( 0, 0 )
 scroll_ignore_camera_zoom = true
 
 [node name="parallax_bg" type="ParallaxLayer" parent="."]
-
 motion_scale = Vector2( 0.3, 0.3 )
 motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 1024, 1024 )
 
 [node name="Sprite" type="Sprite" parent="parallax_bg"]
-
 scale = Vector2( 1.01, 1.01 )
 texture = ExtResource( 1 )
 centered = false
 
 [node name="Sprite 2" type="Sprite" parent="parallax_bg"]
-
 scale = Vector2( 1.01, 1.01 )
 texture = ExtResource( 1 )
 centered = false
 offset = Vector2( 0, 512 )
 
 [node name="Sprite 3" type="Sprite" parent="parallax_bg"]
-
 scale = Vector2( 1.01, 1.01 )
 texture = ExtResource( 1 )
 centered = false
 offset = Vector2( 512, 0 )
 
 [node name="Sprite 4" type="Sprite" parent="parallax_bg"]
-
 scale = Vector2( 1.01, 1.01 )
 texture = ExtResource( 1 )
 centered = false
 offset = Vector2( 512, 512 )
+

@@ -1,17 +1,18 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://art/pipistrello.png" type="Texture" id=1]
 
 [sub_resource type="Animation" id=1]
 
-resource_name = "fly_cycle"
 length = 1.5
 loop = true
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/pipistrello:frame")
 tracks/0/interp = 0
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.25, 0.5, 0.75, 1, 1.25, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -21,7 +22,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("Node2D/pipistrello:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.75, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -31,7 +34,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("Node2D/pipistrello:scale")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -41,7 +46,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("Node2D/pipistrello:rotation_degrees")
 tracks/3/interp = 1
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -51,14 +58,15 @@ tracks/3/keys = {
 
 [sub_resource type="Animation" id=2]
 
-resource_name = "hurt"
 length = 1.0
 loop = true
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/pipistrello:frame")
 tracks/0/interp = 0
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -68,7 +76,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("Node2D/pipistrello:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -78,7 +88,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("Node2D/pipistrello:scale")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -88,7 +100,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("Node2D/pipistrello:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -104,7 +118,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/pipistrello:frame")
 tracks/0/interp = 0
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -114,7 +130,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("Node2D/pipistrello:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -124,7 +142,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("Node2D/pipistrello:scale")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -134,7 +154,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("Node2D/pipistrello:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -150,7 +172,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/pipistrello:frame")
 tracks/0/interp = 0
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.25, 0.5, 0.75, 1, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -160,7 +184,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("Node2D/pipistrello:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -170,7 +196,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("Node2D/pipistrello:scale")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -180,7 +208,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("Node2D/pipistrello:rotation_degrees")
 tracks/3/interp = 1
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -190,14 +220,15 @@ tracks/3/keys = {
 
 [sub_resource type="Animation" id=5]
 
-resource_name = "open_wings_to_fly"
 length = 1.25
 loop = false
 step = 0.12
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/pipistrello:frame")
 tracks/0/interp = 0
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.6, 0.72, 0.84, 1.08, 1.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -207,7 +238,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("Node2D/pipistrello:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.36, 0.6, 0.72, 0.84, 0.96, 1.08, 1.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -217,7 +250,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("Node2D/pipistrello:scale")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.25 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -227,7 +262,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("Node2D/pipistrello:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.36, 0.72, 1.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -236,14 +273,11 @@ tracks/3/keys = {
 }
 
 [node name="RigidBody2D" type="RigidBody2D"]
-
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 mode = 0
 mass = 1.0
-friction = 1.0
-bounce = 0.0
 gravity_scale = 1.0
 custom_integrator = false
 continuous_cd = 0
@@ -252,17 +286,15 @@ contact_monitor = false
 sleeping = false
 can_sleep = true
 linear_velocity = Vector2( 0, 0 )
-angular_velocity = 0.0
 linear_damp = -1.0
+angular_velocity = 0.0
 angular_damp = -1.0
 
 [node name="Node2D" type="Node2D" parent="."]
 
-
 [node name="pipistrello" type="Sprite" parent="Node2D"]
-
 position = Vector2( 0.375541, -12.5107 )
-rotation_degrees = -2.69836
+rotation = -0.0470953
 scale = Vector2( 1.05282, 1.00002 )
 texture = ExtResource( 1 )
 centered = false
@@ -272,16 +304,15 @@ hframes = 8
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-
+root_node = NodePath("..")
+autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
-root_node = NodePath("..")
+playback_speed = 2.0
 anims/fly_cycle = SubResource( 1 )
 anims/hurt = SubResource( 2 )
 anims/idle = SubResource( 3 )
 anims/open_wings = SubResource( 4 )
 anims/open_wings_to_fly = SubResource( 5 )
-playback_active = true
-playback_speed = 2.0
 blend_times = [  ]
-autoplay = ""
+

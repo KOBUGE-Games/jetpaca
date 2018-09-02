@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://enemies/warrior/warrior.gd" type="Script" id=1]
 [ext_resource path="res://art/cachos_warrior/stick.png" type="Texture" id=2]
@@ -22,22 +22,12 @@
 [ext_resource path="res://art/fire.png" type="Texture" id=20]
 [ext_resource path="res://art/cachos_warrior/escudoshadow.png" type="Texture" id=21]
 
-[sub_resource type="CircleShape2D" id=1]
-
-custom_solver_bias = 0.0
-radius = 80.0
-
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 50 )
 
-[sub_resource type="Gradient" id=3]
-
-offsets = PoolRealArray( 0, 0.1, 0.8, 1 )
-colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0.0353982, 0, 0, 0, 0 )
-
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=2]
 
 resource_name = "2-Attack_to_tired"
 length = 3.0
@@ -46,7 +36,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 1, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -56,7 +48,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/ArmBG:rotation_degrees")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -66,7 +60,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.5, 1.75, 2, 2.25, 2.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -76,7 +72,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -86,7 +84,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -96,7 +96,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/5/interp = 1
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -106,7 +108,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -116,7 +120,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -126,7 +132,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -136,7 +144,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites:rotation_degrees")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -146,7 +156,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -156,7 +168,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/Rib:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 1, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -166,7 +180,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/Rib/Chest:position")
 tracks/12/interp = 2
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -176,7 +192,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/13/interp = 2
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -186,7 +204,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites:position")
 tracks/14/interp = 2
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -196,7 +216,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/15/interp = 2
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -206,7 +228,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/16/interp = 2
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -216,7 +240,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/ArmBG:position")
 tracks/17/interp = 2
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -226,7 +252,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/Rib:modulate")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -236,7 +264,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib/Chest:modulate")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -246,7 +276,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/ArmBG/ForearmBG:modulate")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -256,7 +288,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:modulate")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -266,7 +300,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:modulate")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -276,7 +312,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:modulate")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -286,7 +324,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:modulate")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -296,7 +336,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites/Rib/Chest/Head/Head:modulate")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -306,7 +348,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("sprites/ArmBG/ForearmBG:position")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -316,7 +360,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:position")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -326,7 +372,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -336,7 +384,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -346,7 +396,9 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/path = NodePath("sprites/Rib/Chest:frame")
 tracks/30/interp = 1
+tracks/30/loop_wrap = true
 tracks/30/imported = false
+tracks/30/enabled = true
 tracks/30/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -356,7 +408,9 @@ tracks/30/keys = {
 tracks/31/type = "value"
 tracks/31/path = NodePath("sprites/Rib:frame")
 tracks/31/interp = 1
+tracks/31/loop_wrap = true
 tracks/31/imported = false
+tracks/31/enabled = true
 tracks/31/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -364,7 +418,7 @@ tracks/31/keys = {
 "values": [ 2 ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=3]
 
 resource_name = "block_down_idle"
 length = 3.0
@@ -373,7 +427,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/ArmBG:rotation_degrees")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -383,7 +439,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -393,7 +451,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -403,7 +463,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -413,7 +475,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -423,7 +487,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -433,7 +499,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -443,7 +511,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -453,7 +523,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib/Chest/Head/Head:rotation_degrees")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -463,7 +535,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites/Rib:rotation_degrees")
 tracks/9/interp = 1
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -473,7 +547,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/10/interp = 1
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -483,7 +559,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/Rib/Chest:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -493,7 +571,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/ArmBG:position")
 tracks/12/interp = 2
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -503,7 +583,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/ArmBG/ForearmBG:position")
 tracks/13/interp = 2
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -513,7 +595,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:position")
 tracks/14/interp = 2
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -523,7 +607,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites/Rib:position")
 tracks/15/interp = 2
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -533,7 +619,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites:position")
 tracks/16/interp = 2
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -543,7 +631,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/17/interp = 2
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -553,7 +643,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/Rib/Chest:frame")
 tracks/18/interp = 2
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -563,7 +655,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib/Chest/Head/Head:frame")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -573,7 +667,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/Rib:frame")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -583,7 +679,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -593,7 +691,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -603,7 +703,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -613,7 +715,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:position")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -623,7 +727,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -633,7 +739,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -643,7 +751,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:frame")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -653,7 +763,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -661,7 +773,7 @@ tracks/28/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=4]
 
 length = 2.6
 loop = false
@@ -669,7 +781,9 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5, 1.25, 1.7, 2, 2.3, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -679,7 +793,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 2, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -689,7 +805,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.8, 1, 1.325, 2, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -699,7 +817,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/3/interp = 1
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 2.6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -709,7 +829,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/4/interp = 1
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.75, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -719,7 +841,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/5/interp = 1
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.75, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -729,7 +853,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/6/interp = 1
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.5, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -739,7 +865,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib:rotation_degrees")
 tracks/7/interp = 1
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.55, 1.75, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -749,7 +877,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/8/interp = 1
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.55, 1.6625, 2.3, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -759,7 +889,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites/Rib/Chest:position")
 tracks/9/interp = 1
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1.25, 1.75, 2, 2.3, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -769,7 +901,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites/Rib:position")
 tracks/10/interp = 1
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 0.75, 1.55, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -779,7 +913,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 0.75, 1.75, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -789,7 +925,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.75, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -799,7 +937,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.75, 2, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -809,7 +949,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 1.5, 2, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -819,7 +961,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -829,7 +973,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites:rotation_degrees")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 0.75, 1.75, 2.25, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -839,7 +985,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 2.6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -849,7 +997,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/ArmBG/ForearmBG:position")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 2.6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -859,7 +1009,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:position")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 2.6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -869,7 +1021,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 2.6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -879,7 +1033,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:frame")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 2.6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -889,7 +1045,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/ArmBG/ForearmBG:hframes")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 2.6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -899,7 +1057,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/Rib/Chest/Head/Head:frame")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 2.6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -909,7 +1069,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:frame")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 2.6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -919,7 +1081,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites/Rib:frame")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -929,7 +1093,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("sprites/Rib/Chest:frame")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -939,7 +1105,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword/damager:monitoring")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 1.25, 2 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -949,7 +1117,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword/trail:visible")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0, 0.5, 2.25, 2.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -959,7 +1129,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword/trail:modulate:a")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 1.25, 1.9, 2.15 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -969,7 +1141,9 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/path = NodePath("sprites/Rib/Chest/sword_arm:rotation_degrees")
 tracks/30/interp = 1
+tracks/30/loop_wrap = true
 tracks/30/imported = false
+tracks/30/enabled = true
 tracks/30/keys = {
 "times": PoolRealArray( 0, 0.5, 0.8, 1.5, 2.15, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -979,7 +1153,9 @@ tracks/30/keys = {
 tracks/31/type = "value"
 tracks/31/path = NodePath("sprites/Rib/Chest/Head/Head/cejaL:position")
 tracks/31/interp = 1
+tracks/31/loop_wrap = true
 tracks/31/imported = false
+tracks/31/enabled = true
 tracks/31/keys = {
 "times": PoolRealArray( 0, 0.5, 1.25, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -989,7 +1165,9 @@ tracks/31/keys = {
 tracks/32/type = "value"
 tracks/32/path = NodePath("sprites/Rib/Chest/Head/Head/cejaR:position")
 tracks/32/interp = 1
+tracks/32/loop_wrap = true
 tracks/32/imported = false
+tracks/32/enabled = true
 tracks/32/keys = {
 "times": PoolRealArray( 0, 0.5, 1.25, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -999,7 +1177,9 @@ tracks/32/keys = {
 tracks/33/type = "value"
 tracks/33/path = NodePath("sprites/Rib/Chest/Head/sclera/eyelids:frame")
 tracks/33/interp = 1
+tracks/33/loop_wrap = true
 tracks/33/imported = false
+tracks/33/enabled = true
 tracks/33/keys = {
 "times": PoolRealArray( 0, 0.25, 0.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1009,7 +1189,9 @@ tracks/33/keys = {
 tracks/34/type = "value"
 tracks/34/path = NodePath("sprites/Rib/Chest/Head/Head/cejaL:rotation_degrees")
 tracks/34/interp = 1
+tracks/34/loop_wrap = true
 tracks/34/imported = false
+tracks/34/enabled = true
 tracks/34/keys = {
 "times": PoolRealArray( 0, 0.75, 1.25, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -1019,7 +1201,9 @@ tracks/34/keys = {
 tracks/35/type = "value"
 tracks/35/path = NodePath("sprites/Rib/Chest/Head/Head/cejaR:rotation_degrees")
 tracks/35/interp = 1
+tracks/35/loop_wrap = true
 tracks/35/imported = false
+tracks/35/enabled = true
 tracks/35/keys = {
 "times": PoolRealArray( 0, 0.75, 1.25, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -1029,7 +1213,9 @@ tracks/35/keys = {
 tracks/36/type = "value"
 tracks/36/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield/rim:position")
 tracks/36/interp = 1
+tracks/36/loop_wrap = true
 tracks/36/imported = false
+tracks/36/enabled = true
 tracks/36/keys = {
 "times": PoolRealArray( 0, 2.6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1039,7 +1225,9 @@ tracks/36/keys = {
 tracks/37/type = "value"
 tracks/37/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield/shadow:position")
 tracks/37/interp = 1
+tracks/37/loop_wrap = true
 tracks/37/imported = false
+tracks/37/enabled = true
 tracks/37/keys = {
 "times": PoolRealArray( 0, 2.6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1049,7 +1237,9 @@ tracks/37/keys = {
 tracks/38/type = "value"
 tracks/38/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:position")
 tracks/38/interp = 1
+tracks/38/loop_wrap = true
 tracks/38/imported = false
+tracks/38/enabled = true
 tracks/38/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1057,7 +1247,7 @@ tracks/38/keys = {
 "values": [ Vector2( -33.5088, -33.6646 ) ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=5]
 
 resource_name = "block"
 length = 1.5
@@ -1066,7 +1256,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 1, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1076,7 +1268,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1086,7 +1280,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1096,7 +1292,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1106,7 +1304,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1116,7 +1316,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1126,7 +1328,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1136,7 +1340,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/Head/Head:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1146,7 +1352,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib:rotation_degrees")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1156,7 +1364,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1166,7 +1376,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites/Rib/Chest:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1176,7 +1388,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/ArmBG:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1186,7 +1400,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/ArmBG/ForearmBG:position")
 tracks/12/interp = 2
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1196,7 +1412,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:position")
 tracks/13/interp = 2
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1206,7 +1424,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites/Rib:position")
 tracks/14/interp = 2
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1216,7 +1436,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites:position")
 tracks/15/interp = 2
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1226,7 +1448,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/16/interp = 2
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1236,7 +1460,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/Rib/Chest:frame")
 tracks/17/interp = 2
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1246,7 +1472,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/Rib/Chest/Head/Head:frame")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1256,7 +1484,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib:frame")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1266,7 +1496,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1276,7 +1508,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 0.25, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1286,7 +1520,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1296,7 +1532,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:position")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 1.5 ),
 "transitions": PoolRealArray( 1 ),
@@ -1306,7 +1544,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1316,7 +1556,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1326,7 +1568,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:frame")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1336,7 +1580,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1344,7 +1590,7 @@ tracks/27/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=6]
 
 length = 3.0
 loop = true
@@ -1352,7 +1598,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/ArmBG:rotation_degrees")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1362,7 +1610,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1372,7 +1622,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1382,7 +1634,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1392,7 +1646,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1402,7 +1658,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1412,7 +1670,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1422,7 +1682,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1432,7 +1694,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib/Chest/Head/Head:rotation_degrees")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1442,7 +1706,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites/Rib:rotation_degrees")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1452,7 +1718,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1462,7 +1730,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/Rib/Chest:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1472,7 +1742,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/ArmBG:position")
 tracks/12/interp = 2
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1482,7 +1754,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/ArmBG/ForearmBG:position")
 tracks/13/interp = 2
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1492,7 +1766,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:position")
 tracks/14/interp = 2
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1502,7 +1778,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites/Rib:position")
 tracks/15/interp = 2
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1512,7 +1790,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites:position")
 tracks/16/interp = 2
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1522,7 +1802,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/17/interp = 2
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1532,7 +1814,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/Rib/Chest:frame")
 tracks/18/interp = 2
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1542,7 +1826,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib/Chest/Head/Head:frame")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1552,7 +1838,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/Rib:frame")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1562,7 +1850,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1572,7 +1862,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1582,7 +1874,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1592,7 +1886,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:position")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1602,7 +1898,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1612,7 +1910,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1622,7 +1922,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1632,7 +1934,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:frame")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1640,7 +1944,7 @@ tracks/28/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=7]
 
 resource_name = "block_up_impact"
 length = 1.5
@@ -1649,7 +1953,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/ArmBG:rotation_degrees")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.75, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1659,7 +1965,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1669,7 +1977,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.75, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1679,7 +1989,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1689,7 +2001,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1699,7 +2013,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1709,7 +2025,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1719,7 +2037,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -1729,7 +2049,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib/Chest/Head/Head:rotation_degrees")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1739,7 +2061,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites/Rib:rotation_degrees")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1749,7 +2073,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1759,7 +2085,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/Rib/Chest:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1769,7 +2097,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/ArmBG:position")
 tracks/12/interp = 2
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1779,7 +2109,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/ArmBG/ForearmBG:position")
 tracks/13/interp = 2
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1789,7 +2121,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:position")
 tracks/14/interp = 2
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1799,7 +2133,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites/Rib:position")
 tracks/15/interp = 2
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1809,7 +2145,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites:position")
 tracks/16/interp = 2
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1819,7 +2157,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/17/interp = 2
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1829,7 +2169,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/Rib/Chest:frame")
 tracks/18/interp = 2
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1839,7 +2181,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib/Chest/Head/Head:frame")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1849,7 +2193,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/Rib:frame")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1859,7 +2205,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1869,7 +2217,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 0.25, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1879,7 +2229,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1889,7 +2241,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:position")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1899,7 +2253,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1909,7 +2265,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1919,7 +2277,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:frame")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1929,7 +2289,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1939,7 +2301,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("sprites/Rib/Chest/Head/Head/Mouth:position")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1947,7 +2311,7 @@ tracks/29/keys = {
 "values": [ Vector2( -23.7877, 21.164 ) ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=8]
 
 resource_name = "block_front_idle"
 length = 3.0
@@ -1956,7 +2320,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/ArmBG:rotation_degrees")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 1.75 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1966,7 +2332,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1976,7 +2344,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1986,7 +2356,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1996,7 +2368,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2006,7 +2380,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2016,7 +2392,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2026,7 +2404,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2036,7 +2416,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib/Chest/Head/Head:rotation_degrees")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2046,7 +2428,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites/Rib:rotation_degrees")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2056,7 +2440,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2066,7 +2452,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/Rib/Chest:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 1.375, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2076,7 +2464,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/ArmBG:position")
 tracks/12/interp = 2
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2086,7 +2476,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/ArmBG/ForearmBG:position")
 tracks/13/interp = 2
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2096,7 +2488,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:position")
 tracks/14/interp = 2
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2106,7 +2500,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites/Rib:position")
 tracks/15/interp = 2
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2116,7 +2512,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites:position")
 tracks/16/interp = 2
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2126,7 +2524,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/17/interp = 2
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2136,7 +2536,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/Rib/Chest:frame")
 tracks/18/interp = 2
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2146,7 +2548,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib/Chest/Head/Head:frame")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2156,7 +2560,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/Rib:frame")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2166,7 +2572,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2176,7 +2584,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2186,7 +2596,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2196,7 +2608,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:position")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2206,7 +2620,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -2216,7 +2632,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -2226,7 +2644,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -2236,7 +2656,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:frame")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -2244,7 +2666,7 @@ tracks/28/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=9]
 
 length = 7.5
 loop = false
@@ -2252,7 +2674,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib:rotation_degrees")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.375, 0.75, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2262,7 +2686,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.75, 1.125, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2272,7 +2698,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG:rotation_degrees")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.25, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2282,7 +2710,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/3/interp = 1
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.75, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2292,7 +2722,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/4/interp = 1
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2302,7 +2734,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/5/interp = 1
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2312,7 +2746,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/6/interp = 1
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.75, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2322,7 +2758,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/7/interp = 1
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1.25, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2332,7 +2770,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/8/interp = 1
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2342,7 +2782,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/9/interp = 1
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2352,7 +2794,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites:rotation_degrees")
 tracks/10/interp = 1
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 1.125, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2362,7 +2806,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 1.125, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2372,7 +2818,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/Rib:position")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 1.5, 3.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2382,7 +2830,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/Rib/Chest:position")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 0.75, 1.125, 1.5, 3.25, 5.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -2392,7 +2842,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 0.75, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2402,7 +2854,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites:position")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2412,7 +2866,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.5, 3.25, 5.25, 7.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2422,7 +2878,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -2432,7 +2890,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/ArmBG:position")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2442,7 +2902,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 1.5, 3.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2452,7 +2914,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:position")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray(  ),
 "transitions": PoolRealArray(  ),
@@ -2462,7 +2926,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/ArmBG/ForearmBG:position")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 1.5, 3.25, 5.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2472,7 +2938,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:position")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 1.5, 3.25, 5.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2482,7 +2950,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 5.25, 6.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2492,7 +2962,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites/Rib:frame")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -2502,7 +2974,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites/Rib/Chest:frame")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -2510,7 +2984,7 @@ tracks/25/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=10]
 
 length = 0.8
 loop = false
@@ -2518,7 +2992,9 @@ step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2528,7 +3004,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/ArmBG:rotation_degrees")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2538,7 +3016,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.1875, 0.28125, 0.375, 0.55, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -2548,7 +3028,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.1875, 0.375, 0.55, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2558,7 +3040,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2568,7 +3052,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.1875, 0.375, 0.55, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2578,7 +3064,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.09375, 0.1875, 0.375, 0.55, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -2588,7 +3076,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2598,7 +3088,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib/Chest/Head/Head:rotation_degrees")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2608,7 +3100,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites/Rib:rotation_degrees")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2618,7 +3112,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2628,7 +3124,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/Rib/Chest:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 0.1875, 0.375, 0.55, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2638,7 +3136,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/ArmBG:position")
 tracks/12/interp = 2
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2648,7 +3148,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/ArmBG/ForearmBG:position")
 tracks/13/interp = 2
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2658,7 +3160,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:position")
 tracks/14/interp = 2
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2668,7 +3172,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites/Rib:position")
 tracks/15/interp = 2
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2678,7 +3184,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites:position")
 tracks/16/interp = 2
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2688,7 +3196,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/17/interp = 2
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2698,7 +3208,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/Rib/Chest:frame")
 tracks/18/interp = 2
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 0.09375, 0.1875, 0.28125, 0.375, 0.55, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -2708,7 +3220,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib/Chest/Head/Head:frame")
 tracks/19/interp = 2
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 0.1875, 0.375, 0.55, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2718,7 +3232,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/Rib:frame")
 tracks/20/interp = 2
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 0.1875, 0.375, 0.55, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2728,7 +3244,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/21/interp = 2
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2738,7 +3256,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/22/interp = 2
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2748,7 +3268,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:scale")
 tracks/23/interp = 2
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2758,7 +3280,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/24/interp = 2
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2768,7 +3292,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites:rotation_degrees")
 tracks/25/interp = 2
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2778,7 +3304,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("sprites/Rib/Chest/Head/Head:modulate")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2788,7 +3316,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:modulate")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2798,7 +3328,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:modulate")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2808,7 +3340,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("sprites/ArmBG/ForearmBG:modulate")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2818,7 +3352,9 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/path = NodePath("sprites/ArmBG:modulate")
 tracks/30/interp = 1
+tracks/30/loop_wrap = true
 tracks/30/imported = false
+tracks/30/enabled = true
 tracks/30/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2828,7 +3364,9 @@ tracks/30/keys = {
 tracks/31/type = "value"
 tracks/31/path = NodePath("sprites/Rib/Chest:modulate")
 tracks/31/interp = 1
+tracks/31/loop_wrap = true
 tracks/31/imported = false
+tracks/31/enabled = true
 tracks/31/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2838,7 +3376,9 @@ tracks/31/keys = {
 tracks/32/type = "value"
 tracks/32/path = NodePath("sprites/Rib:modulate")
 tracks/32/interp = 1
+tracks/32/loop_wrap = true
 tracks/32/imported = false
+tracks/32/enabled = true
 tracks/32/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2848,7 +3388,9 @@ tracks/32/keys = {
 tracks/33/type = "value"
 tracks/33/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:position")
 tracks/33/interp = 1
+tracks/33/loop_wrap = true
 tracks/33/imported = false
+tracks/33/enabled = true
 tracks/33/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2858,7 +3400,9 @@ tracks/33/keys = {
 tracks/34/type = "value"
 tracks/34/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/34/interp = 1
+tracks/34/loop_wrap = true
 tracks/34/imported = false
+tracks/34/enabled = true
 tracks/34/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2868,7 +3412,9 @@ tracks/34/keys = {
 tracks/35/type = "value"
 tracks/35/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/35/interp = 1
+tracks/35/loop_wrap = true
 tracks/35/imported = false
+tracks/35/enabled = true
 tracks/35/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2878,7 +3424,9 @@ tracks/35/keys = {
 tracks/36/type = "value"
 tracks/36/path = NodePath("sprites/Rib/Chest/Head/sclera/Mouth Soul:visible")
 tracks/36/interp = 1
+tracks/36/loop_wrap = true
 tracks/36/imported = false
+tracks/36/enabled = true
 tracks/36/keys = {
 "times": PoolRealArray( 0, 0.375, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2888,7 +3436,9 @@ tracks/36/keys = {
 tracks/37/type = "value"
 tracks/37/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/37/interp = 1
+tracks/37/loop_wrap = true
 tracks/37/imported = false
+tracks/37/enabled = true
 tracks/37/keys = {
 "times": PoolRealArray( 0, 0.1875, 0.375, 0.55, 0.8 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2898,7 +3448,9 @@ tracks/37/keys = {
 tracks/38/type = "method"
 tracks/38/path = NodePath(".")
 tracks/38/interp = 1
+tracks/38/loop_wrap = true
 tracks/38/imported = false
+tracks/38/enabled = true
 tracks/38/keys = {
 "times": PoolRealArray( 0.4 ),
 "transitions": PoolRealArray( 1 ),
@@ -2908,7 +3460,7 @@ tracks/38/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=11]
 
 length = 9.0
 loop = true
@@ -2916,7 +3468,9 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 2.5, 4.5, 7, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2926,7 +3480,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/ArmBG:rotation_degrees")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1.75, 4.5, 6.25, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2936,7 +3492,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 2, 4.5, 6.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2946,7 +3504,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 2.75, 4.5, 6.8, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2956,7 +3516,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2966,7 +3528,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 2, 5.1, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2976,7 +3540,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 2.5, 6.3, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2986,7 +3552,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 2.4, 6.8, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2996,7 +3564,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib/Chest/Head/Head:rotation_degrees")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3006,7 +3576,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites/Rib:rotation_degrees")
 tracks/9/interp = 1
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 2, 4.5, 6.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -3016,7 +3588,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/10/interp = 1
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 2, 5.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -3026,7 +3600,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/Rib/Chest:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 1.75, 4.5, 6.25, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -3036,7 +3612,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/ArmBG:position")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 2.5, 4.5, 7, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -3046,7 +3624,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/ArmBG/ForearmBG:position")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 2, 4.5, 6.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -3056,7 +3636,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:position")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3066,7 +3648,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites/Rib:position")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 2, 4.5, 6.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -3076,7 +3660,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites:position")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3086,7 +3672,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/17/interp = 2
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 2, 4.5, 6.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -3096,7 +3684,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/Rib/Chest:frame")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3106,7 +3696,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib/Chest/Head/Head:frame")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3116,7 +3708,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/Rib:frame")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3126,7 +3720,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3136,7 +3732,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 4.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3146,7 +3744,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:scale")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3156,7 +3756,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 2, 4.5, 6.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -3166,7 +3768,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:position")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 2, 4.5, 6.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -3176,7 +3780,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3186,7 +3792,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3196,7 +3804,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3206,7 +3816,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:frame")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0, 4.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3216,7 +3828,9 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/path = NodePath("sprites/Rib/Chest/Head/sclera/eyelids:frame")
 tracks/30/interp = 1
+tracks/30/loop_wrap = true
 tracks/30/imported = false
+tracks/30/enabled = true
 tracks/30/keys = {
 "times": PoolRealArray( 0, 1.1, 1.2, 1.3, 1.4, 1.6, 1.7, 1.8, 5.8, 5.9, 6, 6.1, 6.3, 6.4, 6.5, 6.7, 6.8, 6.9, 7, 7.2, 7.3, 7.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -3226,7 +3840,9 @@ tracks/30/keys = {
 tracks/31/type = "value"
 tracks/31/path = NodePath("sprites/Rib/Chest/Head/Head/cejaL:position")
 tracks/31/interp = 1
+tracks/31/loop_wrap = true
 tracks/31/imported = false
+tracks/31/enabled = true
 tracks/31/keys = {
 "times": PoolRealArray( 0, 1, 1.5, 1.9, 3.6, 5.7, 6.2, 6.6, 6.6, 7.1, 7.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -3236,7 +3852,9 @@ tracks/31/keys = {
 tracks/32/type = "value"
 tracks/32/path = NodePath("sprites/Rib/Chest/Head/Head/cejaL:rotation_degrees")
 tracks/32/interp = 1
+tracks/32/loop_wrap = true
 tracks/32/imported = false
+tracks/32/enabled = true
 tracks/32/keys = {
 "times": PoolRealArray( 0, 1, 1.5, 1.9, 3.6, 5.7, 6.2, 6.6, 6.6, 7.1, 7.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -3246,7 +3864,9 @@ tracks/32/keys = {
 tracks/33/type = "value"
 tracks/33/path = NodePath("sprites/Rib/Chest/Head/Head/cejaR:position")
 tracks/33/interp = 1
+tracks/33/loop_wrap = true
 tracks/33/imported = false
+tracks/33/enabled = true
 tracks/33/keys = {
 "times": PoolRealArray( 0, 1, 1.5, 1.9, 3.6, 5.7, 6.2, 6.6, 6.6, 7.1, 7.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -3256,7 +3876,9 @@ tracks/33/keys = {
 tracks/34/type = "value"
 tracks/34/path = NodePath("sprites/Rib/Chest/Head/Head/cejaR:rotation_degrees")
 tracks/34/interp = 1
+tracks/34/loop_wrap = true
 tracks/34/imported = false
+tracks/34/enabled = true
 tracks/34/keys = {
 "times": PoolRealArray( 0, 1, 1.5, 1.9, 3.6, 5.7, 6.2, 6.6, 6.6, 7.1, 7.5, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -3266,7 +3888,9 @@ tracks/34/keys = {
 tracks/35/type = "value"
 tracks/35/path = NodePath("sprites/Rib/Chest/sword_arm:rotation_degrees")
 tracks/35/interp = 1
+tracks/35/loop_wrap = true
 tracks/35/imported = false
+tracks/35/enabled = true
 tracks/35/keys = {
 "times": PoolRealArray( 0, 2.2, 4.5, 6.8, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -3276,7 +3900,9 @@ tracks/35/keys = {
 tracks/36/type = "value"
 tracks/36/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield/rim:position")
 tracks/36/interp = 1
+tracks/36/loop_wrap = true
 tracks/36/imported = false
+tracks/36/enabled = true
 tracks/36/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3286,7 +3912,9 @@ tracks/36/keys = {
 tracks/37/type = "value"
 tracks/37/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield/shadow:position")
 tracks/37/interp = 1
+tracks/37/loop_wrap = true
 tracks/37/imported = false
+tracks/37/enabled = true
 tracks/37/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3296,7 +3924,9 @@ tracks/37/keys = {
 tracks/38/type = "value"
 tracks/38/path = NodePath("sprites/Rib/Chest/Head/Head/Mouth:position")
 tracks/38/interp = 1
+tracks/38/loop_wrap = true
 tracks/38/imported = false
+tracks/38/enabled = true
 tracks/38/keys = {
 "times": PoolRealArray( 0, 2, 4.5, 5.7, 6.6, 7.7, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -3306,7 +3936,9 @@ tracks/38/keys = {
 tracks/39/type = "value"
 tracks/39/path = NodePath("sprites/Rib/Chest/Head/sclera/eye_track/eyes:position")
 tracks/39/interp = 1
+tracks/39/loop_wrap = true
 tracks/39/imported = false
+tracks/39/enabled = true
 tracks/39/keys = {
 "times": PoolRealArray( 0, 2.6, 5.5, 7.6, 9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -3314,7 +3946,7 @@ tracks/39/keys = {
 "values": [ Vector2( -4.06426, 9.27054 ), Vector2( -6.20192, 9.5089 ), Vector2( -5.42519, 9.31161 ), Vector2( -5.49273, 11.1086 ), Vector2( -4.06426, 9.27054 ) ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=12]
 
 resource_name = "moving_upwards"
 length = 3.0
@@ -3323,7 +3955,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/ArmBG:rotation_degrees")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3333,7 +3967,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3343,7 +3979,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3353,7 +3991,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3363,7 +4003,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3373,7 +4015,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3383,7 +4027,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3393,7 +4039,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/Head/Head:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3403,7 +4051,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib:rotation_degrees")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3413,7 +4063,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3423,7 +4075,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites/Rib/Chest:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3433,7 +4087,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/ArmBG:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3443,7 +4099,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/ArmBG/ForearmBG:position")
 tracks/12/interp = 2
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3453,7 +4111,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:position")
 tracks/13/interp = 2
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3463,7 +4123,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites/Rib:position")
 tracks/14/interp = 2
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3473,7 +4135,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites:position")
 tracks/15/interp = 2
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 0.75, 1.5, 2.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -3483,7 +4147,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/16/interp = 2
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3493,7 +4159,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/Rib/Chest:frame")
 tracks/17/interp = 2
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3503,7 +4171,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/Rib/Chest/Head/Head:frame")
 tracks/18/interp = 2
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3513,7 +4183,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib:frame")
 tracks/19/interp = 2
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3523,7 +4195,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/20/interp = 2
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3533,7 +4207,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/21/interp = 2
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3543,7 +4219,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:scale")
 tracks/22/interp = 2
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3553,7 +4231,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/23/interp = 2
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3563,7 +4243,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites:rotation_degrees")
 tracks/24/interp = 2
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3573,7 +4255,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites/Rib/Chest/Head/Head:modulate")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3583,7 +4267,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:modulate")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3593,7 +4279,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:modulate")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3603,7 +4291,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("sprites/ArmBG/ForearmBG:modulate")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3613,7 +4303,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("sprites/ArmBG:modulate")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3623,7 +4315,9 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/path = NodePath("sprites/Rib/Chest:modulate")
 tracks/30/interp = 1
+tracks/30/loop_wrap = true
 tracks/30/imported = false
+tracks/30/enabled = true
 tracks/30/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3633,7 +4327,9 @@ tracks/30/keys = {
 tracks/31/type = "value"
 tracks/31/path = NodePath("sprites/Rib:modulate")
 tracks/31/interp = 1
+tracks/31/loop_wrap = true
 tracks/31/imported = false
+tracks/31/enabled = true
 tracks/31/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3643,7 +4339,9 @@ tracks/31/keys = {
 tracks/32/type = "value"
 tracks/32/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:position")
 tracks/32/interp = 1
+tracks/32/loop_wrap = true
 tracks/32/imported = false
+tracks/32/enabled = true
 tracks/32/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3653,7 +4351,9 @@ tracks/32/keys = {
 tracks/33/type = "value"
 tracks/33/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/33/interp = 1
+tracks/33/loop_wrap = true
 tracks/33/imported = false
+tracks/33/enabled = true
 tracks/33/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3663,7 +4363,9 @@ tracks/33/keys = {
 tracks/34/type = "value"
 tracks/34/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/34/interp = 1
+tracks/34/loop_wrap = true
 tracks/34/imported = false
+tracks/34/enabled = true
 tracks/34/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3673,7 +4375,9 @@ tracks/34/keys = {
 tracks/35/type = "value"
 tracks/35/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:frame")
 tracks/35/interp = 1
+tracks/35/loop_wrap = true
 tracks/35/imported = false
+tracks/35/enabled = true
 tracks/35/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3683,7 +4387,9 @@ tracks/35/keys = {
 tracks/36/type = "value"
 tracks/36/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/36/interp = 1
+tracks/36/loop_wrap = true
 tracks/36/imported = false
+tracks/36/enabled = true
 tracks/36/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3691,7 +4397,7 @@ tracks/36/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=13]
 
 length = 3.5
 loop = false
@@ -3699,7 +4405,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.275, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3709,7 +4417,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/ArmBG:rotation_degrees")
 tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.3, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3719,7 +4429,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.75, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3729,7 +4441,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/3/interp = 1
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.35, 1, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -3739,7 +4453,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/4/interp = 1
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 2.25 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3749,7 +4465,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/5/interp = 1
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.25, 1, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -3759,7 +4477,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/6/interp = 1
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.5, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3769,7 +4489,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/7/interp = 1
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1.75, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3779,7 +4501,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/8/interp = 1
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 2.25 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3789,7 +4513,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites:rotation_degrees")
 tracks/9/interp = 1
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 0.275, 0.625, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -3799,7 +4525,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/10/interp = 1
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 0.275, 0.35, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -3809,7 +4537,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/Rib:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 2.25 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3819,7 +4549,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/Rib/Chest:position")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.275, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3829,7 +4561,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 0.5, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3839,7 +4573,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites:position")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 2.25 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3849,7 +4585,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 2.25 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3859,7 +4597,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 0.625, 2.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3869,7 +4609,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/ArmBG:position")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 2.25 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3879,7 +4621,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3889,7 +4633,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3899,7 +4645,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/ArmBG:frame")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3909,7 +4657,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/Rib/Chest/Head/Head:frame")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3919,7 +4669,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:frame")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3929,7 +4681,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/Rib/Chest:frame")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3939,7 +4693,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites/Rib:frame")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -3947,7 +4703,7 @@ tracks/24/keys = {
 "values": [ 2 ]
 }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=14]
 
 length = 4.5
 loop = true
@@ -3955,7 +4711,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib:rotation_degrees")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 4.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3965,7 +4723,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 4.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3975,7 +4735,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG:rotation_degrees")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 2.25, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3985,7 +4747,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/3/interp = 1
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 2.25, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3995,7 +4759,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/4/interp = 1
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 1.75, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4005,7 +4771,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/5/interp = 1
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 4.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4015,7 +4783,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/6/interp = 1
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 2.25, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4025,7 +4795,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/7/interp = 1
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 2.25, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4035,7 +4807,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/8/interp = 1
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 4.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4045,7 +4819,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/9/interp = 1
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 2.625, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4055,7 +4831,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites:rotation_degrees")
 tracks/10/interp = 1
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 4.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4065,7 +4843,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 3, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4075,7 +4855,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/Rib:position")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 2.25, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4085,7 +4867,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/Rib/Chest:position")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 1.875, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4095,7 +4879,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 2.25, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4105,7 +4891,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites:position")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1.5, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4115,7 +4903,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 2.25, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4125,7 +4915,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 2.25, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4135,7 +4927,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/ArmBG:position")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 2.625, 4.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4145,7 +4939,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -4155,7 +4951,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -4165,7 +4963,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/Rib/Chest/Head/Head:frame")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -4175,7 +4975,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:frame")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -4185,7 +4987,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/ArmBG:frame")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -4195,7 +4999,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites/Rib:frame")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -4205,7 +5011,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites/Rib/Chest:frame")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -4213,7 +5021,7 @@ tracks/25/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=15]
 
 length = 3.0
 loop = true
@@ -4221,7 +5029,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/ArmBG:rotation_degrees")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4231,7 +5041,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4241,7 +5053,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:rotation_degrees")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4251,7 +5065,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4261,7 +5077,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:rotation_degrees")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4271,7 +5089,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4281,7 +5101,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4291,7 +5113,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("sprites/Rib/Chest/Head/Head:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4301,7 +5125,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("sprites/Rib:rotation_degrees")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4311,7 +5137,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("sprites/Rib/Chest/Head:rotation_degrees")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4321,7 +5149,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("sprites/Rib/Chest:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4331,7 +5161,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("sprites/ArmBG:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4341,7 +5173,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("sprites/ArmBG/ForearmBG:position")
 tracks/12/interp = 2
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4351,7 +5185,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("sprites/ArmBG/ForearmBG/HandBG:position")
 tracks/13/interp = 2
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4361,7 +5197,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("sprites/Rib:position")
 tracks/14/interp = 2
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4371,7 +5209,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("sprites:position")
 tracks/15/interp = 2
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 0.75, 1.5, 2.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -4381,7 +5221,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("sprites/Rib/Chest/Head:position")
 tracks/16/interp = 2
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4391,7 +5233,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("sprites/Rib/Chest:frame")
 tracks/17/interp = 2
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4401,7 +5245,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("sprites/Rib/Chest/Head/Head:frame")
 tracks/18/interp = 2
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4411,7 +5257,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("sprites/Rib:frame")
 tracks/19/interp = 2
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4421,7 +5269,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:rotation_degrees")
 tracks/20/interp = 2
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4431,7 +5281,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:scale")
 tracks/21/interp = 2
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4441,7 +5293,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:scale")
 tracks/22/interp = 2
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4451,7 +5305,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG:position")
 tracks/23/interp = 2
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4461,7 +5317,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("sprites:rotation_degrees")
 tracks/24/interp = 2
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -4471,7 +5329,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("sprites/Rib/Chest/Head/Head:modulate")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4481,7 +5341,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:modulate")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4491,7 +5353,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("sprites/ArmBG/ForearmBG/HandBG/Sword:modulate")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4501,7 +5365,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("sprites/ArmBG/ForearmBG:modulate")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4511,7 +5377,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("sprites/ArmBG:modulate")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4521,7 +5389,9 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/path = NodePath("sprites/Rib/Chest:modulate")
 tracks/30/interp = 1
+tracks/30/loop_wrap = true
 tracks/30/imported = false
+tracks/30/enabled = true
 tracks/30/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4531,7 +5401,9 @@ tracks/30/keys = {
 tracks/31/type = "value"
 tracks/31/path = NodePath("sprites/Rib:modulate")
 tracks/31/interp = 1
+tracks/31/loop_wrap = true
 tracks/31/imported = false
+tracks/31/enabled = true
 tracks/31/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4541,7 +5413,9 @@ tracks/31/keys = {
 tracks/32/type = "value"
 tracks/32/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:position")
 tracks/32/interp = 1
+tracks/32/loop_wrap = true
 tracks/32/imported = false
+tracks/32/enabled = true
 tracks/32/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -4551,7 +5425,9 @@ tracks/32/keys = {
 tracks/33/type = "value"
 tracks/33/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield:position")
 tracks/33/interp = 1
+tracks/33/loop_wrap = true
 tracks/33/imported = false
+tracks/33/enabled = true
 tracks/33/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -4561,7 +5437,9 @@ tracks/33/keys = {
 tracks/34/type = "value"
 tracks/34/path = NodePath("sprites/Rib/Chest/Head/sclera:rotation_degrees")
 tracks/34/interp = 1
+tracks/34/loop_wrap = true
 tracks/34/imported = false
+tracks/34/enabled = true
 tracks/34/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -4571,7 +5449,9 @@ tracks/34/keys = {
 tracks/35/type = "value"
 tracks/35/path = NodePath("sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG:frame")
 tracks/35/interp = 1
+tracks/35/loop_wrap = true
 tracks/35/imported = false
+tracks/35/enabled = true
 tracks/35/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -4581,7 +5461,9 @@ tracks/35/keys = {
 tracks/36/type = "value"
 tracks/36/path = NodePath("sprites/ArmBG/ForearmBG:frame")
 tracks/36/interp = 1
+tracks/36/loop_wrap = true
 tracks/36/imported = false
+tracks/36/enabled = true
 tracks/36/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -4589,23 +5471,22 @@ tracks/36/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="CircleShape2D" id=18]
+[sub_resource type="CircleShape2D" id=16]
+
+custom_solver_bias = 0.0
+radius = 80.0
+
+[sub_resource type="CircleShape2D" id=17]
 
 custom_solver_bias = 0.0
 radius = 180.0
 
 [node name="warrior" type="RigidBody2D"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, -3.6708, -18.3831 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 mode = 2
 mass = 20.0
-friction = 1.0
-bounce = 0.0
 gravity_scale = 1.0
 custom_integrator = true
 continuous_cd = 0
@@ -4614,82 +5495,69 @@ contact_monitor = false
 sleeping = false
 can_sleep = true
 linear_velocity = Vector2( 0, 0 )
-angular_velocity = 0.0
 linear_damp = -1.0
+angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 drop = 0
 
 [node name="sprites" type="Node2D" parent="."]
 
-
 [node name="ArmBG" type="Sprite" parent="sprites"]
-
 show_behind_parent = true
 position = Vector2( -34.8562, -56.0991 )
 texture = ExtResource( 2 )
 offset = Vector2( 0, 16 )
 
 [node name="ForearmBG" type="Sprite" parent="sprites/ArmBG"]
-
 position = Vector2( -4.10226, 35 )
-rotation_degrees = -45.0
+rotation = -0.785398
 texture = ExtResource( 3 )
 offset = Vector2( -5, -5 )
 hframes = 2
 frame = 1
 
 [node name="HandBG" type="Sprite" parent="sprites/ArmBG/ForearmBG"]
-
 position = Vector2( -32.8181, -30.6092 )
-rotation_degrees = 45.0
+rotation = 0.785398
 texture = ExtResource( 4 )
 offset = Vector2( -7, -3 )
 
 [node name="Sword" type="Sprite" parent="sprites/ArmBG/ForearmBG/HandBG"]
-
 position = Vector2( -13.9976, -3.16186 )
 scale = Vector2( 0.862875, 1 )
 texture = ExtResource( 5 )
 offset = Vector2( 0.291992, -41.1163 )
 
 [node name="damager" type="Area2D" parent="sprites/ArmBG/ForearmBG/HandBG/Sword"]
-
 input_pickable = true
-shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0.234528, -59.3896 )
-shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
 
 [node name="collision" type="CollisionShape2D" parent="sprites/ArmBG/ForearmBG/HandBG/Sword/damager"]
-
 visible = false
 position = Vector2( 0.234528, -59.3896 )
-shape = SubResource( 2 )
-trigger = false
-_update_shape_index = -1
+shape = SubResource( 1 )
 
 [node name="trail" type="Sprite" parent="sprites/ArmBG/ForearmBG/HandBG/Sword"]
-
 visible = false
 modulate = Color( 1, 1, 1, 0 )
 show_behind_parent = true
 position = Vector2( 9.0466, -59.4701 )
-rotation_degrees = 190.294
+rotation = 3.32126
 texture = ExtResource( 6 )
 offset = Vector2( -65.6139, -2.36955 )
 
 [node name="fingers" type="Sprite" parent="sprites/ArmBG/ForearmBG/HandBG"]
-
 position = Vector2( -14.4292, -3.63666 )
-rotation_degrees = -10.2871
+rotation = -0.179544
 texture = ExtResource( 7 )
 
 [node name="Rib" type="Sprite" parent="sprites"]
-
 show_behind_parent = true
 position = Vector2( 6.89697, -30.2249 )
 texture = ExtResource( 8 )
@@ -4697,7 +5565,6 @@ hframes = 3
 frame = 2
 
 [node name="Chest" type="Sprite" parent="sprites/Rib"]
-
 position = Vector2( 3.06948, -34.4234 )
 texture = ExtResource( 9 )
 offset = Vector2( -13.703, -2.89872 )
@@ -4705,33 +5572,27 @@ hframes = 4
 frame = 1
 
 [node name="Head" type="Node2D" parent="sprites/Rib/Chest"]
-
 position = Vector2( -14.2301, -1.05408 )
 
 [node name="sclera" type="Sprite" parent="sprites/Rib/Chest/Head"]
-
 position = Vector2( -2.15813, -40.2683 )
 texture = ExtResource( 10 )
 hframes = 3
 
 [node name="Mouth Soul" type="Sprite" parent="sprites/Rib/Chest/Head/sclera"]
-
 visible = false
 position = Vector2( -9.93191, 17.1584 )
 texture = ExtResource( 11 )
 
 [node name="eye_track" type="Node2D" parent="sprites/Rib/Chest/Head/sclera"]
-
 position = Vector2( -0.237923, -0.907532 )
 
 [node name="eyes" type="Sprite" parent="sprites/Rib/Chest/Head/sclera/eye_track"]
-
 position = Vector2( -5.88399, 9.47345 )
 texture = ExtResource( 12 )
 hframes = 3
 
 [node name="eyelids" type="Sprite" parent="sprites/Rib/Chest/Head/sclera"]
-
 position = Vector2( -16.4478, 7.44431 )
 texture = ExtResource( 13 )
 vframes = 3
@@ -4739,33 +5600,28 @@ hframes = 3
 frame = 1
 
 [node name="Head" type="Sprite" parent="sprites/Rib/Chest/Head"]
-
 position = Vector2( -3.31174, -39.8122 )
 texture = ExtResource( 14 )
 hframes = 3
 
 [node name="Mouth" type="Sprite" parent="sprites/Rib/Chest/Head/Head"]
-
 position = Vector2( -23.7877, 21.164 )
 texture = ExtResource( 11 )
 
 [node name="cejaL" type="Sprite" parent="sprites/Rib/Chest/Head/Head"]
-
 position = Vector2( -27.7586, 0.838739 )
-rotation_degrees = -14.4993
+rotation = -0.253061
 texture = ExtResource( 15 )
 offset = Vector2( -1.13362, -1.79489 )
 hframes = 3
 
 [node name="crest_mask" type="Sprite" parent="sprites/Rib/Chest/Head/Head"]
-
 position = Vector2( -17.8815, 2.03622 )
 texture = ExtResource( 16 )
 
 [node name="cejaR" type="Sprite" parent="sprites/Rib/Chest/Head/Head"]
-
 position = Vector2( -4.3198, 0.83874 )
-rotation_degrees = 11.3542
+rotation = 0.198168
 texture = ExtResource( 15 )
 offset = Vector2( -1.13362, -1.79489 )
 hframes = 3
@@ -4773,139 +5629,113 @@ frame = 1
 
 [node name="shield_orientation" type="Node2D" parent="sprites/Rib/Chest"]
 
-
 [node name="ArmFG" type="Sprite" parent="sprites/Rib/Chest/shield_orientation"]
-
 position = Vector2( 12.4943, 13.6202 )
 texture = ExtResource( 2 )
 offset = Vector2( 0, 16 )
 
 [node name="ForearmFG" type="Sprite" parent="sprites/Rib/Chest/shield_orientation/ArmFG"]
-
 position = Vector2( -2.92526, 35 )
-rotation_degrees = -45.0
+rotation = -0.785398
 texture = ExtResource( 3 )
 offset = Vector2( -5, -5 )
 hframes = 2
 
 [node name="HandFG" type="Sprite" parent="sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG"]
-
 position = Vector2( -33.5088, -33.6646 )
-rotation_degrees = 45.0
+rotation = 0.785398
 texture = ExtResource( 17 )
 offset = Vector2( -7, -3 )
 
 [node name="Shield" type="Sprite" parent="sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG"]
-
 position = Vector2( -9.13178, -7.08307 )
-rotation_degrees = -4.6594
+rotation = -0.0813219
 scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 18 )
 offset = Vector2( 2.95128, 18.2443 )
 
 [node name="rim" type="Sprite" parent="sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield"]
-
 position = Vector2( 0.743734, 9.41634 )
 texture = ExtResource( 19 )
 
 [node name="fire" type="Particles2D" parent="sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield"]
-
 position = Vector2( 1.41269, 12.8641 )
+emitting = false
 amount = 12
 lifetime = 0.5
-config/emit_timeout = 0.5
-emitting = false
-config/process_mode = 1
-local_coords = false
+one_shot = false
+preprocess = 0.0
+speed_scale = 1.0
 explosiveness = 0.1
+randomness = 0.0
+fixed_fps = 0
+fract_delta = true
+visibility_rect = Rect2( -100, -100, 200, 200 )
+local_coords = false
+draw_order = 0
+process_material = null
 texture = ExtResource( 20 )
-params/direction = 0.0
-params/spread = 180.0
-params/linear_velocity = 300.0
-params/spin_velocity = 5.0
-params/orbit_velocity = 0.0
-params/gravity_direction = 0.0
-params/gravity_strength = 9.8
-params/radial_accel = 0.0
-params/tangential_accel = 0.0
-params/damping = 0.0
-params/initial_angle = 0.0
-params/initial_size = 2.0
-params/final_size = 1.4
-params/hue_variation = 0.0
-params/anim_speed_scale = 1.0
-params/anim_initial_pos = 0.0
-randomness/spin_velocity = 1.0
-color/color_ramp = SubResource( 3 )
+normal_map = null
+h_frames = 1
+v_frames = 1
 
 [node name="shadow" type="Sprite" parent="sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield"]
-
 show_behind_parent = true
 position = Vector2( 31.6179, 16.2683 )
 texture = ExtResource( 21 )
 
 [node name="sword_arm" type="RemoteTransform2D" parent="sprites/Rib/Chest"]
-
 position = Vector2( -44.8226, 8.54925 )
 remote_path = NodePath("../../../ArmBG")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
 
 [node name="anim" type="AnimationPlayer" parent="."]
-
+root_node = NodePath("..")
+autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 1.0
-root_node = NodePath("..")
-anims/2-Attack_to_tired = SubResource( 4 )
-anims/4-take_damage = SubResource( 5 )
-anims/attack = SubResource( 6 )
-anims/block = SubResource( 7 )
-anims/block_down_impact = SubResource( 8 )
-anims/block_front_idle = SubResource( 9 )
-anims/block_up_impact = SubResource( 10 )
-anims/death = SubResource( 11 )
-anims/flipping = SubResource( 12 )
-anims/idle = SubResource( 13 )
-anims/moving_upwards = SubResource( 14 )
-anims/take_damage = SubResource( 15 )
-anims/tired = SubResource( 16 )
-anims/turn = SubResource( 17 )
-playback_active = true
 playback_speed = 2.0
+anims/2-Attack_to_tired = SubResource( 2 )
+anims/4-take_damage = SubResource( 3 )
+anims/attack = SubResource( 4 )
+anims/block = SubResource( 5 )
+anims/block_down_impact = SubResource( 6 )
+anims/block_front_idle = SubResource( 7 )
+anims/block_up_impact = SubResource( 8 )
+anims/death = SubResource( 9 )
+anims/flipping = SubResource( 10 )
+anims/idle = SubResource( 11 )
+anims/moving_upwards = SubResource( 12 )
+anims/take_damage = SubResource( 13 )
+anims/tired = SubResource( 14 )
+anims/turn = SubResource( 15 )
 blend_times = [  ]
-autoplay = ""
 
 [node name="collision" type="CollisionShape2D" parent="."]
-
 visible = false
 position = Vector2( -3.6708, -18.3831 )
-shape = SubResource( 1 )
-trigger = false
-_update_shape_index = -1
+shape = SubResource( 16 )
 
 [node name="action_area" type="Area2D" parent="."]
-
 position = Vector2( -0.263527, 0 )
 input_pickable = true
-shapes/0/shape = SubResource( 18 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, -1.76053, -66.019 )
-shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
 
 [node name="collision" type="CollisionShape2D" parent="action_area"]
-
 visible = false
 self_modulate = Color( 1, 1, 1, 0.111111 )
 position = Vector2( -1.76053, -66.019 )
-shape = SubResource( 18 )
-trigger = false
-_update_shape_index = -1
+shape = SubResource( 17 )
 
-[connection signal="body_entered" from="sprites/ArmBG/ForearmBG/HandBG/Sword/damager" to="." method="_on_damage_enter" binds=[  ]]
-
-[connection signal="body_exited" from="sprites/ArmBG/ForearmBG/HandBG/Sword/damager" to="." method="_on_damage_exit" binds=[  ]]
-
-[connection signal="body_entered" from="action_area" to="." method="_on_body_enter" binds=[  ]]
-
-[connection signal="body_exited" from="action_area" to="." method="_on_body_exit" binds=[  ]]
+[connection signal="body_entered" from="sprites/ArmBG/ForearmBG/HandBG/Sword/damager" to="." method="_on_damage_enter"]
+[connection signal="body_exited" from="sprites/ArmBG/ForearmBG/HandBG/Sword/damager" to="." method="_on_damage_exit"]
+[connection signal="body_entered" from="action_area" to="." method="_on_body_enter"]
+[connection signal="body_exited" from="action_area" to="." method="_on_body_exit"]

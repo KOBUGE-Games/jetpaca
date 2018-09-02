@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://enemies/cannon/cannon.gd" type="Script" id=1]
 [ext_resource path="res://art/pieces_missile_launcher/arm-r.png" type="Texture" id=2]
@@ -9,12 +9,7 @@
 [ext_resource path="res://art/pieces_missile_launcher/body.png" type="Texture" id=7]
 [ext_resource path="res://art/pieces_missile_launcher/eyebrows.png" type="Texture" id=8]
 
-[sub_resource type="ConcavePolygonShape2D" id=1]
-
-custom_solver_bias = 0.0
-segments = PoolVector2Array( 16.3699, -60.069, 0.238052, -60.786, 0.238052, -60.786, -6.57318, -48.239, -6.57318, -48.239, -13.0259, -31.0317, -13.0259, -31.0317, -29.5163, -2.71126, -29.5163, -2.71126, -11.592, 34.9298, -11.592, 34.9298, 0.955025, 55.3635, 0.955025, 55.3635, 12.7851, 56.7974, 12.7851, 56.7974, 24.6151, 49.2692, 24.6151, 49.2692, 38.5961, -5.57915, 38.5961, -5.57915, 16.3699, -60.069 )
-
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 
 resource_name = "default_pose"
 length = 1.0
@@ -23,7 +18,9 @@ step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("cannon_sprites_r90/r-arm:position")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -33,7 +30,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("cannon_sprites_r90/l-arm:position")
 tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -43,7 +42,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body/eyebrows:position")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -53,7 +54,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:position")
 tracks/3/interp = 1
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -63,7 +66,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/tongue:position")
 tracks/4/interp = 1
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -73,7 +78,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("cannon_sprites_r90/r-arm:rotation_degrees")
 tracks/5/interp = 1
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -83,7 +90,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation:rotation_degrees")
 tracks/6/interp = 1
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -93,7 +102,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("cannon_sprites_r90/l-arm:rotation_degrees")
 tracks/7/interp = 1
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -101,7 +112,7 @@ tracks/7/keys = {
 "values": [ 0.0 ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 
 resource_name = "firing"
 length = 2.5
@@ -110,7 +121,9 @@ step = 0.25
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 1 ),
 "transitions": PoolRealArray( 1 ),
@@ -122,7 +135,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("cannon_sprites_r90/l-arm:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -132,7 +147,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("cannon_sprites_r90/r-arm:position")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -142,7 +159,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("cannon_sprites_r90/l-arm:rotation_degrees")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -152,7 +171,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body/eyebrows:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.25, 1, 1.375, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -162,7 +183,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.5, 1.25, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -172,7 +195,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/tongue:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.375, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -182,7 +207,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1, 1.5, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -192,7 +219,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.5, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -202,7 +231,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:rotation_degrees")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -212,7 +243,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 0.8, 1, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -222,7 +255,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:visible")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 0.1, 1, 1.075, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -232,7 +267,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:frame")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.858292, 0.880806, 2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -242,7 +279,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:scale")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 0.25, 0.5, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -252,7 +291,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:position")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 0.25, 0.5, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -262,7 +303,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("cannon_sprites_r90/r-arm:rotation_degrees")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -270,7 +313,7 @@ tracks/15/keys = {
 "values": [ 16.6609, 16.6609, 24.0, 16.6609 ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 
 resource_name = "firing_backup"
 length = 2.5
@@ -279,7 +322,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("cannon_sprites_r90/r-arm:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 1.75, 2, 2.25, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -289,7 +334,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("cannon_sprites_r90/l-arm:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -299,7 +346,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body/eyebrows:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.25, 1, 1.375, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -309,7 +358,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.5, 1.25, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -319,7 +370,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/tongue:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.375, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -329,7 +382,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("cannon_sprites_r90/r-arm:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.5, 1.04, 1.17, 1.3, 1.43, 1.56, 1.81, 2.25, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -339,7 +394,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1, 1.1875, 1.375, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -349,7 +406,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("cannon_sprites_r90/l-arm:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 1.5, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -359,7 +418,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1, 1.5, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -369,7 +430,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.5, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -379,7 +442,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:rotation_degrees")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 1, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -389,7 +454,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 0.8, 1, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -399,7 +466,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("cannon_sprites_r90/r-arm:scale")
 tracks/12/interp = 2
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 1.5, 2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -409,7 +478,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:visible")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 0.1, 1, 1.075, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -419,7 +490,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:frame")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 0.858292, 0.880806, 2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -429,7 +502,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:scale")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 0.25, 0.5, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -439,7 +514,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:position")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 0.25, 0.5, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -447,7 +524,7 @@ tracks/16/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( -13.5222, 0 ), Vector2( 0, 0 ) ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 
 length = 2.5
 loop = true
@@ -455,7 +532,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("cannon_sprites_r90/r-arm:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -465,7 +544,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("cannon_sprites_r90/l-arm:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -475,7 +556,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body/eyebrows:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.25, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -485,7 +568,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 1.5, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -495,7 +580,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/tongue:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 1.5, 1.75, 2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -505,7 +592,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("cannon_sprites_r90/r-arm:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1.25, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -515,7 +604,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -525,7 +616,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("cannon_sprites_r90/l-arm:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1.25, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -535,7 +628,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/body:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -545,7 +640,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -555,7 +652,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/lower_jaw:rotation_degrees")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -565,7 +664,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -575,7 +676,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("cannon_sprites_r90/r-arm:scale")
 tracks/12/interp = 2
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -585,7 +688,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:visible")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -595,7 +700,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("cannon_sprites_r90/cannon_rotation/body_orientation/missile2d/missile:frame")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -604,64 +711,49 @@ tracks/14/keys = {
 }
 
 [node name="cannon" type="StaticBody2D"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 script = ExtResource( 1 )
 interval = 2.0
 max_alive = 4
 type = 0
 
 [node name="cannon_sprites_r90" type="Node2D" parent="."]
-
-rotation_degrees = -90.0
+rotation = -1.5708
 
 [node name="r-arm" type="Sprite" parent="cannon_sprites_r90"]
-
 position = Vector2( -36.4533, 21.3428 )
 scale = Vector2( 0.999088, 0.999088 )
 texture = ExtResource( 2 )
 offset = Vector2( -13, -6 )
 
 [node name="l-arm" type="Sprite" parent="cannon_sprites_r90"]
-
 position = Vector2( 38.1612, 21.0147 )
 texture = ExtResource( 3 )
 offset = Vector2( 13, -6 )
 
 [node name="cannon_rotation" type="Position2D" parent="cannon_sprites_r90"]
 
-
 [node name="body_orientation" type="Position2D" parent="cannon_sprites_r90/cannon_rotation"]
-
 position = Vector2( -1.18914, 6.51793e-08 )
 
 [node name="lower_jaw" type="Sprite" parent="cannon_sprites_r90/cannon_rotation/body_orientation"]
-
 position = Vector2( 0, -5.45116 )
 texture = ExtResource( 4 )
 offset = Vector2( 0, -10 )
 
 [node name="tongue" type="Sprite" parent="cannon_sprites_r90/cannon_rotation/body_orientation"]
-
 texture = ExtResource( 5 )
 offset = Vector2( 0, -18 )
 
 [node name="missile2d" type="Position2D" parent="cannon_sprites_r90/cannon_rotation/body_orientation"]
-
 position = Vector2( 3.67526e-06, -84.0798 )
-rotation_degrees = 90.0
+rotation = 1.5708
 
 [node name="missile" type="Sprite" parent="cannon_sprites_r90/cannon_rotation/body_orientation/missile2d"]
-
 visible = false
 position = Vector2( -10.1416, 0 )
 scale = Vector2( 0.875, 1 )
@@ -670,51 +762,40 @@ hframes = 4
 frame = 1
 
 [node name="body" type="Sprite" parent="cannon_sprites_r90/cannon_rotation/body_orientation"]
-
 texture = ExtResource( 7 )
 flip_h = true
 
 [node name="eyebrows" type="Sprite" parent="cannon_sprites_r90/cannon_rotation/body_orientation/body"]
-
 texture = ExtResource( 8 )
 flip_h = true
 
 [node name="timer" type="Timer" parent="."]
-
 process_mode = 1
 wait_time = 1.0
 one_shot = true
 autostart = false
 
 [node name="screenprox" type="VisibilityNotifier2D" parent="."]
-
 visible = false
 rect = Rect2( -10, -10, 20, 20 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-
 visible = false
 build_mode = 0
 polygon = PoolVector2Array( 16.3699, -60.069, 0.238052, -60.786, -6.57318, -48.239, -13.0259, -31.0317, -29.5163, -2.71126, -11.592, 34.9298, 0.955025, 55.3635, 12.7851, 56.7974, 24.6151, 49.2692, 38.5961, -5.57915 )
-shape_range = Vector2( -1, -1 )
-trigger = false
 
 [node name="anim" type="AnimationPlayer" parent="."]
-
+root_node = NodePath("..")
+autoplay = "default_pose"
 playback_process_mode = 1
 playback_default_blend_time = 0.5
-root_node = NodePath("..")
-anims/default_pose = SubResource( 2 )
-anims/firing = SubResource( 3 )
-anims/firing_backup = SubResource( 4 )
-anims/idle = SubResource( 5 )
-playback_active = true
 playback_speed = 1.0
+anims/default_pose = SubResource( 1 )
+anims/firing = SubResource( 2 )
+anims/firing_backup = SubResource( 3 )
+anims/idle = SubResource( 4 )
 blend_times = [  ]
-autoplay = "default_pose"
 
-[connection signal="timeout" from="timer" to="." method="_on_timeout" binds=[  ]]
-
-[connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen" binds=[  ]]
-
-[connection signal="screen_exited" from="screenprox" to="." method="_on_exit_screen" binds=[  ]]
+[connection signal="timeout" from="timer" to="." method="_on_timeout"]
+[connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]
+[connection signal="screen_exited" from="screenprox" to="." method="_on_exit_screen"]

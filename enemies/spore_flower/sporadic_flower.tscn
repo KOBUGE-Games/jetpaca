@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://enemies/spore_flower/sporadic_flower.gd" type="Script" id=1]
 [ext_resource path="res://art/sporadic_flower_pieces/leaf1.png" type="Texture" id=2]
@@ -10,12 +10,7 @@
 [ext_resource path="res://art/sporadic_flower_pieces/front_petals.png" type="Texture" id=8]
 [ext_resource path="res://art/sporadic_flower_pieces/leaf2.png" type="Texture" id=9]
 
-[sub_resource type="CircleShape2D" id=1]
-
-custom_solver_bias = 0.0
-radius = 30.0
-
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 
 resource_name = "1closed"
 length = 6.0
@@ -24,7 +19,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("center/3rear_petal:frame")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -34,7 +31,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("center/2petal_md 2:frame")
 tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -44,7 +43,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("center/4petal_md1:frame")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -54,7 +55,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("center/5petal_fg1:frame")
 tracks/3/interp = 1
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -64,7 +67,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("center/1petal_fg 2:frame")
 tracks/4/interp = 1
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -74,7 +79,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("center/3rear_petal:rotation_degrees")
 tracks/5/interp = 1
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1.875, 6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -84,7 +91,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("center/2petal_md 2:rotation_degrees")
 tracks/6/interp = 1
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 3, 4.3125, 6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -94,7 +103,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("center/4petal_md1:rotation_degrees")
 tracks/7/interp = 1
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 4.125, 6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -104,7 +115,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("center/5petal_fg1:rotation_degrees")
 tracks/8/interp = 1
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1.875, 6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -114,7 +127,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("center/1petal_fg 2:rotation_degrees")
 tracks/9/interp = 1
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 3.75, 6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -124,7 +139,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("center/3rear_petal:position")
 tracks/10/interp = 1
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -134,7 +151,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("center/2petal_md 2:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -144,7 +163,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("center/4petal_md1:position")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -154,7 +175,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("center/5petal_fg1:position")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -164,7 +187,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("center/1petal_fg 2:position")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -174,7 +199,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("center/1petal_fg 2:scale")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1.875, 4.125, 6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -184,7 +211,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("center/3rear_petal:scale")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 3.75, 6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -194,7 +223,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("center/2petal_md 2:scale")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -204,7 +235,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("center/4petal_md1:scale")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -214,7 +247,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("center/5petal_fg1:scale")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 1.125, 3.375, 6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -224,7 +259,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("center/leaf1:position")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -234,7 +271,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("center/leaf1:rotation_degrees")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 3 ),
 "transitions": PoolRealArray( 1 ),
@@ -244,7 +283,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("center/leaf2:position")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -254,7 +295,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("center/leaf2:rotation_degrees")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 1.5, 6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -264,7 +307,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("leaf 3:rotation_degrees")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 2.8125, 4.5, 6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -274,7 +319,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("center/pistiles/pollen_thingies:rotation_degrees")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -284,7 +331,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("center/pistiles/pollen_thingies 2:rotation_degrees")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -294,7 +343,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("center/pistiles:scale")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -304,7 +355,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("center/pistiles/pollen_thingies:position")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -314,7 +367,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("center/pistiles/pollen_thingies 2:position")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -324,7 +379,9 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/path = NodePath("center:rotation_degrees")
 tracks/30/interp = 1
+tracks/30/loop_wrap = true
 tracks/30/imported = false
+tracks/30/enabled = true
 tracks/30/keys = {
 "times": PoolRealArray( 0, 2.625, 6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -332,7 +389,7 @@ tracks/30/keys = {
 "values": [ -0.552565, 1.89051, -0.552565 ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 
 resource_name = "2opening"
 length = 4.0
@@ -341,7 +398,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("center/3rear_petal:frame")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 2, 2.35, 2.6, 2.85, 3.1, 3.35, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -351,7 +410,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("center/2petal_md 2:frame")
 tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 2, 2.25, 2.5, 2.75, 3, 3.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -361,7 +422,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("center/4petal_md1:frame")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 2, 2.3, 2.55, 2.8, 3.05, 3.3, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -371,7 +434,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("center/5petal_fg1:frame")
 tracks/3/interp = 1
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 2, 2.2, 2.45, 2.7, 2.95, 3.2, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -381,7 +446,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("center/1petal_fg 2:frame")
 tracks/4/interp = 1
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 2, 2.25, 2.5, 2.75, 3, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -391,7 +458,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("center/3rear_petal:rotation_degrees")
 tracks/5/interp = 1
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 2, 3.25, 3.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -401,7 +470,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("center/2petal_md 2:rotation_degrees")
 tracks/6/interp = 1
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1.25, 2, 2.25, 3.25, 3.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -411,7 +482,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("center/4petal_md1:rotation_degrees")
 tracks/7/interp = 1
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1.25, 2, 2.25, 3.25, 3.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -421,7 +494,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("center/5petal_fg1:rotation_degrees")
 tracks/8/interp = 1
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1.25, 2, 3.25, 3.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -431,7 +506,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("center/1petal_fg 2:rotation_degrees")
 tracks/9/interp = 1
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1.25, 2, 3.25, 3.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -441,7 +518,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("center/3rear_petal:position")
 tracks/10/interp = 1
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 1, 2, 2.75, 3.25, 3.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -451,7 +530,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("center/2petal_md 2:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 2, 2.25, 2.75, 3.25, 3.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -461,7 +542,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("center/4petal_md1:position")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 2, 2.25, 2.75, 3.25, 3.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -471,7 +554,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("center/5petal_fg1:position")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 2, 2.75, 3.25, 3.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -481,7 +566,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("center/1petal_fg 2:position")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 2, 2.75, 3.25, 3.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -491,7 +578,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("center/1petal_fg 2:scale")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 0.75, 2, 3.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -501,7 +590,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("center/3rear_petal:scale")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 0.75, 2, 3.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -511,7 +602,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("center/2petal_md 2:scale")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 0.75, 2, 3.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -521,7 +614,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("center/4petal_md1:scale")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 0.75, 2, 3.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -531,7 +626,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("center/5petal_fg1:scale")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 0.75, 2, 3.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -541,7 +638,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("center/leaf1:position")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 2, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -551,7 +650,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("center/leaf1:rotation_degrees")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0.25, 1.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -561,7 +662,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("center/leaf2:position")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 2, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -571,7 +674,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("center/leaf2:rotation_degrees")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 1, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -581,7 +686,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("leaf 3:rotation_degrees")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 0.5, 2, 3, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -591,7 +698,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("center/pistiles/pollen_thingies:rotation_degrees")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 2, 3.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -601,7 +710,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("center/pistiles/pollen_thingies 2:rotation_degrees")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 2, 3.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -611,7 +722,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("center/pistiles:scale")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0, 1.5, 3, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -621,7 +734,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("center/pistiles/pollen_thingies:position")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0, 0.75, 2.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -631,7 +746,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("center/pistiles/pollen_thingies 2:position")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0, 0.75, 2.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -639,7 +756,7 @@ tracks/29/keys = {
 "values": [ Vector2( -11.6632, -4.6811 ), Vector2( -11.6632, -4.6811 ), Vector2( -12.2325, -21.0526 ), Vector2( -12.2325, -21.0526 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 
 resource_name = "3opened"
 length = 3.0
@@ -648,7 +765,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("center/3rear_petal:frame")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -658,7 +777,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("center/2petal_md 2:frame")
 tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -668,7 +789,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("center/4petal_md1:frame")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -678,7 +801,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("center/5petal_fg1:frame")
 tracks/3/interp = 1
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -688,7 +813,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("center/1petal_fg 2:frame")
 tracks/4/interp = 1
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -698,7 +825,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("center/3rear_petal:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -708,7 +837,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("center/2petal_md 2:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -718,7 +849,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("center/4petal_md1:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -728,7 +861,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("center/5petal_fg1:rotation_degrees")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -738,7 +873,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("center/1petal_fg 2:rotation_degrees")
 tracks/9/interp = 1
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -748,7 +885,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("center/3rear_petal:position")
 tracks/10/interp = 1
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -758,7 +897,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("center/2petal_md 2:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -768,7 +909,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("center/4petal_md1:position")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -778,7 +921,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("center/5petal_fg1:position")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -788,7 +933,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("center/1petal_fg 2:position")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -798,7 +945,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("center/1petal_fg 2:scale")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -808,7 +957,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("center/3rear_petal:scale")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -818,7 +969,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("center/2petal_md 2:scale")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -828,7 +981,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("center/4petal_md1:scale")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -838,7 +993,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("center/5petal_fg1:scale")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -848,7 +1005,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("center/leaf1:position")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -858,7 +1017,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("center/leaf1:rotation_degrees")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 1, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -868,7 +1029,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("center/leaf2:position")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -878,7 +1041,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("center/leaf2:rotation_degrees")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -888,7 +1053,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("leaf 3:rotation_degrees")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -898,7 +1065,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("center/pistiles/pollen_thingies:rotation_degrees")
 tracks/25/interp = 2
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -908,7 +1077,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("center/pistiles/pollen_thingies 2:rotation_degrees")
 tracks/26/interp = 2
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -918,7 +1089,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("center/pistiles:scale")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0, 1, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -928,7 +1101,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("center/pistiles/pollen_thingies:position")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -938,7 +1113,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("center/pistiles/pollen_thingies 2:position")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -948,7 +1125,9 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/path = NodePath("center:rotation_degrees")
 tracks/30/interp = 1
+tracks/30/loop_wrap = true
 tracks/30/imported = false
+tracks/30/enabled = true
 tracks/30/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -956,7 +1135,7 @@ tracks/30/keys = {
 "values": [ 0.839761, -2.17242, 0.839761 ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 
 length = 3.0
 loop = false
@@ -964,7 +1143,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("center/3rear_petal:frame")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -974,7 +1155,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("center/2petal_md 2:frame")
 tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -984,7 +1167,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("center/4petal_md1:frame")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.25, 1.5, 1.75, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -994,7 +1179,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("center/5petal_fg1:frame")
 tracks/3/interp = 1
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -1004,7 +1191,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("center/1petal_fg 2:frame")
 tracks/4/interp = 1
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.25, 1.5, 1.75, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -1014,7 +1203,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("center/3rear_petal:rotation_degrees")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1024,7 +1215,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("center/2petal_md 2:rotation_degrees")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1034,7 +1227,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("center/4petal_md1:rotation_degrees")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1044,7 +1239,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("center/5petal_fg1:rotation_degrees")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1054,7 +1251,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("center/1petal_fg 2:rotation_degrees")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1064,7 +1263,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("center/3rear_petal:position")
 tracks/10/interp = 1
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1074,7 +1275,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("center/2petal_md 2:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1084,7 +1287,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("center/4petal_md1:position")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1094,7 +1299,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("center/5petal_fg1:position")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1104,7 +1311,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("center/1petal_fg 2:position")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1114,7 +1323,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("center/1petal_fg 2:scale")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1124,7 +1335,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("center/3rear_petal:scale")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1134,7 +1347,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("center/2petal_md 2:scale")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1144,7 +1359,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("center/4petal_md1:scale")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1154,7 +1371,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("center/5petal_fg1:scale")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1164,7 +1383,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("center/leaf1:position")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1174,7 +1395,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("center/leaf1:rotation_degrees")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 1.25, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1184,7 +1407,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("center/leaf2:position")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1194,7 +1419,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("center/leaf2:rotation_degrees")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1204,7 +1431,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("leaf 3:rotation_degrees")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 1.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1214,7 +1443,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("center/pistiles/pollen_thingies:rotation_degrees")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1224,7 +1455,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("center/pistiles/pollen_thingies 2:rotation_degrees")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1234,7 +1467,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("center/pistiles:scale")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1244,7 +1479,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("center/pistiles/pollen_thingies:position")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1254,7 +1491,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("center/pistiles/pollen_thingies 2:position")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1264,7 +1503,9 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/path = NodePath("center:rotation_degrees")
 tracks/30/interp = 1
+tracks/30/loop_wrap = true
 tracks/30/imported = false
+tracks/30/enabled = true
 tracks/30/keys = {
 "times": PoolRealArray( 0, 1.5, 2.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -1272,24 +1513,23 @@ tracks/30/keys = {
 "values": [ 0.839761, 5.72166, -1.28567, 0.839761 ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=5]
 
 length = 1.25
 loop = true
 step = 0.25
 
-[node name="sporadic_flower" type="RigidBody2D"]
+[sub_resource type="CircleShape2D" id=6]
 
+custom_solver_bias = 0.0
+radius = 30.0
+
+[node name="sporadic_flower" type="RigidBody2D"]
 input_pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Transform2D( 0.451408, 0, 0, 0.451408, 0.619371, -9.71656 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 mode = 1
 mass = 1.0
-friction = 1.0
-bounce = 0.0
 gravity_scale = 1.0
 custom_integrator = false
 continuous_cd = 0
@@ -1298,40 +1538,36 @@ contact_monitor = false
 sleeping = false
 can_sleep = true
 linear_velocity = Vector2( 0, 0 )
-angular_velocity = 0.0
 linear_damp = -1.0
+angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 drop = 0
 
 [node name="leaf 3" type="Sprite" parent="."]
-
 position = Vector2( 1.96684, -8.22343 )
-rotation_degrees = -65.3326
+rotation = -1.14027
 texture = ExtResource( 2 )
 offset = Vector2( 30, 15 )
 flip_h = true
 
 [node name="center" type="Sprite" parent="."]
-
 position = Vector2( 1.80527, -5.53392 )
-rotation_degrees = 1.63301
+rotation = 0.0285014
 texture = ExtResource( 3 )
 offset = Vector2( 0, -25 )
 
 [node name="3rear_petal" type="Sprite" parent="center"]
-
 position = Vector2( 8.86966, -7.00663 )
-rotation_degrees = -7.16817
+rotation = -0.125108
 scale = Vector2( 1, 0.720514 )
 texture = ExtResource( 4 )
 offset = Vector2( -5, -55 )
 hframes = 6
 
 [node name="2petal_md 2" type="Sprite" parent="center"]
-
 position = Vector2( -12.2563, -0.213528 )
-rotation_degrees = 18.6476
+rotation = 0.325462
 scale = Vector2( 1, 0.8 )
 texture = ExtResource( 5 )
 offset = Vector2( -20, -55 )
@@ -1339,56 +1575,49 @@ flip_h = true
 hframes = 6
 
 [node name="4petal_md1" type="Sprite" parent="center"]
-
 position = Vector2( 10.5439, -0.0477274 )
-rotation_degrees = -19.3768
+rotation = -0.338189
 scale = Vector2( 1, 0.8 )
 texture = ExtResource( 5 )
 offset = Vector2( 20, -55 )
 hframes = 6
 
 [node name="pistiles" type="Sprite" parent="center"]
-
 position = Vector2( -2.16626, -15.606 )
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 6 )
 offset = Vector2( 0, -25 )
 
 [node name="pollen_thingies" type="Sprite" parent="center/pistiles"]
-
 position = Vector2( 9.6455, -5.36009 )
-rotation_degrees = -22.4479
+rotation = -0.39179
 texture = ExtResource( 7 )
 offset = Vector2( 8, -28 )
 
 [node name="pollen_thingies 2" type="Sprite" parent="center/pistiles"]
-
 position = Vector2( -11.6632, -4.6811 )
-rotation_degrees = 29.1726
+rotation = 0.509158
 texture = ExtResource( 7 )
 offset = Vector2( -8, -28 )
 flip_h = true
 
 [node name="leaf1" type="Sprite" parent="center"]
-
 position = Vector2( -6.16906, 0.106178 )
-rotation_degrees = 36.7441
+rotation = 0.641306
 texture = ExtResource( 2 )
 offset = Vector2( -30, 15 )
 
 [node name="5petal_fg1" type="Sprite" parent="center"]
-
 position = Vector2( 9.73067, 7.252 )
-rotation_degrees = -23.0003
+rotation = -0.401431
 scale = Vector2( 1.03585, 0.882477 )
 texture = ExtResource( 8 )
 offset = Vector2( 30, -42 )
 hframes = 6
 
 [node name="1petal_fg 2" type="Sprite" parent="center"]
-
 position = Vector2( -12.7036, 7.252 )
-rotation_degrees = 24.4493
+rotation = 0.426721
 scale = Vector2( 1.06178, 0.849143 )
 texture = ExtResource( 8 )
 offset = Vector2( -30, -42 )
@@ -1396,47 +1625,37 @@ flip_h = true
 hframes = 6
 
 [node name="leaf2" type="Sprite" parent="center"]
-
 position = Vector2( 3.68051, 2.51825 )
-rotation_degrees = 64.3109
+rotation = 1.12244
 texture = ExtResource( 9 )
 offset = Vector2( 24, -18 )
 
 [node name="anim" type="AnimationPlayer" parent="."]
-
+root_node = NodePath("..")
+autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.5
-root_node = NodePath("..")
-anims/1closed = SubResource( 2 )
-anims/2opening = SubResource( 3 )
-anims/3opened = SubResource( 4 )
-anims/4closing = SubResource( 5 )
-anims/pollenlife = SubResource( 6 )
-playback_active = true
 playback_speed = 3.0
+anims/1closed = SubResource( 1 )
+anims/2opening = SubResource( 2 )
+anims/3opened = SubResource( 3 )
+anims/4closing = SubResource( 4 )
+anims/pollenlife = SubResource( 5 )
 blend_times = [  ]
-autoplay = ""
 
 [node name="csh" type="CollisionShape2D" parent="."]
-
 position = Vector2( 0.619371, -9.71656 )
 scale = Vector2( 0.451408, 0.451408 )
-shape = SubResource( 1 )
-trigger = false
-_update_shape_index = -1
+shape = SubResource( 6 )
 
 [node name="shooter" type="Position2D" parent="."]
-
 position = Vector2( -1.07545, -46.6032 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
-
 rect = Rect2( -10, -10, 20, 20 )
 
 [node name="VisibilityNotifier2D 2" type="VisibilityNotifier2D" parent="."]
-
 rect = Rect2( -10, -10, 20, 20 )
 
-[connection signal="screen_entered" from="VisibilityNotifier2D" to="." method="_on_enter_screen" binds=[  ]]
-
-[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_exit_screen" binds=[  ]]
+[connection signal="screen_entered" from="VisibilityNotifier2D" to="." method="_on_enter_screen"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_exit_screen"]

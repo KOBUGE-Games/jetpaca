@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://interaction/elevator/elevator.gd" type="Script" id=1]
 [ext_resource path="res://art/mountain_platform.png" type="Texture" id=2]
@@ -9,57 +9,38 @@ custom_solver_bias = 0.0
 extents = Vector2( 512, 64 )
 
 [node name="base" type="Node2D"]
-
 script = ExtResource( 1 )
 distance = 100
 max_speed = 64.0
 
 [node name="Sprite" type="Sprite" parent="."]
-
 position = Vector2( 256, -200 )
 texture = ExtResource( 2 )
 
 [node name="Sprite 2" type="Sprite" parent="."]
-
 position = Vector2( -256, -200 )
 texture = ExtResource( 2 )
 
 [node name="Sprite 3" type="Sprite" parent="."]
-
 position = Vector2( 256, 200 )
 texture = ExtResource( 2 )
 
 [node name="Sprite 3 2" type="Sprite" parent="."]
-
 position = Vector2( -256, 200 )
 texture = ExtResource( 2 )
 
 [node name="static_body" type="StaticBody2D" parent="."]
-
 input_pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 200 )
-shapes/0/trigger = false
-shapes/1/shape = SubResource( 1 )
-shapes/1/transform = Transform2D( 1, 0, 0, 1, 0, -200 )
-shapes/1/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="static_body"]
-
 position = Vector2( 0, 200 )
 shape = SubResource( 1 )
-trigger = false
-_update_shape_index = -1
 
 [node name="CollisionShape2D 2" type="CollisionShape2D" parent="static_body"]
-
 position = Vector2( 0, -200 )
 shape = SubResource( 1 )
-trigger = false
-_update_shape_index = -1
+

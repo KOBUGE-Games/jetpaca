@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://enemies/fluff/fluff.gd" type="Script" id=1]
 [ext_resource path="res://art/vortex.png" type="Texture" id=2]
@@ -16,20 +16,8 @@
 [ext_resource path="res://art/cachos_sacra_pincho/eye_glow.png" type="Texture" id=14]
 [ext_resource path="res://art/cachos_sacra_pincho/cejas.png" type="Texture" id=15]
 [ext_resource path="res://art/halo.png" type="Texture" id=16]
-[ext_resource path="res://sound/spikes_appear.wav" type="Sample" id=17]
-[ext_resource path="res://sound/spikes_hide.wav" type="Sample" id=18]
 
-[sub_resource type="CircleShape2D" id=1]
-
-custom_solver_bias = 0.0
-radius = 40.0
-
-[sub_resource type="Gradient" id=2]
-
-offsets = PoolRealArray( 0, 0.2, 0.8, 1 )
-colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 0.530973, 1, 1, 1, 0.584071, 1, 1, 1, 0 )
-
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=1]
 
 resource_name = "awake_loop"
 length = 4.0
@@ -38,7 +26,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 1, 2, 3, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -48,7 +38,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.4375, 1.6875, 2.4375, 3.4375, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -58,7 +50,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.25, 1.5, 2.25, 3.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -68,7 +62,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.625, 1.875, 2.625, 3.625, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -78,7 +74,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.625, 1.875, 2.625, 3.625, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -88,7 +86,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.4375, 1.6875, 2.4375, 3.4375, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -98,7 +98,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.25, 1.5, 2.25, 3.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -108,7 +110,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1, 2, 3, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -118,7 +122,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1.75, 2, 2.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -128,7 +134,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1, 1.50647, 1.75, 2, 2.25, 2.75, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -138,7 +146,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -148,7 +158,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/Position2D/pupils:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 1, 3, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -158,7 +170,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera:rotation_degrees")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -168,7 +182,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("base_sclera/unibrow:rotation_degrees")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -178,7 +194,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("base_sclera/upper_eyelids:rotation_degrees")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -188,7 +206,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("vortex:scale")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -198,7 +218,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("vortex_center:scale")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -206,7 +228,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=2]
 
 resource_name = "awakening"
 length = 1.5
@@ -215,7 +237,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.78, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -225,7 +249,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -235,7 +261,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -245,7 +273,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 1.3, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -255,7 +285,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 1.3, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -265,7 +297,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -275,7 +309,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.78, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -285,7 +321,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 0.75, 1, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -295,7 +333,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -305,7 +345,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -315,7 +357,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -325,7 +369,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/Position2D/pupils:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 0.75, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -335,7 +381,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera/unibrow:rotation_degrees")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -345,7 +393,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("base_sclera:rotation_degrees")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -355,7 +405,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("base_sclera/upper_eyelids:rotation_degrees")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -365,7 +417,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("vortex_center:scale")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -375,7 +429,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("vortex:scale")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -383,7 +439,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=3]
 
 resource_name = "die"
 length = 1.5
@@ -392,7 +448,9 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.165, 0.33, 0.66, 0.9, 1.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -402,7 +460,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -412,7 +472,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -422,7 +484,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -432,7 +496,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -442,7 +508,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -452,7 +520,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -462,7 +532,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 1
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -472,7 +544,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 0.25, 1.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -482,7 +556,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 0.25, 1.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -492,7 +568,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -502,7 +580,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/Position2D/pupils:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 0.1, 0.4, 0.6, 1 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -512,7 +592,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera:rotation_degrees")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 1.25 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -522,7 +604,9 @@ tracks/12/keys = {
 tracks/13/type = "method"
 tracks/13/path = NodePath(".")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 1.5 ),
 "transitions": PoolRealArray( 1 ),
@@ -534,7 +618,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("spike1_L:visible")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -544,7 +630,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("spike2_L:visible")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -554,7 +642,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("spike3_L:visible")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -564,7 +654,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("spike4_L:visible")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -574,7 +666,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("spike5_D:visible")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -584,7 +678,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("spike6_D:visible")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -594,7 +690,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("base_sclera:scale")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 0.3, 1.2, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -604,7 +702,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("vortex:scale")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0, 0.8, 1, 1.2, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -614,7 +714,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("vortex_center:scale")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0, 0.8, 1.2, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -624,7 +726,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("vortex_center:rotation_degrees")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 1.5 ),
 "transitions": PoolRealArray( 1 ),
@@ -634,7 +738,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("vortex:rotation_degrees")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 1 ),
 "transitions": PoolRealArray( 1 ),
@@ -642,7 +748,7 @@ tracks/24/keys = {
 "values": [ 180.0 ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=4]
 
 length = 1.2
 loop = false
@@ -650,7 +756,9 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.165, 0.33, 0.66, 0.9, 1 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -660,7 +768,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -670,7 +780,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -680,7 +792,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -690,7 +804,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -700,7 +816,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -710,7 +828,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -720,7 +840,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 0.3, 0.6, 0.7, 0.8, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -730,7 +852,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 0.33, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -740,7 +864,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 0.2, 0.6, 0.995955 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -750,7 +876,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -760,7 +888,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/Position2D/pupils:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 0.1, 0.4, 0.6, 1 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -770,7 +900,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera:rotation_degrees")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.7, 1.15 ),
 "transitions": PoolRealArray( 0.63728, 1, 1 ),
@@ -780,7 +912,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("base_sclera/unibrow:rotation_degrees")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.805359, 0.86785, 0.910486, 0.997041, 1.08552, 1.15 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -790,7 +924,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("base_sclera/upper_eyelids:rotation_degrees")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 0.2, 0.3, 0.6, 1, 1.14393 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -800,7 +936,9 @@ tracks/14/keys = {
 tracks/15/type = "method"
 tracks/15/path = NodePath(".")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 1.15 ),
 "transitions": PoolRealArray( 1 ),
@@ -812,7 +950,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("spike1_L:visible")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -822,7 +962,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("spike2_L:visible")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -832,7 +974,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("spike3_L:visible")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -842,7 +986,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("spike4_L:visible")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -852,7 +998,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("spike5_D:visible")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -862,7 +1010,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("spike6_D:visible")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -872,7 +1022,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("halo 2:visible")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 0.7 ),
 "transitions": PoolRealArray( 1 ),
@@ -882,7 +1034,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("halo:visible")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0.7 ),
 "transitions": PoolRealArray( 1 ),
@@ -892,7 +1046,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("halo:rotation_degrees")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0.7, 1.2 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -902,7 +1058,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("halo 2:rotation_degrees")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0.7, 1.2 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -912,7 +1070,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("halo:self_modulate:a")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0.7, 1.2 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -922,7 +1082,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("halo 2:self_modulate:a")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0.7, 1.2 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -930,7 +1092,7 @@ tracks/27/keys = {
 "values": [ 0.0, 0.4 ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=5]
 
 resource_name = "eyeglow"
 length = 1.0
@@ -939,7 +1101,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/face/glow:frame")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -949,7 +1113,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("base_sclera/face/glow:visible")
 tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.125, 0.875, 1 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -959,7 +1125,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("base_sclera/unibrow:position")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray(  ),
 "transitions": PoolRealArray(  ),
@@ -967,7 +1135,7 @@ tracks/2/keys = {
 "values": [  ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=6]
 
 length = 4.0
 loop = true
@@ -975,7 +1143,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 2.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -985,7 +1155,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 2, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -995,7 +1167,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1005,7 +1179,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 3, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1015,7 +1191,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 3, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1025,7 +1203,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 2, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1035,7 +1215,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1045,7 +1227,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1055,7 +1239,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1065,7 +1251,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1075,7 +1263,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1085,7 +1275,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/unibrow:rotation_degrees")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1095,7 +1287,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera/upper_eyelids:rotation_degrees")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1105,7 +1299,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("base_sclera:rotation_degrees")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -1115,7 +1311,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("vortex:scale")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1125,7 +1323,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("vortex_center:scale")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1133,7 +1333,7 @@ tracks/15/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=7]
 
 length = 2.5
 loop = false
@@ -1141,7 +1341,9 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 1.35, 1.5, 1.89375 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -1151,7 +1353,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1.06875, 1.5, 1.89375, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1161,7 +1365,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.06875, 1.5, 1.89375, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1171,7 +1377,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 1.06875, 1.5, 1.89375, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1181,7 +1389,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 1.06875, 1.5, 1.89375, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1191,7 +1401,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1.06875, 1.5, 1.89375, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1201,7 +1413,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1.06875, 1.5, 1.89375, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1211,7 +1425,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 1.5, 1.89375 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1221,7 +1437,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1.5, 1.89375 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1231,7 +1449,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1.5, 1.89375 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1241,7 +1461,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1251,7 +1473,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/Position2D/pupils:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1261,7 +1485,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera:rotation_degrees")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.375, 0.75, 0.9, 1.05, 1.2, 1.35, 1.5, 1.65, 2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -1271,7 +1497,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("base_sclera/unibrow:rotation_degrees")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1281,7 +1509,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("base_sclera/upper_eyelids:rotation_degrees")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1291,7 +1521,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("spike1_L:visible")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1.2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1301,7 +1533,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("spike2_L:visible")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1311,7 +1545,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("spike3_L:visible")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 1.2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1321,7 +1557,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("spike4_L:visible")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 1.2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1331,7 +1569,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("spike5_D:visible")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 1.2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1341,7 +1581,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("spike6_D:visible")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 1.2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1351,7 +1593,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("spike_area:monitoring")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 2.025 ),
 "transitions": PoolRealArray( 1 ),
@@ -1361,7 +1605,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("player:play/play")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 1.78125 ),
 "transitions": PoolRealArray( 1 ),
@@ -1371,7 +1617,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath(".:doing_damage")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 1.95 ),
 "transitions": PoolRealArray( 1 ),
@@ -1381,7 +1629,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("base_sclera/face/glow:frame")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0.075, 0.16875, 0.2625, 0.35625, 0.45, 0.54375, 0.6375, 0.73125, 0.825, 0.91875, 1.0125, 1.10625, 1.2, 1.29375, 1.3875, 1.48125, 1.575, 1.66875, 1.7625 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -1391,7 +1641,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("base_sclera/face/glow:visible")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1401,7 +1653,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("vortex_center:scale")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 1.65, 1.875, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -1411,7 +1665,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("vortex:scale")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0, 1.65, 1.875, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -1421,7 +1677,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("base_sclera/face:modulate")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -1431,7 +1689,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("base_sclera/unibrow:modulate")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -1441,7 +1701,9 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/path = NodePath("base_sclera/upper_eyelids:modulate")
 tracks/30/interp = 1
+tracks/30/loop_wrap = true
 tracks/30/imported = false
+tracks/30/enabled = true
 tracks/30/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -1451,7 +1713,9 @@ tracks/30/keys = {
 tracks/31/type = "value"
 tracks/31/path = NodePath("base_sclera/lower_eyelids:modulate")
 tracks/31/interp = 1
+tracks/31/loop_wrap = true
 tracks/31/imported = false
+tracks/31/enabled = true
 tracks/31/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -1459,7 +1723,7 @@ tracks/31/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=8]
 
 resource_name = "spike_burst"
 length = 3.5
@@ -1468,7 +1732,9 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 2, 2.5, 2.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -1478,7 +1744,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 2, 2.25, 2.75, 3, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1488,7 +1756,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 2, 2.25, 2.75, 3, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1498,7 +1768,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 2, 2.25, 2.75, 3, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1508,7 +1780,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 2, 2.25, 2.75, 3, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1518,7 +1792,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 2, 2.25, 2.75, 3, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1528,7 +1804,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 2, 2.25, 2.75, 3, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1538,7 +1816,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 2, 2.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1548,7 +1828,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 2, 2.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1558,7 +1840,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 2, 2.75, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1568,7 +1852,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 2, 3.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1578,7 +1864,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/Position2D/pupils:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 2, 3.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1588,7 +1876,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera:rotation_degrees")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 2, 2.3, 2.4, 2.5, 2.6, 2.7, 3, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -1598,7 +1888,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("base_sclera/unibrow:rotation_degrees")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 2, 3.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1608,7 +1900,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("base_sclera/upper_eyelids:rotation_degrees")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 2, 3.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1618,7 +1912,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("spike1_L:visible")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 2, 2.1, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1628,7 +1924,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("spike2_L:visible")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 2, 2.1, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1638,7 +1936,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("spike3_L:visible")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 2, 2.1, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1648,7 +1948,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("spike4_L:visible")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 2, 2.1, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1658,7 +1960,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("spike5_D:visible")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 2, 2.1, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1668,7 +1972,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("spike6_D:visible")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 2, 2.1, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1678,7 +1984,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("spike_area:monitoring")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 3 ),
 "transitions": PoolRealArray( 1 ),
@@ -1688,7 +1996,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("player:play/play")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 2.75 ),
 "transitions": PoolRealArray( 1 ),
@@ -1698,7 +2008,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath(".:doing_damage")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 2.9 ),
 "transitions": PoolRealArray( 1 ),
@@ -1708,7 +2020,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("base_sclera/face/glow:frame")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0.1, 0.225, 0.35, 0.475, 0.6, 0.725, 0.85, 0.975, 1.1, 1.225, 1.35, 1.475, 1.6, 1.725, 1.85, 1.975, 2.1, 2.225, 2.35 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -1718,7 +2032,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("base_sclera/face/glow:visible")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 0.1, 2.35, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -1726,7 +2042,7 @@ tracks/25/keys = {
 "values": [ false, true, true, false ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=9]
 
 resource_name = "spike_burst_glow_bod"
 length = 3.0
@@ -1735,7 +2051,9 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 1.8, 2.2, 2.525 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -1745,7 +2063,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1.425, 2.2, 2.525, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1755,7 +2075,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.425, 2.2, 2.525, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1765,7 +2087,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 1.425, 2.2, 2.525, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1775,7 +2099,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 1.425, 2.2, 2.525, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1785,7 +2111,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1.425, 2.2, 2.525, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1795,7 +2123,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1.425, 2.2, 2.525, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -1805,7 +2135,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 2.2, 2.525 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1815,7 +2147,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 2.2, 2.525 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1825,7 +2159,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 2.2, 2.525 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1835,7 +2171,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1845,7 +2183,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/Position2D/pupils:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1855,7 +2195,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera:rotation_degrees")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -1865,7 +2207,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("base_sclera/unibrow:rotation_degrees")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1875,7 +2219,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("base_sclera/upper_eyelids:rotation_degrees")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1885,7 +2231,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("spike1_L:visible")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1.6, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1895,7 +2243,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("spike2_L:visible")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.6, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1905,7 +2255,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("spike3_L:visible")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 1.6, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1915,7 +2267,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("spike4_L:visible")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 1.6, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1925,7 +2279,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("spike5_D:visible")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 1.6, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1935,7 +2291,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("spike6_D:visible")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 1.6, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -1945,7 +2303,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("spike_area:monitoring")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 2.7 ),
 "transitions": PoolRealArray( 1 ),
@@ -1955,7 +2315,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("player:play/play")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 2.375 ),
 "transitions": PoolRealArray( 1 ),
@@ -1965,7 +2327,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath(".:doing_damage")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 2.6 ),
 "transitions": PoolRealArray( 1 ),
@@ -1975,7 +2339,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("base_sclera/face/glow:frame")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0.1, 0.225, 0.35, 0.475, 0.6, 0.725, 0.85, 0.975, 1.1, 1.225, 1.35, 1.475, 1.6, 1.725, 1.85, 1.975, 2.1, 2.225, 2.35 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -1985,7 +2351,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("base_sclera/face/glow:visible")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -1995,7 +2363,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("vortex_center:scale")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 2.2, 2.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2005,7 +2375,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("vortex:scale")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0, 2.2, 2.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2015,7 +2387,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("base_sclera/face:modulate")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0, 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -2025,7 +2399,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("base_sclera/unibrow:modulate")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0, 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -2035,7 +2411,9 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/path = NodePath("base_sclera/upper_eyelids:modulate")
 tracks/30/interp = 1
+tracks/30/loop_wrap = true
 tracks/30/imported = false
+tracks/30/enabled = true
 tracks/30/keys = {
 "times": PoolRealArray( 0, 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -2045,7 +2423,9 @@ tracks/30/keys = {
 tracks/31/type = "value"
 tracks/31/path = NodePath("base_sclera/lower_eyelids:modulate")
 tracks/31/interp = 1
+tracks/31/loop_wrap = true
 tracks/31/imported = false
+tracks/31/enabled = true
 tracks/31/keys = {
 "times": PoolRealArray( 0, 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -2053,7 +2433,7 @@ tracks/31/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.509804, 0.509804, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=10]
 
 length = 3.0
 loop = true
@@ -2061,7 +2441,9 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 1.8, 2.2, 2.525 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2071,7 +2453,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1.425, 2.2, 2.525, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2081,7 +2465,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.425, 2.2, 2.525, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2091,7 +2477,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 1.425, 2.2, 2.525, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2101,7 +2489,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 1.425, 2.2, 2.525, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2111,7 +2501,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1.425, 2.2, 2.525, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2121,7 +2513,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1.425, 2.2, 2.525, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2131,7 +2525,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 2.2, 2.525 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2141,7 +2537,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 2.2, 2.525 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2151,7 +2549,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 2.2, 2.525 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2161,7 +2561,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2171,7 +2573,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/Position2D/pupils:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2181,7 +2585,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera:rotation_degrees")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -2191,7 +2597,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("base_sclera/unibrow:rotation_degrees")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2201,7 +2609,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("base_sclera/upper_eyelids:rotation_degrees")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2211,7 +2621,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("spike1_L:visible")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1.6, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2221,7 +2633,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("spike2_L:visible")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.6, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2231,7 +2645,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("spike3_L:visible")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 1.6, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2241,7 +2657,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("spike4_L:visible")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 1.6, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2251,7 +2669,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("spike5_D:visible")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 1.6, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2261,7 +2681,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("spike6_D:visible")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 0, 1.6, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2271,7 +2693,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("spike_area:monitoring")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 2.7 ),
 "transitions": PoolRealArray( 1 ),
@@ -2281,7 +2705,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath("player:play/play")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 2.375 ),
 "transitions": PoolRealArray( 1 ),
@@ -2291,7 +2717,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath(".:doing_damage")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 2.6 ),
 "transitions": PoolRealArray( 1 ),
@@ -2301,7 +2729,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("base_sclera/face/glow:frame")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0.1, 0.225, 0.35, 0.475, 0.6, 0.725, 0.85, 0.975, 1.1, 1.225, 1.35, 1.475, 1.6, 1.725, 1.85, 1.975, 2.1, 2.225, 2.35 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -2311,7 +2741,9 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/path = NodePath("base_sclera/face/glow:visible")
 tracks/25/interp = 1
+tracks/25/loop_wrap = true
 tracks/25/imported = false
+tracks/25/enabled = true
 tracks/25/keys = {
 "times": PoolRealArray( 0, 0.0999999, 2.35, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2321,7 +2753,9 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/path = NodePath("vortex_center:scale")
 tracks/26/interp = 1
+tracks/26/loop_wrap = true
 tracks/26/imported = false
+tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 2.2, 2.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2331,7 +2765,9 @@ tracks/26/keys = {
 tracks/27/type = "value"
 tracks/27/path = NodePath("vortex:scale")
 tracks/27/interp = 1
+tracks/27/loop_wrap = true
 tracks/27/imported = false
+tracks/27/enabled = true
 tracks/27/keys = {
 "times": PoolRealArray( 0, 2.2, 2.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2341,7 +2777,9 @@ tracks/27/keys = {
 tracks/28/type = "value"
 tracks/28/path = NodePath("base_sclera/face:modulate")
 tracks/28/interp = 1
+tracks/28/loop_wrap = true
 tracks/28/imported = false
+tracks/28/enabled = true
 tracks/28/keys = {
 "times": PoolRealArray( 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -2351,7 +2789,9 @@ tracks/28/keys = {
 tracks/29/type = "value"
 tracks/29/path = NodePath("base_sclera/unibrow:modulate")
 tracks/29/interp = 1
+tracks/29/loop_wrap = true
 tracks/29/imported = false
+tracks/29/enabled = true
 tracks/29/keys = {
 "times": PoolRealArray( 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -2361,7 +2801,9 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/path = NodePath("base_sclera/upper_eyelids:modulate")
 tracks/30/interp = 1
+tracks/30/loop_wrap = true
 tracks/30/imported = false
+tracks/30/enabled = true
 tracks/30/keys = {
 "times": PoolRealArray( 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -2371,7 +2813,9 @@ tracks/30/keys = {
 tracks/31/type = "value"
 tracks/31/path = NodePath("base_sclera/lower_eyelids:modulate")
 tracks/31/interp = 1
+tracks/31/loop_wrap = true
 tracks/31/imported = false
+tracks/31/enabled = true
 tracks/31/keys = {
 "times": PoolRealArray( 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -2379,7 +2823,7 @@ tracks/31/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=11]
 
 length = 1.5
 loop = false
@@ -2387,7 +2831,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.375, 0.5625, 1.125, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2397,7 +2843,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.375, 0.525, 0.6, 0.75, 0.825, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -2407,7 +2855,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.525, 0.675, 0.75, 0.9, 0.975, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -2417,7 +2867,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.225, 0.375, 0.45, 0.6, 0.675, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -2427,7 +2879,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.225, 0.375, 0.45, 0.6, 0.675, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -2437,7 +2891,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.375, 0.525, 0.6, 0.75, 0.825, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -2447,7 +2903,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.525, 0.675, 0.75, 0.9, 0.975, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -2457,7 +2915,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 0.375, 0.5625, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2467,7 +2927,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 0.375, 0.75, 0.975, 1.05, 1.125, 1.2, 1.425 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -2477,7 +2939,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 0.375, 0.75, 1.125, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2487,7 +2951,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 0.375, 1.125 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2497,7 +2963,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/Position2D/pupils:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 0.375, 1.125 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2507,7 +2975,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera:rotation_degrees")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.5625, 0.9375, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2517,7 +2987,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("base_sclera/unibrow:rotation_degrees")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 0.375, 0.75, 0.975, 1.05, 1.125, 1.2, 1.425 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -2527,7 +2999,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("spike6_D:visible")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 1.425, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2537,7 +3011,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("spike5_D:visible")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1.425, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2547,7 +3023,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("spike4_L:visible")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.425, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2557,7 +3035,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("spike3_L:visible")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 1.425, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2567,7 +3047,9 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/path = NodePath("spike2_L:visible")
 tracks/18/interp = 1
+tracks/18/loop_wrap = true
 tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/keys = {
 "times": PoolRealArray( 0, 1.425, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2577,7 +3059,9 @@ tracks/18/keys = {
 tracks/19/type = "value"
 tracks/19/path = NodePath("spike1_L:visible")
 tracks/19/interp = 1
+tracks/19/loop_wrap = true
 tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/keys = {
 "times": PoolRealArray( 0, 1.425, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2587,7 +3071,9 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/path = NodePath("spike_area:monitoring")
 tracks/20/interp = 1
+tracks/20/loop_wrap = true
 tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/keys = {
 "times": PoolRealArray( 1.08536 ),
 "transitions": PoolRealArray( 1 ),
@@ -2597,7 +3083,9 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/path = NodePath("player:play/play")
 tracks/21/interp = 1
+tracks/21/loop_wrap = true
 tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/keys = {
 "times": PoolRealArray( 0.75 ),
 "transitions": PoolRealArray( 1 ),
@@ -2607,7 +3095,9 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/path = NodePath(".:doing_damage")
 tracks/22/interp = 1
+tracks/22/loop_wrap = true
 tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/keys = {
 "times": PoolRealArray( 1.25276 ),
 "transitions": PoolRealArray( 1 ),
@@ -2617,7 +3107,9 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/path = NodePath("vortex:scale")
 tracks/23/interp = 1
+tracks/23/loop_wrap = true
 tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2627,7 +3119,9 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/path = NodePath("vortex_center:scale")
 tracks/24/interp = 1
+tracks/24/loop_wrap = true
 tracks/24/imported = false
+tracks/24/enabled = true
 tracks/24/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2635,7 +3129,7 @@ tracks/24/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=12]
 
 length = 1.0
 loop = true
@@ -2643,7 +3137,9 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.165, 0.33, 0.66, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2653,7 +3149,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2663,7 +3161,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2673,7 +3173,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2683,7 +3185,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2693,7 +3197,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2703,7 +3209,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2713,7 +3221,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 0.3, 0.6, 0.7, 0.8, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -2723,7 +3233,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 0.33, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2733,7 +3245,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 0.2, 0.6, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2743,7 +3257,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2753,7 +3269,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/Position2D/pupils:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 0.1, 0.4, 0.6, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2763,7 +3281,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera:rotation_degrees")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.3, 0.7, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2773,7 +3293,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("base_sclera/unibrow:rotation_degrees")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 0.33, 0.66, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2783,7 +3305,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("base_sclera/upper_eyelids:rotation_degrees")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 0.2, 0.3, 0.6, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
@@ -2793,7 +3317,9 @@ tracks/14/keys = {
 tracks/15/type = "method"
 tracks/15/path = NodePath(".")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 1 ),
 "transitions": PoolRealArray( 1 ),
@@ -2805,7 +3331,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("vortex:scale")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2815,7 +3343,9 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/path = NodePath("vortex_center:scale")
 tracks/17/interp = 1
+tracks/17/loop_wrap = true
 tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2823,7 +3353,7 @@ tracks/17/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=13]
 
 length = 1.5
 loop = false
@@ -2831,7 +3361,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.45, 1.05 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2841,7 +3373,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.45, 1.05 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2851,7 +3385,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.6, 1.2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2861,7 +3397,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.3, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2871,7 +3409,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.3, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2881,7 +3421,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.45, 1.05 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2891,7 +3433,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.6, 1.2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2901,7 +3445,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 0.45, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -2911,7 +3457,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 0.45, 0.9, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2921,7 +3469,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 0.45, 0.737199, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -2931,7 +3481,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2941,7 +3493,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/Position2D/pupils:position")
 tracks/11/interp = 1
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 0.15, 0.3, 0.45, 0.6, 0.75, 0.9, 1.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -2951,7 +3505,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera/unibrow:rotation_degrees")
 tracks/12/interp = 1
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2961,7 +3517,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("base_sclera:rotation_degrees")
 tracks/13/interp = 1
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2971,7 +3529,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("base_sclera/upper_eyelids:rotation_degrees")
 tracks/14/interp = 1
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2981,7 +3541,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("vortex_center:scale")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2991,7 +3553,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("vortex:scale")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -2999,7 +3563,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=14]
 
 length = 4.0
 loop = true
@@ -3007,7 +3571,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 1.5, 2, 2.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -3017,7 +3583,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("spike1_L:position")
 tracks/1/interp = 2
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 1, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3027,7 +3595,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("spike2_L:position")
 tracks/2/interp = 2
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3037,7 +3607,9 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("spike3_L:position")
 tracks/3/interp = 2
+tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 1.75, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3047,7 +3619,9 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/path = NodePath("spike4_L:position")
 tracks/4/interp = 2
+tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 1.75, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3057,7 +3631,9 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("spike5_D:position")
 tracks/5/interp = 2
+tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 1, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3067,7 +3643,9 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/path = NodePath("spike6_D:position")
 tracks/6/interp = 2
+tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 1.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3077,7 +3655,9 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/path = NodePath("base_sclera:position")
 tracks/7/interp = 2
+tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 2.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -3087,7 +3667,9 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/path = NodePath("base_sclera/lower_eyelids:position")
 tracks/8/interp = 2
+tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3097,7 +3679,9 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/path = NodePath("base_sclera/upper_eyelids:position")
 tracks/9/interp = 2
+tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3107,7 +3691,9 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/path = NodePath("base_sclera/face:position")
 tracks/10/interp = 2
+tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3117,7 +3703,9 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/path = NodePath("base_sclera/Position2D/pupils:position")
 tracks/11/interp = 2
+tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 0, 0.75, 2, 2.25, 3.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -3127,7 +3715,9 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/path = NodePath("base_sclera/unibrow:rotation_degrees")
 tracks/12/interp = 2
+tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.75, 1.5, 2.5, 3.5, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -3137,7 +3727,9 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/path = NodePath("base_sclera/upper_eyelids:rotation_degrees")
 tracks/13/interp = 2
+tracks/13/loop_wrap = true
 tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0, 0.75, 1.75, 2, 2.25, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
@@ -3147,7 +3739,9 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/path = NodePath("base_sclera:rotation_degrees")
 tracks/14/interp = 2
+tracks/14/loop_wrap = true
 tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/keys = {
 "times": PoolRealArray( 0, 1.5, 2.75, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
@@ -3157,7 +3751,9 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/path = NodePath("vortex:scale")
 tracks/15/interp = 1
+tracks/15/loop_wrap = true
 tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3167,7 +3763,9 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/path = NodePath("vortex_center:scale")
 tracks/16/interp = 1
+tracks/16/loop_wrap = true
 tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3175,7 +3773,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=15]
 
 length = 6.0
 loop = true
@@ -3183,7 +3781,9 @@ step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("vortex:rotation_degrees")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3193,7 +3793,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("vortex_center:rotation_degrees")
 tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -3203,7 +3805,9 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/path = NodePath("vortex_center:modulate")
 tracks/2/interp = 1
+tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 1, 2, 3, 4, 5, 6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
@@ -3211,38 +3815,22 @@ tracks/2/keys = {
 "values": [ Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ) ]
 }
 
-[sub_resource type="CircleShape2D" id=18]
+[sub_resource type="CircleShape2D" id=16]
+
+custom_solver_bias = 0.0
+radius = 40.0
+
+[sub_resource type="CircleShape2D" id=17]
 
 custom_solver_bias = 0.0
 radius = 180.0
 
-[sub_resource type="Resource" id=19]
-
-samples/spikes_appear = {
-"db": 0.0,
-"pitch": 1.0,
-"priority": 0,
-"sample": ExtResource( 17 )
-}
-samples/spikes_hide = {
-"db": 0.0,
-"pitch": 1.0,
-"priority": 0,
-"sample": ExtResource( 18 )
-}
-
 [node name="sacra_pinchorb" type="RigidBody2D"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0.291992, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 mode = 1
 mass = 1.0
-friction = 1.0
-bounce = 0.0
 gravity_scale = 1.0
 custom_integrator = true
 continuous_cd = 0
@@ -3251,8 +3839,8 @@ contact_monitor = true
 sleeping = false
 can_sleep = true
 linear_velocity = Vector2( 0, 0 )
-angular_velocity = 0.0
 linear_damp = -1.0
+angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 drop = 0
@@ -3260,278 +3848,224 @@ fluff_type = 1
 doing_damage = false
 
 [node name="vortex" type="Sprite" parent="."]
-
-rotation_degrees = -35.7664
+rotation = -0.624241
 texture = ExtResource( 2 )
 
 [node name="vortex_center" type="Sprite" parent="."]
-
-visibility/blend_mode = 1
-position = Vector2( 0.397223, 1.1698e-06 )
-rotation_degrees = -666.35
-texture = ExtResource( 3 )
 modulate = Color( 0.463217, 0, 0.0233767, 1 )
+position = Vector2( 0.397223, 1.1698e-06 )
+rotation = -11.63
+texture = ExtResource( 3 )
 
 [node name="smoke_twirl" type="Particles2D" parent="."]
-
-visibility/blend_mode = 1
 position = Vector2( -0.156686, 10.1065 )
+emitting = false
 amount = 5
 lifetime = 5.0
-emitting = false
-config/process_mode = 1
+one_shot = false
+preprocess = 0.0
+speed_scale = 1.0
+explosiveness = 0.0
+randomness = 0.0
+fixed_fps = 0
+fract_delta = true
+visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
+draw_order = 0
+process_material = null
 texture = ExtResource( 4 )
-params/direction = 0.0
-params/spread = 180.0
-params/linear_velocity = 30.0
-params/spin_velocity = 10.0
-params/orbit_velocity = 0.0
-params/gravity_direction = 180.0
-params/gravity_strength = 0.0
-params/radial_accel = 0.0
-params/tangential_accel = 0.0
-params/damping = 8.72727
-params/initial_angle = 0.0
-params/initial_size = 1.0
-params/final_size = 0.5
-params/hue_variation = 0.0
-params/anim_speed_scale = 1.0
-params/anim_initial_pos = 0.0
-randomness/spin_velocity = 1.0
-color/color_ramp = SubResource( 2 )
+normal_map = null
+h_frames = 1
+v_frames = 1
 
 [node name="smoke_up" type="Particles2D" parent="."]
-
 show_behind_parent = true
 position = Vector2( -0.980474, 8.6831e-07 )
-rotation_degrees = 179.335
+rotation = 3.12999
+emitting = false
 amount = 20
 lifetime = 7.0
+one_shot = false
 preprocess = 0.1
-emitting = false
-config/process_mode = 1
-config/offset = Vector2( 0, 10 )
-config/half_extents = Vector2( 2, 0 )
+speed_scale = 1.0
+explosiveness = 0.0
+randomness = 0.0
+fixed_fps = 0
+fract_delta = true
+visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
+draw_order = 0
+process_material = null
 texture = ExtResource( 5 )
-params/direction = 180.0
-params/spread = 270.0
-params/linear_velocity = 5.0
-params/spin_velocity = 0.0
-params/orbit_velocity = 0.0
-params/gravity_direction = 180.0
-params/gravity_strength = 10.0
-params/radial_accel = 0.0
-params/tangential_accel = 0.0
-params/damping = 0.0
-params/initial_angle = 0.0
-params/initial_size = 1.0
-params/final_size = 0.0
-params/hue_variation = 0.0
-params/anim_speed_scale = 1.0
-params/anim_initial_pos = 0.0
-color/color = Color( 1, 1, 1, 0 )
+normal_map = null
+h_frames = 1
+v_frames = 1
 
 [node name="spike1_L" type="Sprite" parent="."]
-
 visible = false
 position = Vector2( -27, -8 )
-rotation_degrees = -67.5
+rotation = -1.1781
 texture = ExtResource( 6 )
 
 [node name="spike2_L" type="Sprite" parent="."]
-
 visible = false
 position = Vector2( -24, 10 )
-rotation_degrees = -112.5
+rotation = -1.9635
 texture = ExtResource( 6 )
 
 [node name="spike3_L" type="Sprite" parent="."]
-
 visible = false
 position = Vector2( -12, -23 )
-rotation_degrees = -22.5
+rotation = -0.392699
 texture = ExtResource( 6 )
 flip_h = true
 
 [node name="spike4_L" type="Sprite" parent="."]
-
 visible = false
 position = Vector2( 12, -23 )
-rotation_degrees = 22.5
+rotation = 0.392699
 texture = ExtResource( 6 )
 flip_h = true
 
 [node name="spike5_D" type="Sprite" parent="."]
-
 visible = false
 position = Vector2( 27, -8 )
-rotation_degrees = 67.5
+rotation = 1.1781
 texture = ExtResource( 7 )
 flip_h = true
 
 [node name="spike6_D" type="Sprite" parent="."]
-
 visible = false
 position = Vector2( 24, 10 )
-rotation_degrees = 112.5
+rotation = 1.9635
 texture = ExtResource( 7 )
 flip_h = true
 
 [node name="base_sclera" type="Sprite" parent="."]
-
-texture = ExtResource( 8 )
 modulate = Color( 0.705882, 0, 0.470588, 1 )
+texture = ExtResource( 8 )
 
 [node name="Position2D" type="Position2D" parent="base_sclera"]
 
-
 [node name="pupils" type="Sprite" parent="base_sclera/Position2D"]
-
+modulate = Color( 0.705882, 0, 0.0784314, 1 )
 position = Vector2( 0, 1.58166 )
 texture = ExtResource( 9 )
-modulate = Color( 0.705882, 0, 0.0784314, 1 )
 
 [node name="eye_sparkle" type="Sprite" parent="base_sclera/Position2D/pupils"]
-
 position = Vector2( -20, -1.4 )
 texture = ExtResource( 10 )
 
 [node name="eye_sparkle 2" type="Sprite" parent="base_sclera/Position2D/pupils"]
-
 position = Vector2( 16, -1.4 )
 texture = ExtResource( 10 )
 
 [node name="lower_eyelids" type="Sprite" parent="base_sclera"]
-
 position = Vector2( 0, 14.7446 )
 texture = ExtResource( 11 )
 
 [node name="upper_eyelids" type="Sprite" parent="base_sclera"]
-
 position = Vector2( 0.63112, -11.7758 )
-rotation_degrees = 0.602308
+rotation = 0.0105123
 texture = ExtResource( 12 )
 
 [node name="face" type="Sprite" parent="base_sclera"]
-
 position = Vector2( 0, 7.82262 )
 texture = ExtResource( 13 )
 
 [node name="glow" type="Sprite" parent="base_sclera/face"]
-
 visible = false
-visibility/blend_mode = 1
 position = Vector2( -0.427185, 6 )
 texture = ExtResource( 14 )
 vframes = 4
 frame = 3
 
 [node name="unibrow" type="Sprite" parent="base_sclera"]
-
 position = Vector2( -0.427177, 15.9376 )
-rotation_degrees = 2.51125
+rotation = 0.0438296
 texture = ExtResource( 15 )
 
 [node name="halo" type="Sprite" parent="."]
-
 visible = false
 self_modulate = Color( 1, 1, 1, 0.4 )
-visibility/blend_mode = 1
-rotation_degrees = -40.0
+rotation = -0.698132
 scale = Vector2( 1.3, 1.3 )
 texture = ExtResource( 16 )
 
 [node name="halo 2" type="Sprite" parent="."]
-
 visible = false
 self_modulate = Color( 1, 1, 1, 0.4 )
 show_behind_parent = true
-visibility/blend_mode = 1
-rotation_degrees = 40.0
+rotation = 0.698132
 texture = ExtResource( 16 )
 
 [node name="anim" type="AnimationPlayer" parent="."]
-
+root_node = NodePath("..")
+autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
-root_node = NodePath("..")
-anims/awake_loop = SubResource( 3 )
-anims/awakening = SubResource( 4 )
-anims/die = SubResource( 5 )
-anims/die_old = SubResource( 6 )
-anims/eyeglow = SubResource( 7 )
-anims/sleep_loop = SubResource( 8 )
-anims/spike_burst = SubResource( 9 )
-anims/spike_burst(copy) = SubResource( 10 )
-anims/spike_burst_glow_bod = SubResource( 11 )
-anims/spike_burst_gloweyes = SubResource( 12 )
-anims/spike_retract = SubResource( 13 )
-anims/take_damage = SubResource( 14 )
-anims/to_sleep = SubResource( 15 )
-anims/tracking_loop = SubResource( 16 )
-playback_active = true
 playback_speed = 1.0
+anims/awake_loop = SubResource( 1 )
+anims/awakening = SubResource( 2 )
+anims/die = SubResource( 3 )
+anims/die_old = SubResource( 4 )
+anims/eyeglow = SubResource( 5 )
+anims/sleep_loop = SubResource( 6 )
+anims/spike_burst = SubResource( 7 )
+anims/spike_burst(copy) = SubResource( 8 )
+anims/spike_burst_glow_bod = SubResource( 9 )
+anims/spike_burst_gloweyes = SubResource( 10 )
+anims/spike_retract = SubResource( 11 )
+anims/take_damage = SubResource( 12 )
+anims/to_sleep = SubResource( 13 )
+anims/tracking_loop = SubResource( 14 )
 blend_times = [ "sleep_loop", "spike_burst", 0.5, "spike_retract", "sleep_loop", 0.5 ]
-autoplay = ""
 
 [node name="vortex_anim" type="AnimationPlayer" parent="."]
-
+root_node = NodePath("..")
+autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
-root_node = NodePath("..")
-anims/vortex_spin = SubResource( 17 )
-playback_active = true
 playback_speed = 0.15
+anims/vortex_spin = SubResource( 15 )
 blend_times = [  ]
-autoplay = ""
 
 [node name="collision" type="CollisionShape2D" parent="."]
-
 visible = false
 modulate = Color( 1, 1, 1, 0.241935 )
 position = Vector2( 0.291992, 0 )
-shape = SubResource( 1 )
-trigger = false
-_update_shape_index = -1
+shape = SubResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="spike_area" type="Area2D" parent="."]
-
 visible = false
 input_pickable = true
-shapes/0/shape = SubResource( 18 )
-shapes/0/transform = Transform2D( 1.1, 0, 0, 1.1, -0.323532, 1.29414 )
-shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
 
 [node name="collision" type="CollisionShape2D" parent="spike_area"]
-
 visible = false
 modulate = Color( 1, 1, 1, 0.5 )
 position = Vector2( -0.323532, 1.29414 )
 scale = Vector2( 1.1, 1.1 )
-shape = SubResource( 18 )
-trigger = false
-_update_shape_index = -1
+shape = SubResource( 17 )
 
 [node name="player" type="AudioStreamPlayer2D" parent="."]
-
+stream = null
 volume_db = 0.0
 pitch_scale = 1.0
-attenuation_min_distance = 1.0
-attenuation_max_distance = 2048.0
-attenuation_distance_exp = 1.0
-config/polyphony = 1
-config/samples = SubResource( 19 )
-config/pitch_random = 0.0
+autoplay = false
+stream_paused = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
 
-[connection signal="body_entered" from="spike_area" to="." method="_on_body_enter_spikes" binds=[  ]]
-
-[connection signal="body_exited" from="spike_area" to="." method="_on_body_exit_spikes" binds=[  ]]
+[connection signal="body_entered" from="spike_area" to="." method="_on_body_enter_spikes"]
+[connection signal="body_exited" from="spike_area" to="." method="_on_body_exit_spikes"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://enemies/spore_flower/spore.gd" type="Script" id=1]
 [ext_resource path="res://art/sporadic_flower_pieces/spike_pollen.png" type="Texture" id=2]
@@ -10,14 +10,15 @@ radius = 10.0
 
 [sub_resource type="Animation" id=2]
 
-resource_name = "dissolve"
 length = 0.1
 loop = true
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprite:modulate:a")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.05 ),
 "transitions": PoolRealArray( 0, 0 ),
@@ -27,7 +28,9 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprite:frame")
 tracks/1/interp = 1
+tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -37,14 +40,15 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=3]
 
-resource_name = "fall"
 length = 2.0
 loop = true
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprite:rotation_degrees")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( -2, -2, 0 ),
@@ -60,7 +64,9 @@ step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprite:frame")
 tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.490335, 0.916529 ),
 "transitions": PoolRealArray( 0, 0, 0 ),
@@ -69,17 +75,11 @@ tracks/0/keys = {
 }
 
 [node name="spore" type="RigidBody2D"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 mode = 2
 mass = 0.1
-friction = 1.0
-bounce = 0.0
 gravity_scale = 1.0
 custom_integrator = true
 continuous_cd = 0
@@ -88,33 +88,28 @@ contact_monitor = false
 sleeping = false
 can_sleep = true
 linear_velocity = Vector2( 0, 0 )
-angular_velocity = 0.0
 linear_damp = -1.0
+angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 drop = 0
 
 [node name="sprite" type="Sprite" parent="."]
-
 position = Vector2( 0, -13.7235 )
 texture = ExtResource( 2 )
 hframes = 4
 
 [node name="collision" type="CollisionShape2D" parent="."]
-
 shape = SubResource( 1 )
-trigger = false
-_update_shape_index = -1
 
 [node name="anim" type="AnimationPlayer" parent="."]
-
+root_node = NodePath("..")
+autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
-root_node = NodePath("..")
+playback_speed = 1.0
 anims/dissolve = SubResource( 2 )
 anims/fall = SubResource( 3 )
 anims/spike = SubResource( 4 )
-playback_active = true
-playback_speed = 1.0
 blend_times = [  ]
-autoplay = ""
+

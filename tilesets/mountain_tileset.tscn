@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://art/mountain_tileset.png" type="Texture" id=1]
 
@@ -89,9 +89,7 @@ points = PoolVector2Array( 0, 56, 64, 56, 64, 192, 0, 192 )
 
 [node name="mountain_tileset" type="Node"]
 
-
 [node name="Ground 1" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 0, 192 )
 texture = ExtResource( 1 )
@@ -100,26 +98,16 @@ region_enabled = true
 region_rect = Rect2( 0, 192, 64, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ground 1"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Ground 1/static_body_2d"]
-
 shape = SubResource( 1 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Ground 2" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 64, 192 )
 texture = ExtResource( 1 )
@@ -128,26 +116,16 @@ region_enabled = true
 region_rect = Rect2( 64, 192, 64, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ground 2"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Ground 2/static_body_2d"]
-
 shape = SubResource( 1 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Ramp Begin" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 64, 0 )
 texture = ExtResource( 1 )
@@ -156,26 +134,16 @@ region_enabled = true
 region_rect = Rect2( 64, 0, 128, 192 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ramp Begin"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Ramp Begin/static_body_2d"]
-
 shape = SubResource( 2 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Ramp" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 192, 64 )
 texture = ExtResource( 1 )
@@ -184,26 +152,16 @@ region_enabled = true
 region_rect = Rect2( 192, 64, 64, 192 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ramp"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 3 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Ramp/static_body_2d"]
-
 shape = SubResource( 3 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Ramp End" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 256, 128 )
 texture = ExtResource( 1 )
@@ -212,26 +170,16 @@ region_enabled = true
 region_rect = Rect2( 256, 128, 128, 192 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ramp End"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 4 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Ramp End/static_body_2d"]
-
 shape = SubResource( 4 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Edge" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 384, 192 )
 texture = ExtResource( 1 )
@@ -240,26 +188,16 @@ region_enabled = true
 region_rect = Rect2( 384, 192, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Edge"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 5 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Edge/static_body_2d"]
-
 shape = SubResource( 5 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Wall" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 384, 320 )
 texture = ExtResource( 1 )
@@ -268,26 +206,16 @@ region_enabled = true
 region_rect = Rect2( 384, 320, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Wall"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 6 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Wall/static_body_2d"]
-
 shape = SubResource( 6 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Ceiling2Wall" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 384, 448 )
 texture = ExtResource( 1 )
@@ -296,26 +224,16 @@ region_enabled = true
 region_rect = Rect2( 384, 448, 128, 64 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ceiling2Wall"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 7 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Ceiling2Wall/static_body_2d"]
-
 shape = SubResource( 7 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Ceiling" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 384, 128 )
 texture = ExtResource( 1 )
@@ -324,26 +242,16 @@ region_enabled = true
 region_rect = Rect2( 384, 128, 128, 64 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ceiling"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 8 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Ceiling/static_body_2d"]
-
 shape = SubResource( 8 )
-trigger = false
-_update_shape_index = 0
 
 [node name="CeilingRamp" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 0, 64 )
 texture = ExtResource( 1 )
@@ -352,26 +260,16 @@ region_enabled = true
 region_rect = Rect2( 0, 64, 64, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="CeilingRamp"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 9 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="CeilingRamp/static_body_2d"]
-
 shape = SubResource( 9 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Wall2Ceiling" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 256, 320 )
 texture = ExtResource( 1 )
@@ -380,26 +278,16 @@ region_enabled = true
 region_rect = Rect2( 256, 320, 128, 64 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Wall2Ceiling"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 10 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Wall2Ceiling/static_body_2d"]
-
 shape = SubResource( 10 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Ground2Wall" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 384, 0 )
 texture = ExtResource( 1 )
@@ -408,26 +296,16 @@ region_enabled = true
 region_rect = Rect2( 384, 0, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ground2Wall"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 11 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Ground2Wall/static_body_2d"]
-
 shape = SubResource( 11 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Wall2Bridge" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 256, 0 )
 texture = ExtResource( 1 )
@@ -436,26 +314,16 @@ region_enabled = true
 region_rect = Rect2( 256, 0, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Wall2Bridge"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 12 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Wall2Bridge/static_body_2d"]
-
 shape = SubResource( 12 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Peak" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 192, 0 )
 texture = ExtResource( 1 )
@@ -464,26 +332,16 @@ region_enabled = true
 region_rect = Rect2( 192, 0, 64, 64 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Peak"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 13 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Peak/static_body_2d"]
-
 shape = SubResource( 13 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Bridge" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 128, 256 )
 texture = ExtResource( 1 )
@@ -492,26 +350,16 @@ region_enabled = true
 region_rect = Rect2( 128, 256, 128, 64 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Bridge"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 14 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Bridge/static_body_2d"]
-
 shape = SubResource( 14 )
-trigger = false
-_update_shape_index = 0
 
 [node name="StepUp" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 0, 320 )
 texture = ExtResource( 1 )
@@ -520,26 +368,16 @@ region_enabled = true
 region_rect = Rect2( 0, 320, 64, 192 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="StepUp"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 15 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="StepUp/static_body_2d"]
-
 shape = SubResource( 15 )
-trigger = false
-_update_shape_index = 0
 
 [node name="Step" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 64, 320 )
 texture = ExtResource( 1 )
@@ -548,26 +386,16 @@ region_enabled = true
 region_rect = Rect2( 64, 320, 128, 192 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Step"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 16 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Step/static_body_2d"]
-
 shape = SubResource( 16 )
-trigger = false
-_update_shape_index = 0
 
 [node name="StepDown" type="Sprite" parent="."]
-
 editor/display_folded = true
 position = Vector2( 192, 320 )
 texture = ExtResource( 1 )
@@ -576,33 +404,22 @@ region_enabled = true
 region_rect = Rect2( 192, 320, 64, 192 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="StepDown"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 17 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="StepDown/static_body_2d"]
-
 shape = SubResource( 17 )
-trigger = false
-_update_shape_index = 0
 
 [node name="DarkDetail 1" type="Sprite" parent="."]
-
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 64, 64 )
 
 [node name="DarkDetail 2" type="Sprite" parent="."]
-
 position = Vector2( 128, 192 )
 texture = ExtResource( 1 )
 centered = false
@@ -610,7 +427,6 @@ region_enabled = true
 region_rect = Rect2( 128, 192, 64, 64 )
 
 [node name="DarkBig" type="Sprite" parent="."]
-
 position = Vector2( 256, 384 )
 texture = ExtResource( 1 )
 centered = false
@@ -618,9 +434,9 @@ region_enabled = true
 region_rect = Rect2( 256, 384, 128, 128 )
 
 [node name="Dark" type="Sprite" parent="."]
-
 position = Vector2( 256, 384 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 256, 384, 64, 64 )
+

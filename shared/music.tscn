@@ -3,12 +3,13 @@
 [ext_resource path="res://shared/music.gd" type="Script" id=1]
 
 [node name="music" type="Node"]
-
 script = ExtResource( 1 )
 
 [node name="tween" type="Tween" parent="."]
-
+repeat = false
 playback_process_mode = 1
-playback/active = false
-playback_speed = false
 playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+

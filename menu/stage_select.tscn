@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://menu/stage_select.gd" type="Script" id=1]
 [ext_resource path="res://art/intro_sky_bg.png" type="Texture" id=2]
@@ -14,125 +14,137 @@ content_margin_top = -1.0
 content_margin_bottom = -1.0
 
 [node name="stage_select" type="Control"]
-
+anchor_left = 0.0
+anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-focus/ignore_mouse = false
-focus/stop_mouse = true
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-margin_left = 0.0
-margin_top = 0.0
-margin_right = 0.0
-margin_bottom = 0.0
 script = ExtResource( 1 )
 column_count = 3
-mouse_filter = 0
 
 [node name="background" type="TextureRect" parent="."]
-
+anchor_left = 0.0
+anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-focus/ignore_mouse = false
-focus/stop_mouse = true
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-margin_left = 0.0
-margin_top = 0.0
-margin_right = 0.0
-margin_bottom = 0.0
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 0
-mouse_filter = 0
 
 [node name="items" type="VBoxContainer" parent="."]
-
+anchor_left = 0.0
+anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags_horizontal = 1
-size_flags_vertical = 1
 margin_left = 20.0
 margin_top = 20.0
 margin_right = -20.0
 margin_bottom = -20.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 alignment = 0
-mouse_filter = 0
 
 [node name="world_name" type="CenterContainer" parent="items"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags_horizontal = 1
-size_flags_vertical = 1
-margin_left = 0.0
-margin_top = 0.0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_right = 1240.0
 margin_bottom = 64.0
-use_top_left = false
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 0
-
-[node name="texture" type="TextureRect" parent="items/world_name"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+use_top_left = false
+
+[node name="texture" type="TextureRect" parent="items/world_name"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 364.0
-margin_top = 0.0
 margin_right = 876.0
 margin_bottom = 64.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 texture = ExtResource( 3 )
 stretch_mode = 0
-mouse_filter = 0
 
 [node name="worlds" type="TabContainer" parent="items"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags_horizontal = 1
-size_flags_vertical = 3
-margin_left = 0.0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_top = 68.0
 margin_right = 1240.0
 margin_bottom = 612.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 3
 custom_styles/panel = SubResource( 1 )
 tab_align = 1
 tabs_visible = false
-mouse_filter = 0
+drag_to_rearrange_enabled = false
 
 [node name="buttons" type="HBoxContainer" parent="items"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags_horizontal = 1
-size_flags_vertical = 1
-margin_left = 0.0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_top = 616.0
 margin_right = 1240.0
 margin_bottom = 680.0
-alignment = 0
-mouse_filter = 0
-
-[node name="back" type="TextureButton" parent="items/buttons"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-margin_left = 0.0
-margin_top = 0.0
+alignment = 0
+
+[node name="back" type="TextureButton" parent="items/buttons"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_right = 64.0
 margin_bottom = 64.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
+group = null
 texture_normal = ExtResource( 4 )
 texture_focused = ExtResource( 5 )
-params/resize_mode = 0
-params/stretch_mode = 0
-mouse_filter = 0
 
-[connection signal="pressed" from="items/buttons/back" to="." method="back_pressed" binds=[  ]]
+[connection signal="pressed" from="items/buttons/back" to="." method="back_pressed"]

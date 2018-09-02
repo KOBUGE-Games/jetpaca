@@ -1,59 +1,27 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://art/tilestest.png" type="Texture" id=1]
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( 0, 64, 0, 0, 64, 0, 64, 64 )
-
-[sub_resource type="ConvexPolygonShape2D" id=2]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( 64, 64, 0, 64, 0, 0 )
-
-[sub_resource type="ConvexPolygonShape2D" id=3]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( 128, 64, 0, 64, 0, 0 )
-
-[sub_resource type="ConvexPolygonShape2D" id=4]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( 64, 128, 0, 128, 0, 0 )
-
 [node name="Node" type="Node"]
 
-
 [node name="block" type="Sprite" parent="."]
-
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 64, 64 )
 
 [node name="collision" type="StaticBody2D" parent="block"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="block/collision"]
-
 build_mode = 0
 polygon = PoolVector2Array( 0, 64, 64, 64, 64, 0, 0, 0 )
-shape_range = Vector2( -1, -1 )
-trigger = false
 
 [node name="ramp" type="Sprite" parent="."]
-
 position = Vector2( 64, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -61,27 +29,17 @@ region_enabled = true
 region_rect = Rect2( 64, 0, 64, 64 )
 
 [node name="collision" type="StaticBody2D" parent="ramp"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ramp/collision"]
-
 build_mode = 0
 polygon = PoolVector2Array( 0, 64, 64, 64, 0, 0 )
-shape_range = Vector2( -1, -1 )
-trigger = false
 
 [node name="ramp 2" type="Sprite" parent="."]
-
 position = Vector2( 0, 64 )
 texture = ExtResource( 1 )
 centered = false
@@ -89,27 +47,17 @@ region_enabled = true
 region_rect = Rect2( 0, 64, 128, 64 )
 
 [node name="collision" type="StaticBody2D" parent="ramp 2"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 3 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ramp 2/collision"]
-
 build_mode = 0
 polygon = PoolVector2Array( 0, 64, 128, 64, 0, 0 )
-shape_range = Vector2( -1, -1 )
-trigger = false
 
 [node name="ramp 3" type="Sprite" parent="."]
-
 position = Vector2( 128, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -117,21 +65,13 @@ region_enabled = true
 region_rect = Rect2( 128, 0, 64, 128 )
 
 [node name="collision" type="StaticBody2D" parent="ramp 3"]
-
 input_pickable = false
-shapes/0/shape = SubResource( 4 )
-shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
 collision_layer = 1
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ramp 3/collision"]
-
 build_mode = 0
 polygon = PoolVector2Array( 0, 128, 64, 128, 0, 0 )
-shape_range = Vector2( -1, -1 )
-trigger = false
+

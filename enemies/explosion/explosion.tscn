@@ -1,70 +1,44 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://art/evil_smoke_particle.png" type="Texture" id=1]
 [ext_resource path="res://enemies/explosion/explosion.gd" type="Script" id=2]
-[ext_resource path="res://sound/magic_explosion.wav" type="Sample" id=3]
-
-[sub_resource type="Gradient" id=1]
-
-offsets = PoolRealArray( 0, 0.2, 0.8 )
-colors = PoolColorArray( 1, 0.59292, 0.238938, 0.345133, 0.529412, 0, 0.389381, 1, 0.133333, 0.19469, 0.19469, 0.176991 )
-
-[sub_resource type="Resource" id=2]
-
-samples/magic_explosion = {
-"db": 0.0,
-"pitch": 1.0,
-"priority": 0,
-"sample": ExtResource( 3 )
-}
 
 [node name="enemy_explosion" type="Particles2D"]
-
-visibility/blend_mode = 1
+emitting = false
 amount = 16
 lifetime = 2.0
-config/emit_timeout = 1.5
-emitting = false
-config/process_mode = 1
-config/half_extents = Vector2( 32, 32 )
+one_shot = false
+preprocess = 0.0
+speed_scale = 1.0
 explosiveness = 0.1
+randomness = 0.0
+fixed_fps = 0
+fract_delta = true
+visibility_rect = Rect2( -100, -100, 200, 200 )
+local_coords = true
+draw_order = 0
+process_material = null
 texture = ExtResource( 1 )
-params/direction = 180.0
-params/spread = 54.5427
-params/linear_velocity = 128.0
-params/spin_velocity = 2.0
-params/orbit_velocity = 0.0
-params/gravity_direction = 180.0
-params/gravity_strength = 0.0
-params/radial_accel = 0.0
-params/tangential_accel = 0.0
-params/damping = 32.0
-params/initial_angle = 0.0
-params/initial_size = 2.0
-params/final_size = 0.0
-params/hue_variation = 0.0
-params/anim_speed_scale = 1.0
-params/anim_initial_pos = 0.0
-randomness/spin_velocity = 1.0
-color/color_ramp = SubResource( 1 )
+normal_map = null
+h_frames = 1
+v_frames = 1
 script = ExtResource( 2 )
 
 [node name="player" type="AudioStreamPlayer2D" parent="."]
-
+stream = null
 volume_db = 0.0
 pitch_scale = 1.0
-attenuation_min_distance = 1.0
-attenuation_max_distance = 2048.0
-attenuation_distance_exp = 1.0
-config/polyphony = 1
-config/samples = SubResource( 2 )
-config/pitch_random = 0.0
+autoplay = false
+stream_paused = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
 
 [node name="timer" type="Timer" parent="."]
-
 process_mode = 1
 wait_time = 3.0
 one_shot = true
 autostart = false
 
-[connection signal="timeout" from="timer" to="." method="_on_timeout" binds=[  ]]
+[connection signal="timeout" from="timer" to="." method="_on_timeout"]
