@@ -8,7 +8,7 @@
 custom_solver_bias = 0.0
 radius = 21.0
 
-[node name="RigidBody2D" type="RigidBody2D"]
+[node name="spike_movable" type="RigidBody2D"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
@@ -43,5 +43,9 @@ texture = ExtResource( 2 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = -1
+
+[connection signal="body_enter" from="." to="." method="_on_body_enter"]
+
+[connection signal="body_exit" from="." to="." method="_on_body_exit"]
 
 

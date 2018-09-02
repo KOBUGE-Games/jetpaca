@@ -13,7 +13,7 @@ radius = 20.0
 custom_solver_bias = 0.0
 radius = 32.0
 
-[node name="StaticBody2D" type="StaticBody2D"]
+[node name="round_spike" type="StaticBody2D"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
