@@ -23,7 +23,7 @@ export var doing_damage = false
 
 var colors = [Color(0.85, 0.5, 0.85), Color(0.85, 0.85, 0.5), Color(0.5, 0.85, 0.85)]
 
-var sleeping = true
+var sleeps = true
 var action_time = 0.3 # Be more reactive to wake up
 
 var disabled = true
@@ -63,7 +63,7 @@ func _enter_tree():
 	c = colors[fluff_type]
 	c.a *= 0.6
 	#get_node("smoke").set_color_phase_color(2, c)
-	sleeping = true
+	sleeps = true
 
 func takes_damage():
 	return not doing_damage and not dead #not get_node("spike_area").is_monitoring_enabled()
@@ -85,7 +85,7 @@ func _integrate_forces(state):
 	var cc = null
 	var cvec = null
 	var cdist = 0.0
-	if not sleeping and eyes:
+	if not sleeps and eyes:
 		cc = get_closest_character()
 		if cc:
 			var gpos = cc.get_global_pos()
@@ -97,7 +97,7 @@ func _integrate_forces(state):
 	var new_anim = "awake_loop"
 	var lv = state.get_linear_velocity()
 
-	if sleeping:
+	if sleeps:
 		var v = lv.length()
 		v -= state.get_step()*FLUFF_AIR_FRICTION
 		if v < 0:
@@ -110,7 +110,7 @@ func _integrate_forces(state):
 #				print("FOLLOW BEGIN")
 				action_time = FOLLOW_TIME
 				get_node("anim").play("awake_loop")
-				sleeping = false
+				sleeps = false
 
 	else:
 		action_time -= state.get_step()
@@ -157,7 +157,7 @@ func _integrate_forces(state):
 
 				get_node("anim").play("to_sleep")
 				get_node("anim").queue("sleep_loop")
-				sleeping = true
+				sleeps = true
 				spikes_banned = 0
 
 	state.set_linear_velocity(lv)

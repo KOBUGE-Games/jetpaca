@@ -22,7 +22,6 @@ func _integrate_forces(state):
 		if cc.is_jetpack_on():
 			var cvec = (cc.get_global_pos() - t.get_origin()).normalized()
 			var lvec = -t[0].normalized()
-			var vel = lv.length()
 			var a = atan2(lvec.tangent().dot(cvec), lvec.dot(cvec))
 			t = t.rotated(a*state.get_step()*TURN_SPEED)
 			state.set_transform(t)
