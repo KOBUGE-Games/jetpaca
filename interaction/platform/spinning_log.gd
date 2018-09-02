@@ -9,7 +9,7 @@ var rnode = null
 
 func _process(delta):
 	r -= delta*get_constant_angular_velocity()
-	rnode.set_rot(r)
+	rnode.set_rotation(r)
 
 func _on_enter_screen():
 	set_process(true)
@@ -20,3 +20,4 @@ func _on_exit_screen():
 func _ready():
 	set_process(false)
 	rnode = get_node("sprite")
+

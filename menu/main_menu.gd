@@ -20,3 +20,4 @@ func _input(event):
 		play_pressed()
 	if event.is_action("quit") and event.pressed:
 		get_tree().quit()
+

@@ -13,7 +13,7 @@ var speed = 0
 var active = false
 var moved = 0
 
-func _fixed_process(delta):
+func _physics_process(delta):
 	if done or not active:
 		return
 
@@ -35,19 +35,20 @@ func _fixed_process(delta):
 			done = true
 
 	if done:
-		set_fixed_process(false)
+		set_physics_process(false)
 
-	set_pos(Vector2(get_pos().x, moved))
+	set_position(Vector2(get_position().x, moved))
 
 func _triggered():
 	if active or done:
 		return
 
-	set_fixed_process(true)
+	set_physics_process(true)
 	active = true
-	target = get_pos().y + distance
-	moved = get_pos().y
+	target = get_position().y + distance
+	moved = get_position().y
 	speed = 0
 
 func _ready():
-	set_fixed_process(false)
+	set_physics_process(false)
+

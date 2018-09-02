@@ -51,24 +51,24 @@ func attacked(bywho):
 		anim = "death"
 
 func _on_body_enter(body):
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		alpacas.push_back(body)
-	elif body extends RigidBody:
+	elif body is RigidBody:
 		others.push_back(body)
 
 func _on_body_exit(body):
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		alpacas.erase(body)
-	elif body extends RigidBody:
+	elif body is RigidBody:
 		others.erase(body)
 
 func _on_damage_enter(body):
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		body.hit_begin()
-		body.set_linear_velocity((body.get_global_pos() - get_global_pos()).normalized()*700)
+		body.set_linear_velocity((body.get_global_position() - get_global_position()).normalized()*700)
 
 func _on_damage_exit(body):
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		body.hit_end()
 
 func _do_flip():
@@ -96,22 +96,22 @@ func _integrate_forces(state):
 			for a in alpacas:
 				if a.is_attacking():
 					attacking = true
-					var attackvec = (state.get_transform().get_origin() - a.get_global_pos()).normalized()
+					var attackvec = (state.get_transform().get_origin() - a.get_global_position()).normalized()
 
 					var anglefix = -PI*0.5
 					if not siding_left:
 						anglefix = -anglefix
-					get_node("sprites/Rib/Chest/shield_orientation").set_rot(atan2(attackvec.x, attackvec.y) + anglefix)
+					get_node("sprites/Rib/Chest/shield_orientation").set_rotation(atan2(attackvec.x, attackvec.y) + anglefix)
 					idle_countdown = 1.0
 
 			if not attacking and idle_countdown < 0:
 				status = STATUS_ATTACK
 				new_anim = "attack"
-			get_node("sprites/Rib/Chest/shield_orientation").set_rot(0)
+			get_node("sprites/Rib/Chest/shield_orientation").set_rotation(0)
 
 		else:
 			var cc = get_closest_character()
-			if (cc.get_global_pos().x < get_global_pos().x) != siding_left:
+			if (cc.get_global_position().x < get_global_position().x) != siding_left:
 				status = STATUS_FLIPPING
 				new_anim = "flipping"
 
@@ -153,3 +153,4 @@ func _integrate_forces(state):
 	if new_anim != anim:
 		get_node("anim").play(new_anim)
 		anim = new_anim
+

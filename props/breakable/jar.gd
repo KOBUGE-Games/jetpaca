@@ -24,6 +24,7 @@ func attacked(by):
 	broken = true
 	if has_key:
 		var ki = preload("res://interaction/door/key.tscn").instance()
-		ki.set_pos(get_global_pos())
+		ki.set_position(get_global_position())
 		ki.key_index = key_index
 		get_parent().add_child(ki)
+

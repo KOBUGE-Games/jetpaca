@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=1]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://art/forest_bg.png" type="Texture" id=1]
 [ext_resource path="res://art/forest_bg_mid_top.png" type="Texture" id=2]
@@ -10,10 +10,10 @@
 [ext_resource path="res://art/forest_bg_front_top.png" type="Texture" id=8]
 [ext_resource path="res://art/forest_bg_front_bottom.png" type="Texture" id=9]
 
-[sub_resource type="ColorRamp" id=1]
+[sub_resource type="Gradient" id=1]
 
-offsets = FloatArray( 0, 0.8, 1 )
-colors = ColorArray( 0.458824, 0.911505, 0.752212, 1, 1, 0.823009, 0.486726, 0.663717, 1, 0.39823, 0.123894, 0 )
+offsets = PoolRealArray( 0, 0.8, 1 )
+colors = PoolColorArray( 0.458824, 0.911505, 0.752212, 1, 1, 0.823009, 0.486726, 0.663717, 1, 0.39823, 0.123894, 0 )
 
 [node name="forest_bg" type="ParallaxBackground"]
 
@@ -21,75 +21,75 @@ layer = -1
 offset = Vector2( 0, 0 )
 rotation = 0.0
 scale = Vector2( 1, 1 )
-scroll/offset = Vector2( 0, 0 )
-scroll/base_offset = Vector2( 0, 0 )
-scroll/base_scale = Vector2( 1, 0.1 )
-scroll/limit_begin = Vector2( 0, 0 )
-scroll/limit_end = Vector2( 0, 1681 )
-scroll/ignore_camera_zoom = false
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 0.1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 1681 )
+scroll_ignore_camera_zoom = false
 
 [node name="bg" type="ParallaxLayer" parent="."]
 
-motion/scale = Vector2( 0.05, 1 )
-motion/offset = Vector2( 0, 0 )
-motion/mirroring = Vector2( 1280, 0 )
+motion_scale = Vector2( 0.05, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 1280, 0 )
 
 [node name="Sprite" type="Sprite" parent="bg"]
 
-transform/pos = Vector2( 0, 221 )
-transform/scale = Vector2( 1.26, 1.5 )
+position = Vector2( 0, 221 )
+scale = Vector2( 1.26, 1.5 )
 texture = ExtResource( 1 )
 centered = false
 
 [node name="mid" type="ParallaxLayer" parent="."]
 
-motion/scale = Vector2( 0.1, 1 )
-motion/offset = Vector2( 0, 0 )
-motion/mirroring = Vector2( 1280, 0 )
+motion_scale = Vector2( 0.1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 1280, 0 )
 
 [node name="top" type="Sprite" parent="mid"]
 
-transform/pos = Vector2( 0, 108 )
-transform/scale = Vector2( 1.26, 1 )
+position = Vector2( 0, 108 )
+scale = Vector2( 1.26, 1 )
 texture = ExtResource( 2 )
 centered = false
 
 [node name="tree1" type="Sprite" parent="mid"]
 
-transform/pos = Vector2( 135.49, 362.64 )
-transform/scale = Vector2( 1.26, 1.01 )
+position = Vector2( 135.49, 362.64 )
+scale = Vector2( 1.26, 1.01 )
 texture = ExtResource( 3 )
 centered = false
 
 [node name="tree 2" type="Sprite" parent="mid"]
 
-transform/pos = Vector2( 855.773, 362.64 )
-transform/scale = Vector2( 1.26, 1.01 )
+position = Vector2( 855.773, 362.64 )
+scale = Vector2( 1.26, 1.01 )
 texture = ExtResource( 4 )
 centered = false
 
 [node name="bottom" type="Sprite" parent="mid"]
 
-transform/pos = Vector2( 0, 876 )
-transform/scale = Vector2( 1.26, 1 )
+position = Vector2( 0, 876 )
+scale = Vector2( 1.26, 1 )
 texture = ExtResource( 5 )
 centered = false
 
 [node name="shinies" type="ParallaxLayer" parent="."]
 
-motion/scale = Vector2( 0.2, 1 )
-motion/offset = Vector2( 0, 0 )
-motion/mirroring = Vector2( 1280, 1024 )
+motion_scale = Vector2( 0.2, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 1280, 1024 )
 
 [node name="shinie" type="Particles2D" parent="shinies"]
 
 visibility/blend_mode = 1
-transform/pos = Vector2( 512, 512 )
-config/amount = 64
-config/lifetime = 3.0
+position = Vector2( 512, 512 )
+amount = 64
+lifetime = 3.0
 config/process_mode = 1
 config/half_extents = Vector2( 512, 512 )
-config/texture = ExtResource( 6 )
+texture = ExtResource( 6 )
 params/direction = 0.0
 params/spread = 10.0
 params/linear_velocity = 0.0
@@ -110,28 +110,26 @@ color/color_ramp = SubResource( 1 )
 
 [node name="front" type="ParallaxLayer" parent="."]
 
-motion/scale = Vector2( 0.3, 1 )
-motion/offset = Vector2( 0, 0 )
-motion/mirroring = Vector2( 1280, 0 )
+motion_scale = Vector2( 0.3, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 1280, 0 )
 
 [node name="tree" type="Sprite" parent="front"]
 
-transform/pos = Vector2( 316.268, 254 )
-transform/scale = Vector2( 1.26, 1.55 )
+position = Vector2( 316.268, 254 )
+scale = Vector2( 1.26, 1.55 )
 texture = ExtResource( 7 )
 centered = false
 
 [node name="top" type="Sprite" parent="front"]
 
-transform/scale = Vector2( 1.26, 1 )
+scale = Vector2( 1.26, 1 )
 texture = ExtResource( 8 )
 centered = false
 
 [node name="bottom" type="Sprite" parent="front"]
 
-transform/pos = Vector2( 0, 1041 )
-transform/scale = Vector2( 1.26, 1 )
+position = Vector2( 0, 1041 )
+scale = Vector2( 1.26, 1 )
 texture = ExtResource( 9 )
 centered = false
-
-

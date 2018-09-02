@@ -34,7 +34,7 @@ func _integrate_forces(state):
 		var cc = get_closest_character()
 
 		if cc:
-			var cpos = cc.get_global_pos()
+			var cpos = cc.get_global_position()
 			var cposd = cpos.distance_to(t.get_origin())
 
 			if cposd < ATTACK_DISTANCE:
@@ -80,3 +80,4 @@ func _init():
 func _ready():
 	set_use_custom_integrator(true)
 	set_friction(0)
+

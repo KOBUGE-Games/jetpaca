@@ -1,16 +1,14 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://shared/music.gd" type="Script" id=1]
 
 [node name="music" type="Node"]
 
-script/script = ExtResource( 1 )
+script = ExtResource( 1 )
 
 [node name="tween" type="Tween" parent="."]
 
-playback/process_mode = 1
+playback_process_mode = 1
 playback/active = false
-playback/repeat = false
-playback/speed = 1.0
-
-
+playback_speed = false
+playback_speed = 1.0

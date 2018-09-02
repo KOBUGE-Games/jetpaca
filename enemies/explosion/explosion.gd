@@ -12,3 +12,4 @@ func explode():
 	get_node("player").play("magic_explosion")
 	get_node("timer").start()
 	print("GO KABOOM")
+

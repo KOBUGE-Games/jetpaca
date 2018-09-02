@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://interaction/roulette/goal.gd" type="Script" id=1]
 [ext_resource path="res://art/goal_wip.png" type="Texture" id=2]
@@ -10,15 +10,15 @@ extents = Vector2( 100, 100 )
 
 [node name="stage_end" type="Area2D"]
 
-input/pickable = true
+input_pickable = true
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 1 )
+script = ExtResource( 1 )
 next_world = Vector2( 0, 0 )
 
 [node name="collision" type="CollisionShape2D" parent="."]
@@ -29,9 +29,7 @@ _update_shape_index = -1
 
 [node name="wipgoal" type="Sprite" parent="."]
 
-transform/pos = Vector2( -11, -24 )
+position = Vector2( -11, -24 )
 texture = ExtResource( 2 )
 
-[connection signal="body_enter" from="." to="." method="_on_body_enter"]
-
-
+[connection signal="body_entered" from="." to="." method="_on_body_enter" binds=[  ]]

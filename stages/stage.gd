@@ -25,3 +25,4 @@ func _enter_tree():
 	game_data.current_keys = [false, false, false]
 	for x in game_data.current_world.big_coins:
 		game_data.current_big_coins.push_back(x)
+

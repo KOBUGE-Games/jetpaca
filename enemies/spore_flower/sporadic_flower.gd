@@ -53,10 +53,10 @@ func _process(delta):
 			print("SPIT!!")
 			var s = preload("res://enemies/spore_flower/spore.tscn")
 			var sp = s.instance()
-			sp.set_pos(get_node("shooter").get_global_pos())
+			sp.set_position(get_node("shooter").get_global_position())
 			sp.connect("exit_tree", self, "_seed_died")
 			var outvec = -get_global_transform()[1]
-			outvec = Matrix32().rotated((randf()*2.0 - 1.0)*PI*0.5).xform(outvec)
+			outvec = Transform2D().rotated((randf()*2.0 - 1.0)*PI*0.5).xform(outvec)
 
 			sp.set_linear_velocity(outvec*(200.0 + 400*randf()))
 			get_parent().add_child(sp)
@@ -92,3 +92,4 @@ func _ready():
 	set_process(false)
 	get_node("anim").play("1closed")
 	get_node("anim").set_active(false)
+

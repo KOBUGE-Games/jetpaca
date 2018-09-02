@@ -39,11 +39,11 @@ var spiked_count = 0
 
 func _on_body_enter_spikes(body):
 	set_linear_velocity(get_linear_velocity()) # Wake up
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		spiked_count += 1
 
 func _on_body_exit_spikes(body):
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		spiked_count -= 1
 
 func inflicts_damage():
@@ -88,11 +88,11 @@ func _integrate_forces(state):
 	if not sleeps and eyes:
 		cc = get_closest_character()
 		if cc:
-			var gpos = cc.get_global_pos()
+			var gpos = cc.get_global_position()
 			var origin = state.get_transform().get_origin()
 			cdist = gpos.distance_to(origin)
 			cvec = (gpos - origin).normalized()
-			eyes.set_pos(cvec*4)
+			eyes.set_position(cvec*4)
 
 	var new_anim = "awake_loop"
 	var lv = state.get_linear_velocity()
@@ -163,11 +163,11 @@ func _integrate_forces(state):
 	state.set_linear_velocity(lv)
 
 func _on_body_enter(body_id, body):
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		body.hit_begin()
 
 func _on_body_exit(body_id, body):
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		body.hit_end()
 
 func _on_enter_screen():
@@ -182,3 +182,4 @@ func _on_exit_screen():
 	disabled = true
 	get_node("anim").set_active(false)
 	#get_node("smoke").set_emitting(false)
+

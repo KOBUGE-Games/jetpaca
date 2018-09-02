@@ -17,7 +17,7 @@ func activated():
 		unlocked = true
 
 func _on_body_enter(body):
-	if not no_key and body and body extends preload("res://player/alpaca.gd") and not unlocked:
+	if not no_key and body and body is preload("res://player/alpaca.gd") and not unlocked:
 		if get_node("/root/game_data").current_keys[key_idx]:
 			activated()
 
@@ -27,3 +27,4 @@ func _ready():
 	if no_key:
 		get_node("lock").hide()
 		key_idx = -1
+

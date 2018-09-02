@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://art/temple_bg.png" type="Texture" id=1]
 
@@ -8,44 +8,42 @@ layer = -1
 offset = Vector2( 0, 0 )
 rotation = 0.0
 scale = Vector2( 1, 1 )
-scroll/offset = Vector2( 0, 0 )
-scroll/base_offset = Vector2( 0, 0 )
-scroll/base_scale = Vector2( 1, 1 )
-scroll/limit_begin = Vector2( 0, 0 )
-scroll/limit_end = Vector2( 0, 0 )
-scroll/ignore_camera_zoom = true
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 0 )
+scroll_ignore_camera_zoom = true
 
 [node name="parallax_bg" type="ParallaxLayer" parent="."]
 
-motion/scale = Vector2( 0.3, 0.3 )
-motion/offset = Vector2( 0, 0 )
-motion/mirroring = Vector2( 1024, 1024 )
+motion_scale = Vector2( 0.3, 0.3 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 1024, 1024 )
 
 [node name="Sprite" type="Sprite" parent="parallax_bg"]
 
-transform/scale = Vector2( 1.01, 1.01 )
+scale = Vector2( 1.01, 1.01 )
 texture = ExtResource( 1 )
 centered = false
 
 [node name="Sprite 2" type="Sprite" parent="parallax_bg"]
 
-transform/scale = Vector2( 1.01, 1.01 )
+scale = Vector2( 1.01, 1.01 )
 texture = ExtResource( 1 )
 centered = false
 offset = Vector2( 0, 512 )
 
 [node name="Sprite 3" type="Sprite" parent="parallax_bg"]
 
-transform/scale = Vector2( 1.01, 1.01 )
+scale = Vector2( 1.01, 1.01 )
 texture = ExtResource( 1 )
 centered = false
 offset = Vector2( 512, 0 )
 
 [node name="Sprite 4" type="Sprite" parent="parallax_bg"]
 
-transform/scale = Vector2( 1.01, 1.01 )
+scale = Vector2( 1.01, 1.01 )
 texture = ExtResource( 1 )
 centered = false
 offset = Vector2( 512, 512 )
-
-

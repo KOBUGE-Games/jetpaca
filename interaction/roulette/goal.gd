@@ -7,5 +7,6 @@ extends Area2D
 export var next_world = Vector2()
 
 func _on_body_enter(body):
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		body.end_level(next_world)
+

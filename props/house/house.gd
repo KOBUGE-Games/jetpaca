@@ -9,3 +9,4 @@ func _on_enter_screen():
 
 func _on_exit_screen():
 	get_node("parts").set_emitting(false)
+

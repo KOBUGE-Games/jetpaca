@@ -2,7 +2,7 @@
 # Copyright (c) 2009-2016 Juan Linietsky, Ariel Manzur
 # Distributed under the terms of the MIT license (cf. LICENSE.md file)
 
-extends ReferenceFrame
+extends ReferenceRect
 
 const LIFE_MAX = 2
 
@@ -56,3 +56,4 @@ func _ready():
 			set_big_coin_on(x)
 	set_life_count(game_data.life_count)
 	update_keys()
+

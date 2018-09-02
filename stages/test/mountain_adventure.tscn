@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=1]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://stages/stage.gd" type="Script" id=1]
 [ext_resource path="res://tilesets/mountain_tileset.tres" type="TileSet" id=2]
@@ -21,201 +21,203 @@ extents = Vector2( 400, 200 )
 
 [node name="Node" type="Node"]
 
-script/script = ExtResource( 1 )
+script = ExtResource( 1 )
 
 [node name="tiles" type="TileMap" parent="."]
 
 mode = 0
 tile_set = ExtResource( 2 )
-cell/size = Vector2( 64, 64 )
-cell/quadrant_size = 16
-cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-cell/half_offset = 2
-cell/tile_origin = 0
-cell/y_sort = false
-collision/use_kinematic = false
-collision/friction = 1.0
-collision/bounce = 0.0
-collision/layers = 1
-collision/mask = 1
-occluder/light_mask = 1
-tile_data = IntArray( 524289, 10, 524291, 8, 524293, 8, 524295, 8, 524297, 8, 524298, 8, 524300, 8, 524302, 8, 524304, 536870922, 589825, 6, 589840, 536870918, 720897, 6, 720912, 536870918, 851969, 6, 851984, 536870918, 983041, 6, 983056, 536870918, 1048592, 536870918, 1114113, 6, 1114153, 536870921, 1114154, 8, 1114156, 8, 1114158, 8, 1114160, 8, 1114162, 8, 1179664, 536870918, 1179688, 536870921, 1245185, 6, 1245222, 10, 1310736, 536870918, 1310757, 536870921, 1310758, 7, 1376257, 6, 1376292, 536870921, 1441808, 536870919, 1441810, 9, 1441827, 536870921, 1441834, 536870916, 1441836, 1, 1441837, 1, 1441838, 1, 1441839, 1, 1441840, 1, 1441841, 1, 1441842, 1, 1441843, 1, 1441844, 0, 1441845, 0, 1441846, 0, 1441847, 0, 1441848, 0, 1441849, 0, 1441850, 0, 1441851, 0, 1441852, 0, 1441853, 0, 1507329, 6, 1507347, 9, 1507362, 536870921, 1507369, 536870915, 1572884, 9, 1572897, 536870921, 1572904, 536870915, 1638401, 6, 1638421, 9, 1638432, 536870921, 1638439, 536870915, 1703958, 8, 1703960, 8, 1703962, 8, 1703964, 8, 1703966, 8, 1703973, 536870916, 1769473, 6, 1769508, 536870915, 1835043, 536870915, 1900545, 11, 1900547, 0, 1900548, 0, 1900549, 1, 1900550, 0, 1900551, 0, 1900552, 1, 1900553, 0, 1900554, 0, 1900555, 1, 1900556, 1, 1900557, 0, 1900558, 0, 1900559, 1, 1900560, 0, 1900561, 4, 1900578, 536870915, 1966099, 3, 1966113, 536870915, 2031636, 1, 2031637, 1, 2031638, 1, 2031639, 0, 2031640, 0, 2031641, 1, 2031642, 1, 2031643, 0, 2031644, 0, 2031645, 0, 2031646, 1, 2031647, 1, 2031648, 1 )
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+tile_data = PoolIntArray( 524289, 10, 524291, 8, 524293, 8, 524295, 8, 524297, 8, 524298, 8, 524300, 8, 524302, 8, 524304, 536870922, 589825, 6, 589840, 536870918, 720897, 6, 720912, 536870918, 851969, 6, 851984, 536870918, 983041, 6, 983056, 536870918, 1048592, 536870918, 1114113, 6, 1114153, 536870921, 1114154, 8, 1114156, 8, 1114158, 8, 1114160, 8, 1114162, 8, 1179664, 536870918, 1179688, 536870921, 1245185, 6, 1245222, 10, 1310736, 536870918, 1310757, 536870921, 1310758, 7, 1376257, 6, 1376292, 536870921, 1441808, 536870919, 1441810, 9, 1441827, 536870921, 1441834, 536870916, 1441836, 1, 1441837, 1, 1441838, 1, 1441839, 1, 1441840, 1, 1441841, 1, 1441842, 1, 1441843, 1, 1441844, 0, 1441845, 0, 1441846, 0, 1441847, 0, 1441848, 0, 1441849, 0, 1441850, 0, 1441851, 0, 1441852, 0, 1441853, 0, 1507329, 6, 1507347, 9, 1507362, 536870921, 1507369, 536870915, 1572884, 9, 1572897, 536870921, 1572904, 536870915, 1638401, 6, 1638421, 9, 1638432, 536870921, 1638439, 536870915, 1703958, 8, 1703960, 8, 1703962, 8, 1703964, 8, 1703966, 8, 1703973, 536870916, 1769473, 6, 1769508, 536870915, 1835043, 536870915, 1900545, 11, 1900547, 0, 1900548, 0, 1900549, 1, 1900550, 0, 1900551, 0, 1900552, 1, 1900553, 0, 1900554, 0, 1900555, 1, 1900556, 1, 1900557, 0, 1900558, 0, 1900559, 1, 1900560, 0, 1900561, 4, 1900578, 536870915, 1966099, 3, 1966113, 536870915, 2031636, 1, 2031637, 1, 2031638, 1, 2031639, 0, 2031640, 0, 2031641, 1, 2031642, 1, 2031643, 0, 2031644, 0, 2031645, 0, 2031646, 1, 2031647, 1, 2031648, 1 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="fruits" type="Node" parent="."]
 
+
 [node name="fruit" parent="fruits" instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 1590.28, 1796.89 )
+position = Vector2( 1590.28, 1796.89 )
 
 [node name="fruit 2" parent="fruits" instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 1703.85, 1796.89 )
+position = Vector2( 1703.85, 1796.89 )
 
 [node name="fruit 3" parent="fruits" instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 1814.08, 1796.89 )
+position = Vector2( 1814.08, 1796.89 )
 
 [node name="fruit 4" parent="fruits" instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 1915.88, 1790.13 )
+position = Vector2( 1915.88, 1790.13 )
 
 [node name="big_coin" parent="fruits" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 2380.23, 1561.7 )
+position = Vector2( 2380.23, 1561.7 )
 
 [node name="big_coin 2" parent="fruits" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 2647.36, 1380.19 )
+position = Vector2( 2647.36, 1380.19 )
 fruit_index = 1
 
 [node name="big_coin 3" parent="fruits" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 2948.74, 1274.02 )
+position = Vector2( 2948.74, 1274.02 )
 fruit_index = 2
 
 [node name="checkpoints" type="Node" parent="."]
 
+
 [node name="checkpoint" parent="checkpoints" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 1745.53, 1941.48 )
+position = Vector2( 1745.53, 1941.48 )
 
 [node name="stage_end" parent="checkpoints" instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 4415.27, 1676.25 )
+position = Vector2( 4415.27, 1676.25 )
 next_world = Vector2( 2, 2 )
 
 [node name="launch" type="Position2D" parent="."]
 
-transform/pos = Vector2( 290.826, 1360.97 )
+position = Vector2( 290.826, 1360.97 )
 
 [node name="enemies" type="Node" parent="."]
 
+
 [node name="fluff 2" parent="enemies" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 1989.39, 1914.85 )
+position = Vector2( 1989.39, 1914.85 )
 fluff_type = 2
 
 [node name="fluff 3" parent="enemies" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 1435.36, 1850.04 )
+position = Vector2( 1435.36, 1850.04 )
 
 [node name="circular_spike" parent="enemies" instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 643.327, 1475.87 )
+position = Vector2( 643.327, 1475.87 )
 
 [node name="RigidBody2D" parent="enemies" instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 3471.9, 878.711 )
+position = Vector2( 3471.9, 878.711 )
 
 [node name="RigidBody2D 2" parent="enemies" instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 3786.8, 770.302 )
+position = Vector2( 3786.8, 770.302 )
 
 [node name="RigidBody2D 3" parent="enemies" instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 4122.35, 889.036 )
+position = Vector2( 4122.35, 889.036 )
 
 [node name="RigidBody2D 4" parent="enemies" instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 4003.62, 605.108 )
+position = Vector2( 4003.62, 605.108 )
 
 [node name="RigidBody2D 5" parent="enemies" instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 4272.06, 532.835 )
+position = Vector2( 4272.06, 532.835 )
 
 [node name="RigidBody2D 6" parent="enemies" instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 3864.23, 491.536 )
+position = Vector2( 3864.23, 491.536 )
 
 [node name="RigidBody2D 7" parent="enemies" instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 3611.28, 543.16 )
+position = Vector2( 3611.28, 543.16 )
 
 [node name="RigidBody2D 8" parent="enemies" instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 3430.6, 383.127 )
+position = Vector2( 3430.6, 383.127 )
 
 [node name="RigidBody2D 9" parent="enemies" instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 3709.36, 331.504 )
+position = Vector2( 3709.36, 331.504 )
 
 [node name="RigidBody2D 10" parent="enemies" instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 4112.02, 300.53 )
+position = Vector2( 4112.02, 300.53 )
 
 [node name="RigidBody2D 11" parent="enemies" instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 3957.15, 207.608 )
+position = Vector2( 3957.15, 207.608 )
 
 [node name="heatseeker 4" parent="enemies" instance=ExtResource( 9 )]
 
-transform/pos = Vector2( 721.905, 1331.32 )
-transform/rot = 26.8576
+position = Vector2( 721.905, 1331.32 )
+rotation_degrees = -26.8576
 
 [node name="interaction" type="Node" parent="."]
 
-[node name="elevator" parent="interaction" groups=[
-"elevator_1",
-] instance=ExtResource( 10 )]
 
-transform/pos = Vector2( 3847.35, 1295.06 )
+[node name="elevator" parent="interaction" instance=ExtResource( 10 ) groups=[
+"elevator_1",
+]]
+
+position = Vector2( 3847.35, 1295.06 )
 distance = -8000
 max_speed = 128.0
 
 [node name="elevator_switch" type="Area2D" parent="interaction"]
 
-transform/pos = Vector2( 4070.2, 1295.06 )
-input/pickable = true
+position = Vector2( 4070.2, 1295.06 )
+input_pickable = true
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, -134.552, -4.20471 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, -134.552, -4.20471 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 11 )
+script = ExtResource( 11 )
 group = "elevator_1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interaction/elevator_switch"]
 
-transform/pos = Vector2( -134.552, -4.20471 )
+position = Vector2( -134.552, -4.20471 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = -1
 
 [node name="cannon" parent="interaction" instance=ExtResource( 12 )]
 
-transform/pos = Vector2( 252.206, 1867.77 )
-transform/rot = -90.639
+position = Vector2( 252.206, 1867.77 )
+rotation_degrees = 90.639
 
 [node name="cannon 2" parent="interaction" instance=ExtResource( 12 )]
 
-transform/pos = Vector2( 398.419, 1864.76 )
-transform/rot = -90.639
+position = Vector2( 398.419, 1864.76 )
+rotation_degrees = 90.639
 type = 1
 
 [node name="cannon 3" parent="interaction" instance=ExtResource( 12 )]
 
-transform/pos = Vector2( 546.139, 1863.25 )
-transform/rot = -90.639
+position = Vector2( 546.139, 1863.25 )
+rotation_degrees = 90.639
 type = 2
 
 [node name="spikes" parent="interaction" instance=ExtResource( 13 )]
 
-transform/pos = Vector2( 1169.14, 1497.94 )
-transform/rot = 137.705
+position = Vector2( 1169.14, 1497.94 )
+rotation_degrees = -137.705
 
 [node name="spikes 2" parent="interaction" instance=ExtResource( 13 )]
 
-transform/pos = Vector2( 1255.99, 1576.44 )
-transform/rot = 137.705
+position = Vector2( 1255.99, 1576.44 )
+rotation_degrees = -137.705
 
 [node name="spikes 3" parent="interaction" instance=ExtResource( 13 )]
 
-transform/pos = Vector2( 1347.85, 1661.62 )
-transform/rot = 137.705
-
-
+position = Vector2( 1347.85, 1661.62 )
+rotation_degrees = -137.705

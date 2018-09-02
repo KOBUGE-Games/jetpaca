@@ -15,7 +15,7 @@ func _on_timeout():
 	get_parent().call_deferred("remove_and_delete_child", self)
 
 func _on_body_enter(body):
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		body.add_key(key_index)
 		get_node("shine").set_emitting(true)
 		get_node("death").start()
@@ -32,3 +32,4 @@ func _on_exit_screen():
 func _ready():
 	get_node("sprite").set_texture(key_imgs[key_index])
 	get_node("enabler").start()
+

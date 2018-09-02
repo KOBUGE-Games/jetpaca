@@ -5,7 +5,7 @@
 extends RigidBody2D
 
 func _on_body_enter(body):
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		body.restore_life(1)
 		clear_shapes()
 		get_node("sprite").hide()
@@ -27,3 +27,4 @@ func _on_activate():
 
 func _ready():
 	get_node("activate").start()
+

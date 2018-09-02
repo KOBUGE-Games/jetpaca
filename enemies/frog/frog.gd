@@ -59,7 +59,7 @@ func _integrate_forces(state):
 
 		var c = get_closest_character()
 		if c:
-			var dvec = c.get_global_pos() - state.get_transform().get_origin()
+			var dvec = c.get_global_position() - state.get_transform().get_origin()
 			if abs(dvec.x) < 100 and dvec.y < 0:# and dvec.y < 500:
 				status = STATUS_JUMP_PREPARE
 				jump_go_up = false
@@ -108,7 +108,7 @@ func _integrate_forces(state):
 	elif status == STATUS_JUMP_UP:
 		anim = "burst_fall"
 		new_anim = "burst_fall"
-		if get_node("anim").get_pos() >= get_node("anim").get_current_animation_length():
+		if get_node("anim").get_position() >= get_node("anim").get_current_animation_length():
 			status = STATUS_JUMP_FALLING
 			get_node("anim").play("burst")
 			get_node("anim").queue("burst_fall")
@@ -118,7 +118,7 @@ func _integrate_forces(state):
 		var found_floor = false
 		for i in range(state.get_contact_count()):
 			var co = state.get_contact_collider_object(i)
-			if co and co extends preload("res://player/alpaca.gd"):
+			if co and co is preload("res://player/alpaca.gd"):
 				continue
 			var n = state.get_contact_local_normal(i)
 			print("cn", n)
@@ -150,3 +150,4 @@ func _on_enter_screen():
 func _on_exit_screen():
 	get_node("anim").set_active(false)
 	set_mode(MODE_STATIC)
+

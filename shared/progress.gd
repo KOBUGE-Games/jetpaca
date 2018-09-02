@@ -44,3 +44,4 @@ func _ready():
 	set_process(false)
 	animation = get_node("animation")
 	hide()
+

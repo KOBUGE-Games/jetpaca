@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://enemies/cannon/bubble.gd" type="Script" id=1]
 [ext_resource path="res://art/bubble.png" type="Texture" id=2]
@@ -10,17 +10,17 @@ radius = 50.0
 
 [sub_resource type="Animation" id=2]
 
-resource/name = "appear"
+resource_name = "appear"
 length = 1.0
 loop = false
 step = 0.0
 tracks/0/type = "value"
-tracks/0/path = NodePath("sprite:transform/scale")
+tracks/0/path = NodePath("sprite:scale")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 1 ),
-"transitions": FloatArray( 2.37842, 1 ),
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 2.37842, 1 ),
 "update": 0,
 "values": [ Vector2( 0.1, 0.1 ), Vector2( 2, 2 ) ]
 }
@@ -31,22 +31,22 @@ length = 0.2
 loop = false
 step = 0.0
 tracks/0/type = "value"
-tracks/0/path = NodePath("sprite:transform/scale")
+tracks/0/path = NodePath("sprite:scale")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.15 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.15 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 2, 2 ), Vector2( 4, 4 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("sprite:visibility/self_opacity")
+tracks/1/path = NodePath("sprite:self_modulate:a")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0, 0.2 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 1.0, 0.0 ]
 }
@@ -57,24 +57,24 @@ length = 1.0
 loop = true
 step = 0.0
 tracks/0/type = "value"
-tracks/0/path = NodePath("sprite:transform/scale")
+tracks/0/path = NodePath("sprite:scale")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.51, 1 ),
-"transitions": FloatArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.51, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 2.1, 2 ), Vector2( 2, 2.1 ), Vector2( 2.1, 2 ) ]
 }
 
 [node name="bubble" type="RigidBody2D"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 mode = 1
 mass = 8.0
 friction = 1.0
@@ -86,15 +86,15 @@ contacts_reported = 2
 contact_monitor = true
 sleeping = false
 can_sleep = true
-velocity/linear = Vector2( 0, 0 )
-velocity/angular = 0.0
-damp_override/linear = -1.0
-damp_override/angular = -1.0
-script/script = ExtResource( 1 )
+linear_velocity = Vector2( 0, 0 )
+angular_velocity = 0.0
+linear_damp = -1.0
+angular_damp = -1.0
+script = ExtResource( 1 )
 
 [node name="sprite" type="Sprite" parent="."]
 
-transform/scale = Vector2( 2, 2 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -105,24 +105,24 @@ _update_shape_index = -1
 
 [node name="anim" type="AnimationPlayer" parent="."]
 
-playback/process_mode = 1
-playback/default_blend_time = 0.0
-root/root = NodePath("..")
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/appear = SubResource( 2 )
 anims/burst = SubResource( 3 )
 anims/wobble = SubResource( 4 )
-playback/active = true
-playback/speed = 1.0
+playback_active = true
+playback_speed = 1.0
 blend_times = [  ]
 autoplay = "wobble"
 
-[node name="player" type="SamplePlayer2D" parent="."]
+[node name="player" type="AudioStreamPlayer2D" parent="."]
 
-params/volume_db = 0.0
-params/pitch_scale = 1.0
-params/attenuation/min_distance = 1.0
-params/attenuation/max_distance = 2048.0
-params/attenuation/distance_exp = 1.0
+volume_db = 0.0
+pitch_scale = 1.0
+attenuation_min_distance = 1.0
+attenuation_max_distance = 2048.0
+attenuation_distance_exp = 1.0
 config/polyphony = 1
 config/samples = null
 config/pitch_random = 0.0
@@ -138,10 +138,8 @@ wait_time = 0.5
 one_shot = true
 autostart = false
 
-[connection signal="enter_screen" from="sprox" to="." method="_on_enter_screen"]
+[connection signal="screen_entered" from="sprox" to="." method="_on_enter_screen" binds=[  ]]
 
-[connection signal="exit_screen" from="sprox" to="." method="_on_exit_screen"]
+[connection signal="screen_exited" from="sprox" to="." method="_on_exit_screen" binds=[  ]]
 
-[connection signal="timeout" from="burst" to="." method="_on_timeout"]
-
-
+[connection signal="timeout" from="burst" to="." method="_on_timeout" binds=[  ]]

@@ -12,7 +12,7 @@ func _process(delta):
 	var cc = get_closest_character()
 
 	if false and cc:
-		var looking_right = (cc.get_global_pos().x > get_global_pos().x)
+		var looking_right = (cc.get_global_position().x > get_global_position().x)
 		if looking_right != side_right:
 			side_right = looking_right
 			if side_right:
@@ -25,19 +25,19 @@ func get_closest_character():
 	var d = 1.0e10
 	var retc = null
 	for c in clist:
-		var ld = (get_global_pos() - c.get_global_pos()).length()
+		var ld = (get_global_position() - c.get_global_position()).length()
 		if ld < d:
 			retc = c
 			d = ld
 	return retc
 
 func _on_body_enter(body):
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		get_node("anim").play("rant")
 		body.show_hint(hint)
 
 func _on_body_exit(body):
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		get_node("anim").play("idle")
 		body.hide_hint()
 
@@ -53,3 +53,4 @@ func _ready():
 	set_process(false)
 	get_node("anim").play("idle")
 	get_node("anim").set_active(false)
+

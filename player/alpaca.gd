@@ -100,7 +100,7 @@ var do_change_flipping = false
 
 func _attack_area_enter(body):
 	print("ENTER BODY?")
-	if body extends enemy_class:
+	if body is enemy_class:
 		enemies_to_attack.push_back(body)
 		print("ENTER BODY!")
 	else:
@@ -108,7 +108,7 @@ func _attack_area_enter(body):
 
 func _attack_area_exit(body):
 	print("EXIT BODY?")
-	if body extends enemy_class:
+	if body is enemy_class:
 		enemies_to_attack.erase(body)
 		print("EXIT BODY!")
 
@@ -140,12 +140,12 @@ func _integrate_forces(state):
 	var attacked_target = null
 	for i in range(state.get_contact_count()):
 		var co = state.get_contact_collider_object(i)
-		if co and co extends enemy_class and co.inflicts_damage():
+		if co and co is enemy_class and co.inflicts_damage():
 			hit_frame = true
 
 		var n = state.get_contact_local_normal(i)
 
-		if attack_time > 0 and co and co extends RigidBody2D and attack_vector.dot(n) < -0.707:
+		if attack_time > 0 and co and co is RigidBody2D and attack_vector.dot(n) < -0.707:
 			attacked_target = co
 
 		if n.y < -0.707:
@@ -162,7 +162,7 @@ func _integrate_forces(state):
 	for e in enemies_to_attack:
 		if not e.takes_damage():
 			continue
-		var epos = e.get_global_pos()
+		var epos = e.get_global_position()
 		var d = epos.distance_to(pos)
 		if not closest_enemy or d < closest_enemy_dist:
 			closest_enemy = e
@@ -232,13 +232,13 @@ func _integrate_forces(state):
 	if attack_time > 0:
 		if attacked_target:
 			attack_time=0
-			if attacked_target extends enemy_class and attacked_target.takes_damage():
+			if attacked_target is enemy_class and attacked_target.takes_damage():
 				hit_frame = false
 				lv = attack_vector*(-50)
 				var enmvec = (attacked_target.get_global_transform().get_origin() - state.get_transform().get_origin()).normalized()*40.0
 
 				attacked_target.call("attacked", self)
-				get_node("starhit").set_pos(enmvec)
+				get_node("starhit").set_position(enmvec)
 				get_node("starhit").set_emitting(true)
 				get_node("event_sounds").play("attack")
 				get_node("camera_animation").play("shake")
@@ -261,7 +261,7 @@ func _integrate_forces(state):
 							attack_vector = (ae.get_global_transform().get_origin() - state.get_transform().get_origin()).normalized()
 						attack_enemy = null
 
-				var attack_dir = attack_vector # (ae.get_global_pos() - pos).normalized()
+				var attack_dir = attack_vector # (ae.get_global_position() - pos).normalized()
 				lv = attack_dir * ATTACK_SPEED
 
 			if attack_time < 0:
@@ -419,11 +419,11 @@ func _integrate_forces(state):
 		if can_thrust:
 			p.set_param(Particles2D.PARAM_SPREAD, 10)
 			p.set_param(Particles2D.PARAM_LINEAR_VELOCITY, 130)
-			p.set_self_opacity(1.0)
+			p.self_modulate.a = 1.0
 		else:
 			p.set_param(Particles2D.PARAM_SPREAD, 80)
 			p.set_param(Particles2D.PARAM_LINEAR_VELOCITY, 50)
-			p.set_self_opacity(0.35)
+			p.self_modulate.a = 0.35
 
 		p.set_initial_velocity(lv)
 		var p2 = get_node(jpart_names[i] + "f")
@@ -449,7 +449,7 @@ func _integrate_forces(state):
 
 	if found_floor:
 		prev_floor = true
-		prev_floor_speed = state.get_contact_collider_velocity_at_pos(floor_index)
+		prev_floor_speed = state.get_contact_collider_velocity_at_position(floor_index)
 		prev_floor_speed.y = 0
 		lv += prev_floor_speed
 
@@ -503,10 +503,10 @@ func _unhandled_input(event):
 	if event.is_action("attack") and !attack_begin and event.is_pressed() and closest_enemy:
 		attack_begin = true
 
-	if event.type == InputEvent.SCREEN_TOUCH:
+	if event is InputEventScreenTouch:
 
 		if control_mode == CONTROL_TAP:
-			var mp = get_tree().get_root().get_final_transform().affine_inverse().xform(event.pos)
+			var mp = get_tree().get_root().get_final_transform().affine_inverse().xform(event.position)
 
 			if event.pressed:
 				if closest_enemy and !attack_begin:
@@ -514,10 +514,10 @@ func _unhandled_input(event):
 					var aright = get_node("hud/base/jp_right/attack")
 					var r = aleft.get_texture().get_size().height*0.9
 					#print("R: ", r)
-					#print("EP: ", event.pos)
-					#print("ARD: ", mp.distance_to(aleft.get_global_pos()), " gp ", aleft.get_global_pos())
-					#print("ARD: ", mp.distance_to(aright.get_global_pos()), " gp ", aright.get_global_pos())
-					if mp.distance_to(aleft.get_global_pos()) < r or mp.distance_to(aright.get_global_pos()) < r:
+					#print("EP: ", event.position)
+					#print("ARD: ", mp.distance_to(aleft.get_global_position()), " gp ", aleft.get_global_position())
+					#print("ARD: ", mp.distance_to(aright.get_global_position()), " gp ", aright.get_global_position())
+					if mp.distance_to(aleft.get_global_position()) < r or mp.distance_to(aright.get_global_position()) < r:
 						attack_begin = true
 
 				if event.device != 0:
@@ -558,7 +558,7 @@ func _unhandled_input(event):
 					slide_2 = Vector2()
 					slide_2_time = 0.0
 
-	if (event.type==InputEvent.SCREEN_DRAG):
+	if (event is InputEventScreenDrag):
 
 		if event.index == 0:
 			slide_1 += event.relative_pos
@@ -606,7 +606,7 @@ func _process(delta):
 	hit_frame = false
 
 	# Compensate attack shape transform
-	var attack_area_offset = get_global_pos() - get_node("camera").get_camera_screen_center()
+	var attack_area_offset = get_global_position() - get_node("camera").get_camera_screen_center()
 
 	# Adjust camera
 	var lv = get_linear_velocity()
@@ -709,3 +709,4 @@ func cancel_attack():
 func _init():
 	set_process(true)
 	set_process_unhandled_input(true)
+

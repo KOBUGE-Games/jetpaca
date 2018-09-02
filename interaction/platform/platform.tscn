@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://interaction/platform/platform.gd" type="Script" id=1]
 [ext_resource path="res://props/planks/plank.tscn" type="PackedScene" id=2]
@@ -10,43 +10,44 @@
 custom_solver_bias = 0.0
 extents = Vector2( 300, 80 )
 
-[sub_resource type="ColorRamp" id=2]
+[sub_resource type="Gradient" id=2]
 
-offsets = FloatArray( 0, 0.2, 1 )
-colors = ColorArray( 1, 0.79646, 0, 1, 1, 0.247788, 0, 1, 0, 0, 0, 0 )
+offsets = PoolRealArray( 0, 0.2, 1 )
+colors = PoolColorArray( 1, 0.79646, 0, 1, 1, 0.247788, 0, 1, 0, 0, 0, 0 )
 
 [node name="carryplat" type="Area2D"]
 
-input/pickable = true
+input_pickable = true
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, -2, 2 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, -2, 2 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 1 )
+script = ExtResource( 1 )
 max_distance = 1200.0
 
 [node name="platform" parent="." instance=ExtResource( 2 )]
 
+
 [node name="Sprite" type="Sprite" parent="platform"]
 
-transform/pos = Vector2( 216.474, -72.5428 )
+position = Vector2( 216.474, -72.5428 )
 texture = ExtResource( 3 )
 
 [node name="fire" type="Particles2D" parent="platform"]
 
-visibility/opacity = 0.363636
+modulate = Color( 1, 1, 1, 0.363636 )
 visibility/blend_mode = 1
-transform/pos = Vector2( 215.382, -130.846 )
-transform/rot = -179.267
-config/amount = 16
-config/lifetime = 2.0
+position = Vector2( 215.382, -130.846 )
+rotation_degrees = 179.267
+amount = 16
+lifetime = 2.0
 config/process_mode = 1
 config/half_extents = Vector2( 5, 5 )
-config/local_space = false
-config/texture = ExtResource( 4 )
+local_coords = false
+texture = ExtResource( 4 )
 params/direction = 0.0
 params/spread = 10.0
 params/linear_velocity = 20.0
@@ -68,7 +69,7 @@ color/color_ramp = SubResource( 2 )
 
 [node name="trigger" type="Position2D" parent="platform"]
 
-transform/pos = Vector2( 216.792, -125.981 )
+position = Vector2( 216.792, -125.981 )
 
 [node name="screenprox" type="VisibilityNotifier2D" parent="platform"]
 
@@ -76,15 +77,13 @@ rect = Rect2( -10, -10, 20, 20 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-transform/pos = Vector2( -2, 2 )
+position = Vector2( -2, 2 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = -1
 
-[connection signal="body_enter" from="." to="." method="_on_body_enter"]
+[connection signal="body_entered" from="." to="." method="_on_body_enter" binds=[  ]]
 
-[connection signal="enter_screen" from="platform/screenprox" to="." method="_on_enter_screen"]
+[connection signal="screen_entered" from="platform/screenprox" to="." method="_on_enter_screen" binds=[  ]]
 
-[connection signal="exit_screen" from="platform/screenprox" to="." method="_on_exit_screen"]
-
-
+[connection signal="screen_exited" from="platform/screenprox" to="." method="_on_exit_screen" binds=[  ]]

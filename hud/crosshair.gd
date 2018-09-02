@@ -7,7 +7,7 @@ extends Node2D
 var active = false
 
 func lock(pos):
-	set_pos(pos)
+	set_position(pos)
 	if not active:
 		get_node("anim").play("lock")
 		get_node("anim").queue("rotate")
@@ -17,3 +17,4 @@ func unlock():
 	if active:
 		get_node("anim").play("unlock")
 		active = false
+

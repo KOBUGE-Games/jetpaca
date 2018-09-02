@@ -47,3 +47,4 @@ func _ready():
 	var height = int(1280.0/rate)
 	get_tree().get_root().set_size_override(true, Vector2(1280, height))
 	get_tree().get_root().set_size_override_stretch(true)
+

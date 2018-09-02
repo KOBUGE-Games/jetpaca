@@ -1,80 +1,81 @@
-[gd_scene load_steps=13 format=1]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://art/cavetiles.png" type="Texture" id=1]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0, 128, 0, 24, 64, 24, 64, 128 )
+points = PoolVector2Array( 0, 128, 0, 24, 64, 24, 64, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0, 24, 128, 88, 128, 192, 0, 192 )
+points = PoolVector2Array( 0, 24, 128, 88, 128, 192, 0, 192 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 64, 192, 0, 192, 0, 24, 64, 88 )
+points = PoolVector2Array( 64, 192, 0, 192, 0, 24, 64, 88 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 128, 24, 96, 128, 0, 128, 0, 24 )
+points = PoolVector2Array( 128, 24, 96, 128, 0, 128, 0, 24 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0, 128, 0, 0, 96, 0, 96, 128 )
+points = PoolVector2Array( 0, 128, 0, 0, 96, 0, 96, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0, 32, 0, 0, 96, 0, 64, 32 )
+points = PoolVector2Array( 0, 32, 0, 0, 96, 0, 64, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0, 32, 0, 0, 128, 0, 128, 32 )
+points = PoolVector2Array( 0, 32, 0, 0, 128, 0, 128, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 64, 96, 0, 40, 0, 0, 64, 0 )
+points = PoolVector2Array( 64, 96, 0, 40, 0, 0, 64, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0, 0, 96, 0, 96, 104, 128, 152, 128, 256, 0, 256 )
+points = PoolVector2Array( 0, 0, 96, 0, 96, 104, 128, 152, 128, 256, 0, 256 )
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0, 0, 128, 0, 128, 40, 96, 64, 96, 128, 0, 128 )
+points = PoolVector2Array( 0, 0, 128, 0, 128, 40, 96, 64, 96, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=11]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0, 128, 0, 24, 128, 24, 128, 128 )
+points = PoolVector2Array( 0, 128, 0, 24, 128, 24, 128, 128 )
 
 [node name="cave_tileset" type="Node"]
+
 
 [node name="Floor1" type="Sprite" parent="."]
 
 editor/display_folded = true
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 0, 0, 64, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Floor1"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -89,20 +90,20 @@ _update_shape_index = 0
 [node name="Floor2" type="Sprite" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 64, 0 )
+position = Vector2( 64, 0 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 64, 0, 64, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Floor2"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -117,20 +118,20 @@ _update_shape_index = 0
 [node name="Ramp 22" type="Sprite" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 128, 0 )
+position = Vector2( 128, 0 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 128, 0, 128, 192 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ramp 22"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -145,20 +146,20 @@ _update_shape_index = 0
 [node name="Ramp 45" type="Sprite" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 256, 64 )
+position = Vector2( 256, 64 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 256, 64, 64, 192 )
 
 [node name="static_body_2d 2" type="StaticBody2D" parent="Ramp 45"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 3 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -173,20 +174,20 @@ _update_shape_index = 0
 [node name="Edge" type="Sprite" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 320, 128 )
+position = Vector2( 320, 128 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 320, 128, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Edge"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 4 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -200,20 +201,20 @@ _update_shape_index = 0
 
 [node name="Wall" type="Sprite" parent="."]
 
-transform/pos = Vector2( 320, 256 )
+position = Vector2( 320, 256 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 320, 256, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Wall"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 5 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -228,20 +229,20 @@ _update_shape_index = 0
 [node name="Ceiling 2 Wall" type="Sprite" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 192, 448 )
+position = Vector2( 192, 448 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 192, 448, 128, 64 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ceiling 2 Wall"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 6 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -255,20 +256,20 @@ _update_shape_index = 0
 
 [node name="Ceiling" type="Sprite" parent="."]
 
-transform/pos = Vector2( 192, 384 )
+position = Vector2( 192, 384 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 192, 384, 128, 64 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ceiling"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 7 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -283,20 +284,20 @@ _update_shape_index = 0
 [node name="Ceiling Ramp" type="Sprite" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 128, 256 )
+position = Vector2( 128, 256 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 128, 256, 64, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ceiling Ramp"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 8 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -311,20 +312,20 @@ _update_shape_index = 0
 [node name="Floor 2 Wall" type="Sprite" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 0, 256 )
+position = Vector2( 0, 256 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 0, 256, 128, 256 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Floor 2 Wall"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 9 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -339,20 +340,20 @@ _update_shape_index = 0
 [node name="Wall 2 Ceiling" type="Sprite" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 0, 128 )
+position = Vector2( 0, 128 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 0, 128, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Wall 2 Ceiling"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 10 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -366,36 +367,36 @@ _update_shape_index = 0
 
 [node name="Nothing Big" type="Sprite" parent="."]
 
-transform/pos = Vector2( 192, 256 )
+position = Vector2( 192, 256 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 192, 256, 128, 128 )
 
 [node name="Nothing Small" type="Sprite" parent="."]
 
-transform/pos = Vector2( 192, 256 )
+position = Vector2( 192, 256 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 192, 256, 64, 64 )
 
 [node name="Floor Variation" type="Sprite" parent="."]
 
-transform/pos = Vector2( 384, 0 )
+position = Vector2( 384, 0 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 384, 0, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Floor Variation"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 11 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -409,20 +410,20 @@ _update_shape_index = 0
 
 [node name="Wall Variation" type="Sprite" parent="."]
 
-transform/pos = Vector2( 320, 384 )
+position = Vector2( 320, 384 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 320, 384, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Wall Variation"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 5 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -436,20 +437,20 @@ _update_shape_index = 0
 
 [node name="Ceiling Variation" type="Sprite" parent="."]
 
-transform/pos = Vector2( 128, 184 )
+position = Vector2( 128, 184 )
 texture = ExtResource( 1 )
 centered = false
-region = true
+region_enabled = true
 region_rect = Rect2( 128, 184, 128, 64 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ceiling Variation"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 7 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -460,5 +461,3 @@ bounce = 0.0
 shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 0
-
-

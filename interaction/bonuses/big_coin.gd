@@ -18,7 +18,7 @@ func _on_exit_screen():
 	get_node("anim").stop()
 
 func _on_body_enter(body):
-	if not taken and body extends preload("res://player/alpaca.gd"):
+	if not taken and body is preload("res://player/alpaca.gd"):
 		print("BODY IN COIN")
 		taken = true
 		body.add_big_coin(fruit_index)
@@ -33,4 +33,5 @@ func _on_body_enter(body):
 func _ready():
 	var cw = game_data.current_world
 	if cw.big_coins[fruit_index]:
-		get_node("sprite").set_self_opacity(0.5)
+		get_node("sprite").self_modulate.a = 0.5
+

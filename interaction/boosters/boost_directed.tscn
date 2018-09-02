@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://interaction/boosters/booster.gd" type="Script" id=1]
 [ext_resource path="res://art/boost.png" type="Texture" id=2]
@@ -14,19 +14,19 @@ radius = 27.0
 custom_solver_bias = 0.0
 radius = 27.0
 
-[sub_resource type="ColorRamp" id=3]
+[sub_resource type="Gradient" id=3]
 
-offsets = FloatArray( 0, 1 )
-colors = ColorArray( 1, 1, 1, 1, 0.168627, 0.566372, 1, 0.0884956 )
+offsets = PoolRealArray( 0, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 0.168627, 0.566372, 1, 0.0884956 )
 
 [node name="booster_push" type="RigidBody2D"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = true
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 mode = 3
 mass = 1.0
 friction = 1.0
@@ -38,18 +38,18 @@ contacts_reported = 0
 contact_monitor = false
 sleeping = false
 can_sleep = true
-velocity/linear = Vector2( 0, 0 )
-velocity/angular = 0.0
-damp_override/linear = -1.0
-damp_override/angular = -1.0
-script/script = ExtResource( 1 )
+linear_velocity = Vector2( 0, 0 )
+angular_velocity = 0.0
+linear_damp = -1.0
+angular_damp = -1.0
+script = ExtResource( 1 )
 drop = null
 boost_mode = 1
 boost_value = 1150
 
 [node name="Sprite" type="Sprite" parent="."]
 
-transform/pos = Vector2( 6.29762, 0 )
+position = Vector2( 6.29762, 0 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -60,9 +60,9 @@ _update_shape_index = -1
 
 [node name="area" type="Area2D" parent="."]
 
-input/pickable = true
+input_pickable = true
 shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -85,16 +85,16 @@ autostart = false
 [node name="particles" type="Particles2D" parent="."]
 
 visibility/blend_mode = 1
-transform/pos = Vector2( -11.4031, 0.814498 )
-transform/rot = 89.3689
-config/amount = 20
-config/lifetime = 1.0
+position = Vector2( -11.4031, 0.814498 )
+rotation_degrees = -89.3689
+amount = 20
+lifetime = 1.0
 config/emit_timeout = 1.0
-config/emitting = false
+emitting = false
 config/process_mode = 1
 config/half_extents = Vector2( 15, 15 )
-config/explosiveness = 0.1
-config/texture = ExtResource( 3 )
+explosiveness = 0.1
+texture = ExtResource( 3 )
 params/direction = 0.0
 params/spread = 15.4518
 params/linear_velocity = 1000.0
@@ -114,10 +114,8 @@ params/anim_initial_pos = 0.0
 randomness/linear_velocity = 1.0
 color/color_ramp = SubResource( 3 )
 
-[connection signal="body_enter" from="area" to="." method="_on_push_enter"]
+[connection signal="body_entered" from="area" to="." method="_on_push_enter" binds=[  ]]
 
-[connection signal="body_exit" from="area" to="." method="_on_push_exit"]
+[connection signal="body_exited" from="area" to="." method="_on_push_exit" binds=[  ]]
 
-[connection signal="timeout" from="timer" to="." method="_on_timeout"]
-
-
+[connection signal="timeout" from="timer" to="." method="_on_timeout" binds=[  ]]

@@ -20,7 +20,7 @@ func _integrate_forces(state):
 	var t = state.get_transform()
 	if cc and seek_heat:
 		if cc.is_jetpack_on():
-			var cvec = (cc.get_global_pos() - t.get_origin()).normalized()
+			var cvec = (cc.get_global_position() - t.get_origin()).normalized()
 			var lvec = -t[0].normalized()
 			var a = atan2(lvec.tangent().dot(cvec), lvec.dot(cvec))
 			t = t.rotated(a*state.get_step()*TURN_SPEED)
@@ -50,3 +50,4 @@ func _on_exit_screen():
 
 func _ready():
 	set_can_sleep(false)
+

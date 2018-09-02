@@ -1,0 +1,65 @@
+[application]
+
+config/icon = "res://art/intro_alpaca.png"
+config/name = "Jetpaca"
+run/main_scene = "res://menu/main_menu.tscn"
+
+[autoload]
+
+game_data = "*res://shared/game_data.gd"
+main = "*res://shared/main.gd"
+music = "*res://shared/music.tscn"
+progress = "res://shared/progress.tscn"
+
+[debug]
+
+print_clicked_control = false
+
+[display]
+
+window/size/height = 720
+window/size/width = 1280
+
+[image_loader]
+
+filter = true
+gen_mipmaps = true
+
+[importer_defaults]
+
+texture = {
+"flags/filter": true,
+"flags/mipmaps": true
+}
+
+[input]
+
+attack = [ InputEvent(KEY,32), InputEvent(JBUTTON,0) ]
+jetpack_left = [ InputEvent(KEY,16777231), InputEvent(JBUTTON,4) ]
+jetpack_right = [ InputEvent(KEY,16777233), InputEvent(JBUTTON,5) ]
+quit = [ InputEvent(KEY,16777217), InputEvent(JBUTTON,10) ]
+
+[physics]
+
+2d/default_gravity = 200
+
+[rasterizer]
+
+use_pixel_snap = true
+
+[rendering]
+
+quality/2d/use_pixel_snap = true
+
+[texture_import]
+
+filter = false
+repeat = false
+
+[video]
+
+allow_horizontal = true
+allow_horizontal_flipped = true
+height = 450
+width = 800
+

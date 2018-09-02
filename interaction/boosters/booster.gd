@@ -18,24 +18,24 @@ func _on_timeout():
 	disabled = false
 
 func _on_push_enter(body):
-	if body extends RigidBody2D:
+	if body is RigidBody2D:
 		if boost_mode == MODE_DIRECTED:
 			body.set_linear_velocity(get_global_transform()[0]*boost_value)
-			if body extends preload("res://player/alpaca.gd"):
+			if body is preload("res://player/alpaca.gd"):
 				body.cancel_attack()
 			disabled = true
 			get_node("timer").start()
 			get_node("particles").set_emitting(true)
 		elif boost_mode == MODE_STOP:
 			body.set_linear_velocity(Vector2())
-			if body extends preload("res://player/alpaca.gd"):
+			if body is preload("res://player/alpaca.gd"):
 				body.cancel_attack()
 			incount += 1
 			if incount == 1:
 				disabled = true
 
 func _on_push_exit(body):
-	if boost_mode == MODE_STOP and body extends RigidBody2D:
+	if boost_mode == MODE_STOP and body is RigidBody2D:
 		incount -= 1
 		if incount == 0:
 			disabled = false
@@ -45,3 +45,4 @@ func inflicts_damage():
 
 func takes_damage():
 	return not disabled
+

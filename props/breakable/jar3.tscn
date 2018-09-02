@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=1]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://props/breakable/jar.gd" type="Script" id=1]
 [ext_resource path="res://art/jar3.png" type="Texture" id=2]
@@ -8,19 +8,19 @@
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 20.6263, 20.7287, 5.86916, 29.9519, -7.83389, 31.006, -20.4829, 24.6815, -26.5438, 10.7149, -9.94205, -17.2182, 15.6194, -0.879951 )
+points = PoolVector2Array( 20.6263, 20.7287, 5.86916, 29.9519, -7.83389, 31.006, -20.4829, 24.6815, -26.5438, 10.7149, -9.94205, -17.2182, 15.6194, -0.879951 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -13.6313, -28.286, 15.6194, -29.0766, 24.3156, -24.8603, 15.6194, -0.879951, -9.94205, -17.2182 )
+points = PoolVector2Array( -13.6313, -28.286, 15.6194, -29.0766, 24.3156, -24.8603, 15.6194, -0.879951, -9.94205, -17.2182 )
 
-[sub_resource type="ColorRamp" id=3]
+[sub_resource type="Gradient" id=3]
 
-offsets = FloatArray( 0, 0.8, 1 )
-colors = ColorArray( 1, 1, 1, 1, 0.435294, 0.442478, 0.469027, 1, 0, 0, 0, 0 )
+offsets = PoolRealArray( 0, 0.8, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 0.435294, 0.442478, 0.469027, 1, 0, 0, 0, 0 )
 
-[sub_resource type="SampleLibrary" id=4]
+[sub_resource type="Resource" id=4]
 
 samples/break = {
 "db": 0.0,
@@ -31,15 +31,15 @@ samples/break = {
 
 [node name="jar3" type="RigidBody2D"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 shapes/1/shape = SubResource( 2 )
-shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 mode = 0
 mass = 1.0
 friction = 1.0
@@ -51,11 +51,11 @@ contacts_reported = 0
 contact_monitor = false
 sleeping = false
 can_sleep = true
-velocity/linear = Vector2( 0, 0 )
-velocity/angular = 0.0
-damp_override/linear = -1.0
-damp_override/angular = -1.0
-script/script = ExtResource( 1 )
+linear_velocity = Vector2( 0, 0 )
+angular_velocity = 0.0
+linear_damp = -1.0
+angular_damp = -1.0
+script = ExtResource( 1 )
 has_key = false
 key_index = 2
 
@@ -66,21 +66,21 @@ texture = ExtResource( 2 )
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 
 build_mode = 0
-polygon = Vector2Array( -9.94205, -17.2182, -13.6313, -28.286, 15.6194, -29.0766, 24.3156, -24.8603, 15.6194, -0.879951, 20.6263, 20.7287, 5.86916, 29.9519, -7.83389, 31.006, -20.4829, 24.6815, -26.5438, 10.7149 )
+polygon = PoolVector2Array( -9.94205, -17.2182, -13.6313, -28.286, 15.6194, -29.0766, 24.3156, -24.8603, 15.6194, -0.879951, 20.6263, 20.7287, 5.86916, 29.9519, -7.83389, 31.006, -20.4829, 24.6815, -26.5438, 10.7149 )
 shape_range = Vector2( -1, -1 )
 trigger = false
 
 [node name="particles" type="Particles2D" parent="."]
 
-config/amount = 16
-config/lifetime = 0.7
+amount = 16
+lifetime = 0.7
 config/emit_timeout = 0.7
-config/emitting = false
+emitting = false
 config/process_mode = 1
 config/half_extents = Vector2( 16, 16 )
-config/local_space = false
-config/explosiveness = 0.1
-config/texture = ExtResource( 3 )
+local_coords = false
+explosiveness = 0.1
+texture = ExtResource( 3 )
 params/direction = 0.0
 params/spread = 180.0
 params/linear_velocity = 60.0
@@ -108,17 +108,15 @@ wait_time = 1.0
 one_shot = false
 autostart = false
 
-[node name="player" type="SamplePlayer2D" parent="."]
+[node name="player" type="AudioStreamPlayer2D" parent="."]
 
-params/volume_db = 0.0
-params/pitch_scale = 0.6
-params/attenuation/min_distance = 1.0
-params/attenuation/max_distance = 2048.0
-params/attenuation/distance_exp = 1.0
+volume_db = 0.0
+pitch_scale = 0.6
+attenuation_min_distance = 1.0
+attenuation_max_distance = 2048.0
+attenuation_distance_exp = 1.0
 config/polyphony = 1
 config/samples = SubResource( 4 )
 config/pitch_random = 0.0
 
-[connection signal="timeout" from="death" to="." method="_on_timeout"]
-
-
+[connection signal="timeout" from="death" to="." method="_on_timeout" binds=[  ]]

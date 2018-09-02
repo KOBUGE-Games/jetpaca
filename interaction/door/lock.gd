@@ -20,3 +20,4 @@ func unlock():
 
 func set_index(idx):
 	get_node("lock/keyhole").set_frame(idx)
+

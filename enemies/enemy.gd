@@ -25,7 +25,7 @@ func get_closest_character():
 	var d = 1.0e10
 	var retc = null
 	for c in clist:
-		var ld = (get_global_pos() - c.get_global_pos()).length()
+		var ld = (get_global_position() - c.get_global_position()).length()
 		if ld < d:
 			retc = c
 			d = ld
@@ -68,3 +68,4 @@ func _enter_tree():
 	c.connect("enter_screen", self, "_on_enter_screen")
 	c.connect("exit_screen", self, "_on_exit_screen")
 	add_child(c)
+

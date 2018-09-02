@@ -7,14 +7,14 @@ extends Node2D
 export var max_distance = 600.0
 var active = false
 
-func get_closest_character_pos():
+func get_closest_character_position():
 	var clist = get_tree().get_nodes_in_group("character")
 	var d = 1.0e10
 	var retp
 
 	for c in clist:
-		var cp = c.get_global_pos()
-		var ld = (get_global_pos() - cp).length()
+		var cp = c.get_global_position()
+		var ld = (get_global_position() - cp).length()
 		if ld < d:
 			retp = cp
 			d = ld
@@ -23,10 +23,10 @@ func get_closest_character_pos():
 
 func _process(delta):
 	var p = get_node("platform")
-	if get_closest_character_pos().distance_to(p.get_global_pos()) > max_distance:
+	if get_closest_character_position().distance_to(p.get_global_position()) > max_distance:
 		_reset()
 	else:
-		get_tree().call_group(0, "_fire_triggers", "set_on_fire", get_node("platform/trigger").get_global_pos())
+		get_tree().call_group(0, "_fire_triggers", "set_on_fire", get_node("platform/trigger").get_global_position())
 
 func _reset():
 	set_process(false)
@@ -49,8 +49,9 @@ func _on_exit_screen():
 func _on_body_enter(body):
 	if active:
 		return
-	if body extends preload("res://player/alpaca.gd"):
+	if body is preload("res://player/alpaca.gd"):
 		get_node("platform").set_mode(RigidBody2D.MODE_RIGID)
 		get_node("platform").set_sleeping(false) # suspend
 		active = true
 		set_process(true)
+

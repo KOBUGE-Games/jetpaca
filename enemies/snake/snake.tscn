@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://enemies/snake/snake.gd" type="Script" id=1]
 [ext_resource path="res://art/snake.png" type="Texture" id=2]
@@ -11,14 +11,15 @@ height = 20.0
 
 [node name="snake" type="Node2D"]
 
+
 [node name="head" type="RigidBody2D" parent="."]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 mode = 0
 mass = 20.0
 friction = 1.0
@@ -30,11 +31,11 @@ contacts_reported = 0
 contact_monitor = false
 sleeping = false
 can_sleep = true
-velocity/linear = Vector2( 0, 0 )
-velocity/angular = 0.0
-damp_override/linear = -1.0
-damp_override/angular = -1.0
-script/script = ExtResource( 1 )
+linear_velocity = Vector2( 0, 0 )
+angular_velocity = 0.0
+linear_damp = -1.0
+angular_damp = -1.0
+script = ExtResource( 1 )
 drop = 0
 role = 0
 
@@ -51,13 +52,13 @@ _update_shape_index = -1
 
 [node name="body 1" type="RigidBody2D" parent="."]
 
-transform/pos = Vector2( 0, 50 )
-input/pickable = false
+position = Vector2( 0, 50 )
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 mode = 0
 mass = 1.0
 friction = 1.0
@@ -69,11 +70,11 @@ contacts_reported = 0
 contact_monitor = false
 sleeping = false
 can_sleep = true
-velocity/linear = Vector2( 0, 0 )
-velocity/angular = 0.0
-damp_override/linear = -1.0
-damp_override/angular = -1.0
-script/script = ExtResource( 1 )
+linear_velocity = Vector2( 0, 0 )
+angular_velocity = 0.0
+linear_damp = -1.0
+angular_damp = -1.0
+script = ExtResource( 1 )
 drop = 0
 role = 1
 
@@ -91,13 +92,13 @@ _update_shape_index = -1
 
 [node name="body 2" type="RigidBody2D" parent="."]
 
-transform/pos = Vector2( 0, 100 )
-input/pickable = false
+position = Vector2( 0, 100 )
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 mode = 0
 mass = 1.0
 friction = 1.0
@@ -109,11 +110,11 @@ contacts_reported = 0
 contact_monitor = false
 sleeping = false
 can_sleep = true
-velocity/linear = Vector2( 0, 0 )
-velocity/angular = 0.0
-damp_override/linear = -1.0
-damp_override/angular = -1.0
-script/script = ExtResource( 1 )
+linear_velocity = Vector2( 0, 0 )
+angular_velocity = 0.0
+linear_damp = -1.0
+angular_damp = -1.0
+script = ExtResource( 1 )
 drop = 0
 role = 1
 
@@ -131,13 +132,13 @@ _update_shape_index = -1
 
 [node name="body 3" type="RigidBody2D" parent="."]
 
-transform/pos = Vector2( 0, 150 )
-input/pickable = false
+position = Vector2( 0, 150 )
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 mode = 0
 mass = 1.0
 friction = 1.0
@@ -149,11 +150,11 @@ contacts_reported = 0
 contact_monitor = false
 sleeping = false
 can_sleep = true
-velocity/linear = Vector2( 0, 0 )
-velocity/angular = 0.0
-damp_override/linear = -1.0
-damp_override/angular = -1.0
-script/script = ExtResource( 1 )
+linear_velocity = Vector2( 0, 0 )
+angular_velocity = 0.0
+linear_damp = -1.0
+angular_damp = -1.0
+script = ExtResource( 1 )
 drop = 0
 role = 1
 
@@ -171,13 +172,13 @@ _update_shape_index = -1
 
 [node name="body 4" type="RigidBody2D" parent="."]
 
-transform/pos = Vector2( 0, 200 )
-input/pickable = false
+position = Vector2( 0, 200 )
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 mode = 0
 mass = 1.0
 friction = 1.0
@@ -189,11 +190,11 @@ contacts_reported = 0
 contact_monitor = false
 sleeping = false
 can_sleep = true
-velocity/linear = Vector2( 0, 0 )
-velocity/angular = 0.0
-damp_override/linear = -1.0
-damp_override/angular = -1.0
-script/script = ExtResource( 1 )
+linear_velocity = Vector2( 0, 0 )
+angular_velocity = 0.0
+linear_damp = -1.0
+angular_damp = -1.0
+script = ExtResource( 1 )
 drop = 0
 role = 1
 
@@ -211,13 +212,13 @@ _update_shape_index = -1
 
 [node name="body 5" type="RigidBody2D" parent="."]
 
-transform/pos = Vector2( 0, 250 )
-input/pickable = false
+position = Vector2( 0, 250 )
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 mode = 0
 mass = 1.0
 friction = 1.0
@@ -229,11 +230,11 @@ contacts_reported = 0
 contact_monitor = false
 sleeping = false
 can_sleep = true
-velocity/linear = Vector2( 0, 0 )
-velocity/angular = 0.0
-damp_override/linear = -1.0
-damp_override/angular = -1.0
-script/script = ExtResource( 1 )
+linear_velocity = Vector2( 0, 0 )
+angular_velocity = 0.0
+linear_damp = -1.0
+angular_damp = -1.0
+script = ExtResource( 1 )
 drop = 0
 role = 2
 
@@ -251,47 +252,45 @@ _update_shape_index = -1
 
 [node name="joint h_1" type="PinJoint2D" parent="."]
 
-transform/pos = Vector2( 0, 25 )
+position = Vector2( 0, 25 )
 node_a = NodePath("../head")
 node_b = NodePath("../body 1")
-bias/bias = 0.0
+bias = 0.0
 collision/exclude_nodes = true
 softness = 0.0
 
 [node name="joint 1_2" type="PinJoint2D" parent="."]
 
-transform/pos = Vector2( 0, 75 )
+position = Vector2( 0, 75 )
 node_a = NodePath("../body 1")
 node_b = NodePath("../body 2")
-bias/bias = 0.0
+bias = 0.0
 collision/exclude_nodes = true
 softness = 0.0
 
 [node name="joint 2_3" type="PinJoint2D" parent="."]
 
-transform/pos = Vector2( 0, 125 )
+position = Vector2( 0, 125 )
 node_a = NodePath("../body 2")
 node_b = NodePath("../body 3")
-bias/bias = 0.0
+bias = 0.0
 collision/exclude_nodes = true
 softness = 0.0
 
 [node name="joint 3_4" type="PinJoint2D" parent="."]
 
-transform/pos = Vector2( 0, 175 )
+position = Vector2( 0, 175 )
 node_a = NodePath("../body 3")
 node_b = NodePath("../body 4")
-bias/bias = 0.0
+bias = 0.0
 collision/exclude_nodes = true
 softness = 0.0
 
 [node name="joint 4_t" type="PinJoint2D" parent="."]
 
-transform/pos = Vector2( 0, 225 )
+position = Vector2( 0, 225 )
 node_a = NodePath("../body 4")
 node_b = NodePath("../body 5")
-bias/bias = 0.0
+bias = 0.0
 collision/exclude_nodes = true
 softness = 0.0
-
-

@@ -1,13 +1,13 @@
-[gd_scene load_steps=5 format=1]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://art/ocean_bg.pvr" type="Texture" id=1]
 [ext_resource path="res://art/miniparticle.png" type="Texture" id=2]
 [ext_resource path="res://art/ocean_fg.png" type="Texture" id=3]
 
-[sub_resource type="ColorRamp" id=1]
+[sub_resource type="Gradient" id=1]
 
-offsets = FloatArray( 0, 0.5, 1 )
-colors = ColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0 )
+offsets = PoolRealArray( 0, 0.5, 1 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0 )
 
 [node name="ocean_bg" type="ParallaxBackground"]
 
@@ -15,18 +15,18 @@ layer = -1
 offset = Vector2( 0, 0 )
 rotation = 0.0
 scale = Vector2( 1, 1 )
-scroll/offset = Vector2( 0, 0 )
-scroll/base_offset = Vector2( 0, 0 )
-scroll/base_scale = Vector2( 1, 0.05 )
-scroll/limit_begin = Vector2( 0, 0 )
-scroll/limit_end = Vector2( 0, 1024 )
-scroll/ignore_camera_zoom = false
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 0.05 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 1024 )
+scroll_ignore_camera_zoom = false
 
 [node name="ocean_layer" type="ParallaxLayer" parent="."]
 
-motion/scale = Vector2( 0.01, 1 )
-motion/offset = Vector2( 0, 0 )
-motion/mirroring = Vector2( 1024, 0 )
+motion_scale = Vector2( 0.01, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 1024, 0 )
 
 [node name="ocean" type="Sprite" parent="ocean_layer"]
 
@@ -35,12 +35,12 @@ centered = false
 
 [node name="water" type="Particles2D" parent="ocean_layer"]
 
-transform/pos = Vector2( 512, 768 )
-config/amount = 32
-config/lifetime = 2.0
+position = Vector2( 512, 768 )
+amount = 32
+lifetime = 2.0
 config/process_mode = 1
 config/half_extents = Vector2( 512, 256 )
-config/texture = ExtResource( 2 )
+texture = ExtResource( 2 )
 params/direction = 0.0
 params/spread = 10.0
 params/linear_velocity = 0.0
@@ -61,13 +61,11 @@ color/color_ramp = SubResource( 1 )
 
 [node name="cave_layer" type="ParallaxLayer" parent="."]
 
-motion/scale = Vector2( 0.07, 1 )
-motion/offset = Vector2( 0, 0 )
-motion/mirroring = Vector2( 1024, 0 )
+motion_scale = Vector2( 0.07, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 1024, 0 )
 
 [node name="cave" type="Sprite" parent="cave_layer"]
 
 texture = ExtResource( 3 )
 centered = false
-
-

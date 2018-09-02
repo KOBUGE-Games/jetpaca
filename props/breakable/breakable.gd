@@ -11,7 +11,8 @@ func takes_damage():
 	return true
 
 func attacked(by):
-	if (by extends preload("res://player/alpaca.gd")):
+	if (by is preload("res://player/alpaca.gd")):
 		get_node("../particles").set_emitting(true)
 		get_node("../sample").play("rock_explode")
 		queue_free()
+

@@ -62,9 +62,10 @@ func _integrate_forces(state):
 	elif status == STATUS_DYING:
 
 		var so = timeout/DYING_TIME
-		spr.set_self_opacity(so)
+		spr.self_modulate.a = so
 		if timeout < 0:
 			queue_free()
 
 func _ready():
 	spr = get_node("sprite")
+

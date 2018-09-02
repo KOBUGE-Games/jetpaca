@@ -61,3 +61,4 @@ func set_current_stage(path):
 
 func game_over():
 	stage_reset() # Todo: remove alias?
+

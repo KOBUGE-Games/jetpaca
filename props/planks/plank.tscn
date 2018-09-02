@@ -1,20 +1,20 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://art/seesaw.png" type="Texture" id=1]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 234.454, 15.5022, -236.651, 13.6972, -254.701, -5.25529, 251.602, -6.15781 )
+points = PoolVector2Array( 234.454, 15.5022, -236.651, 13.6972, -254.701, -5.25529, 251.602, -6.15781 )
 
 [node name="plank" type="RigidBody2D"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 mode = 0
 mass = 1.0
 friction = 1.0
@@ -26,10 +26,10 @@ contacts_reported = 0
 contact_monitor = false
 sleeping = false
 can_sleep = true
-velocity/linear = Vector2( 0, 0 )
-velocity/angular = 0.0
-damp_override/linear = -1.0
-damp_override/angular = -1.0
+linear_velocity = Vector2( 0, 0 )
+angular_velocity = 0.0
+linear_damp = -1.0
+angular_damp = -1.0
 
 [node name="sprite" type="Sprite" parent="."]
 
@@ -38,8 +38,6 @@ texture = ExtResource( 1 )
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 
 build_mode = 0
-polygon = Vector2Array( -254.701, -5.25529, 251.602, -6.15781, 234.454, 15.5022, -236.651, 13.6972 )
+polygon = PoolVector2Array( -254.701, -5.25529, 251.602, -6.15781, 234.454, 15.5022, -236.651, 13.6972 )
 shape_range = Vector2( -1, -1 )
 trigger = false
-
-

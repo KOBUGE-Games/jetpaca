@@ -28,7 +28,7 @@ func _integrate_forces(state):
 
 	for i in range(state.get_contact_count()):
 		var co = state.get_contact_collider_object(i)
-		if not co or not (co extends RigidBody2D):
+		if not co or not (co is RigidBody2D):
 			pop()
 
 func _on_timeout():
@@ -47,3 +47,4 @@ func _enter_tree():
 	get_node("anim").play("appear")
 	get_node("anim").queue("wobble")
 	get_node("anim").set_active(false)
+
