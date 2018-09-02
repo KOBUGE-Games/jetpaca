@@ -41,16 +41,17 @@ func explode():
 	n.explode()
 	if drop:
 		var dropscene = null
+		# FIXME: Using preload here causes cyclic references with alpaca.gd
 		if drop == DROP_HEART:
-			dropscene = preload("res://interaction/bonuses/heart.tscn").instance()
+			dropscene = load("res://interaction/bonuses/heart.tscn").instance()
 		elif drop == DROP_KEY1:
-			dropscene = preload("res://interaction/door/key.tscn").instance()
+			dropscene = load("res://interaction/door/key.tscn").instance()
 			dropscene.key_index = 0
 		elif drop == DROP_KEY2:
-			dropscene = preload("res://interaction/door/key.tscn").instance()
+			dropscene = load("res://interaction/door/key.tscn").instance()
 			dropscene.key_index = 1
 		elif drop == DROP_KEY3:
-			dropscene = preload("res://interaction/door/key.tscn").instance()
+			dropscene = load("res://interaction/door/key.tscn").instance()
 			dropscene.key_index = 2
 
 		get_parent().call_deferred("add_child", dropscene)
