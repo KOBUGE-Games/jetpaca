@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ceramic_break.wav-9b24b1859c76e6a806b2c100253d0bd3.sample"
+
+[deps]
+
+source_file="res://sound/ceramic_break.wav"
+dest_files=[ "res://.import/ceramic_break.wav-9b24b1859c76e6a806b2c100253d0bd3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

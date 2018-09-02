@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/frog_jump.wav-1513820921dcca4e35a2d4513b643611.sample"
+
+[deps]
+
+source_file="res://sound/frog_jump.wav"
+dest_files=[ "res://.import/frog_jump.wav-1513820921dcca4e35a2d4513b643611.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,4 +1,7 @@
+# Godot-related
+.import/
+export_presets.cfg
+
+# System-specific
 .directory
-.fscache
-export.cfg
 *~

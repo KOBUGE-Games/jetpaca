@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/frog_kill.wav-690de3719f28880aa97f0fcc9dd6e03d.sample"
+
+[deps]
+
+source_file="res://sound/frog_kill.wav"
+dest_files=[ "res://.import/frog_kill.wav-690de3719f28880aa97f0fcc9dd6e03d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/event3.wav-dfe3c0fc7e0a21d1d71863144b0014bf.sample"
+
+[deps]
+
+source_file="res://sound/event3.wav"
+dest_files=[ "res://.import/event3.wav-dfe3c0fc7e0a21d1d71863144b0014bf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
