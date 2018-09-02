@@ -13,6 +13,7 @@ func takes_damage():
 func attacked(by):
 	if (by is preload("res://player/alpaca.gd")):
 		get_node("../particles").set_emitting(true)
-		get_node("../sample").play("rock_explode")
+#		# 2to3: Sound disabled during conversion
+#		get_node("../sample").play("rock_explode")
 		queue_free()
 

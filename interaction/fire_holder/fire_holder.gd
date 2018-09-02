@@ -14,7 +14,7 @@ func set_on_fire(pos):
 	var d = pos.distance_to(get_node("fire").get_global_position())
 
 	if d < 20:
-		get_tree().call_group(0, trigger_name, "activated")
+		get_tree().call_group(trigger_name, "activated")
 		onfire = true
 		get_node("fire").set_emitting(true)
 

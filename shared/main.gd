@@ -42,7 +42,8 @@ func goto_scene(scene):
 #	get_node("change").start()
 
 func _ready():
-	var vm = OS.get_video_mode_size()
+	# 2to3: OS.get_video_mode_size() changed to get_window_safe_area().size
+	var vm = OS.get_window_safe_area().size
 	var rate = float(vm.x)/float(vm.y)
 	var height = int(1280.0/rate)
 	get_tree().get_root().set_size_override(true, Vector2(1280, height))

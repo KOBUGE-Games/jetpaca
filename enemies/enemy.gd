@@ -65,7 +65,7 @@ func _on_exit_screen():
 
 func _enter_tree():
 	var c = VisibilityNotifier2D.new()
-	c.connect("enter_screen", self, "_on_enter_screen")
-	c.connect("exit_screen", self, "_on_exit_screen")
+	c.connect("screen_entered", self, "_on_enter_screen")
+	c.connect("screen_exited", self, "_on_exit_screen")
 	add_child(c)
 

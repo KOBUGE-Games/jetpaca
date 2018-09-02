@@ -31,21 +31,22 @@ func _loader_thread(options):
 
 func _change_music_to(stream):
 	var new_music_player = AudioStreamPlayer.new()
-	new_music_player.set_loop(true)
-	new_music_player.set_autoplay(true)
-	new_music_player.set_stream(stream)
-	if current_music_player:
-		new_music_player.set_volume_db(-80)
-		tween.interpolate_property(
-			current_music_player, "stream/volume_db",
-			current_music_player.get_volume_db(), -32,
-			TRANSITION_TIME, Tween.TRANS_EXPO, Tween.EASE_IN)
-		tween.interpolate_callback(current_music_player, TRANSITION_TIME, "queue_free")
-		tween.interpolate_property(
-			new_music_player, "stream/volume_db",
-			-32, 0,
-			TRANSITION_TIME, Tween.TRANS_EXPO, Tween.EASE_OUT, TRANSITION_TIME)
-		tween.start()
-	current_music_player = new_music_player
-	add_child(new_music_player)
+#	# 2to3: Sound disabled during conversion
+#	new_music_player.set_loop(true)
+#	new_music_player.set_autoplay(true)
+#	new_music_player.set_stream(stream)
+#	if current_music_player:
+#		new_music_player.set_volume_db(-80)
+#		tween.interpolate_property(
+#			current_music_player, "stream/volume_db",
+#			current_music_player.get_volume_db(), -32,
+#			TRANSITION_TIME, Tween.TRANS_EXPO, Tween.EASE_IN)
+#		tween.interpolate_callback(current_music_player, TRANSITION_TIME, "queue_free")
+#		tween.interpolate_property(
+#			new_music_player, "stream/volume_db",
+#			-32, 0,
+#			TRANSITION_TIME, Tween.TRANS_EXPO, Tween.EASE_OUT, TRANSITION_TIME)
+#		tween.start()
+#	current_music_player = new_music_player
+#	add_child(new_music_player)
 

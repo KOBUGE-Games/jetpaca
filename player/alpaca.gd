@@ -104,7 +104,7 @@ func _attack_area_enter(body):
 		enemies_to_attack.push_back(body)
 		print("ENTER BODY!")
 	else:
-		print("NO!: ", body.get_type(), " - ", body.get_path())
+		print("NO!: ", body.get_class(), " - ", body.get_path())
 
 func _attack_area_exit(body):
 	print("EXIT BODY?")
@@ -238,9 +238,11 @@ func _integrate_forces(state):
 				var enmvec = (attacked_target.get_global_transform().get_origin() - state.get_transform().get_origin()).normalized()*40.0
 
 				attacked_target.call("attacked", self)
-				get_node("starhit").set_position(enmvec)
-				get_node("starhit").set_emitting(true)
-				get_node("event_sounds").play("attack")
+#				# 2to3: Particles disabled during conversion
+#				get_node("starhit").set_position(enmvec)
+#				get_node("starhit").set_emitting(true)
+#				# 2to3: Sound disabled during conversion
+#				get_node("event_sounds").play("attack")
 				get_node("camera_animation").play("shake")
 
 				new_anim = "hover"
@@ -413,21 +415,22 @@ func _integrate_forces(state):
 		if jetpack_off_time > 1.5 and lv.y > extra_fall_anim_min_speed:
 			new_anim = "fall"
 
-	for i in range(2):
-		var p = get_node(jpart_names[i])
-		p.set_emitting(jetpack_ignited)
-		if can_thrust:
-			p.set_param(Particles2D.PARAM_SPREAD, 10)
-			p.set_param(Particles2D.PARAM_LINEAR_VELOCITY, 130)
-			p.self_modulate.a = 1.0
-		else:
-			p.set_param(Particles2D.PARAM_SPREAD, 80)
-			p.set_param(Particles2D.PARAM_LINEAR_VELOCITY, 50)
-			p.self_modulate.a = 0.35
-
-		p.set_initial_velocity(lv)
-		var p2 = get_node(jpart_names[i] + "f")
-		p2.set_emitting(can_thrust and jetpack_ignited)
+#	# 2to3: Particles disabled during conversion
+#	for i in range(2):
+#		var p = get_node(jpart_names[i])
+#		p.set_emitting(jetpack_ignited)
+#		if can_thrust:
+#			p.set_param(Particles2D.PARAM_SPREAD, 10)
+#			p.set_param(Particles2D.PARAM_LINEAR_VELOCITY, 130)
+#			p.self_modulate.a = 1.0
+#		else:
+#			p.set_param(Particles2D.PARAM_SPREAD, 80)
+#			p.set_param(Particles2D.PARAM_LINEAR_VELOCITY, 50)
+#			p.self_modulate.a = 0.35
+#
+#		p.set_initial_velocity(lv)
+#		var p2 = get_node(jpart_names[i] + "f")
+#		p2.set_emitting(can_thrust and jetpack_ignited)
 
 	if new_anim!=anim:
 		anim = new_anim
@@ -455,32 +458,33 @@ func _integrate_forces(state):
 
 	state.set_linear_velocity(lv)
 
-	if prev_jetpack_ignited != jetpack_ignited:
-		if jetpack_ignited:
-			jpvoice = get_node("jetpack_sound").play("jetpack")
-			get_node("jetpack_sound").set_pitch_scale(jpvoice, 1.0 + lv.length()/800.0)
-			get_node("jetpack_sound").set_volume(jpvoice, 0.3)
-		else:
-			get_node("jetpack_sound").stop_all()
-			jpvoice = null
-	else:
-		if jetpack_ignited:
-			if jetpack_on_fire:
-				if not prev_jetpack_on_fire:
-					get_node("jetpack_sound").stop_all()
-					jpvoice = get_node("jetpack_sound").play("jetpack")
-					get_node("jetpack_sound").set_volume(jpvoice, 0.3)
-			else:
-				get_node("jetpack_sound").set_volume(jpvoice, 0.1)
-
-			get_node("jetpack_sound").set_pitch_scale(jpvoice, 1.0 + lv.length()/800.0)
+#	# 2to3: Sound disabled during conversion
+#	if prev_jetpack_ignited != jetpack_ignited:
+#		if jetpack_ignited:
+#			jpvoice = get_node("jetpack_sound").play("jetpack")
+#			get_node("jetpack_sound").set_pitch_scale(jpvoice, 1.0 + lv.length()/800.0)
+#			get_node("jetpack_sound").set_volume(jpvoice, 0.3)
+#		else:
+#			get_node("jetpack_sound").stop_all()
+#			jpvoice = null
+#	else:
+#		if jetpack_ignited:
+#			if jetpack_on_fire:
+#				if not prev_jetpack_on_fire:
+#					get_node("jetpack_sound").stop_all()
+#					jpvoice = get_node("jetpack_sound").play("jetpack")
+#					get_node("jetpack_sound").set_volume(jpvoice, 0.3)
+#			else:
+#				get_node("jetpack_sound").set_volume(jpvoice, 0.1)
+#
+#			get_node("jetpack_sound").set_pitch_scale(jpvoice, 1.0 + lv.length()/800.0)
 
 	if jetpack_ignited:
 		jetpack_ignited_time += state.get_step()
 	else:
 		jetpack_ignited_time = 0.0
 
-	if prev_jpa_emitting != attack_time > 0:
+	if prev_jpa_emitting != (attack_time > 0):
 		prev_jpa_emitting = attack_time > 0
 		get_node(jpart_atk).set_emitting(prev_jpa_emitting)
 
@@ -558,7 +562,7 @@ func _unhandled_input(event):
 					slide_2 = Vector2()
 					slide_2_time = 0.0
 
-	if (event is InputEventScreenDrag):
+	if event is InputEventScreenDrag:
 
 		if event.index == 0:
 			slide_1 += event.relative_pos
@@ -692,7 +696,9 @@ func _ready():
 
 	crosshair = ResourceLoader.load("res://hud/crosshair.tscn").instance()
 	get_node("../..").call_deferred("add_child", crosshair)
-	get_node("attack_area").get_shape(0).set_extents(OS.get_video_mode_size() / 2)
+	# 2to3: Area2D.get_shape(0) changed to shape_owner_get_shape(0, 0), might need review
+	# 2to3: OS.get_video_mode_size() changed to get_window_safe_area().size
+	get_node("attack_area").shape_owner_get_shape(0, 0).set_extents(OS.get_window_safe_area().size / 2)
 
 func show_hint(hint):
 	get_node("hud/base").hint_show(hint)

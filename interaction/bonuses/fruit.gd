@@ -22,9 +22,11 @@ func _on_body_enter(body):
 	if body is preload("res://player/alpaca.gd"):
 		body.add_fruit()
 		get_node("sprite").hide()
-		get_node("shine").set_emitting(true)
-		get_node("shine").set_emit_timeout(0.75)
-		get_node("sound").play("shine")
+#		# 2to3: Particles disabled during conversion
+#		get_node("shine").set_emitting(true)
+#		get_node("shine").set_emit_timeout(0.75)
+#		# 2to3: Sound disabled during conversion
+#		get_node("sound").play("shine")
 		get_node("deathclock").start()
 		taken = true
 
@@ -38,15 +40,17 @@ func _process(delta):
 	else:
 		set_process(false)
 		speed = 0.0
-		if not taken:
-			get_node("shine").set_emitting(false)
+#		# 2to3: Particles disabled during conversion
+#		if not taken:
+#			get_node("shine").set_emitting(false)
 
 func _on_magnet_enter(body):
 	if body is preload("res://player/alpaca.gd"):
 		alpacas.push_back(body)
 		set_process(true)
-		get_node("shine").set_emitting(true)
-		get_node("shine").set_emit_timeout(0)
+#		# 2to3: Particles disabled during conversion
+#		get_node("shine").set_emitting(true)
+#		get_node("shine").set_emit_timeout(0)
 
 func _on_magnet_exit(body):
 	if body is preload("res://player/alpaca.gd"):
@@ -54,4 +58,3 @@ func _on_magnet_exit(body):
 
 func _ready():
 	set_process(false)
-

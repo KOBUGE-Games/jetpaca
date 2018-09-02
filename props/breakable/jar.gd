@@ -16,11 +16,13 @@ func _on_timeout():
 func attacked(by):
 	if broken:
 		return
-	clear_shapes()
+	# 2to3: clear_shapes() changed to shape_owner_clear_shapes(0)
+	shape_owner_clear_shapes(0)
 	get_node("sprite").hide()
 	get_node("particles").set_emitting(true)
 	get_node("death").start()
-	get_node("player").play("break")
+#	# 2to3: Sound disabled during conversion
+#	get_node("player").play("break")
 	broken = true
 	if has_key:
 		var ki = preload("res://interaction/door/key.tscn").instance()

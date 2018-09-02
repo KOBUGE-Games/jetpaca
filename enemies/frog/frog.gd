@@ -108,7 +108,7 @@ func _integrate_forces(state):
 	elif status == STATUS_JUMP_UP:
 		anim = "burst_fall"
 		new_anim = "burst_fall"
-		if get_node("anim").get_position() >= get_node("anim").get_current_animation_length():
+		if get_node("anim").get_current_animation_position() >= get_node("anim").get_current_animation_length():
 			status = STATUS_JUMP_FALLING
 			get_node("anim").play("burst")
 			get_node("anim").queue("burst_fall")

@@ -26,7 +26,7 @@ func _process(delta):
 	if get_closest_character_position().distance_to(p.get_global_position()) > max_distance:
 		_reset()
 	else:
-		get_tree().call_group(0, "_fire_triggers", "set_on_fire", get_node("platform/trigger").get_global_position())
+		get_tree().call_group("_fire_triggers", "set_on_fire", get_node("platform/trigger").get_global_position())
 
 func _reset():
 	set_process(false)
