@@ -39,5 +39,6 @@ func do_load(path):
 	show()
 
 func _ready():
+	set_process(false)
 	animation = get_node("animation")
 	hide()

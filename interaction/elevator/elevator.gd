@@ -48,3 +48,6 @@ func _triggered():
 	target = get_pos().y + distance
 	moved = get_pos().y
 	speed = 0
+
+func _ready():
+	set_fixed_process(false)

@@ -50,5 +50,6 @@ func _on_exit_screen():
 	set_process(false)
 
 func _ready():
+	set_process(false)
 	get_node("anim").play("idle")
 	get_node("anim").set_active(false)

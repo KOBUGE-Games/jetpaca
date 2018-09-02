@@ -51,3 +51,6 @@ func _on_magnet_enter(body):
 func _on_magnet_exit(body):
 	if body extends preload("res://player/alpaca.gd"):
 		alpacas.erase(body)
+
+func _ready():
+	set_process(false)

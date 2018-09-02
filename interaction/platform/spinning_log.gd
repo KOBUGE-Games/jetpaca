@@ -18,4 +18,5 @@ func _on_exit_screen():
 	set_process(false)
 
 func _ready():
+	set_process(false)
 	rnode = get_node("sprite")
