@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://enemies/fluff/fluff.gd" type="Script" id=1]
 [ext_resource path="res://art/vortex.png" type="Texture" id=2]
@@ -18,6 +18,36 @@
 [ext_resource path="res://art/halo.png" type="Texture" id=16]
 [ext_resource path="res://sound/spikes_appear.wav" type="AudioStream" id=17]
 [ext_resource path="res://sound/spikes_hide.wav" type="AudioStream" id=18]
+
+[sub_resource type="CanvasItemMaterial" id=18]
+
+render_priority = 0
+blend_mode = 1
+light_mode = 0
+
+[sub_resource type="CanvasItemMaterial" id=19]
+
+render_priority = 0
+blend_mode = 1
+light_mode = 0
+
+[sub_resource type="CanvasItemMaterial" id=20]
+
+render_priority = 0
+blend_mode = 1
+light_mode = 0
+
+[sub_resource type="CanvasItemMaterial" id=21]
+
+render_priority = 0
+blend_mode = 1
+light_mode = 0
+
+[sub_resource type="CanvasItemMaterial" id=22]
+
+render_priority = 0
+blend_mode = 1
+light_mode = 0
 
 [sub_resource type="Animation" id=1]
 
@@ -3854,13 +3884,15 @@ rotation = -0.624241
 texture = ExtResource( 2 )
 
 [node name="vortex_center" type="Sprite" parent="."]
-modulate = Color( 0.463217, 0, 0.0233767, 1 )
+self_modulate = Color( 0.462745, 0, 0.0235294, 1 )
+material = SubResource( 18 )
 position = Vector2( 0.397223, 1.1698e-06 )
 rotation = -11.63
 texture = ExtResource( 3 )
-_sections_unfolded = [ "Visibility", "texture" ]
+_sections_unfolded = [ "Material", "material", "texture" ]
 
 [node name="smoke_twirl" type="Particles2D" parent="."]
+material = SubResource( 19 )
 position = Vector2( -0.156686, 10.1065 )
 emitting = false
 amount = 5
@@ -3880,6 +3912,7 @@ texture = ExtResource( 4 )
 normal_map = null
 h_frames = 1
 v_frames = 1
+_sections_unfolded = [ "Material", "material" ]
 
 [node name="smoke_up" type="Particles2D" parent="."]
 show_behind_parent = true
@@ -3905,43 +3938,47 @@ h_frames = 1
 v_frames = 1
 
 [node name="spike1_L" type="Sprite" parent="."]
-position = Vector2( -69.78, -26.715 )
+visible = false
+position = Vector2( -61, -23 )
 rotation = -1.1781
 texture = ExtResource( 6 )
 
 [node name="spike2_L" type="Sprite" parent="."]
-position = Vector2( -64.8769, 27.6619 )
+visible = false
+position = Vector2( -59, 25 )
 rotation = -1.9635
 texture = ExtResource( 6 )
 
 [node name="spike3_L" type="Sprite" parent="."]
-position = Vector2( -28.9023, -61.5201 )
+visible = false
+position = Vector2( -28, -58 )
 rotation = -0.392699
 texture = ExtResource( 6 )
 flip_h = true
 
 [node name="spike4_L" type="Sprite" parent="."]
-position = Vector2( 28.9023, -61.5201 )
+visible = false
+position = Vector2( 28, -58 )
 rotation = 0.392699
 texture = ExtResource( 6 )
 flip_h = true
 
 [node name="spike5_D" type="Sprite" parent="."]
-position = Vector2( 69.78, -26.715 )
+visible = false
+position = Vector2( 61, -23 )
 rotation = 1.1781
 texture = ExtResource( 7 )
 flip_h = true
 
 [node name="spike6_D" type="Sprite" parent="."]
-position = Vector2( 64.8769, 27.6619 )
+visible = false
+position = Vector2( 59, 25 )
 rotation = 1.9635
 texture = ExtResource( 7 )
 flip_h = true
 
 [node name="base_sclera" type="Sprite" parent="."]
-modulate = Color( 0.705882, 0, 0.470588, 1 )
-position = Vector2( 0, -1.96164 )
-rotation = -0.05018
+self_modulate = Color( 0.705882, 0, 0.470588, 1 )
 texture = ExtResource( 8 )
 
 [node name="Position2D" type="Position2D" parent="base_sclera"]
@@ -3960,11 +3997,11 @@ position = Vector2( 16, -1.4 )
 texture = ExtResource( 10 )
 
 [node name="lower_eyelids" type="Sprite" parent="base_sclera"]
-position = Vector2( 0, 9.45848 )
+position = Vector2( 0, 14.7446 )
 texture = ExtResource( 11 )
 
 [node name="upper_eyelids" type="Sprite" parent="base_sclera"]
-position = Vector2( 4.62271e-06, -15.1426 )
+position = Vector2( 0, -14 )
 rotation = 0.0105123
 texture = ExtResource( 12 )
 
@@ -3974,29 +4011,35 @@ texture = ExtResource( 13 )
 
 [node name="glow" type="Sprite" parent="base_sclera/face"]
 visible = false
+material = SubResource( 20 )
 position = Vector2( -0.427185, 6 )
 texture = ExtResource( 14 )
 vframes = 4
 frame = 3
+_sections_unfolded = [ "Material", "material" ]
 
 [node name="unibrow" type="Sprite" parent="base_sclera"]
-position = Vector2( -0.427153, 10.8789 )
-rotation = 0.0718761
+position = Vector2( -0.427185, 12.7112 )
+rotation = 0.00794786
 texture = ExtResource( 15 )
 
 [node name="halo" type="Sprite" parent="."]
 visible = false
 self_modulate = Color( 1, 1, 1, 0.4 )
+material = SubResource( 21 )
 rotation = -0.698132
 scale = Vector2( 1.3, 1.3 )
 texture = ExtResource( 16 )
+_sections_unfolded = [ "Material", "material" ]
 
 [node name="halo 2" type="Sprite" parent="."]
 visible = false
 self_modulate = Color( 1, 1, 1, 0.4 )
 show_behind_parent = true
+material = SubResource( 22 )
 rotation = 0.698132
 texture = ExtResource( 16 )
+_sections_unfolded = [ "Material", "material" ]
 
 [node name="anim" type="AnimationPlayer" parent="."]
 root_node = NodePath("..")
