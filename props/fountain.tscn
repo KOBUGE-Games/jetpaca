@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://art/fountain_base.png" type="Texture" id=1]
 [ext_resource path="res://art/alpacocha_small.png" type="Texture" id=2]
@@ -37,6 +37,12 @@ tracks/1/keys = {
 "values": [ 1.0, 0.0, 1.0 ]
 }
 
+[sub_resource type="CanvasItemMaterial" id=2]
+
+render_priority = 0
+blend_mode = 1
+light_mode = 0
+
 [node name="fuente_base" type="Sprite"]
 texture = ExtResource( 1 )
 
@@ -65,6 +71,7 @@ blend_times = [  ]
 
 [node name="water1 2" type="Particles2D" parent="."]
 self_modulate = Color( 1, 1, 1, 0.314815 )
+material = SubResource( 2 )
 position = Vector2( -159.581, -74.2997 )
 rotation = 0.0562115
 emitting = true
@@ -85,4 +92,5 @@ texture = ExtResource( 5 )
 normal_map = null
 h_frames = 1
 v_frames = 1
+_sections_unfolded = [ "Material", "material" ]
 

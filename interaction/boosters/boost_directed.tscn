@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://interaction/boosters/booster.gd" type="Script" id=1]
 [ext_resource path="res://art/boost.png" type="Texture" id=2]
@@ -13,6 +13,12 @@ radius = 27.0
 
 custom_solver_bias = 0.0
 radius = 27.0
+
+[sub_resource type="CanvasItemMaterial" id=3]
+
+render_priority = 0
+blend_mode = 1
+light_mode = 0
 
 [node name="booster_push" type="RigidBody2D"]
 input_pickable = false
@@ -62,6 +68,7 @@ one_shot = true
 autostart = false
 
 [node name="particles" type="Particles2D" parent="."]
+material = SubResource( 3 )
 position = Vector2( -11.4031, 0.814498 )
 rotation = -1.55978
 emitting = false
@@ -82,6 +89,7 @@ texture = ExtResource( 3 )
 normal_map = null
 h_frames = 1
 v_frames = 1
+_sections_unfolded = [ "Material", "material" ]
 
 [connection signal="body_entered" from="area" to="." method="_on_push_enter"]
 [connection signal="body_exited" from="area" to="." method="_on_push_exit"]

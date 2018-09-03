@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=66 format=2]
 
 [ext_resource path="res://player/alpaca.gd" type="Script" id=1]
 [ext_resource path="res://art/cachos_alpaca/culete.png" type="Texture" id=2]
@@ -34,9 +34,20 @@ rough = false
 bounce = 0.0
 absorbent = false
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="CanvasItemMaterial" id=2]
 
-resource_name = "DEFAULT_POSE"
+render_priority = 0
+blend_mode = 1
+light_mode = 0
+
+[sub_resource type="CanvasItemMaterial" id=39]
+
+render_priority = 0
+blend_mode = 1
+light_mode = 0
+
+[sub_resource type="Animation" id=3]
+
 length = 0.01
 loop = false
 step = 0.25
@@ -533,9 +544,8 @@ tracks/40/keys = {
 "values": [ Vector2( 4.11363, -6.10837 ) ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 
-resource_name = "attack1_start"
 length = 1.5
 loop = false
 step = 0.25
@@ -960,9 +970,8 @@ tracks/34/keys = {
 "values": [ 7.86382 ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 
-resource_name = "attack2_loop"
 length = 1.5
 loop = true
 step = 0.1
@@ -1411,9 +1420,8 @@ tracks/36/keys = {
 "values": [ 7.86382 ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=6]
 
-resource_name = "attack3_end_move"
 length = 4.75
 loop = false
 step = 0.25
@@ -1814,9 +1822,8 @@ tracks/32/keys = {
 "values": [ Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=7]
 
-resource_name = "attack_TEST"
 length = 8.0
 loop = true
 step = 0.25
@@ -2217,9 +2224,8 @@ tracks/32/keys = {
 "values": [ Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=8]
 
-resource_name = "attack_back_1start"
 length = 0.6
 loop = false
 step = 0.25
@@ -2848,7 +2854,7 @@ tracks/51/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=9]
 
 length = 2.0
 loop = true
@@ -3442,9 +3448,8 @@ tracks/48/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=10]
 
-resource_name = "attack_down_1start"
 length = 0.5
 loop = false
 step = 0.25
@@ -4001,7 +4006,7 @@ tracks/45/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=11]
 
 length = 2.0
 loop = true
@@ -4655,7 +4660,7 @@ tracks/53/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=12]
 
 length = 0.6
 loop = false
@@ -5273,9 +5278,8 @@ tracks/50/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=13]
 
-resource_name = "attack_front_2loop"
 length = 2.0
 loop = true
 step = 0.25
@@ -5928,9 +5932,8 @@ tracks/53/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=14]
 
-resource_name = "attack_up_1start"
 length = 0.6
 loop = false
 step = 0.25
@@ -6547,7 +6550,7 @@ tracks/50/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=15]
 
 length = 2.0
 loop = true
@@ -7177,7 +7180,7 @@ tracks/51/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=16]
 
 length = 4.0
 loop = true
@@ -7795,9 +7798,8 @@ tracks/50/keys = {
 "values": [ Vector2( 7.31627, -4.84085 ), Vector2( 7.31627, -4.84085 ) ]
 }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=17]
 
-resource_name = "damage_airborne_from_above"
 length = 4.0
 loop = true
 step = 0.25
@@ -8402,7 +8404,7 @@ tracks/49/keys = {
 "values": [ Vector2( 7.31627, -4.84085 ), Vector2( 7.31627, -4.84085 ) ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=18]
 
 length = 4.0
 loop = true
@@ -9020,7 +9022,7 @@ tracks/50/keys = {
 "values": [ Vector2( 4.40363, -5.0792 ), Vector2( 4.40363, -5.0792 ) ]
 }
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=19]
 
 length = 4.0
 loop = true
@@ -9626,9 +9628,8 @@ tracks/49/keys = {
 "values": [ Vector2( 4.40363, -5.0792 ), Vector2( 4.40363, -5.0792 ) ]
 }
 
-[sub_resource type="Animation" id=19]
+[sub_resource type="Animation" id=20]
 
-resource_name = "dance_of_victory"
 length = 5.0
 loop = false
 step = 0.25
@@ -10041,9 +10042,8 @@ tracks/33/keys = {
 "values": [ 3.14553 ]
 }
 
-[sub_resource type="Animation" id=20]
+[sub_resource type="Animation" id=21]
 
-resource_name = "dance_of_victory_loop"
 length = 5.0
 loop = true
 step = 0.25
@@ -10480,7 +10480,7 @@ tracks/35/keys = {
 "values": [ 3.14553 ]
 }
 
-[sub_resource type="Animation" id=21]
+[sub_resource type="Animation" id=22]
 
 length = 12.0
 loop = false
@@ -11076,9 +11076,8 @@ tracks/48/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=22]
+[sub_resource type="Animation" id=23]
 
-resource_name = "fall"
 length = 3.0
 loop = true
 step = 0.25
@@ -11695,7 +11694,7 @@ tracks/50/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="Animation" id=23]
+[sub_resource type="Animation" id=24]
 
 length = 1.0
 loop = false
@@ -12318,7 +12317,7 @@ tracks/50/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=24]
+[sub_resource type="Animation" id=25]
 
 length = 1.0
 loop = false
@@ -12950,7 +12949,7 @@ tracks/51/keys = {
 "values": [ Vector2( 7.31627, -4.84085 ), Vector2( -4.84468, 5.01555 ), Vector2( 7.31627, -4.84085 ) ]
 }
 
-[sub_resource type="Animation" id=25]
+[sub_resource type="Animation" id=26]
 
 length = 0.75
 loop = false
@@ -13570,7 +13569,7 @@ tracks/50/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=26]
+[sub_resource type="Animation" id=27]
 
 length = 3.0
 loop = true
@@ -14176,7 +14175,7 @@ tracks/49/keys = {
 "values": [ Vector2( 3.907, 0.929099 ), Vector2( 3.907, 0.929099 ) ]
 }
 
-[sub_resource type="Animation" id=27]
+[sub_resource type="Animation" id=28]
 
 length = 3.0
 loop = true
@@ -14770,9 +14769,8 @@ tracks/48/keys = {
 "values": [ Vector2( 4.01699, -0.527256 ), Vector2( 4.01699, -0.527256 ) ]
 }
 
-[sub_resource type="Animation" id=28]
+[sub_resource type="Animation" id=29]
 
-resource_name = "fly_front"
 length = 4.0
 loop = true
 step = 0.25
@@ -15389,7 +15387,7 @@ tracks/50/keys = {
 "values": [ Vector2( 10.0093, -0.138991 ), Vector2( 10.397, -1.28618 ), Vector2( 10.0093, -0.138991 ) ]
 }
 
-[sub_resource type="Animation" id=29]
+[sub_resource type="Animation" id=30]
 
 length = 4.0
 loop = true
@@ -16007,7 +16005,7 @@ tracks/50/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=30]
+[sub_resource type="Animation" id=31]
 
 length = 3.0
 loop = true
@@ -16625,7 +16623,7 @@ tracks/50/keys = {
 "values": [ Vector2( 10.0611, -2.04855 ), Vector2( 10.0611, -2.04855 ) ]
 }
 
-[sub_resource type="Animation" id=31]
+[sub_resource type="Animation" id=32]
 
 length = 3.0
 loop = true
@@ -17243,7 +17241,7 @@ tracks/50/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=32]
+[sub_resource type="Animation" id=33]
 
 length = 4.5
 loop = true
@@ -17837,7 +17835,7 @@ tracks/48/keys = {
 "values": [ Vector2( 7.31627, -4.84085 ), Vector2( 7.31627, -4.84085 ) ]
 }
 
-[sub_resource type="Animation" id=33]
+[sub_resource type="Animation" id=34]
 
 length = 18.0
 loop = true
@@ -18455,7 +18453,7 @@ tracks/50/keys = {
 "values": [ 0, 0 ]
 }
 
-[sub_resource type="Animation" id=34]
+[sub_resource type="Animation" id=35]
 
 length = 6.0
 loop = true
@@ -18965,17 +18963,17 @@ tracks/41/keys = {
 "values": [ Vector2( 11.9506, -4.78116 ), Vector2( 11.9506, -4.78116 ) ]
 }
 
-[sub_resource type="CircleShape2D" id=35]
+[sub_resource type="CircleShape2D" id=36]
 
 custom_solver_bias = 0.0
 radius = 35.0
 
-[sub_resource type="RectangleShape2D" id=36]
+[sub_resource type="RectangleShape2D" id=37]
 
 custom_solver_bias = 0.0
 extents = Vector2( 380, 280 )
 
-[sub_resource type="Animation" id=37]
+[sub_resource type="Animation" id=38]
 
 length = 1.0
 loop = false
@@ -19022,7 +19020,6 @@ __meta__ = {
 position = Vector2( 0.658195, 1.7985 )
 
 [node name="culete" type="Sprite" parent="body"]
-editor/display_folded = true
 position = Vector2( -10.5054, 1.16537 )
 rotation = 0.136662
 scale = Vector2( 1.01657, 1.06223 )
@@ -19254,7 +19251,6 @@ centered = false
 offset = Vector2( -10, -11 )
 
 [node name="rocket_fg" type="Sprite" parent="body/culete"]
-editor/display_folded = true
 position = Vector2( 5.96857, -0.0880051 )
 rotation = -0.22709
 texture = ExtResource( 17 )
@@ -19309,6 +19305,7 @@ v_frames = 1
 
 [node name="jetpack_atk" type="Particles2D" parent="body/culete/rocket_fg"]
 self_modulate = Color( 1, 1, 1, 0.335758 )
+material = SubResource( 2 )
 position = Vector2( 1.94415, 2.84534 )
 emitting = false
 amount = 24
@@ -19328,15 +19325,18 @@ texture = ExtResource( 21 )
 normal_map = null
 h_frames = 1
 v_frames = 1
+_sections_unfolded = [ "Material", "material" ]
 
 [node name="velocity" type="Sprite" parent="body"]
 visible = false
 modulate = Color( 1, 1, 1, 0.74359 )
+material = SubResource( 39 )
 position = Vector2( 1.19784, -11.6969 )
 rotation = 1.44341
 texture = ExtResource( 22 )
 hframes = 4
 frame = 3
+_sections_unfolded = [ "Material", "material" ]
 
 [node name="animation" type="AnimationPlayer" parent="."]
 root_node = NodePath("..")
@@ -19344,39 +19344,39 @@ autoplay = "DEFAULT_POSE"
 playback_process_mode = 1
 playback_default_blend_time = 1.5
 playback_speed = 4.0
-anims/DEFAULT_POSE = SubResource( 2 )
-anims/attack1_start = SubResource( 3 )
-anims/attack2_loop = SubResource( 4 )
-anims/attack3_end_move = SubResource( 5 )
-anims/attack_TEST = SubResource( 6 )
-anims/attack_back_1start = SubResource( 7 )
-anims/attack_back_2loop = SubResource( 8 )
-anims/attack_down_1start = SubResource( 9 )
-anims/attack_down_2loop = SubResource( 10 )
-anims/attack_front_1start = SubResource( 11 )
-anims/attack_front_2loop = SubResource( 12 )
-anims/attack_up_1start = SubResource( 13 )
-anims/attack_up_2loop = SubResource( 14 )
-anims/damage_airborne = SubResource( 15 )
-anims/damage_airborne_from_above = SubResource( 16 )
-anims/damage_grounded = SubResource( 17 )
-anims/damage_grounded_from_above = SubResource( 18 )
-anims/dance_of_victory = SubResource( 19 )
-anims/dance_of_victory_loop = SubResource( 20 )
-anims/death = SubResource( 21 )
-anims/fall = SubResource( 22 )
-anims/flip = SubResource( 23 )
-anims/flip_air = SubResource( 24 )
-anims/flip_attack = SubResource( 25 )
-anims/fly_back = SubResource( 26 )
-anims/fly_back_2 = SubResource( 27 )
-anims/fly_front = SubResource( 28 )
-anims/fly_front_2 = SubResource( 29 )
-anims/fly_up = SubResource( 30 )
-anims/fly_up_2 = SubResource( 31 )
-anims/hover = SubResource( 32 )
-anims/idle = SubResource( 33 )
-anims/walk = SubResource( 34 )
+anims/DEFAULT_POSE = SubResource( 3 )
+anims/attack1_start = SubResource( 4 )
+anims/attack2_loop = SubResource( 5 )
+anims/attack3_end_move = SubResource( 6 )
+anims/attack_TEST = SubResource( 7 )
+anims/attack_back_1start = SubResource( 8 )
+anims/attack_back_2loop = SubResource( 9 )
+anims/attack_down_1start = SubResource( 10 )
+anims/attack_down_2loop = SubResource( 11 )
+anims/attack_front_1start = SubResource( 12 )
+anims/attack_front_2loop = SubResource( 13 )
+anims/attack_up_1start = SubResource( 14 )
+anims/attack_up_2loop = SubResource( 15 )
+anims/damage_airborne = SubResource( 16 )
+anims/damage_airborne_from_above = SubResource( 17 )
+anims/damage_grounded = SubResource( 18 )
+anims/damage_grounded_from_above = SubResource( 19 )
+anims/dance_of_victory = SubResource( 20 )
+anims/dance_of_victory_loop = SubResource( 21 )
+anims/death = SubResource( 22 )
+anims/fall = SubResource( 23 )
+anims/flip = SubResource( 24 )
+anims/flip_air = SubResource( 25 )
+anims/flip_attack = SubResource( 26 )
+anims/fly_back = SubResource( 27 )
+anims/fly_back_2 = SubResource( 28 )
+anims/fly_front = SubResource( 29 )
+anims/fly_front_2 = SubResource( 30 )
+anims/fly_up = SubResource( 31 )
+anims/fly_up_2 = SubResource( 32 )
+anims/hover = SubResource( 33 )
+anims/idle = SubResource( 34 )
+anims/walk = SubResource( 35 )
 blend_times = [ "attack_back_1start", "attack_back_2loop", 0.5, "attack_down_1start", "attack_down_2loop", 0.5, "attack_front_1start", "attack_front_2loop", 0.5, "attack_up_1start", "attack_up_2loop", 0.5 ]
 
 [node name="hud" type="CanvasLayer" parent="."]
@@ -19415,7 +19415,7 @@ area_mask = 1
 [node name="col_circle" type="CollisionShape2D" parent="."]
 visible = false
 modulate = Color( 1, 1, 1, 0.515152 )
-shape = SubResource( 35 )
+shape = SubResource( 36 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -19471,7 +19471,7 @@ audio_bus_name = "Master"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="attack_area"]
 self_modulate = Color( 1, 1, 1, 0.139785 )
-shape = SubResource( 36 )
+shape = SubResource( 37 )
 
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( -2.56606, 36.3748 )
@@ -19509,7 +19509,7 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 2.0
-anims/shake = SubResource( 37 )
+anims/shake = SubResource( 38 )
 blend_times = [  ]
 
 [connection signal="timeout" from="restart_wait" to="." method="_restart"]

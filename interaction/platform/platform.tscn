@@ -1,11 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://interaction/platform/platform.gd" type="Script" id=1]
 [ext_resource path="res://props/planks/plank.tscn" type="PackedScene" id=2]
 [ext_resource path="res://art/forest_torch.png" type="Texture" id=3]
 [ext_resource path="res://art/smoke.png" type="Texture" id=4]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="CanvasItemMaterial" id=1]
+
+render_priority = 0
+blend_mode = 1
+light_mode = 0
+
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
 extents = Vector2( 300, 80 )
@@ -19,6 +25,7 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 script = ExtResource( 1 )
+max_distance = 600.0
 
 [node name="platform" parent="." instance=ExtResource( 2 )]
 
@@ -28,6 +35,7 @@ texture = ExtResource( 3 )
 
 [node name="fire" type="Particles2D" parent="platform"]
 modulate = Color( 1, 1, 1, 0.363636 )
+material = SubResource( 1 )
 position = Vector2( 215.382, -130.846 )
 rotation = 3.1288
 emitting = true
@@ -48,6 +56,7 @@ texture = ExtResource( 4 )
 normal_map = null
 h_frames = 1
 v_frames = 1
+_sections_unfolded = [ "Material", "material" ]
 
 [node name="trigger" type="Position2D" parent="platform"]
 position = Vector2( 216.792, -125.981 )
@@ -57,7 +66,7 @@ rect = Rect2( -10, -10, 20, 20 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -2, 2 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]
 [connection signal="screen_entered" from="platform/screenprox" to="." method="_on_enter_screen"]
