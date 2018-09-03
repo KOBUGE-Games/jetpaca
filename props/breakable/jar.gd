@@ -21,8 +21,7 @@ func attacked(by):
 	get_node("sprite").hide()
 	get_node("particles").set_emitting(true)
 	get_node("death").start()
-#	# 2to3: Sound disabled during conversion
-#	get_node("player").play("break")
+	get_node("break_sfx").play()
 	broken = true
 	if has_key:
 		var ki = preload("res://interaction/door/key.tscn").instance()

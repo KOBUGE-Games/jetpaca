@@ -1,10 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://props/breakable/jar.gd" type="Script" id=1]
 [ext_resource path="res://art/jar1.png" type="Texture" id=2]
 [ext_resource path="res://art/jar1_piece.png" type="Texture" id=3]
+[ext_resource path="res://sound/ceramic_break.wav" type="AudioStream" id=4]
 
-[node name="jar" type="RigidBody2D"]
+[node name="jar1" type="RigidBody2D"]
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -22,6 +23,8 @@ linear_damp = -1.0
 angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
+has_key = false
+key_index = 0
 
 [node name="sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
@@ -56,8 +59,8 @@ wait_time = 1.0
 one_shot = false
 autostart = false
 
-[node name="player" type="AudioStreamPlayer2D" parent="."]
-stream = null
+[node name="break_sfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
 volume_db = 0.0
 pitch_scale = 0.6
 autoplay = false

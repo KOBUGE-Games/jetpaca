@@ -56,7 +56,6 @@ var jetpack_ignited_time = 0.0
 var prev_jetpack_ignited = false
 
 var jetpack_thrust = false
-var jpvoice = null
 
 var prev_jetpack_on_fire = false
 
@@ -241,8 +240,7 @@ func _integrate_forces(state):
 #				# 2to3: Particles disabled during conversion
 #				get_node("starhit").set_position(enmvec)
 #				get_node("starhit").set_emitting(true)
-#				# 2to3: Sound disabled during conversion
-#				get_node("event_sounds").play("attack")
+				get_node("sfx/attack").play()
 				get_node("camera_animation").play("shake")
 
 				new_anim = "hover"
@@ -458,26 +456,24 @@ func _integrate_forces(state):
 
 	state.set_linear_velocity(lv)
 
-#	# 2to3: Sound disabled during conversion
-#	if prev_jetpack_ignited != jetpack_ignited:
-#		if jetpack_ignited:
-#			jpvoice = get_node("jetpack_sound").play("jetpack")
-#			get_node("jetpack_sound").set_pitch_scale(jpvoice, 1.0 + lv.length()/800.0)
-#			get_node("jetpack_sound").set_volume(jpvoice, 0.3)
-#		else:
-#			get_node("jetpack_sound").stop_all()
-#			jpvoice = null
-#	else:
-#		if jetpack_ignited:
-#			if jetpack_on_fire:
-#				if not prev_jetpack_on_fire:
-#					get_node("jetpack_sound").stop_all()
-#					jpvoice = get_node("jetpack_sound").play("jetpack")
-#					get_node("jetpack_sound").set_volume(jpvoice, 0.3)
-#			else:
-#				get_node("jetpack_sound").set_volume(jpvoice, 0.1)
-#
-#			get_node("jetpack_sound").set_pitch_scale(jpvoice, 1.0 + lv.length()/800.0)
+	# FIXME: Logic seems a bit cumbersome, and jetpack1.wav (jetpack_intro) is never used
+	var jetpack_sfx = get_node("sfx/jetpack")
+	if prev_jetpack_ignited != jetpack_ignited:
+		if jetpack_ignited:
+			jetpack_sfx.set_pitch_scale(1.0 + lv.length()/800.0)
+			jetpack_sfx.set_volume_db(-5.0) # ~30%
+			jetpack_sfx.play()
+		else:
+			jetpack_sfx.stop()
+	else:
+		if jetpack_ignited:
+			jetpack_sfx.set_pitch_scale(1.0 + lv.length()/800.0)
+			if jetpack_on_fire:
+				if not prev_jetpack_on_fire:
+					jetpack_sfx.set_volume_db(-5.0) # ~30%
+					jetpack_sfx.play()
+			else:
+				jetpack_sfx.set_volume_db(-10.0) # 10%
 
 	if jetpack_ignited:
 		jetpack_ignited_time += state.get_step()

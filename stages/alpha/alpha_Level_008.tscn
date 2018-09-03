@@ -55,7 +55,6 @@ __meta__ = {
 editor/display_folded = true
 
 [node name="enemies" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="sacra_pinchorb" parent="enemies" instance=ExtResource( 3 )]
 position = Vector2( 736, 1440 )
@@ -197,17 +196,6 @@ frame = 3
 position = Vector2( -0.427177, 15.9376 )
 rotation = 0.0438296
 texture = ExtResource( 11 )
-
-[node name="player 2" type="AudioStreamPlayer2D" parent="enemies/sacra_pinchorb 3"]
-stream = null
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
 
 [node name="sacra_pinchorb 4" parent="enemies" instance=ExtResource( 3 )]
 position = Vector2( 8832, 928 )

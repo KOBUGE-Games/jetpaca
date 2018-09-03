@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://enemies/frog/frog.gd" type="Script" id=1]
 [ext_resource path="res://art/cachos_rana/torso.png" type="Texture" id=2]
@@ -14,6 +14,9 @@
 [ext_resource path="res://art/cachos_rana/leg.png" type="Texture" id=12]
 [ext_resource path="res://art/cachos_rana/thigh.png" type="Texture" id=13]
 [ext_resource path="res://art/cachos_rana/feet.png" type="Texture" id=14]
+[ext_resource path="res://sound/frog_croak.wav" type="AudioStream" id=15]
+[ext_resource path="res://sound/frog_inflate.wav" type="AudioStream" id=16]
+[ext_resource path="res://sound/frog_kill.wav" type="AudioStream" id=17]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -849,19 +852,19 @@ tracks/20/keys = {
 } ]
 }
 tracks/21/type = "value"
-tracks/21/path = NodePath("sound:play/play")
+tracks/21/path = NodePath("body/head/eye:frame")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/imported = false
 tracks/21/enabled = true
 tracks/21/keys = {
-"times": PoolRealArray( 2.5 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.5, 1, 2, 3, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "frog_inflate" ]
+"values": [ 0, 3, 4, 3, 3, 3 ]
 }
 tracks/22/type = "value"
-tracks/22/path = NodePath("body/head/eye:frame")
+tracks/22/path = NodePath("body/head/eye 2:frame")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/imported = false
@@ -873,28 +876,28 @@ tracks/22/keys = {
 "values": [ 0, 3, 4, 3, 3, 3 ]
 }
 tracks/23/type = "value"
-tracks/23/path = NodePath("body/head/eye 2:frame")
+tracks/23/path = NodePath("body/head/tonguelette:frame")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/imported = false
 tracks/23/enabled = true
 tracks/23/keys = {
-"times": PoolRealArray( 0, 0.5, 1, 2, 3, 5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 0, 3, 4, 3, 3, 3 ]
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 3 ]
 }
 tracks/24/type = "value"
-tracks/24/path = NodePath("body/head/tonguelette:frame")
+tracks/24/path = NodePath("sfx/inflate:playing")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/imported = false
 tracks/24/enabled = true
 tracks/24/keys = {
-"times": PoolRealArray( 0 ),
+"times": PoolRealArray( 2.5 ),
 "transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 3 ]
+"update": 1,
+"values": [ false ]
 }
 
 [sub_resource type="Animation" id=5]
@@ -1477,31 +1480,31 @@ tracks/23/keys = {
 } ]
 }
 tracks/24/type = "value"
-tracks/24/path = NodePath("sound:play/play")
+tracks/24/path = NodePath("body/head/tonguelette:frame")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/imported = false
 tracks/24/enabled = true
 tracks/24/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ "frog_kill" ]
-}
-tracks/25/type = "value"
-tracks/25/path = NodePath("body/head/tonguelette:frame")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/keys = {
 "times": PoolRealArray( 0, 0.75, 1.25, 1.75 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 3, 2, 1, 0 ]
 }
+tracks/25/type = "value"
+tracks/25/path = NodePath("body/head/eye 2:frame")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 0.25, 0.75, 1.25 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 4, 5 ]
+}
 tracks/26/type = "value"
-tracks/26/path = NodePath("body/head/eye 2:frame")
+tracks/26/path = NodePath("body/head/eye:frame")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/imported = false
@@ -1509,32 +1512,32 @@ tracks/26/enabled = true
 tracks/26/keys = {
 "times": PoolRealArray( 0, 0.25, 0.75, 1.25 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
+"update": 0,
 "values": [ 0, 1, 4, 5 ]
 }
 tracks/27/type = "value"
-tracks/27/path = NodePath("body/head/eye:frame")
+tracks/27/path = NodePath("body:frame")
 tracks/27/interp = 1
 tracks/27/loop_wrap = true
 tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = {
-"times": PoolRealArray( 0, 0.25, 0.75, 1.25 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0, 1, 4, 5 ]
+"values": [ 0 ]
 }
 tracks/28/type = "value"
-tracks/28/path = NodePath("body:frame")
+tracks/28/path = NodePath("sfx/croak:playing")
 tracks/28/interp = 1
 tracks/28/loop_wrap = true
 tracks/28/imported = false
 tracks/28/enabled = true
 tracks/28/keys = {
-"times": PoolRealArray( 0 ),
+"times": PoolRealArray( -0.03 ),
 "transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0 ]
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=7]
@@ -1748,7 +1751,7 @@ tracks/16/keys = {
 "values": [ 0.0 ]
 }
 tracks/17/type = "value"
-tracks/17/path = NodePath("sound:rotation_degrees")
+tracks/17/path = NodePath("body/head/eye:rotation_degrees")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/imported = false
@@ -1760,7 +1763,7 @@ tracks/17/keys = {
 "values": [ 0.0 ]
 }
 tracks/18/type = "value"
-tracks/18/path = NodePath("body/head/eye:rotation_degrees")
+tracks/18/path = NodePath("body/head/cheek:rotation_degrees")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/imported = false
@@ -1772,7 +1775,7 @@ tracks/18/keys = {
 "values": [ 0.0 ]
 }
 tracks/19/type = "value"
-tracks/19/path = NodePath("body/head/cheek:rotation_degrees")
+tracks/19/path = NodePath("body/head/throat:rotation_degrees")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/imported = false
@@ -1781,10 +1784,10 @@ tracks/19/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0 ]
+"values": [ -6.02997 ]
 }
 tracks/20/type = "value"
-tracks/20/path = NodePath("body/head/throat:rotation_degrees")
+tracks/20/path = NodePath(".:rotation_degrees")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/imported = false
@@ -1793,10 +1796,10 @@ tracks/20/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ -6.02997 ]
+"values": [ 0.0 ]
 }
 tracks/21/type = "value"
-tracks/21/path = NodePath(".:rotation_degrees")
+tracks/21/path = NodePath("screen_proximity:rotation_degrees")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/imported = false
@@ -1808,7 +1811,7 @@ tracks/21/keys = {
 "values": [ 0.0 ]
 }
 tracks/22/type = "value"
-tracks/22/path = NodePath("screen_proximity:rotation_degrees")
+tracks/22/path = NodePath("body/head/eye:frame")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/imported = false
@@ -1817,10 +1820,10 @@ tracks/22/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0 ]
+"values": [ 0 ]
 }
 tracks/23/type = "value"
-tracks/23/path = NodePath("body/head/eye:frame")
+tracks/23/path = NodePath("body/head/eye 2:frame")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/imported = false
@@ -1832,24 +1835,12 @@ tracks/23/keys = {
 "values": [ 0 ]
 }
 tracks/24/type = "value"
-tracks/24/path = NodePath("body/head/eye 2:frame")
+tracks/24/path = NodePath("body/head/tonguelette:frame")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/imported = false
 tracks/24/enabled = true
 tracks/24/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0 ]
-}
-tracks/25/type = "value"
-tracks/25/path = NodePath("body/head/tonguelette:frame")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
@@ -2446,48 +2437,36 @@ tracks/20/keys = {
 } ]
 }
 tracks/21/type = "value"
-tracks/21/path = NodePath("sound:play/play")
+tracks/21/path = NodePath("body/head/tonguelette:frame")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/imported = false
 tracks/21/enabled = true
 tracks/21/keys = {
-"times": PoolRealArray( 1.25 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ "frog_jump" ]
-}
-tracks/22/type = "value"
-tracks/22/path = NodePath("body/head/tonguelette:frame")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 3, 3 ]
 }
-tracks/23/type = "value"
-tracks/23/path = NodePath("body/head/eye 2:frame")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/keys = {
+tracks/22/type = "value"
+tracks/22/path = NodePath("body/head/eye 2:frame")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
 "times": PoolRealArray( 0, 0.25, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 0, 1, 0, 0 ]
 }
-tracks/24/type = "value"
-tracks/24/path = NodePath("body/head/eye:frame")
-tracks/24/interp = 1
-tracks/24/loop_wrap = true
-tracks/24/imported = false
-tracks/24/enabled = true
-tracks/24/keys = {
+tracks/23/type = "value"
+tracks/23/path = NodePath("body/head/eye:frame")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
 "times": PoolRealArray( 0, 0.25, 1.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
@@ -2780,7 +2759,7 @@ tracks/22/keys = {
 
 length = 4.0
 loop = true
-step = 0.25
+step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/head:rotation_degrees")
 tracks/0/interp = 2
@@ -3022,64 +3001,64 @@ tracks/19/keys = {
 "values": [ false, true, false ]
 }
 tracks/20/type = "value"
-tracks/20/path = NodePath("sound:play/play")
+tracks/20/path = NodePath("body/head/throat:scale")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/imported = false
 tracks/20/enabled = true
 tracks/20/keys = {
-"times": PoolRealArray( 0, 0.9 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ "", "frog_croak" ]
-}
-tracks/21/type = "value"
-tracks/21/path = NodePath("body/head/throat:scale")
-tracks/21/interp = 1
-tracks/21/loop_wrap = true
-tracks/21/imported = false
-tracks/21/enabled = true
-tracks/21/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
 }
-tracks/22/type = "value"
-tracks/22/path = NodePath("body/head/eye:frame")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/keys = {
+tracks/21/type = "value"
+tracks/21/path = NodePath("body/head/eye:frame")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
 "times": PoolRealArray( 0, 2.5, 2.75, 3, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 0, 0, 1, 0, 0 ]
 }
-tracks/23/type = "value"
-tracks/23/path = NodePath("body/head/eye 2:frame")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/keys = {
+tracks/22/type = "value"
+tracks/22/path = NodePath("body/head/eye 2:frame")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
 "times": PoolRealArray( 0, 2.75, 3, 3.25, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 0, 0, 1, 0, 0 ]
 }
+tracks/23/type = "value"
+tracks/23/path = NodePath("body/head/tonguelette:frame")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 3, 3 ]
+}
 tracks/24/type = "value"
-tracks/24/path = NodePath("body/head/tonguelette:frame")
+tracks/24/path = NodePath("sfx/croak:playing")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/imported = false
 tracks/24/enabled = true
 tracks/24/keys = {
-"times": PoolRealArray( 0, 4 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0.9 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 3, 3 ]
+"values": [ true ]
 }
 
 [sub_resource type="CircleShape2D" id=12]
@@ -3110,14 +3089,16 @@ drop = 0
 can_move = true
 
 [node name="body" type="Sprite" parent="."]
+editor/display_folded = true
 show_behind_parent = true
-position = Vector2( -0.12851, 0 )
+position = Vector2( 2.5574, 0.610427 )
 texture = ExtResource( 2 )
 offset = Vector2( 0, -2 )
 hframes = 4
 
 [node name="head" type="Sprite" parent="body"]
-position = Vector2( -13.1599, -1.23637 )
+editor/display_folded = true
+position = Vector2( -13.0932, -1.05446 )
 texture = ExtResource( 3 )
 offset = Vector2( 0, -7 )
 
@@ -3157,8 +3138,9 @@ hframes = 4
 frame = 3
 
 [node name="arm 2" type="Sprite" parent="body"]
+editor/display_folded = true
 show_behind_parent = true
-position = Vector2( -15.3247, 2.01562 )
+position = Vector2( -14.9639, 2.63882 )
 texture = ExtResource( 9 )
 offset = Vector2( 0, 3 )
 flip_h = true
@@ -3176,6 +3158,7 @@ offset = Vector2( 0, -0.5 )
 flip_h = true
 
 [node name="leg_fg" type="Sprite" parent="body"]
+editor/display_folded = true
 position = Vector2( 21.2757, 8.93359 )
 texture = ExtResource( 12 )
 offset = Vector2( 3, -5.5 )
@@ -3192,7 +3175,8 @@ texture = ExtResource( 14 )
 offset = Vector2( 3, 2 )
 
 [node name="arm" type="Sprite" parent="body"]
-position = Vector2( 2.18131, 1.07319 )
+editor/display_folded = true
+position = Vector2( 1.66089, 3.39454 )
 texture = ExtResource( 9 )
 offset = Vector2( 0, 3 )
 
@@ -3207,8 +3191,9 @@ texture = ExtResource( 11 )
 offset = Vector2( 0, 0.5 )
 
 [node name="leg_bg" type="Sprite" parent="body"]
+editor/display_folded = true
 show_behind_parent = true
-position = Vector2( 4.96279, 8.08247 )
+position = Vector2( 4.86696, 7.1388 )
 texture = ExtResource( 12 )
 offset = Vector2( -3, -5.5 )
 flip_h = true
@@ -3277,8 +3262,32 @@ shape = SubResource( 12 )
 [node name="screen_proximity" type="VisibilityNotifier2D" parent="."]
 rect = Rect2( -40, -80, 80, 160 )
 
-[node name="sound" type="AudioStreamPlayer2D" parent="."]
-stream = null
+[node name="sfx" type="Node2D" parent="."]
+
+[node name="croak" type="AudioStreamPlayer2D" parent="sfx"]
+stream = ExtResource( 15 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+stream_paused = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="inflate" type="AudioStreamPlayer2D" parent="sfx"]
+stream = ExtResource( 16 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+stream_paused = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="kill" type="AudioStreamPlayer2D" parent="sfx"]
+stream = ExtResource( 17 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = false

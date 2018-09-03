@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://player/alpaca.gd" type="Script" id=1]
 [ext_resource path="res://art/cachos_alpaca/culete.png" type="Texture" id=2]
@@ -23,7 +23,9 @@
 [ext_resource path="res://art/fire.png" type="Texture" id=21]
 [ext_resource path="res://art/velocity.png" type="Texture" id=22]
 [ext_resource path="res://hud/hud.tscn" type="PackedScene" id=23]
-[ext_resource path="res://art/star_particle.png" type="Texture" id=24]
+[ext_resource path="res://sound/attack.wav" type="AudioStream" id=24]
+[ext_resource path="res://sound/jetpack2.wav" type="AudioStream" id=25]
+[ext_resource path="res://art/star_particle.png" type="Texture" id=26]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -18991,7 +18993,7 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, 12 ), Vector2( 0, -7 ), Vector2( 0, -3.5 ), Vector2( 0, 1.5 ), Vector2( 0, 0 ) ]
 }
 
-[node name="RigidBody2D" type="RigidBody2D" groups=[
+[node name="alpaca" type="RigidBody2D" groups=[
 "character",
 ]]
 input_pickable = false
@@ -19386,9 +19388,29 @@ transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 
 [node name="base" parent="hud" instance=ExtResource( 23 )]
 
-[node name="event_sounds" type="Node" parent="."]
+[node name="sfx" type="Node2D" parent="."]
 
-[node name="jetpack_sound" type="Node" parent="."]
+[node name="attack" type="AudioStreamPlayer2D" parent="sfx"]
+stream = ExtResource( 24 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+stream_paused = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="jetpack" type="AudioStreamPlayer2D" parent="sfx"]
+stream = ExtResource( 25 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+stream_paused = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
 
 [node name="col_circle" type="CollisionShape2D" parent="."]
 visible = false
@@ -19476,7 +19498,7 @@ visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
 process_material = null
-texture = ExtResource( 24 )
+texture = ExtResource( 26 )
 normal_map = null
 h_frames = 1
 v_frames = 1

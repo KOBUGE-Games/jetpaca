@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://enemies/fluff/fluff.gd" type="Script" id=1]
 [ext_resource path="res://art/vortex.png" type="Texture" id=2]
@@ -16,6 +16,8 @@
 [ext_resource path="res://art/cachos_sacra_pincho/eye_glow.png" type="Texture" id=14]
 [ext_resource path="res://art/cachos_sacra_pincho/cejas.png" type="Texture" id=15]
 [ext_resource path="res://art/halo.png" type="Texture" id=16]
+[ext_resource path="res://sound/spikes_appear.wav" type="AudioStream" id=17]
+[ext_resource path="res://sound/spikes_hide.wav" type="AudioStream" id=18]
 
 [sub_resource type="Animation" id=1]
 
@@ -1603,55 +1605,55 @@ tracks/21/keys = {
 "values": [ false ]
 }
 tracks/22/type = "value"
-tracks/22/path = NodePath("player:play/play")
+tracks/22/path = NodePath(".:doing_damage")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/imported = false
 tracks/22/enabled = true
 tracks/22/keys = {
-"times": PoolRealArray( 1.78125 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ "spikes_appear" ]
-}
-tracks/23/type = "value"
-tracks/23/path = NodePath(".:doing_damage")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/keys = {
 "times": PoolRealArray( 1.95 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
 }
-tracks/24/type = "value"
-tracks/24/path = NodePath("base_sclera/face/glow:frame")
-tracks/24/interp = 1
-tracks/24/loop_wrap = true
-tracks/24/imported = false
-tracks/24/enabled = true
-tracks/24/keys = {
+tracks/23/type = "value"
+tracks/23/path = NodePath("base_sclera/face/glow:frame")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
 "times": PoolRealArray( 0.075, 0.16875, 0.2625, 0.35625, 0.45, 0.54375, 0.6375, 0.73125, 0.825, 0.91875, 1.0125, 1.10625, 1.2, 1.29375, 1.3875, 1.48125, 1.575, 1.66875, 1.7625 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3 ]
 }
-tracks/25/type = "value"
-tracks/25/path = NodePath("base_sclera/face/glow:visible")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/keys = {
+tracks/24/type = "value"
+tracks/24/path = NodePath("base_sclera/face/glow:visible")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, false ]
 }
+tracks/25/type = "value"
+tracks/25/path = NodePath("vortex_center:scale")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 1.65, 1.875, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 0.8, 0.8 ) ]
+}
 tracks/26/type = "value"
-tracks/26/path = NodePath("vortex_center:scale")
+tracks/26/path = NodePath("vortex:scale")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/imported = false
@@ -1660,22 +1662,22 @@ tracks/26/keys = {
 "times": PoolRealArray( 0, 1.65, 1.875, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 0.8, 0.8 ) ]
+"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ]
 }
 tracks/27/type = "value"
-tracks/27/path = NodePath("vortex:scale")
+tracks/27/path = NodePath("base_sclera/face:modulate")
 tracks/27/interp = 1
 tracks/27/loop_wrap = true
 tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = {
-"times": PoolRealArray( 0, 1.65, 1.875, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.196078, 0.196078, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/28/type = "value"
-tracks/28/path = NodePath("base_sclera/face:modulate")
+tracks/28/path = NodePath("base_sclera/unibrow:modulate")
 tracks/28/interp = 1
 tracks/28/loop_wrap = true
 tracks/28/imported = false
@@ -1684,10 +1686,10 @@ tracks/28/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.196078, 0.196078, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/29/type = "value"
-tracks/29/path = NodePath("base_sclera/unibrow:modulate")
+tracks/29/path = NodePath("base_sclera/upper_eyelids:modulate")
 tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/imported = false
@@ -1699,7 +1701,7 @@ tracks/29/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/30/type = "value"
-tracks/30/path = NodePath("base_sclera/upper_eyelids:modulate")
+tracks/30/path = NodePath("base_sclera/lower_eyelids:modulate")
 tracks/30/interp = 1
 tracks/30/loop_wrap = true
 tracks/30/imported = false
@@ -1711,16 +1713,16 @@ tracks/30/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/31/type = "value"
-tracks/31/path = NodePath("base_sclera/lower_eyelids:modulate")
+tracks/31/path = NodePath("sfx/spikes_appear:playing")
 tracks/31/interp = 1
 tracks/31/loop_wrap = true
 tracks/31/imported = false
 tracks/31/enabled = true
 tracks/31/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+"times": PoolRealArray( 1.78 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=8]
@@ -1728,7 +1730,7 @@ tracks/31/keys = {
 resource_name = "spike_burst"
 length = 3.5
 loop = false
-step = 0.1
+step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
@@ -1994,52 +1996,52 @@ tracks/21/keys = {
 "values": [ false ]
 }
 tracks/22/type = "value"
-tracks/22/path = NodePath("player:play/play")
+tracks/22/path = NodePath(".:doing_damage")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/imported = false
 tracks/22/enabled = true
 tracks/22/keys = {
-"times": PoolRealArray( 2.75 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ "spikes_appear" ]
-}
-tracks/23/type = "value"
-tracks/23/path = NodePath(".:doing_damage")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/keys = {
 "times": PoolRealArray( 2.9 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
 }
-tracks/24/type = "value"
-tracks/24/path = NodePath("base_sclera/face/glow:frame")
-tracks/24/interp = 1
-tracks/24/loop_wrap = true
-tracks/24/imported = false
-tracks/24/enabled = true
-tracks/24/keys = {
+tracks/23/type = "value"
+tracks/23/path = NodePath("base_sclera/face/glow:frame")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
 "times": PoolRealArray( 0.1, 0.225, 0.35, 0.475, 0.6, 0.725, 0.85, 0.975, 1.1, 1.225, 1.35, 1.475, 1.6, 1.725, 1.85, 1.975, 2.1, 2.225, 2.35 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3 ]
 }
+tracks/24/type = "value"
+tracks/24/path = NodePath("base_sclera/face/glow:visible")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0, 0.1, 2.35, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, true, false ]
+}
 tracks/25/type = "value"
-tracks/25/path = NodePath("base_sclera/face/glow:visible")
+tracks/25/path = NodePath("sfx/spikes_appear:playing")
 tracks/25/interp = 1
 tracks/25/loop_wrap = true
 tracks/25/imported = false
 tracks/25/enabled = true
 tracks/25/keys = {
-"times": PoolRealArray( 0, 0.1, 2.35, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 2.75 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ false, true, true, false ]
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=9]
@@ -2047,7 +2049,7 @@ tracks/25/keys = {
 resource_name = "spike_burst_glow_bod"
 length = 3.0
 loop = true
-step = 0.1
+step = 0.01
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
@@ -2313,55 +2315,55 @@ tracks/21/keys = {
 "values": [ false ]
 }
 tracks/22/type = "value"
-tracks/22/path = NodePath("player:play/play")
+tracks/22/path = NodePath(".:doing_damage")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/imported = false
 tracks/22/enabled = true
 tracks/22/keys = {
-"times": PoolRealArray( 2.375 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ "spikes_appear" ]
-}
-tracks/23/type = "value"
-tracks/23/path = NodePath(".:doing_damage")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/keys = {
 "times": PoolRealArray( 2.6 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
 }
-tracks/24/type = "value"
-tracks/24/path = NodePath("base_sclera/face/glow:frame")
-tracks/24/interp = 1
-tracks/24/loop_wrap = true
-tracks/24/imported = false
-tracks/24/enabled = true
-tracks/24/keys = {
+tracks/23/type = "value"
+tracks/23/path = NodePath("base_sclera/face/glow:frame")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
 "times": PoolRealArray( 0.1, 0.225, 0.35, 0.475, 0.6, 0.725, 0.85, 0.975, 1.1, 1.225, 1.35, 1.475, 1.6, 1.725, 1.85, 1.975, 2.1, 2.225, 2.35 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3 ]
 }
-tracks/25/type = "value"
-tracks/25/path = NodePath("base_sclera/face/glow:visible")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/keys = {
+tracks/24/type = "value"
+tracks/24/path = NodePath("base_sclera/face/glow:visible")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, false ]
 }
+tracks/25/type = "value"
+tracks/25/path = NodePath("vortex_center:scale")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 2.2, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 0.8, 0.8 ) ]
+}
 tracks/26/type = "value"
-tracks/26/path = NodePath("vortex_center:scale")
+tracks/26/path = NodePath("vortex:scale")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/imported = false
@@ -2370,22 +2372,22 @@ tracks/26/keys = {
 "times": PoolRealArray( 0, 2.2, 2.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 0.8, 0.8 ) ]
+"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ]
 }
 tracks/27/type = "value"
-tracks/27/path = NodePath("vortex:scale")
+tracks/27/path = NodePath("base_sclera/face:modulate")
 tracks/27/interp = 1
 tracks/27/loop_wrap = true
 tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = {
-"times": PoolRealArray( 0, 2.2, 2.5, 3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.509804, 0.509804, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/28/type = "value"
-tracks/28/path = NodePath("base_sclera/face:modulate")
+tracks/28/path = NodePath("base_sclera/unibrow:modulate")
 tracks/28/interp = 1
 tracks/28/loop_wrap = true
 tracks/28/imported = false
@@ -2397,7 +2399,7 @@ tracks/28/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.509804, 0.509804, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/29/type = "value"
-tracks/29/path = NodePath("base_sclera/unibrow:modulate")
+tracks/29/path = NodePath("base_sclera/upper_eyelids:modulate")
 tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/imported = false
@@ -2409,7 +2411,7 @@ tracks/29/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.509804, 0.509804, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/30/type = "value"
-tracks/30/path = NodePath("base_sclera/upper_eyelids:modulate")
+tracks/30/path = NodePath("base_sclera/lower_eyelids:modulate")
 tracks/30/interp = 1
 tracks/30/loop_wrap = true
 tracks/30/imported = false
@@ -2421,16 +2423,16 @@ tracks/30/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.509804, 0.509804, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/31/type = "value"
-tracks/31/path = NodePath("base_sclera/lower_eyelids:modulate")
+tracks/31/path = NodePath("sfx/spikes_appear:playing")
 tracks/31/interp = 1
 tracks/31/loop_wrap = true
 tracks/31/imported = false
 tracks/31/enabled = true
 tracks/31/keys = {
-"times": PoolRealArray( 0, 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2, 3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.509804, 0.509804, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.235294, 0.235294, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+"times": PoolRealArray( 2.38 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=10]
@@ -2703,55 +2705,55 @@ tracks/21/keys = {
 "values": [ false ]
 }
 tracks/22/type = "value"
-tracks/22/path = NodePath("player:play/play")
+tracks/22/path = NodePath(".:doing_damage")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/imported = false
 tracks/22/enabled = true
 tracks/22/keys = {
-"times": PoolRealArray( 2.375 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ "spikes_appear" ]
-}
-tracks/23/type = "value"
-tracks/23/path = NodePath(".:doing_damage")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/keys = {
 "times": PoolRealArray( 2.6 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
 }
-tracks/24/type = "value"
-tracks/24/path = NodePath("base_sclera/face/glow:frame")
-tracks/24/interp = 1
-tracks/24/loop_wrap = true
-tracks/24/imported = false
-tracks/24/enabled = true
-tracks/24/keys = {
+tracks/23/type = "value"
+tracks/23/path = NodePath("base_sclera/face/glow:frame")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
 "times": PoolRealArray( 0.1, 0.225, 0.35, 0.475, 0.6, 0.725, 0.85, 0.975, 1.1, 1.225, 1.35, 1.475, 1.6, 1.725, 1.85, 1.975, 2.1, 2.225, 2.35 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3 ]
 }
-tracks/25/type = "value"
-tracks/25/path = NodePath("base_sclera/face/glow:visible")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/keys = {
+tracks/24/type = "value"
+tracks/24/path = NodePath("base_sclera/face/glow:visible")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
 "times": PoolRealArray( 0, 0.0999999, 2.35, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, true, false ]
 }
+tracks/25/type = "value"
+tracks/25/path = NodePath("vortex_center:scale")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 2.2, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 0.8, 0.8 ) ]
+}
 tracks/26/type = "value"
-tracks/26/path = NodePath("vortex_center:scale")
+tracks/26/path = NodePath("vortex:scale")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/imported = false
@@ -2760,22 +2762,22 @@ tracks/26/keys = {
 "times": PoolRealArray( 0, 2.2, 2.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 0.8, 0.8 ) ]
+"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ]
 }
 tracks/27/type = "value"
-tracks/27/path = NodePath("vortex:scale")
+tracks/27/path = NodePath("base_sclera/face:modulate")
 tracks/27/interp = 1
 tracks/27/loop_wrap = true
 tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = {
-"times": PoolRealArray( 0, 2.2, 2.5, 3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/28/type = "value"
-tracks/28/path = NodePath("base_sclera/face:modulate")
+tracks/28/path = NodePath("base_sclera/unibrow:modulate")
 tracks/28/interp = 1
 tracks/28/loop_wrap = true
 tracks/28/imported = false
@@ -2787,7 +2789,7 @@ tracks/28/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/29/type = "value"
-tracks/29/path = NodePath("base_sclera/unibrow:modulate")
+tracks/29/path = NodePath("base_sclera/upper_eyelids:modulate")
 tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/imported = false
@@ -2799,7 +2801,7 @@ tracks/29/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/30/type = "value"
-tracks/30/path = NodePath("base_sclera/upper_eyelids:modulate")
+tracks/30/path = NodePath("base_sclera/lower_eyelids:modulate")
 tracks/30/interp = 1
 tracks/30/loop_wrap = true
 tracks/30/imported = false
@@ -2811,16 +2813,16 @@ tracks/30/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/31/type = "value"
-tracks/31/path = NodePath("base_sclera/lower_eyelids:modulate")
+tracks/31/path = NodePath("sfx/spikes_appear:playing")
 tracks/31/interp = 1
 tracks/31/loop_wrap = true
 tracks/31/imported = false
 tracks/31/enabled = true
 tracks/31/keys = {
-"times": PoolRealArray( 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 2 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 0.784314, 0.784314, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.588235, 0.588235, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.392157, 0.392157, 1 ), Color( 1, 1, 1, 1 ) ]
+"times": PoolRealArray( 2.38 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=11]
@@ -3081,31 +3083,31 @@ tracks/20/keys = {
 "values": [ true ]
 }
 tracks/21/type = "value"
-tracks/21/path = NodePath("player:play/play")
+tracks/21/path = NodePath(".:doing_damage")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/imported = false
 tracks/21/enabled = true
 tracks/21/keys = {
-"times": PoolRealArray( 0.75 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ "spikes_hide" ]
-}
-tracks/22/type = "value"
-tracks/22/path = NodePath(".:doing_damage")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/keys = {
 "times": PoolRealArray( 1.25276 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ false ]
 }
+tracks/22/type = "value"
+tracks/22/path = NodePath("vortex:scale")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
+}
 tracks/23/type = "value"
-tracks/23/path = NodePath("vortex:scale")
+tracks/23/path = NodePath("vortex_center:scale")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/imported = false
@@ -3117,16 +3119,16 @@ tracks/23/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 tracks/24/type = "value"
-tracks/24/path = NodePath("vortex_center:scale")
+tracks/24/path = NodePath("sfx/spikes_hide:playing")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/imported = false
 tracks/24/enabled = true
 tracks/24/keys = {
-"times": PoolRealArray( 0, 1.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
+"times": PoolRealArray( 0.75 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=12]
@@ -3856,6 +3858,7 @@ modulate = Color( 0.463217, 0, 0.0233767, 1 )
 position = Vector2( 0.397223, 1.1698e-06 )
 rotation = -11.63
 texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility", "texture" ]
 
 [node name="smoke_twirl" type="Particles2D" parent="."]
 position = Vector2( -0.156686, 10.1065 )
@@ -3902,47 +3905,43 @@ h_frames = 1
 v_frames = 1
 
 [node name="spike1_L" type="Sprite" parent="."]
-visible = false
-position = Vector2( -27, -8 )
+position = Vector2( -69.78, -26.715 )
 rotation = -1.1781
 texture = ExtResource( 6 )
 
 [node name="spike2_L" type="Sprite" parent="."]
-visible = false
-position = Vector2( -24, 10 )
+position = Vector2( -64.8769, 27.6619 )
 rotation = -1.9635
 texture = ExtResource( 6 )
 
 [node name="spike3_L" type="Sprite" parent="."]
-visible = false
-position = Vector2( -12, -23 )
+position = Vector2( -28.9023, -61.5201 )
 rotation = -0.392699
 texture = ExtResource( 6 )
 flip_h = true
 
 [node name="spike4_L" type="Sprite" parent="."]
-visible = false
-position = Vector2( 12, -23 )
+position = Vector2( 28.9023, -61.5201 )
 rotation = 0.392699
 texture = ExtResource( 6 )
 flip_h = true
 
 [node name="spike5_D" type="Sprite" parent="."]
-visible = false
-position = Vector2( 27, -8 )
+position = Vector2( 69.78, -26.715 )
 rotation = 1.1781
 texture = ExtResource( 7 )
 flip_h = true
 
 [node name="spike6_D" type="Sprite" parent="."]
-visible = false
-position = Vector2( 24, 10 )
+position = Vector2( 64.8769, 27.6619 )
 rotation = 1.9635
 texture = ExtResource( 7 )
 flip_h = true
 
 [node name="base_sclera" type="Sprite" parent="."]
 modulate = Color( 0.705882, 0, 0.470588, 1 )
+position = Vector2( 0, -1.96164 )
+rotation = -0.05018
 texture = ExtResource( 8 )
 
 [node name="Position2D" type="Position2D" parent="base_sclera"]
@@ -3961,11 +3960,11 @@ position = Vector2( 16, -1.4 )
 texture = ExtResource( 10 )
 
 [node name="lower_eyelids" type="Sprite" parent="base_sclera"]
-position = Vector2( 0, 14.7446 )
+position = Vector2( 0, 9.45848 )
 texture = ExtResource( 11 )
 
 [node name="upper_eyelids" type="Sprite" parent="base_sclera"]
-position = Vector2( 0.63112, -11.7758 )
+position = Vector2( 4.62271e-06, -15.1426 )
 rotation = 0.0105123
 texture = ExtResource( 12 )
 
@@ -3981,8 +3980,8 @@ vframes = 4
 frame = 3
 
 [node name="unibrow" type="Sprite" parent="base_sclera"]
-position = Vector2( -0.427177, 15.9376 )
-rotation = 0.0438296
+position = Vector2( -0.427153, 10.8789 )
+rotation = 0.0718761
 texture = ExtResource( 15 )
 
 [node name="halo" type="Sprite" parent="."]
@@ -4056,8 +4055,21 @@ position = Vector2( -0.323532, 1.29414 )
 scale = Vector2( 1.1, 1.1 )
 shape = SubResource( 17 )
 
-[node name="player" type="AudioStreamPlayer2D" parent="."]
-stream = null
+[node name="sfx" type="Node2D" parent="."]
+
+[node name="spikes_appear" type="AudioStreamPlayer2D" parent="sfx"]
+stream = ExtResource( 17 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+stream_paused = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="spikes_hide" type="AudioStreamPlayer2D" parent="sfx"]
+stream = ExtResource( 18 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = false

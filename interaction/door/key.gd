@@ -20,8 +20,7 @@ func _on_body_enter(body):
 #		# 2to3: Particles disabled during conversion
 #		get_node("shine").set_emitting(true)
 		get_node("death").start()
-#		# 2to3: Sound disabled during conversion
-#		get_node("player").play("gotkey")
+		get_node("gotkey_sfx").play()
 		get_node("sprite").hide()
 		# 2to3: clear_shapes() changed to shape_owner_clear_shapes(0)
 		shape_owner_clear_shapes(0)

@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://interaction/door/locked_door.gd" type="Script" id=1]
 [ext_resource path="res://art/smoke.png" type="Texture" id=2]
 [ext_resource path="res://art/locked_door.png" type="Texture" id=3]
-[ext_resource path="res://interaction/door/lock.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sound/stonedoor.wav" type="AudioStream" id=4]
+[ext_resource path="res://sound/door_slam.wav" type="AudioStream" id=5]
+[ext_resource path="res://interaction/door/lock.tscn" type="PackedScene" id=6]
 
 [sub_resource type="Animation" id=1]
 
@@ -83,7 +85,7 @@ tracks/5/keys = {
 "values": [ true, false ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("SamplePlayer2D:play/play")
+tracks/6/path = NodePath("sfx/door_open:playing")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -92,7 +94,19 @@ tracks/6/keys = {
 "times": PoolRealArray( 0, 1.74 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ "door_open", "door_slam" ]
+"values": [ true, false ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("sfx/door_slam:playing")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 1.66 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="CircleShape2D" id=2]
@@ -107,7 +121,7 @@ no_key = false
 
 [node name="smoke" type="Particles2D" parent="."]
 position = Vector2( 0.735107, -125.701 )
-emitting = false
+emitting = true
 amount = 32
 lifetime = 2.0
 one_shot = false
@@ -128,7 +142,7 @@ v_frames = 1
 
 [node name="smoke 2" type="Particles2D" parent="."]
 position = Vector2( 2.20529, 112.469 )
-emitting = false
+emitting = true
 amount = 32
 lifetime = 2.0
 one_shot = false
@@ -189,8 +203,22 @@ playback_speed = 1.0
 anims/open = SubResource( 1 )
 blend_times = [  ]
 
-[node name="SamplePlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = null
+[node name="sfx" type="Node2D" parent="."]
+
+[node name="door_open" type="AudioStreamPlayer2D" parent="sfx"]
+stream = ExtResource( 4 )
+volume_db = -6.0
+pitch_scale = 1.4
+autoplay = false
+stream_paused = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+_sections_unfolded = [ "stream" ]
+
+[node name="door_slam" type="AudioStreamPlayer2D" parent="sfx"]
+stream = ExtResource( 5 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = false
@@ -199,6 +227,7 @@ max_distance = 2000.0
 attenuation = 1.0
 bus = "Master"
 area_mask = 1
+_sections_unfolded = [ "stream" ]
 
 [node name="area" type="Area2D" parent="."]
 input_pickable = true
@@ -212,7 +241,7 @@ audio_bus_name = "Master"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area"]
 shape = SubResource( 2 )
 
-[node name="lock" parent="." instance=ExtResource( 4 )]
+[node name="lock" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1.32684, -17.2489 )
 
 [connection signal="body_entered" from="area" to="." method="_on_body_enter"]

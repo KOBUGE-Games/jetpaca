@@ -25,8 +25,7 @@ func _on_body_enter(body):
 #		# 2to3: Particles disabled during conversion
 #		get_node("shine").set_emitting(true)
 #		get_node("shine").set_emit_timeout(0.75)
-#		# 2to3: Sound disabled during conversion
-#		get_node("sound").play("shine")
+		get_node("shine_sfx").play()
 		get_node("deathclock").start()
 		taken = true
 

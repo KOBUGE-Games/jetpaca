@@ -30,8 +30,8 @@ func _loader_thread(options):
 	options.thread.call_deferred("wait_to_finish")
 
 func _change_music_to(stream):
-	var new_music_player = AudioStreamPlayer.new()
 #	# 2to3: Sound disabled during conversion
+#	var new_music_player = AudioStreamPlayer.new()
 #	new_music_player.set_loop(true)
 #	new_music_player.set_autoplay(true)
 #	new_music_player.set_stream(stream)
@@ -49,4 +49,4 @@ func _change_music_to(stream):
 #		tween.start()
 #	current_music_player = new_music_player
 #	add_child(new_music_player)
-
+	pass

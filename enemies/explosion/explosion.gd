@@ -10,8 +10,7 @@ func _on_timeout():
 func explode():
 #	# 2to3: Particles disabled during conversion
 #	set_emitting(true)
-#	# 2to3: Sound disabled during conversion
-#	get_node("player").play("magic_explosion")
+	get_node("explosion_sfx").play()
 	get_node("timer").start()
 	print("GO KABOOM")
 
