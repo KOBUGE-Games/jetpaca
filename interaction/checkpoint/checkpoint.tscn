@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://interaction/checkpoint/checkpoint.gd" type="Script" id=1]
 [ext_resource path="res://art/checkpoint.png" type="Texture" id=2]
 [ext_resource path="res://art/spark_particle2.png" type="Texture" id=3]
+[ext_resource path="res://music/checkpoint.ogg" type="AudioStream" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -132,7 +133,7 @@ anims/checked = SubResource( 2 )
 blend_times = [  ]
 
 [node name="tune" type="AudioStreamPlayer" parent="."]
-stream = null
+stream = ExtResource( 4 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = false

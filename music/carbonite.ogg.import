@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/carbonite.ogg-a8e826596da68e5dc97389524a94bb7c.oggstr"
+
+[deps]
+
+source_file="res://music/carbonite.ogg"
+dest_files=[ "res://.import/carbonite.ogg-a8e826596da68e5dc97389524a94bb7c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
