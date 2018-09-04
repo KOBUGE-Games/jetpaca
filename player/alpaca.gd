@@ -237,9 +237,11 @@ func _integrate_forces(state):
 				var enmvec = (attacked_target.get_global_transform().get_origin() - state.get_transform().get_origin()).normalized()*40.0
 
 				attacked_target.call("attacked", self)
-#				# 2to3: Particles disabled during conversion
-#				get_node("starhit").set_position(enmvec)
-#				get_node("starhit").set_emitting(true)
+				get_node("starhit").set_position(enmvec)
+				if not get_node("starhit").is_emitting():
+					get_node("starhit").set_emitting(true)
+				else:
+					get_node("starhit").restart()
 				get_node("sfx/attack").play()
 				get_node("camera_animation").play("shake")
 
@@ -413,22 +415,27 @@ func _integrate_forces(state):
 		if jetpack_off_time > 1.5 and lv.y > extra_fall_anim_min_speed:
 			new_anim = "fall"
 
-#	# 2to3: Particles disabled during conversion
-#	for i in range(2):
-#		var p = get_node(jpart_names[i])
-#		p.set_emitting(jetpack_ignited)
-#		if can_thrust:
-#			p.set_param(Particles2D.PARAM_SPREAD, 10)
-#			p.set_param(Particles2D.PARAM_LINEAR_VELOCITY, 130)
-#			p.self_modulate.a = 1.0
-#		else:
-#			p.set_param(Particles2D.PARAM_SPREAD, 80)
-#			p.set_param(Particles2D.PARAM_LINEAR_VELOCITY, 50)
-#			p.self_modulate.a = 0.35
-#
-#		p.set_initial_velocity(lv)
-#		var p2 = get_node(jpart_names[i] + "f")
-#		p2.set_emitting(can_thrust and jetpack_ignited)
+	# The linear velocity logic is a bit weird, but that's how we can reproduce in Godot 3
+	# the behaviour which was intended for Godot 2 Particles2D.
+	# Could likely be refactored and simplified to get similar effect.
+	var init_dir = lv
+	for i in range(2):
+		var p = get_node(jpart_names[i])
+		p.set_emitting(jetpack_ignited)
+		if can_thrust:
+			p.process_material.spread = 10
+			p.self_modulate.a = 1.0
+			init_dir.y += 130
+		else:
+			p.process_material.spread = 80
+			p.self_modulate.a = 0.35
+			init_dir.y += 50
+
+		p.set_rotation(PI/2 + init_dir.angle())
+		p.process_material.initial_velocity = init_dir.length()
+
+		var p2 = get_node(jpart_names[i] + "f")
+		p2.set_emitting(can_thrust and jetpack_ignited)
 
 	if new_anim!=anim:
 		anim = new_anim
