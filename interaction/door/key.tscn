@@ -7,66 +7,26 @@
 
 [sub_resource type="CircleShape2D" id=1]
 
-custom_solver_bias = 0.0
 radius = 30.0
 
 [node name="key" type="RigidBody2D"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-mode = 0
-mass = 1.0
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-key_index = 0
 
 [node name="normal_shine" type="Particles2D" parent="."]
 emitting = false
-amount = 8
 lifetime = 0.5
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
-process_material = null
 texture = ExtResource( 2 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 
 [node name="sprite" type="Sprite" parent="."]
 texture = ExtResource( 3 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 visible = false
-build_mode = 0
 polygon = PoolVector2Array( -14.5975, -10.7368, -14.5975, -21.4687, -4.7241, -30.6982, 5.36393, -30.6982, 15.0227, -19.537, 3.43218, 29.6153, -13.7389, 30.0446 )
 
 [node name="monitor" type="Area2D" parent="."]
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
 monitoring = false
-audio_bus_override = false
-audio_bus_name = "Master"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="monitor"]
 visible = false
@@ -74,49 +34,23 @@ shape = SubResource( 1 )
 
 [node name="gotkey_sfx" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
 
 [node name="death" type="Timer" parent="."]
-process_mode = 1
 wait_time = 2.0
 one_shot = true
-autostart = false
 
 [node name="enabler" type="Timer" parent="."]
-process_mode = 1
-wait_time = 1.0
 one_shot = true
-autostart = false
 
 [node name="shine" type="Particles2D" parent="."]
 emitting = false
 amount = 16
 lifetime = 2.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
 explosiveness = 0.05
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
-process_material = null
 texture = ExtResource( 2 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 
 [node name="sp" type="VisibilityNotifier2D" parent="."]
-rect = Rect2( -10, -10, 20, 20 )
 
 [connection signal="body_entered" from="monitor" to="." method="_on_body_enter"]
 [connection signal="timeout" from="death" to="." method="_on_timeout"]

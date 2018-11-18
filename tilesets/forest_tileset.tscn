@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://art/forest_tiles.png" type="Texture" id=1]
 [ext_resource path="res://art/tree_top.png" type="Texture" id=2]
@@ -13,14 +13,8 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 64, 128 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="floor1"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="floor1/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 128, 64, 128, 64, 48, 0, 48 )
 
 [node name="floor2" type="Sprite" parent="."]
@@ -31,14 +25,8 @@ region_enabled = true
 region_rect = Rect2( 64, 0, 64, 128 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="floor2"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="floor2/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 64, 128, 64, 48, 0, 48, 0, 128 )
 
 [node name="slope_begin" type="Sprite" parent="."]
@@ -49,14 +37,8 @@ region_enabled = true
 region_rect = Rect2( 128, 0, 128, 192 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="slope_begin"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="slope_begin/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 192, 128, 192, 128, 96, 80, 64, 0, 48 )
 
 [node name="slope" type="Sprite" parent="."]
@@ -67,14 +49,8 @@ region_enabled = true
 region_rect = Rect2( 256, 64, 64, 192 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="slope"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="slope/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 32, 64, 96, 64, 192, 0, 192 )
 
 [node name="corner" type="Sprite" parent="."]
@@ -85,14 +61,8 @@ region_enabled = true
 region_rect = Rect2( 320, 128, 192, 128 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="corner"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="corner/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 128, 32, 128, 128, 0, 128, 0, 32 )
 
 [node name="wall" type="Sprite" parent="."]
@@ -103,14 +73,8 @@ region_enabled = true
 region_rect = Rect2( 384, 256, 128, 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 64, 0, 0, 0, 0, 64, 64, 64 )
 
 [node name="lowcorner" type="Sprite" parent="."]
@@ -121,11 +85,6 @@ region_enabled = true
 region_rect = Rect2( 384, 320, 128, 128 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="lowcorner"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="lowcorner/StaticBody2D"]
 build_mode = 1
@@ -139,15 +98,9 @@ region_enabled = true
 region_rect = Rect2( 320, 0, 128, 128 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="passable_floor_begin"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="passable_floor_begin/StaticBody2D"]
 visible = false
-build_mode = 0
 polygon = PoolVector2Array( 128, 128, 0, 128, 0, 48, 128, 112 )
 
 [node name="passable_floor" type="Sprite" parent="."]
@@ -158,15 +111,9 @@ region_enabled = true
 region_rect = Rect2( 448, 64, 64, 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="passable_floor"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="passable_floor/StaticBody2D"]
 visible = false
-build_mode = 0
 polygon = PoolVector2Array( 64, 64, 64, 48, 0, 48, 0, 64 )
 
 [node name="tree_trunk1" type="Sprite" parent="."]
@@ -177,14 +124,8 @@ region_enabled = true
 region_rect = Rect2( 0, 384, 128, 128 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="tree_trunk1"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tree_trunk1/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 0, 96, 0, 96, 128, 0, 128 )
 
 [node name="tree_trunk2" type="Sprite" parent="."]
@@ -195,14 +136,8 @@ region_enabled = true
 region_rect = Rect2( 128, 384, 128, 128 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="tree_trunk2"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tree_trunk2/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 0, 96, 0, 96, 128, 0, 128 )
 
 [node name="tree_branching" type="Sprite" parent="."]
@@ -213,14 +148,8 @@ region_enabled = true
 region_rect = Rect2( 0, 256, 128, 128 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="tree_branching"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tree_branching/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 128, 48, 128, 112, 96, 128, 0, 128, 0, 0, 96, 0 )
 
 [node name="treepass_top" type="Sprite" parent="."]
@@ -231,14 +160,8 @@ region_enabled = true
 region_rect = Rect2( 0, 128, 128, 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="treepass_top"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="treepass_top/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 0, 96, 0, 96, 16, 0, 32 )
 
 [node name="treepass_bottom" type="Sprite" parent="."]
@@ -249,14 +172,8 @@ region_enabled = true
 region_rect = Rect2( 0, 192, 128, 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="treepass_bottom"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="treepass_bottom/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 32, 96, 16, 96, 64, 0, 64 )
 
 [node name="branch_start" type="Sprite" parent="."]
@@ -267,14 +184,8 @@ region_enabled = true
 region_rect = Rect2( 128, 256, 128, 128 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="branch_start"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="branch_start/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 48, 128, 16, 128, 48, 0, 112 )
 
 [node name="branch_slope" type="Sprite" parent="."]
@@ -285,11 +196,6 @@ region_enabled = true
 region_rect = Rect2( 256, 384, 128, 128 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="branch_slope"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="branch_slope/StaticBody2D"]
 build_mode = 1
@@ -303,14 +209,8 @@ region_enabled = true
 region_rect = Rect2( 128, 192, 128, 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="branch_straight"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="branch_straight/StaticBody2D"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 16, 62.9757, 11.1615, 128, 16, 128, 48, 0, 48 )
 
 [node name="branch_end" type="Sprite" parent="."]
@@ -321,11 +221,6 @@ region_enabled = true
 region_rect = Rect2( 384, 448, 128, 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="branch_end"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="branch_end/StaticBody2D"]
 position = Vector2( 2, 2 )
@@ -353,11 +248,6 @@ centered = false
 region_rect = Rect2( 256, 256, 64, 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="treetop"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="treetop/StaticBody2D"]
 position = Vector2( 44.3213, 0 )

@@ -22,8 +22,6 @@
 [sub_resource type="Animation" id=1]
 
 length = 3.0
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -1360,8 +1358,6 @@ tracks/110/keys = {
 [sub_resource type="Animation" id=2]
 
 length = 2.5
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -2758,7 +2754,6 @@ tracks/115/keys = {
 [sub_resource type="Animation" id=3]
 
 length = 12.0
-loop = false
 step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
@@ -4132,8 +4127,6 @@ tracks/113/keys = {
 [sub_resource type="Animation" id=4]
 
 length = 4.0
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -5374,8 +5367,6 @@ tracks/102/keys = {
 [sub_resource type="Animation" id=5]
 
 length = 4.5
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -6593,7 +6584,6 @@ tracks/100/keys = {
 
 length = 12.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -8062,7 +8052,6 @@ tracks/121/keys = {
 [sub_resource type="Animation" id=7]
 
 length = 7.0
-loop = false
 step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
@@ -10277,7 +10266,6 @@ tracks/183/keys = {
 
 length = 12.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -11531,7 +11519,6 @@ tracks/103/keys = {
 
 length = 5.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -12785,7 +12772,6 @@ tracks/103/keys = {
 
 length = 5.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -14015,7 +14001,6 @@ tracks/101/keys = {
 
 length = 5.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -15281,7 +15266,6 @@ tracks/104/keys = {
 
 length = 5.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -16511,7 +16495,6 @@ tracks/101/keys = {
 
 length = 2.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -17692,8 +17675,6 @@ tracks/97/keys = {
 [sub_resource type="Animation" id=14]
 
 length = 0.75
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -19018,8 +18999,6 @@ tracks/109/keys = {
 [sub_resource type="Animation" id=15]
 
 length = 5.0
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
 tracks/0/interp = 2
@@ -20223,28 +20202,10 @@ tracks/99/keys = {
 
 [sub_resource type="CanvasItemMaterial" id=16]
 
-render_priority = 0
 blend_mode = 1
-light_mode = 0
 
 [node name="RigidBody2D" type="RigidBody2D"]
 position = Vector2( -3.83927, -10.5635 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-mode = 0
-mass = 1.0
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -20594,10 +20555,6 @@ texture = ExtResource( 18 )
 offset = Vector2( -0.284607, -11.9676 )
 
 [node name="mage_anim" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
 playback_speed = 2.0
 anims/1-epicmagic-start = SubResource( 1 )
 anims/1-magic-start = SubResource( 2 )
@@ -20614,7 +20571,6 @@ anims/move-upwards = SubResource( 12 )
 anims/take-damage-recoil = SubResource( 13 )
 anims/turning = SubResource( 14 )
 anims/wimpy-melee = SubResource( 15 )
-blend_times = [  ]
 
 [node name="epic_staff" type="Sprite" parent="."]
 visible = false
@@ -20639,7 +20595,6 @@ position = Vector2( 0.247419, -1.25388 )
 texture = ExtResource( 17 )
 hframes = 4
 frame = 2
-_sections_unfolded = [ "Material", "material" ]
 
 [node name="dangling_stuff 2" type="Sprite" parent="epic_staff"]
 show_behind_parent = true

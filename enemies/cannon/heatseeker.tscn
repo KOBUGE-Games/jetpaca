@@ -6,14 +6,11 @@
 
 [sub_resource type="CapsuleShape2D" id=1]
 
-custom_solver_bias = 0.0
-radius = 10.0
 height = 26.0
 
 [sub_resource type="Animation" id=2]
 
 length = 0.5
-loop = false
 step = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("pacaseeker:frame")
@@ -47,25 +44,11 @@ tracks/0/keys = {
 }
 
 [node name="heatseeker" type="RigidBody2D"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
 mode = 1
-mass = 1.0
-gravity_scale = 1.0
 custom_integrator = true
-continuous_cd = 0
 contacts_reported = 1
 contact_monitor = true
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-drop = 0
-seek_heat = true
 
 [node name="pacaseeker" type="Sprite" parent="."]
 position = Vector2( 2.4023, -1.08355 )
@@ -85,30 +68,10 @@ position = Vector2( 22.9207, -0.487671 )
 rotation = -1.54219
 emitting = false
 amount = 15
-lifetime = 1.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
-process_material = null
 texture = ExtResource( 3 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/eyes_closed = SubResource( 2 )
 anims/seeking = SubResource( 3 )
-blend_times = [  ]
 

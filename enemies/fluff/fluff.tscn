@@ -19,39 +19,28 @@
 [ext_resource path="res://sound/spikes_appear.wav" type="AudioStream" id=17]
 [ext_resource path="res://sound/spikes_hide.wav" type="AudioStream" id=18]
 
-[sub_resource type="CanvasItemMaterial" id=18]
+[sub_resource type="CanvasItemMaterial" id=1]
 
-render_priority = 0
 blend_mode = 1
-light_mode = 0
 
-[sub_resource type="CanvasItemMaterial" id=19]
+[sub_resource type="CanvasItemMaterial" id=2]
 
-render_priority = 0
 blend_mode = 1
-light_mode = 0
 
-[sub_resource type="CanvasItemMaterial" id=20]
+[sub_resource type="CanvasItemMaterial" id=3]
 
-render_priority = 0
 blend_mode = 1
-light_mode = 0
 
-[sub_resource type="CanvasItemMaterial" id=21]
+[sub_resource type="CanvasItemMaterial" id=4]
 
-render_priority = 0
 blend_mode = 1
-light_mode = 0
 
-[sub_resource type="CanvasItemMaterial" id=22]
+[sub_resource type="CanvasItemMaterial" id=5]
 
-render_priority = 0
 blend_mode = 1
-light_mode = 0
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id=6]
 
-resource_name = "awake_loop"
 length = 4.0
 loop = true
 step = 0.25
@@ -260,9 +249,8 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=7]
 
-resource_name = "awakening"
 length = 1.5
 loop = true
 step = 0.25
@@ -471,12 +459,10 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=8]
 
-resource_name = "die"
 length = 1.5
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
@@ -780,11 +766,9 @@ tracks/24/keys = {
 "values": [ 180.0 ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=9]
 
 length = 1.2
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
@@ -1124,10 +1108,8 @@ tracks/27/keys = {
 "values": [ 0.0, 0.4 ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=10]
 
-resource_name = "eyeglow"
-length = 1.0
 loop = true
 step = 0.25
 tracks/0/type = "value"
@@ -1167,7 +1149,7 @@ tracks/2/keys = {
 "values": [  ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=11]
 
 length = 4.0
 loop = true
@@ -1365,11 +1347,9 @@ tracks/15/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=12]
 
 length = 2.5
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
@@ -1755,11 +1735,9 @@ tracks/31/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=13]
 
-resource_name = "spike_burst"
 length = 3.5
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
@@ -2074,9 +2052,8 @@ tracks/25/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=14]
 
-resource_name = "spike_burst_glow_bod"
 length = 3.0
 loop = true
 step = 0.01
@@ -2465,11 +2442,10 @@ tracks/31/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=15]
 
 length = 3.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
@@ -2855,10 +2831,9 @@ tracks/31/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=16]
 
 length = 1.5
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
@@ -3161,11 +3136,9 @@ tracks/24/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=17]
 
-length = 1.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
 tracks/0/interp = 2
@@ -3385,10 +3358,9 @@ tracks/17/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=18]
 
 length = 1.5
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
@@ -3595,7 +3567,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=19]
 
 length = 4.0
 loop = true
@@ -3805,7 +3777,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=20]
 
 length = 6.0
 loop = true
@@ -3847,37 +3819,21 @@ tracks/2/keys = {
 "values": [ Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ) ]
 }
 
-[sub_resource type="CircleShape2D" id=16]
+[sub_resource type="CircleShape2D" id=21]
 
-custom_solver_bias = 0.0
 radius = 40.0
 
-[sub_resource type="CircleShape2D" id=17]
+[sub_resource type="CircleShape2D" id=22]
 
-custom_solver_bias = 0.0
 radius = 180.0
 
 [node name="sacra_pinchorb" type="RigidBody2D"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
 mode = 1
-mass = 1.0
-gravity_scale = 1.0
 custom_integrator = true
-continuous_cd = 0
 contacts_reported = 3
 contact_monitor = true
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-drop = 0
 fluff_type = 1
-doing_damage = false
 
 [node name="vortex" type="Sprite" parent="."]
 rotation = -0.624241
@@ -3885,34 +3841,19 @@ texture = ExtResource( 2 )
 
 [node name="vortex_center" type="Sprite" parent="."]
 self_modulate = Color( 0.462745, 0, 0.0235294, 1 )
-material = SubResource( 18 )
+material = SubResource( 1 )
 position = Vector2( 0.397223, 1.1698e-06 )
 rotation = -11.63
 texture = ExtResource( 3 )
-_sections_unfolded = [ "Material", "material", "texture" ]
 
 [node name="smoke_twirl" type="Particles2D" parent="."]
-material = SubResource( 19 )
+material = SubResource( 2 )
 position = Vector2( -0.156686, 10.1065 )
 emitting = false
 amount = 5
 lifetime = 5.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
-process_material = null
 texture = ExtResource( 4 )
-normal_map = null
-h_frames = 1
-v_frames = 1
-_sections_unfolded = [ "Material", "material" ]
 
 [node name="smoke_up" type="Particles2D" parent="."]
 show_behind_parent = true
@@ -3921,21 +3862,9 @@ rotation = 3.12999
 emitting = false
 amount = 20
 lifetime = 7.0
-one_shot = false
 preprocess = 0.1
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
-process_material = null
 texture = ExtResource( 5 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 
 [node name="spike1_L" type="Sprite" parent="."]
 visible = false
@@ -4011,12 +3940,11 @@ texture = ExtResource( 13 )
 
 [node name="glow" type="Sprite" parent="base_sclera/face"]
 visible = false
-material = SubResource( 20 )
+material = SubResource( 3 )
 position = Vector2( -0.427185, 6 )
 texture = ExtResource( 14 )
 vframes = 4
 frame = 3
-_sections_unfolded = [ "Material", "material" ]
 
 [node name="unibrow" type="Sprite" parent="base_sclera"]
 position = Vector2( -0.427185, 12.7112 )
@@ -4026,101 +3954,66 @@ texture = ExtResource( 15 )
 [node name="halo" type="Sprite" parent="."]
 visible = false
 self_modulate = Color( 1, 1, 1, 0.4 )
-material = SubResource( 21 )
+material = SubResource( 4 )
 rotation = -0.698132
 scale = Vector2( 1.3, 1.3 )
 texture = ExtResource( 16 )
-_sections_unfolded = [ "Material", "material" ]
 
 [node name="halo 2" type="Sprite" parent="."]
 visible = false
 self_modulate = Color( 1, 1, 1, 0.4 )
 show_behind_parent = true
-material = SubResource( 22 )
+material = SubResource( 5 )
 rotation = 0.698132
 texture = ExtResource( 16 )
-_sections_unfolded = [ "Material", "material" ]
 
 [node name="anim" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
-anims/awake_loop = SubResource( 1 )
-anims/awakening = SubResource( 2 )
-anims/die = SubResource( 3 )
-anims/die_old = SubResource( 4 )
-anims/eyeglow = SubResource( 5 )
-anims/sleep_loop = SubResource( 6 )
-anims/spike_burst = SubResource( 7 )
-anims/spike_burst(copy) = SubResource( 8 )
-anims/spike_burst_glow_bod = SubResource( 9 )
-anims/spike_burst_gloweyes = SubResource( 10 )
-anims/spike_retract = SubResource( 11 )
-anims/take_damage = SubResource( 12 )
-anims/to_sleep = SubResource( 13 )
-anims/tracking_loop = SubResource( 14 )
+anims/awake_loop = SubResource( 6 )
+anims/awakening = SubResource( 7 )
+anims/die = SubResource( 8 )
+anims/die_old = SubResource( 9 )
+anims/eyeglow = SubResource( 10 )
+anims/sleep_loop = SubResource( 11 )
+anims/spike_burst = SubResource( 12 )
+anims/spike_burst(copy) = SubResource( 13 )
+anims/spike_burst_glow_bod = SubResource( 14 )
+anims/spike_burst_gloweyes = SubResource( 15 )
+anims/spike_retract = SubResource( 16 )
+anims/take_damage = SubResource( 17 )
+anims/to_sleep = SubResource( 18 )
+anims/tracking_loop = SubResource( 19 )
 blend_times = [ "sleep_loop", "spike_burst", 0.5, "spike_retract", "sleep_loop", 0.5 ]
 
 [node name="vortex_anim" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
 playback_speed = 0.15
-anims/vortex_spin = SubResource( 15 )
-blend_times = [  ]
+anims/vortex_spin = SubResource( 20 )
 
 [node name="collision" type="CollisionShape2D" parent="."]
 visible = false
 modulate = Color( 1, 1, 1, 0.241935 )
 position = Vector2( 0.291992, 0 )
-shape = SubResource( 16 )
+shape = SubResource( 21 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="spike_area" type="Area2D" parent="."]
 visible = false
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
 
 [node name="collision" type="CollisionShape2D" parent="spike_area"]
 visible = false
 modulate = Color( 1, 1, 1, 0.5 )
 position = Vector2( -0.323532, 1.29414 )
 scale = Vector2( 1.1, 1.1 )
-shape = SubResource( 17 )
+shape = SubResource( 22 )
 
 [node name="sfx" type="Node2D" parent="."]
 
 [node name="spikes_appear" type="AudioStreamPlayer2D" parent="sfx"]
 stream = ExtResource( 17 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
 
 [node name="spikes_hide" type="AudioStreamPlayer2D" parent="sfx"]
 stream = ExtResource( 18 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
 
 [connection signal="body_entered" from="spike_area" to="." method="_on_body_enter_spikes"]
 [connection signal="body_exited" from="spike_area" to="." method="_on_body_exit_spikes"]

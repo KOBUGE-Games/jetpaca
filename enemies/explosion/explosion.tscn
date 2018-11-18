@@ -6,48 +6,22 @@
 
 [sub_resource type="CanvasItemMaterial" id=1]
 
-render_priority = 0
 blend_mode = 1
-light_mode = 0
 
 [node name="enemy_explosion" type="Particles2D"]
 material = SubResource( 1 )
 emitting = false
 amount = 16
 lifetime = 2.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
 explosiveness = 0.1
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = true
-draw_order = 0
-process_material = null
 texture = ExtResource( 1 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 script = ExtResource( 2 )
-_sections_unfolded = [ "Material", "material" ]
 
 [node name="explosion_sfx" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
 
 [node name="timer" type="Timer" parent="."]
-process_mode = 1
 wait_time = 3.0
 one_shot = true
-autostart = false
 
 [connection signal="timeout" from="timer" to="." method="_on_timeout"]

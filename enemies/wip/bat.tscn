@@ -58,7 +58,6 @@ tracks/3/keys = {
 
 [sub_resource type="Animation" id=2]
 
-length = 1.0
 loop = true
 step = 0.25
 tracks/0/type = "value"
@@ -221,7 +220,6 @@ tracks/3/keys = {
 [sub_resource type="Animation" id=5]
 
 length = 1.25
-loop = false
 step = 0.12
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/pipistrello:frame")
@@ -273,22 +271,6 @@ tracks/3/keys = {
 }
 
 [node name="RigidBody2D" type="RigidBody2D"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-mode = 0
-mass = 1.0
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -304,15 +286,10 @@ hframes = 8
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
 playback_speed = 2.0
 anims/fly_cycle = SubResource( 1 )
 anims/hurt = SubResource( 2 )
 anims/idle = SubResource( 3 )
 anims/open_wings = SubResource( 4 )
 anims/open_wings_to_fly = SubResource( 5 )
-blend_times = [  ]
 

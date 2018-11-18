@@ -12,14 +12,8 @@ region_enabled = true
 region_rect = Rect2( 0, 192, 128, 128 )
 
 [node name="col" type="StaticBody2D" parent="floor1"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="floor1/col"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 16, 128, 16, 128, 128, 0, 128 )
 
 [node name="floor2" type="Sprite" parent="."]
@@ -30,14 +24,8 @@ region_enabled = true
 region_rect = Rect2( 128, 192, 128, 128 )
 
 [node name="col" type="StaticBody2D" parent="floor2"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="floor2/col"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 128, 128, 128, 128, 16, 0, 16 )
 
 [node name="floorlight" type="Sprite" parent="."]
@@ -48,14 +36,8 @@ region_enabled = true
 region_rect = Rect2( 256, 192, 128, 128 )
 
 [node name="col" type="StaticBody2D" parent="floorlight"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="floorlight/col"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 128, 128, 128, 128, 16, 0, 16 )
 
 [node name="stairs" type="Sprite" parent="."]
@@ -66,11 +48,6 @@ region_enabled = true
 region_rect = Rect2( 448, 0, 192, 384 )
 
 [node name="col" type="StaticBody2D" parent="stairs"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="stairs/col"]
 build_mode = 1
@@ -84,14 +61,8 @@ region_enabled = true
 region_rect = Rect2( 0, 320, 128, 192 )
 
 [node name="col" type="StaticBody2D" parent="floor_col1"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="floor_col1/col"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 80, 128, 80, 128, 192, 0, 192 )
 
 [node name="floor_col2" type="Sprite" parent="."]
@@ -102,14 +73,8 @@ region_enabled = true
 region_rect = Rect2( 128, 320, 192, 192 )
 
 [node name="col" type="StaticBody2D" parent="floor_col2"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="floor_col2/col"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 80, 192, 80, 192, 192, 0, 192 )
 
 [node name="shrine" type="Sprite" parent="."]
@@ -120,11 +85,6 @@ region_enabled = true
 region_rect = Rect2( 320, 320, 128, 192 )
 
 [node name="col" type="StaticBody2D" parent="shrine"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="shrine/col"]
 build_mode = 1
@@ -173,14 +133,8 @@ region_enabled = true
 region_rect = Rect2( 768, 0, 192, 128 )
 
 [node name="col" type="StaticBody2D" parent="col2_begin"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="col2_begin/col"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 64, 16, 80, 176, 80, 192, 64, 192, 0, 0, 0 )
 
 [node name="roof1" type="Sprite" parent="."]
@@ -191,14 +145,8 @@ region_enabled = true
 region_rect = Rect2( 192, 0, 128, 64 )
 
 [node name="col" type="StaticBody2D" parent="roof1"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="roof1/col"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 64, 128, 64, 128, 0, 0, 0 )
 
 [node name="roof2" type="Sprite" parent="."]
@@ -209,14 +157,8 @@ region_enabled = true
 region_rect = Rect2( 320, 0, 128, 64 )
 
 [node name="col" type="StaticBody2D" parent="roof2"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="roof2/col"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 64, 128, 64, 128, 0, 0, 0 )
 
 [node name="col2_detail2" type="Sprite" parent="."]
@@ -234,14 +176,8 @@ region_enabled = true
 region_rect = Rect2( 832, 128, 128, 128 )
 
 [node name="col" type="StaticBody2D" parent="low_corner"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="low_corner/col"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 128, 48, 128, 80, 80, 80, 0, 0, 0 )
 
 [node name="hi_corner" type="Sprite" parent="."]
@@ -252,14 +188,8 @@ region_enabled = true
 region_rect = Rect2( 768, 384, 128, 128 )
 
 [node name="col" type="StaticBody2D" parent="hi_corner"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="hi_corner/col"]
-build_mode = 0
 polygon = PoolVector2Array( 48, 128, 48, 16, 128, 16, 128, 128 )
 
 [node name="wall_base" type="Sprite" parent="."]
@@ -270,14 +200,8 @@ region_enabled = true
 region_rect = Rect2( 768, 256, 128, 128 )
 
 [node name="col" type="StaticBody2D" parent="wall_base"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="wall_base/col"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 128, 128, 128, 128, 0, 48, 0, 0, 16 )
 
 [node name="wall" type="Sprite" parent="."]
@@ -288,14 +212,8 @@ region_enabled = true
 region_rect = Rect2( 896, 256, 128, 128 )
 
 [node name="col" type="StaticBody2D" parent="wall"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="wall/col"]
-build_mode = 0
 polygon = PoolVector2Array( 48, 128, 128, 128, 128, 0, 48, 0 )
 
 [node name="ramp" type="Sprite" parent="."]
@@ -306,14 +224,8 @@ region_enabled = true
 region_rect = Rect2( 640, 256, 128, 256 )
 
 [node name="col" type="StaticBody2D" parent="ramp"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="ramp/col"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 256, 0, 144, 128, 16, 128, 256 )
 
 [node name="roof_deco" type="Sprite" parent="."]
@@ -324,11 +236,6 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 192, 192 )
 
 [node name="col" type="StaticBody2D" parent="roof_deco"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="roof_deco/col"]
 build_mode = 1
@@ -363,11 +270,6 @@ region_enabled = true
 region_rect = Rect2( 896, 384, 128, 128 )
 
 [node name="col" type="StaticBody2D" parent="top_corner"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="colpoly" type="CollisionPolygon2D" parent="top_corner/col"]
 build_mode = 1

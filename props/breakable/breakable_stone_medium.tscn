@@ -8,24 +8,9 @@
 [node name="breakable_stone" type="Node2D"]
 
 [node name="body" type="RigidBody2D" parent="."]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
 mode = 3
-mass = 1.0
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
 can_sleep = false
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-drop = 0
 
 [node name="Sprite" type="Sprite" parent="body"]
 position = Vector2( 158.271, -3.01471 )
@@ -35,38 +20,16 @@ texture = ExtResource( 2 )
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="body"]
 position = Vector2( 145.574, -1.72598 )
 scale = Vector2( 0.512601, 1 )
-build_mode = 0
 polygon = PoolVector2Array( -452.92, -44.2428, -93.7813, -45.6031, 88.5089, -48.3239, 434.044, -44.2428, 457.17, 26.4966, 24.5713, 41.4608, -459.722, 31.9382 )
 
 [node name="particles" type="Particles2D" parent="."]
 emitting = false
 amount = 96
 lifetime = 2.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
 explosiveness = 0.05
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = true
-draw_order = 0
-process_material = null
 texture = ExtResource( 3 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 
 [node name="break_sfx" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 0, 9.53674e-07 )
 stream = ExtResource( 4 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
 

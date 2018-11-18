@@ -24,14 +24,12 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 
-custom_solver_bias = 0.0
 extents = Vector2( 10, 50 )
 
 [sub_resource type="Animation" id=2]
 
 resource_name = "2-Attack_to_tired"
 length = 3.0
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib/Chest:rotation_degrees")
@@ -776,8 +774,6 @@ tracks/28/keys = {
 [sub_resource type="Animation" id=4]
 
 length = 2.6
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/0/interp = 1
@@ -1251,7 +1247,6 @@ tracks/38/keys = {
 
 resource_name = "block"
 length = 1.5
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/ArmBG/ForearmBG:rotation_degrees")
@@ -2669,7 +2664,6 @@ tracks/28/keys = {
 [sub_resource type="Animation" id=9]
 
 length = 7.5
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib:rotation_degrees")
@@ -2987,7 +2981,6 @@ tracks/25/keys = {
 [sub_resource type="Animation" id=10]
 
 length = 0.8
-loop = false
 step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib/Chest:rotation_degrees")
@@ -3464,7 +3457,6 @@ tracks/38/keys = {
 
 length = 9.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib/Chest:rotation_degrees")
 tracks/0/interp = 2
@@ -4400,7 +4392,6 @@ tracks/36/keys = {
 [sub_resource type="Animation" id=13]
 
 length = 3.5
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib/Chest:rotation_degrees")
@@ -5473,33 +5464,17 @@ tracks/36/keys = {
 
 [sub_resource type="CircleShape2D" id=16]
 
-custom_solver_bias = 0.0
 radius = 80.0
 
 [sub_resource type="CircleShape2D" id=17]
 
-custom_solver_bias = 0.0
 radius = 180.0
 
 [node name="warrior" type="RigidBody2D"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
 mode = 2
 mass = 20.0
-gravity_scale = 1.0
 custom_integrator = true
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-drop = 0
 
 [node name="sprites" type="Node2D" parent="."]
 
@@ -5530,13 +5505,6 @@ texture = ExtResource( 5 )
 offset = Vector2( 0.291992, -41.1163 )
 
 [node name="damager" type="Area2D" parent="sprites/ArmBG/ForearmBG/HandBG/Sword"]
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
 
 [node name="collision" type="CollisionShape2D" parent="sprites/ArmBG/ForearmBG/HandBG/Sword/damager"]
 visible = false
@@ -5663,21 +5631,9 @@ position = Vector2( 1.41269, 12.8641 )
 emitting = false
 amount = 12
 lifetime = 0.5
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
 explosiveness = 0.1
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
-process_material = null
 texture = ExtResource( 20 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 
 [node name="shadow" type="Sprite" parent="sprites/Rib/Chest/shield_orientation/ArmFG/ForearmFG/HandFG/Shield"]
 show_behind_parent = true
@@ -5687,15 +5643,8 @@ texture = ExtResource( 21 )
 [node name="sword_arm" type="RemoteTransform2D" parent="sprites/Rib/Chest"]
 position = Vector2( -44.8226, 8.54925 )
 remote_path = NodePath("../../../ArmBG")
-use_global_coordinates = true
-update_position = true
-update_rotation = true
-update_scale = true
 
 [node name="anim" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
 playback_default_blend_time = 1.0
 playback_speed = 2.0
 anims/2-Attack_to_tired = SubResource( 2 )
@@ -5712,7 +5661,6 @@ anims/moving_upwards = SubResource( 12 )
 anims/take_damage = SubResource( 13 )
 anims/tired = SubResource( 14 )
 anims/turn = SubResource( 15 )
-blend_times = [  ]
 
 [node name="collision" type="CollisionShape2D" parent="."]
 visible = false
@@ -5721,13 +5669,6 @@ shape = SubResource( 16 )
 
 [node name="action_area" type="Area2D" parent="."]
 position = Vector2( -0.263527, 0 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
 
 [node name="collision" type="CollisionShape2D" parent="action_area"]
 visible = false

@@ -1,60 +1,49 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://art/cavetiles.png" type="Texture" id=1]
 
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+points = PoolVector2Array( 0, 128, 0, 24, 64, 24, 64, 128 )
+
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
-custom_solver_bias = 0.0
-points = PoolVector2Array( 0, 128, 0, 24, 64, 24, 64, 128 )
+points = PoolVector2Array( 0, 24, 128, 88, 128, 192, 0, 192 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+points = PoolVector2Array( 64, 192, 0, 192, 0, 24, 64, 88 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+points = PoolVector2Array( 128, 24, 96, 128, 0, 128, 0, 24 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 
-custom_solver_bias = 0.0
-points = PoolVector2Array( 0, 24, 128, 88, 128, 192, 0, 192 )
+points = PoolVector2Array( 0, 128, 0, 0, 96, 0, 96, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+
+points = PoolVector2Array( 0, 32, 0, 0, 96, 0, 64, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
 
-custom_solver_bias = 0.0
-points = PoolVector2Array( 64, 192, 0, 192, 0, 24, 64, 88 )
+points = PoolVector2Array( 0, 32, 0, 0, 128, 0, 128, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+
+points = PoolVector2Array( 64, 96, 0, 40, 0, 0, 64, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
 
-custom_solver_bias = 0.0
-points = PoolVector2Array( 128, 24, 96, 128, 0, 128, 0, 24 )
+points = PoolVector2Array( 0, 0, 96, 0, 96, 104, 128, 152, 128, 256, 0, 256 )
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 
-custom_solver_bias = 0.0
-points = PoolVector2Array( 0, 128, 0, 0, 96, 0, 96, 128 )
-
-[sub_resource type="ConvexPolygonShape2D" id=12]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( 0, 32, 0, 0, 96, 0, 64, 32 )
-
-[sub_resource type="ConvexPolygonShape2D" id=13]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( 0, 32, 0, 0, 128, 0, 128, 32 )
-
-[sub_resource type="ConvexPolygonShape2D" id=15]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( 64, 96, 0, 40, 0, 0, 64, 0 )
-
-[sub_resource type="ConvexPolygonShape2D" id=17]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( 0, 0, 96, 0, 96, 104, 128, 152, 128, 256, 0, 256 )
-
-[sub_resource type="ConvexPolygonShape2D" id=19]
-
-custom_solver_bias = 0.0
 points = PoolVector2Array( 0, 0, 128, 0, 128, 40, 96, 64, 96, 128, 0, 128 )
 
-[sub_resource type="ConvexPolygonShape2D" id=21]
+[sub_resource type="ConvexPolygonShape2D" id=11]
 
-custom_solver_bias = 0.0
 points = PoolVector2Array( 0, 128, 0, 24, 128, 24, 128, 128 )
 
 [node name="cave_tileset" type="Node"]
@@ -67,14 +56,9 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 64, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Floor1"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Floor1/static_body_2d"]
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="Floor2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -85,14 +69,9 @@ region_enabled = true
 region_rect = Rect2( 64, 0, 64, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Floor2"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Floor2/static_body_2d"]
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="Ramp 22" type="Sprite" parent="."]
 editor/display_folded = true
@@ -103,14 +82,9 @@ region_enabled = true
 region_rect = Rect2( 128, 0, 128, 192 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ramp 22"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d 2" type="CollisionShape2D" parent="Ramp 22/static_body_2d"]
-shape = SubResource( 5 )
+shape = SubResource( 2 )
 
 [node name="Ramp 45" type="Sprite" parent="."]
 editor/display_folded = true
@@ -121,14 +95,9 @@ region_enabled = true
 region_rect = Rect2( 256, 64, 64, 192 )
 
 [node name="static_body_2d 2" type="StaticBody2D" parent="Ramp 45"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d 3" type="CollisionShape2D" parent="Ramp 45/static_body_2d 2"]
-shape = SubResource( 7 )
+shape = SubResource( 3 )
 
 [node name="Edge" type="Sprite" parent="."]
 editor/display_folded = true
@@ -139,14 +108,9 @@ region_enabled = true
 region_rect = Rect2( 320, 128, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Edge"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Edge/static_body_2d"]
-shape = SubResource( 9 )
+shape = SubResource( 4 )
 
 [node name="Wall" type="Sprite" parent="."]
 position = Vector2( 320, 256 )
@@ -156,14 +120,9 @@ region_enabled = true
 region_rect = Rect2( 320, 256, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Wall"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Wall/static_body_2d"]
-shape = SubResource( 10 )
+shape = SubResource( 5 )
 
 [node name="Ceiling 2 Wall" type="Sprite" parent="."]
 editor/display_folded = true
@@ -174,14 +133,9 @@ region_enabled = true
 region_rect = Rect2( 192, 448, 128, 64 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ceiling 2 Wall"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Ceiling 2 Wall/static_body_2d"]
-shape = SubResource( 12 )
+shape = SubResource( 6 )
 
 [node name="Ceiling" type="Sprite" parent="."]
 position = Vector2( 192, 384 )
@@ -191,14 +145,9 @@ region_enabled = true
 region_rect = Rect2( 192, 384, 128, 64 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ceiling"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Ceiling/static_body_2d"]
-shape = SubResource( 13 )
+shape = SubResource( 7 )
 
 [node name="Ceiling Ramp" type="Sprite" parent="."]
 editor/display_folded = true
@@ -209,14 +158,9 @@ region_enabled = true
 region_rect = Rect2( 128, 256, 64, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ceiling Ramp"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Ceiling Ramp/static_body_2d"]
-shape = SubResource( 15 )
+shape = SubResource( 8 )
 
 [node name="Floor 2 Wall" type="Sprite" parent="."]
 editor/display_folded = true
@@ -227,14 +171,9 @@ region_enabled = true
 region_rect = Rect2( 0, 256, 128, 256 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Floor 2 Wall"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Floor 2 Wall/static_body_2d"]
-shape = SubResource( 17 )
+shape = SubResource( 9 )
 
 [node name="Wall 2 Ceiling" type="Sprite" parent="."]
 editor/display_folded = true
@@ -245,14 +184,9 @@ region_enabled = true
 region_rect = Rect2( 0, 128, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Wall 2 Ceiling"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Wall 2 Ceiling/static_body_2d"]
-shape = SubResource( 19 )
+shape = SubResource( 10 )
 
 [node name="Nothing Big" type="Sprite" parent="."]
 position = Vector2( 192, 256 )
@@ -276,14 +210,9 @@ region_enabled = true
 region_rect = Rect2( 384, 0, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Floor Variation"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Floor Variation/static_body_2d"]
-shape = SubResource( 21 )
+shape = SubResource( 11 )
 
 [node name="Wall Variation" type="Sprite" parent="."]
 position = Vector2( 320, 384 )
@@ -293,14 +222,9 @@ region_enabled = true
 region_rect = Rect2( 320, 384, 128, 128 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Wall Variation"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="Wall Variation/static_body_2d"]
-shape = SubResource( 10 )
+shape = SubResource( 5 )
 
 [node name="Ceiling Variation" type="Sprite" parent="."]
 position = Vector2( 128, 184 )
@@ -310,12 +234,7 @@ region_enabled = true
 region_rect = Rect2( 128, 184, 128, 64 )
 
 [node name="static_body_2d" type="StaticBody2D" parent="Ceiling Variation"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="collision_shape_2d1" type="CollisionShape2D" parent="Ceiling Variation/static_body_2d"]
-shape = SubResource( 13 )
+shape = SubResource( 7 )
 

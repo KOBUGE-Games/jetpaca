@@ -10,7 +10,6 @@
 [sub_resource type="Animation" id=1]
 
 length = 2.0
-loop = false
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("up:position")
@@ -111,63 +110,25 @@ tracks/7/keys = {
 
 [sub_resource type="CircleShape2D" id=2]
 
-custom_solver_bias = 0.0
 radius = 128.0
 
 [node name="door" type="Node2D"]
 script = ExtResource( 1 )
-key_idx = 0
-no_key = false
 
 [node name="smoke" type="Particles2D" parent="."]
 position = Vector2( 0.735107, -125.701 )
-emitting = true
 amount = 32
 lifetime = 2.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = true
-draw_order = 0
-process_material = null
 texture = ExtResource( 2 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 
 [node name="smoke 2" type="Particles2D" parent="."]
 position = Vector2( 2.20529, 112.469 )
-emitting = true
 amount = 32
 lifetime = 2.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = true
-draw_order = 0
-process_material = null
 texture = ExtResource( 2 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 
 [node name="up" type="StaticBody2D" parent="."]
 position = Vector2( -1.629, -68.4185 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="Sprite" type="Sprite" parent="up"]
 texture = ExtResource( 3 )
@@ -175,33 +136,20 @@ flip_h = true
 flip_v = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="up"]
-build_mode = 0
 polygon = PoolVector2Array( -8.17093, -62.7563, -7.63057, 44.235, 11.8224, 63.688, 12.9031, -62.7563 )
 
 [node name="down" type="StaticBody2D" parent="."]
 position = Vector2( 0, 54.7333 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="Sprite" type="Sprite" parent="down"]
 texture = ExtResource( 3 )
 flip_h = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="down"]
-build_mode = 0
 polygon = PoolVector2Array( 8.57231, -62.8426, -8.71921, -48.2528, -7.09813, 64.1421, 13.4356, 63.6017 )
 
 [node name="anim" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/open = SubResource( 1 )
-blend_times = [  ]
 
 [node name="sfx" type="Node2D" parent="."]
 
@@ -209,34 +157,11 @@ blend_times = [  ]
 stream = ExtResource( 4 )
 volume_db = -6.0
 pitch_scale = 1.4
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
-_sections_unfolded = [ "stream" ]
 
 [node name="door_slam" type="AudioStreamPlayer2D" parent="sfx"]
 stream = ExtResource( 5 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
-_sections_unfolded = [ "stream" ]
 
 [node name="area" type="Area2D" parent="."]
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area"]
 shape = SubResource( 2 )

@@ -30,86 +30,49 @@
 [sub_resource type="PhysicsMaterial" id=1]
 
 friction = 0.0
-rough = false
-bounce = 0.0
-absorbent = false
 
 [sub_resource type="Gradient" id=2]
 
 offsets = PoolRealArray( 0, 0.2, 0.8, 1 )
 colors = PoolColorArray( 0.74, 0.74, 0.76, 0.29, 0.49, 0.5, 0.51, 0.67, 0.09, 0.1, 0.09, 0.06, 0, 0, 0, 0 )
-_sections_unfolded = [ "colors", "offsets" ]
 
 [sub_resource type="GradientTexture" id=3]
 
-flags = 4
 gradient = SubResource( 2 )
 width = 256
-_sections_unfolded = [ "gradient" ]
 
 [sub_resource type="Curve" id=4]
 
 min_value = 0.99
 max_value = 3.0
-bake_resolution = 100
 _data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 3 ), -0.0134279, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=5]
 
-flags = 4
 width = 256
 curve = SubResource( 4 )
-_sections_unfolded = [ "curve" ]
 
 [sub_resource type="ParticlesMaterial" id=6]
 
-render_priority = 0
-trail_divisor = 1
-emission_shape = 0
-flag_align_y = false
-flag_rotate_y = false
 flag_disable_z = true
 spread = 0.0
-flatness = 0.0
 gravity = Vector3( 0, 200, 0 )
-initial_velocity = 0.0
-initial_velocity_random = 0.0
 angular_velocity = 60.0
 angular_velocity_random = 1.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-linear_accel = 0.0
-linear_accel_random = 0.0
-radial_accel = 0.0
-radial_accel_random = 0.0
-tangential_accel = 0.0
-tangential_accel_random = 0.0
 damping = 1.0
-damping_random = 0.0
-angle = 0.0
-angle_random = 0.0
-scale = 1.0
 scale_random = 0.2
 scale_curve = SubResource( 5 )
 color_ramp = SubResource( 3 )
-hue_variation = 0.0
-hue_variation_random = 0.0
-anim_speed = 0.0
-anim_speed_random = 0.0
-anim_offset = 0.0
-anim_offset_random = 0.0
-anim_loop = false
-_sections_unfolded = [ "color_ramp" ]
 
 [sub_resource type="Gradient" id=7]
 
 offsets = PoolRealArray( 0, 0.5, 1 )
 colors = PoolColorArray( 1, 0.92, 0.44, 1, 0.98, 0.31, 0, 1, 0.580392, 0, 0, 0 )
-_sections_unfolded = [ "colors", "offsets" ]
 
 [sub_resource type="GradientTexture" id=8]
 
-flags = 4
 gradient = SubResource( 7 )
 width = 256
 
@@ -117,137 +80,72 @@ width = 256
 
 min_value = 0.2
 max_value = 0.45
-bake_resolution = 100
 _data = [ Vector2( 0, 0.45 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.2 ), 0.0, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=10]
 
-flags = 4
 width = 256
 curve = SubResource( 9 )
-_sections_unfolded = [ "curve" ]
 
 [sub_resource type="ParticlesMaterial" id=11]
 
-render_priority = 0
-trail_divisor = 1
-emission_shape = 0
-flag_align_y = false
-flag_rotate_y = false
 flag_disable_z = true
 spread = 10.0
-flatness = 0.0
 gravity = Vector3( 0, 10, 0 )
 initial_velocity = 50.0
-initial_velocity_random = 0.0
 angular_velocity = 60.0
-angular_velocity_random = 0.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-linear_accel = 0.0
-linear_accel_random = 0.0
-radial_accel = 0.0
-radial_accel_random = 0.0
-tangential_accel = 0.0
-tangential_accel_random = 0.0
 damping = 2.4
-damping_random = 0.0
-angle = 0.0
-angle_random = 0.0
-scale = 1.0
-scale_random = 0.0
 scale_curve = SubResource( 10 )
 color_ramp = SubResource( 8 )
-hue_variation = 0.0
-hue_variation_random = 0.0
-anim_speed = 0.0
-anim_speed_random = 0.0
-anim_offset = 0.0
-anim_offset_random = 0.0
-anim_loop = false
 
 [sub_resource type="CanvasItemMaterial" id=12]
 
-render_priority = 0
 blend_mode = 1
-light_mode = 0
 
 [sub_resource type="Gradient" id=13]
 
 offsets = PoolRealArray( 0, 0.2, 1 )
 colors = PoolColorArray( 0.97, 0.84, 0.17, 1, 0.98, 0.31, 0, 1, 0, 0, 0, 0 )
-_sections_unfolded = [ "colors", "offsets" ]
 
 [sub_resource type="GradientTexture" id=14]
 
-flags = 4
 gradient = SubResource( 13 )
 width = 256
-_sections_unfolded = [ "gradient" ]
 
 [sub_resource type="Curve" id=15]
 
 min_value = 0.99
 max_value = 1.5
-bake_resolution = 100
 _data = [ Vector2( 0, 1.5 ), 0.0, 0.0, 0, 0, Vector2( 1, 1.2 ), 0.0, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=16]
 
-flags = 4
 width = 256
 curve = SubResource( 15 )
 
 [sub_resource type="ParticlesMaterial" id=17]
 
-render_priority = 0
-trail_divisor = 1
-emission_shape = 0
-flag_align_y = false
-flag_rotate_y = false
 flag_disable_z = true
 spread = 10.0
-flatness = 0.0
 gravity = Vector3( 0, -200, 0 )
 initial_velocity = 130.0
-initial_velocity_random = 0.0
 angular_velocity = 230.0
 angular_velocity_random = 0.25
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-linear_accel = 0.0
-linear_accel_random = 0.0
-radial_accel = 0.0
-radial_accel_random = 0.0
-tangential_accel = 0.0
-tangential_accel_random = 0.0
 damping = 2.4
-damping_random = 0.0
-angle = 0.0
-angle_random = 0.0
-scale = 1.0
-scale_random = 0.0
 scale_curve = SubResource( 16 )
 color_ramp = SubResource( 14 )
-hue_variation = 0.0
-hue_variation_random = 0.0
-anim_speed = 0.0
-anim_speed_random = 0.0
-anim_offset = 0.0
-anim_offset_random = 0.0
-anim_loop = false
-_sections_unfolded = [ "Angular Velocity" ]
 
 [sub_resource type="CanvasItemMaterial" id=18]
 
-render_priority = 0
 blend_mode = 1
-light_mode = 0
 
 [sub_resource type="Animation" id=19]
 
 length = 0.01
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete/over/neck/head:rotation_degrees")
@@ -745,7 +643,6 @@ tracks/40/keys = {
 [sub_resource type="Animation" id=20]
 
 length = 1.5
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete:rotation_degrees")
@@ -1172,7 +1069,6 @@ tracks/34/keys = {
 
 length = 1.5
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete:rotation_degrees")
 tracks/0/interp = 1
@@ -1621,7 +1517,6 @@ tracks/36/keys = {
 [sub_resource type="Animation" id=22]
 
 length = 4.75
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete:rotation_degrees")
@@ -2413,7 +2308,6 @@ tracks/31/keys = {
 [sub_resource type="Animation" id=24]
 
 length = 0.6
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete:rotation_degrees")
@@ -3637,7 +3531,6 @@ tracks/48/keys = {
 [sub_resource type="Animation" id=26]
 
 length = 0.5
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete:rotation_degrees")
@@ -4196,7 +4089,6 @@ tracks/45/keys = {
 
 length = 2.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete:rotation_degrees")
 tracks/0/interp = 1
@@ -4849,7 +4741,6 @@ tracks/53/keys = {
 [sub_resource type="Animation" id=28]
 
 length = 0.6
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete:rotation_degrees")
@@ -6121,7 +6012,6 @@ tracks/53/keys = {
 [sub_resource type="Animation" id=30]
 
 length = 0.6
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete:rotation_degrees")
@@ -9817,7 +9707,6 @@ tracks/49/keys = {
 [sub_resource type="Animation" id=36]
 
 length = 5.0
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete:rotation_degrees")
@@ -10669,8 +10558,6 @@ tracks/35/keys = {
 [sub_resource type="Animation" id=38]
 
 length = 12.0
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete:rotation_degrees")
 tracks/0/interp = 2
@@ -11882,9 +11769,6 @@ tracks/50/keys = {
 
 [sub_resource type="Animation" id=40]
 
-length = 1.0
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("body:rotation_degrees")
 tracks/0/interp = 2
@@ -12505,8 +12389,6 @@ tracks/50/keys = {
 
 [sub_resource type="Animation" id=41]
 
-length = 1.0
-loop = false
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("body:rotation_degrees")
@@ -13138,7 +13020,6 @@ tracks/51/keys = {
 [sub_resource type="Animation" id=42]
 
 length = 0.75
-loop = false
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("body:rotation_degrees")
@@ -16195,7 +16076,6 @@ tracks/50/keys = {
 
 length = 3.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete:rotation_degrees")
 tracks/0/interp = 2
@@ -19151,23 +19031,18 @@ tracks/41/keys = {
 
 [sub_resource type="CircleShape2D" id=52]
 
-custom_solver_bias = 0.0
 radius = 35.0
 
 [sub_resource type="RectangleShape2D" id=53]
 
-custom_solver_bias = 0.0
 extents = Vector2( 380, 280 )
 
 [sub_resource type="Gradient" id=54]
 
-offsets = PoolRealArray( 0, 1 )
 colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
-_sections_unfolded = [ "colors" ]
 
 [sub_resource type="GradientTexture" id=55]
 
-flags = 4
 gradient = SubResource( 54 )
 width = 256
 
@@ -19175,61 +19050,28 @@ width = 256
 
 min_value = 0.5
 max_value = 2.0
-bake_resolution = 100
 _data = [ Vector2( 0, 2 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.5 ), 0.0, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=57]
 
-flags = 4
 width = 256
 curve = SubResource( 56 )
 
 [sub_resource type="ParticlesMaterial" id=58]
 
-render_priority = 0
-trail_divisor = 1
 emission_shape = 2
 emission_box_extents = Vector3( 32, 32, 0 )
-flag_align_y = false
-flag_rotate_y = false
 flag_disable_z = true
 spread = 180.0
-flatness = 0.0
 gravity = Vector3( 0, 0, 0 )
-initial_velocity = 0.0
-initial_velocity_random = 0.0
-angular_velocity = 0.0
-angular_velocity_random = 0.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 linear_accel = 10.0
-linear_accel_random = 0.0
-radial_accel = 0.0
-radial_accel_random = 0.0
-tangential_accel = 0.0
-tangential_accel_random = 0.0
-damping = 0.0
-damping_random = 0.0
-angle = 0.0
-angle_random = 0.0
-scale = 1.0
-scale_random = 0.0
 scale_curve = SubResource( 57 )
 color_ramp = SubResource( 55 )
-hue_variation = 0.0
-hue_variation_random = 0.0
-anim_speed = 0.0
-anim_speed_random = 0.0
-anim_offset = 0.0
-anim_offset_random = 0.0
-anim_loop = false
-_sections_unfolded = [ "Color", "Emission Shape", "Gravity", "Linear Accel", "Scale", "Spread" ]
 
 [sub_resource type="Animation" id=59]
 
-length = 1.0
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("camera:offset")
 tracks/0/interp = 2
@@ -19246,23 +19088,9 @@ tracks/0/keys = {
 [node name="alpaca" type="RigidBody2D" groups=[
 "character",
 ]]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
 mode = 2
-mass = 1.0
 physics_material_override = SubResource( 1 )
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
 contacts_reported = 2
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
@@ -19433,22 +19261,9 @@ position = Vector2( 2.025, 38.996 )
 emitting = false
 amount = 22
 lifetime = 0.4
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
 process_material = SubResource( 6 )
 texture = ExtResource( 18 )
-normal_map = null
-h_frames = 1
-v_frames = 1
-_sections_unfolded = [ "Process Material", "Time", "Transform", "process_material" ]
 
 [node name="jetpack_b" type="Particles2D" parent="body/culete/rocket_bg"]
 show_behind_parent = true
@@ -19457,22 +19272,9 @@ rotation = 1.5708
 emitting = false
 amount = 16
 lifetime = 0.2
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
 process_material = SubResource( 11 )
 texture = ExtResource( 18 )
-normal_map = null
-h_frames = 1
-v_frames = 1
-_sections_unfolded = [ "Process Material", "Transform", "process_material" ]
 
 [node name="arm__bg" type="Sprite" parent="body/culete"]
 editor/display_folded = true
@@ -19519,22 +19321,9 @@ position = Vector2( 2.02525, 38.9956 )
 emitting = false
 amount = 22
 lifetime = 0.4
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
 process_material = SubResource( 6 )
 texture = ExtResource( 18 )
-normal_map = null
-h_frames = 1
-v_frames = 1
-_sections_unfolded = [ "Process Material", "Time", "Transform", "process_material" ]
 
 [node name="jetpack_a" type="Particles2D" parent="body/culete/rocket_fg"]
 show_behind_parent = true
@@ -19543,22 +19332,9 @@ rotation = 1.5708
 emitting = false
 amount = 16
 lifetime = 0.2
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
 process_material = SubResource( 11 )
 texture = ExtResource( 18 )
-normal_map = null
-h_frames = 1
-v_frames = 1
-_sections_unfolded = [ "Process Material", "Transform", "process_material" ]
 
 [node name="jetpack_atk" type="Particles2D" parent="body/culete/rocket_fg"]
 self_modulate = Color( 1, 1, 1, 0.335758 )
@@ -19568,22 +19344,9 @@ rotation = 1.5708
 emitting = false
 amount = 24
 lifetime = 0.5
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
 process_material = SubResource( 17 )
 texture = ExtResource( 21 )
-normal_map = null
-h_frames = 1
-v_frames = 1
-_sections_unfolded = [ "Material", "Process Material", "Transform", "material", "process_material" ]
 
 [node name="velocity" type="Sprite" parent="body"]
 visible = false
@@ -19594,12 +19357,9 @@ rotation = 1.44341
 texture = ExtResource( 22 )
 hframes = 4
 frame = 3
-_sections_unfolded = [ "Material", "material" ]
 
 [node name="animation" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
 autoplay = "DEFAULT_POSE"
-playback_process_mode = 1
 playback_default_blend_time = 1.5
 playback_speed = 4.0
 anims/DEFAULT_POSE = SubResource( 19 )
@@ -19638,11 +19398,6 @@ anims/walk = SubResource( 51 )
 blend_times = [ "attack_back_1start", "attack_back_2loop", 0.5, "attack_down_1start", "attack_down_2loop", 0.5, "attack_front_1start", "attack_front_2loop", 0.5, "attack_up_1start", "attack_up_2loop", 0.5 ]
 
 [node name="hud" type="CanvasLayer" parent="."]
-layer = 1
-offset = Vector2( 0, 0 )
-rotation = 0.0
-scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 
 [node name="base" parent="hud" instance=ExtResource( 23 )]
 
@@ -19650,25 +19405,9 @@ transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 
 [node name="attack" type="AudioStreamPlayer2D" parent="sfx"]
 stream = ExtResource( 24 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
 
 [node name="jetpack" type="AudioStreamPlayer2D" parent="sfx"]
 stream = ExtResource( 25 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
 
 [node name="col_circle" type="CollisionShape2D" parent="."]
 visible = false
@@ -19679,53 +19418,28 @@ __meta__ = {
 }
 
 [node name="camera" type="Camera2D" parent="."]
-anchor_mode = 1
-rotating = false
 current = true
-zoom = Vector2( 1, 1 )
 limit_left = 1
 limit_top = 1
-limit_right = 10000000
-limit_bottom = 10000000
-limit_smoothed = false
 drag_margin_h_enabled = false
 drag_margin_v_enabled = false
-smoothing_enabled = false
-smoothing_speed = 5.0
-offset_v = 0.0
-offset_h = 0.0
 drag_margin_left = 0.3
 drag_margin_top = 0.3
 drag_margin_right = 0.3
 drag_margin_bottom = 0.3
-editor_draw_screen = true
-editor_draw_limits = false
-editor_draw_drag_margin = false
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="restart_wait" type="Timer" parent="."]
-process_mode = 1
 wait_time = 3.0
-one_shot = false
-autostart = false
 
 [node name="level_end_wait" type="Timer" parent="."]
-process_mode = 1
 wait_time = 3.0
 one_shot = true
-autostart = false
 
 [node name="attack_area" type="Area2D" parent="."]
 position = Vector2( 2.82726, 1.1566 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="attack_area"]
 self_modulate = Color( 1, 1, 1, 0.139785 )
@@ -19743,33 +19457,16 @@ scale = Vector2( 4.37632, 1 )
 position = Vector2( 0.487679, 29.7481 )
 rotation = -3.14075
 emitting = false
-amount = 8
 lifetime = 0.9
 one_shot = true
-preprocess = 0.0
-speed_scale = 1.0
 explosiveness = 0.9
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
 process_material = SubResource( 58 )
 texture = ExtResource( 26 )
-normal_map = null
-h_frames = 1
-v_frames = 1
-_sections_unfolded = [ "Process Material", "Time", "process_material" ]
 
 [node name="camera_animation" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
 playback_speed = 2.0
 anims/shake = SubResource( 59 )
-blend_times = [  ]
 
 [connection signal="timeout" from="restart_wait" to="." method="_restart"]
 [connection signal="timeout" from="level_end_wait" to="." method="_level_end"]

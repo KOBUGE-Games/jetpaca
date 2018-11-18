@@ -5,16 +5,11 @@
 
 [sub_resource type="CircleShape2D" id=1]
 
-custom_solver_bias = 0.0
 radius = 14.0
 
 [node name="spinning_log" type="StaticBody2D"]
 position = Vector2( 4.76837e-07, 4.76837e-07 )
 scale = Vector2( 0.5, 0.5 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 6.0
 script = ExtResource( 1 )
 
@@ -29,7 +24,6 @@ scale = Vector2( 1.88235, 1.88235 )
 shape = SubResource( 1 )
 
 [node name="screenprox" type="VisibilityNotifier2D" parent="."]
-rect = Rect2( -10, -10, 20, 20 )
 
 [connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="screenprox" to="." method="_on_exit_screen"]

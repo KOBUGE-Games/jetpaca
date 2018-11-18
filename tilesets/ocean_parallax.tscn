@@ -5,21 +5,12 @@
 [ext_resource path="res://art/ocean_fg.png" type="Texture" id=3]
 
 [node name="ocean_bg" type="ParallaxBackground"]
-layer = -1
-offset = Vector2( 0, 0 )
-rotation = 0.0
-scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-scroll_offset = Vector2( 0, 0 )
-scroll_base_offset = Vector2( 0, 0 )
 scroll_base_scale = Vector2( 1, 0.05 )
-scroll_limit_begin = Vector2( 0, 0 )
 scroll_limit_end = Vector2( 0, 1024 )
 scroll_ignore_camera_zoom = false
 
 [node name="ocean_layer" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.01, 1 )
-motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 1024, 0 )
 
 [node name="ocean" type="Sprite" parent="ocean_layer"]
@@ -28,28 +19,12 @@ centered = false
 
 [node name="water" type="Particles2D" parent="ocean_layer"]
 position = Vector2( 512, 768 )
-emitting = true
 amount = 32
 lifetime = 2.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = true
-draw_order = 0
-process_material = null
 texture = ExtResource( 2 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 
 [node name="cave_layer" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.07, 1 )
-motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 1024, 0 )
 
 [node name="cave" type="Sprite" parent="cave_layer"]

@@ -5,32 +5,13 @@
 
 [sub_resource type="CapsuleShape2D" id=1]
 
-custom_solver_bias = 0.0
 radius = 18.0
-height = 20.0
 
 [node name="snake" type="Node2D"]
 
 [node name="head" type="RigidBody2D" parent="."]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-mode = 0
 mass = 20.0
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-drop = 0
-role = 0
 
 [node name="sprite" type="Sprite" parent="head"]
 texture = ExtResource( 2 )
@@ -41,24 +22,7 @@ shape = SubResource( 1 )
 
 [node name="body 1" type="RigidBody2D" parent="."]
 position = Vector2( 0, 50 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-mode = 0
-mass = 1.0
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-drop = 0
 role = 1
 
 [node name="sprite" type="Sprite" parent="body 1"]
@@ -71,24 +35,7 @@ shape = SubResource( 1 )
 
 [node name="body 2" type="RigidBody2D" parent="."]
 position = Vector2( 0, 100 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-mode = 0
-mass = 1.0
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-drop = 0
 role = 1
 
 [node name="sprite" type="Sprite" parent="body 2"]
@@ -101,24 +48,7 @@ shape = SubResource( 1 )
 
 [node name="body 3" type="RigidBody2D" parent="."]
 position = Vector2( 0, 150 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-mode = 0
-mass = 1.0
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-drop = 0
 role = 1
 
 [node name="sprite" type="Sprite" parent="body 3"]
@@ -131,24 +61,7 @@ shape = SubResource( 1 )
 
 [node name="body 4" type="RigidBody2D" parent="."]
 position = Vector2( 0, 200 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-mode = 0
-mass = 1.0
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-drop = 0
 role = 1
 
 [node name="sprite" type="Sprite" parent="body 4"]
@@ -161,24 +74,7 @@ shape = SubResource( 1 )
 
 [node name="body 5" type="RigidBody2D" parent="."]
 position = Vector2( 0, 250 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-mode = 0
-mass = 1.0
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-drop = 0
 role = 2
 
 [node name="sprite" type="Sprite" parent="body 5"]
@@ -193,39 +89,24 @@ shape = SubResource( 1 )
 position = Vector2( 0, 25 )
 node_a = NodePath("../head")
 node_b = NodePath("../body 1")
-bias = 0.0
-disable_collision = true
-softness = 0.0
 
 [node name="joint 1_2" type="PinJoint2D" parent="."]
 position = Vector2( 0, 75 )
 node_a = NodePath("../body 1")
 node_b = NodePath("../body 2")
-bias = 0.0
-disable_collision = true
-softness = 0.0
 
 [node name="joint 2_3" type="PinJoint2D" parent="."]
 position = Vector2( 0, 125 )
 node_a = NodePath("../body 2")
 node_b = NodePath("../body 3")
-bias = 0.0
-disable_collision = true
-softness = 0.0
 
 [node name="joint 3_4" type="PinJoint2D" parent="."]
 position = Vector2( 0, 175 )
 node_a = NodePath("../body 3")
 node_b = NodePath("../body 4")
-bias = 0.0
-disable_collision = true
-softness = 0.0
 
 [node name="joint 4_t" type="PinJoint2D" parent="."]
 position = Vector2( 0, 225 )
 node_a = NodePath("../body 4")
 node_b = NodePath("../body 5")
-bias = 0.0
-disable_collision = true
-softness = 0.0
 

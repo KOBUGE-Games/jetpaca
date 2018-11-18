@@ -7,16 +7,13 @@
 
 [sub_resource type="CanvasItemMaterial" id=1]
 
-render_priority = 0
 blend_mode = 1
-light_mode = 0
 
 [node name="torch_trigger" type="Sprite" groups=[
 "_fire_triggers",
 ]]
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
-trigger_name = ""
 
 [node name="fire" type="Particles2D" parent="."]
 modulate = Color( 1, 1, 1, 0.480909 )
@@ -25,23 +22,8 @@ position = Vector2( -1.19546, -96.7243 )
 rotation = -3.1358
 emitting = false
 amount = 16
-lifetime = 1.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
-draw_order = 0
-process_material = null
 texture = ExtResource( 3 )
-normal_map = null
-h_frames = 1
-v_frames = 1
-_sections_unfolded = [ "Material", "material" ]
 
 [node name="top" type="Sprite" parent="."]
 position = Vector2( -0.114742, -95.6436 )

@@ -12,21 +12,13 @@
 [ext_resource path="res://art/glacier_snowball.png" type="Texture" id=10]
 
 [node name="icebg" type="ParallaxBackground"]
-layer = -1
-offset = Vector2( 0, 0 )
-rotation = 0.0
-scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-scroll_offset = Vector2( 0, 0 )
 scroll_base_offset = Vector2( 0, 256 )
 scroll_base_scale = Vector2( 0.8, 0.1 )
-scroll_limit_begin = Vector2( 0, 0 )
 scroll_limit_end = Vector2( 0, 1024 )
 scroll_ignore_camera_zoom = false
 
 [node name="sky" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.05, 1 )
-motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 1024, 0 )
 
 [node name="sky" type="Sprite" parent="sky"]
@@ -36,7 +28,6 @@ centered = false
 [node name="ice_back" type="ParallaxLayer" parent="."]
 position = Vector2( 0, 170 )
 motion_scale = Vector2( 0.1, 1 )
-motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 1024, 0 )
 
 [node name="mountains" type="Sprite" parent="ice_back"]
@@ -48,7 +39,6 @@ region_rect = Rect2( 0, 0, 1024, 390 )
 [node name="ice_mid" type="ParallaxLayer" parent="."]
 position = Vector2( 0, 250 )
 motion_scale = Vector2( 0.2, 1 )
-motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 1024, 0 )
 
 [node name="mid" type="Sprite" parent="ice_mid"]
@@ -59,7 +49,6 @@ centered = false
 [node name="water" type="ParallaxLayer" parent="."]
 position = Vector2( 0, 723 )
 motion_scale = Vector2( 0.4, 1 )
-motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 1024, 0 )
 
 [node name="water" type="Sprite" parent="water"]
@@ -69,24 +58,9 @@ centered = false
 
 [node name="parts" type="Particles2D" parent="water"]
 position = Vector2( 512, 160 )
-emitting = true
 amount = 16
 lifetime = 10.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = true
-draw_order = 0
-process_material = null
 texture = ExtResource( 5 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 
 [node name="iceberg" type="Sprite" parent="water"]
 position = Vector2( 852, 134 )
@@ -104,7 +78,6 @@ texture = ExtResource( 8 )
 [node name="ice_front" type="ParallaxLayer" parent="."]
 position = Vector2( 0, 300 )
 motion_scale = Vector2( 0.3, 1 )
-motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 1024, 0 )
 
 [node name="front" type="Sprite" parent="ice_front"]
@@ -113,28 +86,13 @@ centered = false
 
 [node name="falling_snow" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 1.1, 9 )
-motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 1024, 760 )
 
 [node name="snow" type="Particles2D" parent="falling_snow"]
 self_modulate = Color( 1, 1, 1, 0.86 )
 position = Vector2( 512, 120 )
-emitting = true
 amount = 128
 lifetime = 10.0
-one_shot = false
 preprocess = 10.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = true
-draw_order = 0
-process_material = null
 texture = ExtResource( 10 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 

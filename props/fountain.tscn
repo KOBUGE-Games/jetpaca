@@ -39,9 +39,7 @@ tracks/1/keys = {
 
 [sub_resource type="CanvasItemMaterial" id=2]
 
-render_priority = 0
 blend_mode = 1
-light_mode = 0
 
 [node name="fuente_base" type="Sprite"]
 texture = ExtResource( 1 )
@@ -61,36 +59,14 @@ texture = ExtResource( 4 )
 offset = Vector2( 0, 146 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/water_anim = SubResource( 1 )
-blend_times = [  ]
 
 [node name="water1 2" type="Particles2D" parent="."]
 self_modulate = Color( 1, 1, 1, 0.314815 )
 material = SubResource( 2 )
 position = Vector2( -159.581, -74.2997 )
 rotation = 0.0562115
-emitting = true
 amount = 16
 lifetime = 1.55
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = true
-draw_order = 0
-process_material = null
 texture = ExtResource( 5 )
-normal_map = null
-h_frames = 1
-v_frames = 1
-_sections_unfolded = [ "Material", "material" ]
 

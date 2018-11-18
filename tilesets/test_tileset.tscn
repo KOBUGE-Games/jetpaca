@@ -11,14 +11,8 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 64, 64 )
 
 [node name="collision" type="StaticBody2D" parent="block"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="block/collision"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 64, 64, 64, 64, 0, 0, 0 )
 
 [node name="ramp" type="Sprite" parent="."]
@@ -29,14 +23,8 @@ region_enabled = true
 region_rect = Rect2( 64, 0, 64, 64 )
 
 [node name="collision" type="StaticBody2D" parent="ramp"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ramp/collision"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 64, 64, 64, 0, 0 )
 
 [node name="ramp 2" type="Sprite" parent="."]
@@ -47,14 +35,8 @@ region_enabled = true
 region_rect = Rect2( 0, 64, 128, 64 )
 
 [node name="collision" type="StaticBody2D" parent="ramp 2"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ramp 2/collision"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 64, 128, 64, 0, 0 )
 
 [node name="ramp 3" type="Sprite" parent="."]
@@ -65,13 +47,7 @@ region_enabled = true
 region_rect = Rect2( 128, 0, 64, 128 )
 
 [node name="collision" type="StaticBody2D" parent="ramp 3"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ramp 3/collision"]
-build_mode = 0
 polygon = PoolVector2Array( 0, 128, 64, 128, 0, 0 )
 

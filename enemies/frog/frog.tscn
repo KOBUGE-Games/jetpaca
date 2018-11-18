@@ -21,15 +21,11 @@
 [sub_resource type="PhysicsMaterial" id=1]
 
 friction = 0.0
-rough = false
-bounce = 0.0
-absorbent = false
 
 [sub_resource type="Animation" id=2]
 
 resource_name = "30_jump_landing"
 length = 5.0
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/head:rotation_degrees")
@@ -595,7 +591,6 @@ tracks/22/keys = {
 
 resource_name = "burst"
 length = 5.0
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/head:rotation_degrees")
@@ -1187,7 +1182,6 @@ tracks/22/keys = {
 
 resource_name = "croak"
 length = 6.0
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/head:rotation_degrees")
@@ -1543,8 +1537,6 @@ tracks/28/keys = {
 [sub_resource type="Animation" id=7]
 
 resource_name = "default"
-length = 1.0
-loop = false
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/head:rotation_degrees")
@@ -2180,7 +2172,6 @@ tracks/26/keys = {
 [sub_resource type="Animation" id=9]
 
 length = 3.0
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/head:rotation_degrees")
@@ -2759,7 +2750,6 @@ tracks/22/keys = {
 
 length = 4.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/head:rotation_degrees")
 tracks/0/interp = 2
@@ -3063,29 +3053,14 @@ tracks/24/keys = {
 
 [sub_resource type="CircleShape2D" id=12]
 
-custom_solver_bias = 0.0
 radius = 22.0
 
 [node name="frog" type="RigidBody2D"]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
 mode = 1
-mass = 1.0
 physics_material_override = SubResource( 1 )
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
 contacts_reported = 2
 contact_monitor = true
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-drop = 0
 can_move = true
 
 [node name="body" type="Sprite" parent="."]
@@ -3212,10 +3187,6 @@ offset = Vector2( -3, 2 )
 flip_h = true
 
 [node name="anim" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
 playback_speed = 4.0
 anims/30_jump_landing = SubResource( 2 )
 anims/31_jump_landing_from_burst = SubResource( 3 )
@@ -3266,36 +3237,12 @@ rect = Rect2( -40, -80, 80, 160 )
 
 [node name="croak" type="AudioStreamPlayer2D" parent="sfx"]
 stream = ExtResource( 15 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
 
 [node name="inflate" type="AudioStreamPlayer2D" parent="sfx"]
 stream = ExtResource( 16 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
 
 [node name="kill" type="AudioStreamPlayer2D" parent="sfx"]
 stream = ExtResource( 17 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
 
 [connection signal="screen_entered" from="screen_proximity" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="screen_proximity" to="." method="_on_exit_screen"]

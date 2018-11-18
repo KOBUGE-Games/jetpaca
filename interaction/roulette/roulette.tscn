@@ -15,7 +15,6 @@
 
 resource_name = "button"
 length = 1.2
-loop = false
 step = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("button:frame")
@@ -34,7 +33,6 @@ tracks/0/keys = {
 
 resource_name = "button_press"
 length = 6.0
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("button:frame")
@@ -203,8 +201,6 @@ tracks/11/keys = {
 
 resource_name = "prize_select"
 length = 17.0
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Ruleta/Position2D/pointer:position")
 tracks/0/interp = 1
@@ -370,7 +366,6 @@ tracks/12/keys = {
 [sub_resource type="Animation" id=5]
 
 length = 15.0
-loop = false
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Ruleta/Position2D/pointer:position")
@@ -519,7 +514,6 @@ tracks/11/keys = {
 
 [sub_resource type="RectangleShape2D" id=6]
 
-custom_solver_bias = 0.0
 extents = Vector2( 20, 10 )
 
 [node name="roulette" type="Node2D"]
@@ -615,26 +609,13 @@ hframes = 8
 frame = 7
 
 [node name="anim" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/button = SubResource( 1 )
 anims/default = SubResource( 2 )
 anims/idle = SubResource( 3 )
 anims/prize_select = SubResource( 4 )
 anims/prize_select_alpha = SubResource( 5 )
-blend_times = [  ]
 
 [node name="button_area" type="Area2D" parent="."]
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="button_area"]
 position = Vector2( -0.814514, 122.968 )

@@ -5,13 +5,10 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 
-custom_solver_bias = 0.0
 extents = Vector2( 512, 64 )
 
 [node name="base" type="Node2D"]
 script = ExtResource( 1 )
-distance = 100
-max_speed = 64.0
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 256, -200 )
@@ -30,11 +27,6 @@ position = Vector2( -256, 200 )
 texture = ExtResource( 2 )
 
 [node name="static_body" type="StaticBody2D" parent="."]
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="static_body"]
 position = Vector2( 0, 200 )

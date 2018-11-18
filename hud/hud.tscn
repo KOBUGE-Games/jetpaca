@@ -18,28 +18,16 @@
 
 [sub_resource type="StyleBoxTexture" id=1]
 
-content_margin_left = -1.0
-content_margin_right = -1.0
-content_margin_top = -1.0
-content_margin_bottom = -1.0
 texture = ExtResource( 6 )
 region_rect = Rect2( 0, 0, 256, 256 )
 margin_left = 50.0
 margin_right = 50.0
 margin_top = 50.0
 margin_bottom = 50.0
-expand_margin_left = 0.0
-expand_margin_right = 0.0
-expand_margin_top = 0.0
-expand_margin_bottom = 0.0
-modulate_color = Color( 1, 1, 1, 1 )
-draw_center = true
 
 [sub_resource type="Animation" id=2]
 
 resource_name = "fadein"
-length = 1.0
-loop = false
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("dialog/text:text")
@@ -80,8 +68,6 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id=3]
 
-length = 1.0
-loop = false
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("dialog:visible")
@@ -111,7 +97,6 @@ tracks/1/keys = {
 [sub_resource type="Animation" id=4]
 
 resource_name = "glow"
-length = 1.0
 loop = true
 step = 0.5
 tracks/0/type = "value"
@@ -166,9 +151,6 @@ tracks/3/keys = {
 [sub_resource type="Animation" id=5]
 
 resource_name = "noglow"
-length = 1.0
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("jp_right/attack:modulate")
 tracks/0/interp = 1
@@ -219,19 +201,10 @@ tracks/3/keys = {
 }
 
 [node name="hud" type="ReferenceRect"]
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 1.0
 margin_right = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-border_color = Color( 1, 0, 0, 1 )
 script = ExtResource( 1 )
 
 [node name="life" type="Node2D" parent="."]
@@ -253,59 +226,28 @@ frame = 1
 [node name="fruit_count" type="Control" parent="."]
 modulate = Color( 1, 1, 1, 0.8 )
 anchor_left = 1.0
-anchor_top = 0.0
 anchor_right = 1.0
-anchor_bottom = 0.0
 margin_left = -295.0
 margin_top = 18.0
 margin_right = 510.0
 margin_bottom = 68.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 
 [node name="amount" type="Label" parent="fruit_count"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 141.0
 margin_top = 21.0
 margin_right = 203.0
 margin_bottom = 65.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_fonts/font = ExtResource( 3 )
 text = "0"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
 
 [node name="TextureFrame" type="TextureRect" parent="fruit_count"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 92.0
 margin_top = 13.0
 margin_right = 129.0
 margin_bottom = 52.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 4 )
 expand = true
-stretch_mode = 0
 
 [node name="Sprite" type="Sprite" parent="fruit_count"]
 position = Vector2( 201.662, 31.0249 )
@@ -313,59 +255,30 @@ scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 5 )
 
 [node name="life_amount" type="Label" parent="fruit_count"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 237.0
 margin_top = 21.0
 margin_right = 285.0
 margin_bottom = 65.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
 size_flags_vertical = 0
 custom_fonts/font = ExtResource( 3 )
 text = "0"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
 
 [node name="dialog" type="Panel" parent="."]
 visible = false
 modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
-anchor_bottom = 0.0
 margin_left = 24.0
 margin_top = 81.0
 margin_right = -24.0
 margin_bottom = 268.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 custom_styles/panel = SubResource( 1 )
 
 [node name="text" type="Label" parent="dialog"]
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
-anchor_bottom = 0.0
 margin_left = 41.0
 margin_top = 35.0
 margin_right = -32.0
 margin_bottom = 148.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
 size_flags_vertical = 0
 custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 0.707965 )
@@ -373,122 +286,52 @@ custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
 text = "It's dangerous to go out. Take this jetpack!"
 autowrap = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
 
 [node name="anim" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/fadein = SubResource( 2 )
 anims/fadeout = SubResource( 3 )
-blend_times = [  ]
 
 [node name="keys" type="Control" parent="."]
 anchor_left = 1.0
-anchor_top = 0.0
 anchor_right = 1.0
-anchor_bottom = 0.0
 margin_left = -206.0
 margin_top = 85.0
 margin_right = -19.0
 margin_bottom = 157.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 
 [node name="key_0" type="TextureRect" parent="keys"]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 47.0
 margin_right = 72.0
 margin_bottom = 51.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 7 )
 expand = true
-stretch_mode = 0
 
 [node name="key_1" type="TextureRect" parent="keys"]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 98.0
 margin_right = 123.0
 margin_bottom = 51.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 8 )
 expand = true
-stretch_mode = 0
 
 [node name="key_2" type="TextureRect" parent="keys"]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 144.0
 margin_right = 169.0
 margin_bottom = 51.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 9 )
 expand = true
-stretch_mode = 0
 
 [node name="coins" type="CenterContainer" parent="."]
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
-anchor_bottom = 0.0
 margin_bottom = 95.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-use_top_left = false
 
 [node name="base" type="Control" parent="coins"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 640.0
 margin_top = 47.0
 margin_right = 640.0
 margin_bottom = 47.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 
 [node name="large_coin_0" type="Sprite" parent="coins/base"]
 position = Vector2( -60.3485, 3.54479 )
@@ -510,66 +353,28 @@ hframes = 2
 
 [node name="pause" type="TextureButton" parent="."]
 pause_mode = 2
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 25.0
 margin_top = 79.0
 margin_right = 89.0
 margin_bottom = 143.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
 texture_normal = ExtResource( 11 )
 
 [node name="back" type="TextureButton" parent="."]
 pause_mode = 2
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 107.0
 margin_top = 81.0
 margin_right = 171.0
 margin_bottom = 145.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
 texture_normal = ExtResource( 12 )
 
 [node name="jp_left" type="Control" parent="."]
-anchor_left = 0.0
 anchor_top = 1.0
-anchor_right = 0.0
 anchor_bottom = 1.0
 margin_left = 79.0
 margin_top = -69.0
 margin_right = 119.0
 margin_bottom = -29.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 
 [node name="move" type="Sprite" parent="jp_left"]
 modulate = Color( 1, 1, 1, 0.4 )
@@ -591,12 +396,6 @@ margin_left = -79.0
 margin_top = -70.0
 margin_right = -39.0
 margin_bottom = -30.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 
 [node name="move" type="Sprite" parent="jp_right"]
 modulate = Color( 1, 1, 1, 0.4 )
@@ -610,14 +409,9 @@ texture = ExtResource( 14 )
 hframes = 2
 
 [node name="attack_glow" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
 playback_speed = 1.8
 anims/glow = SubResource( 4 )
 anims/noglow = SubResource( 5 )
-blend_times = [  ]
 
 [connection signal="pressed" from="pause" to="." method="_on_pause_pressed"]
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]

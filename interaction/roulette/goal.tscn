@@ -5,19 +5,10 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 
-custom_solver_bias = 0.0
 extents = Vector2( 100, 100 )
 
 [node name="stage_end" type="Area2D"]
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
 script = ExtResource( 1 )
-next_world = Vector2( 0, 0 )
 
 [node name="collision" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )

@@ -33,7 +33,6 @@ tracks/0/keys = {
 resource_name = "sky_motion"
 length = 2.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:margin_left")
 tracks/0/interp = 1
@@ -49,81 +48,44 @@ tracks/0/keys = {
 
 [sub_resource type="CanvasItemMaterial" id=3]
 
-render_priority = 0
 blend_mode = 1
-light_mode = 0
 
 [sub_resource type="Gradient" id=4]
 
 offsets = PoolRealArray( 0, 0.2, 1 )
 colors = PoolColorArray( 1, 0.88, 0.336283, 1, 1, 0.15, 0, 1, 0, 0, 0, 1 )
-_sections_unfolded = [ "colors", "offsets" ]
 
 [sub_resource type="GradientTexture" id=5]
 
-flags = 4
 gradient = SubResource( 4 )
 width = 256
-_sections_unfolded = [ "gradient" ]
 
 [sub_resource type="Curve" id=6]
 
 min_value = 0.2
-max_value = 1.0
-bake_resolution = 100
 _data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.2 ), 0.0, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=7]
 
-flags = 4
 width = 256
 curve = SubResource( 6 )
-_sections_unfolded = [ "curve" ]
 
 [sub_resource type="ParticlesMaterial" id=8]
 
-render_priority = 0
-trail_divisor = 1
-emission_shape = 0
-flag_align_y = false
-flag_rotate_y = false
 flag_disable_z = true
 spread = 10.0
-flatness = 0.0
 gravity = Vector3( 0, 10, 0 )
 initial_velocity = 150.0
-initial_velocity_random = 0.0
 angular_velocity = 120.0
 angular_velocity_random = 0.5
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-linear_accel = 0.0
-linear_accel_random = 0.0
-radial_accel = 0.0
-radial_accel_random = 0.0
-tangential_accel = 0.0
-tangential_accel_random = 0.0
-damping = 0.0
-damping_random = 0.0
-angle = 0.0
-angle_random = 0.0
-scale = 1.0
-scale_random = 0.0
 scale_curve = SubResource( 7 )
 color_ramp = SubResource( 5 )
-hue_variation = 0.0
-hue_variation_random = 0.0
-anim_speed = 0.0
-anim_speed_random = 0.0
-anim_offset = 0.0
-anim_offset_random = 0.0
-anim_loop = false
-_sections_unfolded = [ "color_ramp" ]
 
 [sub_resource type="Animation" id=9]
 
 length = 4.0
-loop = false
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("alpaca_container/center/alpaca:position")
@@ -178,7 +140,6 @@ tracks/3/keys = {
 
 length = 4.0
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("alpaca_container/center/alpaca:position")
 tracks/0/interp = 1
@@ -206,275 +167,109 @@ tracks/1/keys = {
 
 [sub_resource type="StyleBoxEmpty" id=11]
 
-content_margin_left = -1.0
-content_margin_right = -1.0
-content_margin_top = -1.0
-content_margin_bottom = -1.0
 
 [sub_resource type="StyleBoxEmpty" id=12]
 
-content_margin_left = -1.0
-content_margin_right = -1.0
-content_margin_top = -1.0
-content_margin_bottom = -1.0
 
 [sub_resource type="StyleBoxEmpty" id=13]
 
-content_margin_left = -1.0
-content_margin_right = -1.0
-content_margin_top = -1.0
-content_margin_bottom = -1.0
 
 [sub_resource type="StyleBoxEmpty" id=14]
 
-content_margin_left = -1.0
-content_margin_right = -1.0
-content_margin_top = -1.0
-content_margin_bottom = -1.0
 
 [sub_resource type="StyleBoxEmpty" id=15]
 
-content_margin_left = -1.0
-content_margin_right = -1.0
-content_margin_top = -1.0
-content_margin_bottom = -1.0
 
 [node name="main_menu" type="ReferenceRect"]
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-border_color = Color( 1, 0, 0, 1 )
 script = ExtResource( 1 )
 
 [node name="copyright" type="Label" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 46.0
 margin_top = 222.0
 margin_right = 178.0
 margin_bottom = 255.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
 size_flags_vertical = 0
 text = "(c) 2012 Codenix - Work in Progress, don distribute!"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
 
 [node name="welcome" type="Label" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 45.0
 margin_top = 27.0
 margin_right = 177.0
 margin_bottom = 60.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
 size_flags_vertical = 0
 text = "Welcome to JetPaca!"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
 
 [node name="sky_background" type="HBoxContainer" parent="."]
-anchor_left = 0.0
 anchor_top = 1.0
-anchor_right = 0.0
 anchor_bottom = 1.0
 margin_left = -864.847
 margin_top = -1024.0
 margin_right = 40.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 custom_constants/separation = -1
-alignment = 0
 
 [node name="center" type="TextureRect" parent="sky_background"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_right = 1024.0
 margin_bottom = 1024.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 2 )
-stretch_mode = 0
 
 [node name="left" type="TextureRect" parent="sky_background"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 1023.0
 margin_right = 2047.0
 margin_bottom = 1024.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 2 )
-stretch_mode = 0
 
 [node name="right" type="TextureRect" parent="sky_background"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 2046.0
 margin_right = 3070.0
 margin_bottom = 1024.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 2 )
-stretch_mode = 0
 
 [node name="animation" type="AnimationPlayer" parent="sky_background"]
-root_node = NodePath("..")
 autoplay = "sky_motion"
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/sky_motion = SubResource( 1 )
-blend_times = [  ]
 
 [node name="sky_foreground" type="HBoxContainer" parent="."]
-anchor_left = 0.0
 anchor_top = 1.0
-anchor_right = 0.0
 anchor_bottom = 1.0
 margin_left = -1003.68
 margin_top = -256.0
 margin_right = 2521.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 custom_constants/separation = -1
-alignment = 0
 
 [node name="left" type="TextureRect" parent="sky_foreground"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_right = 1024.0
 margin_bottom = 256.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 3 )
-stretch_mode = 0
 
 [node name="center" type="TextureRect" parent="sky_foreground"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 1023.0
 margin_right = 2047.0
 margin_bottom = 256.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 3 )
-stretch_mode = 0
 
 [node name="right" type="TextureRect" parent="sky_foreground"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 2046.0
 margin_right = 3070.0
 margin_bottom = 256.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 3 )
-stretch_mode = 0
 
 [node name="animation" type="AnimationPlayer" parent="sky_foreground"]
-root_node = NodePath("..")
 autoplay = "sky_motion"
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/sky_motion = SubResource( 2 )
-blend_times = [  ]
 
 [node name="alpaca_container" type="CenterContainer" parent="."]
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-use_top_left = false
 
 [node name="center" type="Control" parent="alpaca_container"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 640.0
 margin_top = 360.0
 margin_right = 640.0
 margin_bottom = 360.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 
 [node name="alpaca" type="Sprite" parent="alpaca_container/center"]
 position = Vector2( 0, -15 )
@@ -485,153 +280,61 @@ offset = Vector2( 0, 60 )
 material = SubResource( 3 )
 position = Vector2( 123.446, 139.028 )
 rotation = 0.415388
-emitting = true
 amount = 32
-lifetime = 1.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = true
-draw_order = 0
 process_material = SubResource( 8 )
 texture = ExtResource( 5 )
-normal_map = null
-h_frames = 1
-v_frames = 1
-_sections_unfolded = [ "Drawing", "Process Material", "Time", "material", "process_material" ]
 
 [node name="mask" type="Sprite" parent="alpaca_container/center/alpaca"]
 position = Vector2( 87.8434, 120.939 )
 rotation = -0.000240117
 texture = ExtResource( 6 )
-_sections_unfolded = [ "Transform" ]
 
 [node name="jetpack_back" type="Particles2D" parent="alpaca_container/center/alpaca"]
 show_behind_parent = true
 material = SubResource( 3 )
 position = Vector2( 24.648, 171.619 )
 rotation = 0.415388
-emitting = true
 amount = 32
-lifetime = 1.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = true
-draw_order = 0
 process_material = SubResource( 8 )
 texture = ExtResource( 5 )
-normal_map = null
-h_frames = 1
-v_frames = 1
-_sections_unfolded = [ "Drawing", "Process Material", "Time", "Transform", "material", "process_material" ]
 
 [node name="intro_anim" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
 autoplay = "intro"
-playback_process_mode = 1
 playback_default_blend_time = 1.0
-playback_speed = 1.0
 anims/intro = SubResource( 9 )
 anims/regular = SubResource( 10 )
-blend_times = [  ]
 
 [node name="logo_container" type="CenterContainer" parent="."]
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
-anchor_bottom = 0.0
 margin_bottom = 40.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-use_top_left = false
 
 [node name="logo" type="TextureRect" parent="logo_container"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 384.0
 margin_right = 896.0
 margin_bottom = 128.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 7 )
-stretch_mode = 0
 
 [node name="tap_to_fly_container" type="CenterContainer" parent="."]
-anchor_left = 0.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -150.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-use_top_left = false
 
 [node name="tap_to_fly" type="TextureRect" parent="tap_to_fly_container"]
 modulate = Color( 1, 1, 1, 0.3 )
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 384.0
 margin_top = 43.0
 margin_right = 896.0
 margin_bottom = 107.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 8 )
-stretch_mode = 0
 
 [node name="button_play" type="Button" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 custom_styles/hover = SubResource( 11 )
 custom_styles/pressed = SubResource( 12 )
 custom_styles/focus = SubResource( 13 )
 custom_styles/disabled = SubResource( 14 )
 custom_styles/normal = SubResource( 15 )
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-flat = false
-align = 1
 

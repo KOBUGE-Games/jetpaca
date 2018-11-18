@@ -7,7 +7,6 @@
 
 [sub_resource type="CircleShape2D" id=1]
 
-custom_solver_bias = 0.0
 radius = 50.0
 
 [sub_resource type="Animation" id=2]
@@ -15,7 +14,6 @@ radius = 50.0
 resource_name = "roll"
 length = 1.9
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprite:frame")
 tracks/0/interp = 1
@@ -42,15 +40,7 @@ tracks/1/keys = {
 }
 
 [node name="big_coin" type="Area2D"]
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
 script = ExtResource( 1 )
-fruit_index = 0
 
 [node name="sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
@@ -62,53 +52,22 @@ frame = 9
 shape = SubResource( 1 )
 
 [node name="anim" type="AnimationPlayer" parent="."]
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
 playback_speed = 1.5
 anims/roll = SubResource( 2 )
-blend_times = [  ]
 
 [node name="screenprox" type="VisibilityNotifier2D" parent="."]
-rect = Rect2( -10, -10, 20, 20 )
 
 [node name="shine" type="Particles2D" parent="."]
 emitting = false
-amount = 8
 lifetime = 0.3
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = true
-draw_order = 0
-process_material = null
 texture = ExtResource( 3 )
-normal_map = null
-h_frames = 1
-v_frames = 1
 
 [node name="shine_sfx" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-stream_paused = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
 
 [node name="deathclock" type="Timer" parent="."]
-process_mode = 1
 wait_time = 3.0
 one_shot = true
-autostart = false
 
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]
 [connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]
