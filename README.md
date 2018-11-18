@@ -26,8 +26,8 @@ Unless mentioned otherwise, all art assets (files in ``art/``, ``music/`` and
 
 #### Fonts
 
-* [Arm Wrestler](http://www.dafont.com/armwrestler.font) by AJ Paglia.
-  [Freeware](http://cargocollective.com/ajpaglia/De-Commissioned-Fonts).
+* [Fira Sans Bold](http://mozilla.github.io/Fira) by Mozilla Foundation and Telefonica S.A.
+  [SIL Open Font License 1.1](https://github.com/mozilla/Fira/blob/master/LICENSE).
 * [BPdiet](http://backpacker.gr/fonts/8) by Backpacker.
   [Free but custom permissive EULA](http://backpacker.gr/fonts/8) and
   [Creative Commons Attribution - No Derivative Works 3.0 Unported](http://www.1001freefonts.com/bp_diet.font).
