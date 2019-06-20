@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/mountain_sky.png-ea984f684fef900c8f007fc9969567cd.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

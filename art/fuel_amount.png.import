@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/fuel_amount.png-920a6bd78abf1de70dca17d815285229.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

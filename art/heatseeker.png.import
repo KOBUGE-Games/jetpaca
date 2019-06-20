@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/heatseeker.png-3757b0219ab505a4e954a423c5341b09.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

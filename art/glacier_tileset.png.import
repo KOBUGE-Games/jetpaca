@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/glacier_tileset.png-9d4b6f14ee8890a430b6ccb20d5285e8.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

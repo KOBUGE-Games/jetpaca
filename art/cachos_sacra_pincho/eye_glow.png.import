@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/eye_glow.png-3cc0b0ff069466ab577c9981610c612f.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

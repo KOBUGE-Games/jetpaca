@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/armadillo.png-61fc74e864c3efb482c77e2bc59f301f.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

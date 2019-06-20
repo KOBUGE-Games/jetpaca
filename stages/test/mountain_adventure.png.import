@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/mountain_adventure.png-632ae66faa350cc8dad3ae5f55669efb.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

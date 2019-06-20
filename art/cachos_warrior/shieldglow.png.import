@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/shieldglow.png-83501674f4229423258b1321b0e318b8.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

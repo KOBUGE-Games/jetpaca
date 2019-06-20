@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/lamp_joint.png-44c0be5d7fd05c6c5cee3eb3cf6c3a71.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

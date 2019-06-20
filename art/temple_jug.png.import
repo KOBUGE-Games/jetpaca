@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/temple_jug.png-9ce1743491fac29025475e34083dfd4e.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

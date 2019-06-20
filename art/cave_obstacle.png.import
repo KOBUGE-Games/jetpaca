@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/cave_obstacle.png-e118fc080f8d86ce2cd1dfeefb5c7b01.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

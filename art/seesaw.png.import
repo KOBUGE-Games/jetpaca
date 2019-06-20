@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/seesaw.png-d518ec1e753424b4ef762d6598016f13.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

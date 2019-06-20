@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/temple_tiles.png-9b4a9796cad5326a5dc230979a2b7fb7.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

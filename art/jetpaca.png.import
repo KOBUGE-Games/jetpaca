@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/jetpaca.png-e5d0998a0b1fa55e91219187af27b731.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

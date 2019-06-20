@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/colita.png-116dfc87dc9069afe4bc40a90b8f4ba0.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

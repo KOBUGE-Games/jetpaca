@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/muslo_frontal_bg.png-1f1cc92fa1bdf017cb2c73edd50f32c9.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

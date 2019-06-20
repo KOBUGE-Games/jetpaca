@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/staffglow.png-a079a9d022ecb939ce7d3fc1a044838b.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

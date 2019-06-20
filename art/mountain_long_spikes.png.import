@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/mountain_long_spikes.png-b96422b5ffd9cd97f0f75432c1dfa6ab.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

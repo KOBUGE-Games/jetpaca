@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/cave_lamp.png-298508190d37eb6e794330e2800916a7.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

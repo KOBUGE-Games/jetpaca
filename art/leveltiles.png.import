@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/leveltiles.png-7ea0f86cb6528213ec5d400a776eafe2.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

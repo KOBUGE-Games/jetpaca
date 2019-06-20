@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/chirimoya2.png-0d537da06c582fb8ffed676fbcd5995e.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/mountain_moving_plat.png-034c8acf0fdb6161ba08c0a5978a6b2e.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

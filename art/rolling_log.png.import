@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/rolling_log.png-bedec64417158bd2907b4fbb1637b4f1.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

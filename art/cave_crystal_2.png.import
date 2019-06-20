@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/cave_crystal_2.png-ac797ec6f347460f75607efcc2fd3c3a.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

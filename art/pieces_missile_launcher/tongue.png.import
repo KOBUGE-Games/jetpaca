@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/tongue.png-120cbc6e9a93d81b2a3d08f5646b6b9e.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

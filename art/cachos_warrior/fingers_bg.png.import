@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/fingers_bg.png-877b0d3dd4d8863cb61673644ed32adb.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

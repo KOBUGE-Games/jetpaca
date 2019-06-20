@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/leg-bg.png-1b94abd6bd7a267fbae01f50d281f8f5.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/vortex_center.png-4ce6a5794d498dd76c2ef0bfd9c61bd4.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

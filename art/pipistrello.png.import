@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/pipistrello.png-bdbe35e1defda66c349a42d3dcf39a62.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

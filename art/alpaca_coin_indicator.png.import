@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/alpaca_coin_indicator.png-d0a1cbb12c7bfc9eae9a6831d668800f.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/mountain_breakable_stone.png-db4c56939fa5739c1af6c31fe18a4e10.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/ruleta_spinning_inner_circle.png-1ef02ea42254d267919ff68537014bfb.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

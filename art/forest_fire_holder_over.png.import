@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/forest_fire_holder_over.png-1f97a905c9f1114f145143bafcdfb3c2.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

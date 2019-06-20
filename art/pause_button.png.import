@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/pause_button.png-69b578a3a55d78eec50745e3e4ea8761.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

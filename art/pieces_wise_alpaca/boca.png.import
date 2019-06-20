@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/boca.png-f8ba9f43bc69615ddb11e8525b54a4c0.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/glacier_ice1.png-97aa36b11a3095c25145397972ef41f7.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

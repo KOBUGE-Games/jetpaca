@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/intro_taptofly.png-5bcb7014a085a3799eb79bc7962b0d25.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

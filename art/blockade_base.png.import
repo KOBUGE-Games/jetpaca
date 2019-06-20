@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/blockade_base.png-343e452ed921c1e48bd705c903dcb93f.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

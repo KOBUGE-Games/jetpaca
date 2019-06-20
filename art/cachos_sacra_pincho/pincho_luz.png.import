@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/pincho_luz.png-b2b6593d2d817aafde8cb5958f1b864a.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

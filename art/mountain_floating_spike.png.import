@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/mountain_floating_spike.png-e6d01068b9cb1c4172e9a52a3a43f0e9.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

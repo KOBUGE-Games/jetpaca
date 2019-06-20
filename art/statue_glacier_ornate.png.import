@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/statue_glacier_ornate.png-f0aae09d989a04075368005f7bceaddf.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

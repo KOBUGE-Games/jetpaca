@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/spiked_fluff.png-abfb91f509d827e441c11a1c35bdd8ec.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/cave_spike_1.png-989464fc33c8d0673fe9adb95d76ce23.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

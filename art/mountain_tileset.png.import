@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/mountain_tileset.png-39802cb1e963fdeac9d81ca408ad9d60.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

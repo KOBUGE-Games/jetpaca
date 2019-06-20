@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/alpaca_big.png-690403323d7b892c34ac1b1fef0ada5f.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

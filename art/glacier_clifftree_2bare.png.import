@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/glacier_clifftree_2bare.png-3bc8a28773b7b56a42121d3f7ee5610d.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
