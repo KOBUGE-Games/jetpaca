@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://art/forest_fire_holder.png" type="Texture" id=1]
 [ext_resource path="res://interaction/fire_holder/fire_holder.gd" type="Script" id=2]
@@ -7,6 +7,35 @@
 
 [sub_resource type="CanvasItemMaterial" id=1]
 blend_mode = 1
+
+[sub_resource type="Gradient" id=2]
+offsets = PoolRealArray( 0, 0.2, 0.8 )
+colors = PoolColorArray( 1, 0.884956, 0.265487, 1, 1, 0.0884956, 0, 1, 0.054902, 0.159292, 0.115044, 1 )
+
+[sub_resource type="GradientTexture" id=3]
+gradient = SubResource( 2 )
+
+[sub_resource type="Curve" id=4]
+min_value = 0.1
+max_value = 0.5
+_data = [ Vector2( 0, 0.5 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=5]
+curve = SubResource( 4 )
+
+[sub_resource type="ParticlesMaterial" id=6]
+emission_shape = 2
+emission_box_extents = Vector3( 5, 0, 0 )
+flag_disable_z = true
+spread = 10.0
+gravity = Vector3( 0, 10, 0 )
+initial_velocity = 60.0
+angular_velocity = 60.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale_curve = SubResource( 5 )
+color_ramp = SubResource( 3 )
 
 [node name="torch_trigger" type="Sprite" groups=[
 "_fire_triggers",
@@ -17,11 +46,12 @@ script = ExtResource( 2 )
 [node name="fire" type="Particles2D" parent="."]
 modulate = Color( 1, 1, 1, 0.480909 )
 material = SubResource( 1 )
-position = Vector2( -1.19546, -96.7243 )
-rotation = -3.1358
+position = Vector2( 0, -96 )
+rotation = -1.5708
 emitting = false
 amount = 16
 local_coords = false
+process_material = SubResource( 6 )
 texture = ExtResource( 3 )
 
 [node name="top" type="Sprite" parent="."]

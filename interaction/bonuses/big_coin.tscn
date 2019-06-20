@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://interaction/bonuses/big_coin.gd" type="Script" id=1]
 [ext_resource path="res://art/alpaca_coin.png" type="Texture" id=2]
@@ -37,6 +37,28 @@ tracks/1/keys = {
 "values": [ false, true ]
 }
 
+[sub_resource type="Curve" id=3]
+min_value = 0.2
+max_value = 4.0
+_data = [ Vector2( 0, 4 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.2 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+emission_shape = 2
+emission_box_extents = Vector3( 40, 40, 0 )
+flag_disable_z = true
+spread = 10.0
+gravity = Vector3( 0, 10, 0 )
+initial_velocity = 20.0
+angular_velocity = 150.0
+angular_velocity_random = 0.3
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale_curve = SubResource( 4 )
+color = Color( 1, 1, 0.760784, 1 )
+
 [node name="big_coin" type="Area2D"]
 script = ExtResource( 1 )
 
@@ -56,8 +78,12 @@ anims/roll = SubResource( 2 )
 [node name="screenprox" type="VisibilityNotifier2D" parent="."]
 
 [node name="shine" type="Particles2D" parent="."]
+rotation = 1.5708
 emitting = false
-lifetime = 0.3
+lifetime = 0.5
+one_shot = true
+local_coords = false
+process_material = SubResource( 5 )
 texture = ExtResource( 3 )
 
 [node name="shine_sfx" type="AudioStreamPlayer2D" parent="."]

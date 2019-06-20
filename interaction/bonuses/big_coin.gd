@@ -26,8 +26,7 @@ func _on_body_enter(body):
 		game_data.current_big_coins[fruit_index] = true
 		print("POST-SET ", game_data.current_big_coins)
 		get_node("sprite").hide()
-#		# 2to3: Particles disabled during conversion
-#		get_node("shine").set_emitting(true)
+		get_node("shine").set_emitting(true)
 		get_node("shine_sfx").play()
 		get_node("deathclock").start()
 

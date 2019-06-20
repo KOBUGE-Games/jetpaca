@@ -1,12 +1,62 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://interaction/door/key.gd" type="Script" id=1]
 [ext_resource path="res://art/spark_particle2.png" type="Texture" id=2]
 [ext_resource path="res://art/key1.png" type="Texture" id=3]
 [ext_resource path="res://sound/event2.wav" type="AudioStream" id=4]
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 1, 1, 1, 1, 0.909804, 0.707965, 0.831858, 0 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="Curve" id=3]
+min_value = 1.0
+max_value = 2.0
+_data = [ Vector2( 0, 2 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+emission_shape = 2
+emission_box_extents = Vector3( 16, 16, 0 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 10, 0 )
+initial_velocity = 50.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale_curve = SubResource( 4 )
+color_ramp = SubResource( 2 )
+
+[sub_resource type="CircleShape2D" id=6]
 radius = 30.0
+
+[sub_resource type="Gradient" id=7]
+colors = PoolColorArray( 1, 1, 1, 1, 0.909804, 0.707965, 0.831858, 0 )
+
+[sub_resource type="GradientTexture" id=8]
+gradient = SubResource( 7 )
+
+[sub_resource type="Curve" id=9]
+min_value = 1.0
+max_value = 2.0
+_data = [ Vector2( 0, 2 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=10]
+curve = SubResource( 9 )
+
+[sub_resource type="ParticlesMaterial" id=11]
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 10, 0 )
+initial_velocity = 140.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale_curve = SubResource( 10 )
+color_ramp = SubResource( 8 )
 
 [node name="key" type="RigidBody2D"]
 script = ExtResource( 1 )
@@ -15,6 +65,7 @@ script = ExtResource( 1 )
 emitting = false
 lifetime = 0.5
 local_coords = false
+process_material = SubResource( 5 )
 texture = ExtResource( 2 )
 
 [node name="sprite" type="Sprite" parent="."]
@@ -29,7 +80,7 @@ monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="monitor"]
 visible = false
-shape = SubResource( 1 )
+shape = SubResource( 6 )
 
 [node name="gotkey_sfx" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )
@@ -45,8 +96,10 @@ one_shot = true
 emitting = false
 amount = 16
 lifetime = 2.0
-explosiveness = 0.05
+one_shot = true
+explosiveness = 0.95
 local_coords = false
+process_material = SubResource( 11 )
 texture = ExtResource( 2 )
 
 [node name="sp" type="VisibilityNotifier2D" parent="."]

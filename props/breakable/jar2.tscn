@@ -1,9 +1,30 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://props/breakable/jar.gd" type="Script" id=1]
 [ext_resource path="res://art/jar2.png" type="Texture" id=2]
 [ext_resource path="res://art/jar1_piece.png" type="Texture" id=3]
 [ext_resource path="res://sound/ceramic_break.wav" type="AudioStream" id=4]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.8, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 0.435294, 0.442478, 0.469027, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 2
+emission_box_extents = Vector3( 16, 16, 0 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 196, 0 )
+initial_velocity = 60.0
+initial_velocity_random = 1.0
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+color_ramp = SubResource( 2 )
 
 [node name="jar2" type="RigidBody2D"]
 script = ExtResource( 1 )
@@ -15,11 +36,14 @@ texture = ExtResource( 2 )
 polygon = PoolVector2Array( -24.9627, -9.3126, -10.4691, -24.3332, 11.4031, -24.8603, 25.8967, -11.1572, 29.586, 7.81621, 20.6263, 20.7287, 9.0314, 27.3167, -7.04333, 27.3167, -17.3206, 22.5733, -27.2805, 8.50351 )
 
 [node name="particles" type="Particles2D" parent="."]
+rotation = 1.5708
 emitting = false
 amount = 16
 lifetime = 0.7
-explosiveness = 0.1
+one_shot = true
+explosiveness = 0.9
 local_coords = false
+process_material = SubResource( 3 )
 texture = ExtResource( 3 )
 
 [node name="death" type="Timer" parent="."]

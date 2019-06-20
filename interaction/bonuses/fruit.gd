@@ -22,8 +22,9 @@ func _on_body_enter(body):
 	if body is preload("res://player/alpaca.gd"):
 		body.add_fruit()
 		get_node("sprite").hide()
-#		# 2to3: Particles disabled during conversion
-#		get_node("shine").set_emitting(true)
+		get_node("shine").set_emitting(true)
+		# FIXME: Godot 2 version had lifetime 0.3 and emit timeout 0.5, then overridden here.
+		# Not possible out of the box in Godot 3.
 #		get_node("shine").set_emit_timeout(0.75)
 		get_node("shine_sfx").play()
 		get_node("deathclock").start()
@@ -39,16 +40,14 @@ func _process(delta):
 	else:
 		set_process(false)
 		speed = 0.0
-#		# 2to3: Particles disabled during conversion
-#		if not taken:
-#			get_node("shine").set_emitting(false)
+		if not taken:
+			get_node("shine").set_emitting(false)
 
 func _on_magnet_enter(body):
 	if body is preload("res://player/alpaca.gd"):
 		alpacas.push_back(body)
 		set_process(true)
-#		# 2to3: Particles disabled during conversion
-#		get_node("shine").set_emitting(true)
+		get_node("shine").set_emitting(true)
 #		get_node("shine").set_emit_timeout(0)
 
 func _on_magnet_exit(body):

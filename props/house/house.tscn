@@ -1,8 +1,25 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://props/house/house.gd" type="Script" id=1]
 [ext_resource path="res://art/mountain_house.png" type="Texture" id=2]
 [ext_resource path="res://art/smoke.png" type="Texture" id=3]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.1, 0.8 )
+colors = PoolColorArray( 0.576471, 0.557522, 0.681416, 0, 0.54902, 0.522124, 0.557522, 0.690265, 0.282353, 0.283186, 0.300885, 0.646018 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+flag_disable_z = true
+spread = 10.0
+initial_velocity = 80.0
+angular_velocity = 39.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+color_ramp = SubResource( 2 )
 
 [node name="house" type="StaticBody2D"]
 script = ExtResource( 1 )
@@ -15,11 +32,12 @@ polygon = PoolVector2Array( -165.353, 230.166, -182.542, 142.996, -234.107, 120.
 
 [node name="parts" type="Particles2D" parent="."]
 position = Vector2( 93.0797, -36.6167 )
-rotation = 3.12604
+rotation = -1.5708
 scale = Vector2( 1.66329, 1.61914 )
 emitting = false
 amount = 12
 lifetime = 3.0
+process_material = SubResource( 3 )
 texture = ExtResource( 3 )
 
 [node name="screenprox" type="VisibilityNotifier2D" parent="."]

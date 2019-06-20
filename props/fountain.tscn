@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://art/fountain_base.png" type="Texture" id=1]
 [ext_resource path="res://art/alpacocha_small.png" type="Texture" id=2]
@@ -39,6 +39,16 @@ tracks/1/keys = {
 [sub_resource type="CanvasItemMaterial" id=2]
 blend_mode = 1
 
+[sub_resource type="ParticlesMaterial" id=3]
+flag_disable_z = true
+spread = 10.0
+gravity = Vector3( 0, 90, 0 )
+initial_velocity = 60.0
+angular_velocity = 60.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+
 [node name="fuente_base" type="Sprite"]
 texture = ExtResource( 1 )
 
@@ -63,7 +73,9 @@ anims/water_anim = SubResource( 1 )
 self_modulate = Color( 1, 1, 1, 0.314815 )
 material = SubResource( 2 )
 position = Vector2( -159.581, -74.2997 )
-rotation = 0.0562115
+rotation = 1.62665
 amount = 16
 lifetime = 1.55
+local_coords = false
+process_material = SubResource( 3 )
 texture = ExtResource( 5 )

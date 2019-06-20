@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://enemies/fluff/fluff.gd" type="Script" id=1]
 [ext_resource path="res://art/vortex.png" type="Texture" id=2]
@@ -25,16 +25,60 @@ blend_mode = 1
 [sub_resource type="CanvasItemMaterial" id=2]
 blend_mode = 1
 
-[sub_resource type="CanvasItemMaterial" id=3]
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0, 0.2, 0.8, 1 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 0.530973, 1, 1, 1, 0.584071, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=4]
+gradient = SubResource( 3 )
+
+[sub_resource type="Curve" id=5]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.5 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=6]
+curve = SubResource( 5 )
+
+[sub_resource type="ParticlesMaterial" id=7]
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 30.0
+angular_velocity = 300.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+damping = 9.0
+scale_curve = SubResource( 6 )
+color_ramp = SubResource( 4 )
+
+[sub_resource type="Curve" id=8]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=9]
+curve = SubResource( 8 )
+
+[sub_resource type="ParticlesMaterial" id=10]
+emission_shape = 2
+emission_box_extents = Vector3( 2, 0, 1 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, -10, 0 )
+initial_velocity = 5.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale_curve = SubResource( 9 )
+color = Color( 1, 1, 1, 0 )
+
+[sub_resource type="CanvasItemMaterial" id=11]
 blend_mode = 1
 
-[sub_resource type="CanvasItemMaterial" id=4]
+[sub_resource type="CanvasItemMaterial" id=12]
 blend_mode = 1
 
-[sub_resource type="CanvasItemMaterial" id=5]
+[sub_resource type="CanvasItemMaterial" id=13]
 blend_mode = 1
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=14]
 length = 4.0
 loop = true
 step = 0.25
@@ -243,7 +287,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=15]
 length = 1.5
 loop = true
 step = 0.25
@@ -452,7 +496,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=16]
 length = 1.5
 loop = true
 tracks/0/type = "value"
@@ -758,7 +802,7 @@ tracks/24/keys = {
 "values": [ 180.0 ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=17]
 length = 1.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
@@ -1099,7 +1143,7 @@ tracks/27/keys = {
 "values": [ 0.0, 0.4 ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=18]
 loop = true
 step = 0.25
 tracks/0/type = "value"
@@ -1139,7 +1183,7 @@ tracks/2/keys = {
 "values": [  ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=19]
 length = 4.0
 loop = true
 step = 0.25
@@ -1336,7 +1380,7 @@ tracks/15/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=20]
 length = 2.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
@@ -1723,7 +1767,7 @@ tracks/31/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=21]
 length = 3.5
 step = 0.25
 tracks/0/type = "value"
@@ -2039,7 +2083,7 @@ tracks/25/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=22]
 length = 3.0
 loop = true
 step = 0.01
@@ -2428,7 +2472,7 @@ tracks/31/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=23]
 length = 3.0
 loop = true
 tracks/0/type = "value"
@@ -2816,7 +2860,7 @@ tracks/31/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=24]
 length = 1.5
 step = 0.25
 tracks/0/type = "value"
@@ -3120,7 +3164,7 @@ tracks/24/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=25]
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
@@ -3341,7 +3385,7 @@ tracks/17/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=26]
 length = 1.5
 step = 0.25
 tracks/0/type = "value"
@@ -3549,7 +3593,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=19]
+[sub_resource type="Animation" id=27]
 length = 4.0
 loop = true
 step = 0.25
@@ -3758,7 +3802,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=20]
+[sub_resource type="Animation" id=28]
 length = 6.0
 loop = true
 step = 0.25
@@ -3799,10 +3843,10 @@ tracks/2/keys = {
 "values": [ Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ) ]
 }
 
-[sub_resource type="CircleShape2D" id=21]
+[sub_resource type="CircleShape2D" id=29]
 radius = 40.0
 
-[sub_resource type="CircleShape2D" id=22]
+[sub_resource type="CircleShape2D" id=30]
 radius = 180.0
 
 [node name="sacra_pinchorb" type="RigidBody2D"]
@@ -3831,17 +3875,19 @@ emitting = false
 amount = 5
 lifetime = 5.0
 local_coords = false
+process_material = SubResource( 7 )
 texture = ExtResource( 4 )
 
 [node name="smoke_up" type="Particles2D" parent="."]
 show_behind_parent = true
-position = Vector2( -0.980474, 8.6831e-07 )
-rotation = 3.12999
+position = Vector2( 0, -10 )
+rotation = 3.14159
 emitting = false
 amount = 20
 lifetime = 7.0
 preprocess = 0.1
 local_coords = false
+process_material = SubResource( 10 )
 texture = ExtResource( 5 )
 
 [node name="spike1_L" type="Sprite" parent="."]
@@ -3918,7 +3964,7 @@ texture = ExtResource( 13 )
 
 [node name="glow" type="Sprite" parent="base_sclera/face"]
 visible = false
-material = SubResource( 3 )
+material = SubResource( 11 )
 position = Vector2( -0.427185, 6 )
 texture = ExtResource( 14 )
 vframes = 4
@@ -3932,7 +3978,7 @@ texture = ExtResource( 15 )
 [node name="halo" type="Sprite" parent="."]
 visible = false
 self_modulate = Color( 1, 1, 1, 0.4 )
-material = SubResource( 4 )
+material = SubResource( 12 )
 rotation = -0.698132
 scale = Vector2( 1.3, 1.3 )
 texture = ExtResource( 16 )
@@ -3941,36 +3987,36 @@ texture = ExtResource( 16 )
 visible = false
 self_modulate = Color( 1, 1, 1, 0.4 )
 show_behind_parent = true
-material = SubResource( 5 )
+material = SubResource( 13 )
 rotation = 0.698132
 texture = ExtResource( 16 )
 
 [node name="anim" type="AnimationPlayer" parent="."]
-anims/awake_loop = SubResource( 6 )
-anims/awakening = SubResource( 7 )
-anims/die = SubResource( 8 )
-anims/die_old = SubResource( 9 )
-anims/eyeglow = SubResource( 10 )
-anims/sleep_loop = SubResource( 11 )
-anims/spike_burst = SubResource( 12 )
-anims/spike_burst(copy) = SubResource( 13 )
-anims/spike_burst_glow_bod = SubResource( 14 )
-anims/spike_burst_gloweyes = SubResource( 15 )
-anims/spike_retract = SubResource( 16 )
-anims/take_damage = SubResource( 17 )
-anims/to_sleep = SubResource( 18 )
-anims/tracking_loop = SubResource( 19 )
+anims/awake_loop = SubResource( 14 )
+anims/awakening = SubResource( 15 )
+anims/die = SubResource( 16 )
+anims/die_old = SubResource( 17 )
+anims/eyeglow = SubResource( 18 )
+anims/sleep_loop = SubResource( 19 )
+anims/spike_burst = SubResource( 20 )
+anims/spike_burst(copy) = SubResource( 21 )
+anims/spike_burst_glow_bod = SubResource( 22 )
+anims/spike_burst_gloweyes = SubResource( 23 )
+anims/spike_retract = SubResource( 24 )
+anims/take_damage = SubResource( 25 )
+anims/to_sleep = SubResource( 26 )
+anims/tracking_loop = SubResource( 27 )
 blend_times = [ "sleep_loop", "spike_burst", 0.5, "spike_retract", "sleep_loop", 0.5 ]
 
 [node name="vortex_anim" type="AnimationPlayer" parent="."]
 playback_speed = 0.15
-anims/vortex_spin = SubResource( 20 )
+anims/vortex_spin = SubResource( 28 )
 
 [node name="collision" type="CollisionShape2D" parent="."]
 visible = false
 modulate = Color( 1, 1, 1, 0.241935 )
 position = Vector2( 0.291992, 0 )
-shape = SubResource( 21 )
+shape = SubResource( 29 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -3983,7 +4029,7 @@ visible = false
 modulate = Color( 1, 1, 1, 0.5 )
 position = Vector2( -0.323532, 1.29414 )
 scale = Vector2( 1.1, 1.1 )
-shape = SubResource( 22 )
+shape = SubResource( 30 )
 
 [node name="sfx" type="Node2D" parent="."]
 

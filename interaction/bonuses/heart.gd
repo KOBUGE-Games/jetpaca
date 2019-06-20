@@ -10,19 +10,16 @@ func _on_body_enter(body):
 		# 2to3: clear_shapes() changed to shape_owner_clear_shapes(0)
 		shape_owner_clear_shapes(0)
 		get_node("sprite").hide()
-#		# 2to3: Particles disabled during conversion
-#		get_node("shine_end").set_emitting(true)
-#		get_node("shine").set_emitting(false)
+		get_node("shine_end").set_emitting(true)
+		get_node("shine").set_emitting(false)
 		get_node("death").start()
 
 func _on_enter_screen():
-#	# 2to3: Particles disabled during conversion
-#	get_node("shine").set_emitting(true)
+	get_node("shine").set_emitting(true)
 	pass
 
 func _on_exit_screen():
-#	# 2to3: Particles disabled during conversion
-#	get_node("shine").set_emitting(false)
+	get_node("shine").set_emitting(false)
 	pass
 
 func _on_timeout():

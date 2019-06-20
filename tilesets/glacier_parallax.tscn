@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://art/glacier_bg_sky.png" type="Texture" id=1]
 [ext_resource path="res://art/glacier_bg_ice_back.png" type="Texture" id=2]
@@ -10,6 +10,43 @@
 [ext_resource path="res://art/glacier_bg_iceberg1.png" type="Texture" id=8]
 [ext_resource path="res://art/glacier_bg_front_ice.png" type="Texture" id=9]
 [ext_resource path="res://art/glacier_snowball.png" type="Texture" id=10]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.5, 1 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 2
+emission_box_extents = Vector3( 512, 100, 0 )
+flag_disable_z = true
+spread = 10.0
+gravity = Vector3( 0, 0, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+color_ramp = SubResource( 2 )
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0, 0.05, 0.95, 1 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[sub_resource type="ParticlesMaterial" id=6]
+emission_shape = 2
+emission_box_extents = Vector3( 120, 512, 0 )
+flag_disable_z = true
+spread = 10.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 80.0
+initial_velocity_random = 0.5
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+color_ramp = SubResource( 5 )
 
 [node name="icebg" type="ParallaxBackground"]
 scroll_base_offset = Vector2( 0, 256 )
@@ -59,6 +96,7 @@ centered = false
 position = Vector2( 512, 160 )
 amount = 16
 lifetime = 10.0
+process_material = SubResource( 3 )
 texture = ExtResource( 5 )
 
 [node name="iceberg" type="Sprite" parent="water"]
@@ -89,8 +127,10 @@ motion_mirroring = Vector2( 1024, 760 )
 
 [node name="snow" type="Particles2D" parent="falling_snow"]
 self_modulate = Color( 1, 1, 1, 0.86 )
-position = Vector2( 512, 120 )
+position = Vector2( 512, 56 )
+rotation = 1.74533
 amount = 128
 lifetime = 10.0
 preprocess = 10.0
+process_material = SubResource( 6 )
 texture = ExtResource( 10 )

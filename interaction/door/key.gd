@@ -17,8 +17,7 @@ func _on_timeout():
 func _on_body_enter(body):
 	if body is preload("res://player/alpaca.gd"):
 		body.add_key(key_index)
-#		# 2to3: Particles disabled during conversion
-#		get_node("shine").set_emitting(true)
+		get_node("shine").set_emitting(true)
 		get_node("death").start()
 		get_node("gotkey_sfx").play()
 		get_node("sprite").hide()
@@ -26,13 +25,11 @@ func _on_body_enter(body):
 		shape_owner_clear_shapes(0)
 
 func _on_enter_screen():
-#	# 2to3: Particles disabled during conversion
-#	get_node("normal_shine").set_emitting(true)
+	get_node("normal_shine").set_emitting(true)
 	pass
 
 func _on_exit_screen():
-#	# 2to3: Particles disabled during conversion
-#	get_node("normal_shine").set_emitting(false)
+	get_node("normal_shine").set_emitting(false)
 	pass
 
 func _ready():

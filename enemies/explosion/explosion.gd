@@ -8,8 +8,7 @@ func _on_timeout():
 	queue_free()
 
 func explode():
-#	# 2to3: Particles disabled during conversion
-#	set_emitting(true)
+	set_emitting(true)
 	get_node("explosion_sfx").play()
 	get_node("timer").start()
 	print("GO KABOOM")

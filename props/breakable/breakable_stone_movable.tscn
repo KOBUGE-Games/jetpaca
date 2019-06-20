@@ -1,9 +1,28 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://props/breakable/breakable.gd" type="Script" id=1]
 [ext_resource path="res://art/mountain_breakable_stone.png" type="Texture" id=2]
 [ext_resource path="res://art/mountain_exploded_rock.png" type="Texture" id=3]
 [ext_resource path="res://sound/rock_explode.wav" type="AudioStream" id=4]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 2
+emission_box_extents = Vector3( 128, 0, 0 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 100, 0 )
+initial_velocity = 100.0
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+color_ramp = SubResource( 2 )
 
 [node name="breakable_stone" type="Node2D"]
 
@@ -22,7 +41,9 @@ polygon = PoolVector2Array( -98.4364, -11.8003, -44, -20, 35, -21, 96.2306, -15.
 emitting = false
 amount = 32
 lifetime = 2.0
-explosiveness = 0.05
+one_shot = true
+explosiveness = 0.95
+process_material = SubResource( 3 )
 texture = ExtResource( 3 )
 
 [node name="break_sfx" type="AudioStreamPlayer2D" parent="."]
