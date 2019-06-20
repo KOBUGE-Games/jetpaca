@@ -5,7 +5,6 @@
 [ext_resource path="res://art/crosshair_arrow.png" type="Texture" id=3]
 
 [sub_resource type="Animation" id=1]
-
 resource_name = "lock"
 length = 0.2
 step = 0.0
@@ -95,7 +94,6 @@ tracks/6/keys = {
 }
 
 [sub_resource type="Animation" id=2]
-
 loop = true
 step = 0.0
 tracks/0/type = "value"
@@ -172,7 +170,6 @@ tracks/5/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-
 length = 0.2
 step = 0.0
 tracks/0/type = "value"
@@ -234,4 +231,3 @@ texture = ExtResource( 3 )
 anims/lock = SubResource( 1 )
 anims/rotate = SubResource( 2 )
 anims/unlock = SubResource( 3 )
-

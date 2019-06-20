@@ -19,11 +19,9 @@
 [ext_resource path="res://sound/frog_kill.wav" type="AudioStream" id=17]
 
 [sub_resource type="PhysicsMaterial" id=1]
-
 friction = 0.0
 
 [sub_resource type="Animation" id=2]
-
 resource_name = "30_jump_landing"
 length = 5.0
 step = 0.25
@@ -305,7 +303,6 @@ tracks/22/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-
 resource_name = "31_jump_landing_from_burst"
 length = 5.5
 loop = true
@@ -588,7 +585,6 @@ tracks/22/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-
 resource_name = "burst"
 length = 5.0
 step = 0.25
@@ -896,7 +892,6 @@ tracks/24/keys = {
 }
 
 [sub_resource type="Animation" id=5]
-
 resource_name = "burst_fall"
 length = 2.0
 loop = true
@@ -1179,7 +1174,6 @@ tracks/22/keys = {
 }
 
 [sub_resource type="Animation" id=6]
-
 resource_name = "croak"
 length = 6.0
 step = 0.25
@@ -1535,7 +1529,6 @@ tracks/28/keys = {
 }
 
 [sub_resource type="Animation" id=7]
-
 resource_name = "default"
 step = 0.0
 tracks/0/type = "value"
@@ -1840,7 +1833,6 @@ tracks/24/keys = {
 }
 
 [sub_resource type="Animation" id=8]
-
 length = 18.0
 loop = true
 step = 0.25
@@ -2170,7 +2162,6 @@ tracks/26/keys = {
 }
 
 [sub_resource type="Animation" id=9]
-
 length = 3.0
 step = 0.25
 tracks/0/type = "value"
@@ -2465,7 +2456,6 @@ tracks/23/keys = {
 }
 
 [sub_resource type="Animation" id=10]
-
 length = 1.5
 loop = true
 step = 0.25
@@ -2747,7 +2737,6 @@ tracks/22/keys = {
 }
 
 [sub_resource type="Animation" id=11]
-
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -3052,7 +3041,6 @@ tracks/24/keys = {
 }
 
 [sub_resource type="CircleShape2D" id=12]
-
 radius = 22.0
 
 [node name="frog" type="RigidBody2D"]
@@ -3064,7 +3052,6 @@ script = ExtResource( 1 )
 can_move = true
 
 [node name="body" type="Sprite" parent="."]
-editor/display_folded = true
 show_behind_parent = true
 position = Vector2( 2.5574, 0.610427 )
 texture = ExtResource( 2 )
@@ -3072,7 +3059,6 @@ offset = Vector2( 0, -2 )
 hframes = 4
 
 [node name="head" type="Sprite" parent="body"]
-editor/display_folded = true
 position = Vector2( -13.0932, -1.05446 )
 texture = ExtResource( 3 )
 offset = Vector2( 0, -7 )
@@ -3113,7 +3099,6 @@ hframes = 4
 frame = 3
 
 [node name="arm 2" type="Sprite" parent="body"]
-editor/display_folded = true
 show_behind_parent = true
 position = Vector2( -14.9639, 2.63882 )
 texture = ExtResource( 9 )
@@ -3133,7 +3118,6 @@ offset = Vector2( 0, -0.5 )
 flip_h = true
 
 [node name="leg_fg" type="Sprite" parent="body"]
-editor/display_folded = true
 position = Vector2( 21.2757, 8.93359 )
 texture = ExtResource( 12 )
 offset = Vector2( 3, -5.5 )
@@ -3150,7 +3134,6 @@ texture = ExtResource( 14 )
 offset = Vector2( 3, 2 )
 
 [node name="arm" type="Sprite" parent="body"]
-editor/display_folded = true
 position = Vector2( 1.66089, 3.39454 )
 texture = ExtResource( 9 )
 offset = Vector2( 0, 3 )
@@ -3166,7 +3149,6 @@ texture = ExtResource( 11 )
 offset = Vector2( 0, 0.5 )
 
 [node name="leg_bg" type="Sprite" parent="body"]
-editor/display_folded = true
 show_behind_parent = true
 position = Vector2( 4.86696, 7.1388 )
 texture = ExtResource( 12 )
@@ -3243,6 +3225,5 @@ stream = ExtResource( 16 )
 
 [node name="kill" type="AudioStreamPlayer2D" parent="sfx"]
 stream = ExtResource( 17 )
-
 [connection signal="screen_entered" from="screen_proximity" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="screen_proximity" to="." method="_on_exit_screen"]

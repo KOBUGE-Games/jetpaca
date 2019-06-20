@@ -4,11 +4,9 @@
 [ext_resource path="res://art/bubble.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-
 radius = 50.0
 
 [sub_resource type="Animation" id=2]
-
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprite:scale")
@@ -24,7 +22,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-
 length = 0.2
 step = 0.0
 tracks/0/type = "value"
@@ -53,7 +50,6 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-
 loop = true
 step = 0.0
 tracks/0/type = "value"
@@ -97,7 +93,6 @@ anims/wobble = SubResource( 4 )
 [node name="burst" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
-
 [connection signal="screen_entered" from="sprox" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="sprox" to="." method="_on_exit_screen"]
 [connection signal="timeout" from="burst" to="." method="_on_timeout"]

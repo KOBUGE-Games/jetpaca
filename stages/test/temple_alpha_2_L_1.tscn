@@ -2,9 +2,9 @@
 
 [ext_resource path="res://stages/stage.gd" type="Script" id=1]
 [ext_resource path="res://tilesets/temple_tileset.tres" type="TileSet" id=2]
-[ext_resource path="res://props/fountain.tscn" type="PackedScene" id=3]
-[ext_resource path="res://tilesets/temple_parallax.tscn" type="PackedScene" id=4]
-[ext_resource path="res://enemies/spikes/sacra_pinchorb.tscn" type="PackedScene" id=5]
+[ext_resource path="res://tilesets/temple_parallax.tscn" type="PackedScene" id=3]
+[ext_resource path="res://enemies/spikes/sacra_pinchorb.tscn" type="PackedScene" id=4]
+[ext_resource path="res://props/fountain.tscn" type="PackedScene" id=5]
 
 [node name="stage" type="Node"]
 script = ExtResource( 1 )
@@ -20,21 +20,20 @@ __meta__ = {
 
 [node name="interm" type="Node" parent="."]
 
-[node name="fuente_base" parent="interm" instance=ExtResource( 3 )]
+[node name="fuente_base" parent="interm" instance=ExtResource( 5 )]
 position = Vector2( 1510.34, 1702.36 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="launch" type="Position2D" parent="."]
 position = Vector2( 247.861, 1779.39 )
 
-[node name="temple_bg" parent="." instance=ExtResource( 4 )]
+[node name="temple_bg" parent="." instance=ExtResource( 3 )]
 scroll_ignore_camera_zoom = false
 
 [node name="enemies" type="Node" parent="."]
 
-[node name="sacra_pinchorb" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb" parent="enemies" instance=ExtResource( 4 )]
 position = Vector2( 6862.1, 1171.44 )
 
-[node name="sacra_pinchorb 2" parent="enemies" instance=ExtResource( 5 )]
+[node name="sacra_pinchorb 2" parent="enemies" instance=ExtResource( 4 )]
 position = Vector2( 6475.32, 1119.62 )
-

@@ -20,7 +20,6 @@
 [ext_resource path="res://art/cachos_mage/darkflame.png" type="Texture" id=18]
 
 [sub_resource type="Animation" id=1]
-
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
@@ -1356,7 +1355,6 @@ tracks/110/keys = {
 }
 
 [sub_resource type="Animation" id=2]
-
 length = 2.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
@@ -2752,7 +2750,6 @@ tracks/115/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-
 length = 12.0
 step = 0.2
 tracks/0/type = "value"
@@ -4125,7 +4122,6 @@ tracks/113/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-
 length = 4.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
@@ -5365,7 +5361,6 @@ tracks/102/keys = {
 }
 
 [sub_resource type="Animation" id=5]
-
 length = 4.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
@@ -6581,7 +6576,6 @@ tracks/100/keys = {
 }
 
 [sub_resource type="Animation" id=6]
-
 length = 12.0
 loop = true
 tracks/0/type = "value"
@@ -8050,7 +8044,6 @@ tracks/121/keys = {
 }
 
 [sub_resource type="Animation" id=7]
-
 length = 7.0
 step = 0.2
 tracks/0/type = "value"
@@ -10263,7 +10256,6 @@ tracks/183/keys = {
 }
 
 [sub_resource type="Animation" id=8]
-
 length = 12.0
 loop = true
 tracks/0/type = "value"
@@ -11516,7 +11508,6 @@ tracks/103/keys = {
 }
 
 [sub_resource type="Animation" id=9]
-
 length = 5.0
 loop = true
 tracks/0/type = "value"
@@ -12769,7 +12760,6 @@ tracks/103/keys = {
 }
 
 [sub_resource type="Animation" id=10]
-
 length = 5.0
 loop = true
 tracks/0/type = "value"
@@ -13998,7 +13988,6 @@ tracks/101/keys = {
 }
 
 [sub_resource type="Animation" id=11]
-
 length = 5.0
 loop = true
 tracks/0/type = "value"
@@ -15263,7 +15252,6 @@ tracks/104/keys = {
 }
 
 [sub_resource type="Animation" id=12]
-
 length = 5.0
 loop = true
 tracks/0/type = "value"
@@ -16492,7 +16480,6 @@ tracks/101/keys = {
 }
 
 [sub_resource type="Animation" id=13]
-
 length = 2.0
 loop = true
 tracks/0/type = "value"
@@ -17673,7 +17660,6 @@ tracks/97/keys = {
 }
 
 [sub_resource type="Animation" id=14]
-
 length = 0.75
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
@@ -18997,7 +18983,6 @@ tracks/109/keys = {
 }
 
 [sub_resource type="Animation" id=15]
-
 length = 5.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
@@ -20201,7 +20186,6 @@ tracks/99/keys = {
 }
 
 [sub_resource type="CanvasItemMaterial" id=16]
-
 blend_mode = 1
 
 [node name="RigidBody2D" type="RigidBody2D"]
@@ -20602,4 +20586,3 @@ position = Vector2( -11.0518, -48.4126 )
 texture = ExtResource( 3 )
 offset = Vector2( 1.68596, 15.4134 )
 hframes = 6
-

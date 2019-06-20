@@ -2,19 +2,19 @@
 
 [ext_resource path="res://stages/stage.gd" type="Script" id=1]
 [ext_resource path="res://tilesets/test_tileset.tres" type="TileSet" id=2]
-[ext_resource path="res://interaction/platform/platform.tscn" type="PackedScene" id=3]
-[ext_resource path="res://interaction/platform/spinning_log.tscn" type="PackedScene" id=4]
-[ext_resource path="res://interaction/fire_holder/fire_holder.tscn" type="PackedScene" id=5]
-[ext_resource path="res://interaction/door/locked_door.tscn" type="PackedScene" id=6]
+[ext_resource path="res://enemies/spikes/mountain_spikes.tscn" type="PackedScene" id=3]
+[ext_resource path="res://interaction/fire_holder/fire_holder.tscn" type="PackedScene" id=4]
+[ext_resource path="res://enemies/spikes/mountain_long_spikes.tscn" type="PackedScene" id=5]
+[ext_resource path="res://interaction/boosters/boost_directed.tscn" type="PackedScene" id=6]
 [ext_resource path="res://interaction/bonuses/big_coin.tscn" type="PackedScene" id=7]
-[ext_resource path="res://enemies/spikes/mountain_long_spikes.tscn" type="PackedScene" id=8]
-[ext_resource path="res://enemies/spikes/mountain_spikes.tscn" type="PackedScene" id=9]
+[ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=8]
+[ext_resource path="res://interaction/door/locked_door.tscn" type="PackedScene" id=9]
 [ext_resource path="res://interaction/door/key.tscn" type="PackedScene" id=10]
-[ext_resource path="res://interaction/boosters/boost_directed.tscn" type="PackedScene" id=11]
-[ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=12]
-[ext_resource path="res://interaction/roulette/roulette.tscn" type="PackedScene" id=13]
+[ext_resource path="res://interaction/platform/platform.tscn" type="PackedScene" id=11]
+[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=12]
+[ext_resource path="res://interaction/platform/spinning_log.tscn" type="PackedScene" id=13]
 [ext_resource path="res://interaction/bonuses/fruit.tscn" type="PackedScene" id=14]
-[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=15]
+[ext_resource path="res://interaction/roulette/roulette.tscn" type="PackedScene" id=15]
 
 [node name="stage" type="Node"]
 script = ExtResource( 1 )
@@ -31,533 +31,532 @@ __meta__ = {
 }
 
 [node name="Moving Platforms" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="carryplat" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="carryplat" parent="Moving Platforms" instance=ExtResource( 11 )]
 position = Vector2( 1093.22, 1495.76 )
 
-[node name="spinning_log 23" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 1408, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 2" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 2" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 1472, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 6" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 6" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 1664, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 6 2" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 6 2" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 1536, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 6 3" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 6 3" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 1600, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 6 5" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 6 5" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 1728, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 8" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 1792, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 9" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 9" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 1920, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 27" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 27" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 1856, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 10" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 10" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2048, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 28" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 28" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 1984, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 11" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 11" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2112, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 8 6" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 6" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2176, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 31" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 31" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2240, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 8 8" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 8" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2368, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 32" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 32" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2304, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 14" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 14" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2432, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 16" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 16" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2560, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 8 10" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 10" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2496, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 35" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 35" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2624, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 17" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 17" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2688, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 8 12" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 12" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2752, 1664 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 8 13" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 13" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2816, 1696 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 38" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 38" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2944, 1760 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 20" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 20" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3008, 1792 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 8 14" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 14" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 2880, 1728 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 39" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 39" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3072, 1824 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 21" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 21" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3200, 1888 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 8 15" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 15" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3136, 1856 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 40" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 40" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3264, 1920 )
 constant_angular_velocity = 24.0
 
-[node name="spinning_log 23 22" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 22" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3392, 1920 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 16" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 16" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3328, 1920 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 41" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 41" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3456, 1920 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 23" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 23" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3584, 1920 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 17" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 17" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3520, 1920 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 42" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 42" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3648, 1920 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 24" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 24" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3776, 1920 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 18" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 18" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3712, 1920 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 43" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 43" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3840, 1920 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 25" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 25" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 4032, 1888 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 19" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 19" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3904, 1920 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 44" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 44" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 3968, 1920 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 26" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 26" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 4160, 1824 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 20" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 20" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 4096, 1856 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 45" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 45" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 4288, 1760 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 27" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 27" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 4352, 1728 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 21" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 21" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 4224, 1792 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 46" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 46" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 4416, 1728 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 28" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 28" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 4544, 1728 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 22" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 22" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 4480, 1728 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 8448, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 47" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 47" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 8512, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 2" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 2" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 8640, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 23" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 23" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 8576, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 30" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 30" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 8704, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 48" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 48" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 8768, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 3" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 3" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 8896, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 24" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 24" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 8832, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 31" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 31" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 8960, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 49" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 49" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9024, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 4" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 4" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9152, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 25" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 25" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9088, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 50" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 50" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9216, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 5" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 5" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9344, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 26" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 26" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9280, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 32" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 32" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9408, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 50 2" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 50 2" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9472, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 5 2" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 5 2" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10560, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 26 2" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 26 2" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9536, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 5 3" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 5 3" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10592, 2032 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 5 4" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 5 4" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10688, 1984 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 5 5" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 5 5" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10640, 2016 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 5 6" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 5 6" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10736, 1968 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 5 7" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 5 7" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10800, 1936 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 6" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 6" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9664, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 27" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 27" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9600, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 33" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 33" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9728, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 50 3" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 50 3" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9792, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 26 3" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 26 3" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9856, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 34" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 34" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10048, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 50 4" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 50 4" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10112, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 26 4" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 26 4" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10176, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 7" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 7" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9984, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 28" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 28" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 9920, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 35" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 35" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10368, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 50 5" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 50 5" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10432, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 26 5" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 26 5" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10496, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 8" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 8" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10304, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 29" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 29" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 10240, 2048 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 36" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 36" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 6272, 2048 )
 constant_angular_velocity = 12.0
 
-[node name="spinning_log 23 37" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 37" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 6368, 2048 )
 constant_angular_velocity = 12.0
 
-[node name="spinning_log 23 38" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 38" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 6464, 2048 )
 constant_angular_velocity = 12.0
 
-[node name="spinning_log 23 39" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 39" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 6560, 2048 )
 constant_angular_velocity = 12.0
 
-[node name="spinning_log 23 40" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 40" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 6656, 2048 )
 constant_angular_velocity = 12.0
 
-[node name="carryplat 2" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="carryplat 2" parent="Moving Platforms" instance=ExtResource( 11 )]
 position = Vector2( 8544, 1984 )
 
-[node name="spinning_log 50 6" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 50 6" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 12032, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 41" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 41" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 12288, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 26 6 2" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 26 6 2" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 12416, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 30" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 30" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 12160, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 26 7" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 26 7" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 12544, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 50 6 3" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 50 6 3" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 12800, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 10" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 10" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 12672, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 50 8" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 50 8" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 12928, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 43" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 43" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 13184, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 26 6 4" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 26 6 4" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 13312, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 32" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 32" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 13056, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 50 6 5" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 50 6 5" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 15040, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 26 6 5" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 26 6 5" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 15168, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 13" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 13" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 13696, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 14" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 14" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 13824, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 15" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 15" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 13952, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 15 2" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 15 2" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 14080, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 16" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 16" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 14208, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 15 3" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 15 3" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 14336, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 17" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 17" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 14464, 4288 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 17 2" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 17 2" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 14528, 4288 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 15 4" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 15 4" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 14656, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 17 3" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 17 3" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 14784, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 15 4 2" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 15 4 2" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 14912, 4480 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 18" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 18" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 13440, 4288 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 29 19" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 29 19" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 13504, 4288 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 50 6 6" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 50 6 6" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 15808, 4608 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 26 6 8" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 26 6 8" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 15872, 4608 )
 constant_angular_velocity = 48.0
 
-[node name="spinning_log 23 8 26 6 6" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="spinning_log 23 8 26 6 6" parent="Moving Platforms" instance=ExtResource( 13 )]
 position = Vector2( 15296, 4480 )
 constant_angular_velocity = 48.0
 
 [node name="torches" type="Node" parent="."]
 
-[node name="torch_trigger" parent="torches" instance=ExtResource( 5 )]
+[node name="torch_trigger" parent="torches" instance=ExtResource( 4 )]
 position = Vector2( 1184, 1376 )
 
 [node name="door" parent="torches" groups=[
 "door",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 1408, 1600 )
 no_key = true
 
-[node name="torch_trigger 2" parent="torches" instance=ExtResource( 5 )]
+[node name="torch_trigger 2" parent="torches" instance=ExtResource( 4 )]
 position = Vector2( 7104, 2016 )
 
 [node name="door 2" parent="torches" groups=[
 "door 2",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 7328.01, 2080.01 )
 rotation = 1.57045
 no_key = true
 
-[node name="torch_trigger 3" parent="torches" instance=ExtResource( 5 )]
+[node name="torch_trigger 3" parent="torches" instance=ExtResource( 4 )]
 position = Vector2( 16352, 4576 )
 
 [node name="door 3" parent="torches" groups=[
 "door 3",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 17179.3, 4631.21 )
 rotation = 1.57045
 no_key = true
@@ -565,7 +564,6 @@ no_key = true
 [node name="Breakeable stones" type="Node" parent="."]
 
 [node name="Large Fruits" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="big_coin" parent="Large Fruits" instance=ExtResource( 7 )]
 position = Vector2( 7328, 2208 )
@@ -579,108 +577,104 @@ position = Vector2( 17222, 4782 )
 fruit_index = 2
 
 [node name="Spikes Wall" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="spikes" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 11136, 2208 )
 
-[node name="spikes 2" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 2" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 10624, 2208 )
 
-[node name="spikes 3" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 3" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 10112, 2208 )
 
-[node name="spikes 4" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 4" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 9600, 2208 )
 
-[node name="spikes 5" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 5" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 9088, 2208 )
 
-[node name="spikes 6" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 6" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 11648, 2208 )
 
-[node name="spikes 7" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 7" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 12160, 2208 )
 
-[node name="spikes 8" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 8" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 13312, 2208 )
 
-[node name="spikes 9" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 9" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 4352, 2400 )
 
-[node name="spikes 10" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 10" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 4864, 2400 )
 
-[node name="spikes 11" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 11" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 5376, 2400 )
 
-[node name="spikes 12" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 12" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 5888, 2400 )
 
-[node name="spikes 13" parent="Spikes Wall" instance=ExtResource( 9 )]
+[node name="spikes 13" parent="Spikes Wall" instance=ExtResource( 3 )]
 position = Vector2( 4032, 2400 )
 
-[node name="spikes 14" parent="Spikes Wall" instance=ExtResource( 9 )]
+[node name="spikes 14" parent="Spikes Wall" instance=ExtResource( 3 )]
 position = Vector2( 6208, 2400 )
 
-[node name="spikes 15" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 15" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 13568, 2464 )
 
-[node name="spikes 16" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 16" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 12224, 4704 )
 
-[node name="spikes 17" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 17" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 12736, 4704 )
 
-[node name="spikes 18" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 18" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 13248, 4704 )
 
-[node name="spikes 19" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 19" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 13760, 4704 )
 
-[node name="spikes 20" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 20" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 14272, 4704 )
 
-[node name="spikes 21" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 21" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 14784, 4704 )
 
-[node name="spikes 22" parent="Spikes Wall" instance=ExtResource( 8 )]
+[node name="spikes 22" parent="Spikes Wall" instance=ExtResource( 5 )]
 position = Vector2( 15301, 4677.02 )
 rotation = -0.172685
 
 [node name="shortcut" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="door" parent="shortcut" instance=ExtResource( 6 )]
+[node name="door" parent="shortcut" instance=ExtResource( 9 )]
 position = Vector2( 8096.64, 2080.65 )
 rotation = 1.59117
 
 [node name="key" parent="shortcut" instance=ExtResource( 10 )]
 position = Vector2( 11872, 4288 )
 
-[node name="booster_push" parent="shortcut" instance=ExtResource( 11 )]
+[node name="booster_push" parent="shortcut" instance=ExtResource( 6 )]
 position = Vector2( 11506.3, 4195.86 )
 rotation = -2.65426
 
-[node name="booster_push 2" parent="shortcut" instance=ExtResource( 11 )]
+[node name="booster_push 2" parent="shortcut" instance=ExtResource( 6 )]
 position = Vector2( 9993.02, 3439.2 )
 rotation = -2.65426
 
-[node name="booster_push 3" parent="shortcut" instance=ExtResource( 11 )]
+[node name="booster_push 3" parent="shortcut" instance=ExtResource( 6 )]
 position = Vector2( 8850.86, 2860.95 )
 rotation = -2.35098
 
 [node name="Checkpoint" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="checkpoint" parent="Checkpoint" instance=ExtResource( 12 )]
+[node name="checkpoint" parent="Checkpoint" instance=ExtResource( 8 )]
 position = Vector2( 7870.05, 1995.98 )
 
-[node name="roulette" parent="Checkpoint" instance=ExtResource( 13 )]
+[node name="roulette" parent="Checkpoint" instance=ExtResource( 15 )]
 position = Vector2( 17762.6, 4447.24 )
 
 [node name="Fruits" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="fruit" parent="Fruits" instance=ExtResource( 14 )]
 position = Vector2( 896, 1376 )
@@ -1481,53 +1475,51 @@ position = Vector2( 14304, 4576 )
 position = Vector2( 14368, 4576 )
 
 [node name="Enemies" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="sacra_pinchorb" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 7136, 1536 )
 
-[node name="sacra_pinchorb 2" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 2" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 7360, 1888 )
 
-[node name="sacra_pinchorb 3" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 3" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 7360, 1600 )
 
-[node name="sacra_pinchorb 4" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 4" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 12704, 2848 )
 
-[node name="sacra_pinchorb 5" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 5" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 12960, 2496 )
 
-[node name="sacra_pinchorb 6" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 6" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 12608, 3392 )
 
-[node name="sacra_pinchorb 7" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 7" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 12864, 3360 )
 
-[node name="sacra_pinchorb 8" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 8" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 12128, 4064 )
 
-[node name="sacra_pinchorb 9" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 9" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 12128, 3776 )
 
-[node name="sacra_pinchorb 10" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 10" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 12128, 4288 )
 
-[node name="sacra_pinchorb 11" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 11" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 12352, 3648 )
 
-[node name="sacra_pinchorb 12" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 12" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 15264, 3712 )
 
-[node name="sacra_pinchorb 13" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 13" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 15648, 3840 )
 
-[node name="sacra_pinchorb 14" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 14" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 16128, 4064 )
 
-[node name="sacra_pinchorb 15" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 15" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 16704, 4000 )
 
-[node name="sacra_pinchorb 16" parent="Enemies" instance=ExtResource( 15 )]
+[node name="sacra_pinchorb 16" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 17024, 4000 )
-

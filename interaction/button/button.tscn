@@ -3,7 +3,6 @@
 [ext_resource path="res://art/button.png" type="Texture" id=1]
 
 [sub_resource type="Animation" id=1]
-
 resource_name = "button_press"
 length = 2.5
 loop = true
@@ -29,4 +28,3 @@ hframes = 8
 [node name="AnimationPlayer" type="AnimationPlayer" parent="button"]
 playback_speed = 2.0
 anims/button_press = SubResource( 1 )
-

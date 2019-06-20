@@ -17,7 +17,6 @@
 [ext_resource path="res://art/button_right.png" type="Texture" id=15]
 
 [sub_resource type="StyleBoxTexture" id=1]
-
 texture = ExtResource( 6 )
 region_rect = Rect2( 0, 0, 256, 256 )
 margin_left = 50.0
@@ -26,7 +25,6 @@ margin_top = 50.0
 margin_bottom = 50.0
 
 [sub_resource type="Animation" id=2]
-
 resource_name = "fadein"
 step = 0.0
 tracks/0/type = "value"
@@ -67,7 +65,6 @@ tracks/2/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("dialog:visible")
@@ -95,7 +92,6 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-
 resource_name = "glow"
 loop = true
 step = 0.5
@@ -149,7 +145,6 @@ tracks/3/keys = {
 }
 
 [sub_resource type="Animation" id=5]
-
 resource_name = "noglow"
 tracks/0/type = "value"
 tracks/0/path = NodePath("jp_right/attack:modulate")
@@ -206,6 +201,9 @@ anchor_bottom = 1.0
 margin_left = 1.0
 margin_right = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="life" type="Node2D" parent="."]
 
@@ -412,6 +410,5 @@ hframes = 2
 playback_speed = 1.8
 anims/glow = SubResource( 4 )
 anims/noglow = SubResource( 5 )
-
 [connection signal="pressed" from="pause" to="." method="_on_pause_pressed"]
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]

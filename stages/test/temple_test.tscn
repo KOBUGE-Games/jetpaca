@@ -25,4 +25,3 @@ position = Vector2( 231.712, 397.806 )
 
 [node name="temple_bg" parent="." instance=ExtResource( 4 )]
 scroll_ignore_camera_zoom = false
-

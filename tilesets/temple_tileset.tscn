@@ -274,4 +274,3 @@ region_rect = Rect2( 896, 384, 128, 128 )
 [node name="colpoly" type="CollisionPolygon2D" parent="top_corner/col"]
 build_mode = 1
 polygon = PoolVector2Array( 0, 0, 0, 64, 48, 80, 48, 128, 128, 128, 128, 0 )
-

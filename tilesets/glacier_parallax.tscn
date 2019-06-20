@@ -15,7 +15,6 @@
 scroll_base_offset = Vector2( 0, 256 )
 scroll_base_scale = Vector2( 0.8, 0.1 )
 scroll_limit_end = Vector2( 0, 1024 )
-scroll_ignore_camera_zoom = false
 
 [node name="sky" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.05, 1 )
@@ -95,4 +94,3 @@ amount = 128
 lifetime = 10.0
 preprocess = 10.0
 texture = ExtResource( 10 )
-

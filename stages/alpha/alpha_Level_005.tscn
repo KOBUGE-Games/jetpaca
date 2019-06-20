@@ -2,23 +2,23 @@
 
 [ext_resource path="res://stages/stage.gd" type="Script" id=1]
 [ext_resource path="res://tilesets/test_tileset.tres" type="TileSet" id=2]
-[ext_resource path="res://enemies/spikes/mountain_long_spikes.tscn" type="PackedScene" id=3]
-[ext_resource path="res://enemies/spikes/mountain_spikes.tscn" type="PackedScene" id=4]
+[ext_resource path="res://interaction/bonuses/big_coin_movable.tscn" type="PackedScene" id=3]
+[ext_resource path="res://enemies/spikes/mountain_long_spikes.tscn" type="PackedScene" id=4]
 [ext_resource path="res://interaction/bonuses/big_coin.tscn" type="PackedScene" id=5]
-[ext_resource path="res://interaction/bonuses/big_coin_movable.tscn" type="PackedScene" id=6]
-[ext_resource path="res://props/breakable/breakable_stone_big.tscn" type="PackedScene" id=7]
-[ext_resource path="res://props/stones/mountain_rock.tscn" type="PackedScene" id=8]
-[ext_resource path="res://props/breakable/jar1.tscn" type="PackedScene" id=9]
-[ext_resource path="res://props/breakable/jar2.tscn" type="PackedScene" id=10]
-[ext_resource path="res://props/breakable/jar3.tscn" type="PackedScene" id=11]
-[ext_resource path="res://enemies/spikes/round_spike_movable.tscn" type="PackedScene" id=12]
+[ext_resource path="res://enemies/spikes/mountain_spikes.tscn" type="PackedScene" id=6]
+[ext_resource path="res://enemies/spikes/round_spike_movable.tscn" type="PackedScene" id=7]
+[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=8]
+[ext_resource path="res://enemies/warrior/warrior.tscn" type="PackedScene" id=9]
+[ext_resource path="res://props/breakable/breakable_stone_big.tscn" type="PackedScene" id=10]
+[ext_resource path="res://interaction/bonuses/fruit.tscn" type="PackedScene" id=11]
+[ext_resource path="res://props/breakable/jar3.tscn" type="PackedScene" id=12]
 [ext_resource path="res://enemies/spikes/round_spike.tscn" type="PackedScene" id=13]
-[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=14]
-[ext_resource path="res://enemies/warrior/warrior.tscn" type="PackedScene" id=15]
-[ext_resource path="res://interaction/bonuses/fruit.tscn" type="PackedScene" id=16]
-[ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=17]
-[ext_resource path="res://interaction/roulette/roulette.tscn" type="PackedScene" id=18]
-[ext_resource path="res://interaction/door/locked_door.tscn" type="PackedScene" id=19]
+[ext_resource path="res://interaction/door/locked_door.tscn" type="PackedScene" id=14]
+[ext_resource path="res://props/breakable/jar2.tscn" type="PackedScene" id=15]
+[ext_resource path="res://props/breakable/jar1.tscn" type="PackedScene" id=16]
+[ext_resource path="res://props/stones/mountain_rock.tscn" type="PackedScene" id=17]
+[ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=18]
+[ext_resource path="res://interaction/roulette/roulette.tscn" type="PackedScene" id=19]
 [ext_resource path="res://interaction/door/key.tscn" type="PackedScene" id=20]
 
 [node name="stage" type="Node"]
@@ -36,172 +36,170 @@ __meta__ = {
 }
 
 [node name="Spikes" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="spikes" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 470.559, 1635.31 )
 rotation = 0.802982
 
-[node name="spikes 2" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 2" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 1146.11, 2199.05 )
 rotation = -0.802708
 
-[node name="spikes 3" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 3" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 778.053, 2576.43 )
 rotation = -0.802708
 
-[node name="spikes 4" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 4" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 236.716, 2885.9 )
 rotation = 0.747191
 
-[node name="spikes 5" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 5" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 601.476, 3242.75 )
 rotation = 0.75949
 
-[node name="spikes 6" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 6" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 1002.73, 3531.48 )
 rotation = 0.472579
 
-[node name="spikes 7" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 7" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 2044.21, 3928.51 )
 rotation = -0.182033
 
-[node name="spikes 8" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 8" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1923, 3957.6 )
 rotation = -0.468054
 
-[node name="spikes 9" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 9" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1789.57, 4050.75 )
 rotation = -0.743067
 
-[node name="spikes 10" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 10" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1691.38, 4143.9 )
 rotation = -0.743067
 
-[node name="spikes 11" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 11" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 1411.31, 4311.1 )
 rotation = -0.50402
 
-[node name="spikes 12" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 12" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 270.862, 5099.09 )
 rotation = 0.793502
 
-[node name="spikes 13" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 13" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1123.4, 4467.72 )
 rotation = -0.468054
 
-[node name="spikes 14" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 14" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1005.25, 4522.25 )
 rotation = -0.468054
 
-[node name="spikes 15" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 15" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 830.303, 4629.03 )
 rotation = -0.755726
 
-[node name="spikes 16" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 16" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 728.06, 4740.37 )
 rotation = -0.755726
 
-[node name="spikes 17" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 17" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 638.939, 5458.08 )
 rotation = 0.777752
 
-[node name="spikes 18" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 18" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 1029.74, 5778.44 )
 rotation = 0.615342
 
-[node name="spikes 19" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 19" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1293.96, 5945.18 )
 rotation = 0.447611
 
-[node name="spikes 20" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 20" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 1823.3, 6348.5 )
 rotation = -0.686529
 
-[node name="spikes 21" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 21" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 1439.32, 6696.13 )
 rotation = -0.786609
 
-[node name="spikes 22" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 22" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1212.17, 6931.26 )
 rotation = -0.757873
 
-[node name="spikes 23" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 23" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 541.847, 7293.68 )
 rotation = 0.559663
 
-[node name="spikes 25" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 25" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1279.35, 3658.57 )
 rotation = 0.447611
 
-[node name="spikes 26" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 26" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1966.34, 3699.75 )
 rotation = 3.37767
 
-[node name="spikes 27" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 27" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1850.47, 3654.31 )
 rotation = 3.6077
 
-[node name="spikes 28" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 28" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1727.77, 3588.42 )
 rotation = 3.66006
 
-[node name="spikes 31" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 31" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 3392.03, 3936.03 )
 rotation = -0.000973126
 
-[node name="spikes 32" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 32" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 2368.03, 3936.03 )
 rotation = -0.000973126
 
-[node name="spikes 33" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 33" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 2880.03, 3936.03 )
 rotation = -0.000973126
 
-[node name="spikes 34" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 34" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 3297.14, 3712.12 )
 rotation = 3.13788
 
-[node name="spikes 34 2" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 34 2" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 2272.03, 3716.55 )
 rotation = -3.14063
 
-[node name="spikes 34 3" parent="Spikes" instance=ExtResource( 3 )]
+[node name="spikes 34 3" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 2781.81, 3715.44 )
 rotation = 3.13777
 
-[node name="spikes 29" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 29" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1664.24, 10916.9 )
 rotation = 0.00722837
 
-[node name="spikes 30" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 30" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1621.44, 10818.7 )
 rotation = 1.46759
 
-[node name="spikes 35" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 35" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 1727.18, 10808.6 )
 rotation = -1.44381
 
-[node name="spikes 36" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 36" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 6393.89, 11557.3 )
 rotation = 0.00722837
 
-[node name="spikes 36 2" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 36 2" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 6351.09, 11459.1 )
 rotation = 1.46759
 
-[node name="spikes 36 3" parent="Spikes" instance=ExtResource( 4 )]
+[node name="spikes 36 3" parent="Spikes" instance=ExtResource( 6 )]
 position = Vector2( 6439.7, 11459.3 )
 rotation = -1.44381
 
 [node name="LargeCollectibles" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="big_coin" parent="LargeCollectibles" instance=ExtResource( 5 )]
 position = Vector2( 3840, 3552 )
 fruit_index = 1
 
-[node name="RigidBody2D" parent="LargeCollectibles" instance=ExtResource( 6 )]
+[node name="RigidBody2D" parent="LargeCollectibles" instance=ExtResource( 3 )]
 position = Vector2( 1606.2, 7612.95 )
 mass = 0.5
 
@@ -210,44 +208,41 @@ position = Vector2( 6807.83, 10062.1 )
 fruit_index = 1
 
 [node name="Destructible" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="breakable_stone" parent="Destructible" instance=ExtResource( 7 )]
+[node name="breakable_stone" parent="Destructible" instance=ExtResource( 10 )]
 position = Vector2( 1358.41, 7886.03 )
 rotation = -0.556332
 
 [node name="Debris" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="RigidBody2D" parent="Debris" instance=ExtResource( 8 )]
+[node name="RigidBody2D" parent="Debris" instance=ExtResource( 17 )]
 position = Vector2( 1311, 7113 )
 
-[node name="jar" parent="Debris" instance=ExtResource( 9 )]
+[node name="jar" parent="Debris" instance=ExtResource( 16 )]
 position = Vector2( 1433.37, 7289.43 )
 
-[node name="jar2" parent="Debris" instance=ExtResource( 10 )]
+[node name="jar2" parent="Debris" instance=ExtResource( 15 )]
 position = Vector2( 1394.66, 7367.14 )
 
-[node name="jar3" parent="Debris" instance=ExtResource( 11 )]
+[node name="jar3" parent="Debris" instance=ExtResource( 12 )]
 position = Vector2( 1253.31, 7265.08 )
 
-[node name="jar 4" parent="Debris" instance=ExtResource( 11 )]
+[node name="jar 4" parent="Debris" instance=ExtResource( 12 )]
 position = Vector2( 1336.41, 7279.83 )
 
-[node name="RigidBody2D 2" parent="Debris" instance=ExtResource( 12 )]
+[node name="RigidBody2D 2" parent="Debris" instance=ExtResource( 7 )]
 position = Vector2( 1381.16, 7093.57 )
 
-[node name="RigidBody2D 4" parent="Debris" instance=ExtResource( 12 )]
+[node name="RigidBody2D 4" parent="Debris" instance=ExtResource( 7 )]
 position = Vector2( 1389.31, 7169.69 )
 
-[node name="RigidBody2D 5" parent="Debris" instance=ExtResource( 12 )]
+[node name="RigidBody2D 5" parent="Debris" instance=ExtResource( 7 )]
 position = Vector2( 1244.1, 7125.21 )
 
-[node name="RigidBody2D 6" parent="Debris" instance=ExtResource( 12 )]
+[node name="RigidBody2D 6" parent="Debris" instance=ExtResource( 7 )]
 position = Vector2( 1298.49, 7184.24 )
 
 [node name="Floatingspikes" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="StaticBody2D" parent="Floatingspikes" instance=ExtResource( 13 )]
 position = Vector2( 1248, 8064 )
@@ -268,1392 +263,1388 @@ position = Vector2( 1504, 9248 )
 position = Vector2( 1248, 9600 )
 
 [node name="Enemies" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="sacra_pinchorb" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 615.827, 7146.93 )
 
-[node name="sacra_pinchorb 2" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 2" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 995.052, 7231.21 )
 rotation = 0.0148129
 
-[node name="sacra_pinchorb 3" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 3" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 960, 4192 )
 
-[node name="sacra_pinchorb 4" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 4" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 1152, 1920 )
 
-[node name="sacra_pinchorb 5" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 5" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 544, 2240 )
 
-[node name="sacra_pinchorb 6" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 6" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 3003.29, 10676.4 )
 rotation = 0.0148129
 drop = 2
 
-[node name="sacra_pinchorb 9" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 9" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 3878.01, 10654.7 )
 rotation = 0.0148129
 
-[node name="sacra_pinchorb 10" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 10" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 4449.83, 10286.9 )
 rotation = 0.0148129
 
-[node name="sacra_pinchorb 12" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 12" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 3738.92, 10265.3 )
 rotation = 0.0148129
 
-[node name="sacra_pinchorb 13" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 13" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 4128.47, 10656.5 )
 rotation = 0.0148129
 
-[node name="sacra_pinchorb 17" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 17" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 6010.71, 11085 )
 rotation = 0.0148129
 
-[node name="sacra_pinchorb 18" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 18" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 5758.95, 10944 )
 rotation = 0.0148129
 
-[node name="sacra_pinchorb 19" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 19" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 6254.91, 11208.3 )
 rotation = 0.0148129
 
-[node name="sacra_pinchorb 20" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 20" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 6602.33, 11107.6 )
 rotation = 0.0148129
 
-[node name="sacra_pinchorb 21" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 21" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 6796.18, 10903.7 )
 rotation = 0.0148129
 drop = 2
 
-[node name="sacra_pinchorb 22" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 22" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 6295.19, 9743.11 )
 rotation = 0.0148129
 drop = 2
 
-[node name="sacra_pinchorb 23" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 23" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 6078.68, 9821.15 )
 rotation = 0.0148129
 
-[node name="sacra_pinchorb 24" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 24" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 5844.55, 9926.89 )
 rotation = 0.0148129
 
-[node name="sacra_pinchorb 25" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 25" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 5312.47, 10144.5 )
 rotation = 0.0148129
 
-[node name="sacra_pinchorb 26" parent="Enemies" instance=ExtResource( 14 )]
+[node name="sacra_pinchorb 26" parent="Enemies" instance=ExtResource( 8 )]
 position = Vector2( 5633.07, 10052.8 )
 rotation = 0.0148129
 
-[node name="warrior" parent="Enemies" instance=ExtResource( 15 )]
+[node name="warrior" parent="Enemies" instance=ExtResource( 9 )]
 position = Vector2( 4160, 10368 )
 
-[node name="warrior 2" parent="Enemies" instance=ExtResource( 15 )]
+[node name="warrior 2" parent="Enemies" instance=ExtResource( 9 )]
 position = Vector2( 3040, 10304 )
 
-[node name="warrior 3" parent="Enemies" instance=ExtResource( 15 )]
+[node name="warrior 3" parent="Enemies" instance=ExtResource( 9 )]
 position = Vector2( 5024, 10400 )
 
 [node name="Fruits" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="fruit 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 576, 1152 )
 
-[node name="fruit 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 640, 1152 )
 
-[node name="fruit 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 512, 1216 )
 
-[node name="fruit 4 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 576, 1216 )
 
-[node name="fruit 4 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 640, 1216 )
 
-[node name="fruit 3 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 3 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 704, 1216 )
 
-[node name="fruit 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 512, 1280 )
 
-[node name="fruit 4 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 576, 1280 )
 
-[node name="fruit 4 4 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 4 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 640, 1280 )
 
-[node name="fruit 3 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 3 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 704, 1280 )
 
-[node name="fruit 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 512, 1344 )
 
-[node name="fruit 4 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 576, 1344 )
 
-[node name="fruit 4 4 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 4 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 640, 1344 )
 
-[node name="fruit 3 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 3 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 704, 1344 )
 
-[node name="fruit 4 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 576, 1408 )
 
-[node name="fruit 4 4 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 4 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 640, 1408 )
 
-[node name="fruit 3 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 3 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 704, 1408 )
 
-[node name="fruit 4 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 576, 1472 )
 
-[node name="fruit 4 4 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 4 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 640, 1472 )
 
-[node name="fruit 3 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 3 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 704, 1472 )
 
-[node name="fruit 4 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 672, 1536 )
 
-[node name="fruit 4 4 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 4 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 736, 1536 )
 
-[node name="fruit 4 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 704, 1600 )
 
-[node name="fruit 4 4 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 4 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 768, 1600 )
 
-[node name="fruit 4 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 768, 1664 )
 
-[node name="fruit 4 4 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 4 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 832, 1664 )
 
-[node name="fruit 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 800, 1728 )
 
-[node name="fruit 4 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 864, 1728 )
 
-[node name="fruit 13" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 13" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 864, 1792 )
 
-[node name="fruit 4 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 928, 1792 )
 
-[node name="fruit 14" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 14" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 896, 1856 )
 
-[node name="fruit 4 13" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 13" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 960, 1856 )
 
-[node name="fruit 15" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 15" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 896, 1920 )
 
-[node name="fruit 4 14" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 14" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 960, 1920 )
 
-[node name="fruit 16" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 16" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 864, 1984 )
 
-[node name="fruit 4 15" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 15" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 928, 1984 )
 
-[node name="fruit 17" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 17" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 832, 2048 )
 
-[node name="fruit 4 16" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 16" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 896, 2048 )
 
-[node name="fruit 18" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 800, 2112 )
 
-[node name="fruit 4 17" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 864, 2112 )
 
-[node name="fruit 18 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 768, 2176 )
 
-[node name="fruit 4 17 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 832, 2176 )
 
-[node name="fruit 18 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 736, 2240 )
 
-[node name="fruit 4 17 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 800, 2240 )
 
-[node name="fruit 18 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 448, 2368 )
 
-[node name="fruit 4 17 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 512, 2368 )
 
-[node name="fruit 18 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 416, 2432 )
 
-[node name="fruit 4 17 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 480, 2432 )
 
-[node name="fruit 18 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 384, 2496 )
 
-[node name="fruit 4 17 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 448, 2496 )
 
-[node name="fruit 18 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 352, 2560 )
 
-[node name="fruit 4 17 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 416, 2560 )
 
-[node name="fruit 18 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 352, 2624 )
 
-[node name="fruit 4 17 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 416, 2624 )
 
-[node name="fruit 18 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 352, 2688 )
 
-[node name="fruit 4 17 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 416, 2688 )
 
-[node name="fruit 18 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 384, 2752 )
 
-[node name="fruit 4 17 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 448, 2752 )
 
-[node name="fruit 18 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 416, 2816 )
 
-[node name="fruit 4 17 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 480, 2816 )
 
-[node name="fruit 18 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 448, 2880 )
 
-[node name="fruit 4 17 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 512, 2880 )
 
-[node name="fruit 18 13" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 13" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 480, 2944 )
 
-[node name="fruit 4 17 13" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 13" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 544, 2944 )
 
-[node name="fruit 4 17 14" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 14" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 704, 3072 )
 
-[node name="fruit 18 14" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 14" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 672, 3136 )
 
-[node name="fruit 4 17 15" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 15" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 768, 3104 )
 
-[node name="fruit 18 15" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 15" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 736, 3168 )
 
-[node name="fruit 4 17 16" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 16" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 832, 3168 )
 
-[node name="fruit 18 16" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 16" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 800, 3232 )
 
-[node name="fruit 4 17 17" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 17" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 896, 3200 )
 
-[node name="fruit 18 17" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 17" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 864, 3264 )
 
-[node name="fruit 4 17 18" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 18" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 960, 3232 )
 
-[node name="fruit 18 18" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 18" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 928, 3296 )
 
-[node name="fruit 4 17 19" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 19" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1024, 3264 )
 
-[node name="fruit 18 19" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 19" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 992, 3328 )
 
-[node name="fruit 4 17 20" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 20" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1088, 3296 )
 
-[node name="fruit 18 20" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 20" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1056, 3360 )
 
-[node name="fruit 4 17 21" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 21" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1152, 3328 )
 
-[node name="fruit 18 21" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 21" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1120, 3392 )
 
-[node name="fruit 4 17 22" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 22" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1216, 3360 )
 
-[node name="fruit 18 22" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 22" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1184, 3424 )
 
-[node name="fruit 4 17 23" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 23" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1280, 3392 )
 
-[node name="fruit 18 23" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 23" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1248, 3456 )
 
-[node name="fruit 4 17 24" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 24" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1344, 3424 )
 
-[node name="fruit 18 24" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 24" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1312, 3488 )
 
-[node name="fruit 4 17 25" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 25" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1408, 3456 )
 
-[node name="fruit 18 25" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 25" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 3520 )
 
-[node name="fruit 4 17 26" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 26" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1312, 4000 )
 
-[node name="fruit 18 26" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 26" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1504, 3808 )
 
-[node name="fruit 4 17 27" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 27" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1568, 3872 )
 
-[node name="fruit 18 27" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 27" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1568, 3808 )
 
-[node name="fruit 4 17 28" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 28" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1440, 3872 )
 
-[node name="fruit 18 28" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 28" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1440, 3936 )
 
-[node name="fruit 4 17 28 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 28 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1504, 3872 )
 
-[node name="fruit 18 28 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 28 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1504, 3936 )
 
-[node name="fruit 4 17 29" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 29" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 3936 )
 
-[node name="fruit 18 29" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 29" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 4000 )
 
-[node name="fruit 18 28 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 28 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1440, 4000 )
 
-[node name="fruit 4 17 30" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 30" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 4064 )
 
-[node name="fruit 4 17 31" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 31" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1312, 4064 )
 
-[node name="fruit 4 17 32" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 32" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1248, 4064 )
 
-[node name="fruit 4 17 33" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 33" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1248, 4000 )
 
-[node name="fruit 4 17 34" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 34" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1184, 4064 )
 
-[node name="fruit 4 17 35" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 35" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1248, 4128 )
 
-[node name="fruit 4 17 36" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 36" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1184, 4128 )
 
-[node name="fruit 4 17 37" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 608, 4480 )
 
-[node name="fruit 4 17 37 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 736, 4352 )
 
-[node name="fruit 4 17 37 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 672, 4416 )
 
-[node name="fruit 4 17 37 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 544, 4544 )
 
-[node name="fruit 4 17 37 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 480, 4608 )
 
-[node name="fruit 4 17 38" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 38" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 640, 4544 )
 
-[node name="fruit 4 17 37 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 768, 4416 )
 
-[node name="fruit 4 17 37 6 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 704, 4480 )
 
-[node name="fruit 4 17 37 6 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 576, 4608 )
 
-[node name="fruit 4 17 37 6 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 512, 4672 )
 
-[node name="fruit 4 17 39" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 39" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 320, 4864 )
 
-[node name="fruit 4 17 37 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 448, 4736 )
 
-[node name="fruit 4 17 37 6 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 384, 4800 )
 
-[node name="fruit 4 17 40" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 40" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 288, 4800 )
 
-[node name="fruit 4 17 37 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 416, 4672 )
 
-[node name="fruit 4 17 37 6 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 352, 4736 )
 
-[node name="fruit 4 17 41" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 41" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 448, 5024 )
 
-[node name="fruit 4 17 37 6 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 512, 4960 )
 
-[node name="fruit 4 17 41 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 41 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 416, 4960 )
 
-[node name="fruit 4 17 37 6 7 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 7 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 480, 4896 )
 
-[node name="fruit 4 17 42" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 42" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 544, 5152 )
 
-[node name="fruit 4 17 37 6 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 608, 5088 )
 
-[node name="fruit 4 17 41 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 41 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 512, 5088 )
 
-[node name="fruit 4 17 37 6 7 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 7 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 576, 5024 )
 
-[node name="fruit 4 17 43" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 43" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 672, 5280 )
 
-[node name="fruit 4 17 37 6 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 704, 5216 )
 
-[node name="fruit 4 17 41 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 41 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 608, 5216 )
 
-[node name="fruit 4 17 37 6 7 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 7 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 672, 5152 )
 
-[node name="fruit 4 17 44" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 44" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 800, 5376 )
 
-[node name="fruit 4 17 37 6 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 832, 5280 )
 
-[node name="fruit 4 17 41 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 41 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 736, 5344 )
 
-[node name="fruit 4 17 37 6 7 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 7 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 768, 5248 )
 
-[node name="fruit 4 17 45" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 45" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 928, 5472 )
 
-[node name="fruit 4 17 37 6 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 960, 5376 )
 
-[node name="fruit 4 17 41 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 41 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 864, 5408 )
 
-[node name="fruit 4 17 37 6 7 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 7 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 896, 5344 )
 
-[node name="fruit 4 17 46" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 46" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1056, 5568 )
 
-[node name="fruit 4 17 37 6 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1088, 5472 )
 
-[node name="fruit 4 17 41 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 41 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 992, 5504 )
 
-[node name="fruit 4 17 37 6 7 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 37 6 7 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1024, 5408 )
 
-[node name="fruit 18 30" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 30" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3808, 3680 )
 
-[node name="fruit 4 17 47" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 47" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3872, 3744 )
 
-[node name="fruit 18 30 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 30 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3872, 3680 )
 
-[node name="fruit 4 17 47 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 47 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3744, 3680 )
 
-[node name="fruit 18 30 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 30 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3744, 3744 )
 
-[node name="fruit 4 17 28 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 28 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3808, 3744 )
 
-[node name="fruit 18 28 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 28 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3936, 3680 )
 
-[node name="fruit 18 28 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 28 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3936, 3744 )
 
-[node name="fruit 4 17 48" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 48" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3936, 3616 )
 
-[node name="fruit 18 30 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 30 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3744, 3616 )
 
-[node name="fruit 4 17 28 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 28 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3744, 3552 )
 
-[node name="fruit 18 28 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 28 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3936, 3552 )
 
-[node name="fruit 4 17 49" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 49" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3264, 3808 )
 
-[node name="fruit 18 30 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 30 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3136, 3808 )
 
-[node name="fruit 4 17 28 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 28 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3200, 3808 )
 
-[node name="fruit 18 28 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 28 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3328, 3808 )
 
-[node name="fruit 4 17 50" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 50" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3008, 3808 )
 
-[node name="fruit 18 30 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 30 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2880, 3808 )
 
-[node name="fruit 4 17 28 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 28 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2944, 3808 )
 
-[node name="fruit 18 28 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 28 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3072, 3808 )
 
-[node name="fruit 4 17 51" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 51" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2752, 3808 )
 
-[node name="fruit 18 30 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 30 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2624, 3808 )
 
-[node name="fruit 4 17 28 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 28 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2688, 3808 )
 
-[node name="fruit 18 28 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 28 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2816, 3808 )
 
-[node name="fruit 4 17 52" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 52" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3520, 3808 )
 
-[node name="fruit 18 30 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 30 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3392, 3808 )
 
-[node name="fruit 4 17 28 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 28 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3456, 3808 )
 
-[node name="fruit 18 28 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 18 28 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3584, 3808 )
 
-[node name="fruit 4 17 53" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 53" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1120, 5600 )
 
-[node name="fruit 4 17 54" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 54" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1152, 5536 )
 
-[node name="fruit 4 17 55" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1184, 5664 )
 
-[node name="fruit 4 17 55 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1216, 5600 )
 
-[node name="fruit 4 17 56" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 56" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1248, 5728 )
 
-[node name="fruit 4 17 55 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1280, 5664 )
 
-[node name="fruit 4 17 57" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 57" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1312, 5792 )
 
-[node name="fruit 4 17 55 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1344, 5728 )
 
-[node name="fruit 4 17 58" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 58" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 5824 )
 
-[node name="fruit 4 17 55 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1408, 5760 )
 
-[node name="fruit 4 17 59" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 59" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1440, 5888 )
 
-[node name="fruit 4 17 55 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1472, 5824 )
 
-[node name="fruit 4 17 60" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 60" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1504, 5952 )
 
-[node name="fruit 4 17 55 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1536, 5888 )
 
-[node name="fruit 4 17 61" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 61" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1824, 6112 )
 
-[node name="fruit 4 17 55 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1824, 6048 )
 
-[node name="fruit 4 17 62" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 62" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1760, 6112 )
 
-[node name="fruit 4 17 55 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1760, 6048 )
 
-[node name="fruit 4 17 55 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1888, 6048 )
 
-[node name="fruit 4 17 63" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 63" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1888, 6112 )
 
-[node name="fruit 4 17 55 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1632, 6176 )
 
-[node name="fruit 4 17 55 11 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1760, 6176 )
 
-[node name="fruit 4 17 64 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1696, 6240 )
 
-[node name="fruit 4 17 55 11 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1696, 6176 )
 
-[node name="fruit 4 17 64 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1632, 6240 )
 
-[node name="fruit 4 17 55 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1440, 6176 )
 
-[node name="fruit 4 17 55 11 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1568, 6176 )
 
-[node name="fruit 4 17 65" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 65" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1568, 6240 )
 
-[node name="fruit 4 17 64 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1504, 6240 )
 
-[node name="fruit 4 17 55 11 4 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1504, 6176 )
 
-[node name="fruit 4 17 64 4 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1440, 6240 )
 
-[node name="fruit 4 17 55 13" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 13" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1440, 6304 )
 
-[node name="fruit 4 17 55 11 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1568, 6304 )
 
-[node name="fruit 4 17 64 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1504, 6368 )
 
-[node name="fruit 4 17 55 11 4 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1504, 6304 )
 
-[node name="fruit 4 17 64 4 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1440, 6368 )
 
-[node name="fruit 4 17 55 14" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 14" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1248, 6304 )
 
-[node name="fruit 4 17 55 11 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 6304 )
 
-[node name="fruit 4 17 67" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 67" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 6368 )
 
-[node name="fruit 4 17 64 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1312, 6368 )
 
-[node name="fruit 4 17 55 11 4 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1312, 6304 )
 
-[node name="fruit 4 17 64 4 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1248, 6368 )
 
-[node name="fruit 4 17 55 11 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 6176 )
 
-[node name="fruit 4 17 68" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 68" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 6240 )
 
-[node name="fruit 4 17 64 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1312, 6240 )
 
-[node name="fruit 4 17 55 15" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 15" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1184, 6336 )
 
-[node name="fruit 4 17 55 11 4 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1056, 6464 )
 
-[node name="fruit 4 17 64 4 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 992, 6528 )
 
-[node name="fruit 4 17 69" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 69" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1120, 6400 )
 
-[node name="fruit 4 17 55 16" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 16" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1184, 6400 )
 
-[node name="fruit 4 17 55 11 4 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1056, 6528 )
 
-[node name="fruit 4 17 64 4 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 992, 6592 )
 
-[node name="fruit 4 17 70" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 70" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1120, 6464 )
 
-[node name="fruit 4 17 55 17" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 17" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 928, 6560 )
 
-[node name="fruit 4 17 55 11 4 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 800, 6688 )
 
-[node name="fruit 4 17 64 4 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 736, 6752 )
 
-[node name="fruit 4 17 71" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 71" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 864, 6624 )
 
-[node name="fruit 4 17 55 18" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 18" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 928, 6624 )
 
-[node name="fruit 4 17 55 11 4 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 800, 6752 )
 
-[node name="fruit 4 17 64 4 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 736, 6816 )
 
-[node name="fruit 4 17 72" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 72" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 864, 6688 )
 
-[node name="fruit 4 17 55 19" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 19" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 928, 6688 )
 
-[node name="fruit 4 17 55 11 4 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 800, 6816 )
 
-[node name="fruit 4 17 64 4 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 736, 6880 )
 
-[node name="fruit 4 17 73" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 73" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 864, 6752 )
 
-[node name="fruit 4 17 55 20" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 20" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1184, 6464 )
 
-[node name="fruit 4 17 55 11 4 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1056, 6592 )
 
-[node name="fruit 4 17 64 4 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 992, 6656 )
 
-[node name="fruit 4 17 74" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 74" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1120, 6528 )
 
-[node name="fruit 4 17 64 4 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 800, 7072 )
 
-[node name="fruit 4 17 55 11 4 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 864, 7072 )
 
-[node name="fruit 4 17 64 4 11 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 800, 7136 )
 
-[node name="fruit 4 17 55 11 4 11 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4 11 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 864, 7136 )
 
-[node name="fruit 4 17 64 4 11 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 800, 7200 )
 
-[node name="fruit 4 17 75" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 75" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 928, 7072 )
 
-[node name="fruit 4 17 55 11 4 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 55 11 4 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 864, 7200 )
 
-[node name="fruit 4 17 76" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 76" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 928, 7136 )
 
-[node name="fruit 4 17 76 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 76 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 928, 7200 )
 
-[node name="fruit 4 17 64 4 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 8096 )
 
-[node name="fruit 4 17 64 4 11 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 8160 )
 
-[node name="fruit 4 17 64 4 11 4 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 8224 )
 
-[node name="fruit 4 17 64 4 13" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 13" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 8384 )
 
-[node name="fruit 4 17 64 4 11 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 8448 )
 
-[node name="fruit 4 17 64 4 11 4 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 8512 )
 
-[node name="fruit 4 17 64 4 14" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 14" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 8640 )
 
-[node name="fruit 4 17 64 4 11 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 8704 )
 
-[node name="fruit 4 17 64 4 11 4 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 8768 )
 
-[node name="fruit 4 17 64 4 15" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 15" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 8896 )
 
-[node name="fruit 4 17 64 4 11 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 8960 )
 
-[node name="fruit 4 17 64 4 11 4 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9024 )
 
-[node name="fruit 4 17 64 4 16" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 16" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9120 )
 
-[node name="fruit 4 17 64 4 11 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9184 )
 
-[node name="fruit 4 17 64 4 11 4 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9248 )
 
-[node name="fruit 4 17 64 4 17" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 17" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9344 )
 
-[node name="fruit 4 17 64 4 11 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9408 )
 
-[node name="fruit 4 17 64 4 11 4 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9472 )
 
-[node name="fruit 4 17 64 4 18" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 18" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9600 )
 
-[node name="fruit 4 17 64 4 11 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9664 )
 
-[node name="fruit 4 17 64 4 11 4 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9728 )
 
-[node name="fruit 4 17 64 4 19" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 19" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9856 )
 
-[node name="fruit 4 17 64 4 11 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9920 )
 
-[node name="fruit 4 17 64 4 11 4 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 9984 )
 
-[node name="fruit 4 17 64 4 20" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 20" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 10080 )
 
-[node name="fruit 4 17 64 4 11 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 10144 )
 
-[node name="fruit 4 17 64 4 11 4 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1376, 10208 )
 
-[node name="fruit 4 17 64 4 21" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 21" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1952, 10464 )
 
-[node name="fruit 4 17 64 4 11 13" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 13" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1952, 10528 )
 
-[node name="fruit 4 17 64 4 11 4 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 1952, 10592 )
 
-[node name="fruit 4 17 64 4 22" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 22" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2016, 10464 )
 
-[node name="fruit 4 17 64 4 11 14" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 14" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2016, 10528 )
 
-[node name="fruit 4 17 64 4 11 4 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2016, 10592 )
 
-[node name="fruit 4 17 64 4 23" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 23" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2080, 10464 )
 
-[node name="fruit 4 17 64 4 11 15" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 15" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2080, 10528 )
 
-[node name="fruit 4 17 64 4 11 4 13" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2080, 10592 )
 
-[node name="fruit 4 17 64 4 23 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 23 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2144, 10464 )
 
-[node name="fruit 4 17 64 4 11 15 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 15 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2144, 10528 )
 
-[node name="fruit 4 17 64 4 11 4 13 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 2144, 10592 )
 
-[node name="fruit 4 17 64 4 24" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 24" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3872, 10400 )
 
-[node name="fruit 4 17 64 4 11 16" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 16" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3872, 10464 )
 
-[node name="fruit 4 17 64 4 11 4 14" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 14" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3872, 10528 )
 
-[node name="fruit 4 17 64 4 24 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 24 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3936, 10400 )
 
-[node name="fruit 4 17 64 4 11 16 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 16 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3936, 10464 )
 
-[node name="fruit 4 17 64 4 11 4 14 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 14 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 3936, 10528 )
 
-[node name="fruit 4 17 64 4 24 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 24 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4000, 10400 )
 
-[node name="fruit 4 17 64 4 11 16 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 16 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4000, 10464 )
 
-[node name="fruit 4 17 64 4 11 4 14 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 14 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4000, 10528 )
 
-[node name="fruit 4 17 64 4 23 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 23 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4064, 10400 )
 
-[node name="fruit 4 17 64 4 11 15 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 15 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4064, 10464 )
 
-[node name="fruit 4 17 64 4 11 4 13 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4064, 10528 )
 
-[node name="fruit 4 17 64 4 25" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 25" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4864, 10400 )
 
-[node name="fruit 4 17 64 4 11 17" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 17" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4864, 10464 )
 
-[node name="fruit 4 17 64 4 11 4 15" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 15" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4864, 10528 )
 
-[node name="fruit 4 17 64 4 24 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 24 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4928, 10400 )
 
-[node name="fruit 4 17 64 4 11 16 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 16 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4928, 10464 )
 
-[node name="fruit 4 17 64 4 11 4 14 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 14 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4928, 10528 )
 
-[node name="fruit 4 17 64 4 24 4 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 24 4 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4992, 10400 )
 
-[node name="fruit 4 17 64 4 11 16 4 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 16 4 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4992, 10464 )
 
-[node name="fruit 4 17 64 4 11 4 14 4 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 14 4 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 4992, 10528 )
 
-[node name="fruit 4 17 64 4 23 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 23 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5056, 10400 )
 
-[node name="fruit 4 17 64 4 11 15 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 15 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5056, 10464 )
 
-[node name="fruit 4 17 64 4 11 4 13 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5056, 10528 )
 
-[node name="fruit 4 17 64 4 11 4 13 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5312, 10720 )
 
-[node name="fruit 4 17 64 4 11 4 13 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5376, 10720 )
 
-[node name="fruit 4 17 64 4 11 4 13 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5568, 10848 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5632, 10848 )
 
-[node name="fruit 4 17 64 4 11 4 13 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5856, 10976 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5920, 10976 )
 
-[node name="fruit 4 17 64 4 11 4 13 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6112, 11136 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6176, 11136 )
 
-[node name="fruit 4 17 64 4 11 4 13 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6432, 11200 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6496, 11200 )
 
-[node name="fruit 4 17 64 4 11 4 13 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6656, 11008 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6720, 11008 )
 
-[node name="fruit 4 17 64 4 11 4 13 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6880, 10784 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6944, 10784 )
 
-[node name="fruit 4 17 64 4 11 4 13 13" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 13" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6624, 9856 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6688, 9856 )
 
-[node name="fruit 4 17 64 4 11 4 13 14" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 14" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6624, 9920 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6688, 9920 )
 
-[node name="fruit 4 17 64 4 11 4 13 15" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 15" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6624, 9984 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6688, 9984 )
 
-[node name="fruit 4 17 64 4 11 4 13 16" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 16" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6912, 10144 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6976, 10144 )
 
-[node name="fruit 4 17 64 4 11 4 13 16 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 16 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6912, 10208 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 11 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 11 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6976, 10208 )
 
-[node name="fruit 4 17 64 4 11 4 13 16 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 16 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6912, 10272 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 11 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 11 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6976, 10272 )
 
-[node name="fruit 4 17 64 4 11 4 13 17" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 17" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5472, 10112 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5536, 10112 )
 
-[node name="fruit 4 17 64 4 11 4 13 17 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 17 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5696, 9984 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 12 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 12 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5760, 9984 )
 
-[node name="fruit 4 17 64 4 11 4 13 17 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 17 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 5952, 9856 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 12 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 12 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6016, 9856 )
 
-[node name="fruit 4 17 64 4 11 4 13 17 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 17 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6176, 9760 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 12 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 12 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6240, 9760 )
 
-[node name="fruit 4 17 64 4 11 4 13 17 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 17 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6368, 9664 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 12 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 12 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 6432, 9664 )
 
-[node name="fruit 4 17 64 4 11 4 13 18" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 18" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 7712, 10848 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 13" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 13" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 7776, 10912 )
 
-[node name="fruit 4 17 64 4 11 4 13 19" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 19" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 7744, 10880 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 14" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 14" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 7808, 10944 )
 
-[node name="fruit 4 17 64 4 11 4 13 20" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 7840, 10976 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 7904, 11040 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 7872, 11008 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 7936, 11072 )
 
-[node name="fruit 4 17 64 4 11 4 13 21" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 21" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 7968, 11104 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 16" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 16" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8032, 11168 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8000, 11136 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8064, 11200 )
 
-[node name="fruit 4 17 64 4 11 4 13 22" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 22" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8096, 11232 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 17" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 17" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8160, 11296 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8128, 11264 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 4" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 4" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8192, 11328 )
 
-[node name="fruit 4 17 64 4 11 4 13 23" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 23" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8224, 11360 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 18" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 18" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8288, 11424 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8256, 11392 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 5" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 5" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8320, 11456 )
 
-[node name="fruit 4 17 64 4 11 4 13 24" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 24" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8352, 11488 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 19" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 19" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8416, 11552 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8384, 11520 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 6" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 6" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8448, 11584 )
 
-[node name="fruit 4 17 64 4 11 4 13 25" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 25" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8480, 11616 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 20" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 20" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8544, 11680 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8512, 11648 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 7" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 7" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8576, 11712 )
 
-[node name="fruit 4 17 64 4 11 4 13 26" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 26" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8608, 11744 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 21" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 21" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8672, 11808 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8640, 11776 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 8" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 8" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8704, 11840 )
 
-[node name="fruit 4 17 64 4 11 4 13 27" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 27" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8736, 11872 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 22" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 22" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8800, 11936 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8768, 11904 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 9" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 9" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8832, 11968 )
 
-[node name="fruit 4 17 64 4 11 4 13 28" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 28" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8864, 12000 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 23" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 23" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8928, 12064 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8896, 12032 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 10" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 10" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8960, 12096 )
 
-[node name="fruit 4 17 64 4 11 4 13 29" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 29" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 8992, 12128 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 24" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 24" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9056, 12192 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9024, 12160 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 11" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 11" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9088, 12224 )
 
-[node name="fruit 4 17 64 4 11 4 13 30" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 30" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9120, 12256 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 25" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 25" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9184, 12320 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9152, 12288 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 12" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 12" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9216, 12352 )
 
-[node name="fruit 4 17 64 4 11 4 13 31" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 31" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9248, 12384 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 26" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 26" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9312, 12448 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 13" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 13" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9280, 12416 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 13" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 13" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9344, 12480 )
 
-[node name="fruit 4 17 64 4 11 4 13 32" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 32" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9376, 12512 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 27" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 27" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9440, 12576 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 14" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 14" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9408, 12544 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 14" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 14" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9472, 12608 )
 
-[node name="fruit 4 17 64 4 11 4 13 33" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 33" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9504, 12640 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 28" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 28" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9568, 12704 )
 
-[node name="fruit 4 17 64 4 11 4 13 20 15" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 20 15" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9536, 12672 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 15" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 15" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9600, 12736 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 16" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 16" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9632, 12832 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 17" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 17" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9696, 12832 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 18" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 18" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9632, 12896 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 18 2" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 18 2" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9696, 12896 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 19" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 19" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9632, 12960 )
 
-[node name="fruit 4 17 64 4 11 4 13 7 15 18 3" parent="Fruits" instance=ExtResource( 16 )]
+[node name="fruit 4 17 64 4 11 4 13 7 15 18 3" parent="Fruits" instance=ExtResource( 11 )]
 position = Vector2( 9696, 12960 )
 
 [node name="Checkpoints" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="checkpoint" parent="Checkpoints" instance=ExtResource( 17 )]
+[node name="checkpoint" parent="Checkpoints" instance=ExtResource( 18 )]
 position = Vector2( 1142.91, 7561.28 )
 
-[node name="roulette" parent="Checkpoints" instance=ExtResource( 18 )]
+[node name="roulette" parent="Checkpoints" instance=ExtResource( 19 )]
 position = Vector2( 9666.35, 13168.2 )
 
 [node name="Node" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="door" parent="Node" instance=ExtResource( 19 )]
+[node name="door" parent="Node" instance=ExtResource( 14 )]
 position = Vector2( 7433.53, 10638 )
 rotation = 0.367168
 
-[node name="door 2" parent="Node" instance=ExtResource( 19 )]
+[node name="door 2" parent="Node" instance=ExtResource( 14 )]
 position = Vector2( 5225.77, 10270 )
 rotation = -0.444907
 
-[node name="door 4" parent="Node" instance=ExtResource( 19 )]
+[node name="door 4" parent="Node" instance=ExtResource( 14 )]
 position = Vector2( 7076.66, 10353.5 )
 rotation = 0.617244
 
-[node name="door 5" parent="Node" instance=ExtResource( 19 )]
+[node name="door 5" parent="Node" instance=ExtResource( 14 )]
 position = Vector2( 7051.92, 10637.5 )
 rotation = -0.676856
 
-[node name="door 6" parent="Node" instance=ExtResource( 19 )]
+[node name="door 6" parent="Node" instance=ExtResource( 14 )]
 position = Vector2( 2818.77, 10313.6 )
 rotation = -0.0531538
 
-[node name="door 8" parent="Node" instance=ExtResource( 19 )]
+[node name="door 8" parent="Node" instance=ExtResource( 14 )]
 position = Vector2( 3570.22, 10690.4 )
 rotation = -0.0531538
 key_idx = 2
 
-[node name="door 10" parent="Node" instance=ExtResource( 19 )]
+[node name="door 10" parent="Node" instance=ExtResource( 14 )]
 position = Vector2( 4686.84, 10304 )
 rotation = 0.203326
 
-[node name="door 11" parent="Node" instance=ExtResource( 19 )]
+[node name="door 11" parent="Node" instance=ExtResource( 14 )]
 position = Vector2( 4303.01, 10696.8 )
 rotation = -0.0531538
 
@@ -1661,7 +1652,7 @@ rotation = -0.0531538
 position = Vector2( 3328, 10304 )
 key_index = 2
 
-[node name="door 7" parent="Node" instance=ExtResource( 19 )]
+[node name="door 7" parent="Node" instance=ExtResource( 14 )]
 position = Vector2( 6492.26, 9769.09 )
 rotation = 0.617244
 
@@ -1672,4 +1663,3 @@ key_index = 1
 [node name="key 3" parent="Node" instance=ExtResource( 20 )]
 position = Vector2( 7307.92, 10549.8 )
 key_index = 1
-

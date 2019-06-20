@@ -11,7 +11,6 @@
 [ext_resource path="res://art/sporadic_flower_pieces/leaf2.png" type="Texture" id=9]
 
 [sub_resource type="Animation" id=1]
-
 resource_name = "1closed"
 length = 6.0
 loop = true
@@ -390,7 +389,6 @@ tracks/30/keys = {
 }
 
 [sub_resource type="Animation" id=2]
-
 resource_name = "2opening"
 length = 4.0
 step = 0.25
@@ -756,7 +754,6 @@ tracks/29/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-
 resource_name = "3opened"
 length = 3.0
 loop = true
@@ -1135,7 +1132,6 @@ tracks/30/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-
 length = 3.0
 step = 0.25
 tracks/0/type = "value"
@@ -1512,13 +1508,11 @@ tracks/30/keys = {
 }
 
 [sub_resource type="Animation" id=5]
-
 length = 1.25
 loop = true
 step = 0.25
 
 [sub_resource type="CircleShape2D" id=6]
-
 radius = 30.0
 
 [node name="sporadic_flower" type="RigidBody2D"]
@@ -1631,6 +1625,5 @@ position = Vector2( -1.07545, -46.6032 )
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 
 [node name="VisibilityNotifier2D 2" type="VisibilityNotifier2D" parent="."]
-
 [connection signal="screen_entered" from="VisibilityNotifier2D" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_exit_screen"]

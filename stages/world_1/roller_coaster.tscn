@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://stages/stage.gd" type="Script" id=1]
-[ext_resource path="res://interaction/door/locked_door.tscn" type="PackedScene" id=2]
+[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=2]
 [ext_resource path="res://art/arbol.png" type="Texture" id=3]
 [ext_resource path="res://art/flower_bush2.png" type="Texture" id=4]
 [ext_resource path="res://art/flower_bush1.png" type="Texture" id=5]
@@ -11,32 +11,31 @@
 [ext_resource path="res://art/arbol2.png" type="Texture" id=9]
 [ext_resource path="res://art/branch.png" type="Texture" id=10]
 [ext_resource path="res://tilesets/mountain_tileset.tres" type="TileSet" id=11]
-[ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=12]
-[ext_resource path="res://interaction/roulette/goal.tscn" type="PackedScene" id=13]
-[ext_resource path="res://interaction/bonuses/big_coin.tscn" type="PackedScene" id=14]
-[ext_resource path="res://props/house/house.tscn" type="PackedScene" id=15]
+[ext_resource path="res://enemies/frog/frog.tscn" type="PackedScene" id=12]
+[ext_resource path="res://interaction/bonuses/heart.tscn" type="PackedScene" id=13]
+[ext_resource path="res://enemies/cannon/cannon.tscn" type="PackedScene" id=14]
+[ext_resource path="res://interaction/bonuses/big_coin.tscn" type="PackedScene" id=15]
 [ext_resource path="res://interaction/door/key.tscn" type="PackedScene" id=16]
-[ext_resource path="res://interaction/bonuses/heart.tscn" type="PackedScene" id=17]
-[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=18]
-[ext_resource path="res://enemies/cannon/cannon.tscn" type="PackedScene" id=19]
-[ext_resource path="res://enemies/frog/frog.tscn" type="PackedScene" id=20]
-[ext_resource path="res://tilesets/ocean_parallax.tscn" type="PackedScene" id=21]
+[ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=17]
+[ext_resource path="res://interaction/door/locked_door.tscn" type="PackedScene" id=18]
+[ext_resource path="res://tilesets/ocean_parallax.tscn" type="PackedScene" id=19]
+[ext_resource path="res://props/house/house.tscn" type="PackedScene" id=20]
+[ext_resource path="res://interaction/roulette/goal.tscn" type="PackedScene" id=21]
 
 [node name="stage" type="Node"]
 script = ExtResource( 1 )
 
 [node name="behind" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="door" parent="behind" instance=ExtResource( 2 )]
+[node name="door" parent="behind" instance=ExtResource( 18 )]
 position = Vector2( 2206.61, 6719.67 )
 key_idx = 2
 
-[node name="door 2" parent="behind" instance=ExtResource( 2 )]
+[node name="door 2" parent="behind" instance=ExtResource( 18 )]
 position = Vector2( 3279.88, 3276.84 )
 rotation = -0.545201
 
-[node name="door 3" parent="behind" instance=ExtResource( 2 )]
+[node name="door 3" parent="behind" instance=ExtResource( 18 )]
 position = Vector2( 1872.63, 3636.36 )
 rotation = 1.58181
 key_idx = 1
@@ -678,38 +677,36 @@ __meta__ = {
 }
 
 [node name="inbetween" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="checkpoint" parent="inbetween" instance=ExtResource( 12 )]
+[node name="checkpoint" parent="inbetween" instance=ExtResource( 17 )]
 position = Vector2( 4874.51, 2907 )
 
-[node name="checkpoint 2" parent="inbetween" instance=ExtResource( 12 )]
+[node name="checkpoint 2" parent="inbetween" instance=ExtResource( 17 )]
 position = Vector2( 2451.62, 4639.05 )
 
-[node name="stage_end" parent="inbetween" instance=ExtResource( 13 )]
+[node name="stage_end" parent="inbetween" instance=ExtResource( 21 )]
 position = Vector2( 4579.8, 7538.26 )
 
-[node name="checkpoint 4" parent="inbetween" instance=ExtResource( 12 )]
+[node name="checkpoint 4" parent="inbetween" instance=ExtResource( 17 )]
 position = Vector2( 2181.64, 3870.09 )
 
 [node name="launch" type="Position2D" parent="."]
 position = Vector2( 4322.65, 5332.01 )
 
 [node name="interaction" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="big_coin" parent="interaction" instance=ExtResource( 14 )]
+[node name="big_coin" parent="interaction" instance=ExtResource( 15 )]
 position = Vector2( 2937.69, 6328.04 )
 fruit_index = 1
 
-[node name="big_coin 2" parent="interaction" instance=ExtResource( 14 )]
+[node name="big_coin 2" parent="interaction" instance=ExtResource( 15 )]
 position = Vector2( 253.116, 5767.78 )
 
-[node name="big_coin 3" parent="interaction" instance=ExtResource( 14 )]
+[node name="big_coin 3" parent="interaction" instance=ExtResource( 15 )]
 position = Vector2( 1269.54, 824.856 )
 fruit_index = 2
 
-[node name="house" parent="interaction" instance=ExtResource( 15 )]
+[node name="house" parent="interaction" instance=ExtResource( 20 )]
 position = Vector2( 2013.6, 5219.02 )
 
 [node name="key" parent="interaction" instance=ExtResource( 16 )]
@@ -723,125 +720,123 @@ key_index = 1
 position = Vector2( 380.856, 518.383 )
 key_index = 2
 
-[node name="heart" parent="interaction" instance=ExtResource( 17 )]
+[node name="heart" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 4607.29, 5133.6 )
 
 [node name="enemies" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="sacra_pinchorb" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 4129.92, 2504.77 )
 
-[node name="sacra_pinchorb 2" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 2" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 1199.28, 6155.42 )
 drop = 1
 
-[node name="sacra_pinchorb 3" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 3" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 471.022, 5583.47 )
 fluff_type = 2
 
-[node name="sacra_pinchorb 4" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 4" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 368.406, 3969.78 )
 
-[node name="sacra_pinchorb 5" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 5" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 206.069, 2548.95 )
 
-[node name="sacra_pinchorb 6" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 6" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 1439.4, 827.13 )
 drop = 1
 fluff_type = 2
 
-[node name="sacra_pinchorb 7" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 7" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 4326.99, 182.485 )
 
-[node name="cannon" parent="enemies" instance=ExtResource( 19 )]
+[node name="cannon" parent="enemies" instance=ExtResource( 14 )]
 position = Vector2( 111.636, 822.144 )
 rotation = 3.1592
 interval = 5
 max_alive = 1
 
-[node name="cannon 4" parent="enemies" instance=ExtResource( 19 )]
+[node name="cannon 4" parent="enemies" instance=ExtResource( 14 )]
 position = Vector2( 1774.31, 3772.77 )
 rotation = -3.14159
 interval = 3
 
-[node name="cannon 7" parent="enemies" instance=ExtResource( 19 )]
+[node name="cannon 7" parent="enemies" instance=ExtResource( 14 )]
 position = Vector2( 1392.4, 3518.57 )
 rotation = 1.55563
 interval = 3
 
-[node name="sacra_pinchorb 8" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 8" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 1080.92, 2045.13 )
 drop = 1
 fluff_type = 2
 
-[node name="sacra_pinchorb 9" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 9" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 3411.88, 1330.93 )
 
-[node name="sacra_pinchorb 10" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 10" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 3718.58, 3632.72 )
 
-[node name="cannon 8" parent="enemies" instance=ExtResource( 19 )]
+[node name="cannon 8" parent="enemies" instance=ExtResource( 14 )]
 position = Vector2( 2616.33, 3998.7 )
 rotation = -3.14159
 interval = 3
 
-[node name="cannon 10" parent="enemies" instance=ExtResource( 19 )]
+[node name="cannon 10" parent="enemies" instance=ExtResource( 14 )]
 position = Vector2( 2718.09, 5308.79 )
 interval = 3
 
-[node name="cannon 11" parent="enemies" instance=ExtResource( 19 )]
+[node name="cannon 11" parent="enemies" instance=ExtResource( 14 )]
 position = Vector2( 2468.67, 6470.33 )
 rotation = 1.5708
 
-[node name="sacra_pinchorb 11" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 11" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 2934.75, 6042.42 )
 fluff_type = 2
 
-[node name="cannon 12" parent="enemies" instance=ExtResource( 19 )]
+[node name="cannon 12" parent="enemies" instance=ExtResource( 14 )]
 position = Vector2( 3528.77, 4521.91 )
 rotation = -1.5708
 interval = 3
 
-[node name="cannon 13" parent="enemies" instance=ExtResource( 19 )]
+[node name="cannon 13" parent="enemies" instance=ExtResource( 14 )]
 position = Vector2( 3721.71, 4740.48 )
 rotation = 1.5708
 interval = 3
 
-[node name="cannon 14" parent="enemies" instance=ExtResource( 19 )]
+[node name="cannon 14" parent="enemies" instance=ExtResource( 14 )]
 position = Vector2( 3402.87, 5045.2 )
 rotation = -0.691705
 interval = 3
 
-[node name="sacra_pinchorb 12" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 12" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 4482.02, 3586.36 )
 
-[node name="sacra_pinchorb 13" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 13" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 4096.47, 713.938 )
 drop = 1
 fluff_type = 2
 
-[node name="sacra_pinchorb 14" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 14" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 3132.37, 6147.54 )
 fluff_type = 2
 
-[node name="sacra_pinchorb 16" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 16" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 760.108, 2533.77 )
 
-[node name="sacra_pinchorb 17" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 17" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 1150.97, 2602.07 )
 
-[node name="sacra_pinchorb 15" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb 15" parent="enemies" instance=ExtResource( 2 )]
 position = Vector2( 1678.29, 5273.95 )
 
-[node name="frog" parent="enemies" instance=ExtResource( 20 )]
+[node name="frog" parent="enemies" instance=ExtResource( 12 )]
 position = Vector2( 4168.4, 5467.75 )
 
-[node name="frog 2" parent="enemies" instance=ExtResource( 20 )]
+[node name="frog 2" parent="enemies" instance=ExtResource( 12 )]
 position = Vector2( 4542.23, 5386.32 )
 
-[node name="frog 3" parent="enemies" instance=ExtResource( 20 )]
+[node name="frog 3" parent="enemies" instance=ExtResource( 12 )]
 position = Vector2( 4951.22, 5456.65 )
 
-[node name="ocean_bg" parent="." instance=ExtResource( 21 )]
-
+[node name="ocean_bg" parent="." instance=ExtResource( 19 )]

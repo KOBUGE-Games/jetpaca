@@ -18,7 +18,6 @@
 [ext_resource path="res://art/pieces_wise_alpaca/leg-bg.png" type="Texture" id=16]
 
 [sub_resource type="Animation" id=1]
-
 resource_name = "cast"
 length = 8.0
 step = 0.25
@@ -384,7 +383,6 @@ tracks/29/keys = {
 }
 
 [sub_resource type="Animation" id=2]
-
 resource_name = "default"
 length = 0.01
 loop = true
@@ -739,7 +737,6 @@ tracks/28/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-
 resource_name = "fall"
 length = 3.0
 loop = true
@@ -1070,7 +1067,6 @@ tracks/26/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-
 length = 2.5
 step = 0.25
 tracks/0/type = "value"
@@ -1423,7 +1419,6 @@ tracks/28/keys = {
 }
 
 [sub_resource type="Animation" id=5]
-
 resource_name = "fly_front"
 length = 4.0
 loop = true
@@ -1742,7 +1737,6 @@ tracks/25/keys = {
 }
 
 [sub_resource type="Animation" id=6]
-
 resource_name = "fly_up"
 length = 3.0
 loop = true
@@ -2060,7 +2054,6 @@ tracks/25/keys = {
 }
 
 [sub_resource type="Animation" id=7]
-
 resource_name = "hey_listen"
 length = 6.0
 step = 0.25
@@ -2414,7 +2407,6 @@ tracks/28/keys = {
 }
 
 [sub_resource type="Animation" id=8]
-
 length = 4.5
 loop = true
 step = 0.25
@@ -2732,7 +2724,6 @@ tracks/25/keys = {
 }
 
 [sub_resource type="Animation" id=9]
-
 length = 6.0
 loop = true
 step = 0.25
@@ -3086,7 +3077,6 @@ tracks/28/keys = {
 }
 
 [sub_resource type="Animation" id=10]
-
 length = 6.0
 loop = true
 step = 0.25
@@ -3440,7 +3430,6 @@ tracks/28/keys = {
 }
 
 [sub_resource type="Animation" id=11]
-
 length = 6.0
 step = 0.25
 tracks/0/type = "value"
@@ -3769,7 +3758,6 @@ tracks/26/keys = {
 }
 
 [sub_resource type="CircleShape2D" id=12]
-
 radius = 200.0
 
 [node name="wise_alpaca" type="Area2D"]
@@ -3947,7 +3935,6 @@ scale = Vector2( 4.37632, 1 )
 
 [node name="shape" type="CollisionShape2D" parent="."]
 shape = SubResource( 12 )
-
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]
 [connection signal="body_exited" from="." to="." method="_on_body_exit"]
 [connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]

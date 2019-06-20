@@ -18,4 +18,3 @@ tile_data = PoolIntArray( 458753, 0, 0, 458754, 0, 0, 458755, 0, 0 )
 [node name="breakable_stone" parent="." instance=ExtResource( 3 )]
 position = Vector2( 732.603, 302.104 )
 rotation = 1.54114
-

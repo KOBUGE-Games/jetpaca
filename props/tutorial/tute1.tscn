@@ -6,7 +6,6 @@
 [ext_resource path="res://art/button_right.png" type="Texture" id=4]
 
 [sub_resource type="Animation" id=1]
-
 resource_name = "tuto1"
 length = 2.3
 loop = true
@@ -60,7 +59,6 @@ tracks/3/keys = {
 }
 
 [sub_resource type="Animation" id=2]
-
 resource_name = "tuto2"
 length = 3.5
 loop = true
@@ -140,4 +138,3 @@ anims/tuto1 = SubResource( 1 )
 anims/tuto2 = SubResource( 2 )
 
 [node name="enabler" type="VisibilityEnabler2D" parent="."]
-

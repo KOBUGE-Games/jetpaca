@@ -6,7 +6,6 @@
 [ext_resource path="res://art/forest_fire_holder_over.png" type="Texture" id=4]
 
 [sub_resource type="CanvasItemMaterial" id=1]
-
 blend_mode = 1
 
 [node name="torch_trigger" type="Sprite" groups=[
@@ -31,4 +30,3 @@ texture = ExtResource( 4 )
 
 [node name="firepos" type="Position2D" parent="."]
 position = Vector2( 1.68146, -93.6408 )
-

@@ -23,11 +23,9 @@
 [ext_resource path="res://art/cachos_warrior/escudoshadow.png" type="Texture" id=21]
 
 [sub_resource type="RectangleShape2D" id=1]
-
 extents = Vector2( 10, 50 )
 
 [sub_resource type="Animation" id=2]
-
 resource_name = "2-Attack_to_tired"
 length = 3.0
 step = 0.25
@@ -417,7 +415,6 @@ tracks/31/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-
 resource_name = "block_down_idle"
 length = 3.0
 loop = true
@@ -772,7 +769,6 @@ tracks/28/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-
 length = 2.6
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprites/Rib/Chest:rotation_degrees")
@@ -1244,7 +1240,6 @@ tracks/38/keys = {
 }
 
 [sub_resource type="Animation" id=5]
-
 resource_name = "block"
 length = 1.5
 step = 0.25
@@ -1586,7 +1581,6 @@ tracks/27/keys = {
 }
 
 [sub_resource type="Animation" id=6]
-
 length = 3.0
 loop = true
 step = 0.25
@@ -1940,7 +1934,6 @@ tracks/28/keys = {
 }
 
 [sub_resource type="Animation" id=7]
-
 resource_name = "block_up_impact"
 length = 1.5
 loop = true
@@ -2307,7 +2300,6 @@ tracks/29/keys = {
 }
 
 [sub_resource type="Animation" id=8]
-
 resource_name = "block_front_idle"
 length = 3.0
 loop = true
@@ -2662,7 +2654,6 @@ tracks/28/keys = {
 }
 
 [sub_resource type="Animation" id=9]
-
 length = 7.5
 step = 0.25
 tracks/0/type = "value"
@@ -2979,7 +2970,6 @@ tracks/25/keys = {
 }
 
 [sub_resource type="Animation" id=10]
-
 length = 0.8
 step = 0.05
 tracks/0/type = "value"
@@ -3454,7 +3444,6 @@ tracks/38/keys = {
 }
 
 [sub_resource type="Animation" id=11]
-
 length = 9.0
 loop = true
 tracks/0/type = "value"
@@ -3939,7 +3928,6 @@ tracks/39/keys = {
 }
 
 [sub_resource type="Animation" id=12]
-
 resource_name = "moving_upwards"
 length = 3.0
 loop = true
@@ -4390,7 +4378,6 @@ tracks/36/keys = {
 }
 
 [sub_resource type="Animation" id=13]
-
 length = 3.5
 step = 0.25
 tracks/0/type = "value"
@@ -4695,7 +4682,6 @@ tracks/24/keys = {
 }
 
 [sub_resource type="Animation" id=14]
-
 length = 4.5
 loop = true
 step = 0.25
@@ -5013,7 +4999,6 @@ tracks/25/keys = {
 }
 
 [sub_resource type="Animation" id=15]
-
 length = 3.0
 loop = true
 step = 0.25
@@ -5463,11 +5448,9 @@ tracks/36/keys = {
 }
 
 [sub_resource type="CircleShape2D" id=16]
-
 radius = 80.0
 
 [sub_resource type="CircleShape2D" id=17]
-
 radius = 180.0
 
 [node name="warrior" type="RigidBody2D"]
@@ -5675,7 +5658,6 @@ visible = false
 self_modulate = Color( 1, 1, 1, 0.111111 )
 position = Vector2( -1.76053, -66.019 )
 shape = SubResource( 17 )
-
 [connection signal="body_entered" from="sprites/ArmBG/ForearmBG/HandBG/Sword/damager" to="." method="_on_damage_enter"]
 [connection signal="body_exited" from="sprites/ArmBG/ForearmBG/HandBG/Sword/damager" to="." method="_on_damage_exit"]
 [connection signal="body_entered" from="action_area" to="." method="_on_body_enter"]

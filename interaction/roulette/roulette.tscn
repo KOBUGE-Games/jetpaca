@@ -12,7 +12,6 @@
 [ext_resource path="res://art/button.png" type="Texture" id=10]
 
 [sub_resource type="Animation" id=1]
-
 resource_name = "button"
 length = 1.2
 step = 0.5
@@ -30,7 +29,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=2]
-
 resource_name = "button_press"
 length = 6.0
 step = 0.25
@@ -48,7 +46,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-
 length = 5.0
 loop = true
 step = 0.25
@@ -198,7 +195,6 @@ tracks/11/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-
 resource_name = "prize_select"
 length = 17.0
 tracks/0/type = "value"
@@ -364,7 +360,6 @@ tracks/12/keys = {
 }
 
 [sub_resource type="Animation" id=5]
-
 length = 15.0
 step = 0.25
 tracks/0/type = "value"
@@ -513,7 +508,6 @@ tracks/11/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=6]
-
 extents = Vector2( 20, 10 )
 
 [node name="roulette" type="Node2D"]
@@ -527,7 +521,6 @@ __meta__ = {
 }
 
 [node name="ruleta_select" type="Node2D" parent="Ruleta"]
-editor/display_folded = true
 
 [node name="ruleta" type="Sprite" parent="Ruleta/ruleta_select"]
 position = Vector2( 4.26349e-08, -0.487686 )
@@ -621,5 +614,4 @@ anims/prize_select_alpha = SubResource( 5 )
 position = Vector2( -0.814514, 122.968 )
 scale = Vector2( 1, 2.50545 )
 shape = SubResource( 6 )
-
 [connection signal="body_entered" from="button_area" to="." method="_on_body_enter"]

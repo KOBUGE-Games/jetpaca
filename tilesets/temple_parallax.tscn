@@ -31,4 +31,3 @@ scale = Vector2( 1.01, 1.01 )
 texture = ExtResource( 1 )
 centered = false
 offset = Vector2( 512, 512 )
-

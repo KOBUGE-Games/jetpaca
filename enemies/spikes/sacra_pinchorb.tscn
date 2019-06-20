@@ -10,7 +10,6 @@
 [ext_resource path="res://art/cachos_sacra_pincho/cejas.png" type="Texture" id=8]
 
 [sub_resource type="Animation" id=1]
-
 resource_name = "sleep"
 length = 2.0
 step = 0.25
@@ -231,4 +230,3 @@ texture = ExtResource( 8 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/sleep = SubResource( 1 )
-

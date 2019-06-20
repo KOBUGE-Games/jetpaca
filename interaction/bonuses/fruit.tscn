@@ -7,9 +7,7 @@
 
 [sub_resource type="CircleShape2D" id=1]
 
-
 [sub_resource type="Animation" id=2]
-
 resource_name = "roll"
 length = 0.4
 loop = true
@@ -27,7 +25,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="CircleShape2D" id=3]
-
 radius = 100.0
 
 [node name="fruit" type="Area2D"]
@@ -63,7 +60,6 @@ visible = false
 
 [node name="shape" type="CollisionShape2D" parent="magnet"]
 shape = SubResource( 3 )
-
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]
 [connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="screenprox" to="." method="_on_exit_screen"]

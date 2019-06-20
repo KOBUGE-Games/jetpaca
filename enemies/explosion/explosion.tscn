@@ -5,7 +5,6 @@
 [ext_resource path="res://sound/magic_explosion.wav" type="AudioStream" id=3]
 
 [sub_resource type="CanvasItemMaterial" id=1]
-
 blend_mode = 1
 
 [node name="enemy_explosion" type="Particles2D"]
@@ -23,5 +22,4 @@ stream = ExtResource( 3 )
 [node name="timer" type="Timer" parent="."]
 wait_time = 3.0
 one_shot = true
-
 [connection signal="timeout" from="timer" to="." method="_on_timeout"]

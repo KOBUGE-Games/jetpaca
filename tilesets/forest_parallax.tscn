@@ -11,13 +11,11 @@
 [ext_resource path="res://art/forest_bg_front_bottom.png" type="Texture" id=9]
 
 [sub_resource type="CanvasItemMaterial" id=1]
-
 blend_mode = 1
 
 [node name="forest_bg" type="ParallaxBackground"]
 scroll_base_scale = Vector2( 1, 0.1 )
 scroll_limit_end = Vector2( 0, 1681 )
-scroll_ignore_camera_zoom = false
 
 [node name="bg" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.05, 1 )
@@ -88,4 +86,3 @@ position = Vector2( 0, 1041 )
 scale = Vector2( 1.26, 1 )
 texture = ExtResource( 9 )
 centered = false
-

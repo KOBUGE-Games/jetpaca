@@ -19,7 +19,6 @@
 [ext_resource path="res://art/cachos_mage/darkflame.png" type="Texture" id=17]
 
 [sub_resource type="Animation" id=1]
-
 length = 2.5
 loop = true
 step = 0.25
@@ -1225,7 +1224,6 @@ tracks/99/keys = {
 }
 
 [sub_resource type="Animation" id=2]
-
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D/chest/R-Cape Outer:rotation_degrees")
@@ -1829,7 +1827,6 @@ tracks/49/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-
 length = 2.5
 loop = true
 step = 0.25
@@ -3319,4 +3316,3 @@ offset = Vector2( -0.284607, -11.9676 )
 anims/Idle = SubResource( 1 )
 anims/casterpose = SubResource( 2 )
 anims/default_pose = SubResource( 3 )
-

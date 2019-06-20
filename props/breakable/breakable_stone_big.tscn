@@ -27,6 +27,4 @@ explosiveness = 0.05
 texture = ExtResource( 3 )
 
 [node name="break_sfx" type="AudioStreamPlayer2D" parent="."]
-position = Vector2( 0, 9.53674e-07 )
 stream = ExtResource( 4 )
-

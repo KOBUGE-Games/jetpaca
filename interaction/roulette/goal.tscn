@@ -4,7 +4,6 @@
 [ext_resource path="res://art/goal_wip.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-
 extents = Vector2( 100, 100 )
 
 [node name="stage_end" type="Area2D"]
@@ -16,5 +15,4 @@ shape = SubResource( 1 )
 [node name="wipgoal" type="Sprite" parent="."]
 position = Vector2( -11, -24 )
 texture = ExtResource( 2 )
-
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]

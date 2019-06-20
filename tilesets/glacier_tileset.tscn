@@ -3,77 +3,59 @@
 [ext_resource path="res://art/glacier_tileset.png" type="Texture" id=1]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
-
 points = PoolVector2Array( 0, 24, 64, 24, 64, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
-
 points = PoolVector2Array( 128, 192, 0, 192, 0, 24, 64, 48, 128, 88 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
-
 points = PoolVector2Array( 0, 24, 64, 88, 64, 192, 0, 192 )
 
 [sub_resource type="ConcavePolygonShape2D" id=4]
-
 segments = PoolVector2Array( 0, 24, 64, 72, 64, 72, 128, 88, 128, 88, 128, 192, 128, 192, 0, 192, 0, 192, 0, 24 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
-
 points = PoolVector2Array( 0, 24, 128, 24, 96, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
-
 points = PoolVector2Array( 0, 0, 96, 0, 96, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
-
 points = PoolVector2Array( 0, 0, 96, 0, 72, 32, 0, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
-
 points = PoolVector2Array( 0, 0, 128, 0, 128, 32, 0, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
-
 points = PoolVector2Array( 0, 0, 64, 0, 64, 96, 0, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
-
 points = PoolVector2Array( 0, 0, 128, 0, 128, 32, 96, 64, 0, 64 )
 
 [sub_resource type="ConvexPolygonShape2D" id=11]
-
 points = PoolVector2Array( 0, 0, 80, 0, 128, 24, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=12]
-
 points = PoolVector2Array( 0, 0, 96, 0, 128, 16, 128, 40, 96, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=13]
-
 points = PoolVector2Array( 0, 16, 16, 16, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=14]
-
 points = PoolVector2Array( 0, 16, 128, 16, 128, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=15]
-
 points = PoolVector2Array( 0, 24, 48, 24, 64, 56, 64, 192, 0, 192 )
 
 [sub_resource type="ConvexPolygonShape2D" id=16]
-
 points = PoolVector2Array( 0, 56, 128, 56, 128, 192, 0, 192 )
 
 [sub_resource type="ConvexPolygonShape2D" id=17]
-
 points = PoolVector2Array( 0, 56, 64, 56, 64, 192, 0, 192 )
 
 [node name="mountain_tileset" type="Node"]
 
 [node name="Ground 1" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 0, 192 )
 texture = ExtResource( 1 )
 centered = false
@@ -86,7 +68,6 @@ region_rect = Rect2( 0, 192, 64, 128 )
 shape = SubResource( 1 )
 
 [node name="Ground 2" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 64, 192 )
 texture = ExtResource( 1 )
 centered = false
@@ -99,7 +80,6 @@ region_rect = Rect2( 64, 192, 64, 128 )
 shape = SubResource( 1 )
 
 [node name="Ramp Begin" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 64, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -112,7 +92,6 @@ region_rect = Rect2( 64, 0, 128, 192 )
 shape = SubResource( 2 )
 
 [node name="Ramp" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 192, 64 )
 texture = ExtResource( 1 )
 centered = false
@@ -125,7 +104,6 @@ region_rect = Rect2( 192, 64, 64, 192 )
 shape = SubResource( 3 )
 
 [node name="Ramp End" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 256, 128 )
 texture = ExtResource( 1 )
 centered = false
@@ -138,7 +116,6 @@ region_rect = Rect2( 256, 128, 128, 192 )
 shape = SubResource( 4 )
 
 [node name="Edge" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 384, 192 )
 texture = ExtResource( 1 )
 centered = false
@@ -151,7 +128,6 @@ region_rect = Rect2( 384, 192, 128, 128 )
 shape = SubResource( 5 )
 
 [node name="Wall" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 384, 320 )
 texture = ExtResource( 1 )
 centered = false
@@ -164,7 +140,6 @@ region_rect = Rect2( 384, 320, 128, 128 )
 shape = SubResource( 6 )
 
 [node name="Ceiling2Wall" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 384, 448 )
 texture = ExtResource( 1 )
 centered = false
@@ -177,7 +152,6 @@ region_rect = Rect2( 384, 448, 128, 64 )
 shape = SubResource( 7 )
 
 [node name="Ceiling" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 384, 128 )
 texture = ExtResource( 1 )
 centered = false
@@ -190,7 +164,6 @@ region_rect = Rect2( 384, 128, 128, 64 )
 shape = SubResource( 8 )
 
 [node name="CeilingRamp" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 0, 64 )
 texture = ExtResource( 1 )
 centered = false
@@ -203,7 +176,6 @@ region_rect = Rect2( 0, 64, 64, 128 )
 shape = SubResource( 9 )
 
 [node name="Wall2Ceiling" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 256, 320 )
 texture = ExtResource( 1 )
 centered = false
@@ -216,7 +188,6 @@ region_rect = Rect2( 256, 320, 128, 64 )
 shape = SubResource( 10 )
 
 [node name="Ground2Wall" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 384, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -229,7 +200,6 @@ region_rect = Rect2( 384, 0, 128, 128 )
 shape = SubResource( 11 )
 
 [node name="Wall2Bridge" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 256, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -242,7 +212,6 @@ region_rect = Rect2( 256, 0, 128, 128 )
 shape = SubResource( 12 )
 
 [node name="Peak" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 192, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -255,7 +224,6 @@ region_rect = Rect2( 192, 0, 64, 64 )
 shape = SubResource( 13 )
 
 [node name="Bridge" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 128, 256 )
 texture = ExtResource( 1 )
 centered = false
@@ -268,7 +236,6 @@ region_rect = Rect2( 128, 256, 128, 64 )
 shape = SubResource( 14 )
 
 [node name="StepUp" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 0, 320 )
 texture = ExtResource( 1 )
 centered = false
@@ -281,7 +248,6 @@ region_rect = Rect2( 0, 320, 64, 192 )
 shape = SubResource( 15 )
 
 [node name="Step" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 64, 320 )
 texture = ExtResource( 1 )
 centered = false
@@ -294,7 +260,6 @@ region_rect = Rect2( 64, 320, 128, 192 )
 shape = SubResource( 16 )
 
 [node name="StepDown" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 192, 320 )
 texture = ExtResource( 1 )
 centered = false
@@ -332,4 +297,3 @@ texture = ExtResource( 1 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 256, 384, 64, 64 )
-

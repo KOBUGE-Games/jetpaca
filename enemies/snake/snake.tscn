@@ -4,7 +4,6 @@
 [ext_resource path="res://art/snake.png" type="Texture" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-
 radius = 18.0
 
 [node name="snake" type="Node2D"]
@@ -109,4 +108,3 @@ node_b = NodePath("../body 4")
 position = Vector2( 0, 225 )
 node_a = NodePath("../body 4")
 node_b = NodePath("../body 5")
-

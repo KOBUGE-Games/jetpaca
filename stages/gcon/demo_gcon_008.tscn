@@ -23,24 +23,24 @@
 [ext_resource path="res://art/glacier_tree_3.png" type="Texture" id=21]
 [ext_resource path="res://art/glacier_tree_3bare.png" type="Texture" id=22]
 [ext_resource path="res://tilesets/test_tileset.tres" type="TileSet" id=23]
-[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=24]
-[ext_resource path="res://enemies/warrior/warrior.tscn" type="PackedScene" id=25]
-[ext_resource path="res://props/stones/mountain_rock_big.tscn" type="PackedScene" id=26]
-[ext_resource path="res://props/breakable/jar1.tscn" type="PackedScene" id=27]
-[ext_resource path="res://props/breakable/jar2.tscn" type="PackedScene" id=28]
-[ext_resource path="res://props/breakable/jar3.tscn" type="PackedScene" id=29]
-[ext_resource path="res://interaction/door/locked_door.tscn" type="PackedScene" id=30]
+[ext_resource path="res://props/stones/mountain_rock_big.tscn" type="PackedScene" id=24]
+[ext_resource path="res://props/breakable/breakable_stone.tscn" type="PackedScene" id=25]
+[ext_resource path="res://props/breakable/jar1.tscn" type="PackedScene" id=26]
+[ext_resource path="res://interaction/door/locked_door.tscn" type="PackedScene" id=27]
+[ext_resource path="res://enemies/spikes/mountain_long_spikes.tscn" type="PackedScene" id=28]
+[ext_resource path="res://interaction/bonuses/fruit.tscn" type="PackedScene" id=29]
+[ext_resource path="res://enemies/frog/frog.tscn" type="PackedScene" id=30]
 [ext_resource path="res://interaction/door/key.tscn" type="PackedScene" id=31]
-[ext_resource path="res://props/breakable/breakable_stone_big.tscn" type="PackedScene" id=32]
-[ext_resource path="res://props/breakable/breakable_stone.tscn" type="PackedScene" id=33]
+[ext_resource path="res://props/breakable/jar3.tscn" type="PackedScene" id=32]
+[ext_resource path="res://props/breakable/jar2.tscn" type="PackedScene" id=33]
 [ext_resource path="res://interaction/bonuses/big_coin.tscn" type="PackedScene" id=34]
-[ext_resource path="res://interaction/bonuses/fruit.tscn" type="PackedScene" id=35]
-[ext_resource path="res://enemies/spikes/mountain_long_spikes.tscn" type="PackedScene" id=36]
-[ext_resource path="res://enemies/spikes/mountain_spikes.tscn" type="PackedScene" id=37]
+[ext_resource path="res://enemies/spikes/round_spike.tscn" type="PackedScene" id=35]
+[ext_resource path="res://enemies/spikes/mountain_spikes.tscn" type="PackedScene" id=36]
+[ext_resource path="res://interaction/roulette/roulette.tscn" type="PackedScene" id=37]
 [ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=38]
-[ext_resource path="res://interaction/roulette/roulette.tscn" type="PackedScene" id=39]
-[ext_resource path="res://enemies/spikes/round_spike.tscn" type="PackedScene" id=40]
-[ext_resource path="res://enemies/frog/frog.tscn" type="PackedScene" id=41]
+[ext_resource path="res://props/breakable/breakable_stone_big.tscn" type="PackedScene" id=39]
+[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=40]
+[ext_resource path="res://enemies/warrior/warrior.tscn" type="PackedScene" id=41]
 [ext_resource path="res://art/flower4.png" type="Texture" id=42]
 [ext_resource path="res://art/small_bush.png" type="Texture" id=43]
 [ext_resource path="res://art/flower_bush1.png" type="Texture" id=44]
@@ -51,7 +51,6 @@
 script = ExtResource( 1 )
 
 [node name="Decorative behind" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Sprite 3" type="Sprite" parent="Decorative behind"]
 position = Vector2( 214.787, 2905.46 )
@@ -195,123 +194,120 @@ __meta__ = {
 }
 
 [node name="Enemies" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="sacra_pinchorb" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 362.946, 3442.86 )
 
-[node name="sacra_pinchorb 2" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 2" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 604.91, 3147.58 )
 
-[node name="sacra_pinchorb 3" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 3" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 309.632, 2848.2 )
 
-[node name="sacra_pinchorb 5" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 5" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 512, 2784 )
 
-[node name="sacra_pinchorb 6" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 6" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 623.365, 3572.04 )
 
-[node name="sacra_pinchorb 7" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 7" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 4059.07, 2553.48 )
 
-[node name="sacra_pinchorb 8" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 8" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 3799.98, 2127.84 )
 
-[node name="sacra_pinchorb 9" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 9" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 4299.65, 2098.23 )
 
-[node name="sacra_pinchorb 10" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 10" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 4044.26, 1927.97 )
 
-[node name="sacra_pinchorb 11" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 11" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 5411.04, 1790.65 )
 
-[node name="sacra_pinchorb 12" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 12" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 5689.92, 1880.87 )
 
-[node name="sacra_pinchorb 13" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 13" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 5933.93, 1768.09 )
 
-[node name="sacra_pinchorb 14" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 14" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 6175.9, 1887.02 )
 
-[node name="sacra_pinchorb 15" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 15" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 6460.92, 1755.79 )
 
-[node name="sacra_pinchorb 16" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 16" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 6723.39, 1895.92 )
 
-[node name="sacra_pinchorb 17" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 17" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 6942.8, 1772.19 )
 drop = 3
 
-[node name="sacra_pinchorb 19" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 19" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 4497.27, 1896.4 )
 
-[node name="sacra_pinchorb 20" parent="Enemies" instance=ExtResource( 24 )]
+[node name="sacra_pinchorb 20" parent="Enemies" instance=ExtResource( 40 )]
 position = Vector2( 4724.33, 1917.43 )
 
-[node name="warrior" parent="Enemies" instance=ExtResource( 25 )]
+[node name="warrior" parent="Enemies" instance=ExtResource( 41 )]
 position = Vector2( 544, 2400 )
 
-[node name="warrior 2" parent="Enemies" instance=ExtResource( 25 )]
+[node name="warrior 2" parent="Enemies" instance=ExtResource( 41 )]
 position = Vector2( 224, 2048 )
 
-[node name="warrior 3" parent="Enemies" instance=ExtResource( 25 )]
+[node name="warrior 3" parent="Enemies" instance=ExtResource( 41 )]
 position = Vector2( 4064, 2176 )
 
-[node name="warrior 4" parent="Enemies" instance=ExtResource( 25 )]
+[node name="warrior 4" parent="Enemies" instance=ExtResource( 41 )]
 position = Vector2( 7264, 1792 )
 
-[node name="warrior 5" parent="Enemies" instance=ExtResource( 25 )]
+[node name="warrior 5" parent="Enemies" instance=ExtResource( 41 )]
 position = Vector2( 10336, 4352 )
 
 [node name="Physics" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="RigidBody2D" parent="Physics" instance=ExtResource( 26 )]
+[node name="RigidBody2D" parent="Physics" instance=ExtResource( 24 )]
 position = Vector2( 436.936, 1139.86 )
 
-[node name="jar" parent="Physics" instance=ExtResource( 27 )]
+[node name="jar" parent="Physics" instance=ExtResource( 26 )]
 position = Vector2( 172.107, 882.743 )
 
-[node name="jar2" parent="Physics" instance=ExtResource( 28 )]
+[node name="jar2" parent="Physics" instance=ExtResource( 33 )]
 position = Vector2( 257.235, 884.594 )
 
-[node name="jar3" parent="Physics" instance=ExtResource( 29 )]
+[node name="jar3" parent="Physics" instance=ExtResource( 32 )]
 position = Vector2( 177.659, 962.319 )
 
-[node name="jar 2" parent="Physics" instance=ExtResource( 27 )]
+[node name="jar 2" parent="Physics" instance=ExtResource( 26 )]
 position = Vector2( 4116.69, 2719.01 )
 rotation = 0.534362
 
-[node name="jar 3" parent="Physics" instance=ExtResource( 28 )]
+[node name="jar 3" parent="Physics" instance=ExtResource( 33 )]
 position = Vector2( 4029.79, 2847.79 )
 rotation = -0.404031
 
-[node name="jar 4" parent="Physics" instance=ExtResource( 29 )]
+[node name="jar 4" parent="Physics" instance=ExtResource( 32 )]
 position = Vector2( 4023.7, 3105.9 )
 rotation = 1.35205
 
-[node name="jar 5" parent="Physics" instance=ExtResource( 27 )]
+[node name="jar 5" parent="Physics" instance=ExtResource( 26 )]
 position = Vector2( 7530.64, 1953.95 )
 rotation = 0.534362
 
 [node name="Doors" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="door" parent="Doors" instance=ExtResource( 30 )]
+[node name="door" parent="Doors" instance=ExtResource( 27 )]
 position = Vector2( 1585.15, 4740.35 )
 
 [node name="key" parent="Doors" instance=ExtResource( 31 )]
 position = Vector2( 1352.54, 4734.18 )
 
-[node name="door 2" parent="Doors" instance=ExtResource( 30 )]
+[node name="door 2" parent="Doors" instance=ExtResource( 27 )]
 position = Vector2( 3673.6, 1793.9 )
 key_idx = 1
 
-[node name="door 3" parent="Doors" instance=ExtResource( 30 )]
+[node name="door 3" parent="Doors" instance=ExtResource( 27 )]
 position = Vector2( 10360.7, 4768.34 )
 rotation = 1.57047
 key_idx = 2
@@ -321,1238 +317,1235 @@ position = Vector2( 10110, 4389.39 )
 key_index = 2
 
 [node name="Interactions" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="breakable_stone 2" parent="Interactions" instance=ExtResource( 32 )]
+[node name="breakable_stone 2" parent="Interactions" instance=ExtResource( 39 )]
 position = Vector2( 713.444, 1700.42 )
 rotation = -1.3784
 
-[node name="breakable_stone" parent="Interactions" instance=ExtResource( 33 )]
+[node name="breakable_stone" parent="Interactions" instance=ExtResource( 25 )]
 position = Vector2( 736.144, 3996.51 )
 
-[node name="breakable_stone 3" parent="Interactions" instance=ExtResource( 33 )]
+[node name="breakable_stone 3" parent="Interactions" instance=ExtResource( 25 )]
 position = Vector2( 4067.31, 3167.21 )
 
-[node name="breakable_stone 5" parent="Interactions" instance=ExtResource( 33 )]
+[node name="breakable_stone 5" parent="Interactions" instance=ExtResource( 25 )]
 position = Vector2( 4064, 3040 )
 
-[node name="breakable_stone 8" parent="Interactions" instance=ExtResource( 33 )]
+[node name="breakable_stone 8" parent="Interactions" instance=ExtResource( 25 )]
 position = Vector2( 4064.2, 2912.2 )
 rotation = -0.00613342
 
-[node name="breakable_stone 9" parent="Interactions" instance=ExtResource( 33 )]
+[node name="breakable_stone 9" parent="Interactions" instance=ExtResource( 25 )]
 position = Vector2( 4064.2, 2784.2 )
 rotation = -0.00613342
 
-[node name="breakable_stone 11" parent="Interactions" instance=ExtResource( 33 )]
+[node name="breakable_stone 11" parent="Interactions" instance=ExtResource( 25 )]
 position = Vector2( 4064.2, 2656.2 )
 rotation = -0.00613342
 
-[node name="breakable_stone 14" parent="Interactions" instance=ExtResource( 33 )]
+[node name="breakable_stone 14" parent="Interactions" instance=ExtResource( 25 )]
 position = Vector2( 7510.7, 1763.38 )
 rotation = -1.34305
 
-[node name="breakable_stone 15" parent="Interactions" instance=ExtResource( 33 )]
+[node name="breakable_stone 15" parent="Interactions" instance=ExtResource( 25 )]
 position = Vector2( 7434.9, 1877.61 )
 rotation = -1.33293
 
-[node name="breakable_stone 16" parent="Interactions" instance=ExtResource( 33 )]
+[node name="breakable_stone 16" parent="Interactions" instance=ExtResource( 25 )]
 position = Vector2( 7511.73, 1900.99 )
 rotation = -0.865435
 
 [node name="Collectable" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="big_coin" parent="Collectable" instance=ExtResource( 34 )]
 position = Vector2( 1194.41, 4705.03 )
 
-[node name="fruit" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 736, 4448 )
 
-[node name="fruit 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 736, 4352 )
 
-[node name="fruit 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 736, 4256 )
 
-[node name="fruit 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 736, 4160 )
 
-[node name="fruit 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 736, 4544 )
 
-[node name="fruit 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 736, 4640 )
 
-[node name="fruit 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1472, 1504 )
 
-[node name="fruit 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1568, 1536 )
 
-[node name="fruit 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1664, 1568 )
 
-[node name="fruit 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1760, 1616 )
 
-[node name="fruit 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1856, 1648 )
 
-[node name="fruit 12 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1952, 1680 )
 
-[node name="fruit 12 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2048, 1712 )
 
-[node name="fruit 12 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2144, 1760 )
 
-[node name="fruit 12 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2240, 1808 )
 
-[node name="fruit 12 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2336, 1872 )
 
-[node name="fruit 12 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2432, 1952 )
 
-[node name="fruit 12 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2528, 2016 )
 
-[node name="fruit 12 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2592, 2080 )
 
-[node name="fruit 12 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2656, 2144 )
 
-[node name="fruit 12 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2720, 2208 )
 
-[node name="fruit 12 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2784, 2272 )
 
-[node name="fruit 12 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2848, 2336 )
 
-[node name="fruit 12 14" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 14" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2912, 2400 )
 
-[node name="fruit 12 15" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 15" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2976, 2464 )
 
-[node name="fruit 12 16" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 16" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3040, 2528 )
 
-[node name="fruit 12 26 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3168, 3232 )
 
-[node name="fruit 12 26 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3104, 3232 )
 
-[node name="fruit 12 26 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3104, 3296 )
 
-[node name="fruit 12 26 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3168, 3296 )
 
-[node name="fruit 12 26 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3104, 3360 )
 
-[node name="fruit 12 26 10 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3168, 3360 )
 
-[node name="fruit 12 26 10 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3168, 3424 )
 
-[node name="fruit 12 26 10 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3104, 3424 )
 
-[node name="fruit 12 26 10 9 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1920, 4640 )
 
-[node name="fruit 12 26 10 9 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2016, 4576 )
 
-[node name="fruit 12 26 10 9 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2112, 4544 )
 
-[node name="fruit 12 26 10 9 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2208, 4512 )
 
-[node name="fruit 12 26 10 9 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2304, 4480 )
 
-[node name="fruit 12 26 10 9 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2400, 4416 )
 
-[node name="fruit 12 26 10 9 14" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 14" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2496, 4384 )
 
-[node name="fruit 12 26 10 9 15" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 15" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2592, 4320 )
 
-[node name="fruit 12 26 10 9 16" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 16" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2688, 4288 )
 
-[node name="fruit 12 26 10 9 17" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 17" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2784, 4224 )
 
-[node name="fruit 12 26 10 9 18" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 18" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2880, 4160 )
 
-[node name="fruit 12 26 10 9 19" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 19" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2976, 4096 )
 
-[node name="fruit 12 26 10 9 20" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 20" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3072, 4000 )
 
-[node name="fruit 12 26 10 10 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2496, 3296 )
 
-[node name="fruit 12 26 10 10 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2432, 3296 )
 
-[node name="fruit 12 31" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 31" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1152, 1408 )
 
-[node name="fruit 12 26 10 10 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1216, 1472 )
 
-[node name="fruit 12 26 12 6 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 12 6 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1216, 1536 )
 
-[node name="fruit 12 31 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 31 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1152, 1600 )
 
-[node name="fruit 12 26 12 6 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 12 6 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1280, 1504 )
 
-[node name="fruit 12 26 10 10 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 960, 2048 )
 
-[node name="fruit 12 26 10 10 7 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 896, 2048 )
 
 [node name="big_coin 2" parent="Collectable" instance=ExtResource( 34 )]
 position = Vector2( 3612.91, 2961.59 )
 fruit_index = 1
 
-[node name="fruit 12 26 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3520, 2592 )
 
-[node name="fruit 12 26 6 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 6 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3456, 2592 )
 
-[node name="fruit 12 26 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3456, 2656 )
 
-[node name="fruit 12 26 11 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 11 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3520, 2656 )
 
-[node name="fruit 12 26 11 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 11 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3456, 2720 )
 
-[node name="fruit 12 26 10 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3520, 2720 )
 
-[node name="fruit 12 26 10 5 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 5 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3520, 2784 )
 
-[node name="fruit 12 26 10 5 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 5 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3456, 2784 )
 
-[node name="fruit 12 26 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3648, 2592 )
 
-[node name="fruit 12 26 6 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 6 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3584, 2592 )
 
-[node name="fruit 12 26 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3584, 2656 )
 
-[node name="fruit 12 26 11 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 11 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3648, 2656 )
 
-[node name="fruit 12 26 11 4 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 11 4 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3584, 2720 )
 
-[node name="fruit 12 26 10 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3648, 2720 )
 
-[node name="fruit 12 26 10 5 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 5 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3648, 2784 )
 
-[node name="fruit 12 26 10 5 4 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 5 4 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3584, 2784 )
 
-[node name="fruit 12 26 10 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3776, 2720 )
 
-[node name="fruit 12 26 10 5 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 5 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3776, 2784 )
 
-[node name="fruit 12 26 10 5 4 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 5 4 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3712, 2784 )
 
-[node name="fruit 12 26 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3776, 2592 )
 
-[node name="fruit 12 26 6 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 6 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3712, 2592 )
 
-[node name="fruit 12 26 13 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 13 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3712, 2656 )
 
-[node name="fruit 12 26 11 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 11 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3776, 2656 )
 
-[node name="fruit 12 26 11 4 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 11 4 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3712, 2720 )
 
-[node name="fruit 12 26 15" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 15" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3526.15, 1956.33 )
 
-[node name="fruit 12 26 6 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 6 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3462.15, 1956.33 )
 
-[node name="fruit 12 26 15 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 15 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3462.15, 2020.33 )
 
-[node name="fruit 12 26 11 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 11 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3526.15, 2020.33 )
 
-[node name="fruit 12 26 11 6 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 11 6 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3462.15, 2084.33 )
 
-[node name="fruit 12 26 10 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3526.15, 2084.33 )
 
-[node name="fruit 12 26 10 5 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 5 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3526.15, 2148.33 )
 
-[node name="fruit 12 26 10 5 6 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 5 6 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3462.15, 2148.33 )
 
 [node name="big_coin 3" parent="Collectable" instance=ExtResource( 34 )]
 position = Vector2( 10369.9, 4559.38 )
 fruit_index = 2
 
-[node name="fruit 12 32" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 32" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10717.7, 4851.66 )
 
-[node name="fruit 12 26 10 10 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10781.7, 4915.66 )
 
-[node name="fruit 12 26 16" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 16" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10717.7, 4947.66 )
 
-[node name="fruit 12 26 12 6 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 12 6 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10781.7, 4979.66 )
 
-[node name="fruit 12 31 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 31 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10717.7, 5043.66 )
 
-[node name="fruit 12 26 12 6 5 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 12 6 5 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10845.7, 4947.66 )
 
-[node name="fruit 12 26 12 6 5 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 12 6 5 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10653.7, 4947.66 )
 
-[node name="fruit 12 26 12 6 4 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 12 6 4 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10589.7, 4947.66 )
 
-[node name="fruit 12 33" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 33" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10656, 4480 )
 
-[node name="fruit 12 34" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 34" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10720, 4480 )
 
-[node name="fruit 12 35" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10912, 3872 )
 
-[node name="fruit 12 35 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10976, 3872 )
 
-[node name="fruit 12 36" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 36" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10784, 3232 )
 
-[node name="fruit 12 35 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10848, 3232 )
 
-[node name="fruit 12 37" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 37" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10784, 3296 )
 
-[node name="fruit 12 35 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10848, 3296 )
 
-[node name="fruit 12 38" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 38" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10912, 3936 )
 
-[node name="fruit 12 35 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10976, 3936 )
 
-[node name="fruit 12 39" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 39" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10080, 4992 )
 
-[node name="fruit 12 35 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10144, 4992 )
 
-[node name="fruit 12 40" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 40" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9888, 4992 )
 
-[node name="fruit 12 35 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9952, 4992 )
 
-[node name="fruit 12 41" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 41" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9696, 4992 )
 
-[node name="fruit 12 35 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9760, 4992 )
 
-[node name="fruit 12 42" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 42" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9504, 4992 )
 
-[node name="fruit 12 35 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9568, 4992 )
 
-[node name="fruit 12 43" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 43" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9312, 4992 )
 
-[node name="fruit 12 35 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9376, 4992 )
 
-[node name="fruit 12 44" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 44" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8704, 4608 )
 
-[node name="fruit 12 35 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8768, 4608 )
 
-[node name="fruit 12 45" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 45" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8704, 4672 )
 
-[node name="fruit 12 35 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8768, 4672 )
 
-[node name="fruit 12 46" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 46" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8704, 4736 )
 
-[node name="fruit 12 35 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8768, 4736 )
 
-[node name="fruit 12 47" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 47" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8704, 4800 )
 
-[node name="fruit 12 35 14" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 14" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8768, 4800 )
 
-[node name="fruit 12 48" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 48" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8704, 4800 )
 
-[node name="fruit 12 35 15" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 15" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8768, 4800 )
 
-[node name="fruit 12 49" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 49" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9568, 4320 )
 
-[node name="fruit 12 35 16" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 16" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9632, 4320 )
 
-[node name="fruit 12 49 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 49 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9376, 4320 )
 
-[node name="fruit 12 35 16 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 16 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9440, 4320 )
 
-[node name="fruit 12 49 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 49 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9184, 4320 )
 
-[node name="fruit 12 35 16 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 16 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9248, 4320 )
 
-[node name="fruit 12 50" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 50" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10656, 4416 )
 
-[node name="fruit 12 50 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 50 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10720, 4416 )
 
-[node name="fruit 12 51" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 51" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10656, 4608 )
 
-[node name="fruit 12 51 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 51 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10720, 4608 )
 
-[node name="fruit 12 51 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 51 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10656, 4544 )
 
-[node name="fruit 12 50 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 50 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10720, 4544 )
 
-[node name="fruit 12 52" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 52" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10208, 2720 )
 
-[node name="fruit 12 35 17" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 17" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10272, 2720 )
 
-[node name="fruit 12 53" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 53" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10016, 2720 )
 
-[node name="fruit 12 35 18" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 18" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10080, 2720 )
 
-[node name="fruit 12 54" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 54" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9824, 2720 )
 
-[node name="fruit 12 35 19" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 19" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9888, 2720 )
 
-[node name="fruit 12 55" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 55" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9632, 2720 )
 
-[node name="fruit 12 35 20" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 20" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9696, 2720 )
 
-[node name="fruit 12 56" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 56" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9440, 2720 )
 
-[node name="fruit 12 35 21" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 21" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9504, 2720 )
 
-[node name="fruit 12 57" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 57" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10816, 3136 )
 
-[node name="fruit 12 58" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 58" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10816, 3008 )
 
-[node name="fruit 12 59" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 59" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10784, 2880 )
 
-[node name="fruit 12 60" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 60" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10944, 3712 )
 
-[node name="fruit 12 60 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 60 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10880, 3584 )
 
-[node name="fruit 12 60 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 60 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10816, 3424 )
 
-[node name="fruit 12 60 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 60 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10912, 4032 )
 
-[node name="fruit 12 61" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 61" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10720, 4288 )
 
-[node name="fruit 12 60 4 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 60 4 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 10816, 4160 )
 
-[node name="fruit 12 62" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 62" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9152, 2592 )
 
-[node name="fruit 12 35 22" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 22" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9216, 2592 )
 
-[node name="fruit 12 63" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 63" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9152, 2656 )
 
-[node name="fruit 12 35 23" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 23" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 9216, 2656 )
 
-[node name="fruit 12 64" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 64" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8704, 2368 )
 
-[node name="fruit 12 35 24" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 24" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8768, 2368 )
 
-[node name="fruit 12 65" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 65" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8480, 2240 )
 
-[node name="fruit 12 35 25" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 25" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8544, 2240 )
 
-[node name="fruit 12 66" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 66" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8256, 2144 )
 
-[node name="fruit 12 35 26" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 26" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8320, 2144 )
 
-[node name="fruit 12 67" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 67" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8064, 2048 )
 
-[node name="fruit 12 35 27" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 27" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 8128, 2048 )
 
-[node name="fruit 12 68" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 68" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 7840, 1920 )
 
-[node name="fruit 12 35 28" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 35 28" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 7904, 1920 )
 
-[node name="fruit 12 69" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 69" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 992, 1408 )
 
-[node name="fruit 12 26 10 10 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1056, 1472 )
 
-[node name="fruit 12 26 12 6 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 12 6 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1056, 1536 )
 
-[node name="fruit 12 31 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 31 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 992, 1600 )
 
-[node name="fruit 12 26 12 6 4 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 12 6 4 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1120, 1504 )
 
-[node name="fruit 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1472, 1568 )
 
-[node name="fruit 13 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1568, 1600 )
 
-[node name="fruit 13 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1664, 1632 )
 
-[node name="fruit 13 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1760, 1680 )
 
-[node name="fruit 13 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1856, 1712 )
 
-[node name="fruit 12 17" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1952, 1744 )
 
-[node name="fruit 12 17 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2048, 1776 )
 
-[node name="fruit 12 17 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2144, 1824 )
 
-[node name="fruit 12 17 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2240, 1872 )
 
-[node name="fruit 12 17 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2336, 1936 )
 
-[node name="fruit 12 17 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2432, 2016 )
 
-[node name="fruit 12 17 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2528, 2080 )
 
-[node name="fruit 12 17 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2592, 2144 )
 
-[node name="fruit 12 17 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2656, 2208 )
 
-[node name="fruit 12 17 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2720, 2272 )
 
-[node name="fruit 12 17 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2784, 2336 )
 
-[node name="fruit 12 17 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2848, 2400 )
 
-[node name="fruit 12 17 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2912, 2464 )
 
-[node name="fruit 12 17 14" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 14" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2976, 2528 )
 
-[node name="fruit 12 17 15" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 15" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3040, 2592 )
 
-[node name="fruit 14" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 14" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1504, 1472 )
 
-[node name="fruit 13 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1600, 1504 )
 
-[node name="fruit 13 6 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13 6 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1696, 1536 )
 
-[node name="fruit 13 6 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13 6 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1792, 1584 )
 
-[node name="fruit 13 6 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13 6 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1888, 1616 )
 
-[node name="fruit 12 18" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 18" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1984, 1648 )
 
-[node name="fruit 12 17 16" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2080, 1680 )
 
-[node name="fruit 12 17 16 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2176, 1728 )
 
-[node name="fruit 12 17 16 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2272, 1776 )
 
-[node name="fruit 12 17 16 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2368, 1840 )
 
-[node name="fruit 12 17 16 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2464, 1920 )
 
-[node name="fruit 12 17 16 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2560, 1984 )
 
-[node name="fruit 12 17 16 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2624, 2048 )
 
-[node name="fruit 12 17 16 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2688, 2112 )
 
-[node name="fruit 12 17 16 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2752, 2176 )
 
-[node name="fruit 12 17 16 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2816, 2240 )
 
-[node name="fruit 12 17 16 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2880, 2304 )
 
-[node name="fruit 12 17 16 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2944, 2368 )
 
-[node name="fruit 12 17 16 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3008, 2432 )
 
-[node name="fruit 12 17 16 14" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 14" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3072, 2496 )
 
-[node name="fruit 12 17 16 15" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3072, 2432 )
 
-[node name="fruit 12 17 16 15 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3008, 2368 )
 
-[node name="fruit 12 17 16 15 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2944, 2304 )
 
-[node name="fruit 12 17 16 15 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2880, 2240 )
 
-[node name="fruit 12 17 16 15 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2816, 2176 )
 
-[node name="fruit 12 17 16 15 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2752, 2112 )
 
-[node name="fruit 12 26 10 9 21" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1920, 4576 )
 
-[node name="fruit 12 26 10 9 21 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2016, 4512 )
 
-[node name="fruit 12 26 10 9 21 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2112, 4480 )
 
-[node name="fruit 12 26 10 9 21 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2208, 4448 )
 
-[node name="fruit 12 26 10 9 21 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2304, 4416 )
 
-[node name="fruit 12 26 10 9 21 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2400, 4352 )
 
-[node name="fruit 12 26 10 9 21 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2496, 4320 )
 
-[node name="fruit 12 26 10 9 21 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2592, 4256 )
 
-[node name="fruit 12 26 10 9 21 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2688, 4224 )
 
-[node name="fruit 12 26 10 9 21 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2784, 4160 )
 
-[node name="fruit 12 26 10 9 21 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2880, 4096 )
 
-[node name="fruit 12 26 10 9 21 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2976, 4032 )
 
-[node name="fruit 12 26 10 9 21 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 9 21 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 3072, 3936 )
 
-[node name="fruit 15" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 15" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1504, 1408 )
 
-[node name="fruit 13 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1600, 1440 )
 
-[node name="fruit 13 6 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13 6 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1696, 1472 )
 
-[node name="fruit 13 6 5 2" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13 6 5 2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1792, 1520 )
 
-[node name="fruit 13 6 5 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 13 6 5 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1888, 1552 )
 
-[node name="fruit 12 19" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 19" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1984, 1584 )
 
-[node name="fruit 12 17 17" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 17" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2080, 1616 )
 
-[node name="fruit 12 17 16 15 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2176, 1664 )
 
-[node name="fruit 12 17 16 15 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2272, 1712 )
 
-[node name="fruit 12 17 16 15 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2368, 1776 )
 
-[node name="fruit 12 17 16 15 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2464, 1856 )
 
-[node name="fruit 12 17 16 15 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2560, 1920 )
 
-[node name="fruit 12 17 16 15 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2624, 1984 )
 
-[node name="fruit 12 17 16 15 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 17 16 15 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2688, 2048 )
 
-[node name="fruit 12 26 10 10 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 960, 2112 )
 
-[node name="fruit 12 26 10 10 7 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 896, 2112 )
 
-[node name="fruit 12 26 10 10 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 960, 2176 )
 
-[node name="fruit 12 26 10 10 7 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 896, 2176 )
 
-[node name="fruit 12 26 10 10 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1152, 2400 )
 
-[node name="fruit 12 26 10 10 7 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1088, 2400 )
 
-[node name="fruit 12 26 10 10 11 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1152, 2336 )
 
-[node name="fruit 12 26 10 10 7 5 3" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 3" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1088, 2336 )
 
-[node name="fruit 12 26 10 10 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1280, 2528 )
 
-[node name="fruit 12 26 10 10 7 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1216, 2528 )
 
-[node name="fruit 12 26 10 10 11 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1280, 2464 )
 
-[node name="fruit 12 26 10 10 7 5 4" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 4" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1216, 2464 )
 
-[node name="fruit 12 26 10 10 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1408, 2592 )
 
-[node name="fruit 12 26 10 10 7 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1344, 2592 )
 
-[node name="fruit 12 26 10 10 11 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1408, 2528 )
 
-[node name="fruit 12 26 10 10 7 5 5" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 5" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1344, 2528 )
 
-[node name="fruit 12 26 10 10 14" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 14" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1536, 2656 )
 
-[node name="fruit 12 26 10 10 7 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1472, 2656 )
 
-[node name="fruit 12 26 10 10 11 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1536, 2592 )
 
-[node name="fruit 12 26 10 10 7 5 6" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 6" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1472, 2592 )
 
-[node name="fruit 12 26 10 10 15" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 15" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1664, 2720 )
 
-[node name="fruit 12 26 10 10 7 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1600, 2720 )
 
-[node name="fruit 12 26 10 10 11 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1664, 2656 )
 
-[node name="fruit 12 26 10 10 7 5 7" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 7" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1600, 2656 )
 
-[node name="fruit 12 26 10 10 16" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 16" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1792, 2784 )
 
-[node name="fruit 12 26 10 10 7 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1728, 2784 )
 
-[node name="fruit 12 26 10 10 11 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1792, 2720 )
 
-[node name="fruit 12 26 10 10 7 5 8" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 8" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1728, 2720 )
 
-[node name="fruit 12 26 10 10 17" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 17" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1920, 2848 )
 
-[node name="fruit 12 26 10 10 7 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1856, 2848 )
 
-[node name="fruit 12 26 10 10 11 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1920, 2784 )
 
-[node name="fruit 12 26 10 10 7 5 9" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 9" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1856, 2784 )
 
-[node name="fruit 12 26 10 10 18" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 18" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2048, 2912 )
 
-[node name="fruit 12 26 10 10 7 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1984, 2912 )
 
-[node name="fruit 12 26 10 10 11 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2048, 2848 )
 
-[node name="fruit 12 26 10 10 7 5 10" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 10" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1984, 2848 )
 
-[node name="fruit 12 26 10 10 19" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 19" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2176, 2976 )
 
-[node name="fruit 12 26 10 10 7 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2112, 2976 )
 
-[node name="fruit 12 26 10 10 11 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2176, 2912 )
 
-[node name="fruit 12 26 10 10 7 5 11" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 11" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2112, 2912 )
 
-[node name="fruit 12 26 10 10 20" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 20" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2624, 3360 )
 
-[node name="fruit 12 26 10 10 7 14" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 14" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2560, 3360 )
 
-[node name="fruit 12 26 10 10 11 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2624, 3296 )
 
-[node name="fruit 12 26 10 10 7 5 12" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 12" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2560, 3296 )
 
-[node name="fruit 12 26 10 10 21" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 21" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2496, 3424 )
 
-[node name="fruit 12 26 10 10 7 15" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 15" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2432, 3424 )
 
-[node name="fruit 12 26 10 10 11 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2496, 3360 )
 
-[node name="fruit 12 26 10 10 7 5 13" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 13" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2432, 3360 )
 
-[node name="fruit 12 26 10 10 22" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 22" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2368, 3360 )
 
-[node name="fruit 12 26 10 10 7 16" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 16" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2304, 3360 )
 
-[node name="fruit 12 26 10 10 11 14" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 14" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2368, 3296 )
 
-[node name="fruit 12 26 10 10 7 5 14" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 14" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2304, 3296 )
 
-[node name="fruit 12 26 10 10 23" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 23" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2368, 3488 )
 
-[node name="fruit 12 26 10 10 7 17" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 17" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2304, 3488 )
 
-[node name="fruit 12 26 10 10 11 15" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 15" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2368, 3424 )
 
-[node name="fruit 12 26 10 10 7 5 15" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 15" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2304, 3424 )
 
-[node name="fruit 12 26 10 10 24" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 24" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2080, 3712 )
 
-[node name="fruit 12 26 10 10 7 18" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 18" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2016, 3712 )
 
-[node name="fruit 12 26 10 10 11 16" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 16" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2080, 3648 )
 
-[node name="fruit 12 26 10 10 7 5 16" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 16" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 2016, 3648 )
 
-[node name="fruit 12 26 10 10 25" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 25" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1920, 3840 )
 
-[node name="fruit 12 26 10 10 7 19" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 19" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1856, 3840 )
 
-[node name="fruit 12 26 10 10 11 17" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 17" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1920, 3776 )
 
-[node name="fruit 12 26 10 10 7 5 17" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 17" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1856, 3776 )
 
-[node name="fruit 12 26 10 10 26" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 26" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1728, 3840 )
 
-[node name="fruit 12 26 10 10 7 20" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 20" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1664, 3840 )
 
-[node name="fruit 12 26 10 10 11 18" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 18" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1728, 3776 )
 
-[node name="fruit 12 26 10 10 7 5 18" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 18" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1664, 3776 )
 
-[node name="fruit 12 26 10 10 27" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 27" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1600, 4032 )
 
-[node name="fruit 12 26 10 10 7 21" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 21" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1536, 4032 )
 
-[node name="fruit 12 26 10 10 11 19" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 19" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1600, 3968 )
 
-[node name="fruit 12 26 10 10 7 5 19" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 19" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1536, 3968 )
 
-[node name="fruit 12 26 10 10 28" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 28" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1376, 4000 )
 
-[node name="fruit 12 26 10 10 7 22" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 22" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1312, 4000 )
 
-[node name="fruit 12 26 10 10 11 20" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 20" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1376, 3936 )
 
-[node name="fruit 12 26 10 10 7 5 20" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 20" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1312, 3936 )
 
-[node name="fruit 12 26 10 10 29" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 29" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1312, 4224 )
 
-[node name="fruit 12 26 10 10 7 23" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 23" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1248, 4224 )
 
-[node name="fruit 12 26 10 10 11 21" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 21" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1312, 4160 )
 
-[node name="fruit 12 26 10 10 7 5 21" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 21" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1248, 4160 )
 
-[node name="fruit 12 26 10 10 30" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 30" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1088, 4160 )
 
-[node name="fruit 12 26 10 10 7 24" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 24" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1024, 4160 )
 
-[node name="fruit 12 26 10 10 11 22" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 22" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1088, 4096 )
 
-[node name="fruit 12 26 10 10 7 5 22" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 22" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1024, 4096 )
 
-[node name="fruit 12 26 10 10 31" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 31" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1152, 4416 )
 
-[node name="fruit 12 26 10 10 7 25" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 25" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1088, 4416 )
 
-[node name="fruit 12 26 10 10 11 23" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 11 23" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1152, 4352 )
 
-[node name="fruit 12 26 10 10 7 5 23" parent="Collectable" instance=ExtResource( 35 )]
+[node name="fruit 12 26 10 10 7 5 23" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( 1088, 4352 )
 
 [node name="WallSpikes" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="spikes" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 2120.2, 4011.61 )
 rotation = -0.483875
 
-[node name="spikes 2" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 2" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 2523.49, 3812.01 )
 rotation = -0.454089
 
-[node name="spikes 3" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 3" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 1616.69, 1755.9 )
 rotation = 0.468907
 
-[node name="spikes 4" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 4" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 2059.78, 1985 )
 rotation = 0.468907
 
-[node name="spikes 5" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 5" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 2475.17, 2294.65 )
 rotation = 0.794961
 
-[node name="spikes 6" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 6" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 2832.66, 2662.21 )
 rotation = 0.794961
 
-[node name="spikes 7" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 7" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 2133.77, 4653.9 )
 rotation = -0.479873
 
-[node name="spikes 8" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 8" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 1742.88, 4212.66 )
 rotation = -0.483875
 
-[node name="spikes 9" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 9" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 1220.01, 2803.41 )
 rotation = 0.468907
 
-[node name="spikes 10" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 10" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 1666.38, 3034.65 )
 rotation = 0.468907
 
-[node name="spikes 11" parent="WallSpikes" instance=ExtResource( 37 )]
+[node name="spikes 11" parent="WallSpikes" instance=ExtResource( 36 )]
 position = Vector2( 1938.8, 3176.52 )
 rotation = 0.467687
 
-[node name="spikes 12" parent="WallSpikes" instance=ExtResource( 37 )]
+[node name="spikes 12" parent="WallSpikes" instance=ExtResource( 36 )]
 position = Vector2( 938.365, 2663.77 )
 rotation = 0.467687
 
-[node name="spikes 13" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 13" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 2587.88, 4422.64 )
 rotation = -0.479873
 
-[node name="spikes 14" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 14" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 3000.46, 4151.07 )
 rotation = -0.717672
 
-[node name="spikes 15" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 15" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 3223.11, 3764.65 )
 rotation = -1.50743
 
-[node name="spikes 16" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 16" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 7864.11, 1825.53 )
 rotation = -2.68494
 
-[node name="spikes 17" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 17" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 8308.1, 2045.62 )
 rotation = -2.68494
 
-[node name="spikes 18" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 18" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 8736.91, 2265.72 )
 rotation = -2.68494
 
-[node name="spikes 19" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 19" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 9160.21, 2477.98 )
 rotation = -2.7095
 
-[node name="spikes 20" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 20" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 9645.3, 2626.61 )
 rotation = -3.14339
 
-[node name="spikes 21" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 21" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 10155.9, 2626.61 )
 rotation = -3.14339
 
-[node name="spikes 22" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 22" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 10628.5, 2998.7 )
 rotation = -4.9346
 
-[node name="spikes 23" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 23" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 10618.3, 3499.06 )
 rotation = -4.41771
 
-[node name="spikes 24" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 24" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 10566.1, 4002.84 )
 rotation = -4.71829
 
-[node name="spikes 25" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 25" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 11156.6, 3126.97 )
 rotation = -1.58419
 
-[node name="spikes 26" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 26" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 11107.6, 3610.68 )
 rotation = -1.33691
 
-[node name="spikes 27" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 27" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 11106.8, 4152.62 )
 rotation = -1.80415
 
-[node name="spikes 28" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 28" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 11008.7, 4591.94 )
 rotation = -0.790955
 
-[node name="spikes 29" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 29" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 10782.7, 5152.63 )
 rotation = 0.00570721
 
-[node name="spikes 30" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 30" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 10275, 5147.05 )
 rotation = 0.00570721
 
-[node name="spikes 31" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 31" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 9758.99, 5141.47 )
 rotation = 0.00570721
 
-[node name="spikes 32" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 32" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 9242.93, 5135.89 )
 rotation = 0.00570721
 
-[node name="spikes 33" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 33" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 8746.4, 5021.53 )
 rotation = 0.515858
 
-[node name="spikes 34" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 34" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 8706.12, 4366.97 )
 rotation = 2.276
 
-[node name="spikes 35" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 35" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 9124.02, 4200.81 )
 rotation = 3.14306
 
-[node name="spikes 36" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 36" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 9647.67, 4198.3 )
 rotation = 3.14306
 
-[node name="spikes 37" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 37" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 9741.34, 4450.7 )
 rotation = 6.29261
 
-[node name="spikes 38" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 38" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 9236.44, 4448 )
 rotation = 6.28065
 
-[node name="spikes 39" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 39" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 9466.41, 4847.82 )
 rotation = 3.15163
 
-[node name="spikes 40" parent="WallSpikes" instance=ExtResource( 36 )]
+[node name="spikes 40" parent="WallSpikes" instance=ExtResource( 28 )]
 position = Vector2( 9982.5, 4852.85 )
 rotation = 3.15163
 
-[node name="spikes 41" parent="WallSpikes" instance=ExtResource( 37 )]
+[node name="spikes 41" parent="WallSpikes" instance=ExtResource( 36 )]
 position = Vector2( 8576.41, 4640.41 )
 rotation = 1.55786
 
-[node name="spikes 42" parent="WallSpikes" instance=ExtResource( 37 )]
+[node name="spikes 42" parent="WallSpikes" instance=ExtResource( 36 )]
 position = Vector2( 8576.41, 4800.41 )
 rotation = 1.55786
 
@@ -1561,56 +1554,53 @@ rotation = 1.55786
 [node name="checkpoint" parent="Chekpoint" instance=ExtResource( 38 )]
 position = Vector2( 3397.42, 3473.11 )
 
-[node name="roulette" parent="Chekpoint" instance=ExtResource( 39 )]
+[node name="roulette" parent="Chekpoint" instance=ExtResource( 37 )]
 position = Vector2( 11769.2, 5034.27 )
 
 [node name="Spikes" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="StaticBody2D" parent="Spikes" instance=ExtResource( 40 )]
+[node name="StaticBody2D" parent="Spikes" instance=ExtResource( 35 )]
 position = Vector2( 7782.91, 1906.91 )
 
-[node name="StaticBody2D 2" parent="Spikes" instance=ExtResource( 40 )]
+[node name="StaticBody2D 2" parent="Spikes" instance=ExtResource( 35 )]
 position = Vector2( 7987.83, 1994.19 )
 
-[node name="StaticBody2D 3" parent="Spikes" instance=ExtResource( 40 )]
+[node name="StaticBody2D 3" parent="Spikes" instance=ExtResource( 35 )]
 position = Vector2( 8196.54, 2089.06 )
 
-[node name="StaticBody2D 4" parent="Spikes" instance=ExtResource( 40 )]
+[node name="StaticBody2D 4" parent="Spikes" instance=ExtResource( 35 )]
 position = Vector2( 8424.23, 2191.51 )
 
-[node name="StaticBody2D 5" parent="Spikes" instance=ExtResource( 40 )]
+[node name="StaticBody2D 5" parent="Spikes" instance=ExtResource( 35 )]
 position = Vector2( 8629.14, 2297.77 )
 
-[node name="StaticBody2D 6" parent="Spikes" instance=ExtResource( 40 )]
+[node name="StaticBody2D 6" parent="Spikes" instance=ExtResource( 35 )]
 position = Vector2( 8837.85, 2407.82 )
 
-[node name="StaticBody2D 9" parent="Spikes" instance=ExtResource( 40 )]
+[node name="StaticBody2D 9" parent="Spikes" instance=ExtResource( 35 )]
 position = Vector2( 10720, 3232 )
 
-[node name="StaticBody2D 10" parent="Spikes" instance=ExtResource( 40 )]
+[node name="StaticBody2D 10" parent="Spikes" instance=ExtResource( 35 )]
 position = Vector2( 10912, 3232 )
 
-[node name="StaticBody2D 11" parent="Spikes" instance=ExtResource( 40 )]
+[node name="StaticBody2D 11" parent="Spikes" instance=ExtResource( 35 )]
 position = Vector2( 10848, 3872 )
 
-[node name="StaticBody2D 12" parent="Spikes" instance=ExtResource( 40 )]
+[node name="StaticBody2D 12" parent="Spikes" instance=ExtResource( 35 )]
 position = Vector2( 11040, 3872 )
 
 [node name="Wildlife" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="frog" parent="Wildlife" instance=ExtResource( 41 )]
+[node name="frog" parent="Wildlife" instance=ExtResource( 30 )]
 position = Vector2( 3432.93, 2988.97 )
 
-[node name="frog 2" parent="Wildlife" instance=ExtResource( 41 )]
+[node name="frog 2" parent="Wildlife" instance=ExtResource( 30 )]
 position = Vector2( 3783.97, 2978.65 )
 
-[node name="frog 3" parent="Wildlife" instance=ExtResource( 41 )]
+[node name="frog 3" parent="Wildlife" instance=ExtResource( 30 )]
 position = Vector2( 526.555, 4769.97 )
 
 [node name="Decorative Front" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Sprite 15" type="Sprite" parent="Decorative Front"]
 position = Vector2( 1104.63, 4625.47 )
@@ -1693,4 +1683,3 @@ texture = ExtResource( 6 )
 position = Vector2( 1663.97, 2470.36 )
 rotation = 3.79768
 texture = ExtResource( 8 )
-

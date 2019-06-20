@@ -5,9 +5,7 @@
 
 [sub_resource type="CircleShape2D" id=1]
 
-
 [node name="RigidBody2D" type="RigidBody2D"]
-editor/display_folded = true
 mass = 30.0
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -172,4 +170,3 @@ texture = ExtResource( 2 )
 position = Vector2( 262.333, 52.9981 )
 rotation = -4.40067
 texture = ExtResource( 2 )
-

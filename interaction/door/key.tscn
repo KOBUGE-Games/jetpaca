@@ -6,7 +6,6 @@
 [ext_resource path="res://sound/event2.wav" type="AudioStream" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
-
 radius = 30.0
 
 [node name="key" type="RigidBody2D"]
@@ -51,7 +50,6 @@ local_coords = false
 texture = ExtResource( 2 )
 
 [node name="sp" type="VisibilityNotifier2D" parent="."]
-
 [connection signal="body_entered" from="monitor" to="." method="_on_body_enter"]
 [connection signal="timeout" from="death" to="." method="_on_timeout"]
 [connection signal="timeout" from="enabler" to="." method="_on_timeout_enable"]

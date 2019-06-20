@@ -5,11 +5,9 @@
 [ext_resource path="res://art/fire_particle.png" type="Texture" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
-
 height = 26.0
 
 [sub_resource type="Animation" id=2]
-
 length = 0.5
 step = 0.5
 tracks/0/type = "value"
@@ -26,7 +24,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-
 length = 0.5
 loop = true
 step = 0.05
@@ -74,4 +71,3 @@ texture = ExtResource( 3 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/eyes_closed = SubResource( 2 )
 anims/seeking = SubResource( 3 )
-

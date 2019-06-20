@@ -5,7 +5,6 @@
 [ext_resource path="res://art/lock_keyhole.png" type="Texture" id=3]
 
 [sub_resource type="Animation" id=1]
-
 resource_name = "lock_closed"
 length = 3.0
 loop = true
@@ -60,7 +59,6 @@ tracks/3/keys = {
 }
 
 [sub_resource type="Animation" id=2]
-
 resource_name = "lock_open"
 length = 0.25
 loop = true
@@ -115,7 +113,6 @@ tracks/3/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("lock:position")
@@ -184,6 +181,5 @@ anims/lock_open = SubResource( 2 )
 anims/lock_opening = SubResource( 3 )
 
 [node name="screenprox" type="VisibilityNotifier2D" parent="."]
-
 [connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="screenprox" to="." method="_on_exit_screen"]

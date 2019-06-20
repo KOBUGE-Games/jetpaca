@@ -10,7 +10,6 @@
 [ext_resource path="res://art/intro_taptofly.png" type="Texture" id=8]
 
 [sub_resource type="Animation" id=1]
-
 resource_name = "sky_motion"
 length = 4.0
 loop = true
@@ -29,7 +28,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=2]
-
 resource_name = "sky_motion"
 length = 2.0
 loop = true
@@ -47,31 +45,25 @@ tracks/0/keys = {
 }
 
 [sub_resource type="CanvasItemMaterial" id=3]
-
 blend_mode = 1
 
 [sub_resource type="Gradient" id=4]
-
 offsets = PoolRealArray( 0, 0.2, 1 )
 colors = PoolColorArray( 1, 0.88, 0.336283, 1, 1, 0.15, 0, 1, 0, 0, 0, 1 )
 
 [sub_resource type="GradientTexture" id=5]
-
 gradient = SubResource( 4 )
 width = 256
 
 [sub_resource type="Curve" id=6]
-
 min_value = 0.2
 _data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.2 ), 0.0, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=7]
-
 width = 256
 curve = SubResource( 6 )
 
 [sub_resource type="ParticlesMaterial" id=8]
-
 flag_disable_z = true
 spread = 10.0
 gravity = Vector3( 0, 10, 0 )
@@ -84,7 +76,6 @@ scale_curve = SubResource( 7 )
 color_ramp = SubResource( 5 )
 
 [sub_resource type="Animation" id=9]
-
 length = 4.0
 step = 0.0
 tracks/0/type = "value"
@@ -137,7 +128,6 @@ tracks/3/keys = {
 }
 
 [sub_resource type="Animation" id=10]
-
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -167,23 +157,21 @@ tracks/1/keys = {
 
 [sub_resource type="StyleBoxEmpty" id=11]
 
-
 [sub_resource type="StyleBoxEmpty" id=12]
-
 
 [sub_resource type="StyleBoxEmpty" id=13]
 
-
 [sub_resource type="StyleBoxEmpty" id=14]
 
-
 [sub_resource type="StyleBoxEmpty" id=15]
-
 
 [node name="main_menu" type="ReferenceRect"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="copyright" type="Label" parent="."]
 visible = false
@@ -319,6 +307,9 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -150.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="tap_to_fly" type="TextureRect" parent="tap_to_fly_container"]
 modulate = Color( 1, 1, 1, 0.3 )
@@ -337,4 +328,3 @@ custom_styles/pressed = SubResource( 12 )
 custom_styles/focus = SubResource( 13 )
 custom_styles/disabled = SubResource( 14 )
 custom_styles/normal = SubResource( 15 )
-

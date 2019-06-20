@@ -4,7 +4,6 @@
 [ext_resource path="res://art/twirly_particle.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-
 radius = 27.0
 
 [node name="booster_push" type="RigidBody2D"]
@@ -17,4 +16,3 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
-

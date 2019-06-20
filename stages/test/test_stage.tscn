@@ -2,17 +2,17 @@
 
 [ext_resource path="res://stages/stage.gd" type="Script" id=1]
 [ext_resource path="res://tilesets/test_tileset.tres" type="TileSet" id=2]
-[ext_resource path="res://interaction/platform/spinning_log.tscn" type="PackedScene" id=3]
-[ext_resource path="res://interaction/platform/platform.tscn" type="PackedScene" id=4]
-[ext_resource path="res://interaction/fire_holder/fire_holder.tscn" type="PackedScene" id=5]
+[ext_resource path="res://props/stones/mountain_rock.tscn" type="PackedScene" id=3]
+[ext_resource path="res://enemies/warrior/warrior.tscn" type="PackedScene" id=4]
+[ext_resource path="res://interaction/boosters/boost_directed.tscn" type="PackedScene" id=5]
 [ext_resource path="res://interaction/door/locked_door.tscn" type="PackedScene" id=6]
-[ext_resource path="res://enemies/warrior/warrior.tscn" type="PackedScene" id=7]
-[ext_resource path="res://props/breakable/breakable_stone.tscn" type="PackedScene" id=8]
-[ext_resource path="res://interaction/boosters/boost_push.tscn" type="PackedScene" id=9]
-[ext_resource path="res://interaction/boosters/boost_directed.tscn" type="PackedScene" id=10]
-[ext_resource path="res://interaction/boosters/boost_stop.tscn" type="PackedScene" id=11]
-[ext_resource path="res://props/stones/mountain_rock.tscn" type="PackedScene" id=12]
-[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=13]
+[ext_resource path="res://props/breakable/breakable_stone.tscn" type="PackedScene" id=7]
+[ext_resource path="res://interaction/platform/platform.tscn" type="PackedScene" id=8]
+[ext_resource path="res://interaction/platform/spinning_log.tscn" type="PackedScene" id=9]
+[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=10]
+[ext_resource path="res://interaction/boosters/boost_push.tscn" type="PackedScene" id=11]
+[ext_resource path="res://interaction/boosters/boost_stop.tscn" type="PackedScene" id=12]
+[ext_resource path="res://interaction/fire_holder/fire_holder.tscn" type="PackedScene" id=13]
 
 [node name="stage" type="Node"]
 script = ExtResource( 1 )
@@ -29,57 +29,55 @@ __meta__ = {
 }
 
 [node name="Moving Platforms" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="spinning_log" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 441.991, 507.217 )
 
-[node name="spinning_log 2" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 2" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 555.563, 503.877 )
 
-[node name="spinning_log 3" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 3" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 674.146, 513.898 )
 
-[node name="carryplat" parent="Moving Platforms" instance=ExtResource( 4 )]
+[node name="carryplat" parent="Moving Platforms" instance=ExtResource( 8 )]
 position = Vector2( 1597.79, 680.041 )
 
-[node name="spinning_log 4" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 4" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 802.75, 569.014 )
 
-[node name="spinning_log 5" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 5" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 974.779, 632.481 )
 
-[node name="spinning_log 6" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 6" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 1148.48, 694.277 )
 
-[node name="spinning_log 7" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 7" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 1317.17, 784.467 )
 
-[node name="spinning_log 8" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 8" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 1510.91, 867.976 )
 
-[node name="spinning_log 9" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 9" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 1718.01, 941.464 )
 
-[node name="spinning_log 10" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 10" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 1901.73, 1016.62 )
 
-[node name="spinning_log 11" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 11" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 2123.86, 1085.1 )
 
-[node name="spinning_log 12" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 12" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 2404.46, 1178.63 )
 
-[node name="spinning_log 13" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 13" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 2653.31, 1288.86 )
 
-[node name="spinning_log 14" parent="Moving Platforms" instance=ExtResource( 3 )]
+[node name="spinning_log 14" parent="Moving Platforms" instance=ExtResource( 9 )]
 position = Vector2( 2832.02, 1295.54 )
 
 [node name="torches" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="torch_trigger" parent="torches" instance=ExtResource( 5 )]
+[node name="torch_trigger" parent="torches" instance=ExtResource( 13 )]
 position = Vector2( 1161.88, 647.53 )
 
 [node name="door" parent="torches" groups=[
@@ -88,89 +86,88 @@ position = Vector2( 1161.88, 647.53 )
 position = Vector2( 1104.64, 1129.8 )
 no_key = true
 
-[node name="warrior" parent="." instance=ExtResource( 7 )]
+[node name="warrior" parent="." instance=ExtResource( 4 )]
 position = Vector2( 503.834, 942.538 )
 
-[node name="breakable_stone" parent="." instance=ExtResource( 8 )]
+[node name="breakable_stone" parent="." instance=ExtResource( 7 )]
 position = Vector2( 897.549, 1151.08 )
 
-[node name="StaticBody2D" parent="." instance=ExtResource( 9 )]
+[node name="StaticBody2D" parent="." instance=ExtResource( 11 )]
 position = Vector2( 736.962, 571.627 )
 
-[node name="StaticBody2D 2" parent="." instance=ExtResource( 9 )]
+[node name="StaticBody2D 2" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1028.94, 159.153 )
 
-[node name="StaticBody2D 3" parent="." instance=ExtResource( 9 )]
+[node name="StaticBody2D 3" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1497.15, 401.584 )
 
-[node name="booster_push" parent="." instance=ExtResource( 10 )]
+[node name="booster_push" parent="." instance=ExtResource( 5 )]
 position = Vector2( 600.602, 1555.84 )
 
-[node name="booster_push 2" parent="." instance=ExtResource( 10 )]
+[node name="booster_push 2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1492.19, 1550.86 )
 rotation = 1.03546
 
-[node name="booster_push 3" parent="." instance=ExtResource( 10 )]
+[node name="booster_push 3" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1816.42, 2154.67 )
 rotation = 2.5756
 
-[node name="booster_push 4" parent="." instance=ExtResource( 10 )]
+[node name="booster_push 4" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1063.05, 2640.82 )
 rotation = 4.68521
 
-[node name="booster_push 5" parent="." instance=ExtResource( 10 )]
+[node name="booster_push 5" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1035.65, 2106.55 )
 rotation = 4.07639
 
-[node name="booster_push 6" parent="." instance=ExtResource( 11 )]
+[node name="booster_push 6" parent="." instance=ExtResource( 12 )]
 position = Vector2( 2685.03, 1873.36 )
 
-[node name="booster_push 7" parent="." instance=ExtResource( 10 )]
+[node name="booster_push 7" parent="." instance=ExtResource( 5 )]
 position = Vector2( 2271.92, 1589.59 )
 rotation = 0.534209
 
-[node name="booster_push 8" parent="." instance=ExtResource( 10 )]
+[node name="booster_push 8" parent="." instance=ExtResource( 5 )]
 position = Vector2( 2888.38, 2034.81 )
 rotation = -0.879402
 
-[node name="booster_push 9" parent="." instance=ExtResource( 11 )]
+[node name="booster_push 9" parent="." instance=ExtResource( 12 )]
 position = Vector2( 3321.97, 1518.39 )
 
-[node name="booster_push 10" parent="." instance=ExtResource( 10 )]
+[node name="booster_push 10" parent="." instance=ExtResource( 5 )]
 position = Vector2( 3291.19, 1319.83 )
 rotation = -3.46306
 
-[node name="booster_push 11" parent="." instance=ExtResource( 10 )]
+[node name="booster_push 11" parent="." instance=ExtResource( 5 )]
 position = Vector2( 2543.48, 1234.23 )
 rotation = -1.01058
 
-[node name="booster_push 12" parent="." instance=ExtResource( 10 )]
+[node name="booster_push 12" parent="." instance=ExtResource( 5 )]
 position = Vector2( 370.443, 468.293 )
 rotation = -0.844661
 
-[node name="RigidBody2D" parent="." instance=ExtResource( 12 )]
+[node name="RigidBody2D" parent="." instance=ExtResource( 3 )]
 position = Vector2( 112.911, 321.049 )
 
-[node name="RigidBody2D 2" parent="." instance=ExtResource( 12 )]
+[node name="RigidBody2D 2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 180.93, 378.184 )
 
-[node name="RigidBody2D 3" parent="." instance=ExtResource( 12 )]
+[node name="RigidBody2D 3" parent="." instance=ExtResource( 3 )]
 position = Vector2( 104.749, 399.95 )
 
-[node name="RigidBody2D 4" parent="." instance=ExtResource( 12 )]
+[node name="RigidBody2D 4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 244.867, 412.194 )
 
-[node name="RigidBody2D 5" parent="." instance=ExtResource( 12 )]
+[node name="RigidBody2D 5" parent="." instance=ExtResource( 3 )]
 position = Vector2( 244.867, 412.194 )
 rotation = -1.50284
 
-[node name="RigidBody2D 6" parent="." instance=ExtResource( 12 )]
+[node name="RigidBody2D 6" parent="." instance=ExtResource( 3 )]
 position = Vector2( 116.992, 229.903 )
 rotation = -1.50284
 
-[node name="booster_push 13" parent="." instance=ExtResource( 11 )]
+[node name="booster_push 13" parent="." instance=ExtResource( 12 )]
 position = Vector2( 558.513, 153.623 )
 
-[node name="sacra_pinchorb" parent="." instance=ExtResource( 13 )]
+[node name="sacra_pinchorb" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1417.07, 1829.92 )
-

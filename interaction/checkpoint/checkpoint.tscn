@@ -6,11 +6,9 @@
 [ext_resource path="res://music/checkpoint.ogg" type="AudioStream" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
-
 radius = 100.0
 
 [sub_resource type="Animation" id=2]
-
 length = 3.0
 step = 0.0
 tracks/0/type = "value"
@@ -106,5 +104,4 @@ anims/checked = SubResource( 2 )
 
 [node name="tune" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
-
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]

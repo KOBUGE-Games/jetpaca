@@ -4,29 +4,27 @@
 [ext_resource path="res://interaction/elevator/elevator.gd" type="Script" id=2]
 [ext_resource path="res://art/mountain_platform.png" type="Texture" id=3]
 [ext_resource path="res://interaction/area_trigger.gd" type="Script" id=4]
-[ext_resource path="res://enemies/spikes/mountain_long_spikes.tscn" type="PackedScene" id=5]
+[ext_resource path="res://props/planks/plank.tscn" type="PackedScene" id=5]
 [ext_resource path="res://art/seesaw.png" type="Texture" id=6]
 [ext_resource path="res://tilesets/mountain_tileset.tres" type="TileSet" id=7]
-[ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=8]
-[ext_resource path="res://props/planks/seesaw.tscn" type="PackedScene" id=9]
-[ext_resource path="res://props/planks/plank.tscn" type="PackedScene" id=10]
-[ext_resource path="res://enemies/spikes/round_spike.tscn" type="PackedScene" id=11]
-[ext_resource path="res://enemies/cannon/cannon.tscn" type="PackedScene" id=12]
-[ext_resource path="res://props/planks/seesaw_big_right.tscn" type="PackedScene" id=13]
-[ext_resource path="res://props/stones/mountain_rock.tscn" type="PackedScene" id=14]
-[ext_resource path="res://interaction/roulette/goal.tscn" type="PackedScene" id=15]
-[ext_resource path="res://interaction/bonuses/big_coin.tscn" type="PackedScene" id=16]
-[ext_resource path="res://enemies/spikes/round_spike_movable.tscn" type="PackedScene" id=17]
-[ext_resource path="res://interaction/boosters/boost_directed.tscn" type="PackedScene" id=18]
-[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=19]
+[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=8]
+[ext_resource path="res://props/planks/seesaw_big_right.tscn" type="PackedScene" id=9]
+[ext_resource path="res://enemies/spikes/mountain_long_spikes.tscn" type="PackedScene" id=10]
+[ext_resource path="res://interaction/bonuses/big_coin.tscn" type="PackedScene" id=11]
+[ext_resource path="res://props/planks/seesaw.tscn" type="PackedScene" id=12]
+[ext_resource path="res://enemies/spikes/round_spike.tscn" type="PackedScene" id=13]
+[ext_resource path="res://interaction/roulette/goal.tscn" type="PackedScene" id=14]
+[ext_resource path="res://enemies/cannon/cannon.tscn" type="PackedScene" id=15]
+[ext_resource path="res://props/stones/mountain_rock.tscn" type="PackedScene" id=16]
+[ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=17]
+[ext_resource path="res://enemies/spikes/round_spike_movable.tscn" type="PackedScene" id=18]
+[ext_resource path="res://interaction/boosters/boost_directed.tscn" type="PackedScene" id=19]
 [ext_resource path="res://enemies/frog/frog.tscn" type="PackedScene" id=20]
 
 [sub_resource type="RectangleShape2D" id=1]
-
 extents = Vector2( 256, 50 )
 
 [sub_resource type="RectangleShape2D" id=2]
-
 extents = Vector2( 133, 133 )
 
 [node name="stage" type="Node"]
@@ -37,7 +35,6 @@ script = ExtResource( 1 )
 [node name="ereveta" type="Node2D" parent="behind" groups=[
 "elevator_1",
 ]]
-editor/display_folded = true
 position = Vector2( 8946.44, 6107.07 )
 script = ExtResource( 2 )
 distance = -3840
@@ -84,27 +81,25 @@ position = Vector2( 0, 4 )
 shape = SubResource( 1 )
 
 [node name="ereveta_switch" type="Area2D" parent="behind"]
-editor/display_folded = true
 position = Vector2( 9150.82, 6139.63 )
 script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="behind/ereveta_switch"]
 shape = SubResource( 2 )
 
-[node name="spikes 3" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes 3" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 8908.86, 4016.2 )
 rotation = 3.79613
 
-[node name="spikes 4" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes 4" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 9244.57, 4278.42 )
 rotation = 3.79613
 
-[node name="spikes" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 8726.63, 4568.1 )
 rotation = 2.48956
 
 [node name="spinnie" type="RigidBody2D" parent="behind"]
-editor/display_folded = true
 position = Vector2( 10722.9, 2703.65 )
 rotation = -0.174237
 
@@ -153,7 +148,6 @@ rotation = 1.5708
 [node name="ereveta 2" type="Node2D" parent="behind/rot" groups=[
 "elevator_2",
 ]]
-editor/display_folded = true
 position = Vector2( 402.776, 94.9482 )
 script = ExtResource( 2 )
 distance = -3840
@@ -200,50 +194,49 @@ position = Vector2( 0, 4 )
 shape = SubResource( 1 )
 
 [node name="ereveta_switch 2" type="Area2D" parent="behind"]
-editor/display_folded = true
 position = Vector2( 13352.9, 5074.85 )
 script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="behind/ereveta_switch 2"]
 shape = SubResource( 2 )
 
-[node name="spikes 6" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes 6" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 15809.5, 4497.04 )
 rotation = 3.9149
 
-[node name="spikes 7" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes 7" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 16177.6, 4853.75 )
 rotation = 3.9149
 
-[node name="spikes 8" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes 8" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 15456.6, 4865.13 )
 rotation = 5.29444
 
-[node name="spikes 9" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes 9" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 15191, 5297.73 )
 rotation = 5.2426
 
-[node name="spikes 10" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes 10" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 15813.3, 4838.57 )
 rotation = 7.07063
 
-[node name="spikes 11" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes 11" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 16173.8, 5199.07 )
 rotation = 7.07063
 
-[node name="spikes 12" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes 12" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 16598.8, 4929.06 )
 rotation = 2.80378
 
-[node name="spikes 13" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes 13" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 16702, 5177.33 )
 rotation = 5.96882
 
-[node name="spikes 14" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes 14" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 16838.7, 4572.01 )
 rotation = 1.56613
 
-[node name="spikes 15" parent="behind" instance=ExtResource( 5 )]
+[node name="spikes 15" parent="behind" instance=ExtResource( 10 )]
 position = Vector2( 16961.5, 5383.75 )
 rotation = 1.56613
 
@@ -256,287 +249,285 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="checkpoint" parent="." instance=ExtResource( 8 )]
+[node name="checkpoint" parent="." instance=ExtResource( 17 )]
 position = Vector2( 7660.46, 6751.13 )
 
 [node name="launch" type="Position2D" parent="."]
 position = Vector2( 858.174, 1263.92 )
 
 [node name="interaction" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="seesaw" parent="interaction" instance=ExtResource( 9 )]
+[node name="seesaw" parent="interaction" instance=ExtResource( 12 )]
 position = Vector2( 5026.92, 6283.2 )
 
-[node name="plank" parent="interaction" instance=ExtResource( 10 )]
+[node name="plank" parent="interaction" instance=ExtResource( 5 )]
 position = Vector2( 3042.4, 4851.81 )
 
-[node name="plank 2" parent="interaction" instance=ExtResource( 10 )]
+[node name="plank 2" parent="interaction" instance=ExtResource( 5 )]
 position = Vector2( 7006.9, 6324.64 )
 
-[node name="floating_spike" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 8642.98, 5732.5 )
 
-[node name="floating_spike 2" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 2" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 8791.63, 5610.57 )
 
-[node name="floating_spike 3" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 3" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 8908.54, 5720.81 )
 
-[node name="floating_spike 4" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 4" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 8886.82, 5420.17 )
 
-[node name="floating_spike 5" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 5" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 8596.21, 5547.11 )
 
-[node name="floating_spike 6" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 6" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 8694.75, 5430.2 )
 
-[node name="floating_spike 7" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 7" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 9048.83, 5340.01 )
 
-[node name="floating_spike 8" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 8" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 9013.76, 5570.49 )
 
-[node name="floating_spike 9" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 9" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 9078.89, 5727.49 )
 
-[node name="floating_spike 10" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 10" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 8602.89, 5286.56 )
 
-[node name="floating_spike 11" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 11" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 8801.64, 5289.9 )
 
-[node name="floating_spike 12" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 12" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 9204.15, 5458.59 )
 
-[node name="floating_spike 13" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 13" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 9204.15, 5188.02 )
 
-[node name="floating_spike 14" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 14" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 9042.33, 5110.74 )
 
-[node name="floating_spike 15" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 15" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 8694.41, 5071.88 )
 
-[node name="floating_spike 16" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 16" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 8873.92, 4994.15 )
 
-[node name="floating_spike 17" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 17" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 9151.51, 4999.7 )
 
-[node name="floating_spike 18" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 18" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 8633.34, 4944.18 )
 
-[node name="floating_spike 19" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 19" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 8994.12, 4826.78 )
 
-[node name="floating_spike 20" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 20" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 9197.5, 4430.67 )
 
-[node name="cannon" parent="interaction" instance=ExtResource( 12 )]
+[node name="cannon" parent="interaction" instance=ExtResource( 15 )]
 position = Vector2( 9238.23, 3566.77 )
 
-[node name="cannon 3" parent="interaction" instance=ExtResource( 12 )]
+[node name="cannon 3" parent="interaction" instance=ExtResource( 15 )]
 position = Vector2( 9228.87, 2933.02 )
 
-[node name="cannon 6" parent="interaction" instance=ExtResource( 12 )]
+[node name="cannon 6" parent="interaction" instance=ExtResource( 15 )]
 position = Vector2( 9235.74, 3239.55 )
 
-[node name="floating_spike 22" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 22" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 10191.4, 2798.57 )
 
-[node name="floating_spike 23" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 23" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 10224.2, 2880.59 )
 
-[node name="floating_spike 25" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 25" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 10261.9, 2965.86 )
 
-[node name="floating_spike 27" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 27" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 10304.5, 3042.53 )
 
-[node name="floating_spike 30" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 30" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 10496.5, 3242.13 )
 
-[node name="floating_spike 31" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 31" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 10444.1, 3175.02 )
 
-[node name="floating_spike 32" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 32" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 10370.5, 3119.86 )
 
-[node name="floating_spike 24" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 24" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 10780.6, 2205.89 )
 
-[node name="floating_spike 33" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 33" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 10505.8, 3312.81 )
 
-[node name="Node2D" parent="interaction" instance=ExtResource( 13 )]
+[node name="Node2D" parent="interaction" instance=ExtResource( 9 )]
 position = Vector2( 13636.8, 2507.63 )
 
-[node name="RigidBody2D" parent="interaction" instance=ExtResource( 14 )]
+[node name="RigidBody2D" parent="interaction" instance=ExtResource( 16 )]
 position = Vector2( 13247.8, 2484.64 )
 
-[node name="RigidBody2D 2" parent="interaction" instance=ExtResource( 14 )]
+[node name="RigidBody2D 2" parent="interaction" instance=ExtResource( 16 )]
 position = Vector2( 14121.3, 995.946 )
 
-[node name="RigidBody2D 3" parent="interaction" instance=ExtResource( 14 )]
+[node name="RigidBody2D 3" parent="interaction" instance=ExtResource( 16 )]
 position = Vector2( 12439.2, 931.794 )
 
-[node name="RigidBody2D 5" parent="interaction" instance=ExtResource( 14 )]
+[node name="RigidBody2D 5" parent="interaction" instance=ExtResource( 16 )]
 position = Vector2( 13338, 2453.88 )
 
-[node name="cannon 7" parent="interaction" instance=ExtResource( 12 )]
+[node name="cannon 7" parent="interaction" instance=ExtResource( 15 )]
 position = Vector2( 13270.1, 1133.19 )
 
-[node name="cannon 8" parent="interaction" instance=ExtResource( 12 )]
+[node name="cannon 8" parent="interaction" instance=ExtResource( 15 )]
 position = Vector2( 13491.8, 1195.76 )
 rotation = -3.10316
 
-[node name="floating_spike 21" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 21" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 13744.8, 5180.87 )
 
-[node name="floating_spike 26" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 26" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 13906.2, 5092.26 )
 
-[node name="floating_spike 28" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 28" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 13742.6, 4828.7 )
 
-[node name="floating_spike 29" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 29" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 13983.4, 4744.63 )
 
-[node name="floating_spike 34" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 34" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 13756.2, 4606.04 )
 
-[node name="floating_spike 35" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 35" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 13840.3, 4337.93 )
 
-[node name="floating_spike 36" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 36" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14028.9, 4440.18 )
 
-[node name="floating_spike 37" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 37" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14185.6, 4658.3 )
 
-[node name="floating_spike 38" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 38" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 13972.1, 4985.47 )
 
-[node name="floating_spike 39" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 39" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14183.4, 5092.26 )
 
-[node name="floating_spike 40" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 40" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14344.7, 4867.33 )
 
-[node name="floating_spike 41" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 41" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14381, 5037.73 )
 
-[node name="floating_spike 42" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 42" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14653.7, 4996.83 )
 
-[node name="floating_spike 43" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 43" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14272, 5167.24 )
 
-[node name="floating_spike 44" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 44" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14335.6, 4476.53 )
 
-[node name="floating_spike 45" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 45" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14335.6, 4476.53 )
 
-[node name="floating_spike 46" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 46" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14651.4, 5189.96 )
 
-[node name="floating_spike 47" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 47" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14696.8, 4996.83 )
 
-[node name="floating_spike 48" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 48" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14871.9, 4995.02 )
 
-[node name="floating_spike 49" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 49" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14808.6, 4996.69 )
 
-[node name="floating_spike 50" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 50" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14754.4, 4997.75 )
 
-[node name="floating_spike 51" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 51" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14931.4, 4995.02 )
 
-[node name="floating_spike 52" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 52" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14986.8, 4995.02 )
 
-[node name="floating_spike 53" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 53" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 15056.5, 4990.91 )
 
-[node name="floating_spike 54" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 54" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14545.9, 4683.33 )
 
-[node name="floating_spike 55" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 55" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14738.7, 4511.09 )
 
-[node name="floating_spike 56" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 56" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14925.3, 4847.38 )
 
-[node name="floating_spike 57" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 57" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 14964.2, 4404.46 )
 
-[node name="floating_spike 58" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 58" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 15103.7, 4685.38 )
 
-[node name="stage_end" parent="interaction" instance=ExtResource( 15 )]
+[node name="stage_end" parent="interaction" instance=ExtResource( 14 )]
 position = Vector2( 18718.7, 6387.98 )
 
-[node name="big_coin" parent="interaction" instance=ExtResource( 16 )]
+[node name="big_coin" parent="interaction" instance=ExtResource( 11 )]
 position = Vector2( 11018.3, 1894.86 )
 fruit_index = 1
 
-[node name="big_coin 2" parent="interaction" instance=ExtResource( 16 )]
+[node name="big_coin 2" parent="interaction" instance=ExtResource( 11 )]
 position = Vector2( 14783.7, 5099.28 )
 fruit_index = 2
 
-[node name="floating_spike 59" parent="interaction" instance=ExtResource( 11 )]
+[node name="floating_spike 59" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 10765.6, 2136.51 )
 
-[node name="big_coin 3" parent="interaction" instance=ExtResource( 16 )]
+[node name="big_coin 3" parent="interaction" instance=ExtResource( 11 )]
 position = Vector2( 6215.76, 5912.52 )
 
-[node name="plank 3" parent="interaction" instance=ExtResource( 10 )]
+[node name="plank 3" parent="interaction" instance=ExtResource( 5 )]
 position = Vector2( 6019.14, 5631.57 )
 
-[node name="RigidBody2D 4" parent="interaction" instance=ExtResource( 17 )]
+[node name="RigidBody2D 4" parent="interaction" instance=ExtResource( 18 )]
 position = Vector2( 6123.89, 5585.1 )
 
-[node name="RigidBody2D 6" parent="interaction" instance=ExtResource( 17 )]
+[node name="RigidBody2D 6" parent="interaction" instance=ExtResource( 18 )]
 position = Vector2( 6177.5, 5584.67 )
 
-[node name="RigidBody2D 7" parent="interaction" instance=ExtResource( 17 )]
+[node name="RigidBody2D 7" parent="interaction" instance=ExtResource( 18 )]
 position = Vector2( 6230.75, 5583.77 )
 
-[node name="RigidBody2D 8" parent="interaction" instance=ExtResource( 17 )]
+[node name="RigidBody2D 8" parent="interaction" instance=ExtResource( 18 )]
 position = Vector2( 6280.38, 5583.77 )
 
-[node name="booster_push" parent="interaction" instance=ExtResource( 18 )]
+[node name="booster_push" parent="interaction" instance=ExtResource( 19 )]
 position = Vector2( 6792.88, 5751.97 )
 rotation = 1.55198
 
 [node name="enemies" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="sacra_pinchorb" parent="enemies" instance=ExtResource( 19 )]
+[node name="sacra_pinchorb" parent="enemies" instance=ExtResource( 8 )]
 position = Vector2( 503.818, 1604.8 )
 
-[node name="sacra_pinchorb 2" parent="enemies" instance=ExtResource( 19 )]
+[node name="sacra_pinchorb 2" parent="enemies" instance=ExtResource( 8 )]
 position = Vector2( 350.393, 1434.64 )
 
-[node name="sacra_pinchorb 3" parent="enemies" instance=ExtResource( 19 )]
+[node name="sacra_pinchorb 3" parent="enemies" instance=ExtResource( 8 )]
 position = Vector2( 579.136, 1289.58 )
 
-[node name="sacra_pinchorb 4" parent="enemies" instance=ExtResource( 19 )]
+[node name="sacra_pinchorb 4" parent="enemies" instance=ExtResource( 8 )]
 position = Vector2( 738.14, 1780.54 )
 
-[node name="sacra_pinchorb 5" parent="enemies" instance=ExtResource( 19 )]
+[node name="sacra_pinchorb 5" parent="enemies" instance=ExtResource( 8 )]
 position = Vector2( 286.233, 1741.49 )
 
-[node name="sacra_pinchorb 6" parent="enemies" instance=ExtResource( 19 )]
+[node name="sacra_pinchorb 6" parent="enemies" instance=ExtResource( 8 )]
 position = Vector2( 526.134, 1920.02 )
 
-[node name="sacra_pinchorb 7" parent="enemies" instance=ExtResource( 19 )]
+[node name="sacra_pinchorb 7" parent="enemies" instance=ExtResource( 8 )]
 position = Vector2( 241.601, 1247.74 )
 
 [node name="frog" parent="enemies" instance=ExtResource( 20 )]
@@ -551,6 +542,5 @@ position = Vector2( 2286.11, 4546.24 )
 [node name="frog 4" parent="enemies" instance=ExtResource( 20 )]
 position = Vector2( 2508.78, 4600.77 )
 
-[node name="checkpoint 2" parent="." instance=ExtResource( 8 )]
+[node name="checkpoint 2" parent="." instance=ExtResource( 17 )]
 position = Vector2( 11538.6, 1571.01 )
-

@@ -28,4 +28,3 @@ polygon = PoolVector2Array( -254.35, -4.10443, 252.182, -4.10443, 231.825, 16.25
 position = Vector2( 0, -56.2813 )
 node_a = NodePath("../base")
 node_b = NodePath("../seesaw")
-

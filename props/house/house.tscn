@@ -23,6 +23,5 @@ lifetime = 3.0
 texture = ExtResource( 3 )
 
 [node name="screenprox" type="VisibilityNotifier2D" parent="."]
-
 [connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="screenprox" to="." method="_on_exit_screen"]

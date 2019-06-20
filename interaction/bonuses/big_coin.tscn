@@ -6,11 +6,9 @@
 [ext_resource path="res://sound/lcoin.wav" type="AudioStream" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
-
 radius = 50.0
 
 [sub_resource type="Animation" id=2]
-
 resource_name = "roll"
 length = 1.9
 loop = true
@@ -68,7 +66,6 @@ stream = ExtResource( 4 )
 [node name="deathclock" type="Timer" parent="."]
 wait_time = 3.0
 one_shot = true
-
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]
 [connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="screenprox" to="." method="_on_exit_screen"]

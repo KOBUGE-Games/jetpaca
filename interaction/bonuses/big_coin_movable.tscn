@@ -3,7 +3,6 @@
 [ext_resource path="res://interaction/bonuses/big_coin.tscn" type="PackedScene" id=1]
 
 [sub_resource type="CircleShape2D" id=1]
-
 radius = 28.0
 
 [node name="RigidBody2D" type="RigidBody2D"]
@@ -15,4 +14,3 @@ scale = Vector2( 1.67742, 1.64516 )
 shape = SubResource( 1 )
 
 [node name="big_coin" parent="." instance=ExtResource( 1 )]
-

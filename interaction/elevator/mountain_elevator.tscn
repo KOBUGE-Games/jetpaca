@@ -4,7 +4,6 @@
 [ext_resource path="res://art/mountain_platform.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-
 extents = Vector2( 512, 64 )
 
 [node name="base" type="Node2D"]
@@ -35,4 +34,3 @@ shape = SubResource( 1 )
 [node name="CollisionShape2D 2" type="CollisionShape2D" parent="static_body"]
 position = Vector2( 0, -200 )
 shape = SubResource( 1 )
-

@@ -4,7 +4,6 @@
 [ext_resource path="res://art/mountain_floating_spike.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-
 radius = 21.0
 
 [node name="spike_movable" type="RigidBody2D"]
@@ -17,6 +16,5 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
-
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]
 [connection signal="body_exited" from="." to="." method="_on_body_exit"]

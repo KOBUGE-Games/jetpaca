@@ -7,7 +7,6 @@
 [node name="ocean_bg" type="ParallaxBackground"]
 scroll_base_scale = Vector2( 1, 0.05 )
 scroll_limit_end = Vector2( 0, 1024 )
-scroll_ignore_camera_zoom = false
 
 [node name="ocean_layer" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.01, 1 )
@@ -30,4 +29,3 @@ motion_mirroring = Vector2( 1024, 0 )
 [node name="cave" type="Sprite" parent="cave_layer"]
 texture = ExtResource( 3 )
 centered = false
-

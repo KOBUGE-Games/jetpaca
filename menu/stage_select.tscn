@@ -8,11 +8,13 @@
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
-
 [node name="stage_select" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="background" type="TextureRect" parent="."]
 anchor_right = 1.0
@@ -56,5 +58,4 @@ margin_right = 64.0
 margin_bottom = 64.0
 texture_normal = ExtResource( 4 )
 texture_focused = ExtResource( 5 )
-
 [connection signal="pressed" from="items/buttons/back" to="." method="back_pressed"]

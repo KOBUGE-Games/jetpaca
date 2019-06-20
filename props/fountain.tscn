@@ -7,7 +7,6 @@
 [ext_resource path="res://art/water.png" type="Texture" id=5]
 
 [sub_resource type="Animation" id=1]
-
 resource_name = "water_anim"
 length = 2.0
 loop = true
@@ -38,7 +37,6 @@ tracks/1/keys = {
 }
 
 [sub_resource type="CanvasItemMaterial" id=2]
-
 blend_mode = 1
 
 [node name="fuente_base" type="Sprite"]
@@ -69,4 +67,3 @@ rotation = 0.0562115
 amount = 16
 lifetime = 1.55
 texture = ExtResource( 5 )
-

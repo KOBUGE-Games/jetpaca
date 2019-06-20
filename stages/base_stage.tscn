@@ -9,4 +9,3 @@ script = ExtResource( 1 )
 
 [node name="tilemap" type="TileMap" parent="."]
 format = 1
-

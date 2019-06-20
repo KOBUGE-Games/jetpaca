@@ -5,79 +5,60 @@
 [ext_resource path="res://art/tree_middle_pass.png" type="Texture" id=3]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
-
 points = PoolVector2Array( 0, 128, 0, 48, 64, 48, 64, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
-
 points = PoolVector2Array( 64, 128, 0, 128, 0, 48, 64, 48 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
-
 points = PoolVector2Array( 0, 128, 0, 0, 96, 0, 96, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
-
 points = PoolVector2Array( 0, 0, 96, 0, 128, 48, 128, 112, 96, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
-
 points = PoolVector2Array( 0, 32, 0, 0, 96, 0, 96, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
-
 points = PoolVector2Array( 96, 16, 96, 64, 0, 64, 0, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
-
 points = PoolVector2Array( 0, 112, 0, 48, 128, 16, 128, 48 )
 
 [sub_resource type="ConcavePolygonShape2D" id=8]
-
 segments = PoolVector2Array( 0, 16, 48, 32, 48, 32, 80, 64, 80, 64, 128, 80, 128, 80, 128, 112, 128, 112, 80, 96, 80, 96, 32, 64, 32, 64, 0, 48, 0, 48, 0, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
-
 points = PoolVector2Array( 0, 16, 62.9757, 11.1615, 128, 16, 128, 48, 0, 48 )
 
 [sub_resource type="ConcavePolygonShape2D" id=10]
-
 segments = PoolVector2Array( 1.15607, 17.5328, 0, 48, 0, 48, 89.1561, 56.5328, 89.1561, 56.5328, 115.156, 43.5328, 115.156, 43.5328, 79.1561, 49.5328, 79.1561, 49.5328, 42.1561, 41.5328, 42.1561, 41.5328, 1.15607, 17.5328 )
 
 [sub_resource type="ConvexPolygonShape2D" id=11]
-
 points = PoolVector2Array( 0, 192, 0, 48, 80, 64, 128, 96, 128, 192 )
 
 [sub_resource type="ConcavePolygonShape2D" id=12]
-
 segments = PoolVector2Array( 359.168, 255.026, 355.168, 195.026, 355.168, 195.026, 330.168, 161.026, 330.168, 161.026, 244.168, 177.026, 244.168, 177.026, 205.168, 178.026, 205.168, 178.026, 160.168, 144.026, 160.168, 144.026, 89.1683, 90.0255, 89.1683, 90.0255, 1.16824, 4.02548, 1.16824, 4.02548, 987.168, 0.0254822, 987.168, 0.0254822, 911.168, 40.0255, 911.168, 40.0255, 864.168, 102.026, 864.168, 102.026, 779.168, 133.026, 779.168, 133.026, 663.168, 110.026, 663.168, 110.026, 598.168, 170.026, 598.168, 170.026, 587.168, 256.026, 587.168, 256.026, 359.168, 255.026 )
 
 [sub_resource type="ConvexPolygonShape2D" id=13]
-
 points = PoolVector2Array( 64, 192, 0, 192, 0, 32, 64, 96 )
 
 [sub_resource type="ConvexPolygonShape2D" id=14]
-
 points = PoolVector2Array( 0, 32, 128, 32, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=15]
-
 points = PoolVector2Array( 64, 0, 64, 64, 0, 64, 0, 0 )
 
 [sub_resource type="ConcavePolygonShape2D" id=16]
-
 segments = PoolVector2Array( 0, 128, 128, 128, 128, 128, 128, 48, 128, 48, 80, 48, 80, 48, 64, 32, 64, 32, 64, 0, 64, 0, 0, 0, 0, 0, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=17]
-
 points = PoolVector2Array( 0, 48, 128, 112, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=18]
-
 points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 
 [resource]
-
 0/name = "floor1"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
@@ -89,6 +70,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 1 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -104,6 +86,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 2 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -119,6 +102,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 11 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -134,6 +118,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 13 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -149,6 +134,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 4/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 14 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -164,6 +150,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 5/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 15 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -179,6 +166,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 6/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 16 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -194,6 +182,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 7/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 17 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -209,6 +198,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 8/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 18 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -224,6 +214,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 9/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 3 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -239,6 +230,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 10/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 3 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -254,6 +246,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 11/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 4 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -269,6 +262,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 12/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 5 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -284,6 +278,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 13/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 6 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -299,6 +294,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 14/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 7 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -314,6 +310,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 15/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 8 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -329,6 +326,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 16/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 9 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -344,6 +342,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 17/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 10 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -379,6 +378,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 20/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+"one_way_margin": 1.0,
 "shape": SubResource( 12 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
@@ -423,4 +423,3 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 48, 64, 48 )
 24/navigation_offset = Vector2( 0, 0 )
 24/shapes = [  ]
 24/z_index = 0
-

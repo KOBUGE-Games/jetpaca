@@ -11,20 +11,19 @@
 [ext_resource path="res://tilesets/glacier_tileset.tres" type="TileSet" id=9]
 [ext_resource path="res://art/arbol2.png" type="Texture" id=10]
 [ext_resource path="res://art/arbol.png" type="Texture" id=11]
-[ext_resource path="res://characters/wise_alpaca/wise_alpaca.tscn" type="PackedScene" id=12]
-[ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=13]
-[ext_resource path="res://interaction/bonuses/big_coin.tscn" type="PackedScene" id=14]
-[ext_resource path="res://interaction/roulette/roulette.tscn" type="PackedScene" id=15]
-[ext_resource path="res://props/house/house.tscn" type="PackedScene" id=16]
+[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=12]
+[ext_resource path="res://characters/wise_alpaca/wise_alpaca.tscn" type="PackedScene" id=13]
+[ext_resource path="res://interaction/roulette/roulette.tscn" type="PackedScene" id=14]
+[ext_resource path="res://interaction/bonuses/big_coin.tscn" type="PackedScene" id=15]
+[ext_resource path="res://tilesets/glacier_parallax.tscn" type="PackedScene" id=16]
 [ext_resource path="res://props/breakable/breakable_stone.tscn" type="PackedScene" id=17]
-[ext_resource path="res://enemies/fluff/fluff.tscn" type="PackedScene" id=18]
-[ext_resource path="res://tilesets/glacier_parallax.tscn" type="PackedScene" id=19]
+[ext_resource path="res://props/house/house.tscn" type="PackedScene" id=18]
+[ext_resource path="res://interaction/checkpoint/checkpoint.tscn" type="PackedScene" id=19]
 
 [node name="stage" type="Node"]
 script = ExtResource( 1 )
 
 [node name="behind" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="bush 3" type="Sprite" parent="behind"]
 position = Vector2( 3636.93, 4158.98 )
@@ -208,51 +207,51 @@ texture = ExtResource( 10 )
 
 [node name="interaction" type="Node" parent="."]
 
-[node name="wise+alpaca 2" parent="interaction" instance=ExtResource( 12 )]
+[node name="wise+alpaca 2" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 1774.28, 5750.36 )
 hint = "Press both blue nubs to take off!!"
 
-[node name="wise+alpaca 3" parent="interaction" instance=ExtResource( 12 )]
+[node name="wise+alpaca 3" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 2215.05, 4022.09 )
 hint = "Nice Flying!"
 
-[node name="wise+alpaca 4" parent="interaction" instance=ExtResource( 12 )]
+[node name="wise+alpaca 4" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 3660.77, 3252.68 )
 hint = "You have found a secret area! (only I know about it)!"
 
-[node name="wise+alpaca 5" parent="interaction" instance=ExtResource( 12 )]
+[node name="wise+alpaca 5" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 6389.48, 4342.13 )
 hint = "In mid-air, swipe down on both blue nubs to perform a ninja attack!"
 
-[node name="wise+alpaca 6" parent="interaction" instance=ExtResource( 12 )]
+[node name="wise+alpaca 6" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 7941.16, 5073.57 )
 hint = "Enemies are attacking town! Please save us!"
 
-[node name="wise+alpaca 7" parent="interaction" instance=ExtResource( 12 )]
+[node name="wise+alpaca 7" parent="interaction" instance=ExtResource( 13 )]
 position = Vector2( 11150.2, 5682.97 )
 hint = "Try your luck at the end-of-the-world roulette!"
 
-[node name="checkpoint" parent="interaction" instance=ExtResource( 13 )]
+[node name="checkpoint" parent="interaction" instance=ExtResource( 19 )]
 position = Vector2( 8545.08, 5267.29 )
 
-[node name="big_coin" parent="interaction" instance=ExtResource( 14 )]
+[node name="big_coin" parent="interaction" instance=ExtResource( 15 )]
 position = Vector2( 3507.28, 3093.29 )
 
-[node name="big_coin 2" parent="interaction" instance=ExtResource( 14 )]
+[node name="big_coin 2" parent="interaction" instance=ExtResource( 15 )]
 position = Vector2( 8967.11, 4841.45 )
 fruit_index = 1
 
-[node name="roulette" parent="interaction" instance=ExtResource( 15 )]
+[node name="roulette" parent="interaction" instance=ExtResource( 14 )]
 position = Vector2( 11382.5, 5502.71 )
 
-[node name="house" parent="interaction" instance=ExtResource( 16 )]
+[node name="house" parent="interaction" instance=ExtResource( 18 )]
 position = Vector2( 3211.87, 4008.02 )
 
-[node name="house 2" parent="interaction" instance=ExtResource( 16 )]
+[node name="house 2" parent="interaction" instance=ExtResource( 18 )]
 position = Vector2( 4379.72, 3871.69 )
 scale = Vector2( -1, 1 )
 
-[node name="big_coin 3" parent="interaction" instance=ExtResource( 14 )]
+[node name="big_coin 3" parent="interaction" instance=ExtResource( 15 )]
 position = Vector2( 10239, 5349.28 )
 fruit_index = 2
 
@@ -267,17 +266,16 @@ position = Vector2( 6657.56, 4590.3 )
 
 [node name="enemies" type="Node" parent="."]
 
-[node name="sacra_pinchorb" parent="enemies" instance=ExtResource( 18 )]
+[node name="sacra_pinchorb" parent="enemies" instance=ExtResource( 12 )]
 position = Vector2( 9401.94, 5238.39 )
 drop = 2
 
 [node name="launch" type="Position2D" parent="."]
 position = Vector2( 432.732, 5733.63 )
 
-[node name="icebg" parent="." instance=ExtResource( 19 )]
+[node name="icebg" parent="." instance=ExtResource( 16 )]
 scroll_ignore_camera_zoom = true
 
 [node name="StreamPlayer" type="AudioStreamPlayer" parent="."]
 volume_db = 6.0
 autoplay = true
-
