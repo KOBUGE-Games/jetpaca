@@ -79,5 +79,4 @@ func _init():
 
 func _ready():
 	set_use_custom_integrator(true)
-	set_friction(0)
 

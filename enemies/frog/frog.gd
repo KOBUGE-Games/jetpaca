@@ -75,7 +75,7 @@ func _integrate_forces(state):
 				get_node("body").set_scale(Vector2(-1, 1))
 
 			status = STATUS_ADVANCING
-			set_friction(0)
+			physics_material_override.friction = 0
 			timeout = 3.0
 
 	elif status == STATUS_ADVANCING:
@@ -94,7 +94,7 @@ func _integrate_forces(state):
 		if timeout < 0:
 			status = STATUS_IDLE
 			timeout = 3
-			set_friction(1)
+			physics_material_override.friction = 0
 
 	elif status == STATUS_JUMP_PREPARE:
 		new_anim = anim # keep

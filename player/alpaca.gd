@@ -111,6 +111,10 @@ func _attack_area_exit(body):
 		enemies_to_attack.erase(body)
 		print("EXIT BODY!")
 
+func _begin_flip():
+	# FIXME: Animator intended something to be done here to prepare flip
+	pass
+
 func _do_flip():
 	do_change_flipping = true
 

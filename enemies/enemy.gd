@@ -36,8 +36,8 @@ func explode():
 	hide()
 	queue_free()
 	var n = explosion.instance()
+	n.position = position
 	get_parent().add_child(n)
-	n.set_global_transform(get_global_transform())
 	n.explode()
 	if drop:
 		var dropscene = null
