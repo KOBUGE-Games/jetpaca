@@ -208,6 +208,7 @@ constant_angular_velocity = 24.0
 
 [node name="torch_trigger" parent="torches" instance=ExtResource( 4 )]
 position = Vector2( 1192, 840.059 )
+trigger_name = "door"
 
 [node name="door" parent="torches" groups=[
 "door",
@@ -218,6 +219,7 @@ no_key = true
 
 [node name="torch_trigger 2" parent="torches" instance=ExtResource( 4 )]
 position = Vector2( 4192, 3136 )
+trigger_name = "door 2"
 
 [node name="door 2" parent="torches" groups=[
 "door 2",
@@ -228,6 +230,7 @@ no_key = true
 
 [node name="torch_trigger 3" parent="torches" instance=ExtResource( 4 )]
 position = Vector2( 4480, 2880 )
+trigger_name = "door 3"
 
 [node name="door 3" parent="torches" groups=[
 "door 3",

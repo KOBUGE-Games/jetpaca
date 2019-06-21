@@ -35,6 +35,7 @@ script = ExtResource( 1 )
 
 [node name="torch_trigger" parent="behind" instance=ExtResource( 3 )]
 position = Vector2( 7739.34, 691.731 )
+trigger_name = "door1"
 
 [node name="door" parent="behind" groups=[
 "door1",
@@ -44,9 +45,11 @@ no_key = true
 
 [node name="torch_trigger 3" parent="behind" instance=ExtResource( 3 )]
 position = Vector2( 16440.4, 1916.71 )
+trigger_name = "door3"
 
 [node name="torch_trigger 2" parent="behind" instance=ExtResource( 3 )]
 position = Vector2( 16440.4, 2154.74 )
+trigger_name = "door2"
 
 [node name="door 2" parent="behind" groups=[
 "door2",

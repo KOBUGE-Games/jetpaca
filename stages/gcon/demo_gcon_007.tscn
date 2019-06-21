@@ -159,6 +159,7 @@ position = Vector2( 3136, 2464 )
 
 [node name="torch_trigger" parent="FirePlanks" instance=ExtResource( 18 )]
 position = Vector2( 4647.11, 1971.25 )
+trigger_name = "door 1"
 
 [node name="door" parent="FirePlanks" groups=[
 "door 1",
