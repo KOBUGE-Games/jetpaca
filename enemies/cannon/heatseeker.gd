@@ -43,11 +43,9 @@ func _integrate_forces(state):
 
 func _on_enter_screen():
 	set_mode(MODE_RIGID)
+	sleeping = false
 	get_node("particles").set_emitting(true)
 
 func _on_exit_screen():
 	queue_free()
-
-func _ready():
-	set_can_sleep(false)
 

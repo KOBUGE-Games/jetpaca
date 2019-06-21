@@ -71,6 +71,7 @@ mode = 1
 custom_integrator = true
 contacts_reported = 1
 contact_monitor = true
+can_sleep = false
 script = ExtResource( 1 )
 
 [node name="pacaseeker" type="Sprite" parent="."]
