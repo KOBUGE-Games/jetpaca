@@ -97,6 +97,9 @@ var enemies_to_attack = []
 var flipping = false
 var do_change_flipping = false
 
+# FIXME: This is very bad practice
+onready var stage = get_node_or_null("../..")
+
 func _attack_area_enter(body):
 	print("ENTER BODY?")
 	if body is enemy_class:
@@ -520,7 +523,7 @@ func _unhandled_input(event):
 				if closest_enemy and !attack_begin:
 					var aleft = get_node("hud/base/jp_left/attack")
 					var aright = get_node("hud/base/jp_right/attack")
-					var r = aleft.get_texture().get_size().height*0.9
+					var r = aleft.get_texture().get_size().y*0.9
 					#print("R: ", r)
 					#print("EP: ", event.position)
 					#print("ARD: ", mp.distance_to(aleft.get_global_position()), " gp ", aleft.get_global_position())
@@ -569,22 +572,23 @@ func _unhandled_input(event):
 	if event is InputEventScreenDrag:
 
 		if event.index == 0:
-			slide_1 += event.relative_pos
+			slide_1 += event.relative
 
 		if event.index == 1:
-			slide_2 += event.relative_pos
+			slide_2 += event.relative
 
 		if ((slide_1_time <  ATTACK_TIME_TRESHOLD and slide_1.length() > ATTACK_SLIDE_TRESHOLD)
 				or (slide_2_time <  ATTACK_TIME_TRESHOLD and slide_2.length() > ATTACK_SLIDE_TRESHOLD)):
 
-			slide_1=Vector2()
-			slide_1_time=1
-			slide_2=Vector2()
-			slide_2_time=1
+			slide_1 = Vector2()
+			slide_1_time = 1
+			slide_2 = Vector2()
+			slide_2_time = 1
 
 
 func _restart():
-	get_node("../..").restart()
+	if stage:
+		stage.restart()
 
 func _process(delta):
 	if (hit_frame or hit_count > 0) and invincibility == 0 and energy > 0:
@@ -660,7 +664,8 @@ func _process(delta):
 	prev_closest_enemy = cenemy
 
 func _level_end():
-	get_node("../..").level_end()
+	if stage:
+		stage.level_end()
 
 func end_level(next):
 	game_data.get_level(next).enabled = true
@@ -699,7 +704,8 @@ func _ready():
 		set_global_transform(get_node(cp).get_global_transform())
 
 	crosshair = ResourceLoader.load("res://hud/crosshair.tscn").instance()
-	get_node("../..").call_deferred("add_child", crosshair)
+	if stage:
+		stage.call_deferred("add_child", crosshair)
 	# 2to3: Area2D.get_shape(0) changed to shape_owner_get_shape(0, 0), might need review
 	# 2to3: OS.get_video_mode_size() changed to get_window_safe_area().size
 	get_node("attack_area").shape_owner_get_shape(0, 0).set_extents(OS.get_window_safe_area().size / 2)

@@ -51,9 +51,10 @@ func update_keys():
 
 func _ready():
 	var cw = game_data.current_world
-	for x in range(cw.big_coins.size()):
-		if cw.big_coins[x]:
-			set_big_coin_on(x)
+	if (cw):
+		for x in range(cw.big_coins.size()):
+			if cw.big_coins[x]:
+				set_big_coin_on(x)
 	set_life_count(game_data.life_count)
 	update_keys()
 

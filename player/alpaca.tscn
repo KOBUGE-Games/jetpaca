@@ -19312,6 +19312,7 @@ blend_times = [ "attack_back_1start", "attack_back_2loop", 0.5, "attack_down_1st
 [node name="hud" type="CanvasLayer" parent="."]
 
 [node name="base" parent="hud" instance=ExtResource( 23 )]
+mouse_filter = 2
 
 [node name="sfx" type="Node2D" parent="."]
 
