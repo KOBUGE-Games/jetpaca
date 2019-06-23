@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://menu/main_menu.gd" type="Script" id=1]
 [ext_resource path="res://art/intro_sky_bg.png" type="Texture" id=2]
@@ -10,7 +10,22 @@
 [ext_resource path="res://art/intro_taptofly.png" type="Texture" id=8]
 
 [sub_resource type="Animation" id=1]
-resource_name = "sky_motion"
+resource_name = "DEFAULT_POSE"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:margin_left")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=2]
 length = 4.0
 loop = true
 step = 0.01
@@ -27,8 +42,23 @@ tracks/0/keys = {
 "values": [ 0.0, -1024.0 ]
 }
 
-[sub_resource type="Animation" id=2]
-resource_name = "sky_motion"
+[sub_resource type="Animation" id=3]
+resource_name = "DEFAULT_POSE"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:margin_left")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=4]
 length = 2.0
 loop = true
 tracks/0/type = "value"
@@ -44,24 +74,24 @@ tracks/0/keys = {
 "values": [ 0, -1024.0 ]
 }
 
-[sub_resource type="CanvasItemMaterial" id=3]
+[sub_resource type="CanvasItemMaterial" id=5]
 blend_mode = 1
 
-[sub_resource type="Gradient" id=4]
+[sub_resource type="Gradient" id=6]
 offsets = PoolRealArray( 0, 0.2, 1 )
 colors = PoolColorArray( 1, 0.88, 0.336283, 1, 1, 0.15, 0, 1, 0, 0, 0, 1 )
 
-[sub_resource type="GradientTexture" id=5]
-gradient = SubResource( 4 )
+[sub_resource type="GradientTexture" id=7]
+gradient = SubResource( 6 )
 
-[sub_resource type="Curve" id=6]
+[sub_resource type="Curve" id=8]
 min_value = 0.2
 _data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.2 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=7]
-curve = SubResource( 6 )
+[sub_resource type="CurveTexture" id=9]
+curve = SubResource( 8 )
 
-[sub_resource type="ParticlesMaterial" id=8]
+[sub_resource type="ParticlesMaterial" id=10]
 flag_disable_z = true
 spread = 10.0
 gravity = Vector3( 0, 10, 0 )
@@ -70,10 +100,50 @@ angular_velocity = 120.0
 angular_velocity_random = 1.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-scale_curve = SubResource( 7 )
-color_ramp = SubResource( 5 )
+scale_curve = SubResource( 9 )
+color_ramp = SubResource( 7 )
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=11]
+resource_name = "DEFAULT_POSE"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("alpaca_container/center/alpaca:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("logo_container/logo:modulate:a")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("tap_to_fly_container/tap_to_fly:modulate:a")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+
+[sub_resource type="Animation" id=12]
 length = 4.0
 step = 0.0
 tracks/0/type = "value"
@@ -95,10 +165,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 3.61, 4 ),
-"transitions": PoolRealArray( 1.7411, 1 ),
+"times": PoolRealArray( 0, 3.61, 4 ),
+"transitions": PoolRealArray( 1, 1.7411, 1 ),
 "update": 0,
-"values": [ 0.0, 1.0 ]
+"values": [ 0.0, 0.0, 1.0 ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("tap_to_fly_container/tap_to_fly:modulate:a")
@@ -121,11 +191,11 @@ tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 3.93 ),
 "transitions": PoolRealArray( 1 ),
-"update": 1,
+"update": 2,
 "values": [ "regular" ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=13]
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -153,15 +223,15 @@ tracks/1/keys = {
 "values": [ 0.3, 1.0, 0.3, 1.0, 0.3 ]
 }
 
-[sub_resource type="StyleBoxEmpty" id=11]
-
-[sub_resource type="StyleBoxEmpty" id=12]
-
-[sub_resource type="StyleBoxEmpty" id=13]
-
 [sub_resource type="StyleBoxEmpty" id=14]
 
 [sub_resource type="StyleBoxEmpty" id=15]
+
+[sub_resource type="StyleBoxEmpty" id=16]
+
+[sub_resource type="StyleBoxEmpty" id=17]
+
+[sub_resource type="StyleBoxEmpty" id=18]
 
 [node name="main_menu" type="ReferenceRect"]
 anchor_right = 1.0
@@ -192,10 +262,12 @@ text = "Welcome to JetPaca!"
 [node name="sky_background" type="HBoxContainer" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = -864.847
 margin_top = -1024.0
 margin_right = 40.0
 custom_constants/separation = -1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="center" type="TextureRect" parent="sky_background"]
 margin_right = 1024.0
@@ -216,7 +288,8 @@ texture = ExtResource( 2 )
 
 [node name="animation" type="AnimationPlayer" parent="sky_background"]
 autoplay = "sky_motion"
-anims/sky_motion = SubResource( 1 )
+anims/DEFAULT_POSE = SubResource( 1 )
+anims/sky_motion = SubResource( 2 )
 
 [node name="sky_foreground" type="HBoxContainer" parent="."]
 anchor_top = 1.0
@@ -225,6 +298,9 @@ margin_left = -1003.68
 margin_top = -256.0
 margin_right = 2521.0
 custom_constants/separation = -1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="left" type="TextureRect" parent="sky_foreground"]
 margin_right = 1024.0
@@ -245,7 +321,8 @@ texture = ExtResource( 3 )
 
 [node name="animation" type="AnimationPlayer" parent="sky_foreground"]
 autoplay = "sky_motion"
-anims/sky_motion = SubResource( 2 )
+anims/DEFAULT_POSE = SubResource( 3 )
+anims/sky_motion = SubResource( 4 )
 
 [node name="alpaca_container" type="CenterContainer" parent="."]
 anchor_right = 1.0
@@ -258,16 +335,15 @@ margin_right = 640.0
 margin_bottom = 360.0
 
 [node name="alpaca" type="Sprite" parent="alpaca_container/center"]
-position = Vector2( 0, -15 )
 texture = ExtResource( 4 )
 offset = Vector2( 0, 60 )
 
 [node name="jetpack_front" type="Particles2D" parent="alpaca_container/center/alpaca"]
-material = SubResource( 3 )
+material = SubResource( 5 )
 position = Vector2( 123.446, 139.028 )
 rotation = 0.415388
 amount = 32
-process_material = SubResource( 8 )
+process_material = SubResource( 10 )
 texture = ExtResource( 5 )
 
 [node name="mask" type="Sprite" parent="alpaca_container/center/alpaca"]
@@ -277,18 +353,19 @@ texture = ExtResource( 6 )
 
 [node name="jetpack_back" type="Particles2D" parent="alpaca_container/center/alpaca"]
 show_behind_parent = true
-material = SubResource( 3 )
+material = SubResource( 5 )
 position = Vector2( 24.648, 171.619 )
 rotation = 0.415388
 amount = 32
-process_material = SubResource( 8 )
+process_material = SubResource( 10 )
 texture = ExtResource( 5 )
 
 [node name="intro_anim" type="AnimationPlayer" parent="."]
 autoplay = "intro"
 playback_default_blend_time = 1.0
-anims/intro = SubResource( 9 )
-anims/regular = SubResource( 10 )
+anims/DEFAULT_POSE = SubResource( 11 )
+anims/intro = SubResource( 12 )
+anims/regular = SubResource( 13 )
 
 [node name="logo_container" type="CenterContainer" parent="."]
 anchor_right = 1.0
@@ -310,7 +387,6 @@ __meta__ = {
 }
 
 [node name="tap_to_fly" type="TextureRect" parent="tap_to_fly_container"]
-modulate = Color( 1, 1, 1, 0.3 )
 margin_left = 384.0
 margin_top = 43.0
 margin_right = 896.0
@@ -321,8 +397,8 @@ texture = ExtResource( 8 )
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_styles/hover = SubResource( 11 )
-custom_styles/pressed = SubResource( 12 )
-custom_styles/focus = SubResource( 13 )
-custom_styles/disabled = SubResource( 14 )
-custom_styles/normal = SubResource( 15 )
+custom_styles/hover = SubResource( 14 )
+custom_styles/pressed = SubResource( 15 )
+custom_styles/focus = SubResource( 16 )
+custom_styles/disabled = SubResource( 17 )
+custom_styles/normal = SubResource( 18 )
