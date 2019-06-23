@@ -3661,19 +3661,19 @@ tracks/18/keys = {
 "values": [ 0, 0, 0 ]
 }
 tracks/19/type = "value"
-tracks/19/path = NodePath("body/culete/over/rocket_fg:frame")
-tracks/19/interp = 2
+tracks/19/path = NodePath("body/culete/over/neck:position")
+tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/imported = false
 tracks/19/enabled = true
 tracks/19/keys = {
-"times": PoolRealArray( 0, 3, 6 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 6 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 0, 0, 0 ]
+"values": [ Vector2( 23.2784, -3.72246 ), Vector2( 23.2784, -3.72246 ) ]
 }
 tracks/20/type = "value"
-tracks/20/path = NodePath("body/culete/over/neck:position")
+tracks/20/path = NodePath("body/culete/over/neck/head:position")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/imported = false
@@ -3682,10 +3682,10 @@ tracks/20/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 23.2784, -3.72246 ), Vector2( 23.2784, -3.72246 ) ]
+"values": [ Vector2( 6.5494, -28.005 ), Vector2( 6.5494, -28.005 ) ]
 }
 tracks/21/type = "value"
-tracks/21/path = NodePath("body/culete/over/neck/head:position")
+tracks/21/path = NodePath("body/culete/leg__bg:position")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/imported = false
@@ -3694,22 +3694,22 @@ tracks/21/keys = {
 "times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 6.5494, -28.005 ), Vector2( 6.5494, -28.005 ) ]
+"values": [ Vector2( 11.9981, 1.45503 ), Vector2( 11.9981, 1.45503 ) ]
 }
 tracks/22/type = "value"
-tracks/22/path = NodePath("body/culete/leg__bg:position")
+tracks/22/path = NodePath("body:position")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/imported = false
 tracks/22/enabled = true
 tracks/22/keys = {
-"times": PoolRealArray( 0, 6 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 11.9981, 1.45503 ), Vector2( 11.9981, 1.45503 ) ]
+"values": [ Vector2( 0.658195, 1.7985 ) ]
 }
 tracks/23/type = "value"
-tracks/23/path = NodePath("body:position")
+tracks/23/path = NodePath("body:rotation_degrees")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/imported = false
@@ -3718,10 +3718,10 @@ tracks/23/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 0.658195, 1.7985 ) ]
+"values": [ 0.0 ]
 }
 tracks/24/type = "value"
-tracks/24/path = NodePath("body:rotation_degrees")
+tracks/24/path = NodePath("body/culete/over/arm__fg:scale")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/imported = false
@@ -3730,27 +3730,15 @@ tracks/24/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0 ]
+"values": [ Vector2( 1, 1 ) ]
 }
 tracks/25/type = "value"
-tracks/25/path = NodePath("body/culete/over/arm__fg:scale")
+tracks/25/path = NodePath("body/culete/arm__bg:scale")
 tracks/25/interp = 1
 tracks/25/loop_wrap = true
 tracks/25/imported = false
 tracks/25/enabled = true
 tracks/25/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 1, 1 ) ]
-}
-tracks/26/type = "value"
-tracks/26/path = NodePath("body/culete/arm__bg:scale")
-tracks/26/interp = 1
-tracks/26/loop_wrap = true
-tracks/26/imported = false
-tracks/26/enabled = true
-tracks/26/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
@@ -3772,8 +3760,7 @@ position = Vector2( 0.658195, 1.7985 )
 scale = Vector2( -1, 1 )
 
 [node name="culete" type="Sprite" parent="body"]
-position = Vector2( -10.466, 5.18503 )
-rotation = -0.0117544
+position = Vector2( -10.6372, 5.38169 )
 scale = Vector2( 1.01657, 1.06223 )
 texture = ExtResource( 2 )
 centered = false
@@ -3781,7 +3768,6 @@ offset = Vector2( -18, -32 )
 
 [node name="leg__fg" type="Sprite" parent="body/culete"]
 position = Vector2( -3.86891, 1.81211 )
-rotation = 0.0107187
 texture = ExtResource( 3 )
 centered = false
 offset = Vector2( -16, -10 )
@@ -3800,8 +3786,7 @@ offset = Vector2( -8, -4 )
 [node name="over" type="Position2D" parent="body/culete"]
 
 [node name="arm__fg" type="Sprite" parent="body/culete/over"]
-position = Vector2( 15.5221, 0.864897 )
-rotation = 0.0104003
+position = Vector2( 15.3473, 0.690599 )
 texture = ExtResource( 5 )
 centered = false
 offset = Vector2( -12, -7 )
@@ -3820,20 +3805,18 @@ offset = Vector2( -7, -6 )
 
 [node name="neck" type="Sprite" parent="body/culete/over"]
 position = Vector2( 23.2784, -3.72246 )
-rotation = -0.0106782
+rotation = -0.041823
 texture = ExtResource( 7 )
 centered = false
 offset = Vector2( -28, -73 )
 
 [node name="poncho" type="Sprite" parent="body/culete/over/neck"]
 position = Vector2( 9.37554, -0.722082 )
-rotation = -0.0394064
 texture = ExtResource( 8 )
 offset = Vector2( -10.3998, 8.2775 )
 
 [node name="head" type="Sprite" parent="body/culete/over/neck"]
-position = Vector2( 7.21308, -24.5163 )
-rotation = 0.114969
+position = Vector2( 7.06649, -24.3024 )
 texture = ExtResource( 9 )
 centered = false
 offset = Vector2( -30, -37 )
@@ -3846,26 +3829,23 @@ texture = ExtResource( 10 )
 position = Vector2( 1.70725, 7.69953 )
 texture = ExtResource( 11 )
 hframes = 4
-frame = 1
 
 [node name="beard" type="Sprite" parent="body/culete/over/neck/head/face"]
 show_behind_parent = true
 position = Vector2( 1.84706, 9.26482 )
-rotation = 0.0572142
 texture = ExtResource( 12 )
 offset = Vector2( 2.43992, 6.66339 )
 
 [node name="plume" type="Sprite" parent="body/culete/over/neck/head"]
 show_behind_parent = true
 position = Vector2( -11.545, -24.6024 )
-rotation = 0.0292753
 texture = ExtResource( 13 )
 offset = Vector2( -2.38978, -14.3788 )
 
 [node name="arm__bg" type="Sprite" parent="body/culete"]
 show_behind_parent = true
 position = Vector2( 33.0857, 0.248985 )
-rotation = -1.18907
+rotation = -1.20699
 texture = ExtResource( 14 )
 centered = false
 offset = Vector2( -20, -8 )
@@ -3885,8 +3865,8 @@ centered = false
 offset = Vector2( -7, -6 )
 
 [node name="staff" type="Sprite" parent="body/culete/arm__bg/elbow__bg/hand__bg"]
-position = Vector2( -14.5323, 6.36114 )
-rotation = 1.55359
+position = Vector2( -13.8552, 6.72741 )
+rotation = 1.5708
 texture = ExtResource( 15 )
 offset = Vector2( -1.41224, -30.6608 )
 hframes = 3
@@ -3894,7 +3874,6 @@ hframes = 3
 [node name="leg__bg" type="Sprite" parent="body/culete"]
 show_behind_parent = true
 position = Vector2( 4.09385, 0.917566 )
-rotation = 0.0093207
 scale = Vector2( 1, 1.00103 )
 texture = ExtResource( 16 )
 centered = false
