@@ -16,7 +16,7 @@ func _on_body_enter(body):
 		cw.big_coins = []
 		body.restore_life(2)
 
-		# Save the amount of large fruits collected
+		# Save the amount of big coins collected
 		for x in game_data.current_big_coins:
 			cw.big_coins.push_back(x)
 
