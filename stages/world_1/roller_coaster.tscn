@@ -686,6 +686,7 @@ position = Vector2( 2451.62, 4639.05 )
 
 [node name="stage_end" parent="inbetween" instance=ExtResource( 21 )]
 position = Vector2( 4579.8, 7538.26 )
+next_world = Vector2( 1, 4 )
 
 [node name="checkpoint 4" parent="inbetween" instance=ExtResource( 17 )]
 position = Vector2( 2181.64, 3870.09 )

@@ -664,7 +664,7 @@ func _level_end():
 
 func end_level(next):
 	game_data.get_level(next).enabled = true
-	set_mode(MODE_STATIC)
+	set_deferred("mode", MODE_STATIC)
 	get_node("level_end_wait").start()
 
 func hit_begin():

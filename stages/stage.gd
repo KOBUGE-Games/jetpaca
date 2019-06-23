@@ -5,7 +5,7 @@
 extends Node
 
 func level_end():
-	game_data.stage_clear()
+	game_data.stage_reset()
 	main.goto_scene("res://menu/stage_select.tscn")
 
 func restart():
