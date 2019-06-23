@@ -31,6 +31,7 @@ func _loader_thread(options):
 
 func _change_music_to(stream):
 	var new_music_player = AudioStreamPlayer.new()
+	new_music_player.bus = "Music"
 	new_music_player.set_autoplay(true)
 	new_music_player.set_stream(stream)
 	if current_music_player:
