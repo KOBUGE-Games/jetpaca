@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://interaction/bonuses/fruit.gd" type="Script" id=1]
 [ext_resource path="res://art/chirimoya.png" type="Texture" id=2]
@@ -29,24 +29,7 @@ min_value = 0.2
 max_value = 1.5
 _data = [ Vector2( 0, 1.5 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.2 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=4]
-curve = SubResource( 3 )
-
-[sub_resource type="ParticlesMaterial" id=5]
-emission_shape = 2
-emission_box_extents = Vector3( 16, 16, 0 )
-flag_disable_z = true
-spread = 10.0
-gravity = Vector3( 0, 10, 0 )
-initial_velocity = 20.0
-angular_velocity = 150.0
-angular_velocity_random = 0.3
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-scale_curve = SubResource( 4 )
-color = Color( 0.87451, 1, 0.760784, 1 )
-
-[sub_resource type="CircleShape2D" id=6]
+[sub_resource type="CircleShape2D" id=4]
 radius = 100.0
 
 [node name="fruit" type="Area2D"]
@@ -65,14 +48,22 @@ anims/roll = SubResource( 2 )
 
 [node name="screenprox" type="VisibilityNotifier2D" parent="."]
 
-[node name="shine" type="Particles2D" parent="."]
+[node name="shine" type="CPUParticles2D" parent="."]
 rotation = 1.5708
 emitting = false
 lifetime = 0.5
 one_shot = true
 local_coords = false
-process_material = SubResource( 5 )
 texture = ExtResource( 3 )
+emission_shape = 2
+emission_rect_extents = Vector2( 16, 16 )
+spread = 10.0
+gravity = Vector2( 0, 10 )
+initial_velocity = 20.0
+angular_velocity = 150.0
+angular_velocity_random = 0.3
+scale_amount_curve = SubResource( 3 )
+color = Color( 0.87451, 1, 0.760784, 1 )
 
 [node name="shine_sfx" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )
@@ -84,7 +75,7 @@ one_shot = true
 visible = false
 
 [node name="shape" type="CollisionShape2D" parent="magnet"]
-shape = SubResource( 6 )
+shape = SubResource( 4 )
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]
 [connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="screenprox" to="." method="_on_exit_screen"]

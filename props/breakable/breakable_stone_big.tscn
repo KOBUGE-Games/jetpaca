@@ -1,37 +1,17 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://props/breakable/breakable.gd" type="Script" id=1]
 [ext_resource path="res://art/mountain_breakable_stone.png" type="Texture" id=2]
 [ext_resource path="res://art/mountain_exploded_rock.png" type="Texture" id=3]
 [ext_resource path="res://sound/rock_explode.wav" type="AudioStream" id=4]
 
-[sub_resource type="Gradient" id=1]
-colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
-
-[sub_resource type="GradientTexture" id=2]
-gradient = SubResource( 1 )
-
-[sub_resource type="Curve" id=3]
+[sub_resource type="Curve" id=1]
 min_value = 1.0
 max_value = 3.0
 _data = [ Vector2( 0, 3 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=4]
-curve = SubResource( 3 )
-
-[sub_resource type="ParticlesMaterial" id=5]
-emission_shape = 2
-emission_box_extents = Vector3( 1024, 0, 0 )
-flag_disable_z = true
-spread = 180.0
-gravity = Vector3( 0, 100, 0 )
-initial_velocity = 100.0
-angular_velocity = 90.0
-angular_velocity_random = 1.0
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-scale_curve = SubResource( 4 )
-color_ramp = SubResource( 2 )
+[sub_resource type="Gradient" id=2]
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 
 [node name="breakable_stone" type="Node2D"]
 
@@ -47,14 +27,22 @@ texture = ExtResource( 2 )
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="body"]
 polygon = PoolVector2Array( -452.92, -44.2428, -93.7813, -45.6031, 88.5089, -48.3239, 434.044, -44.2428, 457.17, 26.4966, 24.5713, 41.4608, -459.722, 31.9382 )
 
-[node name="particles" type="Particles2D" parent="."]
+[node name="particles" type="CPUParticles2D" parent="."]
 emitting = false
 amount = 96
 lifetime = 2.0
 one_shot = true
 explosiveness = 0.95
-process_material = SubResource( 5 )
 texture = ExtResource( 3 )
+emission_shape = 2
+emission_rect_extents = Vector2( 1024, 0 )
+spread = 180.0
+gravity = Vector2( 0, 100 )
+initial_velocity = 100.0
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+scale_amount_curve = SubResource( 1 )
+color_ramp = SubResource( 2 )
 
 [node name="break_sfx" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )

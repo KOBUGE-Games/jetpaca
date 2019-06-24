@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://props/breakable/jar.gd" type="Script" id=1]
 [ext_resource path="res://art/jar1.png" type="Texture" id=2]
@@ -9,23 +9,6 @@
 offsets = PoolRealArray( 0, 0.8, 1 )
 colors = PoolColorArray( 1, 1, 1, 1, 0.435294, 0.442478, 0.469027, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=2]
-gradient = SubResource( 1 )
-
-[sub_resource type="ParticlesMaterial" id=3]
-emission_shape = 2
-emission_box_extents = Vector3( 16, 16, 0 )
-flag_disable_z = true
-spread = 180.0
-gravity = Vector3( 0, 196, 0 )
-initial_velocity = 60.0
-initial_velocity_random = 1.0
-angular_velocity = 90.0
-angular_velocity_random = 1.0
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-color_ramp = SubResource( 2 )
-
 [node name="jar1" type="RigidBody2D"]
 script = ExtResource( 1 )
 
@@ -35,7 +18,7 @@ texture = ExtResource( 2 )
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PoolVector2Array( -21.1333, -10.9085, -24.3687, -21.9086, -12.0744, -28.3793, 13.1612, -28.3793, 26.1026, -23.2028, 21.5731, -10.9085, 28.6908, 6.88585, 20.279, 23.0625, 9.60237, 28.8861, -4.95663, 28.8861, -15.3097, 24.6802, -27.2805, 8.50351 )
 
-[node name="particles" type="Particles2D" parent="."]
+[node name="particles" type="CPUParticles2D" parent="."]
 rotation = 1.5708
 emitting = false
 amount = 16
@@ -43,8 +26,16 @@ lifetime = 0.7
 one_shot = true
 explosiveness = 0.9
 local_coords = false
-process_material = SubResource( 3 )
 texture = ExtResource( 3 )
+emission_shape = 2
+emission_rect_extents = Vector2( 16, 16 )
+spread = 180.0
+gravity = Vector2( 0, 196 )
+initial_velocity = 60.0
+initial_velocity_random = 1.0
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+color_ramp = SubResource( 1 )
 
 [node name="death" type="Timer" parent="."]
 

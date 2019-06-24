@@ -430,12 +430,12 @@ func _integrate_forces(state):
 		var p = get_node(jpart_names[i])
 		p.set_emitting(jetpack_ignited)
 		if can_thrust:
-			p.process_material.spread = 10
-			p.process_material.initial_velocity = 130
+			p.spread = 10
+			p.initial_velocity = 130
 			p.self_modulate.a = 1.0
 		else:
-			p.process_material.spread = 80
-			p.process_material.initial_velocity = 50
+			p.spread = 80
+			p.initial_velocity = 50
 			p.self_modulate.a = 0.35
 
 		var p2 = get_node(jpart_names[i] + "f")

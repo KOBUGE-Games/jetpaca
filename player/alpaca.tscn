@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=2]
+[gd_scene load_steps=74 format=2]
 
 [ext_resource path="res://player/alpaca.gd" type="Script" id=1]
 [ext_resource path="res://art/cachos_alpaca/culete.png" type="Texture" id=2]
@@ -30,95 +30,40 @@
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.0
 
-[sub_resource type="Gradient" id=2]
-offsets = PoolRealArray( 0, 0.2, 0.8, 1 )
-colors = PoolColorArray( 0.741176, 0.743362, 0.761062, 0.292035, 0.494118, 0.495575, 0.513274, 0.672566, 0.0901961, 0.0973453, 0.0884956, 0.0619469, 0, 0, 0, 0 )
-
-[sub_resource type="GradientTexture" id=3]
-gradient = SubResource( 2 )
-
-[sub_resource type="Curve" id=4]
+[sub_resource type="Curve" id=2]
 min_value = 1.0
 max_value = 3.0
 _data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 3 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=5]
-curve = SubResource( 4 )
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0, 0.2, 0.8, 1 )
+colors = PoolColorArray( 0.741176, 0.743362, 0.761062, 0.292035, 0.494118, 0.495575, 0.513274, 0.672566, 0.0901961, 0.0973453, 0.0884956, 0.0619469, 0, 0, 0, 0 )
 
-[sub_resource type="ParticlesMaterial" id=6]
-flag_disable_z = true
-spread = 0.0
-gravity = Vector3( 0, -20, 0 )
-angular_velocity = 30.0
-angular_velocity_random = 1.0
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-damping = 1.0
-scale_random = 0.2
-scale_curve = SubResource( 5 )
-color_ramp = SubResource( 3 )
-
-[sub_resource type="Gradient" id=7]
-offsets = PoolRealArray( 0, 0.5, 1 )
-colors = PoolColorArray( 1, 0.920354, 0.442478, 1, 0.980392, 0.309735, 0, 1, 0.584314, 0, 0, 0 )
-
-[sub_resource type="GradientTexture" id=8]
-gradient = SubResource( 7 )
-
-[sub_resource type="Curve" id=9]
+[sub_resource type="Curve" id=4]
 min_value = 0.2
 max_value = 0.45
 _data = [ Vector2( 0, 0.45 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.2 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=10]
-curve = SubResource( 9 )
+[sub_resource type="Gradient" id=5]
+offsets = PoolRealArray( 0, 0.5, 1 )
+colors = PoolColorArray( 1, 0.920354, 0.442478, 1, 0.980392, 0.309735, 0, 1, 0.584314, 0, 0, 0 )
 
-[sub_resource type="ParticlesMaterial" id=11]
-flag_disable_z = true
-spread = 10.0
-gravity = Vector3( 0, 10, 0 )
-initial_velocity = 130.0
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-damping = 2.4
-scale_curve = SubResource( 10 )
-color_ramp = SubResource( 8 )
-
-[sub_resource type="CanvasItemMaterial" id=12]
+[sub_resource type="CanvasItemMaterial" id=6]
 blend_mode = 1
 
-[sub_resource type="Gradient" id=13]
-offsets = PoolRealArray( 0, 0.2, 1 )
-colors = PoolColorArray( 0.97, 0.84, 0.17, 1, 0.98, 0.31, 0, 1, 0, 0, 0, 0 )
-
-[sub_resource type="GradientTexture" id=14]
-gradient = SubResource( 13 )
-
-[sub_resource type="Curve" id=15]
+[sub_resource type="Curve" id=7]
 min_value = 1.2
 max_value = 1.5
 _data = [ Vector2( 0, 1.5 ), 0.0, 0.0, 0, 0, Vector2( 1, 1.2 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=16]
-curve = SubResource( 15 )
+[sub_resource type="Gradient" id=8]
+offsets = PoolRealArray( 0, 0.2, 1 )
+colors = PoolColorArray( 0.97, 0.84, 0.17, 1, 0.98, 0.31, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="ParticlesMaterial" id=17]
-flag_disable_z = true
-spread = 10.0
-gravity = Vector3( 0, -200, 0 )
-initial_velocity = 130.0
-angular_velocity = 120.0
-angular_velocity_random = 1.0
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-damping = 2.4
-scale_curve = SubResource( 16 )
-color_ramp = SubResource( 14 )
-
-[sub_resource type="CanvasItemMaterial" id=18]
+[sub_resource type="CanvasItemMaterial" id=9]
 blend_mode = 1
 
-[sub_resource type="Animation" id=19]
+[sub_resource type="Animation" id=10]
 length = 0.01
 step = 0.25
 tracks/0/type = "value"
@@ -614,7 +559,7 @@ tracks/40/keys = {
 "values": [ Vector2( 4.11363, -6.10837 ) ]
 }
 
-[sub_resource type="Animation" id=20]
+[sub_resource type="Animation" id=11]
 length = 1.5
 step = 0.25
 tracks/0/type = "value"
@@ -1038,7 +983,7 @@ tracks/34/keys = {
 "values": [ 7.86382 ]
 }
 
-[sub_resource type="Animation" id=21]
+[sub_resource type="Animation" id=12]
 length = 1.5
 loop = true
 tracks/0/type = "value"
@@ -1486,7 +1431,7 @@ tracks/36/keys = {
 "values": [ 7.86382 ]
 }
 
-[sub_resource type="Animation" id=22]
+[sub_resource type="Animation" id=13]
 length = 4.75
 step = 0.25
 tracks/0/type = "value"
@@ -1886,7 +1831,7 @@ tracks/32/keys = {
 "values": [ Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=23]
+[sub_resource type="Animation" id=14]
 length = 8.0
 loop = true
 step = 0.25
@@ -2275,7 +2220,7 @@ tracks/31/keys = {
 "values": [ Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=24]
+[sub_resource type="Animation" id=15]
 length = 0.6
 step = 0.25
 tracks/0/type = "value"
@@ -2903,7 +2848,7 @@ tracks/51/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=25]
+[sub_resource type="Animation" id=16]
 length = 2.0
 loop = true
 step = 0.25
@@ -3496,7 +3441,7 @@ tracks/48/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=26]
+[sub_resource type="Animation" id=17]
 length = 0.5
 step = 0.25
 tracks/0/type = "value"
@@ -4052,7 +3997,7 @@ tracks/45/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=27]
+[sub_resource type="Animation" id=18]
 length = 2.0
 loop = true
 tracks/0/type = "value"
@@ -4704,7 +4649,7 @@ tracks/53/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=28]
+[sub_resource type="Animation" id=19]
 length = 0.6
 step = 0.25
 tracks/0/type = "value"
@@ -5320,7 +5265,7 @@ tracks/50/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=29]
+[sub_resource type="Animation" id=20]
 length = 2.0
 loop = true
 step = 0.25
@@ -5973,7 +5918,7 @@ tracks/53/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=30]
+[sub_resource type="Animation" id=21]
 length = 0.6
 step = 0.25
 tracks/0/type = "value"
@@ -6589,7 +6534,7 @@ tracks/50/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=31]
+[sub_resource type="Animation" id=22]
 length = 2.0
 loop = true
 step = 0.25
@@ -7218,7 +7163,7 @@ tracks/51/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=32]
+[sub_resource type="Animation" id=23]
 length = 4.0
 loop = true
 step = 0.25
@@ -7835,7 +7780,7 @@ tracks/50/keys = {
 "values": [ Vector2( 7.31627, -4.84085 ), Vector2( 7.31627, -4.84085 ) ]
 }
 
-[sub_resource type="Animation" id=33]
+[sub_resource type="Animation" id=24]
 length = 4.0
 loop = true
 step = 0.25
@@ -8440,7 +8385,7 @@ tracks/49/keys = {
 "values": [ Vector2( 7.31627, -4.84085 ), Vector2( 7.31627, -4.84085 ) ]
 }
 
-[sub_resource type="Animation" id=34]
+[sub_resource type="Animation" id=25]
 length = 4.0
 loop = true
 step = 0.25
@@ -9057,7 +9002,7 @@ tracks/50/keys = {
 "values": [ Vector2( 4.40363, -5.0792 ), Vector2( 4.40363, -5.0792 ) ]
 }
 
-[sub_resource type="Animation" id=35]
+[sub_resource type="Animation" id=26]
 length = 4.0
 loop = true
 step = 0.25
@@ -9662,7 +9607,7 @@ tracks/49/keys = {
 "values": [ Vector2( 4.40363, -5.0792 ), Vector2( 4.40363, -5.0792 ) ]
 }
 
-[sub_resource type="Animation" id=36]
+[sub_resource type="Animation" id=27]
 length = 5.0
 step = 0.25
 tracks/0/type = "value"
@@ -10074,7 +10019,7 @@ tracks/33/keys = {
 "values": [ 3.14553 ]
 }
 
-[sub_resource type="Animation" id=37]
+[sub_resource type="Animation" id=28]
 length = 5.0
 loop = true
 step = 0.25
@@ -10511,7 +10456,7 @@ tracks/35/keys = {
 "values": [ 3.14553 ]
 }
 
-[sub_resource type="Animation" id=38]
+[sub_resource type="Animation" id=29]
 length = 12.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("body/culete:rotation_degrees")
@@ -11104,7 +11049,7 @@ tracks/48/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=39]
+[sub_resource type="Animation" id=30]
 length = 3.0
 loop = true
 step = 0.25
@@ -11721,7 +11666,7 @@ tracks/50/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="Animation" id=40]
+[sub_resource type="Animation" id=31]
 tracks/0/type = "value"
 tracks/0/path = NodePath("body:rotation_degrees")
 tracks/0/interp = 2
@@ -12340,7 +12285,7 @@ tracks/50/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=41]
+[sub_resource type="Animation" id=32]
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("body:rotation_degrees")
@@ -12969,7 +12914,7 @@ tracks/51/keys = {
 "values": [ Vector2( 7.31627, -4.84085 ), Vector2( -4.84468, 5.01555 ), Vector2( 7.31627, -4.84085 ) ]
 }
 
-[sub_resource type="Animation" id=42]
+[sub_resource type="Animation" id=33]
 length = 0.75
 step = 0.0
 tracks/0/type = "value"
@@ -13587,7 +13532,7 @@ tracks/50/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=43]
+[sub_resource type="Animation" id=34]
 length = 3.0
 loop = true
 step = 0.25
@@ -14192,7 +14137,7 @@ tracks/49/keys = {
 "values": [ Vector2( 3.907, 0.929099 ), Vector2( 3.907, 0.929099 ) ]
 }
 
-[sub_resource type="Animation" id=44]
+[sub_resource type="Animation" id=35]
 length = 3.0
 loop = true
 step = 0.25
@@ -14785,7 +14730,7 @@ tracks/48/keys = {
 "values": [ Vector2( 4.01699, -0.527256 ), Vector2( 4.01699, -0.527256 ) ]
 }
 
-[sub_resource type="Animation" id=45]
+[sub_resource type="Animation" id=36]
 length = 4.0
 loop = true
 step = 0.25
@@ -15402,7 +15347,7 @@ tracks/50/keys = {
 "values": [ Vector2( 10.0093, -0.138991 ), Vector2( 10.397, -1.28618 ), Vector2( 10.0093, -0.138991 ) ]
 }
 
-[sub_resource type="Animation" id=46]
+[sub_resource type="Animation" id=37]
 length = 4.0
 loop = true
 step = 0.25
@@ -16019,7 +15964,7 @@ tracks/50/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=47]
+[sub_resource type="Animation" id=38]
 length = 3.0
 loop = true
 tracks/0/type = "value"
@@ -16635,7 +16580,7 @@ tracks/50/keys = {
 "values": [ Vector2( 10.0611, -2.04855 ), Vector2( 10.0611, -2.04855 ) ]
 }
 
-[sub_resource type="Animation" id=48]
+[sub_resource type="Animation" id=39]
 length = 3.0
 loop = true
 step = 0.25
@@ -17252,7 +17197,7 @@ tracks/50/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=49]
+[sub_resource type="Animation" id=40]
 length = 4.5
 loop = true
 step = 0.25
@@ -17845,7 +17790,7 @@ tracks/48/keys = {
 "values": [ Vector2( 7.31627, -4.84085 ), Vector2( 7.31627, -4.84085 ) ]
 }
 
-[sub_resource type="Animation" id=50]
+[sub_resource type="Animation" id=41]
 length = 18.0
 loop = true
 step = 0.25
@@ -18462,7 +18407,7 @@ tracks/50/keys = {
 "values": [ 0, 0 ]
 }
 
-[sub_resource type="Animation" id=51]
+[sub_resource type="Animation" id=42]
 length = 6.0
 loop = true
 step = 0.25
@@ -18971,39 +18916,21 @@ tracks/41/keys = {
 "values": [ Vector2( 11.9506, -4.78116 ), Vector2( 11.9506, -4.78116 ) ]
 }
 
-[sub_resource type="CircleShape2D" id=52]
+[sub_resource type="CircleShape2D" id=43]
 radius = 35.0
 
-[sub_resource type="RectangleShape2D" id=53]
+[sub_resource type="RectangleShape2D" id=44]
 extents = Vector2( 380, 280 )
 
-[sub_resource type="Gradient" id=54]
-colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
-
-[sub_resource type="GradientTexture" id=55]
-gradient = SubResource( 54 )
-
-[sub_resource type="Curve" id=56]
+[sub_resource type="Curve" id=45]
 min_value = 0.5
 max_value = 2.0
 _data = [ Vector2( 0, 2 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.5 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=57]
-curve = SubResource( 56 )
+[sub_resource type="Gradient" id=46]
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 
-[sub_resource type="ParticlesMaterial" id=58]
-emission_shape = 2
-emission_box_extents = Vector3( 32, 32, 0 )
-flag_disable_z = true
-spread = 180.0
-gravity = Vector3( 0, 0, 0 )
-initial_velocity = 10.0
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-scale_curve = SubResource( 57 )
-color_ramp = SubResource( 55 )
-
-[sub_resource type="Animation" id=59]
+[sub_resource type="Animation" id=47]
 tracks/0/type = "value"
 tracks/0/path = NodePath("camera:offset")
 tracks/0/interp = 2
@@ -19172,7 +19099,7 @@ centered = false
 offset = Vector2( -8, -17 )
 hframes = 2
 
-[node name="jetpack_bf" type="Particles2D" parent="body/culete/rocket_bg"]
+[node name="jetpack_bf" type="CPUParticles2D" parent="body/culete/rocket_bg"]
 self_modulate = Color( 1, 1, 1, 0.501961 )
 show_behind_parent = true
 position = Vector2( 2.025, 38.996 )
@@ -19180,18 +19107,30 @@ emitting = false
 amount = 22
 lifetime = 0.4
 local_coords = false
-process_material = SubResource( 6 )
 texture = ExtResource( 18 )
+spread = 0.0
+gravity = Vector2( 0, -20 )
+angular_velocity = 30.0
+angular_velocity_random = 1.0
+damping = 1.0
+scale_amount_random = 0.2
+scale_amount_curve = SubResource( 2 )
+color_ramp = SubResource( 3 )
 
-[node name="jetpack_b" type="Particles2D" parent="body/culete/rocket_bg"]
+[node name="jetpack_b" type="CPUParticles2D" parent="body/culete/rocket_bg"]
 show_behind_parent = true
 position = Vector2( 0.342, 18.181 )
 rotation = 1.5708
 emitting = false
 amount = 16
 lifetime = 0.2
-process_material = SubResource( 11 )
 texture = ExtResource( 18 )
+spread = 10.0
+gravity = Vector2( 0, 10 )
+initial_velocity = 130.0
+damping = 2.4
+scale_amount_curve = SubResource( 4 )
+color_ramp = SubResource( 5 )
 
 [node name="arm__bg" type="Sprite" parent="body/culete"]
 show_behind_parent = true
@@ -19227,7 +19166,7 @@ centered = false
 offset = Vector2( -8, -17 )
 hframes = 2
 
-[node name="jetpack_af" type="Particles2D" parent="body/culete/rocket_fg"]
+[node name="jetpack_af" type="CPUParticles2D" parent="body/culete/rocket_fg"]
 self_modulate = Color( 1, 1, 1, 0.501961 )
 show_behind_parent = true
 position = Vector2( 2.02525, 38.9956 )
@@ -19235,35 +19174,54 @@ emitting = false
 amount = 22
 lifetime = 0.4
 local_coords = false
-process_material = SubResource( 6 )
 texture = ExtResource( 18 )
+spread = 0.0
+gravity = Vector2( 0, -20 )
+angular_velocity = 30.0
+angular_velocity_random = 1.0
+damping = 1.0
+scale_amount_random = 0.2
+scale_amount_curve = SubResource( 2 )
+color_ramp = SubResource( 3 )
 
-[node name="jetpack_a" type="Particles2D" parent="body/culete/rocket_fg"]
+[node name="jetpack_a" type="CPUParticles2D" parent="body/culete/rocket_fg"]
 show_behind_parent = true
 position = Vector2( 0.341713, 18.1811 )
 rotation = 1.5708
 emitting = false
 amount = 16
 lifetime = 0.2
-process_material = SubResource( 11 )
 texture = ExtResource( 18 )
+spread = 10.0
+gravity = Vector2( 0, 10 )
+initial_velocity = 130.0
+damping = 2.4
+scale_amount_curve = SubResource( 4 )
+color_ramp = SubResource( 5 )
 
-[node name="jetpack_atk" type="Particles2D" parent="body/culete/rocket_fg"]
+[node name="jetpack_atk" type="CPUParticles2D" parent="body/culete/rocket_fg"]
 self_modulate = Color( 1, 1, 1, 0.335758 )
-material = SubResource( 12 )
+material = SubResource( 6 )
 position = Vector2( 1.94415, 2.84534 )
 rotation = 1.5708
 emitting = false
 amount = 24
 lifetime = 0.5
 local_coords = false
-process_material = SubResource( 17 )
 texture = ExtResource( 21 )
+spread = 10.0
+gravity = Vector2( 0, -200 )
+initial_velocity = 130.0
+angular_velocity = 120.0
+angular_velocity_random = 1.0
+damping = 2.4
+scale_amount_curve = SubResource( 7 )
+color_ramp = SubResource( 8 )
 
 [node name="velocity" type="Sprite" parent="body"]
 visible = false
 modulate = Color( 1, 1, 1, 0.74359 )
-material = SubResource( 18 )
+material = SubResource( 9 )
 position = Vector2( -3.11803, -9.24611 )
 rotation = -0.0689154
 texture = ExtResource( 22 )
@@ -19274,39 +19232,39 @@ frame = 1
 autoplay = "DEFAULT_POSE"
 playback_default_blend_time = 1.5
 playback_speed = 4.0
-anims/DEFAULT_POSE = SubResource( 19 )
-anims/attack1_start = SubResource( 20 )
-anims/attack2_loop = SubResource( 21 )
-anims/attack3_end_move = SubResource( 22 )
-anims/attack_TEST = SubResource( 23 )
-anims/attack_back_1start = SubResource( 24 )
-anims/attack_back_2loop = SubResource( 25 )
-anims/attack_down_1start = SubResource( 26 )
-anims/attack_down_2loop = SubResource( 27 )
-anims/attack_front_1start = SubResource( 28 )
-anims/attack_front_2loop = SubResource( 29 )
-anims/attack_up_1start = SubResource( 30 )
-anims/attack_up_2loop = SubResource( 31 )
-anims/damage_airborne = SubResource( 32 )
-anims/damage_airborne_from_above = SubResource( 33 )
-anims/damage_grounded = SubResource( 34 )
-anims/damage_grounded_from_above = SubResource( 35 )
-anims/dance_of_victory = SubResource( 36 )
-anims/dance_of_victory_loop = SubResource( 37 )
-anims/death = SubResource( 38 )
-anims/fall = SubResource( 39 )
-anims/flip = SubResource( 40 )
-anims/flip_air = SubResource( 41 )
-anims/flip_attack = SubResource( 42 )
-anims/fly_back = SubResource( 43 )
-anims/fly_back_2 = SubResource( 44 )
-anims/fly_front = SubResource( 45 )
-anims/fly_front_2 = SubResource( 46 )
-anims/fly_up = SubResource( 47 )
-anims/fly_up_2 = SubResource( 48 )
-anims/hover = SubResource( 49 )
-anims/idle = SubResource( 50 )
-anims/walk = SubResource( 51 )
+anims/DEFAULT_POSE = SubResource( 10 )
+anims/attack1_start = SubResource( 11 )
+anims/attack2_loop = SubResource( 12 )
+anims/attack3_end_move = SubResource( 13 )
+anims/attack_TEST = SubResource( 14 )
+anims/attack_back_1start = SubResource( 15 )
+anims/attack_back_2loop = SubResource( 16 )
+anims/attack_down_1start = SubResource( 17 )
+anims/attack_down_2loop = SubResource( 18 )
+anims/attack_front_1start = SubResource( 19 )
+anims/attack_front_2loop = SubResource( 20 )
+anims/attack_up_1start = SubResource( 21 )
+anims/attack_up_2loop = SubResource( 22 )
+anims/damage_airborne = SubResource( 23 )
+anims/damage_airborne_from_above = SubResource( 24 )
+anims/damage_grounded = SubResource( 25 )
+anims/damage_grounded_from_above = SubResource( 26 )
+anims/dance_of_victory = SubResource( 27 )
+anims/dance_of_victory_loop = SubResource( 28 )
+anims/death = SubResource( 29 )
+anims/fall = SubResource( 30 )
+anims/flip = SubResource( 31 )
+anims/flip_air = SubResource( 32 )
+anims/flip_attack = SubResource( 33 )
+anims/fly_back = SubResource( 34 )
+anims/fly_back_2 = SubResource( 35 )
+anims/fly_front = SubResource( 36 )
+anims/fly_front_2 = SubResource( 37 )
+anims/fly_up = SubResource( 38 )
+anims/fly_up_2 = SubResource( 39 )
+anims/hover = SubResource( 40 )
+anims/idle = SubResource( 41 )
+anims/walk = SubResource( 42 )
 blend_times = [ "attack_back_1start", "attack_back_2loop", 0.5, "attack_down_1start", "attack_down_2loop", 0.5, "attack_front_1start", "attack_front_2loop", 0.5, "attack_up_1start", "attack_up_2loop", 0.5 ]
 
 [node name="hud" type="CanvasLayer" parent="."]
@@ -19325,7 +19283,7 @@ stream = ExtResource( 25 )
 [node name="col_circle" type="CollisionShape2D" parent="."]
 visible = false
 modulate = Color( 1, 1, 1, 0.515152 )
-shape = SubResource( 52 )
+shape = SubResource( 43 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -19356,7 +19314,7 @@ position = Vector2( 2.82726, 1.1566 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="attack_area"]
 self_modulate = Color( 1, 1, 1, 0.139785 )
-shape = SubResource( 53 )
+shape = SubResource( 44 )
 
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( -2.56606, 36.3748 )
@@ -19366,7 +19324,7 @@ scale = Vector2( 4.37632, 1 )
 position = Vector2( 67.6024, 80.8194 )
 scale = Vector2( 4.37632, 1 )
 
-[node name="starhit" type="Particles2D" parent="."]
+[node name="starhit" type="CPUParticles2D" parent="."]
 position = Vector2( 0.487679, 29.7481 )
 rotation = -1.5708
 emitting = false
@@ -19374,12 +19332,18 @@ lifetime = 0.9
 one_shot = true
 explosiveness = 0.9
 local_coords = false
-process_material = SubResource( 58 )
 texture = ExtResource( 26 )
+emission_shape = 2
+emission_rect_extents = Vector2( 32, 32 )
+spread = 180.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 10.0
+scale_amount_curve = SubResource( 45 )
+color_ramp = SubResource( 46 )
 
 [node name="camera_animation" type="AnimationPlayer" parent="."]
 playback_speed = 2.0
-anims/shake = SubResource( 59 )
+anims/shake = SubResource( 47 )
 [connection signal="timeout" from="restart_wait" to="." method="_restart"]
 [connection signal="timeout" from="level_end_wait" to="." method="_level_end"]
 [connection signal="body_entered" from="attack_area" to="." method="_attack_area_enter"]

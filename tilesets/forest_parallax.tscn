@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://art/forest_bg.png" type="Texture" id=1]
 [ext_resource path="res://art/forest_bg_mid_top.png" type="Texture" id=2]
@@ -13,30 +13,12 @@
 [sub_resource type="CanvasItemMaterial" id=1]
 blend_mode = 1
 
-[sub_resource type="Gradient" id=2]
-offsets = PoolRealArray( 0, 0.8, 1 )
-colors = PoolColorArray( 0.458824, 0.911505, 0.752212, 1, 1, 0.823009, 0.486726, 0.663717, 1, 0.39823, 0.123894, 0 )
-
-[sub_resource type="GradientTexture" id=3]
-gradient = SubResource( 2 )
-
-[sub_resource type="Curve" id=4]
+[sub_resource type="Curve" id=2]
 _data = [ Vector2( 0, 0.5 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=5]
-curve = SubResource( 4 )
-
-[sub_resource type="ParticlesMaterial" id=6]
-emission_shape = 2
-emission_box_extents = Vector3( 512, 512, 0 )
-flag_disable_z = true
-spread = 10.0
-gravity = Vector3( 0, 10, 0 )
-angular_velocity = 6.05263e-21
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-scale_curve = SubResource( 5 )
-color_ramp = SubResource( 3 )
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0, 0.8, 1 )
+colors = PoolColorArray( 0.458824, 0.911505, 0.752212, 1, 1, 0.823009, 0.486726, 0.663717, 1, 0.39823, 0.123894, 0 )
 
 [node name="forest_bg" type="ParallaxBackground"]
 scroll_base_scale = Vector2( 1, 0.1 )
@@ -84,13 +66,19 @@ centered = false
 motion_scale = Vector2( 0.2, 1 )
 motion_mirroring = Vector2( 1280, 1024 )
 
-[node name="shinie" type="Particles2D" parent="shinies"]
+[node name="shinie" type="CPUParticles2D" parent="shinies"]
 material = SubResource( 1 )
 position = Vector2( 512, 512 )
 amount = 64
 lifetime = 3.0
-process_material = SubResource( 6 )
 texture = ExtResource( 6 )
+emission_shape = 2
+emission_rect_extents = Vector2( 512, 512 )
+spread = 10.0
+gravity = Vector2( 0, 10 )
+angular_velocity = 6.05263e-21
+scale_amount_curve = SubResource( 2 )
+color_ramp = SubResource( 3 )
 
 [node name="front" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.3, 1 )

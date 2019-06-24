@@ -2,7 +2,7 @@
 # Copyright (c) 2009-2016 Juan Linietsky, Ariel Manzur
 # Distributed under the terms of the MIT license (cf. LICENSE.md file)
 
-extends Particles2D
+extends CPUParticles2D
 
 func _on_timeout():
 	queue_free()

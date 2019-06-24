@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://interaction/checkpoint/checkpoint.gd" type="Script" id=1]
 [ext_resource path="res://art/checkpoint.png" type="Texture" id=2]
@@ -8,38 +8,15 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 100.0
 
-[sub_resource type="Gradient" id=2]
-offsets = PoolRealArray( 0, 0.3 )
-colors = PoolColorArray( 1, 1, 1, 0, 0.388235, 1, 0.681416, 1 )
-
-[sub_resource type="GradientTexture" id=3]
-gradient = SubResource( 2 )
-
-[sub_resource type="Curve" id=4]
+[sub_resource type="Curve" id=2]
 max_value = 2.0
 _data = [ Vector2( 0, 2 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=5]
-curve = SubResource( 4 )
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0, 0.3 )
+colors = PoolColorArray( 1, 1, 1, 0, 0.388235, 1, 0.681416, 1 )
 
-[sub_resource type="ParticlesMaterial" id=6]
-emission_shape = 2
-emission_box_extents = Vector3( 66, 90, 0 )
-flag_disable_z = true
-spread = 180.0
-gravity = Vector3( 0, 1, 0 )
-initial_velocity = 43.0
-angular_velocity = 120.0
-angular_velocity_random = 1.0
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-radial_accel = 128.0
-tangential_accel = 55.0
-tangential_accel_random = 1.0
-scale_curve = SubResource( 5 )
-color_ramp = SubResource( 3 )
-
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=4]
 length = 3.0
 step = 0.0
 tracks/0/type = "value"
@@ -79,7 +56,7 @@ tracks/2/keys = {
 "values": [ true, false ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("particles:process_material:radial_accel")
+tracks/3/path = NodePath("particles:radial_accel")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -91,7 +68,7 @@ tracks/3/keys = {
 "values": [ 0.0, 128.0 ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("particles:process_material:tangential_accel")
+tracks/4/path = NodePath("particles:tangential_accel")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -122,17 +99,28 @@ texture = ExtResource( 2 )
 hframes = 2
 frame = 1
 
-[node name="particles" type="Particles2D" parent="."]
+[node name="particles" type="CPUParticles2D" parent="."]
 position = Vector2( -1.47018, -27.1984 )
 emitting = false
 amount = 32
 local_coords = false
-process_material = SubResource( 6 )
 texture = ExtResource( 3 )
+emission_shape = 2
+emission_rect_extents = Vector2( 66, 90 )
+spread = 180.0
+gravity = Vector2( 0, 1 )
+initial_velocity = 43.0
+angular_velocity = 120.0
+angular_velocity_random = 1.0
+radial_accel = 128.0
+tangential_accel = 55.0
+tangential_accel_random = 1.0
+scale_amount_curve = SubResource( 2 )
+color_ramp = SubResource( 3 )
 
 [node name="anim" type="AnimationPlayer" parent="."]
 playback_speed = 1.5
-anims/checked = SubResource( 7 )
+anims/checked = SubResource( 4 )
 
 [node name="tune" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )

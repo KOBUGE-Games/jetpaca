@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://interaction/boosters/booster.gd" type="Script" id=1]
 [ext_resource path="res://art/water.png" type="Texture" id=2]
@@ -13,33 +13,13 @@ radius = 27.0
 [sub_resource type="CanvasItemMaterial" id=3]
 blend_mode = 1
 
-[sub_resource type="Gradient" id=4]
-colors = PoolColorArray( 1, 1, 1, 1, 0.168627, 0.566372, 1, 0.0884956 )
-
-[sub_resource type="GradientTexture" id=5]
-gradient = SubResource( 4 )
-
-[sub_resource type="Curve" id=6]
+[sub_resource type="Curve" id=4]
 min_value = 1.0
 max_value = 4.0
 _data = [ Vector2( 0, 4 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=7]
-curve = SubResource( 6 )
-
-[sub_resource type="ParticlesMaterial" id=8]
-emission_shape = 2
-emission_box_extents = Vector3( 15, 15, 0 )
-flag_disable_z = true
-spread = 15.0
-gravity = Vector3( 0, 10, 0 )
-initial_velocity = 1000.0
-initial_velocity_random = 0.8
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-damping = 300.0
-scale_curve = SubResource( 7 )
-color_ramp = SubResource( 5 )
+[sub_resource type="Gradient" id=5]
+colors = PoolColorArray( 1, 1, 1, 1, 0.168627, 0.566372, 1, 0.0884956 )
 
 [node name="booster_push" type="RigidBody2D"]
 mode = 3
@@ -66,15 +46,23 @@ shape = SubResource( 2 )
 [node name="timer" type="Timer" parent="."]
 one_shot = true
 
-[node name="particles" type="Particles2D" parent="."]
+[node name="particles" type="CPUParticles2D" parent="."]
 material = SubResource( 3 )
 position = Vector2( -11.4031, 0.814498 )
 emitting = false
 amount = 20
 one_shot = true
 explosiveness = 0.9
-process_material = SubResource( 8 )
 texture = ExtResource( 3 )
+emission_shape = 2
+emission_rect_extents = Vector2( 15, 15 )
+spread = 15.0
+gravity = Vector2( 0, 10 )
+initial_velocity = 1000.0
+initial_velocity_random = 0.8
+damping = 300.0
+scale_amount_curve = SubResource( 4 )
+color_ramp = SubResource( 5 )
 [connection signal="body_entered" from="area" to="." method="_on_push_enter"]
 [connection signal="body_exited" from="area" to="." method="_on_push_exit"]
 [connection signal="timeout" from="timer" to="." method="_on_timeout"]
