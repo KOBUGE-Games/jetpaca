@@ -12,6 +12,7 @@ position = Vector2( 158.605, 339.867 )
 
 [node name="tilemap" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
+compatibility_mode = true
 format = 1
 tile_data = PoolIntArray( 458753, 0, 0, 458754, 0, 0, 458755, 0, 0 )
 
