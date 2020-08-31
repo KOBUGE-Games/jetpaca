@@ -35,16 +35,16 @@ colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 0.530973, 1, 1, 1, 0.584071, 1, 1,
 [sub_resource type="Curve" id=5]
 _data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
 
+[sub_resource type="CanvasItemMaterial" id=6]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=7]
+blend_mode = 1
+
 [sub_resource type="CanvasItemMaterial" id=8]
 blend_mode = 1
 
-[sub_resource type="CanvasItemMaterial" id=9]
-blend_mode = 1
-
-[sub_resource type="CanvasItemMaterial" id=10]
-blend_mode = 1
-
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=9]
 length = 4.0
 loop = true
 step = 0.25
@@ -253,7 +253,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=10]
 length = 1.5
 loop = true
 step = 0.25
@@ -462,7 +462,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=11]
 length = 1.5
 loop = true
 tracks/0/type = "value"
@@ -768,7 +768,7 @@ tracks/24/keys = {
 "values": [ 180.0 ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=12]
 length = 1.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
@@ -1109,7 +1109,7 @@ tracks/27/keys = {
 "values": [ 0.0, 0.4 ]
 }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=13]
 loop = true
 step = 0.25
 tracks/0/type = "value"
@@ -1149,7 +1149,7 @@ tracks/2/keys = {
 "values": [  ]
 }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=14]
 length = 4.0
 loop = true
 step = 0.25
@@ -1346,7 +1346,7 @@ tracks/15/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=15]
 length = 2.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
@@ -1733,7 +1733,7 @@ tracks/31/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=16]
 length = 3.5
 step = 0.25
 tracks/0/type = "value"
@@ -2049,7 +2049,7 @@ tracks/25/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=19]
+[sub_resource type="Animation" id=17]
 length = 3.0
 loop = true
 step = 0.01
@@ -2438,7 +2438,7 @@ tracks/31/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=20]
+[sub_resource type="Animation" id=18]
 length = 3.0
 loop = true
 tracks/0/type = "value"
@@ -2826,7 +2826,7 @@ tracks/31/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=21]
+[sub_resource type="Animation" id=19]
 length = 1.5
 step = 0.25
 tracks/0/type = "value"
@@ -3130,7 +3130,7 @@ tracks/24/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=22]
+[sub_resource type="Animation" id=20]
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("base_sclera/unibrow:position")
@@ -3351,7 +3351,7 @@ tracks/17/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=23]
+[sub_resource type="Animation" id=21]
 length = 1.5
 step = 0.25
 tracks/0/type = "value"
@@ -3559,7 +3559,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=24]
+[sub_resource type="Animation" id=22]
 length = 4.0
 loop = true
 step = 0.25
@@ -3768,7 +3768,7 @@ tracks/16/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=25]
+[sub_resource type="Animation" id=23]
 length = 6.0
 loop = true
 step = 0.25
@@ -3809,10 +3809,10 @@ tracks/2/keys = {
 "values": [ Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ), Color( 1, 0, 0.0784314, 1 ), Color( 0.235294, 0, 0, 1 ) ]
 }
 
-[sub_resource type="CircleShape2D" id=26]
+[sub_resource type="CircleShape2D" id=24]
 radius = 40.0
 
-[sub_resource type="CircleShape2D" id=27]
+[sub_resource type="CircleShape2D" id=25]
 radius = 180.0
 
 [node name="sacra_pinchorb" type="RigidBody2D"]
@@ -3943,7 +3943,7 @@ texture = ExtResource( 13 )
 
 [node name="glow" type="Sprite" parent="base_sclera/face"]
 visible = false
-material = SubResource( 8 )
+material = SubResource( 6 )
 position = Vector2( -0.427185, 6 )
 texture = ExtResource( 14 )
 vframes = 4
@@ -3957,7 +3957,7 @@ texture = ExtResource( 15 )
 [node name="halo" type="Sprite" parent="."]
 visible = false
 self_modulate = Color( 1, 1, 1, 0.4 )
-material = SubResource( 9 )
+material = SubResource( 7 )
 rotation = -0.698132
 scale = Vector2( 1.3, 1.3 )
 texture = ExtResource( 16 )
@@ -3966,36 +3966,36 @@ texture = ExtResource( 16 )
 visible = false
 self_modulate = Color( 1, 1, 1, 0.4 )
 show_behind_parent = true
-material = SubResource( 10 )
+material = SubResource( 8 )
 rotation = 0.698132
 texture = ExtResource( 16 )
 
 [node name="anim" type="AnimationPlayer" parent="."]
-anims/awake_loop = SubResource( 11 )
-anims/awakening = SubResource( 12 )
-anims/die = SubResource( 13 )
-anims/die_old = SubResource( 14 )
-anims/eyeglow = SubResource( 15 )
-anims/sleep_loop = SubResource( 16 )
-anims/spike_burst = SubResource( 17 )
-anims/spike_burst(copy) = SubResource( 18 )
-anims/spike_burst_glow_bod = SubResource( 19 )
-anims/spike_burst_gloweyes = SubResource( 20 )
-anims/spike_retract = SubResource( 21 )
-anims/take_damage = SubResource( 22 )
-anims/to_sleep = SubResource( 23 )
-anims/tracking_loop = SubResource( 24 )
+anims/awake_loop = SubResource( 9 )
+anims/awakening = SubResource( 10 )
+anims/die = SubResource( 11 )
+anims/die_old = SubResource( 12 )
+anims/eyeglow = SubResource( 13 )
+anims/sleep_loop = SubResource( 14 )
+anims/spike_burst = SubResource( 15 )
+anims/spike_burst(copy) = SubResource( 16 )
+anims/spike_burst_glow_bod = SubResource( 17 )
+anims/spike_burst_gloweyes = SubResource( 18 )
+anims/spike_retract = SubResource( 19 )
+anims/take_damage = SubResource( 20 )
+anims/to_sleep = SubResource( 21 )
+anims/tracking_loop = SubResource( 22 )
 blend_times = [ "sleep_loop", "spike_burst", 0.5, "spike_retract", "sleep_loop", 0.5 ]
 
 [node name="vortex_anim" type="AnimationPlayer" parent="."]
 playback_speed = 0.15
-anims/vortex_spin = SubResource( 25 )
+anims/vortex_spin = SubResource( 23 )
 
 [node name="collision" type="CollisionShape2D" parent="."]
 visible = false
 modulate = Color( 1, 1, 1, 0.241935 )
 position = Vector2( 0.291992, 0 )
-shape = SubResource( 26 )
+shape = SubResource( 24 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -4008,7 +4008,7 @@ visible = false
 modulate = Color( 1, 1, 1, 0.5 )
 position = Vector2( -0.323532, 1.29414 )
 scale = Vector2( 1.1, 1.1 )
-shape = SubResource( 27 )
+shape = SubResource( 25 )
 
 [node name="sfx" type="Node2D" parent="."]
 
