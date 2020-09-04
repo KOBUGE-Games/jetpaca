@@ -3904,7 +3904,6 @@ anims/hover = SubResource( 8 )
 anims/idle = SubResource( 9 )
 anims/rant = SubResource( 10 )
 anims/walk = SubResource( 11 )
-blend_times = [ "attack_back_1start", "attack_back_2loop", 0.5, "attack_down_1start", "attack_down_2loop", 0.5, "attack_front_1start", "attack_front_2loop", 0.5, "attack_up_1start", "attack_up_2loop", 0.5 ]
 
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( -14.8529, 37.0991 )
