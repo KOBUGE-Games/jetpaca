@@ -11,7 +11,7 @@ var broken = false
 
 func _on_timeout():
 	print("DEADED!")
-	get_parent().call_deferred("remove_and_delete_child", self)
+	queue_free()
 
 func attacked(by):
 	if broken:

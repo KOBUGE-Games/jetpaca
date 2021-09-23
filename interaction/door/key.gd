@@ -12,7 +12,7 @@ func _on_timeout_enable():
 	get_node("monitor").set_monitoring(true)
 
 func _on_timeout():
-	get_parent().call_deferred("remove_and_delete_child", self)
+	queue_free()
 
 func _on_body_enter(body):
 	if body is preload("res://player/alpaca.gd"):

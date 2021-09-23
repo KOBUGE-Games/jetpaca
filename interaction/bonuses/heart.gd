@@ -23,7 +23,7 @@ func _on_exit_screen():
 	pass
 
 func _on_timeout():
-	get_parent().call_deferred("remove_and_delete_child", self)
+	queue_free()
 
 func _on_activate():
 	get_node("area").set_monitoring(true)

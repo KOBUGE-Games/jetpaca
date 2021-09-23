@@ -32,7 +32,7 @@ func _integrate_forces(state):
 			pop()
 
 func _on_timeout():
-	get_parent().call_deferred("remove_and_delete_child", self)
+	queue_free()
 
 func _on_enter_screen():
 	get_node("anim").set_active(true)
