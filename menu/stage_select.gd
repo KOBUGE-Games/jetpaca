@@ -10,12 +10,9 @@ onready var tabs = get_node("items/worlds")
 func _ready():
 	music.change_music_to("res://music/bgm.ogg")
 	add_levels()
-	set_process_unhandled_key_input(true)
 
 func _unhandled_key_input(event):
-	if event.is_echo():
-		return
-	if event.is_action("quit") and event.is_pressed():
+	if event.is_action("quit") and event.is_pressed() and !event.is_echo():
 		back_pressed()
 
 func add_levels():
@@ -67,4 +64,3 @@ func select_stage(stage):
 
 func back_pressed():
 	get_tree().change_scene("res://menu/main_menu.tscn")
-

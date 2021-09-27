@@ -7,7 +7,6 @@ extends Control
 func _ready():
 	get_node("button_play").connect("pressed", self, "play_pressed")
 	get_node("button_play").show()
-	set_process_input(true)
 
 func play_pressed():
 	get_tree().change_scene("res://menu/stage_select.tscn")
@@ -20,4 +19,3 @@ func _input(event):
 		play_pressed()
 	if event.is_action("quit") and event.pressed:
 		get_tree().quit()
-

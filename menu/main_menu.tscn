@@ -223,24 +223,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="copyright" type="Label" parent="."]
-visible = false
-margin_left = 46.0
-margin_top = 222.0
-margin_right = 178.0
-margin_bottom = 255.0
-size_flags_vertical = 0
-text = "(c) 2012 Codenix - Work in Progress, don distribute!"
-
-[node name="welcome" type="Label" parent="."]
-visible = false
-margin_left = 45.0
-margin_top = 27.0
-margin_right = 177.0
-margin_bottom = 60.0
-size_flags_vertical = 0
-text = "Welcome to JetPaca!"
-
 [node name="sky_background" type="HBoxContainer" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
