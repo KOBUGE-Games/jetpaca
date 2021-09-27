@@ -18944,9 +18944,7 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, 12 ), Vector2( 0, -7 ), Vector2( 0, -3.5 ), Vector2( 0, 1.5 ), Vector2( 0, 0 ) ]
 }
 
-[node name="alpaca" type="RigidBody2D" groups=[
-"character",
-]]
+[node name="alpaca" type="RigidBody2D" groups=["character"]]
 mode = 2
 physics_material_override = SubResource( 1 )
 contacts_reported = 2
@@ -19022,22 +19020,22 @@ hframes = 2
 position = Vector2( 1.14574, 0.836765 )
 texture = ExtResource( 8 )
 offset = Vector2( 1, -5 )
-vframes = 2
 hframes = 8
+vframes = 2
 
 [node name="l_eye" type="Sprite" parent="body/culete/over/neck/head/face"]
 position = Vector2( 0.47479, -0.313564 )
 texture = ExtResource( 9 )
 offset = Vector2( 12, -6 )
-vframes = 4
 hframes = 16
+vframes = 4
 
 [node name="r_eye" type="Sprite" parent="body/culete/over/neck/head/face"]
 position = Vector2( 0.793367, 0.00688505 )
 texture = ExtResource( 9 )
 offset = Vector2( -4, -6 )
-vframes = 4
 hframes = 16
+vframes = 4
 
 [node name="mouth" type="Sprite" parent="body/culete/over/neck/head/face"]
 position = Vector2( 1.98058, 1.56271 )
@@ -19045,8 +19043,8 @@ scale = Vector2( 1.3, 1.3 )
 texture = ExtResource( 10 )
 offset = Vector2( 3.5, 2 )
 flip_h = true
-vframes = 8
 hframes = 8
+vframes = 8
 
 [node name="ear_bg" type="Sprite" parent="body/culete/over/neck/head"]
 position = Vector2( 16.1646, -10.4742 )
@@ -19342,6 +19340,7 @@ color_ramp = SubResource( 46 )
 [node name="camera_animation" type="AnimationPlayer" parent="."]
 playback_speed = 2.0
 anims/shake = SubResource( 47 )
+
 [connection signal="timeout" from="restart_wait" to="." method="_restart"]
 [connection signal="timeout" from="level_end_wait" to="." method="_level_end"]
 [connection signal="body_entered" from="attack_area" to="." method="_attack_area_enter"]

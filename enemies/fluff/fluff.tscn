@@ -4017,5 +4017,6 @@ stream = ExtResource( 17 )
 
 [node name="spikes_hide" type="AudioStreamPlayer2D" parent="sfx"]
 stream = ExtResource( 18 )
+
 [connection signal="body_entered" from="spike_area" to="." method="_on_body_enter_spikes"]
 [connection signal="body_exited" from="spike_area" to="." method="_on_body_exit_spikes"]

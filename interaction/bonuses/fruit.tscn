@@ -76,6 +76,7 @@ visible = false
 
 [node name="shape" type="CollisionShape2D" parent="magnet"]
 shape = SubResource( 4 )
+
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]
 [connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="screenprox" to="." method="_on_exit_screen"]

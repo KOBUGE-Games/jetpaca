@@ -85,6 +85,7 @@ one_shot = true
 
 [node name="activate" type="Timer" parent="."]
 one_shot = true
+
 [connection signal="body_entered" from="area" to="." method="_on_body_enter"]
 [connection signal="screen_entered" from="sp2d" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="sp2d" to="." method="_on_exit_screen"]

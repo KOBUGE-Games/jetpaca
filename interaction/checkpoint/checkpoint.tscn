@@ -124,4 +124,5 @@ anims/checked = SubResource( 4 )
 
 [node name="tune" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]

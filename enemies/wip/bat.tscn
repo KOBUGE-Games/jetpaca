@@ -276,8 +276,8 @@ scale = Vector2( 1.05282, 1.00002 )
 texture = ExtResource( 1 )
 centered = false
 offset = Vector2( -64, -64 )
-vframes = 2
 hframes = 8
+vframes = 2
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

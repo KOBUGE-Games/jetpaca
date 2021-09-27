@@ -56,6 +56,7 @@ position = Vector2( 216.792, -125.981 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -2, 2 )
 shape = SubResource( 4 )
+
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]
 [connection signal="screen_entered" from="platform/screenprox" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="platform/screenprox" to="." method="_on_exit_screen"]

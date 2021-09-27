@@ -37,9 +37,7 @@ script = ExtResource( 1 )
 position = Vector2( 7739.34, 691.731 )
 trigger_name = "door1"
 
-[node name="door" parent="behind" groups=[
-"door1",
-] instance=ExtResource( 13 )]
+[node name="door" parent="behind" groups=["door1"] instance=ExtResource( 13 )]
 position = Vector2( 7848.37, 573.055 )
 no_key = true
 
@@ -51,15 +49,11 @@ trigger_name = "door3"
 position = Vector2( 16440.4, 2154.74 )
 trigger_name = "door2"
 
-[node name="door 2" parent="behind" groups=[
-"door2",
-] instance=ExtResource( 13 )]
+[node name="door 2" parent="behind" groups=["door2"] instance=ExtResource( 13 )]
 position = Vector2( 16898.2, 2079.63 )
 no_key = true
 
-[node name="door 3" parent="behind" groups=[
-"door3",
-] instance=ExtResource( 13 )]
+[node name="door 3" parent="behind" groups=["door3"] instance=ExtResource( 13 )]
 position = Vector2( 16443, 1697.09 )
 rotation = -1.56166
 no_key = true

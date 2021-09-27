@@ -162,9 +162,7 @@ position = Vector2( 3136, 2464 )
 position = Vector2( 4647.11, 1971.25 )
 trigger_name = "door 1"
 
-[node name="door" parent="FirePlanks" groups=[
-"door 1",
-] instance=ExtResource( 3 )]
+[node name="door" parent="FirePlanks" groups=["door 1"] instance=ExtResource( 3 )]
 position = Vector2( 4777.32, 2252.14 )
 no_key = true
 

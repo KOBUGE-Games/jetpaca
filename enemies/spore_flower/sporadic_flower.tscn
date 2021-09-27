@@ -1625,5 +1625,6 @@ position = Vector2( -1.07545, -46.6032 )
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 
 [node name="VisibilityNotifier2D 2" type="VisibilityNotifier2D" parent="."]
+
 [connection signal="screen_entered" from="VisibilityNotifier2D" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_exit_screen"]

@@ -117,9 +117,7 @@ rotation = -0.468754
 
 [node name="interaction" type="Node" parent="."]
 
-[node name="elevator" parent="interaction" groups=[
-"elevator_1",
-] instance=ExtResource( 8 )]
+[node name="elevator" parent="interaction" groups=["elevator_1"] instance=ExtResource( 8 )]
 position = Vector2( 3847.35, 1295.06 )
 distance = -8000
 max_speed = 128.0

@@ -3225,5 +3225,6 @@ stream = ExtResource( 16 )
 
 [node name="kill" type="AudioStreamPlayer2D" parent="sfx"]
 stream = ExtResource( 17 )
+
 [connection signal="screen_entered" from="screen_proximity" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="screen_proximity" to="." method="_on_exit_screen"]

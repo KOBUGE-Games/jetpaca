@@ -18,5 +18,6 @@ texture = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2( 6.98327, 6.88883 )
 shape = SubResource( 1 )
+
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]
 [connection signal="body_exited" from="." to="." method="_on_body_exit"]

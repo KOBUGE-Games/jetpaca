@@ -771,6 +771,7 @@ anims/default_pose = SubResource( 1 )
 anims/firing = SubResource( 2 )
 anims/firing_backup = SubResource( 3 )
 anims/idle = SubResource( 4 )
+
 [connection signal="timeout" from="timer" to="." method="_on_timeout"]
 [connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="screenprox" to="." method="_on_exit_screen"]

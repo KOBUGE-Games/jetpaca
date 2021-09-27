@@ -15,4 +15,5 @@ shape = SubResource( 1 )
 [node name="wipgoal" type="Sprite" parent="."]
 position = Vector2( -11, -24 )
 texture = ExtResource( 2 )
+
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]

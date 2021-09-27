@@ -93,6 +93,7 @@ anims/wobble = SubResource( 4 )
 [node name="burst" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
+
 [connection signal="screen_entered" from="sprox" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="sprox" to="." method="_on_exit_screen"]
 [connection signal="timeout" from="burst" to="." method="_on_timeout"]

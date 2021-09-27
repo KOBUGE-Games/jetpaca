@@ -17,9 +17,7 @@ _data = [ Vector2( 0, 0.5 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.1 ), 0.0, 0.0, 0, 0 ]
 offsets = PoolRealArray( 0, 0.2, 0.8 )
 colors = PoolColorArray( 1, 0.884956, 0.265487, 1, 1, 0.0884956, 0, 1, 0.054902, 0.159292, 0.115044, 1 )
 
-[node name="torch_trigger" type="Sprite" groups=[
-"_fire_triggers",
-]]
+[node name="torch_trigger" type="Sprite" groups=["_fire_triggers"]]
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
 

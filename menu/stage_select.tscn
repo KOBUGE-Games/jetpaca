@@ -58,4 +58,5 @@ margin_right = 64.0
 margin_bottom = 64.0
 texture_normal = ExtResource( 4 )
 texture_focused = ExtResource( 5 )
+
 [connection signal="pressed" from="items/buttons/back" to="." method="back_pressed"]

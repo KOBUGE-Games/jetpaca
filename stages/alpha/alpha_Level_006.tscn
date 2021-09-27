@@ -211,9 +211,7 @@ constant_angular_velocity = 24.0
 position = Vector2( 1192, 840.059 )
 trigger_name = "door"
 
-[node name="door" parent="torches" groups=[
-"door",
-] instance=ExtResource( 6 )]
+[node name="door" parent="torches" groups=["door"] instance=ExtResource( 6 )]
 position = Vector2( 1056.04, 640.035 )
 rotation = -0.00110221
 no_key = true
@@ -222,9 +220,7 @@ no_key = true
 position = Vector2( 4192, 3136 )
 trigger_name = "door 2"
 
-[node name="door 2" parent="torches" groups=[
-"door 2",
-] instance=ExtResource( 6 )]
+[node name="door 2" parent="torches" groups=["door 2"] instance=ExtResource( 6 )]
 position = Vector2( 5312.41, 3104.41 )
 rotation = 1.58381
 no_key = true
@@ -233,9 +229,7 @@ no_key = true
 position = Vector2( 4480, 2880 )
 trigger_name = "door 3"
 
-[node name="door 3" parent="torches" groups=[
-"door 3",
-] instance=ExtResource( 6 )]
+[node name="door 3" parent="torches" groups=["door 3"] instance=ExtResource( 6 )]
 position = Vector2( 5056.41, 2656.41 )
 rotation = 1.58381
 no_key = true

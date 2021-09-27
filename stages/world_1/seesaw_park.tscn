@@ -32,9 +32,7 @@ script = ExtResource( 1 )
 
 [node name="behind" type="Node" parent="."]
 
-[node name="ereveta" type="Node2D" parent="behind" groups=[
-"elevator_1",
-]]
+[node name="ereveta" type="Node2D" parent="behind" groups=["elevator_1"]]
 position = Vector2( 8946.44, 6107.07 )
 script = ExtResource( 2 )
 distance = -3840
@@ -145,9 +143,7 @@ node_a = NodePath("..")
 position = Vector2( 13492.2, 4366.05 )
 rotation = 1.5708
 
-[node name="ereveta 2" type="Node2D" parent="behind/rot" groups=[
-"elevator_2",
-]]
+[node name="ereveta 2" type="Node2D" parent="behind/rot" groups=["elevator_2"]]
 position = Vector2( 402.776, 94.9482 )
 script = ExtResource( 2 )
 distance = -3840

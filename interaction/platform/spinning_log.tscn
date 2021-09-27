@@ -20,5 +20,6 @@ scale = Vector2( 1.88235, 1.88235 )
 shape = SubResource( 1 )
 
 [node name="screenprox" type="VisibilityNotifier2D" parent="."]
+
 [connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]
 [connection signal="screen_exited" from="screenprox" to="." method="_on_exit_screen"]

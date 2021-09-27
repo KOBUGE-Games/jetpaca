@@ -63,6 +63,7 @@ initial_velocity_random = 0.8
 damping = 300.0
 scale_amount_curve = SubResource( 4 )
 color_ramp = SubResource( 5 )
+
 [connection signal="body_entered" from="area" to="." method="_on_push_enter"]
 [connection signal="body_exited" from="area" to="." method="_on_push_exit"]
 [connection signal="timeout" from="timer" to="." method="_on_timeout"]

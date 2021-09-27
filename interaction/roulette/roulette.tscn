@@ -614,4 +614,5 @@ anims/prize_select_alpha = SubResource( 5 )
 position = Vector2( -0.814514, 122.968 )
 scale = Vector2( 1, 2.50545 )
 shape = SubResource( 6 )
+
 [connection signal="body_entered" from="button_area" to="." method="_on_body_enter"]

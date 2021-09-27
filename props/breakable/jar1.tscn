@@ -42,4 +42,5 @@ color_ramp = SubResource( 1 )
 [node name="break_sfx" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )
 pitch_scale = 0.6
+
 [connection signal="timeout" from="death" to="." method="_on_timeout"]

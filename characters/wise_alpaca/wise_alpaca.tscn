@@ -3913,6 +3913,7 @@ scale = Vector2( 4.37632, 1 )
 
 [node name="shape" type="CollisionShape2D" parent="."]
 shape = SubResource( 12 )
+
 [connection signal="body_entered" from="." to="." method="_on_body_enter"]
 [connection signal="body_exited" from="." to="." method="_on_body_exit"]
 [connection signal="screen_entered" from="screenprox" to="." method="_on_enter_screen"]

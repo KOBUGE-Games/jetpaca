@@ -79,6 +79,7 @@ scale_amount_curve = SubResource( 4 )
 color_ramp = SubResource( 5 )
 
 [node name="sp" type="VisibilityNotifier2D" parent="."]
+
 [connection signal="body_entered" from="monitor" to="." method="_on_body_enter"]
 [connection signal="timeout" from="death" to="." method="_on_timeout"]
 [connection signal="timeout" from="enabler" to="." method="_on_timeout_enable"]

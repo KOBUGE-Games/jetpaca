@@ -5549,8 +5549,8 @@ hframes = 3
 [node name="eyelids" type="Sprite" parent="sprites/Rib/Chest/Head/sclera"]
 position = Vector2( -16.4478, 7.44431 )
 texture = ExtResource( 13 )
-vframes = 3
 hframes = 3
+vframes = 3
 frame = 1
 
 [node name="Head" type="Sprite" parent="sprites/Rib/Chest/Head"]
@@ -5669,6 +5669,7 @@ visible = false
 self_modulate = Color( 1, 1, 1, 0.111111 )
 position = Vector2( -1.76053, -66.019 )
 shape = SubResource( 19 )
+
 [connection signal="body_entered" from="sprites/ArmBG/ForearmBG/HandBG/Sword/damager" to="." method="_on_damage_enter"]
 [connection signal="body_exited" from="sprites/ArmBG/ForearmBG/HandBG/Sword/damager" to="." method="_on_damage_exit"]
 [connection signal="body_entered" from="action_area" to="." method="_on_body_enter"]
