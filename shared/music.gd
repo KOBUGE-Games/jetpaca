@@ -20,16 +20,7 @@ func change_music_to(path, force=false):
 	if current_music == path && !force:
 		return
 	current_music = path
-	var thread = Thread.new()
-	thread.start(self, "_loader_thread", { "path": path, "thread": thread })
-
-func _loader_thread(options):
-	var loader = ResourceLoader.load_interactive(options.path)
-	loader.wait()
-	call_deferred("_change_music_to", loader.get_resource())
-	options.thread.call_deferred("wait_to_finish")
-
-func _change_music_to(stream):
+	var stream = load(path)
 	var new_music_player = AudioStreamPlayer.new()
 	new_music_player.bus = "Music"
 	new_music_player.set_autoplay(true)
